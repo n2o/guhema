@@ -27,6 +27,9 @@
       <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="{% static 'assets/jquery/jquery.min.js' %}"></script>
+
+    <!-- Own Styles -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
   </head>
 
   <body role="document">
@@ -61,8 +64,9 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/account">Login</a></li>
-            <li><a href="/account/register">Registrieren</a></li>
+            <img id="logo" src="{% static 'img/logo/guhema_tr_internet.png' %}">
+            <!--<li><a href="/account">Login</a></li>
+            <li><a href="/account/register">Registrieren</a></li>-->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
