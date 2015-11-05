@@ -2,8 +2,11 @@
 
 {% load staticfiles %}
 
+{% block headerimg %}
+{% endblock %}
+
 {% block heading %}
-  <img src="{% static 'img/logo/guhema80px.png' %}" alt="">
+  <img src="{% static 'img/logo/guhema80px.png' %}" class="img-responsive" alt="">
 {% endblock %}
 
 {% block content %}

@@ -1,8 +1,8 @@
 $yellow: #f5a714
 $blue: #00326a
 
-#logo
-  height: 80px
+body
+  color: $blue
 
 .navbar .container
   padding-top: 1em
@@ -10,5 +10,12 @@ $blue: #00326a
 #navbar
   padding: 0 !important
 
-.navbar-nav li a
-  vertical-align: text-bottom !important
+.navbar .nav > li > a
+  $navbarHeight: 80px
+  $elementHeight: 20px
+  padding: (($navbarHeight - $elementHeight) / 2 - 1) 10px (($navbarHeight - $elementHeight) / 2 + 1)
+  line-height: $elementHeight
+
+
+#header-img
+  margin-bottom: 1em

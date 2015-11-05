@@ -1,5 +1,5 @@
-#logo {
-  height: 80px; }
+body {
+  color: #00326a; }
 
 .navbar .container {
   padding-top: 1em; }
@@ -7,7 +7,11 @@
 #navbar {
   padding: 0 !important; }
 
-.navbar-nav li a {
-  vertical-align: text-bottom !important; }
+.navbar .nav > li > a {
+  padding: 29px 10px 31px;
+  line-height: 20px; }
+
+#header-img {
+  margin-bottom: 1em; }
 
 /*# sourceMappingURL=main.css.map */
