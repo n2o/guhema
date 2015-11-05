@@ -1,6 +1,29 @@
 {% extends "base.html" %}
 
+{% load staticfiles %}
+
+{% block heading %}
+  <img src="{% static 'img/logo/guhema80px.png' %}" alt="">
+{% endblock %}
+
 {% block content %}
-    <h2>Content for My App</h2>
-    <p>Stuff etc etc.</p>
+  <p>
+    Dieser Name steht für Made in Germany – und das seit dem Jahre 1867!
+  </p>
+  <p>
+    Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung
+    und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.
+  </p>
+  <p>
+    Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen
+    Wünsche reagieren.
+  </p>
+  <p>
+    Unsere Unternehmensabläufe sind seit 1997 zertifiziert
+    und entsprechen der Norm nach DIN EN ISO 9001.
+  </p>
+  <p>
+    Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden,
+    erhalten Sie ein Metallsägeblatt in Perfektion.
+  </p>
 {% endblock %}

@@ -1,4 +1,13 @@
 #logo {
-  height: 100px; }
+  height: 80px; }
+
+.navbar .container {
+  padding-top: 1em; }
+
+#navbar {
+  padding: 0 !important; }
+
+.navbar-nav li a {
+  vertical-align: text-bottom !important; }
 
 /*# sourceMappingURL=main.css.map */
