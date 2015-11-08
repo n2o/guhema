@@ -6,27 +6,31 @@
 {% endblock %}
 
 {% block heading %}
-  <img src="{% static 'img/logo/guhema80px.png' %}" class="img-responsive" alt="">
+  {% comment %}<img src="{% static 'img/logo/guhema80px.png' %}" class="img-responsive" alt=""> {% endcomment %}
+  <h1>Qualität, die Vertrauen schafft<br><small>GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!</small></h1>
 {% endblock %}
 
 {% block content %}
-  <p>
-    Dieser Name steht für Made in Germany – und das seit dem Jahre 1867!
-  </p>
-  <p>
-    Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung
-    und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.
-  </p>
-  <p>
-    Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen
-    Wünsche reagieren.
-  </p>
-  <p>
-    Unsere Unternehmensabläufe sind seit 1997 zertifiziert
-    und entsprechen der Norm nach DIN EN ISO 9001.
-  </p>
-  <p>
-    Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden,
-    erhalten Sie ein Metallsägeblatt in Perfektion.
-  </p>
+  <div class="row">
+    <div class="col-md-8">
+      <p>
+        <strong>
+          Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung
+          und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.
+        </strong>
+      </p>
+      <p>
+        Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen
+        Wünsche reagieren.
+      </p>
+      <p>
+        Unsere Unternehmensabläufe sind seit 1997 zertifiziert
+        und entsprechen der Norm nach DIN EN ISO 9001.
+      </p>
+      <p>
+        Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden,
+        erhalten Sie ein Metallsägeblatt in Perfektion.
+      </p>
+    </div>
+  </div>
 {% endblock %}

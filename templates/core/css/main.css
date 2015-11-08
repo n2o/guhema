@@ -1,6 +1,15 @@
 body {
-  color: #00326a; }
+  font-size: 12pt; }
 
+a {
+  font-size: 12pt; }
+
+h1 {
+  padding-bottom: 0.5em; }
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1400px; } }
 .navbar .container {
   padding-top: 1em; }
 
@@ -12,6 +21,43 @@ body {
   line-height: 20px; }
 
 #header-img {
-  margin-bottom: 1em; }
+  max-width: 95%;
+  margin: 0 auto 1em auto;
+  background-color: #00326a;
+  height: 300px; }
+
+#footer {
+  max-width: 95%;
+  margin: 1em auto;
+  font-size: 10pt; }
+  #footer h3 {
+    margin: 0;
+    color: white; }
+  #footer a {
+    font-size: 10pt; }
+
+#product-groups {
+  background-color: #00326a;
+  padding: 2em 0; }
+
+#footer-text {
+  padding-top: 1em; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+@media only screen and (min-width: 1000px) {
+  #main {
+    margin-bottom: 176px; } }
+#footer-wrapper {
+  margin-top: 50px; }
+
+@media only screen and (min-width: 1000px) {
+  #footer-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 176px; } }
 
 /*# sourceMappingURL=main.css.map */

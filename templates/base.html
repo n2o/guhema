@@ -47,8 +47,13 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Unternehmen</a></li>
+            <li><a href="#contact">Produkte</a></li>
+            <li><a href="#contact">Qualität</a></li>
+            <li><a href="#contact">Messen</a></li>
+            <li><a href="#contact">News</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            {% comment %}
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -61,6 +66,7 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
+            {% endcomment %}
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <img id="logo" src="{% static 'img/logo/guhema80px.png' %}">
@@ -72,9 +78,10 @@
     </nav>
 
     <div id="main">
-      <div class="container" id="header-img">
-        {% block headerimg %}{% endblock %}
-        <div style="background-color: lightgrey; width: 100%; height: 200px;"></div>
+      <div class="" id="header-img">
+        <div class="container">
+          {% block headerimg %}{% endblock %}
+        </div>
       </div>
 
       <div class="container">
@@ -83,6 +90,28 @@
 
       <div class="container" role="main">
         {% block content %}{% endblock %}
+      </div>
+    </div>
+
+    <div id="footer-wrapper">
+      <div id="footer">
+        {% include 'productgroups.html' %}
+        <div id="footer-text" class="container">
+          <div class="row">
+            <div class="col-md-2">
+              &copy; GUHEMA GmbH & Co. KG
+            </div>
+            <div class="col-md-2">
+              <a href="mailto:info@guhema.com">info@guhema.com</a>
+            </div>
+            <div class="col-md-2">
+              <a href="tel:+49 2191 8867 0">+49 2191 8867 0</a>
+            </div>
+            <div class="col-md-6 text-right">
+              Kontakt | Impressum
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
