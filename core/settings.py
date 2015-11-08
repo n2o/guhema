@@ -36,8 +36,14 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
-    'polls',
+
+    # 3rd party
     'login',
+    'autoslug',
+
+    # Own apps
+    'polls',
+    'news'
 )
 
 MIDDLEWARE_CLASSES = (

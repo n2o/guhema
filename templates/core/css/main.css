@@ -10,6 +10,8 @@ h1 {
 @media (min-width: 1600px) {
   .container {
     width: 1400px; } }
+/*.btn-primary
+ * background-color: $lightblue */
 .navbar .container {
   padding-top: 1em; }
 
