@@ -1,2 +1,4 @@
 Django==1.9b1
+django-autoslug==1.9.3
+Pillow==3.0.0
 wheel==0.26.0
