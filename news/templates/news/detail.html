@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block heading %}
+  <h1>{{ entry.title }}</h1>
+  <h4>
+    <small>
+      {{ entry.created|date:"j. N Y" }}{% if entry.author %} von {{ entry.author }}{% endif %}
+    </small>
+  </h4>
+{% endblock %}
+
+{% block content %}
+  {{ entry.content|safe }}
+{% endblock %}

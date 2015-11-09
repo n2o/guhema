@@ -11,4 +11,7 @@ urlpatterns = [
     url(r'^pages/', include('django.contrib.flatpages.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^account/', include('login.urls', namespace='login')),
+
+    # Own Apps
+    url(r'^news/', include('news.urls', namespace='news')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
