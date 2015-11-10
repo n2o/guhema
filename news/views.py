@@ -7,7 +7,6 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Entry, Category
 
 
-@login_required
 def detail(request, slug):
     try:
         entry = Entry.objects.get(slug=slug)
@@ -16,7 +15,6 @@ def detail(request, slug):
     return render(request, 'news/detail.html', {'entry': entry})
 
 
-@login_required
 def overview(request, page=1, category="Allgemein"):
     try:
         category = Category.objects.filter(name=category)
@@ -38,8 +36,17 @@ def overview(request, page=1, category="Allgemein"):
             posts = paginator.page(paginator.num_pages)
     except Entry.DoesNotExist:
         raise Http404("Diese Beiträge konnten leider nicht gefunden werden.")
-    return render(request, 'blog/list.html',
-                  {'posts':     posts,
+    return render(request, 'news/overview.html',
+                  {'posts':     pack(posts),
                    'paginator': posts,
                    'length':    range(len(posts)),
                    'category':  category[0]})
+
+
+################################ Aux functions
+
+def pack(_list):
+    nlist = list(_list)
+    if len(nlist) % 2:      # Append none if len is odd
+        nlist.append(None)
+    return zip(nlist[::2], nlist[1::2])
