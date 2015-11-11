@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% load staticfiles %}
+{% load thumbnail %}
 
 {% block headerimg %}
   <img src="{% static 'img/header/header001.jpg' %}" alt="">
@@ -38,17 +39,17 @@
     </div>
   </div>
 
+  {# News Section #}
   <h2 style="padding-top: 1em;">News</h2>
-
   <div class="row">
     {% for post in posts %}
       <div class="col-md-4">
         <div id="news-header">
           <div id="news-image">
             {% if post.image %}
-              <img src="{{ post.image.url }}" alt="">
+              <img src="{{ post.image|thumbnail_url:'news_front' }}" alt="{{ post.title }}" />
             {% else %}
-              <img src="{% static 'img/news/news_placeholder.jpg' %}" alt="">
+              <img src="{% static 'img/news/news_placeholder.jpg' %}" alt="{{ post.title }}">
             {% endif %}
           </div>
           <div class="row">

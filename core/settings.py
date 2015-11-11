@@ -40,10 +40,11 @@ INSTALLED_APPS = (
     # 3rd party
     'login',
     'autoslug',
+    'easy_thumbnails',
 
     # Own apps
     'polls',
-    'news'
+    'news',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -124,6 +125,14 @@ TEMPLATES = [
         },
     },
 ]
+
+# Configure Easy Thumbnails
+THUMBNAIL_ALIASES = {
+    '': {
+        'news_front': {'size': (440, 165), 'crop': True},
+    },
+}
+
 
 # Needed for login
 import django.contrib.auth
