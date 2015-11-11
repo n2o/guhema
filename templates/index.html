@@ -8,7 +8,7 @@
 
 {% block heading %}
   {% comment %}<img src="{% static 'img/logo/guhema80px.png' %}" class="img-responsive" alt=""> {% endcomment %}
-  <h1>Qualität, die Vertrauen schafft<br><small>GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!</small></h1>
+  <h1>Qualität die Vertrauen schafft<br><small>GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!</small></h1>
 {% endblock %}
 
 {% block content %}
@@ -36,5 +36,23 @@
         <button type="button" class="btn">QUALITÄTSANSPRUCH &rsaquo;</button>
       </p>
     </div>
+  </div>
+
+  <h2 style="padding-top: 1em;">News</h2>
+
+  <div class="row">
+    {% for post in posts %}
+      <div class="col-md-4">
+        <h3>
+          {{ post.title }}<br>
+          <small>
+           {{ post.created|date:"j. N Y" }}{% if post.author %} von {{ post.author }}{% endif %}
+          </small>
+        </h3>
+        <p>
+          {{ post.content|safe }}
+        </p>
+      </div>
+    {% endfor %}
   </div>
 {% endblock %}

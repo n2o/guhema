@@ -2,6 +2,7 @@
 $yellow: #f5a714
 $blue: #00326a
 $lightblue: #014FA7
+$containerWidth: 100%
 
 // General style definitions
 body
@@ -33,19 +34,20 @@ h1
   $elementHeight: 20px
   padding: (($navbarHeight - $elementHeight) / 2 - 1) 10px (($navbarHeight - $elementHeight) / 2 + 1)
   line-height: $elementHeight
-
+  font-weight: bold
 
 // Define header image
 #header-img
-  max-width: 95%
+  max-width: $containerWidth
   margin: 0 auto 1em auto
   background-color: $blue
-  height: 300px
+  img
+    max-width: 100%
 
 
 //// Footer
 #footer
-  max-width: 95%
+  max-width: $containerWidth
   margin: 1em auto
   h3
     margin: 0

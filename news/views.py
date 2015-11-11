@@ -43,6 +43,15 @@ def overview(request, page=1, category="Allgemein"):
                    'category':  category[0]})
 
 
+def plugin(request):
+    try:
+        posts = Entry.objects.all()[:3]
+        print(posts)
+    except Entry.DoesNotExist:
+        raise Http404("Keine Beiträge vorhanden.")
+    return render(request, 'news/plugin.html', {'posts': posts})
+
+
 ################################ Aux functions
 
 def pack(_list):

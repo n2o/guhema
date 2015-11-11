@@ -1,12 +1,13 @@
 from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponseRedirect
-from django.core.urlresolvers import reverse
-from django.views import generic
+from django.http import Http404
+
+from news.models import Entry
 
 
-class IndexView(generic.ListView):
-    template_name = 'index.html'
-    context_object_name = ''
-
-    def get_queryset(self):
-        return None
+def index(request):
+    try:
+        posts = Entry.objects.all()[:3]
+        print(posts)
+    except Entry.DoesNotExist:
+        raise Http404("Keine Beiträge vorhanden.")
+    return render(request, 'index.html', {'posts': posts})
