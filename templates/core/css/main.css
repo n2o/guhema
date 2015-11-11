@@ -71,4 +71,28 @@ html {
 .img-news {
   max-width: 100%; }
 
+#cube {
+  background-color: #00326a;
+  width: 60px;
+  height: 60px; }
+
+#cube-content {
+  color: white;
+  vertical-align: middle;
+  padding-top: 8px;
+  line-height: 20px;
+  text-align: center; }
+
+#news-image {
+  padding-bottom: 0.5em; }
+  #news-image img {
+    max-width: 440px;
+    max-height: 165px; }
+
+#news-title h4 {
+  margin-top: 0.25em; }
+
+#news-header {
+  padding-bottom: 0.5em; }
+
 /*# sourceMappingURL=main.css.map */

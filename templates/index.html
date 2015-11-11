@@ -43,15 +43,35 @@
   <div class="row">
     {% for post in posts %}
       <div class="col-md-4">
-        <h3>
-          {{ post.title }}<br>
-          <small>
-           {{ post.created|date:"j. N Y" }}{% if post.author %} von {{ post.author }}{% endif %}
-          </small>
-        </h3>
-        <p>
-          {{ post.content|safe }}
-        </p>
+        <div id="news-header">
+          <div id="news-image">
+            {% if post.image %}
+              <img src="{{ post.image.url }}" alt="">
+            {% else %}
+              <img src="{% static 'img/news/news_placeholder.jpg' %}" alt="">
+            {% endif %}
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <div id="cube">
+                <div id="cube-content">
+                  <strong>{{ post.created|date:"N" }}</strong><br>
+                  {{ post.created|date:"Y" }}
+                </div>
+              </div>
+            </div>
+            <div id="news-title" class="col-md-9">
+              <h4>
+                {{ post.title }}
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div id="news-content">
+          <p>
+            {{ post.content|safe }}
+          </p>
+        </div>
       </div>
     {% endfor %}
   </div>
