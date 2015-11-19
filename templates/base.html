@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Django Skeleton</title>
+    <title>GUHEMA GmbH & Co. KG</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
@@ -46,7 +46,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="{% url 'index' %}">Home</a></li>
             <li><a href="#about">Unternehmen</a></li>
             <li><a href="#contact">Produkte</a></li>
             <li><a href="#contact">Qualität</a></li>
@@ -69,13 +69,19 @@
             {% endcomment %}
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <img id="logo" src="{% static 'img/logo/guhema80px.png' %}">
+            <a href="{% url 'index' %}">
+              <img id="logo" src="{% static 'img/logo/guhema80px.png' %}">
+            </a>
             <!--<li><a href="/account">Login</a></li>
             <li><a href="/account/register">Registrieren</a></li>-->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
+    {% if not request.path == "/" %}
+      {% include 'productgroups.html' %}
+    {% endif %}
 
     <div id="main">
       <div class="" id="header-img">
@@ -91,11 +97,19 @@
       <div class="container" role="main">
         {% block content %}{% endblock %}
       </div>
+
+      {% if request.path == "/" %}
+        <div class="blue-div" style="margin-top: 2em;">
+          {% include 'productgroups.html' %}
+          <div class="container">
+            <div id="footer-line"></div>
+          </div>
+        </div>
+      {% endif %}
     </div>
 
     <div id="footer-wrapper">
       <div id="footer">
-        {% include 'productgroups.html' %}
         <div id="footer-text" class="container">
           <div class="row">
             <div class="col-md-2">

@@ -46,11 +46,13 @@
       <div class="col-md-4">
         <div id="news-header">
           <div id="news-image">
-            {% if post.image %}
-              <img src="{{ post.image|thumbnail_url:'news_front' }}" alt="{{ post.title }}" />
-            {% else %}
-              <img src="{% static 'img/news/news_placeholder.jpg' %}" alt="{{ post.title }}">
-            {% endif %}
+            <a href="{% url 'news:detail' slug=post.slug %}">
+              {% if post.image %}
+                <img src="{{ post.image|thumbnail_url:'news_front' }}" alt="{{ post.title }}" />
+              {% else %}
+                <img src="{% static 'img/news/news_placeholder.jpg' %}" alt="{{ post.title }}">
+              {% endif %}
+            </a>
           </div>
           <div class="row">
             <div class="col-md-2">
@@ -63,7 +65,9 @@
             </div>
             <div id="news-title" class="col-md-9">
               <h4>
-                {{ post.title }}
+                <a href="{% url 'news:detail' slug=post.slug %}">
+                  {{ post.title }}
+                </a>
               </h4>
             </div>
           </div>
