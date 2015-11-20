@@ -43,13 +43,30 @@ h1
   font-weight: bold
 
 // Define header image
-#header-img
+#header-img-wrapper
   max-width: $containerWidth
   margin: 0 auto 1em auto
   background-color: $blue
   img
     max-width: 100%
 
+#header-img-text-wrapper
+  position: relative
+
+#header-text
+  position: absolute
+  background-color: $blue
+  z-index: 1000
+  top: 50%
+  left: 0
+  color: white
+  padding: 1em
+  opacity: .5
+  h2
+    opacity: 1.5
+    margin-top: 0
+  p
+    opacity: 1
 
 //// Footer and product groups
 #footer, .product-groups-wrapper
