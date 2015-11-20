@@ -38,18 +38,14 @@ h1 {
 
 #header-text {
   position: absolute;
-  background-color: #00326a;
+  background-color: rgba(0, 50, 106, 0.5);
   z-index: 1000;
   top: 50%;
   left: 0;
   color: white;
-  padding: 1em;
-  opacity: 0.5; }
+  padding: 1em; }
   #header-text h2 {
-    opacity: 1.5;
     margin-top: 0; }
-  #header-text p {
-    opacity: 1; }
 
 #footer, .product-groups-wrapper {
   max-width: 100%;
