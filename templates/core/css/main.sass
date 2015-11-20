@@ -4,6 +4,7 @@ $blue: #00326a
 $lightblue: #014FA7
 $containerWidth: 100%
 $productHeight: 80px
+$footerHeight: 80px
 
 // General style definitions
 body
@@ -53,7 +54,7 @@ h1
 //// Footer and product groups
 #footer, .product-groups-wrapper
   max-width: $containerWidth
-  font-size: 10pt
+  font-size: 12pt
   h3
     margin: 0
     color: white
@@ -79,19 +80,16 @@ h1
 
 // Make footer sticky
 // Sticky footer styles
-$footer-height: 80px
 html
   position: relative
   min-height: 100%
 
 @media only screen and (min-width: 1000px)
   #main
-    margin-bottom: $footer-height
+    margin-bottom: $footerHeight
 
 #footer-wrapper
   background-color: $blue
-  line-height: $footer-height
-  height: $footer-height
   color: white
   a
     color: white
@@ -101,9 +99,11 @@ html
     position: absolute
     bottom: 0
     width: 100%
+    line-height: $footerHeight
     // Set the fixed height of the footer here
-    height: $footer-height
+    height: $footerHeight
 // END Make footer sticky
+
 
 // Configure Images
 .img-news
@@ -128,6 +128,12 @@ html
   img
     max-width: 440px
     max-height: 165px
+
+#news-detail-image
+  img
+    max-width: 33%
+    float: right
+    padding: 0 0 1em 1em
 
 #news-title
   h4

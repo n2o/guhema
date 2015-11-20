@@ -35,7 +35,7 @@ h1 {
 
 #footer, .product-groups-wrapper {
   max-width: 100%;
-  font-size: 10pt; }
+  font-size: 12pt; }
   #footer h3, .product-groups-wrapper h3 {
     margin: 0;
     color: white; }
@@ -67,8 +67,6 @@ html {
     margin-bottom: 80px; } }
 #footer-wrapper {
   background-color: #00326a;
-  line-height: 80px;
-  height: 80px;
   color: white; }
   #footer-wrapper a {
     color: white; }
@@ -78,6 +76,7 @@ html {
     position: absolute;
     bottom: 0;
     width: 100%;
+    line-height: 80px;
     height: 80px; } }
 .img-news {
   max-width: 100%; }
@@ -99,6 +98,11 @@ html {
   #news-image img {
     max-width: 440px;
     max-height: 165px; }
+
+#news-detail-image img {
+  max-width: 33%;
+  float: right;
+  padding: 0 0 1em 1em; }
 
 #news-title h4 {
   margin-top: 0.25em; }

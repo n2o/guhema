@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load thumbnail %}
 
 {% block heading %}
   <h1>{{ entry.title }}</h1>
@@ -10,5 +11,10 @@
 {% endblock %}
 
 {% block content %}
+  {% if entry.image %}
+    <div id="news-detail-image">
+      <img class="img-responsive" src="{{ entry.image|thumbnail_url:'news_detail' }}" alt="{{ entry.title }}-image">
+    </div>
+  {% endif %}
   {{ entry.content|safe }}
 {% endblock %}

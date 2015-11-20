@@ -130,6 +130,7 @@ TEMPLATES = [
 THUMBNAIL_ALIASES = {
     '': {
         'news_front': {'size': (440, 165), 'crop': True},
+        'news_detail': {'size': (452, 254), 'crop': True},
     },
 }
 
