@@ -44,6 +44,7 @@ INSTALLED_APPS = (
 
     # Own apps
     'news',
+    'products',
 )
 
 MIDDLEWARE_CLASSES = (
