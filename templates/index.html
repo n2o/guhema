@@ -56,9 +56,9 @@
           <div id="news-image">
             <a href="{% url 'news:detail' slug=post.slug %}">
               {% if post.image %}
-                <img src="{{ post.image|thumbnail_url:'news_front' }}" alt="{{ post.title }}" />
+                <img src="{{ post.image|thumbnail_url:'news_front' }}" class="img-responsive" alt="{{ post.title }}" />
               {% else %}
-                <img src="{% static 'img/news/news_placeholder.jpg' %}" alt="{{ post.title }}">
+                <img src="{% static 'img/news/news_placeholder_360.jpg' %}" class="img-responsive" alt="{{ post.title }}" />
               {% endif %}
             </a>
           </div>
