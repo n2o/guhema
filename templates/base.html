@@ -79,12 +79,10 @@
       </div>
     </nav>
 
-    {% if not request.path == "/" %}
-      {% include 'productgroups.html' %}
-    {% endif %}
+
 
     <div id="main">
-      <div class="" id="header-img-wrapper">
+      <div id="header-img-wrapper">
         <div class="container">
           {% block headerimg %}{% endblock %}
         </div>
@@ -97,16 +95,16 @@
       <div class="container" role="main">
         {% block content %}{% endblock %}
       </div>
-
-      {% if request.path == "/" %}
-        <div class="blue-div" style="margin-top: 2em;">
-          {% include 'productgroups.html' %}
-          <div class="container">
-            <div id="footer-line"></div>
-          </div>
-        </div>
-      {% endif %}
     </div>
+
+    {% if request.path == "/" %}
+      <div class="blue-div">
+        <div class="container">
+          {% include 'productgroups.html' %}
+          <div id="footer-line"></div>
+        </div>
+      </div>
+    {% endif %}
 
     <div id="footer-wrapper">
       <div id="footer">

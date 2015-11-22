@@ -5,7 +5,8 @@ h1 {
  * .container
  *   width: 1400px */
 .blue-div {
-  background-color: #00326a; }
+  background-color: #00326a;
+  width: 100%; }
 
 /*.btn-primary
  * background-color: $lightblue */
