@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Tooth, Indicator, SawBlade
+
+admin.site.register(Tooth)
+admin.site.register(Indicator)
+admin.site.register(SawBlade)
