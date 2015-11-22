@@ -1,0 +1,48 @@
+{% load thumbnail %}
+{% load staticfiles %}
+{% load news_extras %}
+
+
+{% for post in posts %}
+  {% if forloop.counter|mod:3 or forloop.first %}
+    <div class="row news-row">
+  {% endif %}
+  <div class="col-md-4">
+    <div id="news-header">
+      <div id="news-image">
+        <a href="{% url 'news:detail' slug=post.slug %}">
+          {% if post.image %}
+            <img src="{{ post.image|thumbnail_url:'news_front' }}" class="img-responsive" alt="{{ post.title }}" />
+          {% else %}
+            <img src="{% static 'img/news/news_placeholder_360.jpg' %}" class="img-responsive" alt="{{ post.title }}" />
+          {% endif %}
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div id="cube">
+            <div id="cube-content">
+              <strong>{{ post.created|date:"N" }}</strong><br>
+              {{ post.created|date:"Y" }}
+            </div>
+          </div>
+        </div>
+        <div id="news-title" class="col-md-9">
+          <h4>
+            <a href="{% url 'news:detail' slug=post.slug %}">
+              {{ post.title }}
+            </a>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div id="news-content">
+      <p>
+        {{ post.content|safe }}
+      </p>
+    </div>
+  </div>
+  {% if forloop.counter|mod:3 and not forloop.first %}
+    </div>
+  {% endif %}
+{% endfor %}

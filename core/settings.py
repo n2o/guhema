@@ -43,7 +43,6 @@ INSTALLED_APPS = (
     'easy_thumbnails',
 
     # Own apps
-    'polls',
     'news',
 )
 
