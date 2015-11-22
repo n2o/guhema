@@ -14,5 +14,8 @@ urlpatterns = [
 
     # Own Apps
     url(r'^news/', include('news.urls', namespace='news')),
+
+    # URLs
+    url(r'^produkte/', views.products, name='products'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

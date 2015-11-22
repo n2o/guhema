@@ -11,3 +11,7 @@ def index(request):
     except Entry.DoesNotExist:
         raise Http404("Keine Beiträge vorhanden.")
     return render(request, 'index.html', {'posts': posts})
+
+
+def products(request):
+    return render(request, 'products.html')

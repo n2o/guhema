@@ -1,15 +1,9 @@
-body {
-  font-size: 12pt; }
-
-a {
-  font-size: 12pt; }
-
 h1 {
   padding-bottom: 0.5em; }
 
-@media (min-width: 1600px) {
-  .container {
-    width: 1400px; } }
+/*@media (min-width: 1600px)
+ * .container
+ *   width: 1400px */
 .blue-div {
   background-color: #00326a; }
 
@@ -48,13 +42,10 @@ h1 {
     margin-top: 0; }
 
 #footer, .product-groups-wrapper {
-  max-width: 100%;
-  font-size: 12pt; }
+  max-width: 100%; }
   #footer h3, .product-groups-wrapper h3 {
     margin: 0;
     color: white; }
-  #footer a, .product-groups-wrapper a {
-    font-size: 10pt; }
 
 #footer-line {
   height: 1px;
@@ -71,6 +62,9 @@ h1 {
 
 .img-product-groups {
   width: 80px; }
+
+.products-index {
+  padding-bottom: 1em; }
 
 html {
   position: relative;
