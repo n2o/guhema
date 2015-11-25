@@ -1,0 +1,15 @@
+{% extends 'layout_productgroups.html' %}
+
+{% block heading %}
+
+{% endblock %}
+
+{% block content %}
+  {% for blade in blades %}
+    {% for indicator in blade.indicator_array %}
+      {{ indicator.0 }}
+    {% endfor %}
+
+  {% endfor %}
+
+{% endblock %}
