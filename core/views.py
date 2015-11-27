@@ -6,7 +6,7 @@ from news.models import Entry
 
 def index(request):
     try:
-        posts = Entry.objects.all()[:3]
+        posts = Entry.objects.all().order_by('-created')[:3]
     except Entry.DoesNotExist:
         raise Http404("Keine Beiträge vorhanden.")
     return render(request, 'index.html', {'posts': posts})

@@ -1,15 +1,104 @@
 {% extends 'layout_productgroups.html' %}
 
-{% block heading %}
+{% load products_tags %}
 
+{% block heading %}
 {% endblock %}
 
 {% block content %}
-  {% for blade in blades %}
-    {% for indicator in blade.indicator_array %}
-      {{ indicator.0 }}
-    {% endfor %}
 
-  {% endfor %}
+  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
+    <thead>
+      <th>Abmessungen<br>in mm: B x S x L</th>
+      <th>Kennziffer</th>
+      <th>
+        2<br>
+        <span class="text-orange">...C</span>
+      </th>
+      <th>
+        3<br>
+        <span class="text-orange">...E</span>
+      </th>
+      <th>
+        4<br>
+        <span class="text-orange">...G</span>
+      </th>
+      <th>
+        6<br>
+        <span class="text-orange">...H</span>
+      </th>
+      <th>
+        8<br>
+        <span class="text-orange">...I</span>
+      </th>
+      <th>
+        10<br>
+        <span class="text-orange">...J</span>
+      </th>
+      <th>
+        14<br>
+        <span class="text-orange">...L</span>
+      </th>
+      <th>
+        18<br>
+        <span class="text-orange">...N</span>
+      </th>
+      <th>
+        22<br>
+        <span class="text-orange">...O</span>
+      </th>
+      <th>
+        2/3<br>
+        <span class="text-orange">...T</span>
+      </th>
+      <th>
+        3/4<br>
+        <span class="text-orange">...U</span>
+      </th>
+      <th>
+        4/6<br>
+        <span class="text-orange">...V</span>
+      </th>
+      <th>
+        6/8<br>
+        <span class="text-orange">...W</span>
+      </th>
+      <th>
+        8/10<br>
+        <span class="text-orange">...Ü</span>
+      </th>
+      <th>&Oslash;<br>in mm</th>
+    </thead>
+    <tbody>
+      {% for indicator in indicators %}
+        <tr>
+          <td class="table-light-grey-column">
+            {{ indicator.width }} x {{ indicator.strength }} x {{ indicator.length }}
+          </td>
+          <td class="table-light-grey-column text-orange">
+            ...{{ indicator.value }}...
+          </td>
+
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.C|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.E|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.G|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.H|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.I|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.J|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.L|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.N|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.O|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.T|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.U|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.V|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.W|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.UE|check_zpz:indicator.hss|safe }}</td>
+
+          <td class="table-light-grey-column">{{ indicator.diameter }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
 
 {% endblock %}

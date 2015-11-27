@@ -1,10 +1,12 @@
 // Color definitions
-$yellow: #f5a714
+$orange: #f16e34
 $blue: #00326a
 $lightblue: #014FA7
 $containerWidth: 100%
 $productHeight: 80px
 $footerHeight: 80px
+$lightgrey: #F9F9F9
+$darkgrey: #F0F0F0
 
 // General style definitions
 //body
@@ -16,14 +18,20 @@ $footerHeight: 80px
 h1
   padding-bottom: 0.5em
 
-/*@media (min-width: 1600px)
-  .container
-    width: 1400px*/
+.text-orange
+  color: $orange
+  font-weight: bold
 
 .blue-div
   background-color: $blue
   width: 100%
-  
+
+
+.table-dark-grey-column
+  background-color: $darkgrey
+.table-light-grey-column
+  background-color: $lightgrey
+
 
 // Configure Buttons
 /*.btn-primary
@@ -163,3 +171,19 @@ html
 
 .news-row
   padding-bottom: 2em
+
+
+// Products: SawBlade
+.indicator-dot
+  font-size: 75%
+
+#products-sawblade-table
+  text-align: center
+  thead th
+    background-color: $darkgrey
+    text-align: center
+
+.table-striped-column > tbody > tr td.products-table-zpz:nth-of-type(even)
+  background-color: $darkgrey
+.table-striped-column > tbody > tr td.products-table-zpz:nth-of-type(odd)
+  background-color: $lightgrey

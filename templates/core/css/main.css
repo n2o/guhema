@@ -1,12 +1,19 @@
 h1 {
   padding-bottom: 0.5em; }
 
-/*@media (min-width: 1600px)
- * .container
- *   width: 1400px */
+.text-orange {
+  color: #f16e34;
+  font-weight: bold; }
+
 .blue-div {
   background-color: #00326a;
   width: 100%; }
+
+.table-dark-grey-column {
+  background-color: #F0F0F0; }
+
+.table-light-grey-column {
+  background-color: #F9F9F9; }
 
 /*.btn-primary
  * background-color: $lightblue */
@@ -123,5 +130,20 @@ html {
 
 .news-row {
   padding-bottom: 2em; }
+
+.indicator-dot {
+  font-size: 75%; }
+
+#products-sawblade-table {
+  text-align: center; }
+  #products-sawblade-table thead th {
+    background-color: #F0F0F0;
+    text-align: center; }
+
+.table-striped-column > tbody > tr td.products-table-zpz:nth-of-type(even) {
+  background-color: #F0F0F0; }
+
+.table-striped-column > tbody > tr td.products-table-zpz:nth-of-type(odd) {
+  background-color: #F9F9F9; }
 
 /*# sourceMappingURL=main.css.map */
