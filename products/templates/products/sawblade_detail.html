@@ -9,92 +9,111 @@
 
   <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
     <thead>
-      <th>Abmessungen<br>in mm: B x S x L</th>
-      <th>Kennziffer</th>
-      <th>
-        2<br>
-        <span class="text-orange">...C</span>
-      </th>
-      <th>
-        3<br>
-        <span class="text-orange">...E</span>
-      </th>
-      <th>
-        4<br>
-        <span class="text-orange">...G</span>
-      </th>
-      <th>
-        6<br>
-        <span class="text-orange">...H</span>
-      </th>
-      <th>
-        8<br>
-        <span class="text-orange">...I</span>
-      </th>
-      <th>
-        10<br>
-        <span class="text-orange">...J</span>
-      </th>
-      <th>
-        14<br>
-        <span class="text-orange">...L</span>
-      </th>
-      <th>
-        18<br>
-        <span class="text-orange">...N</span>
-      </th>
-      <th>
-        22<br>
-        <span class="text-orange">...O</span>
-      </th>
-      <th>
-        2/3<br>
-        <span class="text-orange">...T</span>
-      </th>
-      <th>
-        3/4<br>
-        <span class="text-orange">...U</span>
-      </th>
-      <th>
-        4/6<br>
-        <span class="text-orange">...V</span>
-      </th>
-      <th>
-        6/8<br>
-        <span class="text-orange">...W</span>
-      </th>
-      <th>
-        8/10<br>
-        <span class="text-orange">...Ü</span>
-      </th>
-      <th>&Oslash;<br>in mm</th>
+      <tr>
+        <th colspan="3" class="table-no-border-color"></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th colspan="2" class="table-white-border-right table-no-bot-border">Abmessungen</th>
+        <th class="table-white-border-right table-no-bot-border">Kennziffer</th>
+        <th class="table-no-bot-border">2</th>
+        <th class="table-no-bot-border">3</th>
+        <th class="table-no-bot-border">4</th>
+        <th class="table-no-bot-border">6</th>
+        <th class="table-no-bot-border">8</th>
+        <th class="table-no-bot-border">10</th>
+        <th class="table-no-bot-border">14</th>
+        <th class="table-no-bot-border">18</th>
+        <th class="table-black-border-right table-no-bot-border">
+          22
+        </th>
+        <th class="table-no-bot-border">2/3</th>
+        <th class="table-no-bot-border">3/4</th>
+        <th class="table-no-bot-border">4/6</th>
+        <th class="table-no-bot-border">6/8</th>
+        <th class="table-white-border-right table-no-bot-border">
+          8/10
+        </th>
+        <th class="table-no-bot-border">&Oslash;</th>
+      </tr>
+      <tr>
+        <th class="table-no-top-border">in mm: B x S</th>
+        <th class="table-white-border-right table-no-top-border">L</th>
+        <th class="table-white-border-right table-no-top-border"></th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...C</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...E</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...G</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...H</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...I</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...J</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...L</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...N</span>
+        </th>
+        <th class="table-black-border-right table-no-top-border">
+          <span class="text-orange">...O</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...T</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...U</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...V</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...W</span>
+        </th>
+        <th class="table-white-border-right table-no-top-border">
+          <span class="text-orange">...Ü</span>
+        </th>
+        <th class="table-no-top-border">in mm</th>
+      </tr>
     </thead>
     <tbody>
       {% for indicator in indicators %}
         <tr>
-          <td class="table-light-grey-column">
-            {{ indicator.width }} x {{ indicator.strength }} x {{ indicator.length }}
+          <td>
+            {{ indicator.width }} x {{ indicator.strength }}
           </td>
-          <td class="table-light-grey-column text-orange">
+          <td class="table-white-border-right">
+            {{ indicator.length }}
+          </td>
+          <td class="text-orange table-white-border-right">
             ...{{ indicator.value }}...
           </td>
 
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.C|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.E|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.G|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.H|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.I|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.J|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.L|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.N|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.O|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.T|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.U|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.V|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.W|check_zpz:indicator.hss|safe }}</td>
-          <td width="5%" class="indicator-dot products-table-zpz">{{ indicator.UE|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.C|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.E|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.G|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.H|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.I|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.J|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.L|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.N|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot table-black-border-right">{{ indicator.O|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.T|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.U|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.V|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.W|check_zpz:indicator.hss|safe }}</td>
+          <td width="5%" class="indicator-dot table-white-border-right">{{ indicator.UE|check_zpz:indicator.hss|safe }}</td>
 
-          <td class="table-light-grey-column">{{ indicator.diameter }}</td>
+          <td>{{ indicator.diameter }}</td>
         </tr>
       {% endfor %}
     </tbody>

@@ -15,6 +15,15 @@ h1 {
 .table-light-grey-column {
   background-color: #F9F9F9; }
 
+.table-orange-light {
+  background-color: #fccf8f; }
+
+.table-orange-medium {
+  background-color: #faaf49; }
+
+.table-orange-light {
+  background-color: #fccf8f; }
+
 /*.btn-primary
  * background-color: $lightblue */
 .navbar .container {
@@ -140,10 +149,26 @@ html {
     background-color: #F0F0F0;
     text-align: center; }
 
-.table-striped-column > tbody > tr td.products-table-zpz:nth-of-type(even) {
+.table-striped-column > tbody > tr td:nth-of-type(even) {
   background-color: #F0F0F0; }
 
-.table-striped-column > tbody > tr td.products-table-zpz:nth-of-type(odd) {
+.table-striped-column > tbody > tr td:nth-of-type(odd) {
   background-color: #F9F9F9; }
+
+.table-black-border-right {
+  border-right: thin solid black; }
+
+.table-white-border-right {
+  border-right: thick solid white; }
+
+.table-no-bot-border {
+  border-bottom: 0 !important; }
+
+.table-no-top-border {
+  border-top: 0 !important; }
+
+.table-no-border-color {
+  border: 0 !important;
+  background-color: transparent !important; }
 
 /*# sourceMappingURL=main.css.map */

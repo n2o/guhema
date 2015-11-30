@@ -1,5 +1,8 @@
 // Color definitions
 $orange: #f16e34
+$orange-light: #fccf8f
+$orange-medium: #faaf49
+$orange-dark: #f79210
 $blue: #00326a
 $lightblue: #014FA7
 $containerWidth: 100%
@@ -29,9 +32,18 @@ h1
 
 .table-dark-grey-column
   background-color: $darkgrey
+
 .table-light-grey-column
   background-color: $lightgrey
 
+.table-orange-light
+  background-color: $orange-light
+
+.table-orange-medium
+  background-color: $orange-medium
+
+.table-orange-light
+  background-color: $orange-light
 
 // Configure Buttons
 /*.btn-primary
@@ -183,7 +195,23 @@ html
     background-color: $darkgrey
     text-align: center
 
-.table-striped-column > tbody > tr td.products-table-zpz:nth-of-type(even)
+.table-striped-column > tbody > tr td:nth-of-type(even)
   background-color: $darkgrey
-.table-striped-column > tbody > tr td.products-table-zpz:nth-of-type(odd)
+.table-striped-column > tbody > tr td:nth-of-type(odd)
   background-color: $lightgrey
+
+.table-black-border-right
+  border-right: thin solid black
+
+.table-white-border-right
+  border-right: thick solid white
+
+.table-no-bot-border
+  border-bottom: 0 !important
+
+.table-no-top-border
+  border-top: 0 !important
+
+.table-no-border-color
+  border: 0 !important
+  background-color: transparent !important
