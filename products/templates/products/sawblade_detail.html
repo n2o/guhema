@@ -6,6 +6,11 @@
 {% endblock %}
 
 {% block content %}
+  <p class="bg-light-orange">
+    Der schnelle Weg zu unserer Artikel-Nr.<br>
+    <span class="text-orange">Qualität</span> + <span class="text-orange">Kennziffer (Abmessung)</span> + <span class="text-orange">ZpZ</span><br>
+    z.B.: <span class="text-orange">BKD</span> + <span class="text-orange">2201</span> + <span class="text-orange">L</span> = <span class="text-orange">BKD2201L</span>
+  </p>
 
   <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
     <thead>
@@ -94,7 +99,7 @@
           <td class="table-white-border-right">
             {{ indicator.length }}
           </td>
-          <td class="text-orange table-white-border-right">
+          <td class="text-orange-bold table-white-border-right">
             ...{{ indicator.value }}...
           </td>
 
