@@ -2,8 +2,14 @@ h1 {
   padding-bottom: 0.5em; }
 
 .text-orange {
+  color: #f16e34; }
+
+.text-orange-bold {
   color: #f16e34;
   font-weight: bold; }
+
+.bg-light-orange {
+  background-color: #00326a; }
 
 .blue-div {
   background-color: #00326a;
