@@ -11,6 +11,9 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^account/', include('login.urls', namespace='login')),
 
+    # 3rd party
+    url(r'^file/', include('filer.urls')),
+
     # Own Apps
     url(r'^news/', include('news.urls', namespace='news')),
     url(r'^produkte/', include('products.urls', namespace='products')),

@@ -25,8 +25,6 @@ ALLOWED_HOSTS = []
 
 SITE_ID = 1
 
-# Application definition
-
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,12 +38,15 @@ INSTALLED_APPS = (
     # 3rd party
     'login',
     'autoslug',
+    'filer',
     'easy_thumbnails',
 
     # Own apps
     'news',
     'products',
 )
+# Application definition
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -135,6 +136,17 @@ THUMBNAIL_ALIASES = {
     },
 }
 
+THUMBNAIL_PROCESSORS = (
+    'easy_thumbnails.processors.colorspace',
+    'easy_thumbnails.processors.autocrop',
+    #'easy_thumbnails.processors.scale_and_crop',
+    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    'easy_thumbnails.processors.filters',
+)
+
+
+# Filer config
+FILER_CANONICAL_URL = 's/'
 
 # Needed for login
 import django.contrib.auth

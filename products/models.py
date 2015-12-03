@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from autoslug import AutoSlugField
 from django.db import models
+from filer.fields.image import FilerImageField
 
 
 class Indicator(models.Model):
@@ -37,8 +38,10 @@ class Indicator(models.Model):
 class SawBlade(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
     description = models.CharField("Beschreibung", max_length=255, blank=False)
+    type = models.CharField("Aufnahme", max_length=255, blank=True, null=True)
     quality = models.CharField("Qualität", max_length=255, blank=False)
     slug = AutoSlugField(null=True, populate_from='name')
+    image = FilerImageField(related_name="Abbildung", null=True, blank=True)
     indicators = models.ManyToManyField(Indicator, verbose_name="Kennziffern")
 
     def __str__(self):

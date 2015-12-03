@@ -8,8 +8,14 @@ h1 {
   color: #f16e34;
   font-weight: bold; }
 
-.bg-light-orange {
-  background-color: #00326a; }
+.bg-orange-light {
+  background-color: #fccf8f !important; }
+
+.bg-orange-medium {
+  background-color: #faaf49 !important; }
+
+.bg-orange-dark {
+  background-color: #f79210 !important; }
 
 .blue-div {
   background-color: #00326a;
@@ -29,6 +35,9 @@ h1 {
 
 .table-orange-light {
   background-color: #fccf8f; }
+
+.table-small-height {
+  padding: 0 !important; }
 
 /*.btn-primary
  * background-color: $lightblue */
@@ -166,6 +175,11 @@ html {
 
 .table-white-border-right {
   border-right: thick solid white; }
+
+.table-only-white-border-right {
+  border: 0 !important;
+  background-color: transparent !important;
+  border-right: thick solid white !important; }
 
 .table-no-bot-border {
   border-bottom: 0 !important; }
