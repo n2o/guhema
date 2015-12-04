@@ -1,6 +1,7 @@
 {% extends 'layout_productgroups.html' %}
 
 {% load products_tags %}
+{% load thumbnail %}
 
 {% block heading %}
 {% endblock %}
@@ -28,11 +29,24 @@
       </p>
     </div>
   </div>
-
-  {% if blade.image %}
-    <img src="{{ blade.image.url }}" alt="">  
-  {% endif %} 
   
+  <div class="row">
+    <div class="col-md-6">
+      {% if blade.image %}
+        <a href="{{ blade.image.url }}">
+          <img src="{{ blade.image|thumbnail_url:'products_clamping' }}" alt="{{ blade.name }}-product">
+        </a>
+      {% endif %}
+    </div>
+    <div class="col-md-6 text-right">
+      {% if blade.clamping %}
+        <a href="{{ blade.clamping.url }}">
+          <img src="{{ blade.clamping|thumbnail_url:'products_clamping' }}" alt="{{ blade.name }}-clamping">
+        </a>
+      {% endif %}
+    </div>
+  </div>
+
   <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
     <thead>
       <tr>

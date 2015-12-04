@@ -12,7 +12,6 @@ urlpatterns = [
     url(r'^account/', include('login.urls', namespace='login')),
 
     # 3rd party
-    url(r'^file/', include('filer.urls')),
 
     # Own Apps
     url(r'^news/', include('news.urls', namespace='news')),

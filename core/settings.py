@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     # 3rd party
     'login',
     'autoslug',
-    'filer',
     'easy_thumbnails',
 
     # Own apps
@@ -133,16 +132,9 @@ THUMBNAIL_ALIASES = {
         'news_front': {'size': (360, 165), 'crop': "smart"},
         'news_detail': {'size': (452, 254), 'crop': "smart"},
         'products_300': {'size': (300, 200), 'crop': "smart"},
+        'products_clamping': {'size': (250, 80), 'crop': "smart"},
     },
 }
-
-THUMBNAIL_PROCESSORS = (
-    'easy_thumbnails.processors.colorspace',
-    'easy_thumbnails.processors.autocrop',
-    #'easy_thumbnails.processors.scale_and_crop',
-    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
-    'easy_thumbnails.processors.filters',
-)
 
 
 # Filer config
