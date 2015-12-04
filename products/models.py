@@ -36,6 +36,7 @@ class Indicator(models.Model):
 class Clamping(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
     slug = AutoSlugField(null=True, populate_from='name')
+    image = models.ImageField("Bild", null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -48,14 +49,11 @@ class Clamping(models.Model):
 class SawBlade(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
     description = models.CharField("Beschreibung", max_length=255, blank=True)
-    #type = models.CharField("Aufnahme", max_length=255, blank=True, null=True)
-    type = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
+    type = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=False)
     quality = models.CharField("Qualität", max_length=255, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
     image = models.ImageField("Produktabbildung", null=True, blank=True)
-    clamping_img = models.ImageField("Aufnahme", null=True, blank=True)
-    indicators = models.ManyToManyField(Indicator, verbose_name="Kennziffern")
-    clamping = AutoSlugField(null=True, populate_from='type')
+    indicators = models.ManyToManyField(Indicator, verbose_name="Kennziffern", blank=True)
 
     def __str__(self):
         return self.name

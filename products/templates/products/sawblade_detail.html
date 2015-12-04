@@ -39,9 +39,9 @@
       {% endif %}
     </div>
     <div class="col-md-6 text-right">
-      {% if blade.clamping_img %}
-        <a href="{{ blade.clamping_img.url }}">
-          <img src="{{ blade.clamping_img|thumbnail_url:'products_clamping' }}" alt="{{ blade.name }}-clamping">
+      {% if clamping.image %}
+        <a href="{{ clamping.image.url }}">
+          <img src="{{ clamping.image|thumbnail_url:'products_clamping' }}" alt="{{ blade.name }}-clamping">
         </a>
       {% endif %}
     </div>

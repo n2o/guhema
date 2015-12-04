@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Indicator, SawBlade
+from .models import Indicator, SawBlade, Clamping
 
 
 class SawBladeAdmin(admin.ModelAdmin):
@@ -17,3 +17,4 @@ class IndicatorAdmin(admin.ModelAdmin):
 
 admin.site.register(Indicator, IndicatorAdmin)
 admin.site.register(SawBlade, SawBladeAdmin)
+admin.site.register(Clamping)
