@@ -10,8 +10,8 @@ def sawblades(request):
     pass
 
 
-def sawblade(request, slug):
-    blade = get_object_or_404(SawBlade, slug=slug)
+def sawblade(request, clamping, slug):
+    blade = get_object_or_404(SawBlade, clamping=clamping, slug=slug)
     indicators = blade.indicators.order_by('width')
     return render(request, 'products/sawblade_detail.html', {'blade': blade,
                                                              'indicators': indicators})

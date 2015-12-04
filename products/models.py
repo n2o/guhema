@@ -33,15 +33,29 @@ class Indicator(models.Model):
         ordering = ('value',)
 
 
+class Clamping(models.Model):
+    name = models.CharField("Name", max_length=255, blank=False)
+    slug = AutoSlugField(null=True, populate_from='name')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Aufnahme'
+        verbose_name_plural = 'Aufnahmen'
+
+
 class SawBlade(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
-    description = models.CharField("Beschreibung", max_length=255, blank=False)
-    type = models.CharField("Aufnahme", max_length=255, blank=True, null=True)
-    quality = models.CharField("Qualität", max_length=255, blank=False)
+    description = models.CharField("Beschreibung", max_length=255, blank=True)
+    #type = models.CharField("Aufnahme", max_length=255, blank=True, null=True)
+    type = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
+    quality = models.CharField("Qualität", max_length=255, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
     image = models.ImageField("Produktabbildung", null=True, blank=True)
-    clamping = models.ImageField("Aufnahme", null=True, blank=True)
+    clamping_img = models.ImageField("Aufnahme", null=True, blank=True)
     indicators = models.ManyToManyField(Indicator, verbose_name="Kennziffern")
+    clamping = AutoSlugField(null=True, populate_from='type')
 
     def __str__(self):
         return self.name
