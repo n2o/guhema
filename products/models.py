@@ -6,7 +6,6 @@ from filer.fields.image import FilerImageField
 
 class Indicator(models.Model):
     value = models.CharField("Kennziffer", max_length=1024, blank=False)
-    hss = models.BooleanField("HSS?", blank=True, default=False)
     width = models.IntegerField("Breite", blank=True, default=0)
     strength = models.FloatField("Stärke", blank=True, default=0)
     length = models.IntegerField("Länge", blank=True, default=0)

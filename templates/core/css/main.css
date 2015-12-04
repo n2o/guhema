@@ -8,6 +8,9 @@ h1 {
   color: #f16e34;
   font-weight: bold; }
 
+.bg-orange-lighter {
+  background-color: #feedd3 !important; }
+
 .bg-orange-light {
   background-color: #fccf8f !important; }
 

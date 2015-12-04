@@ -4,10 +4,8 @@ register = template.Library()
 
 
 @register.filter(is_safe=True)
-def check_zpz(val, hss):
-    if val and hss:
-        return "HSS <i class='fa fa-circle'></i>"
-    elif val:
+def check_zpz(val):
+    if val:
         return "<i class='fa fa-circle'></i>"
     else:
         return ""

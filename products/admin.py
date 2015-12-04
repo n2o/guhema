@@ -2,6 +2,11 @@ from django.contrib import admin
 from .models import Indicator, SawBlade
 
 
+class SawBladeAdmin(admin.ModelAdmin):
+    list_display = ('name', 'description', 'type')
+    search_fields = ['name', 'description', 'type']
+
+
 class IndicatorAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Allgemein', {'fields': ['value', 'hss']}),
@@ -11,4 +16,4 @@ class IndicatorAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Indicator, IndicatorAdmin)
-admin.site.register(SawBlade)
+admin.site.register(SawBlade, SawBladeAdmin)
