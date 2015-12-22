@@ -1,3 +1,12 @@
+a {
+  color: #f16e34; }
+
+a:hover {
+  color: #f16e34; }
+
+.nav a {
+  color: #00326a; }
+
 h1 {
   padding-bottom: 0.5em; }
 
@@ -193,5 +202,11 @@ html {
 .table-no-border-color {
   border: 0 !important;
   background-color: transparent !important; }
+
+.products-list-item {
+  padding-bottom: 0.3em; }
+
+.padding-bottom {
+  padding-bottom: 1em; }
 
 /*# sourceMappingURL=main.css.map */
