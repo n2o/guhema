@@ -212,4 +212,9 @@ html {
 .products-list-item {
   padding-bottom: 0.3em; }
 
+.products-index-h3 {
+  margin-top: 0; }
+  .products-index-h3 a {
+    color: #222; }
+
 /*# sourceMappingURL=main.css.map */
