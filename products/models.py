@@ -8,7 +8,7 @@ class Indicator(models.Model):
     width = models.IntegerField("Breite", blank=True, default=0)
     strength = models.FloatField("Stärke", blank=True, default=0)
     length = models.IntegerField("Länge", blank=True, default=0)
-    diameter = models.FloatField("Durchmesser", blank=True, default=0.0)
+    diameter = models.CharField("Durchmesser", max_length=255, blank=True, default="")
     C = models.BooleanField("C", blank=True, default=False)
     E = models.BooleanField("E", blank=True, default=False)
     G = models.BooleanField("G", blank=True, default=False)
