@@ -20,12 +20,8 @@
         <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">Kennziffer (Abmessung)</span> + <span class="text-orange-bold">ZpZ</span><br>
         z.B.:
         <span class="text-orange-bold">
-          {% if blade.quality %}
-            {{ blade.quality }}
-          {% else %}
-            BKD
-          {% endif %}
-        </span> + <span class="text-orange-bold">2201</span> + <span class="text-orange-bold">L</span> = <span class="text-orange-bold">BKD2201L</span>
+          {{ blade.quality }}
+        </span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">L</span> = <span class="text-orange-bold">{{ blade.quality }}{{ indicators.0.value }}L</span>
       </p>
     </div>
   </div>
