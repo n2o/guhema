@@ -17,6 +17,9 @@ h1 {
   color: #f16e34;
   font-weight: bold; }
 
+.text-normal {
+  color: #222; }
+
 .bg-orange-lighter {
   background-color: #feedd3 !important; }
 
@@ -32,6 +35,9 @@ h1 {
 .blue-div {
   background-color: #00326a;
   width: 100%; }
+
+.padding-bottom {
+  padding-bottom: 1em; }
 
 .table-dark-grey-column {
   background-color: #F0F0F0; }
@@ -205,8 +211,5 @@ html {
 
 .products-list-item {
   padding-bottom: 0.3em; }
-
-.padding-bottom {
-  padding-bottom: 1em; }
 
 /*# sourceMappingURL=main.css.map */

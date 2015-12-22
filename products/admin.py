@@ -9,7 +9,7 @@ class SawBladeAdmin(admin.ModelAdmin):
 
 class IndicatorAdmin(admin.ModelAdmin):
     fieldsets = [
-        ('Allgemein', {'fields': ['value', 'hss']}),
+        ('Allgemein', {'fields': ['value']}),
         ('Abmessungen', {'fields': ['width', 'strength', 'length', 'diameter']}),
         ('ZpZ', {'fields': [('C', 'E', 'G', 'H', 'I', 'J', 'L', 'N', 'O', 'T', 'U', 'V', 'W', 'UE')]}),
     ]

@@ -43,7 +43,31 @@
       <div class="products-list-item">
         <h4>
           <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-          {{ blade }}<br>
+          <a class="text-normal" href="{% url 'products:sawblade' clamping=blade.type.slug slug=blade.slug %}">
+            {{ blade }}
+          </a>
+          <br>
+          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+          {{ blade.description }}
+          <a href="{% url 'products:sawblade' clamping=blade.type.slug slug=blade.slug %}">{{ blade.quality }} Details</a>
+        </h4>
+      </div>
+    {% endif %}
+    {% if blade.type.name == "Kasto" %}
+      {% ifchanged %}
+        <div style="float:right;">
+          <a href="{{ blade.type.image.url }}">
+            <img src="{{ blade.type.image|thumbnail_url:'products_clamping' }}" alt="clamping">
+          </a>
+        </div>
+      {% endifchanged %}
+      <div class="products-list-item">
+        <h4>
+          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          <a class="text-normal" href="{% url 'products:sawblade' clamping=blade.type.slug slug=blade.slug %}">
+            {{ blade }}
+          </a>
+          <br>
           <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
           {{ blade.description }}
           <a href="{% url 'products:sawblade' clamping=blade.type.slug slug=blade.slug %}">{{ blade.quality }} Details</a>
