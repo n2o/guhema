@@ -6,8 +6,12 @@ def index(request, page=1, category="Allgemein"):
     return render(request, 'products/index.html')
 
 
-def sawblades(request):
-    pass
+def sawblades(request, title=""):
+    blades = None
+    if title == "Maschinensägeblätter":
+        blades = get_list_or_404(SawBlade.objects.order_by('type'))
+    return render(request, 'products/sawblade_overview.html', {'title': title,
+                                                               'blades': blades})
 
 
 def sawblade(request, clamping, slug):

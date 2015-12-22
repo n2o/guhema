@@ -1,0 +1,56 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block heading %}
+  <h1>
+  {% if title %}
+    {{ title }}
+  {% else %}
+    Produktübersicht
+  {% endif %}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <div class="row products-index">
+    <div class="col-md-3">
+      <img src="{% static 'img/produktbilder/maschinensaege.jpg' %}" class="img-responsive"/>
+    </div>
+    <div class="col-md-offset-1 col-md-7">
+      <p>
+        Wir geben Ihnen die Garantie, dass Sie mit einem Sägeblatt, das den Namen ­GUHEMA
+        trägt, ein Spitzenprodukt der Zerspanungstechnologie erwerben. Der adäquate
+        Nutzen für Ihren Produktionsablauf und die hohe Lebensdauer von Sägeblatt und
+        Maschine wird auch im permanenten, harten Dauereinsatz gewährleistet.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <h3 class="padding-bottom">Übersicht</h3>
+  {% for blade in blades %}
+    {% if blade.type.name == "Standard" %}
+      {% ifchanged %}
+        <div style="float:right;">
+          <a href="{{ blade.type.image.url }}">
+            <img src="{{ blade.type.image|thumbnail_url:'products_clamping' }}" alt="clamping">
+          </a>
+        </div>
+      {% endifchanged %}
+      <div class="products-list-item">
+        <h4>
+          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          {{ blade }}<br>
+          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+          {{ blade.description }}
+          <a href="{% url 'products:sawblade' clamping=blade.type.slug slug=blade.slug %}">{{ blade.quality }} Details</a>
+        </h4>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+
+{% endblock %}

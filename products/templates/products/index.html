@@ -10,15 +10,22 @@
 {% block content %}
   <div class="row products-index">
     <div class="col-md-3">
-      <img src="{% static 'img/produktbilder/maschinensaege.jpg' %}" class="img-responsive"/>
+      <a href="{% url 'products:sawblades' %}">
+        <img src="{% static 'img/produktbilder/maschinensaege.jpg' %}" class="img-responsive"/>
+      </a>
     </div>
     <div class="col-md-offset-1 col-md-7">
-      <h3>Maschinensägeblätter</h3>
+      <h3><a href="{% url 'products:sawblades' %}">Maschinensägeblätter</a></h3>
       <p>
         Wir geben Ihnen die Garantie, dass Sie mit einem Sägeblatt, das den Namen ­GUHEMA
         trägt, ein Spitzenprodukt der Zerspanungstechnologie erwerben. Der adäquate
         Nutzen für Ihren Produktionsablauf und die hohe Lebensdauer von Sägeblatt und
         Maschine wird auch im permanenten, harten Dauereinsatz gewährleistet.
+      </p>
+      <p>
+        <a href="{% url 'products:sawblades' %}">
+          Zu den Maschinensägeblättern
+        </a>
       </p>
     </div>
   </div>
