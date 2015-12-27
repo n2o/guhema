@@ -3,26 +3,30 @@ from .models import SawBlade, ProductGroup
 
 
 def index(request):
-    productgroup = get_list_or_404(ProductGroup)
-    return render(request, 'products/index.html', {'groups': productgroup})
+    groups = get_list_or_404(ProductGroup)
+    return render(request, 'products/index.html', {'groups': groups})
 
 
 def list(request, slug):
-    blades = productgroup = None
-    layout = "sawblade_overview.html"
-    if slug == "maschinensageblatter":
-        productgroup = ProductGroup.objects.get(slug=slug)
-        blades = SawBlade.objects.all()
+    layout = 'sawblade_overview.html'
+    group = ProductGroup.objects.get(slug=slug)
+    blades = SawBlade.objects.filter(group=group)
+    if slug == 'maschinensageblatter':
         layout = 'sawblade_overview.html'
-    elif slug == "metallstichsageblatter":
-        pass
+    elif slug == 'metallstichsageblatter':
+        layout = 'compass_overview.html'
     return render(request, 'products/'+layout, {'blades': blades,
-                                                'group': productgroup})
+                                                'group': group})
 
 
 def details(request, slug, type):
+    layout = 'sawblade_details.html'
     blade = SawBlade.objects.get(type=type)
     indicators = blade.indicators.order_by('width')
-    return render(request, 'products/sawblade_detail.html', {'blade': blade,
-                                                             'clamping': blade.clamping,
-                                                             'indicators': indicators})
+    #if slug == 'maschinensageblatter':
+    #    layout = 'sawblade_details.html'
+    #elif slug == 'metallstichsageblatter':
+    #    layout = 'compass_details.html'
+    return render(request, 'products/'+layout, {'blade': blade,
+                                                'clamping': blade.clamping,
+                                                'indicators': indicators})

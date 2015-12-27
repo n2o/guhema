@@ -1,0 +1,44 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block heading %}
+  <h1>
+    {{ group.name }}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  {% include 'products/include_productheader.html' with group=group %}
+
+  <hr>
+
+  <h3 class="padding-bottom">Übersicht</h3>
+  <div class="row">
+    <div class="col-md-6">
+      {% for blade in blades %}
+        <div class="padding-bottom">
+          <a href="{{ blade.image.url }}">
+            <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="clamping">
+          </a>
+        </div>
+
+        <div class="products-list-item">
+          <h4>
+            <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+              <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                {{ blade }}
+              </a>
+            <br>
+            <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+            {{ blade.description }}
+            <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+              {{ blade.type }} Details
+            </a>
+          </h4>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
