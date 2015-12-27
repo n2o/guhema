@@ -61,3 +61,9 @@ class SawBlade(models.Model):
     class Meta:
         verbose_name = 'Maschinensägeblatt'
         verbose_name_plural = 'Maschinensägeblätter'
+
+
+class CompassBlade(SawBlade):
+    class Meta:
+        verbose_name = 'Metallstichsägeblatt'
+        verbose_name_plural = 'Metallstichsägeblätter'

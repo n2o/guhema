@@ -6,12 +6,10 @@ def index(request, page=1, category="Allgemein"):
     return render(request, 'products/index.html')
 
 
-def sawblades(request, title=""):
-    blades = None
-    if title == "Maschinensägeblätter":
-        blades = get_list_or_404(SawBlade.objects.order_by('type'))
-    return render(request, 'products/sawblade_overview.html', {'title': title,
-                                                               'blades': blades})
+# Maschinensägeblätter
+def sawblades(request):
+    blades = get_list_or_404(SawBlade.objects.order_by('type'))
+    return render(request, 'products/sawblade_overview.html', {'blades': blades})
 
 
 def sawblade(request, clamping, slug):
@@ -19,5 +17,20 @@ def sawblade(request, clamping, slug):
     blade = get_object_or_404(SawBlade, slug=slug, type=clamping)
     indicators = blade.indicators.order_by('width')
     return render(request, 'products/sawblade_detail.html', {'blade': blade,
+                                                             'clamping': clamping,
+                                                             'indicators': indicators})
+
+
+# Metallstichsägeblätter
+def compasses(request):
+    blades = get_list_or_404(SawBlade.objects.order_by('type'))
+    return render(request, 'products/compass_overview.html', {'blades': blades})
+
+
+def compass(request, clamping, slug):
+    clamping = get_object_or_404(Clamping, slug=clamping)
+    blade = get_object_or_404(SawBlade, slug=slug, type=clamping)
+    indicators = blade.indicators.order_by('width')
+    return render(request, 'products/compass_detail.html', {'blade': blade,
                                                              'clamping': clamping,
                                                              'indicators': indicators})
