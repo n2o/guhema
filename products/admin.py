@@ -4,7 +4,7 @@ from .models import Indicator, SawBlade, Clamping, ProductGroup
 
 @admin.register(SawBlade)
 class SawBladeAdmin(admin.ModelAdmin):
-    list_display = ('type', 'name', 'description', 'clamping')
+    list_display = ('type', 'group', 'name', 'description', 'clamping')
     search_fields = ['type', 'name', 'description']
 
 
