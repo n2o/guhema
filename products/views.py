@@ -29,7 +29,7 @@ def compasses(request):
 
 def compass(request, clamping, slug):
     clamping = get_object_or_404(Clamping, slug=clamping)
-    blade = get_object_or_404(SawBlade, slug=slug, type=clamping)
+    blade = get_object_or_404(SawBlade, slug=slug, clamping=clamping)
     indicators = blade.indicators.order_by('width')
     return render(request, 'products/compass_detail.html', {'blade': blade,
                                                              'clamping': clamping,

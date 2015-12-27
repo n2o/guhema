@@ -50,7 +50,7 @@ class SawBlade(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
     description = models.CharField("Beschreibung", max_length=255, blank=True)
     clamping = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
-    type = models.CharField("Qualität", max_length=255, blank=True)
+    type = models.CharField("Typ", max_length=255, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
     image = models.ImageField("Produktabbildung", null=True, blank=True)
     indicators = models.ManyToManyField(Indicator, verbose_name="Kennziffern", blank=True)
