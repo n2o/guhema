@@ -8,13 +8,16 @@ def index(request):
 
 
 def list(request, slug):
-    blades = None
-    productgroup = None
+    blades = productgroup = None
+    layout = "sawblade_overview.html"
     if slug == "maschinensageblatter":
         productgroup = ProductGroup.objects.get(slug=slug)
         blades = SawBlade.objects.all()
-    return render(request, 'products/sawblade_overview.html', {'blades': blades,
-                                                               'group': productgroup})
+        layout = 'sawblade_overview.html'
+    elif slug == "metallstichsageblatter":
+        pass
+    return render(request, 'products/'+layout, {'blades': blades,
+                                                'group': productgroup})
 
 
 def details(request, slug, type):

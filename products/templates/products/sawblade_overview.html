@@ -10,16 +10,7 @@
 {% endblock %}
 
 {% block content %}
-  <div class="row products-index">
-    <div class="col-md-3">
-      <img class="img-responsive" src="{{ group.image|thumbnail_url:'products_teaserimage' }}" alt="{{ group.slug}}-image">
-    </div>
-    <div class="col-md-offset-1 col-md-7">
-      <p>
-        {{ group.description }}
-      </p>
-    </div>
-  </div>
+  {% include 'products/include_productheader.html' with group=group %}
 
   <hr>
 
