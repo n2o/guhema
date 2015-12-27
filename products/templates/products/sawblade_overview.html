@@ -5,21 +5,18 @@
 
 {% block heading %}
   <h1>
-    Maschinensägeblätter
+    {{ group.name }}
   </h1>
 {% endblock %}
 
 {% block content %}
   <div class="row products-index">
     <div class="col-md-3">
-      <img src="{% static 'img/produktbilder/maschinensaege.jpg' %}" class="img-responsive"/>
+      <img class="img-responsive" src="{{ group.image|thumbnail_url:'products_teaserimage' }}" alt="{{ group.slug}}-image">
     </div>
     <div class="col-md-offset-1 col-md-7">
       <p>
-        Wir geben Ihnen die Garantie, dass Sie mit einem Sägeblatt, das den Namen ­GUHEMA
-        trägt, ein Spitzenprodukt der Zerspanungstechnologie erwerben. Der adäquate
-        Nutzen für Ihren Produktionsablauf und die hohe Lebensdauer von Sägeblatt und
-        Maschine wird auch im permanenten, harten Dauereinsatz gewährleistet.
+        {{ group.description }}
       </p>
     </div>
   </div>
@@ -41,13 +38,15 @@
           <div class="products-list-item">
             <h4>
               <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-              <a class="text-normal" href="{% url 'products:sawblade' clamping=blade.clamping.slug slug=blade.slug %}">
-                {{ blade }}
-              </a>
+                <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                  {{ blade }}
+                </a>
               <br>
               <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
               {{ blade.description }}
-              <a href="{% url 'products:sawblade' clamping=blade.clamping.slug slug=blade.slug %}">{{ blade.quality }} Details</a>
+              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                {{ blade.type }} Details
+              </a>
             </h4>
           </div>
         {% endif %}
@@ -66,13 +65,15 @@
           <div class="products-list-item">
             <h4>
               <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-              <a class="text-normal" href="{% url 'products:sawblade' clamping=blade.clamping.slug slug=blade.slug %}">
-                {{ blade }}
-              </a>
+                <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                  {{ blade }}
+                </a>
               <br>
               <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
               {{ blade.description }}
-              <a href="{% url 'products:sawblade' clamping=blade.clamping.slug slug=blade.slug %}">{{ blade.quality }} Details</a>
+              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                {{ blade.type }} Details
+              </a>
             </h4>
           </div>
         {% endif %}

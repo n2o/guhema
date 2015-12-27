@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Indicator, SawBlade, Clamping
+from .models import Indicator, SawBlade, Clamping, ProductGroup
 
 
 @admin.register(SawBlade)
@@ -15,6 +15,11 @@ class IndicatorAdmin(admin.ModelAdmin):
         ('Abmessungen', {'fields': ['width', 'strength', 'length', 'diameter']}),
         ('ZpZ', {'fields': [('C', 'E', 'G', 'H', 'I', 'J', 'L', 'N', 'O', 'T', 'U', 'V', 'W', 'UE')]}),
     ]
+
+
+@admin.register(ProductGroup)
+class ProductGroupAdmin(admin.ModelAdmin):
+    list_display = ('name', 'public')
 
 
 admin.site.register(Clamping)

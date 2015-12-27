@@ -133,6 +133,7 @@ THUMBNAIL_ALIASES = {
         'news_detail': {'size': (452, 254), 'crop': "smart"},
         'products_300': {'size': (300, 200), 'crop': "smart"},
         'products_clamping': {'size': (250, 80), 'crop': "smart"},
+        'products_teaserimage': {'size': (262, 174), 'crop': "smart"},
     },
 }
 

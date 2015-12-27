@@ -1,36 +1,25 @@
 from django.shortcuts import render, get_list_or_404, get_object_or_404
-from .models import SawBlade, Clamping
+from .models import SawBlade, ProductGroup
 
 
-def index(request, page=1, category="Allgemein"):
-    return render(request, 'products/index.html')
+def index(request):
+    productgroup = get_list_or_404(ProductGroup)
+    return render(request, 'products/index.html', {'groups': productgroup})
 
 
-# Maschinensägeblätter
-def sawblades(request):
-    blades = get_list_or_404(SawBlade.objects.order_by('type'))
-    return render(request, 'products/sawblade_overview.html', {'blades': blades})
+def list(request, slug):
+    blades = None
+    productgroup = None
+    if slug == "maschinensageblatter":
+        productgroup = ProductGroup.objects.get(slug=slug)
+        blades = SawBlade.objects.all()
+    return render(request, 'products/sawblade_overview.html', {'blades': blades,
+                                                               'group': productgroup})
 
 
-def sawblade(request, clamping, slug):
-    clamping = get_object_or_404(Clamping, slug=clamping)
-    blade = get_object_or_404(SawBlade, slug=slug, clamping=clamping)
+def details(request, slug, type):
+    blade = SawBlade.objects.get(type=type)
     indicators = blade.indicators.order_by('width')
     return render(request, 'products/sawblade_detail.html', {'blade': blade,
-                                                             'clamping': clamping,
-                                                             'indicators': indicators})
-
-
-# Metallstichsägeblätter
-def compasses(request):
-    blades = get_list_or_404(SawBlade.objects.order_by('type'))
-    return render(request, 'products/compass_overview.html', {'blades': blades})
-
-
-def compass(request, clamping, slug):
-    clamping = get_object_or_404(Clamping, slug=clamping)
-    blade = get_object_or_404(SawBlade, slug=slug, clamping=clamping)
-    indicators = blade.indicators.order_by('width')
-    return render(request, 'products/compass_detail.html', {'blade': blade,
-                                                             'clamping': clamping,
+                                                             'clamping': blade.clamping,
                                                              'indicators': indicators})

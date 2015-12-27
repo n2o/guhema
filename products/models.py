@@ -46,9 +46,25 @@ class Clamping(models.Model):
         verbose_name_plural = 'Aufnahmen'
 
 
+class ProductGroup(models.Model):
+    name = models.CharField("Name", max_length=255, blank=False)
+    description = models.TextField("Beschreibung", max_length=1024, blank=True)
+    slug = AutoSlugField(null=True, populate_from='name')
+    image = models.ImageField("Produktabbildung", null=True, blank=True)
+    public = models.BooleanField("Öffentlich?", default=False, blank=False)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Produktgruppe'
+        verbose_name_plural = 'Produktgruppen'
+
+
 class SawBlade(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
     description = models.CharField("Beschreibung", max_length=255, blank=True)
+    group = models.ForeignKey(ProductGroup, verbose_name="Produktgruppe", null=True, blank=True)
     clamping = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
     type = models.CharField("Typ", max_length=255, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
