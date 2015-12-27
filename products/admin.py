@@ -5,7 +5,7 @@ from .models import Indicator, SawBlade, Clamping
 @admin.register(SawBlade)
 class SawBladeAdmin(admin.ModelAdmin):
     list_display = ('type', 'name', 'description', 'clamping')
-    search_fields = ['type', 'name', 'description', 'clamping']
+    search_fields = ['type', 'name', 'description']
 
 
 @admin.register(Indicator)
