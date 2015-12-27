@@ -14,7 +14,7 @@ def sawblades(request):
 
 def sawblade(request, clamping, slug):
     clamping = get_object_or_404(Clamping, slug=clamping)
-    blade = get_object_or_404(SawBlade, slug=slug, type=clamping)
+    blade = get_object_or_404(SawBlade, slug=slug, clamping=clamping)
     indicators = blade.indicators.order_by('width')
     return render(request, 'products/sawblade_detail.html', {'blade': blade,
                                                              'clamping': clamping,

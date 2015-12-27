@@ -49,8 +49,8 @@ class Clamping(models.Model):
 class SawBlade(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
     description = models.CharField("Beschreibung", max_length=255, blank=True)
-    type = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=False)
-    quality = models.CharField("Qualität", max_length=255, blank=True)
+    clamping = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
+    type = models.CharField("Qualität", max_length=255, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
     image = models.ImageField("Produktabbildung", null=True, blank=True)
     indicators = models.ManyToManyField(Indicator, verbose_name="Kennziffern", blank=True)
@@ -59,11 +59,5 @@ class SawBlade(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Maschinensägeblatt'
-        verbose_name_plural = 'Maschinensägeblätter'
-
-
-class CompassBlade(SawBlade):
-    class Meta:
-        verbose_name = 'Metallstichsägeblatt'
-        verbose_name_plural = 'Metallstichsägeblätter'
+        verbose_name = 'Sägeblatt'
+        verbose_name_plural = 'Sägeblätter'

@@ -11,7 +11,7 @@
     <div class="col-md-8">
       <h1>
         {{ blade.name }}<br>
-        <small>{{ blade.description }} <span class="text-orange-bold">{{ blade.quality }}</span></small>
+        <small>{{ blade.description }} <span class="text-orange-bold">{{ blade.type }}</span></small>
       </h1>
     </div>
     <div class="col-md-4">
@@ -20,8 +20,8 @@
         <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">Kennziffer (Abmessung)</span> + <span class="text-orange-bold">ZpZ</span><br>
         z.B.:
         <span class="text-orange-bold">
-          {{ blade.quality }}
-        </span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">L</span> = <span class="text-orange-bold">{{ blade.quality }}{{ indicators.0.value }}L</span>
+          {{ blade.type }}
+        </span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">L</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}L</span>
       </p>
     </div>
   </div>
