@@ -31,24 +31,24 @@
   <div class="row">
     <div class="col-md-6">
       {% for blade in blades %}
-        {% if blade.type.name == "Standard" %}
+        {% if blade.clamping.name == "Standard" %}
           {% ifchanged %}
             <div class="padding-bottom">
-              <a href="{{ blade.type.image.url }}">
-                <img src="{{ blade.type.image|thumbnail_url:'products_clamping' }}" alt="clamping">
+              <a href="{{ blade.clamping.image.url }}">
+                <img src="{{ blade.clamping.image|thumbnail_url:'products_clamping' }}" alt="clamping">
               </a>
             </div>
           {% endifchanged %}
           <div class="products-list-item">
             <h4>
               <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-              <a class="text-normal" href="{% url 'products:sawblade' clamping=blade.type.slug slug=blade.slug %}">
+              <a class="text-normal" href="{% url 'products:sawblade' clamping=blade.clamping.slug slug=blade.slug %}">
                 {{ blade }}
               </a>
               <br>
               <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
               {{ blade.description }}
-              <a href="{% url 'products:sawblade' clamping=blade.type.slug slug=blade.slug %}">{{ blade.quality }} Details</a>
+              <a href="{% url 'products:sawblade' clamping=blade.clamping.slug slug=blade.slug %}">{{ blade.quality }} Details</a>
             </h4>
           </div>
         {% endif %}
@@ -56,24 +56,24 @@
     </div>
     <div class="col-md-6">
       {% for blade in blades %}
-        {% if blade.type.name == "Kasto" %}
+        {% if blade.clamping.name == "Kasto" %}
           {% ifchanged %}
             <div class="padding-bottom">
-              <a href="{{ blade.type.image.url }}">
-                <img src="{{ blade.type.image|thumbnail_url:'products_clamping' }}" alt="clamping">
+              <a href="{{ blade.clamping.image.url }}">
+                <img src="{{ blade.clamping.image|thumbnail_url:'products_clamping' }}" alt="clamping">
               </a>
             </div>
           {% endifchanged %}
           <div class="products-list-item">
             <h4>
               <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-              <a class="text-normal" href="{% url 'products:sawblade' clamping=blade.type.slug slug=blade.slug %}">
+              <a class="text-normal" href="{% url 'products:sawblade' clamping=blade.clamping.slug slug=blade.slug %}">
                 {{ blade }}
               </a>
               <br>
               <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
               {{ blade.description }}
-              <a href="{% url 'products:sawblade' clamping=blade.type.slug slug=blade.slug %}">{{ blade.quality }} Details</a>
+              <a href="{% url 'products:sawblade' clamping=blade.clamping.slug slug=blade.slug %}">{{ blade.quality }} Details</a>
             </h4>
           </div>
         {% endif %}
