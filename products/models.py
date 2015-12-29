@@ -16,6 +16,7 @@ class Indicator(models.Model):
     I = models.BooleanField("I", blank=True, default=False)
     J = models.BooleanField("J", blank=True, default=False)
     L = models.BooleanField("L", blank=True, default=False)
+    M = models.BooleanField("M", blank=True, default=False)
     N = models.BooleanField("N", blank=True, default=False)
     O = models.BooleanField("O", blank=True, default=False)
     T = models.BooleanField("T", blank=True, default=False)

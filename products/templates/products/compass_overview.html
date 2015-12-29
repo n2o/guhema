@@ -18,11 +18,13 @@
   <div class="row">
     <div class="col-md-6">
       {% for blade in blades %}
-        <div class="padding-bottom">
-          <a href="{{ blade.image.url }}">
-            <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="clamping">
-          </a>
-        </div>
+        {% if blade.image %}
+          <div class="padding-bottom">
+            <a href="{{ blade.image.url }}">
+              <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="clamping">
+            </a>
+          </div>
+        {% endif %}
 
         <div class="products-list-item">
           <h4>

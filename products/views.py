@@ -23,10 +23,10 @@ def details(request, slug, type):
     layout = 'sawblade_details.html'
     blade = SawBlade.objects.get(type=type)
     indicators = blade.indicators.order_by('width')
-    #if slug == 'maschinensageblatter':
-    #    layout = 'sawblade_details.html'
-    #elif slug == 'metallstichsageblatter':
-    #    layout = 'compass_details.html'
+    if slug == 'maschinensageblatter':
+        layout = 'sawblade_details.html'
+    elif slug == 'metallstichsageblatter':
+        layout = 'compass_details.html'
     return render(request, 'products/'+layout, {'blade': blade,
                                                 'clamping': blade.clamping,
                                                 'indicators': indicators})

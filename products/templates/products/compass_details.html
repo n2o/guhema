@@ -1,0 +1,179 @@
+{% extends 'layout_productgroups.html' %}
+
+{% load products_tags %}
+{% load thumbnail %}
+
+{% block heading %}
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-8">
+      <h1>
+        {{ blade.name }}<br>
+        <small>{{ blade.description }} <span class="text-orange-bold">{{ blade.type }}</span></small>
+      </h1>
+    </div>
+    <div class="col-md-4">
+      <p class="alert bg-orange-lighter" style="margin-top: 21px">
+        Der schnelle Weg zu unserer Artikel-Nr.<br>
+        <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">Kennziffer (Abmessung)</span> + <span class="text-orange-bold">ZpZ</span><br>
+        z.B.:
+        <span class="text-orange-bold">
+          {{ blade.type }}
+        </span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">L</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}L</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      {% if blade.image %}
+        <a href="{{ blade.image.url }}">
+          <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="blade-image">
+        </a>
+      {% endif %}
+    </div>
+    <div class="col-md-6 text-right">
+      {% if clamping.image %}
+        <a href="{{ clamping.image.url }}">
+          <img src="{{ clamping.image|thumbnail_url:'products_clamping' }}" alt="{{ blade.name }}-clamping">
+        </a>
+      {% endif %}
+    </div>
+  </div>
+
+  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
+    <thead>
+      <tr>
+        <th colspan="3" class="table-only-white-border-right"></th>
+        <th colspan="15" class="table-no-border-color">ZpZ</th>
+      </tr>
+      <tr>
+        <th colspan="3" class="table-only-white-border-right"></th>
+        <th class="bg-orange-dark table-no-bot-border table-no-top-border table-small-height table-black-border-right" colspan="10">
+          Normalzahn
+        </th>
+      </tr>
+      <tr>
+        <th colspan="3" class="table-only-white-border-right"></th>
+        <th class="bg-orange-medium table-no-top-border table-no-bot-border table-small-height table-black-border-right" colspan="10">
+          Positivzahn
+        </th>
+        <th class="bg-orange-light table-white-border-right table-no-top-border table-no-bot-border table-small-height" colspan="5">
+          Variable Positivzahnung
+        </th>
+      </tr>
+      <tr>
+        <th colspan="2" class="table-white-border-right table-no-bot-border">Abmessungen</th>
+        <th class="table-white-border-right table-no-bot-border">Kennziffer</th>
+        <th class="table-no-bot-border">2</th>
+        <th class="table-no-bot-border">3</th>
+        <th class="table-no-bot-border">4</th>
+        <th class="table-no-bot-border">6</th>
+        <th class="table-no-bot-border">8</th>
+        <th class="table-no-bot-border">10</th>
+        <th class="table-no-bot-border">14</th>
+        <th class="table-no-bot-border">16</th>
+        <th class="table-no-bot-border">18</th>
+        <th class="table-black-border-right table-no-bot-border">
+          22
+        </th>
+        <th class="table-no-bot-border">2/3</th>
+        <th class="table-no-bot-border">3/4</th>
+        <th class="table-no-bot-border">4/6</th>
+        <th class="table-no-bot-border">6/8</th>
+        <th class="table-white-border-right table-no-bot-border">
+          8/10
+        </th>
+        <th class="table-no-bot-border">&Oslash;</th>
+      </tr>
+      <tr>
+        <th class="table-no-top-border">in mm: B x S</th>
+        <th class="table-white-border-right table-no-top-border">L</th>
+        <th class="table-white-border-right table-no-top-border"></th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...C</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...E</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...G</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...H</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...I</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...J</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...L</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...M</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...N</span>
+        </th>
+        <th class="table-black-border-right table-no-top-border">
+          <span class="text-orange">...O</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...T</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...U</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...V</span>
+        </th>
+        <th class="table-no-top-border">
+          <span class="text-orange">...W</span>
+        </th>
+        <th class="table-white-border-right table-no-top-border">
+          <span class="text-orange">...Ü</span>
+        </th>
+        <th class="table-no-top-border">in mm</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for indicator in indicators %}
+        <tr>
+          <td>
+            {{ indicator.width }} x {{ indicator.strength }}
+          </td>
+          <td class="table-white-border-right">
+            {{ indicator.length }}
+          </td>
+          <td class="text-orange-bold table-white-border-right">
+            ...{{ indicator.value }}...
+          </td>
+
+          <td width="5%" class="indicator-dot">{{ indicator.C|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.E|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.G|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.H|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.I|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.J|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.L|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.M|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.N|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot table-black-border-right">{{ indicator.O|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.T|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.U|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.V|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot">{{ indicator.W|check_zpz|safe }}</td>
+          <td width="5%" class="indicator-dot table-white-border-right">{{ indicator.UE|check_zpz|safe }}</td>
+
+          <td>{{ indicator.diameter }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+
+{% endblock %}
