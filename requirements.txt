@@ -1,5 +1,9 @@
 Django==1.9
 django-autoslug==1.9.3
+django-mptt==0.7.4
+django-pagedown==0.1.1
+django-polymorphic==0.7.2
 easy-thumbnails==2.2.1
 Pillow==3.0.0
+Unidecode==0.4.18
 wheel==0.26.0

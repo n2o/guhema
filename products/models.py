@@ -64,7 +64,7 @@ class ProductGroup(models.Model):
 
 class SawBlade(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
-    description = models.TextField("Beschreibung", max_length=255, blank=True)
+    description = models.TextField("Beschreibung", max_length=1024, blank=True)
     group = models.ForeignKey(ProductGroup, verbose_name="Produktgruppe", null=True, blank=True)
     clamping = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
     type = models.CharField("Typ", max_length=255, blank=True)
@@ -82,8 +82,9 @@ class SawBlade(models.Model):
 
 class SableSawBlade(SawBlade):
     toothing = models.CharField("Verzahnung", max_length=255, blank=True)
-    cutting_metal = models.CharField("Schnittbereich Metall", max_length=255, blank=True)
-    cutting_wood = models.CharField("Schnittbereich Holz", max_length=255, blank=True)
+    cutting_metal = models.CharField("Schnittbereich Metall", max_length=255, blank=True, default=None, null=True)
+    cutting_wood = models.CharField("Schnittbereich Holz", max_length=255, blank=True, default=None, null=True)
+    cutting_minerals = models.CharField("Schnittbereich Mineralisch", max_length=255, blank=True, default=None, null=True)
 
     class Meta:
         verbose_name = 'Säbelsägeblatt'
