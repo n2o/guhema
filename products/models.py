@@ -81,7 +81,7 @@ class SawBlade(models.Model):
 
 
 class SableSawBlade(SawBlade):
-    toothing = models.IntegerField("Verzahnung", blank=True)
+    toothing = models.CharField("Verzahnung", max_length=255, blank=True)
     cutting_metal = models.CharField("Schnittbereich Metall", max_length=255, blank=True)
     cutting_wood = models.CharField("Schnittbereich Holz", max_length=255, blank=True)
 
