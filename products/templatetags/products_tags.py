@@ -3,6 +3,15 @@ from django import template
 register = template.Library()
 
 
+@register.filter()
+def next(value, arg):
+    """ Get next element inside a forloop """
+    try:
+        return value[int(arg)+1]
+    except:
+        return None
+
+
 @register.filter(is_safe=True)
 def check_zpz(val):
     if val:

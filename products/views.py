@@ -1,5 +1,5 @@
-from django.shortcuts import render, get_list_or_404, get_object_or_404
-from .models import SawBlade, ProductGroup
+from django.shortcuts import render, get_list_or_404
+from .models import SawBlade, ProductGroup, SableSawBlade
 
 
 def index(request):
@@ -8,13 +8,18 @@ def index(request):
 
 
 def list(request, slug):
+    blades = None
     layout = 'sawblade_overview.html'
     group = ProductGroup.objects.get(slug=slug)
-    blades = SawBlade.objects.filter(group=group)
     if slug == 'maschinensageblatter':
         layout = 'sawblade_overview.html'
+        blades = SawBlade.objects.filter(group=group)
     elif slug == 'metallstichsageblatter':
         layout = 'compass_overview.html'
+        blades = SawBlade.objects.filter(group=group)
+    elif slug == 'sabel-und-spezialsabelsageblatter':
+        layout = 'sablesawblade_overview.html'
+        blades = SableSawBlade.objects.filter(group=group)
     return render(request, 'products/'+layout, {'blades': blades,
                                                 'group': group})
 

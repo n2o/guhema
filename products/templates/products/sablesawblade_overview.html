@@ -1,0 +1,142 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+{% load markdown_deux_tags %}
+{% load products_tags %}
+
+{% block heading %}
+  <h1>
+    {{ group.name }}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  {% include 'products/include_productheader.html' with group=group %}
+
+  <hr>
+
+  <h3 class="padding-bottom">Übersicht</h3>
+
+  {% for blade in blades %}
+    {% if not blade.type == "SSM" %}
+      {% with blades|next:forloop.counter0 as next %}
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+            </div>
+            <div class="col-md-10">
+              {{ blade.name }}
+              <span class="text-orange-bold">
+                {{ blade.type }}
+              </span>
+              {% if next.type == "SSM" %}
+                <br>
+                {{ next.name }}
+                <span class="text-orange-bold">
+                  {{ next.type }}
+                </span>
+              {% endif %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+            </div>
+            <div class="col-md-10 markdown-no-padding-left">
+              {{ blade.description|markdown }}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+          <table class="table table-condensed table-striped-column table-hover">
+            <thead>
+              <tr>
+                {% if blade.toothing %}
+                  <th>Verzahnung</th>
+                {% endif %}
+                {% if blade.cutting_metal %}
+                  <th>Schnittbereich Metall</th>
+                {% endif %}
+                {% if blade.cutting_wood %}
+                  <th>Schnittbereich Holz</th>
+                {% endif %}
+                {% if blade.cutting_minerals %}
+                  <th>Schnittbereich Mineralisch</th>
+                {% endif %}
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                {% if blade.toothing %}
+                  <td>
+                    {{ blade.toothing }}
+                    {% if blade.toothing != "Welle" %}
+                      ZpZ
+                    {% endif %}
+                  </td>
+                {% endif %}
+                {% if blade.cutting_metal %}
+                  <td>{{ blade.cutting_metal }}</td>
+                {% endif %}
+                {% if blade.cutting_wood %}
+                  <td>{{ blade.cutting_wood }}</td>
+                {% endif %}
+                {% if blade.cutting_minerals %}
+                  <td>{{ blade.cutting_minerals }}</td>
+                {% endif %}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <table class="table table-condensed table-striped-column table-hover">
+        <tr>
+          <td class="text-bold" width="200px">
+            Sägeblatt Länge [mm]
+          </td>
+          {% for ind in blade.indicators.all %}
+            <td>{{ ind.length }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <td class="text-bold">
+            Breite x Stärke [mm]
+          </td>
+          {% for ind in blade.indicators.all %}
+            <td>{{ ind.width }} x {{ ind.strength }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <td class="text-bold">
+            {% if next.type == "SSM" %}
+              Kennziffer
+            {% else %}
+              Bestell-Nr.:
+            {% endif %}
+          </td>
+          {% for ind in blade.indicators.all %}
+            <td class="text-orange-bold">
+              {% if next.type == "SSM" %}
+                ...{{ ind.value }}
+              {% else %}
+                {{ blade.type }}{{ ind.value }}
+              {% endif %}
+            </td>
+          {% endfor %}
+        </tr>
+      </table>
+
+      {% if not forloop.last %}
+        <hr>
+      {% endif %}
+      {% endwith %}
+    {% endif %}
+  {% empty %}
+    <p>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
+  {% endfor %}
+
+{% endblock %}

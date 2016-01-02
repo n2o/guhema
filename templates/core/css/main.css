@@ -20,6 +20,9 @@ h1 {
 .text-normal {
   color: #222; }
 
+.text-bold {
+  font-weight: bold; }
+
 .bg-orange-lighter {
   background-color: #feedd3 !important; }
 
@@ -216,5 +219,8 @@ html {
   margin-top: 0; }
   .products-index-h3 a {
     color: #222; }
+
+div.markdown-no-padding-left ul {
+  padding-left: 1em; }
 
 /*# sourceMappingURL=main.css.map */

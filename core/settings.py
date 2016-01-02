@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'autoslug',
     'easy_thumbnails',
     'pagedown',
+    'markdown_deux',
 
     # Own apps
     'news',
