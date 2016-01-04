@@ -130,6 +130,7 @@
         </tr>
       </table>
 
+      {% include 'core/edit_item.html' with model="products_sablesawblade" id=blade.id %}
       {% if not forloop.last %}
         <hr>
       {% endif %}

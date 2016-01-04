@@ -18,28 +18,60 @@
   <div class="row">
     <div class="col-md-6">
       {% for blade in blades %}
-        {% if blade.image %}
-          <div class="padding-bottom">
-            <a href="{{ blade.image.url }}">
-              <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="clamping">
-            </a>
-          </div>
-        {% endif %}
-
-        <div class="products-list-item">
-          <h4>
-            <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-              <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                {{ blade }}
+        {% if blade.type == "ISD" or blade.type == "ISE" %}
+          {% if blade.image %}
+            <div class="padding-bottom">
+              <a href="{{ blade.image.url }}">
+                <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="clamping">
               </a>
-            <br>
-            <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-            {{ blade.description }}
-            <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-              {{ blade.type }} Details
-            </a>
-          </h4>
-        </div>
+            </div>
+          {% endif %}
+
+          <div class="products-list-item">
+            <h4>
+              <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+                <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                  {{ blade }}
+                </a>
+              <br>
+              <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+              {{ blade.description }}
+              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                {{ blade.type }} Details
+              </a>
+            </h4>
+          </div>
+          {% include 'core/edit_item.html' with model="products_sawblade" id=blade.id %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="col-md-6">
+      {% for blade in blades %}
+        {% if blade.type == "ISF" %}
+          {% if blade.image %}
+            <div class="padding-bottom">
+              <a href="{{ blade.image.url }}">
+                <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="clamping">
+              </a>
+            </div>
+          {% endif %}
+
+          <div class="products-list-item">
+            <h4>
+              <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+                <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                  {{ blade }}
+                </a>
+              <br>
+              <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+              {{ blade.description }}
+              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                {{ blade.type }} Details
+              </a>
+            </h4>
+          </div>
+          {% include 'core/edit_item.html' with model="products_sawblade" id=blade.id %}
+        {% endif %}
       {% endfor %}
     </div>
   </div>

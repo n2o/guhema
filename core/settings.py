@@ -140,10 +140,6 @@ THUMBNAIL_ALIASES = {
     },
 }
 
-
-# Filer config
-FILER_CANONICAL_URL = 's/'
-
 # Needed for login
 import django.contrib.auth
 django.contrib.auth.LOGIN_URL = '/'
