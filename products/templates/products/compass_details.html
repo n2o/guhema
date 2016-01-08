@@ -43,6 +43,8 @@
     </div>
   </div>
 
+  {% include 'core/edit_item.html' with model="products_sawblade" id=blade.id %}
+
   <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
     <thead>
       <tr>
@@ -166,6 +168,14 @@
           <td width="5%" class="indicator-dot">{{ indicator.V|check_zpz|safe }}</td>
           <td width="5%" class="indicator-dot">{{ indicator.W|check_zpz|safe }}</td>
           <td width="5%" class="indicator-dot table-white-border-right">{{ indicator.UE|check_zpz|safe }}</td>
+
+          {% if user.is_staff %}
+            <td>
+              <a href="{% url 'admin:products_indicator_change' indicator.id %}">
+                <i class="fa fa-pencil-square-o"></i>
+              </a>
+            </td>
+          {% endif %}
 
         </tr>
       {% endfor %}

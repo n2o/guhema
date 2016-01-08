@@ -32,6 +32,7 @@
           </p>
         </div>
       </div>
+      {% include 'core/edit_item.html' with model="products_productgroup" id=group.id %}
     {% endif %}
   {% endfor %}
 {% endblock %}
