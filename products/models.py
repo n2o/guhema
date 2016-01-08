@@ -89,3 +89,9 @@ class SableSawBlade(SawBlade):
     class Meta:
         verbose_name = 'Säbelsägeblatt'
         verbose_name_plural = 'Säbelsägeblätter'
+
+
+class HackSawBlade(SableSawBlade):
+    class Meta:
+        verbose_name = 'Metallhandsägeblatt'
+        verbose_name_plural = 'Metallhandsägeblätter'
