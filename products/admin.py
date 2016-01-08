@@ -2,7 +2,7 @@ from django.contrib import admin
 from pagedown.widgets import AdminPagedownWidget
 from django.db import models
 
-from .models import Indicator, SawBlade, Clamping, ProductGroup, SableSawBlade
+from .models import Indicator, SawBlade, Clamping, ProductGroup, SableSawBlade, HackSawBlade
 
 
 class PageDownAdmin(admin.ModelAdmin):
@@ -17,7 +17,7 @@ class SawBladeAdmin(PageDownAdmin):
     search_fields = ['type', 'name', 'description']
 
 
-@admin.register(SableSawBlade)
+@admin.register(SableSawBlade, HackSawBlade)
 class SawBladeAdmin(PageDownAdmin):
     list_display = ('type', 'group', 'name', 'toothing', 'cutting_metal', 'cutting_wood', 'cutting_minerals')
     search_fields = ['type', 'name', 'description']
