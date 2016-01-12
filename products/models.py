@@ -92,6 +92,8 @@ class SableSawBlade(SawBlade):
 
 
 class HackSawBlade(SableSawBlade):
+    accessory = models.BooleanField("Zubehörartikel?", default=False, blank=False)
+    ordernumber = models.CharField("Bestellnr.", max_length=255, blank=True)
     class Meta:
         verbose_name = 'Metallhandsägeblatt'
         verbose_name_plural = 'Metallhandsägeblätter'
