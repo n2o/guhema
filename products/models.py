@@ -63,7 +63,7 @@ class ProductGroup(models.Model):
 
 
 class SawBlade(models.Model):
-    quality = models.CharField("Name", max_length=255, blank=False)
+    quality = models.CharField("Stahlsorte", max_length=255, blank=False)
     description = models.TextField("Beschreibung", max_length=1024, blank=True)
     group = models.ForeignKey(ProductGroup, verbose_name="Produktgruppe", null=True, blank=True)
     clamping = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
@@ -93,7 +93,7 @@ class SableSawBlade(SawBlade):
 
 class HackSawBlade(SableSawBlade):
     accessory = models.BooleanField("Zubehörartikel?", default=False, blank=False)
-    ordernumber = models.CharField("Bestellnr.", max_length=255, blank=True)
+
     class Meta:
         verbose_name = 'Metallhandsägeblatt'
         verbose_name_plural = 'Metallhandsägeblätter'

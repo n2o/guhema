@@ -17,9 +17,16 @@ class SawBladeAdmin(PageDownAdmin):
     search_fields = ['type', 'quality', 'description']
 
 
-@admin.register(SableSawBlade, HackSawBlade)
-class SawBladeAdmin(PageDownAdmin):
+@admin.register(SableSawBlade)
+class SableSawBladeAdmin(PageDownAdmin):
     list_display = ('type', 'group', 'quality', 'toothing', 'cutting_metal', 'cutting_wood', 'cutting_minerals')
+    search_fields = ['type', 'quality', 'description']
+    save_as = True
+
+
+@admin.register(HackSawBlade)
+class HackSawBladeAdmin(PageDownAdmin):
+    list_display = ('type', 'group', 'quality', 'toothing', 'accessory', 'cutting_metal', 'cutting_wood', 'cutting_minerals')
     search_fields = ['type', 'quality', 'description']
     save_as = True
 
