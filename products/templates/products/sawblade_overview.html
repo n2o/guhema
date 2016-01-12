@@ -30,7 +30,7 @@
             <h4>
               <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
               <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                {{ blade }}
+                {{ blade.quality }}
               </a>
               <br>
               <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">

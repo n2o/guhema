@@ -10,7 +10,7 @@
   <div class="row">
     <div class="col-md-8">
       <h1>
-        {{ blade.name }}<br>
+        {{ blade.quality }}<br>
         <small>{{ blade.description }} <span class="text-orange-bold">{{ blade.type }}</span></small>
       </h1>
     </div>
@@ -37,7 +37,7 @@
     <div class="col-md-6 text-right">
       {% if clamping.image %}
         <a href="{{ clamping.image.url }}">
-          <img src="{{ clamping.image|thumbnail_url:'products_clamping' }}" alt="{{ blade.name }}-clamping">
+          <img src="{{ clamping.image|thumbnail_url:'products_clamping' }}" alt="{{ blade.quality }}-clamping">
         </a>
       {% endif %}
     </div>

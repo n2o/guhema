@@ -28,13 +28,13 @@
               <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
             </div>
             <div class="col-md-10">
-              {{ blade.name }}
+              {{ blade.quality }}
               <span class="text-orange-bold">
                 {{ blade.type }}
               </span>
               {% if next.type == "SSM" %}
                 <br>
-                {{ next.name }}
+                {{ next.quality }}
                 <span class="text-orange-bold">
                   {{ next.type }}
                 </span>

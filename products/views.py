@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_list_or_404
+
 from .models import SawBlade, ProductGroup, SableSawBlade
 
 
@@ -30,7 +31,7 @@ def details(request, slug, type):
     indicators = blade.indicators.order_by('width')
     if slug == 'maschinensageblatter':
         layout = 'sawblade_details.html'
-    elif slug == 'metallstichsageblatter':
+    elif slug == 'metallstichsageblatter' or slug == 'metallhandsageblatter':
         layout = 'compass_details.html'
     return render(request, 'products/'+layout, {'blade': blade,
                                                 'clamping': blade.clamping,
