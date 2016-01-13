@@ -64,6 +64,7 @@ class ProductGroup(models.Model):
 
 class SawBlade(models.Model):
     quality = models.CharField("Stahlsorte", max_length=255, blank=False)
+    name = models.CharField("Bezeichnung", max_length=255, blank=True)
     description = models.TextField("Beschreibung", max_length=1024, blank=True)
     group = models.ForeignKey(ProductGroup, verbose_name="Produktgruppe", null=True, blank=True)
     clamping = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)

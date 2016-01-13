@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_list_or_404
 
-from .models import SawBlade, ProductGroup, SableSawBlade
+from .models import SawBlade, ProductGroup, SableSawBlade, HackSawBlade
 
 
 def index(request):
@@ -21,6 +21,9 @@ def list(request, slug):
     elif slug == 'sabel-und-spezialsabelsageblatter':
         layout = 'sablesawblade_overview.html'
         blades = SableSawBlade.objects.filter(group=group)
+    elif slug == 'metallhandsageblatter':
+        layout = 'hacksawblade_overview.html'
+        blades = HackSawBlade.objects.filter(group=group)
     return render(request, 'products/'+layout, {'blades': blades,
                                                 'group': group})
 

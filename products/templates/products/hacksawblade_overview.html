@@ -1,0 +1,148 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+{% load markdown_deux_tags %}
+{% load products_tags %}
+
+{% block heading %}
+  <h1>
+    {{ group.name }}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  {% include 'products/include_productheader.html' with group=group %}
+
+  <hr>
+
+  <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-accessory" aria-expanded="false" aria-controls="collapse-accessory">
+    Zubehörartikel anzeigen
+  </a>
+
+  <div id="collapse-accessory" class="collapse">
+    <h3 class="padding-bottom">Metallhandsägebügel</h3>
+
+    {% for blade in blades %}
+      {% if blade.accessory %}
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+              </div>
+              <div class="col-md-10">
+                {{ blade.quality }}
+                <span class="text-orange-bold">
+                  {{ blade.type }}
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+              </div>
+              <div class="col-md-10 markdown-no-padding-left">
+                {{ blade.description|markdown }}
+              </div>
+            </div>
+          </div>
+          <div class="col-md-offset-1 col-md-5">
+            <table class="table table-condensed table-striped-column table-hover">
+              <tr>
+                <td class="text-bold">
+                  Bestell-Nr.:
+                </td>
+              </tr>
+              <tr>
+                <td class="text-orange-bold">
+                  {{ blade.type }}
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        {% include 'core/edit_item.html' with model="products_sablesawblade" id=blade.id %}
+        <hr>
+      {% endif %}
+    {% empty %}
+      <p>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
+    {% endfor %}
+  </div>
+
+  <h3 class="padding-bottom">Sägeblätter</h3>
+
+  {% for blade in blades %}
+    {% if not blade.accessory %}
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-1">
+              <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+            </div>
+            <div class="col-md-11">
+              {{ blade.quality }}
+              <span class="text-orange-bold">
+                {{ blade.type }}
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-1">
+              <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+            </div>
+            <div class="col-md-11 markdown-no-padding-left">
+              {{ blade.description|markdown }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table class="table table-condensed table-striped-column table-hover">
+        <thead>
+          <th>
+            Bestell-Nr.:
+          </th>
+          <th>
+            Verzahnung
+          </th>
+          <th>
+            Abmessung
+          </th>
+          <th>
+            Schnittbereich Metall
+          </th>
+        </thead>
+        <tbody>
+          <tr>
+            {% for ind in blade.indicators.all %}
+              <td class="text-orange-bold">
+                {{ blade.type }}{{ ind.value }}
+              </td>
+            {% endfor %}
+            <td>
+              {{ blade.toothing }} ZpZ
+            </td>
+            <td>
+              {% for ind in blade.indicators.all %}
+                {{ ind.length }} x {{ ind.width }} x {{ ind.strength }}
+              {% endfor %}
+            </td>
+            <td>
+              {{ blade.cutting_metal }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      {% include 'core/edit_item.html' with model="products_sablesawblade" id=blade.id %}
+      {% if not forloop.last %}
+        <hr>
+      {% endif %}
+    {% endif %}
+  {% empty %}
+    <p>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
+  {% endfor %}
+
+{% endblock %}
