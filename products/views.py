@@ -24,6 +24,9 @@ def list(request, slug):
     elif slug == 'metallhandsageblatter':
         layout = 'hacksawblade_overview.html'
         blades = HackSawBlade.objects.filter(group=group)
+    elif slug == 'lochsagen':
+        layout = 'holesaw_overview.html'
+        #blades = HackSawBlade.objects.filter(group=group)
     return render(request, 'products/'+layout, {'blades': blades,
                                                 'group': group})
 

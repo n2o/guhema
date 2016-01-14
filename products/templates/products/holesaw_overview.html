@@ -1,0 +1,152 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block heading %}
+  <h1>
+    {{ group.name }}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  {% include 'products/include_productheader.html' with group=group %}
+
+  <h3>Material, Qualitäten und Einsatzbereiche</h3>
+  <p>
+    Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und Laufruhe, hervorgerufen durch die
+    variable Verzahnung mit ihrer optimalen Spanabfuhr, zeichnet unsere Bi-Metall-Lochsägen aus. Unsere feinverzahnten
+    Lochsägen sind bestens für dünnwandige Materialien geeignet. Bei Mineral- und Verbundwerkstoffen erzielen unsere
+    hartmetallbeschichteten Lochsägen beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine Wünsche offen.
+  </p>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div>
+        <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+        GUHEMA Bi-Co-lastic
+        <span class="text-orange-bold">
+          HSM...
+        </span>
+      </div>
+      <div>
+        <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+        Bi-Metall, mit HSS-Schneide aus M42 (Werkstoff-Nr. 1.3247)
+      </div>
+      <div>
+        <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+        4/6 ZpZ das Allroundtalent
+      </div>
+
+      <div class="padding-top-05">
+        <div>
+          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          GUHEMA Bi-Co-lastic
+          <span class="text-orange-bold">
+            HSM...
+          </span>
+        </div>
+        <div>
+          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+          Bi-Metall, mit HSS-Schneide aus M42 (Werkstoff-Nr. 1.3247)
+        </div>
+        <div>
+          <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+          10 ZpZ für dünnwandiges Material
+        </div>
+      </div>
+
+      <div class="padding-top-05">
+        <div>
+          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          GUHEMA HM-Granulat
+          <span class="text-orange-bold">
+            HSH...
+          </span>
+        </div>
+        <div>
+          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+          Zähne mit Hartmetallgranulat beschichtet
+        </div>
+        <div>
+          <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+          Für mineralische Werkstoffe
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <p class="alert bg-orange-lighter" style="margin-top: 21px">
+        Der schnelle Weg zu unserer Artikel-Nr.<br>
+        <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">&Oslash;</span> + <span class="text-orange-bold">ZpZ</span><br>
+        z.B.:
+        <span class="text-orange-bold">
+          HSM
+        </span> + <span class="text-orange-bold">014</span> + <span class="text-orange-bold">V</span> = <span class="text-orange-bold">HSM014V</span>
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <h3 class="padding-bottom">Übersicht</h3>
+  <div class="row">
+    <div class="col-md-6">
+      {% for blade in blades %}
+        {% if blade.type == "ISD" or blade.type == "ISE" %}
+          {% if blade.image %}
+            <div class="padding-bottom">
+              <a href="{{ blade.image.url }}">
+                <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="clamping">
+              </a>
+            </div>
+          {% endif %}
+
+          <div class="products-list-item">
+            <h4>
+              <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+                <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                  {{ blade }}
+                </a>
+              <br>
+              <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+              {{ blade.description }}
+              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                {{ blade.type }} Details
+              </a>
+            </h4>
+          </div>
+          {% include 'core/edit_item.html' with model="products_sawblade" id=blade.id %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="col-md-6">
+      {% for blade in blades %}
+        {% if blade.type == "ISF" %}
+          {% if blade.image %}
+            <div class="padding-bottom">
+              <a href="{{ blade.image.url }}">
+                <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="clamping">
+              </a>
+            </div>
+          {% endif %}
+
+          <div class="products-list-item">
+            <h4>
+              <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+                <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                  {{ blade }}
+                </a>
+              <br>
+              <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+              {{ blade.description }}
+              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                {{ blade.type }} Details
+              </a>
+            </h4>
+          </div>
+          {% include 'core/edit_item.html' with model="products_sawblade" id=blade.id %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
