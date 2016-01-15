@@ -186,17 +186,14 @@
       </tr>
     </thead>
     <tbody>
-    {% for diameter in blades.14.diameter.all %}
-      {% with blades.14.diameter.all as diameters %}
-        {% with blades.15.diameter.all as b2 %}
-        <tr>
-          <td>{{ diameter }}</td>
-          <td>{% resolve diameters diameter %}</td>
-          <td>{% resolve b2 diameter %}</td>
-        </tr>
-          {% endwith %}
-        {% endwith %}
-      {% endfor %}
+    {% for diameter in other %}
+      <tr>
+        <td>{{ diameter }}</td>
+        {% for blade in diameter.blades.all %}
+          <td>x</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
     </tbody>
   </table>
 
