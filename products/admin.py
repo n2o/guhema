@@ -2,7 +2,7 @@ from django.contrib import admin
 from pagedown.widgets import AdminPagedownWidget
 from django.db import models
 
-from .models import Indicator, SawBlade, Clamping, ProductGroup, SableSawBlade, HackSawBlade
+from .models import Indicator, SawBlade, Clamping, ProductGroup, SableSawBlade, HackSawBlade, HoleSaw, HoleSawDiameter
 
 
 class PageDownAdmin(admin.ModelAdmin):
@@ -40,9 +40,16 @@ class IndicatorAdmin(PageDownAdmin):
     ]
 
 
+@admin.register(HoleSaw)
+class HoleSawAdmin(PageDownAdmin):
+    list_display = ('ordernr', 'category')
+    search_fields = ['ordernr']
+
+
 @admin.register(ProductGroup)
 class ProductGroupAdmin(PageDownAdmin):
     list_display = ('name', 'public')
 
 
 admin.site.register(Clamping)
+admin.site.register(HoleSawDiameter)
