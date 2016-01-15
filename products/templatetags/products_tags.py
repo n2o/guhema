@@ -1,3 +1,6 @@
+from django.template import Variable, resolve_variable
+from django.template import VariableDoesNotExist
+
 from django import template
 
 register = template.Library()
@@ -18,6 +21,14 @@ def check_zpz(val):
         return "<i class='fa fa-circle'></i>"
     else:
         return ""
+
+
+@register.simple_tag()
+def resolve(diameters, diameter, *args, **kwargs):
+    print(diameter)
+    if diameter in diameters:
+        print("True")
+    return None
 
     # if extension == 'pdf':
     #     return "<i class='fa fa-file-pdf-o fa-lg'></i>"

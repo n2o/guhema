@@ -2,6 +2,8 @@
 
 {% load staticfiles %}
 {% load thumbnail %}
+{% load markdown_deux_tags %}
+{% load products_tags %}
 
 {% block heading %}
   <h1>
@@ -88,65 +90,115 @@
 
   <hr>
 
-  <h3 class="padding-bottom">Übersicht</h3>
+  <h3>Zentriereinheiten <small>Zentrierbohrerlänge 82 mm</small></h3>
+
   <div class="row">
     <div class="col-md-6">
-      {% for blade in blades %}
-        {% if blade.type == "ISD" or blade.type == "ISE" %}
-          {% if blade.image %}
-            <div class="padding-bottom">
-              <a href="{{ blade.image.url }}">
-                <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="clamping">
-              </a>
-            </div>
-          {% endif %}
-
-          <div class="products-list-item">
-            <h4>
-              <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-                <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                  {{ blade }}
-                </a>
-              <br>
-              <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-              {{ blade.description }}
-              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                {{ blade.type }} Details
-              </a>
-            </h4>
-          </div>
-          {% include 'core/edit_item.html' with model="products_sawblade" id=blade.id %}
-        {% endif %}
-      {% endfor %}
+      <table class="table table-condensed table-striped-column table-hover">
+        <thead>
+          <tr>
+            <th>Aufnahmeschaft</th>
+            <th>Lochsäge</th>
+            <th>Bestell-Nr.</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for blade in blades %}
+            {% if blade.saw_length == "14 - 30 mm" %}
+              <tr>
+                <td>{{ blade.mounting }}</td>
+                <td>{{ blade.saw_length }}</td>
+                <td>{{ blade.ordernr }}</td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
     <div class="col-md-6">
-      {% for blade in blades %}
-        {% if blade.type == "ISF" %}
-          {% if blade.image %}
-            <div class="padding-bottom">
-              <a href="{{ blade.image.url }}">
-                <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="clamping">
-              </a>
-            </div>
-          {% endif %}
-
-          <div class="products-list-item">
-            <h4>
-              <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-                <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                  {{ blade }}
-                </a>
-              <br>
-              <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-              {{ blade.description }}
-              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                {{ blade.type }} Details
-              </a>
-            </h4>
-          </div>
-          {% include 'core/edit_item.html' with model="products_sawblade" id=blade.id %}
-        {% endif %}
-      {% endfor %}
+      <table class="table table-condensed table-striped-column table-hover">
+        <thead>
+          <tr>
+            <th>Aufnahmeschaft</th>
+            <th>Lochsäge</th>
+            <th>Bestell-Nr.</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for blade in blades %}
+            {% if blade.saw_length == "32 - 210 mm" %}
+              <tr>
+                <td>{{ blade.mounting }}</td>
+                <td>{{ blade.saw_length }}</td>
+                <td>{{ blade.ordernr }}</td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </div>
+
+  <h3>Zubehör / Ersatzteile</h3>
+
+  <table class="table table-condensed table-striped-column table-hover">
+    <thead>
+      <tr>
+        <th>Beschreibung</th>
+        <th>Bestell-Nr.</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for blade in blades %}
+        {% if blade.category == "Zubehör / Ersatzteile" %}
+          <tr>
+            <td>{{ blade.description }}</td>
+            <td>{{ blade.ordernr }}</td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h3>Durchmesser</h3>
+
+  <table class="table table-condensed table-striped-column table-hover">
+    <thead>
+      <tr>
+        <th class="text-center table-white-border-right">&Oslash;</th>
+        <th class="text-center">GUHEMA Bi-Co-lastic</th>
+        <th class="text-center">GUHEMA Bi-Co-lastic</th>
+        <th class="text-center">HM-Granulat</th>
+      </tr>
+      <tr>
+        <th class="text-center table-white-border-right">in mm</th>
+        <th class="text-center">
+          4/6 ZpZ
+          <span class="text-orange">...V</span>
+        </th>
+        <th class="text-center">
+          10 ZpZ
+          <span class="text-orange">...J</span>
+        </th>
+        <th class="text-center">
+          <span class="text-orange">...S</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for diameter in blades.14.diameter.all %}
+      {% with blades.14.diameter.all as diameters %}
+        {% with blades.15.diameter.all as b2 %}
+        <tr>
+          <td>{{ diameter }}</td>
+          <td>{% resolve diameters diameter %}</td>
+          <td>{% resolve b2 diameter %}</td>
+        </tr>
+          {% endwith %}
+        {% endwith %}
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {{ blades.14.diameter.all.1 }}
 {% endblock %}

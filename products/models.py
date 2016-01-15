@@ -100,17 +100,6 @@ class HackSawBlade(SableSawBlade):
         verbose_name_plural = 'Metallhandsägeblätter'
 
 
-class HoleSawDiameter(models.Model):
-    diameter = models.IntegerField("Durchmesser in mm", blank=False)
-
-    def __str__(self):
-        return str(self.diameter)
-
-    class Meta:
-        verbose_name = 'Lochsägen-Durchmesser'
-        verbose_name_plural = 'Lochsägen-Durchmesser'
-
-
 class HoleSaw(models.Model):
     ordernr = models.CharField("Bestellnr.", max_length=1024, blank=False)
     image = models.ImageField("Abbildung", blank=True)
@@ -121,8 +110,22 @@ class HoleSaw(models.Model):
     pilot_drill_length = models.CharField("Zentrierbohrerlänge", max_length=1024, blank=True)
     quality = models.CharField("Stahlsorte", max_length=255, blank=True)
     toothing = models.CharField("Verzahnung", max_length=255, blank=True)
-    diameter = models.ManyToManyField(HoleSawDiameter, verbose_name="Durchmesser in mm", blank=True)
+
+    def __str__(self):
+        return self.ordernr
 
     class Meta:
         verbose_name = 'Lochsäge'
         verbose_name_plural = 'Lochsägen'
+
+
+class HoleSawDiameter(models.Model):
+    diameter = models.IntegerField("Durchmesser in mm", blank=False)
+    blades = models.ManyToManyField(HoleSaw, verbose_name="Lochsäge", blank=True)
+
+    def __str__(self):
+        return str(self.diameter)
+
+    class Meta:
+        verbose_name = 'Lochsägen-Durchmesser'
+        verbose_name_plural = 'Lochsägen-Durchmesser'
