@@ -104,11 +104,11 @@ class HoleSawDiameter(models.Model):
     diameter = models.IntegerField("Durchmesser in mm", blank=False)
 
     def __str__(self):
-        return self.diameter
+        return str(self.diameter)
 
     class Meta:
-        verbose_name = 'Durchmesser'
-        verbose_name_plural = 'Durchmesser'
+        verbose_name = 'Lochsägen-Durchmesser'
+        verbose_name_plural = 'Lochsägen-Durchmesser'
 
 
 class HoleSaw(models.Model):
