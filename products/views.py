@@ -28,7 +28,7 @@ def list(request, slug):
     elif slug == 'lochsagen':
         layout = 'holesaw_overview.html'
         blades = HoleSaw.objects.all()
-        other = HoleSawDiameter.objects.all()
+        other = HoleSawDiameter.objects.filter(advice=False)
     return render(request, 'products/'+layout, {'blades': blades,
                                                 'group': group,
                                                 'other': other})

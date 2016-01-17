@@ -122,6 +122,12 @@ class HoleSaw(models.Model):
 class HoleSawDiameter(models.Model):
     diameter = models.IntegerField("Durchmesser in mm", blank=False)
     blades = models.ManyToManyField(HoleSaw, verbose_name="Lochsäge", blank=True)
+    advice = models.BooleanField("Aus Empfehlungstabelle?", default=True, blank=True)
+    niro = models.IntegerField("NIRO", null=True, blank=True)
+    iron = models.IntegerField("Guss", null=True, blank=True)
+    steel = models.IntegerField("Stahl", null=True, blank=True)
+    non_ferrous_metals = models.IntegerField("Buntmetalle", null=True, blank=True)
+    alu = models.IntegerField("Alu", null=True, blank=True)
 
     def __str__(self):
         return str(self.diameter)
