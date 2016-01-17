@@ -162,25 +162,25 @@
 
   <h3>Durchmesser</h3>
 
-  <table class="table table-condensed table-striped-column table-hover">
+  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
     <thead>
       <tr>
-        <th class="text-center table-white-border-right">&Oslash;</th>
-        <th class="text-center">GUHEMA Bi-Co-lastic</th>
-        <th class="text-center">GUHEMA Bi-Co-lastic</th>
-        <th class="text-center">HM-Granulat</th>
+        <th class="text-center table-white-border-right table-no-bot-border">&Oslash;</th>
+        <th class="text-center table-no-bot-border">GUHEMA Bi-Co-lastic</th>
+        <th class="text-center table-no-bot-border">GUHEMA Bi-Co-lastic</th>
+        <th class="text-center table-no-bot-border">HM-Granulat</th>
       </tr>
       <tr>
-        <th class="text-center table-white-border-right">in mm</th>
-        <th class="text-center">
+        <th class="text-center table-no-top-border table-white-border-right">in mm</th>
+        <th class="text-center table-no-top-border">
           4/6 ZpZ
           <span class="text-orange">...V</span>
         </th>
-        <th class="text-center">
+        <th class="text-center table-no-top-border">
           10 ZpZ
           <span class="text-orange">...J</span>
         </th>
-        <th class="text-center">
+        <th class="text-center table-no-top-border">
           <span class="text-orange">...S</span>
         </th>
       </tr>
@@ -189,9 +189,11 @@
     {% for diameter in other %}
       <tr>
         <td>{{ diameter }}</td>
-        {% for blade in diameter.blades.all %}
-          <td>x</td>
-        {% endfor %}
+        {% with diameter.blades.all as diameters %}
+          {% autoescape off %}
+            {% show_diameters diameters %}
+          {% endautoescape %}
+        {% endwith %}
       </tr>
     {% endfor %}
     </tbody>

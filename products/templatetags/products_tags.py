@@ -5,6 +5,9 @@ from django import template
 
 register = template.Library()
 
+# Constants
+DOTFIELD = "<i class='fa fa-circle'></i>"
+
 
 @register.filter()
 def next(value, arg):
@@ -18,39 +21,29 @@ def next(value, arg):
 @register.filter(is_safe=True)
 def check_zpz(val):
     if val:
-        return "<i class='fa fa-circle'></i>"
+        return DOTFIELD
     else:
         return ""
 
 
-@register.simple_tag()
-def resolve(diameters, diameter, *args, **kwargs):
-    print(diameter)
-    if diameter in diameters:
-        print("True")
-    return None
+@register.simple_tag
+def show_diameters(val):
+    # The first value of val is always true. So always add one dotfield
+    formatField = "<td>" + DOTFIELD + "</td>"
+    length = len(val)
 
-    # if extension == 'pdf':
-    #     return "<i class='fa fa-file-pdf-o fa-lg'></i>"
-    # elif extension == 'jpg' or extension == 'png':
-    #     return "<i class='fa fa-picture-o fa-lg'></i>"
-    # elif extension == 'doc' or extension == 'docx':
-    #     return "<i class='fa fa-file-word-o fa-lg'></i>"
-    # elif extension == 'xls' or extension == 'xlsx':
-    #     return "<i class='fa fa-file-excel-o fa-lg'></i>"
-    # else:
-    #     return extension
-#
-#
-#
-# @register.filter(is_safe=True)
-# def houseDetailsLink(value, text):
-#     if value:
-#         return """<span style='margin-right: 1em;'>
-#                   <a href='{1}'>
-#                     {0}
-#                   </a>
-#               </span>
-#         """.format(text, value)
-#     else:
-#         return ""
+    if length == 3:
+        return formatField + formatField + formatField
+
+    if length > 1:
+        if val[1].ordernr == "J":
+            return formatField + formatField + "<td></td>"
+        else:
+            return formatField + "<td></td>" + formatField
+    else:
+        return formatField + "<td></td>" + "<td></td>"
+
+
+@register.simple_tag
+def getDotfield():
+    return DOTFIELD
