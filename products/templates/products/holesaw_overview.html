@@ -85,45 +85,15 @@
           HSM
         </span> + <span class="text-orange-bold">014</span> + <span class="text-orange-bold">V</span> = <span class="text-orange-bold">HSM014V</span>
       </p>
+      <p>
+        <a class="btn btn-primary" role="button" href="{% url 'products:holesaw_advice' %}">
+          Zeige Empfehlungen für langen Sägespaß
+        </a>
+      </p>
     </div>
   </div>
 
   <hr>
-
-  <p>
-    <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-accessory" aria-expanded="false" aria-controls="collapse-accessory">
-      Zeige Empfehlungen für langen Sägespaß
-    </a>
-  </p>
-
-  <div id="collapse-accessory" class="collapse">
-    <h3 class="padding-bottom">Unsere Empfehlung für langen Sägespaß</h3>
-    <p>
-      Bitte passen Sie Ihre Umdrehungszahl den folgenden Empfehlungen an, um die Lebensdauer der
-      Lochsäge und die Schnittqualität zu optimieren. Bitte vergessen Sie des Weiteren nicht die permanente
-      Kühlung der Lochsäge während des Schneidprozesses.
-    </p>
-
-    <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
-      <thead>
-        <tr>
-          <th class="text-center table-white-border-right table-no-bot-border">&Oslash;</th>
-          <th class="text-center table-no-bot-border">NIRO</th>
-          <th class="text-center table-no-bot-border">Guss</th>
-          <th class="text-center table-no-bot-border">Stahl</th>
-          <th class="text-center table-no-bot-border">Buntmetalle</th>
-          <th class="text-center table-no-bot-border">ALU</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>14</td>
-          <td>300</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
-  </div>
 
   <h3>Zentriereinheiten</h3>
 
@@ -224,7 +194,7 @@
     {% for diameter in other %}
       {% with diameter.blades.all as diameters %}
         <tr>
-          <td>{{ diameter }}</td>
+          <td class="table-white-border-right">{{ diameter }}</td>
             {% autoescape off %}
               {% show_diameters diameters %}
             {% endautoescape %}

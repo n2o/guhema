@@ -45,3 +45,11 @@ def details(request, slug, type):
     return render(request, 'products/'+layout, {'blade': blade,
                                                 'clamping': blade.clamping,
                                                 'indicators': indicators})
+
+
+def holesawAdvices(request):
+    layout = 'holesaw_advice.html'
+    diameters = HoleSawDiameter.objects.filter(advice=True)
+    group = ProductGroup.objects.get(slug='lochsagen')
+    return render(request, 'products/'+layout, {'diameters': diameters,
+                                                'group': group})

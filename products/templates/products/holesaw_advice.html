@@ -1,0 +1,55 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+{% load markdown_deux_tags %}
+{% load products_tags %}
+
+{% block heading %}
+  <h1>
+    {{ group.name }}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  {% include 'products/include_productheader.html' with group=group %}
+
+  <hr>
+
+  <div>
+    <h3>Unsere Empfehlung für langen Sägespaß</h3>
+    <p>
+      Bitte passen Sie Ihre Umdrehungszahl den folgenden Empfehlungen an, um die Lebensdauer der
+      Lochsäge und die Schnittqualität zu optimieren. Bitte vergessen Sie des Weiteren nicht die permanente
+      Kühlung der Lochsäge während des Schneidprozesses.
+    </p>
+
+    <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
+      <thead>
+        <tr>
+          <th class="text-center table-white-border-right table-no-bot-border" width="16%">&Oslash;</th>
+          <th class="text-center table-no-bot-border" width="16%">NIRO</th>
+          <th class="text-center table-no-bot-border" width="16%">Guss</th>
+          <th class="text-center table-no-bot-border" width="16%">Stahl</th>
+          <th class="text-center table-no-bot-border" width="16%">Buntmetalle</th>
+          <th class="text-center table-no-bot-border" width="16%">ALU</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for diameter in diameters %}
+          <tr>
+            <td class="table-white-border-right">{{ diameter.diameter }}</td>
+            <td>{{ diameter.niro }}</td>
+            <td>{{ diameter.iron }}</td>
+            <td>{{ diameter.steel }}</td>
+            <td>{{ diameter.non_ferrous_metals }}</td>
+            <td>{{ diameter.alu }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <hr>
+  </div>
+
+  {{ blades.14.diameter.all.1 }}
+{% endblock %}
