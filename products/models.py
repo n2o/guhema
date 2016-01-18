@@ -5,10 +5,10 @@ from django.db import models
 
 class Indicator(models.Model):
     value = models.CharField("Kennziffer", max_length=1024, blank=False)
-    width = models.IntegerField("Breite", blank=True, default=0)
-    strength = models.FloatField("Stärke", blank=True, default=0)
-    length = models.IntegerField("Länge", blank=True, default=0)
-    diameter = models.CharField("Durchmesser", max_length=255, blank=True, default="")
+    width = models.IntegerField("Breite (in mm)", blank=True, default=0)
+    strength = models.FloatField("Stärke (in mm)", blank=True, default=0)
+    length = models.IntegerField("Länge (in mm)", blank=True, default=0)
+    diameter = models.CharField("Durchmesser (in mm)", max_length=255, blank=True, default="")
     C = models.BooleanField("C", blank=True, default=False)
     E = models.BooleanField("E", blank=True, default=False)
     G = models.BooleanField("G", blank=True, default=False)
@@ -120,7 +120,7 @@ class HoleSaw(models.Model):
 
 
 class HoleSawDiameter(models.Model):
-    diameter = models.IntegerField("Durchmesser in mm", blank=False)
+    diameter = models.IntegerField("Durchmesser (in mm)", blank=False)
     blades = models.ManyToManyField(HoleSaw, verbose_name="Lochsäge", blank=True)
     advice = models.BooleanField("Aus Empfehlungstabelle?", default=True, blank=True)
     niro = models.IntegerField("NIRO", null=True, blank=True)
@@ -139,9 +139,12 @@ class HoleSawDiameter(models.Model):
 
 class BandSawBladeIndicator(models.Model):
     value = models.CharField("Kennziffer", max_length=255, blank=False)
-    width = models.IntegerField("Breite", blank=True, default=0)
-    strength = models.FloatField("Stärke", blank=True, default=0)
+    width = models.IntegerField("Breite (in mm)", blank=True, default=0)
+    strength = models.FloatField("Stärke (in mm)", blank=True, default=0)
+    A = models.CharField("A", max_length=255, blank=True)
+    C = models.CharField("C", max_length=255, blank=True)
     E = models.CharField("E", max_length=255, blank=True)
+    F = models.CharField("F", max_length=255, blank=True)
     G = models.CharField("G", max_length=255, blank=True)
     H = models.CharField("H", max_length=255, blank=True)
     I = models.CharField("I", max_length=255, blank=True)
@@ -149,11 +152,30 @@ class BandSawBladeIndicator(models.Model):
     L = models.CharField("L", max_length=255, blank=True)
     N = models.CharField("N", max_length=255, blank=True)
     O = models.CharField("O", max_length=255, blank=True)
+    S = models.CharField("S", max_length=255, blank=True)
     T = models.CharField("T", max_length=255, blank=True)
     U = models.CharField("U", max_length=255, blank=True)
     V = models.CharField("V", max_length=255, blank=True)
     W = models.CharField("W", max_length=255, blank=True)
+    X = models.CharField("X", max_length=255, blank=True)
+    Y = models.CharField("Y", max_length=255, blank=True)
+    Z = models.CharField("Z", max_length=255, blank=True)
+    AE = models.CharField("Ä", max_length=255, blank=True)
+    UE = models.CharField("Ü", max_length=255, blank=True)
+    star_p = models.CharField("*P", max_length=255, blank=True)
+    RP = models.CharField("RP", max_length=255, blank=True)
+    SP = models.CharField("SP", max_length=255, blank=True)
+    TP = models.CharField("TP", max_length=255, blank=True)
+    UP = models.CharField("UP", max_length=255, blank=True)
+    VP = models.CharField("VP", max_length=255, blank=True)
+    WP = models.CharField("WP", max_length=255, blank=True)
 
+    def __str__(self):
+        return self.value
+
+    class Meta:
+        verbose_name = 'Sägeband-Kennziffer'
+        verbose_name_plural = 'Sägeband-Kennziffer'
 
 
 class BandSawBlade(SawBlade):
@@ -162,6 +184,7 @@ class BandSawBlade(SawBlade):
     type2 = models.CharField("2. Typ", max_length=255, blank=True)
     type2_description = models.CharField("2. Typ Beschreibung", max_length=255, blank=True)
     image2 = models.ImageField("2. Produktabbildung", null=True, blank=True)
+    heading = models.CharField("Seitentitel", max_length=255, blank=True)
 
     def __str__(self):
         return self.quality
