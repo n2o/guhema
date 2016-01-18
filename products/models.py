@@ -64,11 +64,11 @@ class ProductGroup(models.Model):
 
 class SawBlade(models.Model):
     quality = models.CharField("Stahlsorte", max_length=255, blank=False)
+    type = models.CharField("Typ", max_length=255, blank=True)
     name = models.CharField("Bezeichnung", max_length=255, blank=True)
     description = models.TextField("Beschreibung", max_length=1024, blank=True)
     group = models.ForeignKey(ProductGroup, verbose_name="Produktgruppe", null=True, blank=True)
     clamping = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
-    type = models.CharField("Typ", max_length=255, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
     image = models.ImageField("Produktabbildung", null=True, blank=True)
     indicators = models.ManyToManyField(Indicator, verbose_name="Kennziffern", blank=True)
@@ -135,3 +135,37 @@ class HoleSawDiameter(models.Model):
     class Meta:
         verbose_name = 'Lochsägen-Durchmesser'
         verbose_name_plural = 'Lochsägen-Durchmesser'
+
+
+class BandSawBladeIndicator(models.Model):
+    value = models.CharField("Kennziffer", max_length=255, blank=False)
+    width = models.IntegerField("Breite", blank=True, default=0)
+    strength = models.FloatField("Stärke", blank=True, default=0)
+    E = models.CharField("E", max_length=255, blank=True)
+    G = models.CharField("G", max_length=255, blank=True)
+    H = models.CharField("H", max_length=255, blank=True)
+    I = models.CharField("I", max_length=255, blank=True)
+    J = models.CharField("J", max_length=255, blank=True)
+    L = models.CharField("L", max_length=255, blank=True)
+    N = models.CharField("N", max_length=255, blank=True)
+    O = models.CharField("O", max_length=255, blank=True)
+    T = models.CharField("T", max_length=255, blank=True)
+    U = models.CharField("U", max_length=255, blank=True)
+    V = models.CharField("V", max_length=255, blank=True)
+    W = models.CharField("W", max_length=255, blank=True)
+
+
+
+class BandSawBlade(SawBlade):
+    bandsaw_indicators = models.ManyToManyField(BandSawBladeIndicator, verbose_name="Kenziffern", blank=True)
+    type_description = models.CharField("Typ Beschreibung", max_length=255, blank=True)
+    type2 = models.CharField("2. Typ", max_length=255, blank=True)
+    type2_description = models.CharField("2. Typ Beschreibung", max_length=255, blank=True)
+    image2 = models.ImageField("2. Produktabbildung", null=True, blank=True)
+
+    def __str__(self):
+        return self.quality
+
+    class Meta:
+        verbose_name = 'Sägeband'
+        verbose_name_plural = 'Sägebänder'

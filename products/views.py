@@ -47,7 +47,7 @@ def details(request, slug, type):
                                                 'indicators': indicators})
 
 
-def holesawAdvices(request):
+def holesawAdvice(request):
     layout = 'holesaw_advice.html'
     diameters = HoleSawDiameter.objects.filter(advice=True)
     group = ProductGroup.objects.get(slug='lochsagen')
