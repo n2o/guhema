@@ -1,0 +1,42 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block heading %}
+  <h1>
+    {{ group.name }}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  {% include 'products/include_productheader.html' with group=group %}
+
+  <hr>
+
+  <h3 class="padding-bottom">Übersicht</h3>
+  <div class="row">
+    <div class="col-md-12">
+      {% for blade in blades %}
+        {% ifchanged %}
+
+        {% endifchanged %}
+        <div class="products-list-item">
+          <h4>
+            <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+            <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+              {{ blade.quality }}
+            </a>
+            <br>
+            <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+            {{ blade.description }}
+            <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+              {{ blade.type }} Details
+            </a>
+          </h4>
+        </div>
+        {% include 'core/edit_item.html' with model="products_bandsawblade" id=blade.id %}
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
