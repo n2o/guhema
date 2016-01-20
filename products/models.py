@@ -185,6 +185,7 @@ class BandSawBlade(SawBlade):
     type2_description = models.CharField("2. Typ Beschreibung", max_length=255, blank=True)
     image2 = models.ImageField("2. Produktabbildung", null=True, blank=True)
     heading = models.CharField("Seitentitel", max_length=255, blank=True)
+    cols = models.CharField("Spalten", max_length=1024, blank=True)
 
     def __str__(self):
         return self.quality

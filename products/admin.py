@@ -57,7 +57,7 @@ class BandSawBladeAdmin(PageDownAdmin):
     search_fields = ['type', 'type2', 'quality', 'description']
     fieldsets = [
         ('Allgemein', {'fields': ['quality', 'name', 'heading', 'description', 'group']}),
-        ('Ausführungen', {'fields': [('type', 'type_description'), ('type2', 'type2_description'), ('image', 'image2'), 'bandsaw_indicators']}),
+        ('Ausführungen', {'fields': [('type', 'type_description'), ('type2', 'type2_description'), ('image', 'image2'), 'bandsaw_indicators', 'cols']}),
     ]
 
 

@@ -55,7 +55,10 @@ def details(request, slug, type):
 def detailsById(request, slug, id):
     layout = 'bandsawblade_details.html'
     blade = BandSawBlade.objects.get(id=id)
-    return render(request, 'products/'+layout, {'blade': blade})
+    indicators = blade.bandsaw_indicators.all()
+
+    return render(request, 'products/'+layout, {'blade': blade,
+                                                'indicators': indicators})
 
 
 def holesawAdvice(request):

@@ -2,6 +2,7 @@
 
 {% load products_tags %}
 {% load thumbnail %}
+{% load markdown_deux_tags %}
 
 {% block heading %}
 {% endblock %}
@@ -10,18 +11,16 @@
   <div class="row">
     <div class="col-md-8">
       <h1>
-        {{ blade.quality }}<br>
-        <small>{{ blade.description }} <span class="text-orange-bold">{{ blade.type }}</span></small>
+        {{ blade.quality }}
       </h1>
+      {{ blade.description|markdown }}
     </div>
     <div class="col-md-4">
       <p class="alert bg-orange-lighter" style="margin-top: 21px">
         Der schnelle Weg zu unserer Artikel-Nr.<br>
         <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">Kennziffer (Abmessung)</span> + <span class="text-orange-bold">ZpZ</span><br>
-        z.B.:
-        <span class="text-orange-bold">
-          {{ blade.type }}
-        </span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">L</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}L</span>
+        z.B.: <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}</span><br>
+        z.B.: <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> + <span class="text-orange-bold">Sägeblattlänge</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}03800</span>
       </p>
     </div>
   </div>
@@ -43,134 +42,367 @@
     </div>
   </div>
 
-  {% include 'core/edit_item.html' with model="products_sawblade" id=blade.id %}
+  {% include 'core/edit_item.html' with model="products_bandsawblade" id=blade.id %}
 
   <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
     <thead>
       <tr>
-        <th colspan="3" class="table-only-white-border-right"></th>
+        <th colspan="2" class="table-only-white-border-right"></th>
         <th colspan="14" class="table-no-border-color">ZpZ</th>
       </tr>
       <tr>
-        <th colspan="3" class="table-only-white-border-right"></th>
-        <th class="bg-orange-dark table-no-bot-border table-no-top-border table-small-height table-black-border-right" colspan="9">
-          Normalzahn
-        </th>
+        <th class="table-white-border-right table-no-bot-border" width="15%">Abmessungen</th>
+        <th class="table-white-border-right table-no-bot-border" width="15%">Kennziffer</th>
+        {% if "A" in blade.cols %}
+          <th class="table-no-bot-border">1,25</th>
+        {% endif %}
+        {% if "C" in blade.cols %}
+          <th class="table-no-bot-border">2</th>
+        {% endif %}
+        {% if "E" in blade.cols %}
+          <th class="table-no-bot-border">3</th>
+        {% endif %}
+        {% if "G" in blade.cols and "Grob" not in blade.cols %}
+          <th class="table-no-bot-border">4</th>
+        {% endif %}
+        {% if "H" in blade.cols %}
+          <th class="table-no-bot-border">6</th>
+        {% endif %}
+        {% if "I" in blade.cols %}
+          <th class="table-no-bot-border">8</th>
+        {% endif %}
+        {% if "J" in blade.cols %}
+          <th class="table-no-bot-border">10</th>
+        {% endif %}
+        {% if "L" in blade.cols %}
+          <th class="table-no-bot-border">14</th>
+        {% endif %}
+        {% if "N" in blade.cols %}
+          <th class="table-no-bot-border">18</th>
+        {% endif %}
+        {% if "O" in blade.cols %}
+          <th class="table-no-bot-border">22</th>
+        {% endif %}
+        {% if "Ä" in blade.cols %}
+          <th class="table-no-bot-border">0,9/1,1</th>
+        {% endif %}
+        {% if "S" in blade.cols %}
+          <th class="table-no-bot-border">1,4/2</th>
+        {% endif %}
+        {% if "Ü" in blade.cols %}
+          <th class="table-no-bot-border">1,9/2,1</th>
+        {% endif %}
+        {% if "T" in blade.cols %}
+          <th class="table-no-bot-border">2-3</th>
+        {% endif %}
+        {% if "U" in blade.cols %}
+          <th class="table-no-bot-border">3-4</th>
+        {% endif %}
+        {% if "V" in blade.cols %}
+          <th class="table-no-bot-border">4-6</th>
+        {% endif %}
+        {% if "W" in blade.cols %}
+          <th class="table-no-bot-border">5-8</th>
+        {% endif %}
+        {% if "X" in blade.cols %}
+          <th class="table-no-bot-border">6-10</th>
+        {% endif %}
+        {% if "Y" in blade.cols %}
+          <th class="table-no-bot-border">8-12</th>
+        {% endif %}
+        {% if "Z" in blade.cols %}
+          <th class="table-no-bot-border">10-14</th>
+        {% endif %}
+        {% if "*P" in blade.cols %}
+          <th class="table-no-bot-border">0,75-1,25</th>
+        {% endif %}
+        {% if "RP" in blade.cols %}
+          <th class="table-no-bot-border">1,1-1,4</th>
+        {% endif %}
+        {% if "SP" in blade.cols %}
+          <th class="table-no-bot-border">1,4-2</th>
+        {% endif %}
+        {% if "TP" in blade.cols %}
+          <th class="table-no-bot-border">2-3</th>
+        {% endif %}
+        {% if "UP" in blade.cols %}
+          <th class="table-no-bot-border">3-4</th>
+        {% endif %}
+        {% if "VP" in blade.cols %}
+          <th class="table-no-bot-border">4-6</th>
+        {% endif %}
+        {% if "WP" in blade.cols %}
+          <th class="table-no-bot-border">5-8</th>
+        {% endif %}
+        {% if "Fein" in blade.cols %}
+          <th class="table-no-bot-border">Fein</th>
+        {% endif %}
+        {% if "Standard" in blade.cols %}
+          <th class="table-no-bot-border">Standard</th>
+        {% endif %}
+        {% if "Grob" in blade.cols %}
+          <th class="table-no-bot-border">Grob</th>
+        {% endif %}
       </tr>
       <tr>
-        <th colspan="3" class="table-only-white-border-right"></th>
-        <th class="bg-orange-medium table-no-top-border table-no-bot-border table-small-height table-black-border-right" colspan="9">
-          Positivzahn
-        </th>
-        <th class="bg-orange-light table-white-border-right table-no-top-border table-no-bot-border table-small-height" colspan="5">
-          Variable Positivzahnung
-        </th>
-      </tr>
-      <tr>
-        <th colspan="2" class="table-white-border-right table-no-bot-border">Abmessungen</th>
-        <th class="table-white-border-right table-no-bot-border">Kennziffer</th>
-        <th class="table-no-bot-border">2</th>
-        <th class="table-no-bot-border">3</th>
-        <th class="table-no-bot-border">4</th>
-        <th class="table-no-bot-border">6</th>
-        <th class="table-no-bot-border">8</th>
-        <th class="table-no-bot-border">10</th>
-        <th class="table-no-bot-border">14</th>
-        <th class="table-no-bot-border">18</th>
-        <th class="table-black-border-right table-no-bot-border">
-          22
-        </th>
-        <th class="table-no-bot-border">2/3</th>
-        <th class="table-no-bot-border">3/4</th>
-        <th class="table-no-bot-border">4/6</th>
-        <th class="table-no-bot-border">6/8</th>
-        <th class="table-white-border-right table-no-bot-border">
-          8/10
-        </th>
-        <th class="table-no-bot-border">&Oslash;</th>
-      </tr>
-      <tr>
-        <th class="table-no-top-border">in mm: B x S</th>
-        <th class="table-white-border-right table-no-top-border">L</th>
+        <th class="table-white-border-right table-no-top-border">in mm: B x S</th>
         <th class="table-white-border-right table-no-top-border"></th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...C</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...E</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...G</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...H</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...I</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...J</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...L</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...N</span>
-        </th>
-        <th class="table-black-border-right table-no-top-border">
-          <span class="text-orange">...O</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...T</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...U</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...V</span>
-        </th>
-        <th class="table-no-top-border">
-          <span class="text-orange">...W</span>
-        </th>
-        <th class="table-white-border-right table-no-top-border">
-          <span class="text-orange">...Ü</span>
-        </th>
-        <th class="table-no-top-border">in mm</th>
+        {% if "A" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...A</span>
+          </th>
+        {% endif %}
+        {% if "C" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...C</span>
+          </th>
+        {% endif %}
+        {% if "E" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...E</span>
+          </th>
+        {% endif %}
+        {% if "G" in blade.cols and "Grob" not in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...G</span>
+          </th>
+        {% endif %}
+        {% if "H" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...H</span>
+          </th>
+        {% endif %}
+        {% if "I" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...I</span>
+          </th>
+        {% endif %}
+        {% if "J" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...J</span>
+          </th>
+        {% endif %}
+        {% if "L" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...L</span>
+          </th>
+        {% endif %}
+        {% if "N" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...N</span>
+          </th>
+        {% endif %}
+        {% if "O" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...O</span>
+          </th>
+        {% endif %}
+        {% if "Ä" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...Ä</span>
+          </th>
+        {% endif %}
+        {% if "S" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...S</span>
+          </th>
+        {% endif %}
+        {% if "Ü" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...Ü</span>
+          </th>
+        {% endif %}
+        {% if "T" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...T</span>
+          </th>
+        {% endif %}
+        {% if "U" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...U</span>
+          </th>
+        {% endif %}
+        {% if "V" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...V</span>
+          </th>
+        {% endif %}
+        {% if "W" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...W</span>
+          </th>
+        {% endif %}
+        {% if "X" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...X</span>
+          </th>
+        {% endif %}
+        {% if "Y" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...Y</span>
+          </th>
+        {% endif %}
+        {% if "Z" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...Z</span>
+          </th>
+        {% endif %}
+        {% if "*P" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...*P</span>
+          </th>
+        {% endif %}
+        {% if "RP" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...RP</span>
+          </th>
+        {% endif %}
+        {% if "SP" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...SP</span>
+          </th>
+        {% endif %}
+        {% if "TP" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...TP</span>
+          </th>
+        {% endif %}
+        {% if "UP" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...UP</span>
+          </th>
+        {% endif %}
+        {% if "VP" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...VP</span>
+          </th>
+        {% endif %}
+        {% if "WP" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...WP</span>
+          </th>
+        {% endif %}
+        {% if "Fein" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...F</span>
+          </th>
+        {% endif %}
+        {% if "Standard" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...S</span>
+          </th>
+        {% endif %}
+        {% if "Grob" in blade.cols %}
+          <th class="table-no-top-border">
+            <span class="text-orange">...G</span>
+          </th>
+        {% endif %}
       </tr>
     </thead>
     <tbody>
       {% for indicator in indicators %}
         <tr>
-          <td>
-            {{ indicator.width }} x {{ indicator.strength }}
-          </td>
           <td class="table-white-border-right">
-            {{ indicator.length }}
+            {{ indicator.width }} x {{ indicator.strength }}
           </td>
           <td class="text-orange-bold table-white-border-right">
             ...{{ indicator.value }}...
           </td>
 
-          <td width="5%" class="indicator-dot">{{ indicator.C|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.E|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.G|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.H|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.I|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.J|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.L|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.N|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot table-black-border-right">{{ indicator.O|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.T|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.U|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.V|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot">{{ indicator.W|check_zpz|safe }}</td>
-          <td width="5%" class="indicator-dot table-white-border-right">{{ indicator.UE|check_zpz|safe }}</td>
-
-          <td>{{ indicator.diameter }}</td>
+          {% if "A" in blade.cols %}
+            <td>{{ indicator.A|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "C" in blade.cols %}
+            <td>{{ indicator.C|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "E" in blade.cols %}
+            <td>{{ indicator.E|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "G" in blade.cols and "Grob" not in blade.cols %}
+            <td>{{ indicator.G|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "H" in blade.cols %}
+            <td>{{ indicator.H|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "I" in blade.cols %}
+            <td>{{ indicator.I|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "J" in blade.cols %}
+            <td>{{ indicator.J|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "L" in blade.cols %}
+            <td>{{ indicator.L|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "N" in blade.cols %}
+            <td>{{ indicator.N|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "O" in blade.cols %}
+            <td>{{ indicator.O|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "Ä" in blade.cols %}
+            <td>{{ indicator.AE|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "S" in blade.cols %}
+            <td>{{ indicator.S|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "Ü" in blade.cols %}
+            <td>{{ indicator.UE|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "T" in blade.cols %}
+            <td>{{ indicator.T|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "U" in blade.cols %}
+            <td>{{ indicator.U|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "V" in blade.cols %}
+            <td>{{ indicator.V|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "W" in blade.cols %}
+            <td>{{ indicator.W|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "X" in blade.cols %}
+            <td>{{ indicator.X|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "Y" in blade.cols %}
+            <td>{{ indicator.Y|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "Z" in blade.cols %}
+            <td>{{ indicator.Z|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "*P" in blade.cols %}
+            <td>{{ indicator.star_p|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "RP" in blade.cols %}
+            <td>{{ indicator.RP|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "SP" in blade.cols %}
+            <td>{{ indicator.SP|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "TP" in blade.cols %}
+            <td>{{ indicator.TP|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "UP" in blade.cols %}
+            <td>{{ indicator.UP|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "VP" in blade.cols %}
+            <td>{{ indicator.VP|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "WP" in blade.cols %}
+            <td>{{ indicator.WP|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "Fein" in blade.cols %}
+            <td>{{ indicator.F|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "Standard" in blade.cols %}
+            <td>{{ indicator.S|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
+          {% if "Grob" in blade.cols %}
+            <td>{{ indicator.G|bandsawIndicatorCheck|safe }}</td>
+          {% endif %}
 
           {% if user.is_staff %}
             <td>
-              <a href="{% url 'admin:products_indicator_change' indicator.id %}">
+              <a href="{% url 'admin:products_bandsawbladeindicator_change' indicator.id %}">
                 <i class="fa fa-pencil-square-o"></i>
               </a>
             </td>
@@ -181,5 +413,6 @@
     </tbody>
   </table>
 
+  {% include 'products/include_available_teeth.html' %}
 
 {% endblock %}

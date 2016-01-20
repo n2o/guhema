@@ -26,6 +26,14 @@ def check_zpz(val):
         return ""
 
 
+@register.filter(is_safe=True)
+def bandsawIndicatorCheck(val):
+    if val == "1":
+        return "<span class'indicator-dot'>" + DOTFIELD + "</span>"
+    else:
+        return "<strong>" + val + "</strong>"
+
+
 @register.simple_tag
 def show_diameters(val):
     # The first value of val is always true. So always add one dotfield
@@ -47,3 +55,25 @@ def show_diameters(val):
 @register.simple_tag
 def getDotfield():
     return DOTFIELD
+
+
+@register.simple_tag
+def validBandsawIndicator(ind):
+    if ind.L:
+        return "L"
+    elif ind.W:
+        return "W"
+    elif ind.T:
+        return "T"
+    elif ind.Z:
+        return "Z"
+    elif ind.VP:
+        return "VP"
+    elif ind.TP:
+        return "TP"
+    elif ind.F:
+        return "F"
+    elif ind.E:
+        return "E"
+    else:
+        return "L"

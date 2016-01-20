@@ -203,11 +203,8 @@
     {% endfor %}
     </tbody>
   </table>
-  <p>
-    {% autoescape off %}
-      {% getDotfield %} = lieferbare Verzahnung
-    {% endautoescape %}
-  </p>
+
+  {% include 'products/include_available_teeth.html' %}
 
   {{ blades.14.diameter.all.1 }}
 {% endblock %}
