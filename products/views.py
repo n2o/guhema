@@ -51,6 +51,13 @@ def details(request, slug, type):
                                                 'indicators': indicators})
 
 
+
+def detailsById(request, slug, id):
+    layout = 'bandsawblade_details.html'
+    blade = BandSawBlade.objects.get(id=id)
+    return render(request, 'products/'+layout, {'blade': blade})
+
+
 def holesawAdvice(request):
     layout = 'holesaw_advice.html'
     diameters = HoleSawDiameter.objects.filter(advice=True)

@@ -2,6 +2,7 @@
 
 {% load staticfiles %}
 {% load thumbnail %}
+{% load markdown_deux_tags %}
 
 {% block heading %}
   <h1>
@@ -12,31 +13,65 @@
 {% block content %}
   {% include 'products/include_productheader.html' with group=group %}
 
-  <hr>
+  {% for blade in blades %}
+    {% ifchanged %}
+      <hr>
+      <h3 class="padding-bottom">{{ blade.heading }}</h3>
+    {% endifchanged %}
 
-  <h3 class="padding-bottom">Übersicht</h3>
-  <div class="row">
-    <div class="col-md-12">
-      {% for blade in blades %}
-        {% ifchanged %}
+    <div class="row">
+    {% if blade.image2 %}
+        <div class="col-md-6">
+          <a href="{{ blade.image2.url }}">
+            <img src="{{ blade.image2|thumbnail_url:'blade_image' }}" alt="blade-image">
+          </a>
+        </div>
+      {% endif %}
+      {% if blade.image %}
+        <div class="col-md-6">
+          <a href="{{ blade.image.url }}">
+            <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="blade-image">
+          </a>
+        </div>
+      {% endif %}
+    </div>
 
-        {% endifchanged %}
-        <div class="products-list-item">
-          <h4>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-1">
             <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-            <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+          </div>
+          <div class="col-md-11">
+            <a class="text-normal" href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">
               {{ blade.quality }}
             </a>
-            <br>
-            <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-            {{ blade.description }}
-            <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-              {{ blade.type }} Details
-            </a>
-          </h4>
+          </div>
         </div>
-        {% include 'core/edit_item.html' with model="products_bandsawblade" id=blade.id %}
-      {% endfor %}
+        <div class="row">
+          <div class="col-md-1">
+            <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+          </div>
+          <div class="col-md-11">
+            {{ blade.name }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1">
+            <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+          </div>
+          <div class="col-md-11 markdown-no-padding-left">
+            {{ blade.description|markdown }}
+            <br>
+            <a class="text-normal" href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">
+              <span class="text-orange-bold">
+                Details
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+    {% include 'core/edit_item.html' with model="products_bandsawblade" id=blade.id %}
+  {% endfor %}
 {% endblock %}
