@@ -17,4 +17,12 @@
     </div>
   {% endif %}
   {{ entry.content|safe }}
+
+  {% if entry.attachment %}
+    <h3>Anhang</h3>
+    <p>
+      <a href="{{ entry.attachment.url }}">{{ entry.attachment.name }}</a>
+    </p>
+  {% endif %}
+
 {% endblock %}
