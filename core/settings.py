@@ -9,14 +9,27 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import sys
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+
+# Import SECRET_KEY and check it
+try:
+    from core.settings_secret import *
+except ImportError:
+    print("[ERROR] core/settings_secret.py not found. Please create it according to the template settings_secret.py.template")
+    sys.exit()
+
+if SECRET_KEY == "CHANGE_ME":
+    print("[ERROR] Please change your secret key, stored in core/settings_secret.py")
+    print("More information: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-SECRET_KEY")
+    sys.exit()
+elif len(SECRET_KEY) < 50:
+    print("[WARNING] Your SECRET_KEY is too short. Please consider changing it.")
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'fy5#xmxaf&@-30c_nm)0te&@=-g9y+45i6r03+%2(1q@vfztr_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
