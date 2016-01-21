@@ -153,6 +153,27 @@ THUMBNAIL_ALIASES = {
     },
 }
 
+# Markdown Deux Settings
+MARKDOWN_DEUX_STYLES = {
+    "default": {
+        "extras": {
+            "code-friendly": None,
+        },
+        # Allow raw HTML (WARNING: don't use this for user-generated
+        # Markdown for your site!).
+        "safe_mode": False,
+    },
+    "nohtml": {
+        "extras": {
+            "code-friendly": None,
+        },
+        # Allow raw HTML (WARNING: don't use this for user-generated
+        # Markdown for your site!).
+        "safe_mode": "escape",
+    },
+}
+
+
 # Needed for login
 import django.contrib.auth
 django.contrib.auth.LOGIN_URL = '/'
