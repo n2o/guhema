@@ -37,7 +37,7 @@ class Indicator(models.Model):
 class Clamping(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
     slug = AutoSlugField(null=True, populate_from='name')
-    image = models.ImageField("Bild", null=True, blank=True)
+    image = models.ImageField("Bild", null=True, blank=True, upload_to='blades/')
 
     def __str__(self):
         return self.name
@@ -51,7 +51,7 @@ class ProductGroup(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
     description = models.TextField("Beschreibung", max_length=1024, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
-    image = models.ImageField("Produktabbildung", null=True, blank=True)
+    image = models.ImageField("Produktabbildung", null=True, blank=True, upload_to='blades/')
     public = models.BooleanField("Öffentlich?", default=False, blank=False)
 
     def __str__(self):
@@ -70,7 +70,7 @@ class SawBlade(models.Model):
     group = models.ForeignKey(ProductGroup, verbose_name="Produktgruppe", null=True, blank=True)
     clamping = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
-    image = models.ImageField("Produktabbildung", null=True, blank=True)
+    image = models.ImageField("Produktabbildung", null=True, blank=True, upload_to='blades/')
     indicators = models.ManyToManyField(Indicator, verbose_name="Kennziffern", blank=True)
 
     def __str__(self):
@@ -102,7 +102,7 @@ class HackSawBlade(SableSawBlade):
 
 class HoleSaw(models.Model):
     ordernr = models.CharField("Bestellnr.", max_length=1024, blank=False)
-    image = models.ImageField("Abbildung", blank=True)
+    image = models.ImageField("Abbildung", blank=True, upload_to='blades/')
     description = models.TextField("Beschreibung", max_length=1024, blank=True)
     category = models.CharField("Kategorie", max_length=1024, blank=True)
     mounting = models.CharField("Aufnahmeschaft", max_length=1024, blank=True)
@@ -183,7 +183,7 @@ class BandSawBlade(SawBlade):
     type_description = models.CharField("Typ Beschreibung", max_length=255, blank=True)
     type2 = models.CharField("2. Typ", max_length=255, blank=True)
     type2_description = models.CharField("2. Typ Beschreibung", max_length=255, blank=True)
-    image2 = models.ImageField("2. Produktabbildung", null=True, blank=True)
+    image2 = models.ImageField("2. Produktabbildung", null=True, blank=True, upload_to='blades/')
     heading = models.CharField("Seitentitel", max_length=255, blank=True)
     cols = models.CharField("Spalten", max_length=1024, blank=True)
 

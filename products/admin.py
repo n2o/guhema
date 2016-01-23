@@ -35,6 +35,10 @@ class SableSawBladeAdmin(PageDownAdmin):
 class HackSawBladeAdmin(PageDownAdmin):
     list_display = ('type', 'group', 'quality', 'toothing', 'accessory', 'cutting_metal', 'cutting_wood', 'cutting_minerals', 'has_img_set')
     search_fields = ['type', 'quality', 'description']
+    fieldsets = [
+        ('Allgemein', {'fields': ['quality', 'type', 'name', 'description', 'group']}),
+        ('Beschreibung', {'fields': ['clamping', 'image', 'indicators', 'toothing', ('cutting_metal', 'cutting_wood', 'cutting_minerals'), 'accessory']}),
+    ]
     save_as = True
 
 

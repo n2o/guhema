@@ -15,68 +15,68 @@
 
   {% for blade in blades %}
     {% ifchanged %}
-      <hr>
       <h3 class="padding-bottom">{{ blade.heading }}</h3>
     {% endifchanged %}
 
-    <div class="row">
-    {% if blade.image2 %}
-        <div class="col-md-6">
-          <a href="{{ blade.image2.url }}">
-            <img src="{{ blade.image2|thumbnail_url:'blade_image' }}" alt="blade-image">
-          </a>
-        </div>
-      {% endif %}
-      {% if blade.image %}
-        <div class="col-md-6">
-          <a href="{{ blade.image.url }}">
-            <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="blade-image">
-          </a>
-        </div>
-      {% endif %}
-    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
 
-    <div class="row">
-      <div class="col-md-6">
         <div class="row">
-          <div class="col-md-2">
-            <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          {% if blade.image2 %}
+            <div class="col-md-6">
+              {% include 'products/include_blade_image.html' with image=blade.image2 slug=blade.group.slug id=blade.id %}
+            </div>
+          {% endif %}
+          {% if blade.image %}
+            <div class="col-md-6">
+              {% include 'products/include_blade_image.html' with image=blade.image slug=blade.group.slug id=blade.id %}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+              </div>
+              <div class="col-md-10">
+                <a class="text-normal" href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">
+                  {{ blade.quality }}
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+              </div>
+              <div class="col-md-10">
+                {{ blade.name }}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+              </div>
+              <div class="col-md-10 markdown-no-padding-left">
+                {{ blade.description|markdown }}
+                <a class="text-normal" href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">
+                  <span class="text-orange-bold">
+                    Details
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="col-md-10">
-            <a class="text-normal" href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">
-              {{ blade.quality }}
-            </a>
+          <div class="col-md-6">
+            <span class="text-orange-bold">
+              {{ blade.type }}... = {{ blade.type_description }}<br>
+              {{ blade.type2 }}... = {{ blade.type2_description }}
+            </span>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-2">
-            <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-          </div>
-          <div class="col-md-10">
-            {{ blade.name }}
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2">
-            <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-          </div>
-          <div class="col-md-10 markdown-no-padding-left">
-            {{ blade.description|markdown }}
-            <a class="text-normal" href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">
-              <span class="text-orange-bold">
-                Details
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <span class="text-orange-bold">
-          {{ blade.type }}... = {{ blade.type_description }}<br>
-          {{ blade.type2 }}... = {{ blade.type2_description }}
-        </span>
+        {% include 'core/edit_item.html' with model="products_bandsawblade" id=blade.id %}
       </div>
     </div>
-    {% include 'core/edit_item.html' with model="products_bandsawblade" id=blade.id %}
   {% endfor %}
 {% endblock %}

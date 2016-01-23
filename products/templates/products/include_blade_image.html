@@ -1,8 +1,12 @@
 {% load thumbnail %}
 
 {% if image %}
-  <div class="padding-bottom">
-    <a href="{{ image.url }}">
+  <div class="padding-bottom padding-top">
+    {% if slug %}
+      <a href="{% url 'products:details_by_id' slug=slug id=id %}">
+    {% else %}
+      <a href="{{ image.url }}">
+    {% endif %}
       <img class="img-responsive" src="{{ image|thumbnail_url:'blade_image' }}" alt="blade-image">
     </a>
   </div>
