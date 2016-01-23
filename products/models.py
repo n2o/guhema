@@ -209,17 +209,20 @@ class CircularSawBladeIndicator(models.Model):
     diameter = models.IntegerField("Durchmesser (in mm)", blank=True)
     strength = models.FloatField("Stärke (in mm)", blank=True)
     bore = models.IntegerField("Bohrung (in mm)", blank=True)
-    BW_3 = models.IntegerField("BW 3 mm", blank=True)
-    BW_4 = models.IntegerField("BW 4 mm", blank=True)
-    HZ_5 = models.IntegerField("HZ 5 mm", blank=True)
-    HZ_6 = models.IntegerField("HZ 6 mm", blank=True)
-    BW_7 = models.IntegerField("BW 7 mm", blank=True)
-    HZ_8 = models.IntegerField("HZ 8 mm", blank=True)
-    HZ_9 = models.IntegerField("HZ 9 mm", blank=True)
-    HZ_10 = models.IntegerField("HZ 10 mm", blank=True)
-    HZ_12 = models.IntegerField("HZ 12 mm", blank=True)
-    HZ_14 = models.IntegerField("HZ 14 mm", blank=True)
-    NL = models.CharField("NL in mm", max_length=255, blank=True)
+    BW_3 = models.IntegerField("BW 3 mm", null=True, blank=True)
+    BW_4 = models.IntegerField("BW 4 mm", null=True, blank=True)
+    HZ_5 = models.IntegerField("HZ 5 mm", null=True, blank=True)
+    HZ_6 = models.IntegerField("HZ 6 mm", null=True, blank=True)
+    BW_7 = models.IntegerField("BW 7 mm", null=True, blank=True)
+    HZ_8 = models.IntegerField("HZ 8 mm", null=True, blank=True)
+    HZ_9 = models.IntegerField("HZ 9 mm", null=True, blank=True)
+    HZ_10 = models.IntegerField("HZ 10 mm", null=True, blank=True)
+    HZ_12 = models.IntegerField("HZ 12 mm", null=True, blank=True)
+    HZ_14 = models.IntegerField("HZ 14 mm", null=True, blank=True)
+    NL = models.CharField("NL in mm", max_length=255, null=True, blank=True)
+
+    def __str__(self):
+        return self.value
 
     class Meta:
         verbose_name = "Metallkreissägeblatt-Kennziffer"
