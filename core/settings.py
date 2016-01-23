@@ -144,13 +144,13 @@ TEMPLATES = [
 # Configure Easy Thumbnails
 THUMBNAIL_ALIASES = {
     '': {
-        'news_front': {'size': (360, 165), 'crop': "smart"},
-        'news_detail': {'size': (452, 254), 'crop': "scale"},
-        'products_300': {'size': (300, 200), 'crop': "scale"},
-        'products_clamping': {'size': (250, 80), 'crop': "scale"},
-        'products_teaserimage': {'size': (262, 174), 'crop': "scale"},
-        'blade_image': {'size': (458, 80), 'crop': "scale"},
-        'blade_image_250h': {'size': (600, 250), 'crop': "scale"},
+        'news_front': {'size': (360, 165), 'crop': "smart", 'quality': 100},
+        'news_detail': {'size': (452, 254), 'crop': "scale", 'quality': 100},
+        'products_300': {'size': (300, 200), 'crop': "scale", 'quality': 100},
+        'products_clamping': {'size': (250, 80), 'crop': "scale", 'quality': 100},
+        'products_teaserimage': {'size': (262, 174), 'crop': "scale", 'quality': 100},
+        'blade_image': {'size': (458, 80), 'crop': "scale", 'quality': 100},
+        'blade_image_250h': {'size': (600, 250), 'crop': "scale", 'quality': 100},
     },
 }
 
