@@ -1,6 +1,15 @@
-{% extends "base.html" %}
+{% extends 'layout_productgroups.html' %}
+
+{% load markdown_deux_tags %}
+
+{% block heading %}
+  <h1>{{ flatpage.title }}</h1>
+{% endblock %}
 
 {% block content %}
-    <h2>{{ flatpage.title }}</h2>
-    <p> {{ flatpage.content }}</p>
+  {{ flatpage.content|markdown }}
+
+  <p>
+    {% include 'core/edit_item.html' with model="flatpages_flatpage" id=flatpage.id %}
+  </p>
 {% endblock %}

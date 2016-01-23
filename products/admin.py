@@ -1,7 +1,10 @@
 from django.contrib import admin
+from django.contrib.flatpages.admin import FlatPageAdmin
 from django.utils.safestring import mark_safe
 from pagedown.widgets import AdminPagedownWidget
 from django.db import models
+from django.contrib.flatpages.models import FlatPage
+from django.utils.translation import ugettext_lazy as _
 
 from .models import Indicator, SawBlade, Clamping, ProductGroup, SableSawBlade, HackSawBlade, HoleSaw, HoleSawDiameter, BandSawBlade, BandSawBladeIndicator, JigSawBlade, CircularSawBlade, CircularSawBladeIndicator
 
@@ -92,7 +95,26 @@ class CircularSawBladeAdmin(PageDownAdmin):
     ]
 
 
+# Define a new FlatPageAdmin
+class MyFlatPageAdmin(PageDownAdmin):
+    fieldsets = (
+        ("Allgemein", {'fields': ('url', 'title', 'content', 'sites')}),
+        (_('Advanced options'), {
+            'classes': ('collapse', ),
+            'fields': (
+                'enable_comments',
+                'registration_required',
+                'template_name',
+            ),
+        }),
+    )
+
+
 admin.site.register(CircularSawBladeIndicator)
 admin.site.register(BandSawBladeIndicator)
 admin.site.register(Clamping)
 admin.site.register(HoleSawDiameter)
+
+# Re-register FlatPageAdmin
+admin.site.unregister(FlatPage)
+admin.site.register(FlatPage, MyFlatPageAdmin)
