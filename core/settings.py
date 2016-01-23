@@ -150,6 +150,7 @@ THUMBNAIL_ALIASES = {
         'products_clamping': {'size': (250, 80), 'crop': "scale"},
         'products_teaserimage': {'size': (262, 174), 'crop': "scale"},
         'blade_image': {'size': (458, 80), 'crop': "scale"},
+        'blade_image_250h': {'size': (600, 250), 'crop': "scale"},
     },
 }
 

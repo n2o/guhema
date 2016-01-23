@@ -25,46 +25,52 @@
 
     {% for blade in blades %}
       {% if blade.accessory %}
-        <div class="row">
-          <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            {% include 'products/include_blade_image.html' with image=blade.image alias='blade_image_250h' %}
+
             <div class="row">
-              <div class="col-md-2">
-                <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-2">
+                    <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+                  </div>
+                  <div class="col-md-10">
+                    {{ blade.quality }}
+                    <span class="text-orange-bold">
+                      {{ blade.type }}
+                    </span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2">
+                    <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+                  </div>
+                  <div class="col-md-10 markdown-no-padding-left">
+                    {{ blade.description|markdown }}
+                  </div>
+                </div>
               </div>
-              <div class="col-md-10">
-                {{ blade.quality }}
-                <span class="text-orange-bold">
-                  {{ blade.type }}
-                </span>
+              <div class="col-md-offset-1 col-md-5">
+                <table class="table table-condensed table-striped-column table-hover">
+                  <tr>
+                    <td class="text-bold">
+                      Bestell-Nr.:
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-orange-bold">
+                      {{ blade.type }}
+                    </td>
+                  </tr>
+                </table>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-2">
-                <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-              </div>
-              <div class="col-md-10 markdown-no-padding-left">
-                {{ blade.description|markdown }}
-              </div>
-            </div>
-          </div>
-          <div class="col-md-offset-1 col-md-5">
-            <table class="table table-condensed table-striped-column table-hover">
-              <tr>
-                <td class="text-bold">
-                  Bestell-Nr.:
-                </td>
-              </tr>
-              <tr>
-                <td class="text-orange-bold">
-                  {{ blade.type }}
-                </td>
-              </tr>
-            </table>
           </div>
         </div>
 
         {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
-        <hr>
+
       {% endif %}
     {% empty %}
       <p>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
@@ -74,73 +80,86 @@
   <h3 class="padding-bottom">Sägeblätter</h3>
 
   {% for blade in blades %}
-    {% if not blade.accessory %}
-      <div class="row">
-        <div class="col-md-12">
+    {% with blades|next:forloop.counter0 as next %}
+    {% if not blade.accessory and not blade.type == "ASM" %}
+      <div class="panel panel-default">
+        <div class="panel-body">
+
+          {% include 'products/include_blade_image.html' with image=blade.image alias='blade_image_250h' %}
+
           <div class="row">
-            <div class="col-md-1">
-              <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-            </div>
-            <div class="col-md-11">
-              {{ blade.quality }}
-              <span class="text-orange-bold">
-                {{ blade.type }}
-              </span>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-1">
+                  <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+                </div>
+                <div class="col-md-11">
+                  {{ blade.quality }}
+                  <span class="text-orange-bold">
+                    {{ blade.type }}
+                  </span>
+                  <br>
+                  {% if next.type == "ASM" %}
+                    {{ next.quality }}
+                    <span class="text-orange-bold">
+                      {{ next.type }}
+                    </span>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1">
+                  <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+                </div>
+                <div class="col-md-11 markdown-no-padding-left">
+                  {{ blade.description|markdown }}
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-1">
-              <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-            </div>
-            <div class="col-md-11 markdown-no-padding-left">
-              {{ blade.description|markdown }}
-            </div>
-          </div>
+
+          <table class="table table-condensed table-striped-column table-hover">
+            <thead>
+              <th>
+                Bestell-Nr.:
+              </th>
+              <th>
+                Verzahnung
+              </th>
+              <th>
+                Abmessung
+              </th>
+              <th>
+                Schnittbereich Metall
+              </th>
+            </thead>
+            <tbody>
+              <tr>
+                {% for ind in blade.indicators.all %}
+                  <td class="text-orange-bold">
+                    {{ blade.type }}{{ ind.value }}
+                  </td>
+                {% endfor %}
+                <td>
+                  {{ blade.toothing }} ZpZ
+                </td>
+                <td>
+                  {% for ind in blade.indicators.all %}
+                    {{ ind.length }} x {{ ind.width }} x {{ ind.strength }}
+                  {% endfor %}
+                </td>
+                <td>
+                  {{ blade.cutting_metal }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
         </div>
       </div>
-
-      <table class="table table-condensed table-striped-column table-hover">
-        <thead>
-          <th>
-            Bestell-Nr.:
-          </th>
-          <th>
-            Verzahnung
-          </th>
-          <th>
-            Abmessung
-          </th>
-          <th>
-            Schnittbereich Metall
-          </th>
-        </thead>
-        <tbody>
-          <tr>
-            {% for ind in blade.indicators.all %}
-              <td class="text-orange-bold">
-                {{ blade.type }}{{ ind.value }}
-              </td>
-            {% endfor %}
-            <td>
-              {{ blade.toothing }} ZpZ
-            </td>
-            <td>
-              {% for ind in blade.indicators.all %}
-                {{ ind.length }} x {{ ind.width }} x {{ ind.strength }}
-              {% endfor %}
-            </td>
-            <td>
-              {{ blade.cutting_metal }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
-      {% if not forloop.last %}
-        <hr>
-      {% endif %}
     {% endif %}
+    {% endwith %}
   {% empty %}
     <p>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
   {% endfor %}

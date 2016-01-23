@@ -7,7 +7,11 @@
     {% else %}
       <a href="{{ image.url }}">
     {% endif %}
-      <img class="img-responsive" src="{{ image|thumbnail_url:'blade_image' }}" alt="blade-image">
+      {% if alias %}
+        <img class="img-responsive" src="{{ image|thumbnail_url:alias }}" alt="blade-image">
+      {% else %}
+        <img class="img-responsive" src="{{ image|thumbnail_url:'blade_image' }}" alt="blade-image">
+      {% endif %}
     </a>
   </div>
 {% endif %}

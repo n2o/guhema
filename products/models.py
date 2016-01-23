@@ -94,6 +94,7 @@ class SableSawBlade(SawBlade):
 
 class HackSawBlade(SableSawBlade):
     accessory = models.BooleanField("Zubehörartikel?", default=False, blank=False)
+    subcategory = models.CharField("Unterkategorie", max_length=255, blank=True)
 
     class Meta:
         verbose_name = 'Metallhandsägeblatt'
