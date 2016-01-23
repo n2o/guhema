@@ -16,7 +16,7 @@
 
   <hr>
 
-  <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-accessory" aria-expanded="false" aria-controls="collapse-accessory">
+  <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-accessory" aria-expanded="false" aria-controls="collapse-accessory" style="float:right;">
     Zubehörartikel anzeigen
   </a>
 
@@ -77,11 +77,17 @@
     {% endfor %}
   </div>
 
-  <h3 class="padding-bottom">Sägeblätter</h3>
-
   {% for blade in blades %}
     {% with blades|next:forloop.counter0 as next %}
     {% if not blade.accessory and not blade.type == "ASM" %}
+      {% ifchanged blade.subcategory %}
+        {% if forloop.counter0 == 0 %}
+          <h3 class="padding-bottom">{{ blade.subcategory }}</h3>
+        {% else %}
+          <h3 class="padding-bottom padding-top-2">{{ blade.subcategory }}</h3>
+        {% endif %}
+
+      {% endifchanged %}
       <div class="panel panel-default">
         <div class="panel-body">
 
