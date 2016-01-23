@@ -22,11 +22,7 @@
     {% endifchanged %}
     <div class="row">
       <div class="col-md-6">
-        {% if blade.image %}
-          <a href="{{ blade.image.url }}">
-            <img src="{{ blade.image|thumbnail_url:'blade_image' }}" alt="blade-image">
-          </a>
-        {% endif %}
+        {% include 'products/include_blade_image.html' with image=blade.image %}
       </div>
     </div>
     <div class="row">

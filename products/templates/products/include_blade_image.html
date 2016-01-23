@@ -1,0 +1,7 @@
+{% load thumbnail %}
+
+{% if image %}
+  <a href="{{ image.url }}">
+    <img src="{{ image|thumbnail_url:'blade_image' }}" alt="blade-image">
+  </a>
+{% endif %}
