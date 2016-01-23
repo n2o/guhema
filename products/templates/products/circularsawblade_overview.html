@@ -1,0 +1,246 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block heading %}
+  <h1>
+    {{ group.name }}
+  </h1>
+{% endblock %}
+
+{% block content %}
+  {% with blades.0 as blade %}
+  {% with blades.1 as blade2 %}
+
+    {% include 'products/include_productheader.html' with group=group %}
+
+    <hr>
+
+    <h3 class="padding-bottom">Übersicht</h3>
+
+    <div class="row padding-bottom">
+      <div class="col-md-4">
+        <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          {{ blade.quality }}
+          <span class="text-orange-bold">
+            {{ blade.type }}...
+          </span>
+        <br>
+        <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+        {{ blade.name }}
+        <br>
+        <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+        {{ blade.description }}
+        {% include 'core/edit_item.html' with model="products_circularsawblade" id=blade.id %}
+      </div>
+
+      <div class="col-md-4">
+        <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          {{ blade2.quality }}
+          <span class="text-orange-bold">
+            {{ blade2.type }}...
+          </span>
+        <br>
+        <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+        {{ blade2.name }}
+        <br>
+        <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+        {{ blade2.description }}
+        {% include 'core/edit_item.html' with model="products_circularsawblade" id=blade2.id %}
+      </div>
+
+      <div class="col-md-4">
+        <p class="alert bg-orange-lighter">
+          Der schnelle Weg zu unserer Artikel-Nr.<br>
+          <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">Kennziffer1</span> + <span class="text-orange-bold">Kennziffer2</span> + <span class="text-orange-bold">Kennziffer3</span><br>
+          z.B.:
+          <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ other.0.value }}</span> + <span class="text-orange-bold">G</span> + <span class="text-orange-bold">BH</span> = <span class="text-orange-bold">{{ blade.type }}{{ other.0.value }}GBH</span>
+        </p>
+      </div>
+    </div>
+
+    <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
+      <thead>
+        <tr>
+          <th colspan="3" class="table-white-border-right table-no-bot-border">&Oslash; / Stärke / Bohrung</th>
+          <th class="table-white-border-right table-no-bot-border">Kennziffer 1</th>
+          <th class="table-no-bot-border">BW</th>
+          <th class="table-no-bot-border">BW</th>
+          <th class="table-no-bot-border">HZ</th>
+          <th class="table-no-bot-border">HZ</th>
+          <th class="table-no-bot-border">BW</th>
+          <th class="table-no-bot-border">HZ</th>
+          <th class="table-no-bot-border">HZ</th>
+          <th class="table-no-bot-border">HZ</th>
+          <th class="table-no-bot-border">HZ</th>
+          <th class="table-no-bot-border">HZ</th>
+          <th class="table-no-bot-border">NL</th>
+        </tr>
+        <tr>
+          <th colspan="3" class="table-white-border-right table-no-top-border">in mm</th>
+          <th class="table-white-border-right table-no-top-border"></th>
+          <th class="table-no-top-border">3 mm</th>
+          <th class="table-no-top-border">4 mm</th>
+          <th class="table-no-top-border">5 mm</th>
+          <th class="table-no-top-border">6 mm</th>
+          <th class="table-no-top-border">7 mm</th>
+          <th class="table-no-top-border">8 mm</th>
+          <th class="table-no-top-border">9 mm</th>
+          <th class="table-no-top-border">10 mm</th>
+          <th class="table-no-top-border">12 mm</th>
+          <th class="table-no-top-border">14 mm</th>
+          <th class="table-no-top-border">in mm</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for indicator in other %}
+          <tr>
+            <td>
+              {% ifchanged  %}
+                {{ indicator.diameter }}
+              {% endifchanged %}
+            </td>
+            <td>
+              {{ indicator.strength }}
+            </td>
+            <td class="table-white-border-right">
+              {{ indicator.bore }}
+            </td>
+            <td class="text-orange-bold table-white-border-right">
+              ...{{ indicator.value }}...
+            </td>
+
+            <td>{% if indicator.BW_3 != 0 %}{{ indicator.BW_3 }}{% endif %}</td>
+            <td>{% if indicator.BW_4 != 0 %}{{ indicator.BW_4 }}{% endif %}</td>
+            <td>{% if indicator.HZ_5 != 0 %}{{ indicator.HZ_5 }}{% endif %}</td>
+            <td>{% if indicator.HZ_6 != 0 %}{{ indicator.HZ_6 }}{% endif %}</td>
+            <td>{% if indicator.BW_7 != 0 %}{{ indicator.BW_7 }}{% endif %}</td>
+            <td>{% if indicator.HZ_8 != 0 %}{{ indicator.HZ_8 }}{% endif %}</td>
+            <td>{% if indicator.HZ_9 != 0 %}{{ indicator.HZ_9 }}{% endif %}</td>
+            <td>{% if indicator.HZ_10 != 0 %}{{ indicator.HZ_10 }}{% endif %}</td>
+            <td>{% if indicator.HZ_12 != 0 %}{{ indicator.HZ_12 }}{% endif %}</td>
+            <td>{% if indicator.HZ_14 != 0 %}{{ indicator.HZ_14 }}{% endif %}</td>
+            <td>{% if indicator.NL != 0 %}{{ indicator.NL }}{% endif %}</td>
+
+            {% if user.is_staff %}
+              <td>
+                <a href="{% url 'admin:products_circularsawbladeindicator_change' indicator.id %}">
+                  <i class="fa fa-pencil-square-o"></i>
+                </a>
+              </td>
+            {% endif %}
+
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="row">
+      <div class="col-md-5">
+        <h4>Kennziffer 2<br><small>Legende Zähnezahl</small></h4>
+        <table class="table table-condensed table-striped-column table-hover">
+          <thead>
+            <tr>
+              <th>BW</th>
+              <th>HZ</th>
+              <th></th>
+              <th></th>
+            </tr>
+
+          </thead>
+          <tbody>
+            <tr>
+              <td>160 = <span class="text-orange-bold">...Q...</span></td>
+              <td>72  = <span class="text-orange-bold">...A...</span></td>
+              <td>120 = <span class="text-orange-bold">...H...</span></td>
+              <td>200 = <span class="text-orange-bold">...O...</span></td>
+            </tr>
+            <tr>
+              <td>180 = <span class="text-orange-bold">...R...</span></td>
+              <td>80  = <span class="text-orange-bold">...B...</span></td>
+              <td>128 = <span class="text-orange-bold">...I...</span></td>
+              <td>220 = <span class="text-orange-bold">...P...</span></td>
+            </tr>
+            <tr>
+              <td>200 = <span class="text-orange-bold">...S...</span></td>
+              <td>84  = <span class="text-orange-bold">...C...</span></td>
+              <td>140 = <span class="text-orange-bold">...J...</span></td>
+              <td>270 = <span class="text-orange-bold">...Ü...</span></td>
+            </tr>
+            <tr>
+              <td>220 = <span class="text-orange-bold">...U...</span></td>
+              <td>90  = <span class="text-orange-bold">...D...</span></td>
+              <td>144 = <span class="text-orange-bold">...K...</span></td>
+              <td>280 = <span class="text-orange-bold">...X...</span></td>
+            </tr>
+            <tr>
+              <td>240 = <span class="text-orange-bold">...V...</span></td>
+              <td>96  = <span class="text-orange-bold">...E...</span></td>
+              <td>150 = <span class="text-orange-bold">...L...</span></td>
+              <td>300 = <span class="text-orange-bold">...Y...</span></td>
+            </tr>
+            <tr>
+              <td>250 = <span class="text-orange-bold">...W...</span></td>
+              <td>100 = <span class="text-orange-bold">...F...</span></td>
+              <td>160 = <span class="text-orange-bold">...M...</span></td>
+              <td>340 = <span class="text-orange-bold">...Z...</span></td>
+            </tr>
+            <tr>
+              <td>280 = <span class="text-orange-bold">...X...</span></td>
+              <td>110 = <span class="text-orange-bold">...G...</span></td>
+              <td>180 = <span class="text-orange-bold">...N...</span></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-offset-1 col-md-3">
+        <h4>Kennziffer 3<br><small>Legende Nebenlöcher</small></h4>
+
+        <table class="table table-condensed table-striped-column table-hover">
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2/8/45 = <span class="text-orange-bold">...A...</span></td></tr>
+            <tr><td>2/8/55 = <span class="text-orange-bold">...B...</span></td></tr>
+            <tr><td>2/9/50 = <span class="text-orange-bold">...C...</span></td></tr>
+            <tr><td>2/11/63 = <span class="text-orange-bold">..D....</span></td></tr>
+            <tr><td>2/12/64 = <span class="text-orange-bold">...E...</span></td></tr>
+            <tr><td>2/15/80 = <span class="text-orange-bold">...F...</span></td></tr>
+            <tr><td>4/9/50 = <span class="text-orange-bold">....G..</span></td></tr>
+            <tr><td>4/12/64 = <span class="text-orange-bold">...H...</span></td></tr>
+            <tr><td>4/15/80 = <span class="text-orange-bold">...I...</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-responsive" src="{% static 'img/produktbilder/metallkreissaege/metallkreissaege_schema.png' %}" alt="Metallkreissäge">
+      </div>
+      <div class="col-md-6">
+        <h3>Bei der Bestellung machen Sie bitte folgende Angaben:</h3>
+        <ul>
+          <li>Artikelnummer</li>
+          <li>Andere Abmessungen bieten wir an, nennen Sie uns:</li>
+          <ul>
+            <li><strong>A</strong>&nbsp;&nbsp;&nbsp;Durchmesser des Blattes</li>
+            <li><strong>B</strong>&nbsp;&nbsp;&nbsp;Blattstärke</li>
+            <li><strong>C</strong>&nbsp;&nbsp;&nbsp;Hauptbohrung</li>
+            <li><strong>D</strong>&nbsp;&nbsp;&nbsp;Anzahl der Nebenlöcher</li>
+            <li><strong>E</strong>&nbsp;&nbsp;&nbsp;Lochdurchmesser</li>
+            <li><strong>F</strong>&nbsp;&nbsp;&nbsp;Teilkreis der Nebenlöcher</li>
+            <li><strong>G</strong>&nbsp;&nbsp;&nbsp;Zahnteilung oder Zähnezahl</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+  {% endwith %}
+  {% endwith %}
+{% endblock %}

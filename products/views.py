@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_list_or_404
 
-from .models import SawBlade, ProductGroup, SableSawBlade, HackSawBlade, HoleSaw, HoleSawDiameter, BandSawBlade, BandSawBladeIndicator, JigSawBlade
+from .models import SawBlade, ProductGroup, SableSawBlade, HackSawBlade, HoleSaw, HoleSawDiameter, BandSawBlade, BandSawBladeIndicator, JigSawBlade, CircularSawBlade, CircularSawBladeIndicator
 
 
 def index(request):
@@ -36,6 +36,10 @@ def list(request, slug):
     elif slug == 'pendelhubstichsageblatter':
         layout = 'jigsawblade_overview.html'
         blades = JigSawBlade.objects.all()
+    elif slug == 'metallkreissageblatter':
+        layout = 'circularsawblade_overview.html'
+        blades = CircularSawBlade.objects.all()
+        other = CircularSawBladeIndicator.objects.all().order_by('diameter')
     return render(request, 'products/'+layout, {'blades': blades,
                                                 'group': group,
                                                 'other': other})
