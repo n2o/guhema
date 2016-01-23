@@ -30,7 +30,7 @@ class Indicator(models.Model):
 
     class Meta:
         verbose_name = 'Kennziffer'
-        verbose_name_plural = 'Kennziffer'
+        verbose_name_plural = 'Kennziffern'
         ordering = ('value',)
 
 
@@ -175,7 +175,7 @@ class BandSawBladeIndicator(models.Model):
 
     class Meta:
         verbose_name = 'Sägeband-Kennziffer'
-        verbose_name_plural = 'Sägeband-Kennziffer'
+        verbose_name_plural = 'Sägeband-Kennziffern'
 
 
 class BandSawBlade(SawBlade):
@@ -202,3 +202,33 @@ class JigSawBlade(SawBlade):
     class Meta:
         verbose_name = 'Pendelhubstichsägeblatt'
         verbose_name_plural = 'Pendelhubstichsägeblätter'
+
+
+class CircularSawBladeIndicator(models.Model):
+    value = models.CharField("Kennziffer", max_length=255, blank=False)
+    diameter = models.IntegerField("Durchmesser (in mm)", blank=True)
+    strength = models.FloatField("Stärke (in mm)", blank=True)
+    bore = models.IntegerField("Bohrung (in mm)", blank=True)
+    BW_3 = models.IntegerField("BW 3 mm", blank=True)
+    BW_4 = models.IntegerField("BW 4 mm", blank=True)
+    HZ_5 = models.IntegerField("HZ 5 mm", blank=True)
+    HZ_6 = models.IntegerField("HZ 6 mm", blank=True)
+    BW_7 = models.IntegerField("BW 7 mm", blank=True)
+    HZ_8 = models.IntegerField("HZ 8 mm", blank=True)
+    HZ_9 = models.IntegerField("HZ 9 mm", blank=True)
+    HZ_10 = models.IntegerField("HZ 10 mm", blank=True)
+    HZ_12 = models.IntegerField("HZ 12 mm", blank=True)
+    HZ_14 = models.IntegerField("HZ 14 mm", blank=True)
+    NL = models.CharField("NL in mm", max_length=255, blank=True)
+
+    class Meta:
+        verbose_name = "Metallkreissägeblatt-Kennziffer"
+        verbose_name_plural = "Metallkreissägeblatt-Kennziffern"
+
+
+class CircularSawBlade(SawBlade):
+    circular_indicators = models.ManyToManyField(CircularSawBladeIndicator, verbose_name="Kenziffern", blank=True)
+
+    class Meta:
+        verbose_name = "Metallkreissägeblatt"
+        verbose_name_plural = "Metallkreissägeblätter"

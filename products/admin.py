@@ -2,7 +2,7 @@ from django.contrib import admin
 from pagedown.widgets import AdminPagedownWidget
 from django.db import models
 
-from .models import Indicator, SawBlade, Clamping, ProductGroup, SableSawBlade, HackSawBlade, HoleSaw, HoleSawDiameter, BandSawBlade, BandSawBladeIndicator, JigSawBlade
+from .models import Indicator, SawBlade, Clamping, ProductGroup, SableSawBlade, HackSawBlade, HoleSaw, HoleSawDiameter, BandSawBlade, BandSawBladeIndicator, JigSawBlade, CircularSawBlade
 
 
 class PageDownAdmin(admin.ModelAdmin):
@@ -68,6 +68,16 @@ class JigSawBladeAdmin(PageDownAdmin):
     fieldsets = [
         ('Allgemein', {'fields': ['quality', 'subcategory', 'description', 'group']}),
         ('Ausführungen', {'fields': ['type', 'image', 'tooth_separation', 'length', ('cutting_metal', 'cutting_wood')]}),
+    ]
+
+
+@admin.register(CircularSawBlade)
+class CircularSawBladeAdmin(PageDownAdmin):
+    list_display = ('type', 'quality')
+    search_fields = ['type']
+    fieldsets = [
+        ('Allgemein', {'fields': ['quality', 'name', 'description', 'group']}),
+        ('Kennziffer 1', {'fields': ['circular_indicators']}),
     ]
 
 

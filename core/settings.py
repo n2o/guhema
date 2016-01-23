@@ -49,7 +49,7 @@ INSTALLED_APPS = (
     'django.contrib.flatpages',
 
     # 3rd party
-    'login',
+    #'login',
     'autoslug',
     'easy_thumbnails',
     'pagedown',
