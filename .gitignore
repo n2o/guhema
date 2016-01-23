@@ -53,6 +53,12 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# Ignore cropped images
+*_crop-smart.png
+*_crop-scale.png
+*_crop-smart.jpg
+*_crop-scale.jpg
+
 # Other
 *.bak
 sass

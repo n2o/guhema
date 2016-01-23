@@ -195,7 +195,7 @@ class BandSawBlade(SawBlade):
 class JigSawBlade(SawBlade):
     subcategory = models.CharField("Unterkategorie", max_length=255, blank=True)
     tooth_separation = models.FloatField("Zahnteilung (ZpZ)", blank=True)
-    length = models.IntegerField("Sägeblattlänge (in mm)", max_length=255, default=0, blank=True)
+    length = models.IntegerField("Sägeblattlänge (in mm)", default=0, blank=True)
     cutting_metal = models.CharField("Schnittbereich Metall (in mm)", max_length=255, blank=True)
     cutting_wood = models.CharField("Schnittbereich Holz (in mm)", max_length=255, blank=True)
 
