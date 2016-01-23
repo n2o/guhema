@@ -20,11 +20,9 @@
     {% ifchanged blade.subcategory %}
       <h3 class="padding-bottom">{{ blade.subcategory }}</h3>
     {% endifchanged %}
-    <div class="row">
-      <div class="col-md-6">
-        {% include 'products/include_blade_image.html' with image=blade.image %}
-      </div>
-    </div>
+
+    {% include 'products/include_blade_image.html' with image=blade.image %}
+
     <div class="row">
       <div class="col-md-6">
         <div class="row">

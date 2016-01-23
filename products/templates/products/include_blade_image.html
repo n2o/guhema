@@ -1,7 +1,9 @@
 {% load thumbnail %}
 
 {% if image %}
-  <a href="{{ image.url }}">
-    <img src="{{ image|thumbnail_url:'blade_image' }}" alt="blade-image">
-  </a>
+  <div class="padding-bottom">
+    <a href="{{ image.url }}">
+      <img class="img-responsive" src="{{ image|thumbnail_url:'blade_image' }}" alt="blade-image">
+    </a>
+  </div>
 {% endif %}

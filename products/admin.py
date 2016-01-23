@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.utils.safestring import mark_safe
 from pagedown.widgets import AdminPagedownWidget
 from django.db import models
 
@@ -10,23 +11,29 @@ class PageDownAdmin(admin.ModelAdmin):
         models.TextField: {'widget': AdminPagedownWidget}
     }
 
+    def has_img_set(self, obj):
+        if obj.image:
+            return mark_safe("<img src='/static/admin/img/icon-yes.svg' alt='True'>")
+        else:
+            return mark_safe("<img src='/static/admin/img/icon-no.svg' alt='False'>")
+
 
 @admin.register(SawBlade)
 class SawBladeAdmin(PageDownAdmin):
-    list_display = ('type', 'group', 'quality')
+    list_display = ('type', 'group', 'quality', 'has_img_set')
     search_fields = ['type', 'quality', 'description']
 
 
 @admin.register(SableSawBlade)
 class SableSawBladeAdmin(PageDownAdmin):
-    list_display = ('type', 'group', 'quality', 'toothing', 'cutting_metal', 'cutting_wood', 'cutting_minerals')
+    list_display = ('type', 'group', 'quality', 'toothing', 'cutting_metal', 'cutting_wood', 'cutting_minerals', 'has_img_set')
     search_fields = ['type', 'quality', 'description']
     save_as = True
 
 
 @admin.register(HackSawBlade)
 class HackSawBladeAdmin(PageDownAdmin):
-    list_display = ('type', 'group', 'quality', 'toothing', 'accessory', 'cutting_metal', 'cutting_wood', 'cutting_minerals')
+    list_display = ('type', 'group', 'quality', 'toothing', 'accessory', 'cutting_metal', 'cutting_wood', 'cutting_minerals', 'has_img_set')
     search_fields = ['type', 'quality', 'description']
     save_as = True
 
@@ -42,7 +49,7 @@ class IndicatorAdmin(PageDownAdmin):
 
 @admin.register(HoleSaw)
 class HoleSawAdmin(PageDownAdmin):
-    list_display = ('ordernr', 'category')
+    list_display = ('ordernr', 'category', 'has_img_set')
     search_fields = ['ordernr']
 
 
@@ -53,7 +60,7 @@ class ProductGroupAdmin(PageDownAdmin):
 
 @admin.register(BandSawBlade)
 class BandSawBladeAdmin(PageDownAdmin):
-    list_display = ('type', 'type2', 'group', 'quality')
+    list_display = ('type', 'type2', 'group', 'quality', 'has_img_set')
     search_fields = ['type', 'type2', 'quality', 'description']
     fieldsets = [
         ('Allgemein', {'fields': ['quality', 'name', 'heading', 'description', 'group']}),
@@ -63,7 +70,7 @@ class BandSawBladeAdmin(PageDownAdmin):
 
 @admin.register(JigSawBlade)
 class JigSawBladeAdmin(PageDownAdmin):
-    list_display = ('type', 'subcategory')
+    list_display = ('type', 'subcategory', 'has_img_set')
     search_fields = ['type', 'subcategory']
     fieldsets = [
         ('Allgemein', {'fields': ['quality', 'subcategory', 'description', 'group']}),
@@ -73,7 +80,7 @@ class JigSawBladeAdmin(PageDownAdmin):
 
 @admin.register(CircularSawBlade)
 class CircularSawBladeAdmin(PageDownAdmin):
-    list_display = ('type', 'quality')
+    list_display = ('type', 'quality', 'has_img_set')
     search_fields = ['type']
     fieldsets = [
         ('Allgemein', {'fields': ['quality', 'type', 'name', 'description', 'group']}),
