@@ -104,7 +104,7 @@
           <tr>
             <th>Aufnahmeschaft</th>
             <th>Lochsäge</th>
-            <th>Bestell-Nr.</th>
+            <th width="20%">Bestell-Nr.</th>
           </tr>
         </thead>
         <tbody>
@@ -113,7 +113,11 @@
               <tr>
                 <td>{{ blade.mounting }}</td>
                 <td>{{ blade.saw_length }}</td>
-                <td>{{ blade.ordernr }}</td>
+                <td>
+                  <span class="text-orange-bold">
+                    {{ blade.ordernr }}
+                  </span>
+                </td>
               </tr>
             {% endif %}
           {% endfor %}
@@ -126,7 +130,7 @@
           <tr>
             <th>Aufnahmeschaft</th>
             <th>Lochsäge</th>
-            <th>Bestell-Nr.</th>
+            <th width="20%">Bestell-Nr.</th>
           </tr>
         </thead>
         <tbody>
@@ -135,7 +139,11 @@
               <tr>
                 <td>{{ blade.mounting }}</td>
                 <td>{{ blade.saw_length }}</td>
-                <td>{{ blade.ordernr }}</td>
+                <td>
+                  <span class="text-orange-bold">
+                    {{ blade.ordernr }}
+                  </span>
+                </td>
               </tr>
             {% endif %}
           {% endfor %}
@@ -146,24 +154,32 @@
 
   <h3>Zubehör / Ersatzteile</h3>
 
-  <table class="table table-condensed table-striped-column table-hover">
-    <thead>
-      <tr>
-        <th>Beschreibung</th>
-        <th>Bestell-Nr.</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for blade in blades %}
-        {% if blade.category == "Zubehör / Ersatzteile" %}
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-condensed table-striped-column table-hover">
+        <thead>
           <tr>
-            <td>{{ blade.description }}</td>
-            <td>{{ blade.ordernr }}</td>
+            <th>Beschreibung</th>
+            <th width="20%">Bestell-Nr.</th>
           </tr>
-        {% endif %}
-      {% endfor %}
-    </tbody>
-  </table>
+        </thead>
+        <tbody>
+          {% for blade in blades %}
+            {% if blade.category == "Zubehör / Ersatzteile" %}
+              <tr>
+                <td>{{ blade.description }}</td>
+                <td>
+                  <span class="text-orange-bold">
+                    {{ blade.ordernr }}
+                  </span>
+                </td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <h3>Durchmesser</h3>
 
