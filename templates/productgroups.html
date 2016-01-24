@@ -7,31 +7,21 @@
         <h3>PRODUKTGRUPPEN</h3>
       </div>
       <div class="col-md-8 text-right">
-        <a href="{% url 'products:list' slug='maschinensageblatter' %}">
-          <img class="img-product-groups" src="{% static 'img/produktbilder/saege001.png' %}" alt="saege001">
-        </a>
-        <a href="{% url 'products:list' slug='metallstichsageblatter' %}">
-          <img class="img-product-groups" src="{% static 'img/produktbilder/saege002.png' %}" alt="saege002">
-        </a>
-        <a href="{% url 'products:list' slug='sabel-und-spezialsabelsageblatter' %}">
-          <img class="img-product-groups" src="{% static 'img/produktbilder/saege003.png' %}" alt="saege003">
-        </a>
-        <a href="{% url 'products:list' slug='metallhandsageblatter' %}">
-          <img class="img-product-groups" src="{% static 'img/produktbilder/saege004.png' %}" alt="saege004">
-        </a>
-        <a href="{% url 'products:list' slug='lochsagen' %}">
-          <img class="img-product-groups" src="{% static 'img/produktbilder/saege005.png' %}" alt="saege005">
-        </a>
-        <a href="{% url 'products:list' slug='metallsagebander' %}">
-          <img class="img-product-groups" src="{% static 'img/produktbilder/saege006.png' %}" alt="saege006">
-        </a>
-        <a href="{% url 'products:list' slug='pendelhubstichsageblatter' %}">
-          <img class="img-product-groups" src="{% static 'img/produktbilder/saege007.png' %}" alt="saege007">
-        </a>
-        <a href="{% url 'products:list' slug='metallkreissageblatter' %}">
-          <img class="img-product-groups" src="{% static 'img/produktbilder/saege008.png' %}" alt="saege008">
-        </a>
+        <a href="{% url 'products:list' slug='maschinensageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege001.png' %}" data-toggle="tooltip" data-placement="top" title="Maschinensägeblätter" alt="Maschinensägeblätter"></a>
+        <a href="{% url 'products:list' slug='metallstichsageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege002.png' %}" data-toggle="tooltip" data-placement="top" title="Metallstichsägeblätter" alt="Metallstichsägeblätter"></a>
+        <a href="{% url 'products:list' slug='sabel-und-spezialsabelsageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege003.png' %}" data-toggle="tooltip" data-placement="top" title="Säbel- und Spezialsäbelsägeblätter" alt="Säbel- und Spezialsäbelsägeblätter"></a>
+        <a href="{% url 'products:list' slug='metallhandsageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege004.png' %}" data-toggle="tooltip" data-placement="top" title="Metallhandsägeblätter" alt="Metallhandsägeblätter"></a>
+        <a href="{% url 'products:list' slug='lochsagen' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege005.png' %}" data-toggle="tooltip" data-placement="top" title="Lochsägen" alt="Lochsägen"></a>
+        <a href="{% url 'products:list' slug='metallsagebander' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege006.png' %}" data-toggle="tooltip" data-placement="top" title="Metallsägebänder" alt="Metallsägebänder"></a>
+        <a href="{% url 'products:list' slug='pendelhubstichsageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege007.png' %}" data-toggle="tooltip" data-placement="top" title="Pendelhubstichsägeblätter" alt="Pendelhubstichsägeblätter"></a>
+        <a href="{% url 'products:list' slug='metallkreissageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege008.png' %}" data-toggle="tooltip" data-placement="top" title="Metallkreissägeblätter" alt="Metallkreissägeblätter"></a>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>

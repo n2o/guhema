@@ -26,6 +26,7 @@ urlpatterns = [
 # Named Staticpages
 urlpatterns += [
     url(r'^unternehmen/$', flatpageviews.flatpage, {'url': '/unternehmen/'}, name='company'),
+    url(r'^messen/$', flatpageviews.flatpage, {'url': '/messen/'}, name='fairs'),
     url(r'^impressum/$', flatpageviews.flatpage, {'url': '/impressum/'}, name='impressum'),
 
     url(r'^(?P<url>.*/)$', flatpageviews.flatpage, name='page'),
