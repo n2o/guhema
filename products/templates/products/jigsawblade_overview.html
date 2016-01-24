@@ -21,83 +21,82 @@
       <h3 class="padding-bottom">{{ blade.subcategory }}</h3>
     {% endifchanged %}
 
-    {% include 'products/include_blade_image.html' with image=blade.image %}
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {% include 'products/include_blade_image.html' with image=blade.image %}
 
-    <div class="row">
-      <div class="col-md-6">
         <div class="row">
-          <div class="col-md-2">
-            <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+              </div>
+              <div class="col-md-10">
+                {{ blade.quality }}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+              </div>
+              <div class="col-md-10 markdown-no-padding-left">
+                {{ blade.description|markdown }}
+              </div>
+            </div>
           </div>
-          <div class="col-md-10">
-            {{ blade.quality }}
+          <div class="col-md-6">
+            <table class="table table-condensed table-striped-column table-hover">
+              <thead>
+                <th>
+                  Bestell-Nr.:
+                </th>
+                <th>
+                  Zahnteilung
+                </th>
+                <th>
+                  Sägeblattlänge
+                </th>
+                {% if blade.cutting_metal %}
+                  <th>
+                    Schnittbereich Metall
+                  </th>
+                {% endif %}
+                {% if blade.cutting_wood %}
+                  <th>
+                    Schnittbereich Holz
+                  </th>
+                {% endif %}
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-orange-bold">
+                    {{ blade.type }}
+                  </td>
+                  <td>
+                    {{ blade.tooth_separation }} ZpZ
+                  </td>
+                  <td>
+                    {{ blade.length }} mm
+                  </td>
+                  {% if blade.cutting_metal %}
+                    <td>
+                      {{ blade.cutting_metal }} mm
+                    </td>
+                  {% endif %}
+                  {% if blade.cutting_wood %}
+                    <td>
+                      {{ blade.cutting_wood }} mm
+                    </td>
+                  {% endif %}
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-2">
-            <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-          </div>
-          <div class="col-md-10 markdown-no-padding-left">
-            {{ blade.description|markdown }}
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <table class="table table-condensed table-striped-column table-hover">
-          <thead>
-            <th>
-              Bestell-Nr.:
-            </th>
-            <th>
-              Zahnteilung
-            </th>
-            <th>
-              Sägeblattlänge
-            </th>
-            {% if blade.cutting_metal %}
-              <th>
-                Schnittbereich Metall
-              </th>
-            {% endif %}
-            {% if blade.cutting_wood %}
-              <th>
-                Schnittbereich Holz
-              </th>
-            {% endif %}
-          </thead>
-          <tbody>
-            <tr>
-              <td class="text-orange-bold">
-                {{ blade.type }}
-              </td>
-              <td>
-                {{ blade.tooth_separation }} ZpZ
-              </td>
-              <td>
-                {{ blade.length }} mm
-              </td>
-              {% if blade.cutting_metal %}
-                <td>
-                  {{ blade.cutting_metal }} mm
-                </td>
-              {% endif %}
-              {% if blade.cutting_wood %}
-                <td>
-                  {{ blade.cutting_wood }} mm
-                </td>
-              {% endif %}
-            </tr>
-          </tbody>
-        </table>
+        {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
       </div>
     </div>
 
-
-
-    {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
-    {% if not forloop.last %}
-      <hr>
-    {% endif %}
   {% empty %}
     <p>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
   {% endfor %}
