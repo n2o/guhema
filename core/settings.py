@@ -34,7 +34,7 @@ elif len(SECRET_KEY) < 50:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pt8lpuijgniy33u5.myfritz.net', 'cmeter.de', 'christian-meter.de']
 
 SITE_ID = 1
 
