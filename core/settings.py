@@ -54,10 +54,13 @@ INSTALLED_APPS = (
     'easy_thumbnails',
     'pagedown',
     'markdown_deux',
+    'captcha',
+    'django_forms_bootstrap',
 
     # Own apps
     'news',
     'products',
+    'contact',
 )
 # Application definition
 

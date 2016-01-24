@@ -18,6 +18,8 @@ urlpatterns = [
     # Own Apps
     url(r'^news/', include('news.urls', namespace='news')),
     url(r'^produkte/', include('products.urls', namespace='products')),
+    url(r'^kontakt/', include('contact.urls', namespace='contact')),
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
@@ -25,7 +27,6 @@ urlpatterns = [
 urlpatterns += [
     url(r'^unternehmen/$', flatpageviews.flatpage, {'url': '/unternehmen/'}, name='company'),
     url(r'^impressum/$', flatpageviews.flatpage, {'url': '/impressum/'}, name='impressum'),
-    url(r'^kontakt/$', flatpageviews.flatpage, {'url': '/kontakt/'}, name='contact'),
 
     url(r'^(?P<url>.*/)$', flatpageviews.flatpage, name='page'),
 ]

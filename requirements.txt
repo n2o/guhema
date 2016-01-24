@@ -1,9 +1,12 @@
+caffeine-ng==3.0
 Django==1.9.1
 django-autoslug==1.9.3
+django-forms-bootstrap==3.0.1
 django-markdown-deux==1.0.5
 django-mptt==0.8.0
 django-pagedown==0.1.1
 django-polymorphic==0.8.1
+django-recaptcha==1.0.5
 easy-thumbnails==2.3
 markdown2==2.3.0
 Pillow==3.1.0

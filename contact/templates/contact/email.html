@@ -1,0 +1,22 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load bootstrap_tags %}
+
+{% block heading %}
+  <h1>Kontakt</h1>
+{% endblock heading %}
+
+{% block content %}
+
+  <p>
+    Hier haben Sie die Möglichkeit uns eine E-Mail zu senden. Bitte füllen Sie dafür alle Felder aus. Wir werden uns
+    dann bei Ihnen melden!
+  </p>
+
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form|as_bootstrap }}
+    <input type="submit" value="Abschicken" class="btn btn-default">
+  </form>
+{% endblock content %}
