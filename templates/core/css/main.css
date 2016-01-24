@@ -82,12 +82,25 @@ h1 {
 .navbar .container {
   padding-top: 1em; }
 
-#navbar {
-  padding: 0 !important; }
+.navbar-default {
+  background-color: transparent !important; }
+  .navbar-default a {
+    color: #00326a !important; }
 
+.navbar-toggle:hover {
+  background-color: #DDD; }
+
+.navbar-toggle .icon-bar {
+  background-color: #222; }
+
+@media only screen and (min-width: 768px) {
+  #navbar {
+    padding: 0 !important; }
+
+  .navbar .nav > li > a {
+    padding: 29px 10px 31px;
+    line-height: 20px; } }
 .navbar .nav > li > a {
-  padding: 29px 10px 31px;
-  line-height: 20px;
   font-weight: bold; }
 
 #header-img-wrapper {
@@ -116,6 +129,10 @@ h1 {
   #footer h3, .product-groups-wrapper h3 {
     margin: 0;
     color: white; }
+
+#footer, #footer-text {
+  height: 80px;
+  line-height: 80px; }
 
 #footer-line {
   height: 1px;

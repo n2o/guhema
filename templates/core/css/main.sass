@@ -92,15 +92,30 @@ h1
 .navbar .container
   padding-top: 1em
 
-#navbar
-  padding: 0 !important
+.navbar-default
+  background-color: transparent !important
+  a
+    color: $blue !important
+
+// Configure mobile view of icon bar
+.navbar-toggle:hover
+  background-color: #DDD
+.navbar-toggle .icon-bar
+  background-color: $normal
+
+@media only screen and (min-width : 768px)
+  #navbar
+    padding: 0 !important
+
+  .navbar .nav > li > a
+    $navbarHeight: 80px
+    $elementHeight: 20px
+    padding: (($navbarHeight - $elementHeight) / 2 - 1) 10px (($navbarHeight - $elementHeight) / 2 + 1)
+    line-height: $elementHeight
 
 .navbar .nav > li > a
-  $navbarHeight: 80px
-  $elementHeight: 20px
-  padding: (($navbarHeight - $elementHeight) / 2 - 1) 10px (($navbarHeight - $elementHeight) / 2 + 1)
-  line-height: $elementHeight
   font-weight: bold
+
 
 // Define header image
 #header-img-wrapper
@@ -124,6 +139,7 @@ h1
   h2
     margin-top: 0
 
+
 //// Footer and product groups
 #footer, .product-groups-wrapper
   max-width: $containerWidth
@@ -133,6 +149,10 @@ h1
     color: white
   //a
   //  font-size: 10pt
+
+#footer, #footer-text
+  height: $footerHeight
+  line-height: $footerHeight
 
 #footer-line
   height: 1px
