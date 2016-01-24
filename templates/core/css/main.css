@@ -134,6 +134,13 @@ h1 {
   height: 80px;
   line-height: 80px; }
 
+@media only screen and (max-width: 768px) {
+  #footer, #footer-text {
+    height: 120px;
+    line-height: 53.33333px; }
+
+  #footer-kontakt-line {
+    text-align: left; } }
 #footer-line {
   height: 1px;
   background-color: white;

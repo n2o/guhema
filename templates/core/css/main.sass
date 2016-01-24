@@ -154,10 +154,18 @@ h1
   height: $footerHeight
   line-height: $footerHeight
 
+@media only screen and (max-width : 768px)
+  #footer, #footer-text
+    height: $footerHeight*1.5
+    line-height: $footerHeight / 1.5
+  #footer-kontakt-line
+    text-align: left
+
 #footer-line
   height: 1px
   background-color: white
   width: 100%
+
 
 // Product groups
 #product-groups
