@@ -1,4 +1,3 @@
-caffeine-ng==3.0
 Django==1.9.1
 django-autoslug==1.9.3
 django-forms-bootstrap==3.0.1
