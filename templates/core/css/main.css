@@ -20,6 +20,11 @@ h1 {
 .text-normal {
   color: #222; }
 
+.text-white {
+  color: white; }
+  .text-white a {
+    color: white; }
+
 .text-bold {
   font-weight: bold; }
 
