@@ -63,6 +63,10 @@ class HoleSawAdmin(PageDownAdmin):
 @admin.register(ProductGroup)
 class ProductGroupAdmin(PageDownAdmin):
     list_display = ('name', 'public')
+    fieldsets = [
+        ('Allgemein', {'fields': ['name', 'description', 'image', 'public']}),
+        ('Detailansichten', {'fields': ['details']}),
+    ]
 
 
 @admin.register(BandSawBlade)
