@@ -1,12 +1,15 @@
 from django.contrib import admin
 from django.contrib.flatpages.admin import FlatPageAdmin
-from django.utils.safestring import mark_safe
-from pagedown.widgets import AdminPagedownWidget
-from django.db import models
 from django.contrib.flatpages.models import FlatPage
+from django.db import models
+from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext_lazy as _
+from pagedown.widgets import AdminPagedownWidget
 
-from .models import Indicator, SawBlade, Clamping, ProductGroup, SableSawBlade, HackSawBlade, HoleSaw, HoleSawDiameter, BandSawBlade, BandSawBladeIndicator, JigSawBlade, CircularSawBlade, CircularSawBladeIndicator
+from .models import (BandSawBlade, BandSawBladeIndicator, CircularSawBlade,
+                     CircularSawBladeIndicator, Clamping, HackSawBlade,
+                     HoleSaw, HoleSawDiameter, Indicator, JigSawBlade,
+                     ProductGroup, SableSawBlade, SawBlade)
 
 
 class PageDownAdmin(admin.ModelAdmin):

@@ -1,6 +1,9 @@
-from django.shortcuts import render, get_list_or_404
+from django.shortcuts import get_list_or_404, render
 
-from .models import SawBlade, ProductGroup, SableSawBlade, HackSawBlade, HoleSaw, HoleSawDiameter, BandSawBlade, BandSawBladeIndicator, JigSawBlade, CircularSawBlade, CircularSawBladeIndicator
+from .models import (BandSawBlade, BandSawBladeIndicator, CircularSawBlade,
+                     CircularSawBladeIndicator, HackSawBlade, HoleSaw,
+                     HoleSawDiameter, JigSawBlade, ProductGroup, SableSawBlade,
+                     SawBlade)
 
 
 def index(request):

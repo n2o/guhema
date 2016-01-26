@@ -1,9 +1,12 @@
 from datetime import datetime
-from django.http import HttpResponseRedirect
+
 from django.core.mail import send_mail
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
-from .forms import EmailForm
+
 from core.settings_secret import RECIPIENT
+
+from .forms import EmailForm
 
 
 def contact(request):

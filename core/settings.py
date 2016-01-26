@@ -8,9 +8,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
+import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import sys
-import os
+
+# Needed for login
+import django.contrib.auth
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -174,6 +178,4 @@ MARKDOWN_DEUX_STYLES = {
 }
 
 
-# Needed for login
-import django.contrib.auth
 django.contrib.auth.LOGIN_URL = '/'

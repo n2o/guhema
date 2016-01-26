@@ -1,7 +1,5 @@
-from django.template import Variable, resolve_variable
-from django.template import VariableDoesNotExist
-
 from django import template
+from django.template import Variable, VariableDoesNotExist, resolve_variable
 
 register = template.Library()
 

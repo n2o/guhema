@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from django.views.generic.base import TemplateView
-from .views import contact
 
+from .views import contact
 
 urlpatterns = [
     # Form URLs

@@ -1,7 +1,8 @@
 from datetime import datetime
+
+from autoslug import AutoSlugField
 from django.contrib.auth.models import User
 from django.db import models
-from autoslug import AutoSlugField
 
 
 class Category(models.Model):
