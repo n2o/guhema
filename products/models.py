@@ -4,6 +4,9 @@ from django.db import models
 
 
 class Indicator(models.Model):
+    """
+    Definiere Kennziffern, welche für die Sägeblätter notwendig sind.
+    """
     value = models.CharField("Kennziffer", max_length=1024, blank=False)
     width = models.IntegerField("Breite (in mm)", blank=True, default=0)
     strength = models.FloatField("Stärke (in mm)", blank=True, default=0)
@@ -32,6 +35,7 @@ class Indicator(models.Model):
         verbose_name = 'Kennziffer'
         verbose_name_plural = 'Kennziffern'
         ordering = ('value',)
+        app_label = 'products'
 
 
 class Clamping(models.Model):
@@ -45,6 +49,7 @@ class Clamping(models.Model):
     class Meta:
         verbose_name = 'Aufnahme'
         verbose_name_plural = 'Aufnahmen'
+        app_label = 'products'
 
 
 class ProductGroup(models.Model):
@@ -60,6 +65,7 @@ class ProductGroup(models.Model):
     class Meta:
         verbose_name = 'Produktgruppe'
         verbose_name_plural = 'Produktgruppen'
+        app_label = 'products'
 
 
 class SawBlade(models.Model):
@@ -79,6 +85,7 @@ class SawBlade(models.Model):
     class Meta:
         verbose_name = 'Sägeblatt'
         verbose_name_plural = 'Sägeblätter'
+        app_label = 'products'
 
 
 class SableSawBlade(SawBlade):
@@ -90,6 +97,7 @@ class SableSawBlade(SawBlade):
     class Meta:
         verbose_name = 'Säbelsägeblatt'
         verbose_name_plural = 'Säbelsägeblätter'
+        app_label = 'products'
 
 
 class HackSawBlade(SableSawBlade):
@@ -99,6 +107,7 @@ class HackSawBlade(SableSawBlade):
     class Meta:
         verbose_name = 'Metallhandsägeblatt'
         verbose_name_plural = 'Metallhandsägeblätter'
+        app_label = 'products'
 
 
 class HoleSaw(models.Model):
@@ -118,6 +127,7 @@ class HoleSaw(models.Model):
     class Meta:
         verbose_name = 'Lochsäge'
         verbose_name_plural = 'Lochsägen'
+        app_label = 'products'
 
 
 class HoleSawDiameter(models.Model):
@@ -136,6 +146,7 @@ class HoleSawDiameter(models.Model):
     class Meta:
         verbose_name = 'Lochsägen-Durchmesser'
         verbose_name_plural = 'Lochsägen-Durchmesser'
+        app_label = 'products'
 
 
 class BandSawBladeIndicator(models.Model):
@@ -177,6 +188,7 @@ class BandSawBladeIndicator(models.Model):
     class Meta:
         verbose_name = 'Sägeband-Kennziffer'
         verbose_name_plural = 'Sägeband-Kennziffern'
+        app_label = 'products'
 
 
 class BandSawBlade(SawBlade):
@@ -191,6 +203,7 @@ class BandSawBlade(SawBlade):
     class Meta:
         verbose_name = 'Sägeband'
         verbose_name_plural = 'Sägebänder'
+        app_label = 'products'
 
 
 class JigSawBlade(SawBlade):
@@ -203,6 +216,7 @@ class JigSawBlade(SawBlade):
     class Meta:
         verbose_name = 'Pendelhubstichsägeblatt'
         verbose_name_plural = 'Pendelhubstichsägeblätter'
+        app_label = 'products'
 
 
 class CircularSawBladeIndicator(models.Model):
@@ -228,6 +242,7 @@ class CircularSawBladeIndicator(models.Model):
     class Meta:
         verbose_name = "Metallkreissägeblatt-Kennziffer"
         verbose_name_plural = "Metallkreissägeblatt-Kennziffern"
+        app_label = 'products'
 
 
 class CircularSawBlade(SawBlade):
@@ -236,3 +251,4 @@ class CircularSawBlade(SawBlade):
     class Meta:
         verbose_name = "Metallkreissägeblatt"
         verbose_name_plural = "Metallkreissägeblätter"
+        app_label = 'products'

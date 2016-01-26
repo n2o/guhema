@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-25 17:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: products/admin.py:106
+msgid "Advanced options"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:9
+msgid "Maschinensägeblätter"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:13
+msgid "Material, Qualitäten und Einsatzbereiche"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:15
+msgid ""
+"Unser Streben nach perfekter Sägequalität beginnt schon bei der Auswahl "
+"unseres Vormaterials, denn dies ist die Ausgangsbasis für unsere "
+"Spitzenprodukte – nichts geht durch unsere Eingangskontrolle, das nicht die "
+"Note „Sehr gut“ verdient."
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:18
+msgid ""
+"Erstklassiges Rohmaterial ist bei GUHEMA die Basis für präzises, schnelles "
+"und wirtschaftliches Sägen mit"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:21
+msgid "hohen Stand- und kurzen Schnittzeiten"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:22
+msgid "langer Lebensdauer"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:23
+msgid "optimaler Schonung Ihrer Sägemaschine"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:26
+msgid ""
+"Für die unterschiedlichsten Einsatzbereiche führen wir die passenden "
+"Qualitäten"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:36
+#, python-format
+msgid "DMo 5 Qualität (Werkstoff-Nr. %(num)s)"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:40
+msgid "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:46
+msgid "GUHEMA Brillant"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:50
+#, python-format
+msgid "EMo 5 Co 5 Qualität (Werkstoff-Nr. %(num)s)"
+msgstr ""
+
+#: templates/admin/base_site.html:3
+msgid "GUHEMA site admin"
+msgstr ""
+
+#: templates/admin/base_site.html:6
+msgid "GUHEMA administration"
+msgstr ""
+
+#: products/templates/products/details/sawblade_general.html:65
+msgid "DMo 5 Schneidenqualität (Werkstoff-Nr. 1.3343) auf einem Sonderstahlrücken"
+msgstr ""

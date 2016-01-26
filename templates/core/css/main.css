@@ -59,6 +59,10 @@ h1 {
 .padding-bottom {
   padding-bottom: 1em; }
 
+.padding-lr-1 {
+  padding-left: 1em;
+  padding-right: 1em; }
+
 .table-dark-grey-column {
   background-color: #F0F0F0; }
 
