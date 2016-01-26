@@ -60,12 +60,40 @@ def details(request, slug, type):
 
 
 def detailsById(request, slug, id):
+    """
+    Given a slug and a ID it returns a unique blade
+    :param slug: slug of productgroup
+    :param id: blade id
+    :return: blade
+    """
     layout = 'bandsawblade_details.html'
     blade = BandSawBlade.objects.get(id=id)
     indicators = blade.bandsaw_indicators.all()
 
     return render(request, 'products/'+layout, {'blade': blade,
                                                 'indicators': indicators})
+
+
+def productDetails(request, slug):
+    if slug == 'maschinensageblatter':
+        layout = 'sawblade_general.html'
+    elif slug == 'metallstichsageblatter':
+        layout = ''
+    elif slug == 'sabel-und-spezialsabelsageblatter':
+        layout = ''
+    elif slug == 'metallhandsageblatter':
+        layout = ''
+    elif slug == 'lochsagen':
+        layout = ''
+        other = HoleSawDiameter.objects.filter(advice=False)
+    elif slug == 'metallsagebander':
+        layout = ''
+        other = BandSawBladeIndicator.objects.all()
+    elif slug == 'pendelhubstichsageblatter':
+        layout = ''
+    elif slug == 'metallkreissageblatter':
+        layout = ''
+    return render(request, 'products/details/'+layout)
 
 
 def holesawAdvice(request):
