@@ -13,115 +13,123 @@
 {% block content %}
   {% include 'products/include_productheader.html' with group=group %}
 
-  <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
-  <p>
-    {% trans "Unser Streben nach perfekter Sägequalität beginnt schon bei der Auswahl unseres Vormaterials, denn dies ist die Ausgangsbasis für unsere Spitzenprodukte – nichts geht durch unsere Eingangskontrolle, das nicht die Note „Sehr gut“ verdient." %}
-  </p>
-  <p>
-    {% trans "Erstklassiges Rohmaterial ist bei GUHEMA die Basis für präzises, schnelles und wirtschaftliches Sägen mit" %}
-  </p>
-  <ul>
-    <li>{% trans "hohen Stand- und kurzen Schnittzeiten" %}</li>
-    <li>{% trans "langer Lebensdauer" %}</li>
-    <li>{% trans "optimaler Schonung Ihrer Sägemaschine" %}</li>
-  </ul>
-  <p>
-    {% trans "Für die unterschiedlichsten Einsatzbereiche führen wir die passenden Qualitäten" %}
-  </p>
+  <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1" style="float:right;">
+    {% trans "Details anzeigen" %}
+  </a>
 
-  <div class="well">
-    <div>
-      <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-      GUHEMA Super-HSS
-    </div>
-    <div>
-      <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-      {% blocktrans with num=1.3343 %}DMo 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
-    </div>
-    <div>
-      <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-      {% trans "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>" %}
-    </div>
+  <div id="collapse-1" class="collapse">
 
-    <div class="padding-top-05">
+    <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
+    <p>
+      {% trans "Unser Streben nach perfekter Sägequalität beginnt schon bei der Auswahl unseres Vormaterials, denn dies ist die Ausgangsbasis für unsere Spitzenprodukte – nichts geht durch unsere Eingangskontrolle, das nicht die Note „Sehr gut“ verdient." %}
+    </p>
+    <p>
+      {% trans "Erstklassiges Rohmaterial ist bei GUHEMA die Basis für präzises, schnelles und wirtschaftliches Sägen mit" %}
+    </p>
+    <ul>
+      <li>{% trans "hohen Stand- und kurzen Schnittzeiten" %}</li>
+      <li>{% trans "langer Lebensdauer" %}</li>
+      <li>{% trans "optimaler Schonung Ihrer Sägemaschine" %}</li>
+    </ul>
+    <p>
+      {% trans "Für die unterschiedlichsten Einsatzbereiche führen wir die passenden Qualitäten" %}
+    </p>
+
+    <div class="well">
       <div>
         <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-        {% trans "GUHEMA Brillant" %}
+        GUHEMA Super-HSS
       </div>
       <div>
         <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {% blocktrans with num=1.3243 %}EMo 5 Co 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
-      </div>
-      <div>
-        <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-        {% trans "Für extrem harte Werkstoffe bis 1300 N/mm<sup>2</sup> z. B. austenitische Stähle und Stähle mit hohem Chrom-Nickelgehalt" %}
-      </div>
-    </div>
-
-    <div class="padding-top-05">
-      <div>
-        <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-        GUHEMA Bi-lastic
-      </div>
-      <div>
-        <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {% blocktrans with num=1.3343 %}DMo 5 Schneidenqualität (Werkstoff-Nr. {{ num }}) auf einem Sonderstahlrücken{% endblocktrans %}
+        {% blocktrans with num=1.3343 %}DMo 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
       </div>
       <div>
         <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
         {% trans "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>" %}
       </div>
+
+      <div class="padding-top-05">
+        <div>
+          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          {% trans "GUHEMA Brillant" %}
+        </div>
+        <div>
+          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+          {% blocktrans with num=1.3243 %}EMo 5 Co 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
+        </div>
+        <div>
+          <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+          {% trans "Für extrem harte Werkstoffe bis 1300 N/mm<sup>2</sup> z. B. austenitische Stähle und Stähle mit hohem Chrom-Nickelgehalt" %}
+        </div>
+      </div>
+
+      <div class="padding-top-05">
+        <div>
+          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          GUHEMA Bi-lastic
+        </div>
+        <div>
+          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+          {% blocktrans with num=1.3343 %}DMo 5 Schneidenqualität (Werkstoff-Nr. {{ num }}) auf einem Sonderstahlrücken{% endblocktrans %}
+        </div>
+        <div>
+          <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+          {% trans "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>" %}
+        </div>
+      </div>
     </div>
+
+    <h3>{% trans "Die Wahl der richtigen Zahnform" %}</h3>
+    <p>
+      {% trans "Unsere GUHEMA-Maschinensägeblätter haben erst durch die richtige Zahnform den optimalen Biss. Wir liefern:" %}
+    </p>
+
+    <div class="row">
+      <div class="col-md-6">
+        <span class="bg-orange-dark padding-lr-1 text-bold">
+          {% trans "Normalzahn" %}
+        </span>
+        <p>
+          {% trans "Für den allgemeinen, universellen Einsatz" %}
+        </p>
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <span class="bg-orange-medium padding-lr-1 text-bold">
+          {% trans "Positivzahn" %}
+        </span>
+        <p>
+          {% trans "Der austenitische, zähharte Stähle trennt" %}
+        </p>
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <span class="bg-orange-light padding-lr-1 text-bold">
+          {% trans "Variable Positivverzahnung" %}
+        </span>
+        <p>
+          {% trans "GUHEMA FUTURE, die keine Wünsche an ein Maschinensägeblatt mehr offen lässt" %}
+        </p>
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+
+    <hr>
+
   </div>
-
-  <h3>{% trans "Die Wahl der richtigen Zahnform" %}</h3>
-  <p>
-    {% trans "Unsere GUHEMA-Maschinensägeblätter haben erst durch die richtige Zahnform den optimalen Biss. Wir liefern:" %}
-  </p>
-
-  <div class="row">
-    <div class="col-md-6">
-      <span class="bg-orange-dark padding-lr-1 text-bold">
-        {% trans "Normalzahn" %}
-      </span>
-      <p>
-        {% trans "Für den allgemeinen, universellen Einsatz" %}
-      </p>
-    </div>
-    <div class="col-md-6">
-
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <span class="bg-orange-medium padding-lr-1 text-bold">
-        {% trans "Positivzahn" %}
-      </span>
-      <p>
-        {% trans "Der austenitische, zähharte Stähle trennt" %}
-      </p>
-    </div>
-    <div class="col-md-6">
-
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <span class="bg-orange-light padding-lr-1 text-bold">
-        {% trans "Variable Positivverzahnung" %}
-      </span>
-      <p>
-        {% trans "GUHEMA FUTURE, die keine Wünsche an ein Maschinensägeblatt mehr offen lässt" %}
-      </p>
-    </div>
-    <div class="col-md-6">
-
-    </div>
-  </div>
-
-  <hr>
 
   <h3 class="padding-bottom">Übersicht</h3>
   <div class="row">

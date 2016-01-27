@@ -1,0 +1,40 @@
+{% extends 'layout_productgroups.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block heading %}
+  <h1>{% trans "Maschinensägeblätter" %}</h1>
+{% endblock %}
+
+{% block content %}
+  <h3>{% trans "Unsere Empfehlung für langen Sägespaß" %}</h3>
+
+  <p>
+    {% blocktrans %}
+      Für den Einsatz von GUHEMA-Maschinensägeblättern empfehlen wir die wenigen, aber wichtigen Spielregeln zwischen
+      Werkstück und Sägeblatt zu beachten, um optimale Schnittergebnisse zu erhalten:
+    {% endblocktrans %}
+  </p>
+  <ul>
+    <li>{% trans "Sägen Sie nie über Eck an." %}</li>
+    <li>{% trans " Sägen Sie stets mit Kühlung." %}</li>
+    <li>{% trans "Spannen Sie das Werkstück fest und verdrehsicher ein." %}</li>
+    <li>{% trans "Ein neues Maschinensägeblatt muss eingefahren werden. Reduzieren Sie in der Anfangszeit den Schnittdruck um ca. 50%." %}</li>
+    <li>{% trans "Entfernen Sie mögliche mineralische Rückstände vom Werkstück." %}</li>
+    <li>{% trans "Kontrollieren Sie von Zeit zu Zeit die Sägeblattspannung." %}</li>
+    <li>{% trans "Wechseln Sie frühzeitig Ihr Metallsägeblatt! Bestes Indiz: deutlicher Anstieg der Schnittzeit." %}</li>
+    <li>{% trans "Warten Sie Ihre Metallsäge nach den Vorgaben des Herstellers." %}</li>
+    <li>{% trans "Passen Sie den Schnittdruck, die Schnittgeschwindigkeit und die Zähnezahl dem Werkstück an. Das folgende Diagramm sowie die Tabelle dienen als Orientierung." %}</li>
+    <li>{% trans " Beim Einsatz von Positivzahn und Future mit ca. 50% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist." %}</li>
+  </ul>
+
+  {% get_current_language as lang %}
+  {{ lang }}
+
+  {% if lang == "de-de" %}
+    <img class="img-responsive" src="{% static 'img/produktdetails/material_group_de.png' %}" alt="Material Group">
+  {% endif %}
+
+
+{% endblock %}

@@ -99,6 +99,10 @@ def productDetails(request, slug):
     return render(request, 'products/details/'+layout)
 
 
+def productAdvices(request, slug):
+    return render(request, 'products/details/sawblade/advices.html')
+
+
 def holesawAdvice(request):
     layout = 'holesaw_advice.html'
     diameters = HoleSawDiameter.objects.filter(advice=True)

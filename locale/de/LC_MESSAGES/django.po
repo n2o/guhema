@@ -91,3 +91,8 @@ msgstr ""
 #: products/templates/products/details/sawblade_general.html:65
 msgid "DMo 5 Schneidenqualität (Werkstoff-Nr. 1.3343) auf einem Sonderstahlrücken"
 msgstr ""
+#: products/templates/products/details/sawblade/advices.html:15
+msgid ""
+"Für den Einsatz von GUHEMA-Maschinensägeblättern empfehlen wir die wenigen, aber wichtigen Spielregeln zwischen Werkstück und\n"
+"Sägeblatt zu beachten, um optimale Schnittergebnisse zu erhalten:"
+msgstr ""
