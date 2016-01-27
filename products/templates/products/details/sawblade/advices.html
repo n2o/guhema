@@ -2,6 +2,7 @@
 
 {% load i18n %}
 {% load staticfiles %}
+{% load thumbnail %}
 
 {% block heading %}
   <h1>{% trans "Maschinensägeblätter" %}</h1>
@@ -18,7 +19,7 @@
   </p>
   <ul>
     <li>{% trans "Sägen Sie nie über Eck an." %}</li>
-    <li>{% trans " Sägen Sie stets mit Kühlung." %}</li>
+    <li>{% trans "Sägen Sie stets mit Kühlung." %}</li>
     <li>{% trans "Spannen Sie das Werkstück fest und verdrehsicher ein." %}</li>
     <li>{% trans "Ein neues Maschinensägeblatt muss eingefahren werden. Reduzieren Sie in der Anfangszeit den Schnittdruck um ca. 50%." %}</li>
     <li>{% trans "Entfernen Sie mögliche mineralische Rückstände vom Werkstück." %}</li>
@@ -26,29 +27,17 @@
     <li>{% trans "Wechseln Sie frühzeitig Ihr Metallsägeblatt! Bestes Indiz: deutlicher Anstieg der Schnittzeit." %}</li>
     <li>{% trans "Warten Sie Ihre Metallsäge nach den Vorgaben des Herstellers." %}</li>
     <li>{% trans "Passen Sie den Schnittdruck, die Schnittgeschwindigkeit und die Zähnezahl dem Werkstück an. Das folgende Diagramm sowie die Tabelle dienen als Orientierung." %}</li>
-    <li>{% trans " Beim Einsatz von Positivzahn und Future mit ca. 50% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist." %}</li>
+    <li>{% trans "Beim Einsatz von Positivzahn und Future mit ca. 50% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist." %}</li>
   </ul>
 
   {% get_current_language as lang %}
-  {{ lang }}
-
-  {% if lang == "de-de" %}
-    <img class="img-responsive" src="{% static 'img/produktdetails/material_group_de.png' %}" alt="Material Group">
-  {% endif %}
-
-  <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-    <input name="next" type="hidden" value="{{ redirect_to }}" />
-    <select name="language">
-        {% get_current_language as LANGUAGE_CODE %}
-        {% get_available_languages as LANGUAGES %}
-        {% get_language_info_list for LANGUAGES as languages %}
-        {% for language in languages %}
-            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
-                {{ language.name_local }} ({{ language.code }})
-            </option>
-        {% endfor %}
-    </select>
-    <input type="submit" value="Go" />
-</form>
+  {% with 'img/produktdetails/material_group_'|add:lang|add:'.png' as image %}
+    {% static image as img %}
+      <div class="padding-top">
+        <a href="{% static image %}">
+          <img class="img-responsive" src="{% static image %}" alt="Material Group">
+        </a>
+      </div>
+  {% endwith %}
 
 {% endblock %}

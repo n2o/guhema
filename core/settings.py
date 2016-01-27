@@ -161,6 +161,7 @@ THUMBNAIL_ALIASES = {
         'products_teaserimage': {'size': (262, 174), 'crop': "scale", 'quality': 100},
         'blade_image': {'size': (458, 80), 'crop': "scale", 'quality': 100},
         'blade_image_250h': {'size': (600, 250), 'crop': "scale", 'quality': 100},
+        'width_1140': {'size': (1140, 2500), 'crop': "scale", 'quality': 100},
     },
 }
 
