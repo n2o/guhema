@@ -13,9 +13,12 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sphinx_rtd_theme
-import sys
 import os
+import sys
+
+import django
+import sphinx_rtd_theme
+from django.conf import settings
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -23,9 +26,7 @@ import os
 #sys.path.insert(0, os.path.abspath('.'))
 
 sys.path.insert(0, os.path.abspath('..'))
-from django.conf import settings
 settings.configure()
-import django
 django.setup()
 
 # -- General configuration ------------------------------------------------

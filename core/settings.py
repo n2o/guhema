@@ -14,6 +14,7 @@ import sys
 
 # Needed for login
 import django.contrib.auth
+from django.utils.translation import ugettext_lazy as _
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -104,6 +105,12 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
+LANGUAGES = [
+    ('de', _('German')),
+    ('en', _('English')),
+    ('ru', _('Russian')),
+]
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
@@ -176,6 +183,3 @@ MARKDOWN_DEUX_STYLES = {
         "safe_mode": "escape",
     },
 }
-
-
-django.contrib.auth.LOGIN_URL = '/'
