@@ -12,53 +12,29 @@ def index(request):
 
 
 def list(request, slug):
-    blades = None
     other = None
-    layout = 'sawblade_overview.html'
     group = ProductGroup.objects.get(slug=slug)
-    if slug == 'maschinensageblatter':
-        layout = 'sawblade_overview.html'
-        blades = SawBlade.objects.filter(group=group)
-    elif slug == 'metallstichsageblatter':
-        layout = 'compass_overview.html'
-        blades = SawBlade.objects.filter(group=group)
-    elif slug == 'sabel-und-spezialsabelsageblatter':
-        layout = 'sablesawblade_overview.html'
-        blades = SableSawBlade.objects.filter(group=group)
-    elif slug == 'metallhandsageblatter':
-        layout = 'hacksawblade_overview.html'
-        blades = HackSawBlade.objects.filter(group=group)
-    elif slug == 'lochsagen':
-        layout = 'holesaw_overview.html'
+    blades = SawBlade.objects.filter(group=group)
+    if slug == 'lochsagen':
         blades = HoleSaw.objects.all()
         other = HoleSawDiameter.objects.filter(advice=False)
     elif slug == 'metallsagebander':
-        layout = 'bandsawblade_overview.html'
-        blades = BandSawBlade.objects.all()
         other = BandSawBladeIndicator.objects.all()
-    elif slug == 'pendelhubstichsageblatter':
-        layout = 'jigsawblade_overview.html'
-        blades = JigSawBlade.objects.all()
     elif slug == 'metallkreissageblatter':
-        layout = 'circularsawblade_overview.html'
-        blades = CircularSawBlade.objects.all()
         other = CircularSawBladeIndicator.objects.all().order_by('diameter')
-    return render(request, 'products/'+layout, {'blades': blades,
-                                                'group': group,
-                                                'other': other})
+    return render(request, 'products/'+slug+'/overview.html',
+                  {'blades': blades,
+                   'group': group,
+                   'other': other})
 
 
 def details(request, slug, type):
-    layout = 'sawblade_details.html'
     blade = SawBlade.objects.get(type=type)
     indicators = blade.indicators.order_by('width')
-    if slug == 'maschinensageblatter':
-        layout = 'sawblade_details.html'
-    elif slug == 'metallstichsageblatter' or slug == 'metallhandsageblatter':
-        layout = 'compass_details.html'
-    return render(request, 'products/'+layout, {'blade': blade,
-                                                'clamping': blade.clamping,
-                                                'indicators': indicators})
+    return render(request, 'products/'+slug+'/details.html',
+                  {'blade': blade,
+                   'clamping': blade.clamping,
+                   'indicators': indicators})
 
 
 
@@ -78,6 +54,7 @@ def detailsById(request, slug, id):
 
 
 def productDetails(request, slug):
+    layout = ''
     if slug == 'maschinensageblatter':
         layout = 'sawblade_general.html'
     elif slug == 'metallstichsageblatter':
@@ -100,7 +77,25 @@ def productDetails(request, slug):
 
 
 def productAdvices(request, slug):
-    return render(request, 'products/details/sawblade/advices.html')
+    if slug == 'maschinensageblatter':
+        layout = 'sawblade_general.html'
+    elif slug == 'metallstichsageblatter':
+        layout = ''
+    elif slug == 'sabel-und-spezialsabelsageblatter':
+        layout = ''
+    elif slug == 'metallhandsageblatter':
+        layout = ''
+    elif slug == 'lochsagen':
+        layout = ''
+        other = HoleSawDiameter.objects.filter(advice=False)
+    elif slug == 'metallsagebander':
+        layout = ''
+        other = BandSawBladeIndicator.objects.all()
+    elif slug == 'pendelhubstichsageblatter':
+        layout = ''
+    elif slug == 'metallkreissageblatter':
+        layout = ''
+    return render(request, 'products/maschinensageblatter/sawblade_advices.html')
 
 
 def holesawAdvice(request):

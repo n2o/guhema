@@ -4,6 +4,8 @@
 {% load staticfiles %}
 {% load thumbnail %}
 
+{% get_current_language as lang %}
+
 {% block heading %}
   <h1>{% trans "Maschinensägeblätter" %}</h1>
 {% endblock %}
@@ -30,7 +32,6 @@
     <li>{% trans "Beim Einsatz von Positivzahn und Future mit ca. 50% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist." %}</li>
   </ul>
 
-  {% get_current_language as lang %}
   {% with 'img/produktdetails/material_group_'|add:lang|add:'.png' as image %}
     {% static image as img %}
       <div class="padding-top">
