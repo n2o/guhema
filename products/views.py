@@ -19,6 +19,7 @@ def list(request, slug):
         blades = HoleSaw.objects.all()
         other = HoleSawDiameter.objects.filter(advice=False)
     elif slug == 'metallsagebander':
+        blades = BandSawBlade.objects.all()
         other = BandSawBladeIndicator.objects.all()
     elif slug == 'metallkreissageblatter':
         other = CircularSawBladeIndicator.objects.all().order_by('diameter')
