@@ -12,16 +12,27 @@ def index(request):
 
 
 def list(request, slug):
+    blades = None
     other = None
     group = ProductGroup.objects.get(slug=slug)
-    blades = SawBlade.objects.filter(group=group)
-    if slug == 'lochsagen':
+    if slug == 'maschinensageblatter':
+        blades = SawBlade.objects.filter(group=group)
+    elif slug == 'metallstichsageblatter':
+        blades = SawBlade.objects.filter(group=group)
+    elif slug == 'sabel-und-spezialsabelsageblatter':
+        blades = SableSawBlade.objects.filter(group=group)
+    elif slug == 'metallhandsageblatter':
+        blades = HackSawBlade.objects.filter(group=group)
+    elif slug == 'lochsagen':
         blades = HoleSaw.objects.all()
         other = HoleSawDiameter.objects.filter(advice=False)
     elif slug == 'metallsagebander':
         blades = BandSawBlade.objects.all()
         other = BandSawBladeIndicator.objects.all()
+    elif slug == 'pendelhubstichsageblatter':
+        blades = JigSawBlade.objects.all()
     elif slug == 'metallkreissageblatter':
+        blades = CircularSawBlade.objects.all()
         other = CircularSawBladeIndicator.objects.all().order_by('diameter')
     return render(request, 'products/'+slug+'/overview.html',
                   {'blades': blades,
@@ -38,65 +49,27 @@ def details(request, slug, type):
                    'indicators': indicators})
 
 
-
-def detailsById(request, slug, id):
+def details_by_id(request, slug, id):
     """
     Given a slug and a ID it returns a unique blade
     :param slug: slug of productgroup
     :param id: blade id
     :return: blade
     """
-    layout = 'bandsawblade_details.html'
     blade = BandSawBlade.objects.get(id=id)
     indicators = blade.bandsaw_indicators.all()
 
-    return render(request, 'products/'+layout, {'blade': blade,
-                                                'indicators': indicators})
+    return render(request, 'products/'+slug+'/details.html',
+                  {'blade': blade,
+                   'indicators': indicators})
 
 
-def productDetails(request, slug):
-    layout = ''
-    if slug == 'maschinensageblatter':
-        layout = 'sawblade_general.html'
-    elif slug == 'metallstichsageblatter':
-        layout = ''
-    elif slug == 'sabel-und-spezialsabelsageblatter':
-        layout = ''
-    elif slug == 'metallhandsageblatter':
-        layout = ''
-    elif slug == 'lochsagen':
-        layout = ''
-        other = HoleSawDiameter.objects.filter(advice=False)
-    elif slug == 'metallsagebander':
-        layout = ''
-        other = BandSawBladeIndicator.objects.all()
-    elif slug == 'pendelhubstichsageblatter':
-        layout = ''
-    elif slug == 'metallkreissageblatter':
-        layout = ''
-    return render(request, 'products/details/'+layout)
+def product_details(request, slug):
+    return render(request, 'products/'+slug+'/details.html')
 
 
-def productAdvices(request, slug):
-    if slug == 'maschinensageblatter':
-        layout = 'sawblade_general.html'
-    elif slug == 'metallstichsageblatter':
-        layout = ''
-    elif slug == 'sabel-und-spezialsabelsageblatter':
-        layout = ''
-    elif slug == 'metallhandsageblatter':
-        layout = ''
-    elif slug == 'lochsagen':
-        layout = ''
-        other = HoleSawDiameter.objects.filter(advice=False)
-    elif slug == 'metallsagebander':
-        layout = ''
-        other = BandSawBladeIndicator.objects.all()
-    elif slug == 'pendelhubstichsageblatter':
-        layout = ''
-    elif slug == 'metallkreissageblatter':
-        layout = ''
-    return render(request, 'products/maschinensageblatter/sawblade_advices.html')
+def product_advices(request, slug):
+    return render(request, 'products/'+slug+'/advices.html')
 
 
 def holesawAdvice(request):
@@ -105,3 +78,8 @@ def holesawAdvice(request):
     group = ProductGroup.objects.get(slug='lochsagen')
     return render(request, 'products/'+layout, {'diameters': diameters,
                                                 'group': group})
+
+
+# ======================================================================================================================
+#
+# ======================================================================================================================
