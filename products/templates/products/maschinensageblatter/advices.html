@@ -4,41 +4,223 @@
 {% load staticfiles %}
 {% load thumbnail %}
 
-{% get_current_language as lang %}
-
 {% block heading %}
   <h1>{% trans "Maschinensägeblätter" %}</h1>
 {% endblock %}
 
 {% block content %}
+  {% get_current_language as lang %}
   <h3>{% trans "Unsere Empfehlung für langen Sägespaß" %}</h3>
 
-  <p>
-    {% blocktrans %}
-      Für den Einsatz von GUHEMA-Maschinensägeblättern empfehlen wir die wenigen, aber wichtigen Spielregeln zwischen
-      Werkstück und Sägeblatt zu beachten, um optimale Schnittergebnisse zu erhalten:
-    {% endblocktrans %}
-  </p>
-  <ul>
-    <li>{% trans "Sägen Sie nie über Eck an." %}</li>
-    <li>{% trans "Sägen Sie stets mit Kühlung." %}</li>
-    <li>{% trans "Spannen Sie das Werkstück fest und verdrehsicher ein." %}</li>
-    <li>{% trans "Ein neues Maschinensägeblatt muss eingefahren werden. Reduzieren Sie in der Anfangszeit den Schnittdruck um ca. 50%." %}</li>
-    <li>{% trans "Entfernen Sie mögliche mineralische Rückstände vom Werkstück." %}</li>
-    <li>{% trans "Kontrollieren Sie von Zeit zu Zeit die Sägeblattspannung." %}</li>
-    <li>{% trans "Wechseln Sie frühzeitig Ihr Metallsägeblatt! Bestes Indiz: deutlicher Anstieg der Schnittzeit." %}</li>
-    <li>{% trans "Warten Sie Ihre Metallsäge nach den Vorgaben des Herstellers." %}</li>
-    <li>{% trans "Passen Sie den Schnittdruck, die Schnittgeschwindigkeit und die Zähnezahl dem Werkstück an. Das folgende Diagramm sowie die Tabelle dienen als Orientierung." %}</li>
-    <li>{% trans "Beim Einsatz von Positivzahn und Future mit ca. 50% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist." %}</li>
-  </ul>
+  <section>
+    <p>
+      {% blocktrans %}
+        Für den Einsatz von GUHEMA-Maschinensägeblättern empfehlen wir die wenigen, aber wichtigen Spielregeln zwischen
+        Werkstück und Sägeblatt zu beachten, um optimale Schnittergebnisse zu erhalten:
+      {% endblocktrans %}
+    </p>
+    <ul>
+      <li>{% trans "Sägen Sie nie über Eck an." %}</li>
+      <li>{% trans "Sägen Sie stets mit Kühlung." %}</li>
+      <li>{% trans "Spannen Sie das Werkstück fest und verdrehsicher ein." %}</li>
+      <li>{% trans "Ein neues Maschinensägeblatt muss eingefahren werden. Reduzieren Sie in der Anfangszeit den Schnittdruck um ca. 50%." %}</li>
+      <li>{% trans "Entfernen Sie mögliche mineralische Rückstände vom Werkstück." %}</li>
+      <li>{% trans "Kontrollieren Sie von Zeit zu Zeit die Sägeblattspannung." %}</li>
+      <li>{% trans "Wechseln Sie frühzeitig Ihr Metallsägeblatt! Bestes Indiz: deutlicher Anstieg der Schnittzeit." %}</li>
+      <li>{% trans "Warten Sie Ihre Metallsäge nach den Vorgaben des Herstellers." %}</li>
+      <li>{% trans "Passen Sie den Schnittdruck, die Schnittgeschwindigkeit und die Zähnezahl dem Werkstück an. Das folgende Diagramm sowie die Tabelle dienen als Orientierung." %}</li>
+      <li>{% trans "Beim Einsatz von Positivzahn und Future mit ca. 50% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist." %}</li>
+    </ul>
 
-  {% with 'img/produktdetails/material_group_'|add:lang|add:'.png' as image %}
-    {% static image as img %}
-      <div class="padding-top">
-        <a href="{% static image %}">
-          <img class="img-responsive" src="{% static image %}" alt="Material Group">
-        </a>
-      </div>
-  {% endwith %}
+    {% with 'img/produktdetails/material_group_'|add:lang|add:'.png' as image %}
+      {% static image as img %}
+        <div class="padding-top">
+          <a href="{% static image %}">
+            <img class="img-responsive" src="{% static image %}" alt="Material Group">
+          </a>
+        </div>
+    {% endwith %}
+  </section>
+
+  <section>
+    <h3>{% trans "Schnittdatenempfehlung" %}</h3>
+    <p>
+      {% trans "Schnittdatenempfehlung" %}
+      {% trans "bei Vollmaterial im normal geglühten Zustand für GUHEMA-Maschinensägeblätter basierend auf einer Hublänge von 200 mm." %}
+    </p>
+    <p>
+      {% trans "Für Rohre und Profile Schnittdruck entsprechend der Wandstärke reduzieren." %}
+    </p>
+
+    <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
+      <thead>
+        <tr>
+          <th class="table-no-bot-border">
+            {% trans "Material" %}
+          </th>
+          <th colspan="5" class="table-no-bot-border">
+            {% trans "ZpZ" %}
+            {% trans "bei Materialabmessungen" %}
+          </th>
+          <th class="table-no-bot-border">&nbsp;</th>
+          <th colspan="2" class="table-no-bot-border">
+            {% trans "Schnittgeschwindigkeit" %}
+          </th>
+          <th class="table-no-bot-border">
+            {% trans "Blatt /" %}
+          </th>
+          <th class="table-no-bot-border">&nbsp;</th>
+        </tr>
+
+        <tr>
+          <th class="table-no-bot-border table-no-top-border">
+            {% trans "Bezeichnung" %}
+          </th>
+          <th class="table-no-bot-border table-no-top-border">
+            {% trans "bis" %}
+          </th>
+          <th colspan="3" class="table-no-bot-border table-no-top-border">&nbsp;</th>
+          <th class="table-no-bot-border table-no-top-border">
+            {% trans "über" %}
+          </th>
+
+          <th class="table-no-bot-border table-no-top-border">Schnittdruck</th>
+          <th colspan="2" class="table-no-bot-border table-no-top-border">
+            {% trans "je nach Materialstärke" %}
+          </th>
+          <th class="table-no-bot-border table-no-top-border">
+            {% trans "Qualität" %}
+          </th>
+          <th class="table-no-bot-border table-no-top-border">
+            {% trans "Zahnform" %}
+          </th>
+        </tr>
+
+        <tr>
+          <th class="table-no-top-border">&nbsp;</th>
+          <th class="table-no-top-border">
+            30 {% trans "mm" %}
+          </th>
+          <th class="table-no-top-border">
+            50 {% trans "mm" %}
+          </th>
+          <th class="table-no-top-border">
+            100 {% trans "mm" %}
+          </th>
+          <th class="table-no-top-border">
+            200 {% trans "mm" %}
+          </th>
+          <th class="table-no-top-border">
+            200 {% trans "mm" %}
+          </th>
+
+          <th class="table-no-top-border">&nbsp;</th>
+          <th class="table-no-top-border">
+            {% trans "Hübe / min" %}
+          </th>
+          <th class="table-no-top-border">
+            {% trans "m / min" %}
+          </th>
+          <th class="table-no-top-border">&nbsp;</th>
+          <th class="table-no-top-border">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+       {# first row #}
+        <tr>
+          <td>
+            <strong>{% trans "unleg. Stähle/Baustähle" %}</strong>
+          </td>
+          <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>tr>
+        <tr>
+          <td class="table-no-top-border">
+            <strong>{% trans "Einsatzstähle" %}</strong>, {% trans "z.B." %}
+          </td>
+          <td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td>tr>
+        </tr>
+        <tr>
+          <td class="table-no-top-border">
+            St37-C10-C15
+          </td>
+          <td class="table-no-top-border">10-8</td>
+          <td class="table-no-top-border">8-6</td>
+          <td class="table-no-top-border">6-4</td>
+          <td class="table-no-top-border">4-3</td>
+          <td class="table-no-top-border">2-1,5</td>
+          <td class="table-no-top-border">{% trans "niedrig" %}</td>
+          <td class="table-no-top-border">60-100</td>
+          <td class="table-no-top-border">24-40</td>
+          <td class="table-no-top-border">Super HSS</td>
+          <td class="table-no-top-border">{% trans "normal" %}</td>
+        </tr>
+        <tr>
+          <td class="table-no-top-border">
+            St50-St60
+          </td><td class="table-no-top-border">10-8</td>
+          <td class="table-no-top-border">8-6</td>
+          <td class="table-no-top-border">6-4</td>
+          <td class="table-no-top-border">4-3</td>
+          <td class="table-no-top-border">2-1,5</td>
+          <td class="table-no-top-border">{% trans "bis mittel" %}</td>
+          <td class="table-no-top-border">60-100</td>
+          <td class="table-no-top-border">24-40</td>
+          <td class="table-no-top-border">Super HSS</td>
+          <td class="table-no-top-border">{% trans "normal" %}</td>
+        </tr>
+
+        {# second #}
+        <tr>
+          <td>
+            <strong>{% trans "Vergütungsstähle" %}</strong>, {% trans "z.B." %}
+          </td>
+          <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>tr>
+        <tr>
+          <td class="table-no-top-border">
+            C35-C45-C60
+          </td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+        </tr>
+        <tr>
+          <td class="table-no-top-border">
+            CK45-40MN4
+          </td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+        </tr>
+        <tr>
+          <td class="table-no-top-border">
+            34CrNiMo6-42CrMo4
+          </td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+          <td class="table-no-top-border"></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
 {% endblock %}
