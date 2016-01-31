@@ -69,7 +69,10 @@ def product_details(request, slug):
 
 
 def product_advices(request, slug):
-    return render(request, 'products/'+slug+'/advices.html')
+    objects = None
+    if slug == 'lochsagen':
+        objects = HoleSawDiameter.objects.filter(advice=True)
+    return render(request, 'products/'+slug+'/advices.html', {'objects': objects})
 
 
 def holesawAdvice(request):
