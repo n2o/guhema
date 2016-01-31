@@ -1,11 +1,12 @@
 {% extends "layout_productgroups.html" %}
+{% load i18n %}
 {% load thumbnail %}
 
 {% block heading %}
   <h1>{{ entry.title }}</h1>
   <h4>
     <small>
-      {{ entry.created|date:"j. N Y" }}{% if entry.author %} von {{ entry.author }}{% endif %}
+      {{ entry.created|date:"j. N Y" }}{% if entry.author %}{% endif %}
     </small>
   </h4>
 {% endblock %}
@@ -19,7 +20,7 @@
   {{ entry.content|safe }}
 
   {% if entry.attachment %}
-    <h3>Anhang</h3>
+    <h3>{% trans "Anhang" %}</h3>
     <p>
       <i class="fa fa-download"></i> <a href="{{ entry.attachment.url }}">{{ entry.attachment.name }}</a>
     </p>

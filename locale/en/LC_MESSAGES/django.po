@@ -1219,3 +1219,9 @@ msgstr ""
 #: templates/productgroups.html:7
 msgid "PRODUKTGRUPPEN"
 msgstr ""
+#: news/templates/news/detail.html:8
+msgid "von"
+msgstr ""
+#: news/templates/news/detail.html:23
+msgid "Anhang"
+msgstr ""
