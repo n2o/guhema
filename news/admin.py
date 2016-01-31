@@ -3,6 +3,7 @@ from django.contrib import admin
 from .models import Category, Entry
 
 
+@admin.register(Entry)
 class NewsAdmin(admin.ModelAdmin):
     list_display = ('title', 'category', 'archive', 'public', 'created')
     list_filter = ['created']
@@ -19,5 +20,4 @@ class NewsAdmin(admin.ModelAdmin):
         obj.save()
 
 
-admin.site.register(Entry, NewsAdmin)
 admin.site.register(Category)

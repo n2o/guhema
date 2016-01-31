@@ -54,7 +54,6 @@ INSTALLED_APPS = (
     'django.contrib.flatpages',
 
     # 3rd party
-    #'login',
     'autoslug',
     'easy_thumbnails',
     'pagedown',
@@ -63,9 +62,11 @@ INSTALLED_APPS = (
     'django_forms_bootstrap',
 
     # Own apps
+    #'login',
     'news',
     'products',
     'contact',
+    'fairs',
 )
 # Application definition
 
