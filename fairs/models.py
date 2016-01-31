@@ -1,4 +1,5 @@
 from datetime import datetime
+
 from autoslug import AutoSlugField
 from django.db import models
 

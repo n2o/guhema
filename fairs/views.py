@@ -4,6 +4,7 @@ from django.shortcuts import render
 
 from .models import Fair
 
+
 def index(request):
     upcoming = Fair.objects.filter(archive=False,
                                    public=True,
