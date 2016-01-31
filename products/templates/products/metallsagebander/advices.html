@@ -1,0 +1,252 @@
+{% extends 'layout_productgroups.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block heading %}
+  <h1>{% trans "Metallsägebänder" %}</h1>
+{% endblock %}
+
+{% block content %}
+  {% get_current_language as lang %}
+  <section>
+    <p>
+      {% blocktrans %}
+        Wir produzieren für Sie Metallsägebänder in drei Ausführungen. Die “Kohlenstoff“-Qualität für die Werkstatt, die Bi-Metall-Qualität für
+        die Produktion und Werkstatt und die Hartmetall-Ausführung für Spezialanwendungen.
+      {% endblocktrans %}
+    </p>
+    <p>
+      <strong>
+        {% trans "Getreu dem Motto:" %}<br>
+        {% trans "Wir liefern Ihnen die Metallsägebänder, die Sie zum optimalen Sägeergebnis führen." %}
+      </strong>
+    </p>
+  </section>
+
+  <section>
+    <h3>
+      {% trans "Wenn Sie optimal trennen wollen, dann sollten Sie uns auf den Zahn fühlen" %}
+    </h3>
+    <p>
+      {% trans "Damit jede Ihrer Anforderungen erfüllt wird, haben wir den Materialqualitäten unserer Sägebänder die notwendige Auswahl an Zahntypen bereitgestellt:" %}
+    </p>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{% trans "Standardzahn" %} (S)</strong>
+        <p>
+          {% blocktrans %}
+            Diese Zahngeometrie finden Sie bei unseren Qualitäten No. 20
+            GUHEMA Kristall, No. 22 GUHEMA Kristall plus und No. 35
+            GUHEMA Bi-Co-lastic. Diese Geometrie eignet sich bestens für
+            den allgemeinen, universellen Einsatz.
+          {% endblocktrans %}
+        </p>
+      </div>
+      <div class="col-md-6">
+        {# missing image #}
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{% trans "Klauenzahn" %} (K)</strong>
+        <p>
+          {% blocktrans %}
+            Diese Zahngeometrie ist für die Qualitäten No. 20 GUHEMA
+            Kristall, No. 22 GUHEMA Kristall plus und No. 35 GUHEMA
+            Bi-Co-lastic lieferbar. Die Einsatzgebiete dieser Geometrie sind die
+            austenitischen und rostfreien Stähle.
+          {% endblocktrans %}
+        </p>
+      </div>
+      <div class="col-md-6">
+        {# missing image #}
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{% trans "Variable Verzahnung" %} (V)</strong>
+        <p>
+          {% blocktrans %}
+            Die variable Verzahnung erhalten Sie in der Qualität No. 35V
+            GUHEMA Bi-Co-lastic. Diese V-Zahnung führt zu einem besonders
+            schwingungsarmen Schnitt und ist sowohl für Bündelschnitte, als
+            auch für Vollmaterialien hervorragend geeignet. Da das Einsatzgebiet
+            der Metallsägebänder mit V-Zahnung erheblich größer wird, entfallen
+            die sonst notwendigen Bandwechselzeiten und somit die Ausfallzeiten
+            der Maschine. Der gesenkte Geräuschpegel am Arbeitsplatz ist ein
+            von der Belegschaft oft gelobter Begleiteffekt der variablen Verzahnung.
+          {% endblocktrans %}
+        </p>
+      </div>
+      <div class="col-md-6">
+        {# missing image #}
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{% trans "Variable Positivverzahnung" %} (VP)</strong>
+        <p>
+          {% blocktrans %}
+            Die VP-Verzahnung erhalten Sie in den Qualitäten No. 35VP GUHEMA
+            Bi-Co-lastic und No. 36VP GUHEMA Bi-Co-lastic plus. Diese variable
+            Positivverzahnung erzielt höchste Zerspanungsleistungen bei einer
+            langen Lebensdauer. Zerspanungstechnologie auf höchstem Niveau.
+          {% endblocktrans %}
+        </p>
+      </div>
+      <div class="col-md-6">
+        {# missing image #}
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{% trans "Variable Positivverzahnung mit verstärktem Zahnrücken" %} (VP-D)</strong>
+        <p>
+          {% blocktrans %}
+            Die variable Spezialzahnform erhalten Sie in den Qualitäten
+            No. 33VP-D GUHEMA Bi-Co-lastic und No. 34VP-D GUHEMA
+            Bi-Co-lastic.
+          {% endblocktrans %}
+          <br>
+          {% blocktrans %}
+            Das Zahndesign mit dem extra starken Zahnrücken ist speziell für
+            Bündelschnitte und Profil- und Trägerschnitte entwickelt worden. Der
+            positive Spanwinkel trägt zur optimalen Spanbildung und somit
+            zum sauberen Schnittverlauf bei.
+          {% endblocktrans %}
+        </p>
+      </div>
+      <div class="col-md-6">
+        {# missing image #}
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{% trans "Hartmetall-Granulat" %}</strong>
+        <p>
+          {% blocktrans %}
+            Die Hartmetallgranulatschneide erhalten Sie bei der No. 40 GUHEMA
+            HM-Granulat als durchgehende Variante und bei der No. 41 GUHEMA
+            HM-Granulat als unterbrochene Ausführung. Diese Verzahnung punktet dort,
+            wo übliche Sägezähne von Nachteil sind.
+          {% endblocktrans %}
+        </p>
+      </div>
+      <div class="col-md-6">
+        {# missing image #}
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{% trans "Positivverzahnung" %} (P-HM)</strong>
+        <p>
+          {% blocktrans %}
+            Die Positivverzahnung erhalten Sie in den Qualitäten No. 44P GUHEMA
+            HM-Zähne und 45P GUHEMA HM-Zähne. Diese Verzahnung ist für den Über-
+            gang in die Hartmetallklasse entwickelt worden. Abrasive Werkstücke sind
+            hiermit trennbar, wie auch versandete Gusswerkstücke.
+          {% endblocktrans %}
+        </p>
+      </div>
+      <div class="col-md-6">
+        {# missing image #}
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{% trans "Variable Positivverzahnung" %} (VP-HM)</strong>
+        <p>
+          {% blocktrans %}
+            Die variable Positivverzahnung erhalten Sie in der Qualität No. 46VP GUHEMA
+            HM-Zähne. Die variable Zahnabfolge ist mit geschliffenen Hartmetallzähnen
+            aufgebaut, die mit Vor- und Nachschneidern versehen ist. Diese Verzahnung
+            erzielt höchste Schnittgeschwindigkeit sowie höchste Standzeit.
+          {% endblocktrans %}
+        </p>
+      </div>
+      <div class="col-md-6">
+        {# missing image #}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <strong>{% trans "Variable Negativverzahnung" %} (VN-HM)</strong>
+        <p>
+          {% blocktrans %}
+            Die variable Negativverzahnung erhalten Sie in der Qualität No. 47VN GUHEMA
+            HM-Zähne. Die negativ geschliffenen Hartmetallzähne ermöglichen das Zer-
+            spanen von extrem harten Werkstücken. Diese Spezialverzahnung findet zum
+            Beispiel Ihren Einsatz bei randschichtgehärteten Wellen.
+          {% endblocktrans %}
+        </p>
+      </div>
+      <div class="col-md-6">
+        {# missing image #}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>{% trans "Welche Sägebandbreite benötige ich?" %}</h3>
+    <p>
+      {% blocktrans %}
+        Grundsätzlich sollten Sie die größtmögliche Bandbreite wählen, die für die Maschine zulässig ist. Der Vorteil ist die hohe Stabilität des
+        Bandes bei hohen Vorschubkräften. Beim Einsatz von Metallsägebändern für Konturenschnitte ist die Breite des Sägebandes von dem
+        kleinsten zu schneidenden Radius abhängig. Die folgende Grafik gibt Ihnen optische Hilfestellung bei der Bestimmung der Sägeblattbreite.
+      {% endblocktrans %}
+    </p>
+    {% include 'products/includes/image_multilang.html' with path_to_image='img/produktdetails/saegebandbreite_' extension='.png' alt_text='Sägebandbreite' width='700px'%}
+  </section>
+
+  <section>
+    <h3>{% trans "Unsere Empfehlungen für langen Sägespaß von Anfang an!" %}</h3>
+    <p>
+      {% blocktrans %}
+        Für den Einsatz von GUHEMA-Metallsägebändern empfehlen wir die wenigen, aber wichtigen Spielregeln zwischen Werkstück,
+        Maschine und Sägeband zu beachten, um optimale Schnittergebnisse zu erhalten:
+      {% endblocktrans %}
+    </p>
+
+    <section>
+      <h4>{% trans "Einfahren von Bi-Metall Sägebändern" %}</h4>
+      <p>
+        {% trans "Stellen Sie die empfohlene Schnittgeschwindigkeit ein und reduzieren Sie in der Anfangszeit die Vorschubgeschwindigkeit auf 50% des empfohlenen Vorschubs." %}
+      </p>
+      <ul>
+        <li>{% trans "Bei großen Querschnitten halten Sie dies für 15 min bei." %}</li>
+        <li>{% trans "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm2 mit dieser Einstellung zerspanen." %}</li>
+      </ul>
+      <p>
+        {% trans "Bei Schwingungsgeräuschen oder Vibrationen an der Maschine reduzieren Sie die Schnittgeschwindigkeit." %}
+      </p>
+      <p>
+        {% trans "Nach dem Einfahren erhöhen Sie langsam die Vorschubgeschwindigkeit auf die empfohlenen Schnittparameter." %}
+      </p>
+      <p>
+        {% trans "Das Einfahren des Sägebandes führt zu einer optimalen Schneidkantenausbildung, bei der die Kantenradien auf ein Minimum reduziert werden, wodurch die Zahngeometrie optimal ausgebildet wird." %}
+      </p>
+    </section>
+
+    <section>
+      <h4>{% trans "Einfahren von Hartmetallsägebändern" %}</h4>
+      <p>
+        {% trans "Stellen Sie dazu die Schnittgeschwindigkeit auf 75% der empfohlenen Geschwindigkeit ein und reduzieren Sie die Vorschubgeschwindigkeit um ca. 50% des empfohlenen Vorschubs." %}
+      </p>
+      <ul>
+        <li>{% trans "Bei großen Querschnitten halten Sie dies für 15 min bei." %}</li>
+        <li>{% trans "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm2 mit dieser Einstellung zerspanen." %}</li>
+      </ul>
+      <p>
+        {% trans "Vermeiden Sie unbedingt Schwingungsgeräusche oder Vibrationen an der Maschine durch weiteres Reduzieren der Schnittgeschwindigkeit." %}
+      </p>
+      <p>
+        {% trans "Nach dem Einfahren erhöhen Sie zunächst langsam die Schnittgeschwindigkeit auf die empfohlene Geschwindigkeit. Jetzt erst erhöhen Sie die Vorschubgeschwindigkeit auf den empfohlenen Parameter." %}
+      </p>
+      <p>
+        {% trans "Das Einfahren des Sägebandes führt zu einer optimalen Schneidkantenausbildung, bei der die Kantenradien auf ein Minimum reduziert werden, wodurch die Zahngeometrie optimal ausgebildet wird." %}
+      </p>
+    </section>
+  </section>
+{% endblock %}

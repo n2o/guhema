@@ -32,14 +32,7 @@
       <li>{% trans "Beim Einsatz von Positivzahn und Future mit ca. 50% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist." %}</li>
     </ul>
 
-    {% with 'img/produktdetails/material_group_'|add:lang|add:'.png' as image %}
-      {% static image as img %}
-        <div class="padding-top">
-          <a href="{% static image %}">
-            <img class="img-responsive" src="{% static image %}" alt="Material Group">
-          </a>
-        </div>
-    {% endwith %}
+    {% include 'products/includes/image_multilang.html' with path_to_image='img/produktdetails/material_group_' extension='.png' alt_text='Material Group' %}
 
     <section class="padding-top text-center">
       <div class="alert alert-info" role="alert">
@@ -48,7 +41,7 @@
             {% trans "Faustregel" %}:
             &nbsp;&nbsp;&nbsp;
             <sup>{% trans "Schnittgeschwindigkeit" %}</sup> / <sub>2 x {% trans "Hubweg (m)" %}</sub>
-            = Hubzahl/min
+            = {% trans "Hubzahl/min" %}
           </strong>
         </h3>
       </div>
@@ -80,7 +73,7 @@
             {% trans "Schnittgeschwindigkeit" %}
           </th>
           <th class="table-no-bot-border">
-            {% trans "Blatt /" %}
+            {% trans "Blatt" %} /
           </th>
           <th class="table-no-bot-border">&nbsp;</th>
         </tr>
@@ -97,7 +90,7 @@
             {% trans "über" %}
           </th>
 
-          <th class="table-no-bot-border table-no-top-border">Schnittdruck</th>
+          <th class="table-no-bot-border table-no-top-border">{% trans "Schnittdruck" %}</th>
           <th colspan="2" class="table-no-bot-border table-no-top-border">
             {% trans "je nach Materialstärke" %}
           </th>

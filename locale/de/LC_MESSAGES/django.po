@@ -568,3 +568,23 @@ msgstr ""
 #: templates/admin/base_site.html:6
 msgid "GUHEMA administration"
 msgstr ""
+
+#: products/templates/products/metallsagebander/advices.html:14
+msgid ""
+"Wir produzieren für Sie Metallsägebänder in drei Ausführungen. Die “Kohlenstoff“-Qualität für die Werkstatt, die Bi-Metall-Qualität für\n"
+"  die Produktion und Werkstatt und die Hartmetall-Ausführung für Spezialanwendungen."
+msgstr ""
+#: products/templates/products/metallsagebander/advices.html:113
+msgid ""
+"Das Zahndesign mit dem extra starken Zahnrücken ist speziell für\n"
+"            Bündelschnitte und Profil- und Trägerschnitte entwickelt worden. Der\n"
+"            positive Spanwinkel trägt zur optimalen Spanbildung und somit\n"
+"            zum sauberen Schnittverlauf bei."
+msgstr ""
+#: products/templates/products/metallsagebander/advices.html:194
+msgid ""
+"Grundsätzlich sollten Sie die größtmögliche Bandbreite wählen, die für die Maschine zulässig ist. Der Vorteil ist die hohe Stabilität des\n"
+"Bandes bei hohen Vorschubkräften. Beim Einsatz von Metallsägebändern für Konturenschnitte ist die Breite des Sägebandes von dem\n"
+"kleinsten zu schneidenden Radius abhängig. Die folgende Grafik gibt Ihnen optische Hilfestellung bei der Bestimmung der Sägeblatt-\n"
+"breite."
+msgstr ""

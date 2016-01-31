@@ -2,17 +2,19 @@
 {% load thumbnail %}
 {% load i18n %}
 
-<p class="pull-right">
-  <a class="btn btn-primary" role="button" href="{% url 'products:advices' slug=group.slug %}">
-    {% trans "Zu unseren Empfehlungen" %}
-  </a>
-  {% comment %}
-  <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
-    {% trans "Details anzeigen" %}
-    <span class="caret"></span>
-  </a>
-  {% endcomment %}
-</p>
+{% if not no_advice %}
+  <p class="pull-right">
+    <a class="btn btn-primary" role="button" href="{% url 'products:advices' slug=group.slug %}">
+      {% trans "Zu unseren Empfehlungen" %}
+    </a>
+    {% comment %}
+    <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+      {% trans "Details anzeigen" %}
+      <span class="caret"></span>
+    </a>
+    {% endcomment %}
+  </p>
+{% endif %}
 
 {# <div id="collapse-1" class="collapse"> #}
 <div id="collapse-1">
