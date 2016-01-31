@@ -1,0 +1,13 @@
+{% load i18n %}
+{% load staticfiles %}
+
+{% get_current_language as lang %}
+
+{% with path_to_image|add:lang|add:extension as image %}
+  {% static image as img %}
+  <div class="padding-top">
+    <a href="{{ img }}">
+      <img class="img-responsive img-thumbnail" src="{{ img }}" alt="{{ alt_text }}" {% if width %}width="{{ width }}"{% endif %}>
+    </a>
+  </div>
+{% endwith %}
