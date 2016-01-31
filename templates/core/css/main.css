@@ -66,6 +66,12 @@ section {
   padding-left: 1em;
   padding-right: 1em; }
 
+.alert-info {
+  background-color: #00326a;
+  border-color: #014FA7; }
+  .alert-info h3 {
+    margin: 0.5em 0; }
+
 .table-dark-grey-column {
   background-color: #F0F0F0; }
 

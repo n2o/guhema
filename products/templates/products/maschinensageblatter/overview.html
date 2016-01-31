@@ -13,12 +13,20 @@
 {% block content %}
   {% include 'products/include_productheader.html' with group=group %}
 
-  <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1" style="float:right;">
-    {% trans "Details anzeigen" %}
-  </a>
+  <p class="pull-right">
+    <a class="btn btn-primary" role="button" href="{% url 'products:advices' slug=group.slug %}">
+      {% trans "Zu unseren Empfehlungen" %}
+    </a>
+    {% comment %}
+    <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+      {% trans "Details anzeigen" %}
+      <span class="caret"></span>
+    </a>
+    {% endcomment %}
+  </p>
 
-  <div id="collapse-1" class="collapse">
-
+  {# <div id="collapse-1" class="collapse"> #}
+  <div id="collapse-1">
     <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
     <p>
       {% trans "Unser Streben nach perfekter Sägequalität beginnt schon bei der Auswahl unseres Vormaterials, denn dies ist die Ausgangsbasis für unsere Spitzenprodukte – nichts geht durch unsere Eingangskontrolle, das nicht die Note „Sehr gut“ verdient." %}
