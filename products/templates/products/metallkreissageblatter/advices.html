@@ -1,0 +1,24 @@
+{% extends 'layout_productgroups.html' %}
+
+{% load i18n %}
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block heading %}
+  <h1>{% trans "Metallkreissägeblätter" %}</h1>
+{% endblock %}
+
+{% block content %}
+  <h3>{% trans "Unsere Empfehlung für langen Sägespaß" %}</h3>
+  <p>
+    {% trans "Für den Einsatz von GUHEMA-Metallkreissägeblättern empfehlen wir die wichtigen Spielregeln zwischen Werkstück, Sägeblatt und Maschine zu beachten, um optimale Schnittergebnisse zu erhalten:" %}
+  </p>
+  <ul>
+    <li>{% trans "Lassen Sie Ihr Sägeblatt rechtzeitig nachschärfen, so vermeiden Sie unsaubere Schnittflächen und ein Verlaufen des Schnittes. Wir übernehmen diese Aufgabe gerne für Sie." %}</li>
+    <li>{% trans "Spannen Sie das Kreissägeblatt in richtiger Richtung in die Maschine ein." %}</li>
+    <li>{% trans "Achten Sie beim Einspannen des Blattes darauf, dass sich keine Späne zwischen dem Flansch und dem Sägeblatt befinden (Schnitt verläuft). Bitte verwenden Sie den passenden Flansch zum Sägeblatt." %}</li>
+    <li>{% trans "Spannen Sie Ihr zu bearbeitendes Werkstück möglichst über vier Punkte fest ein. Achten Sie dabei auf mögliche Späne zwischen Spannbacken und Werkstück." %}</li>
+    <li>{% trans "Passen Sie die Vorschubsgeschwindigkeit der Schnittgeschwindigkeit an." %}</li>
+    <li>{% trans "Erhöhen Sie die Standzeit Ihres Metallkreissägeblattes erheblich, indem Sie stets mit dem passenden Kühlschmiermittel kühlen." %}</li>
+  </ul>
+{% endblock %}

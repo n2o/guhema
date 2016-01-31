@@ -2,6 +2,7 @@
 
 {% load staticfiles %}
 {% load thumbnail %}
+{% load i18n %}
 
 {% block heading %}
   <h1>
@@ -15,7 +16,82 @@
 
     {% include 'products/include_productheader.html' with group=group %}
 
-    <h3 class="padding-bottom">Übersicht</h3>
+    <p class="pull-right">
+      <a class="btn btn-primary" role="button" href="{% url 'products:advices' slug=group.slug %}">
+        {% trans "Zu unseren Empfehlungen" %}
+      </a>
+      {% comment %}
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+        {% trans "Details anzeigen" %}
+        <span class="caret"></span>
+      </a>
+      {% endcomment %}
+    </p>
+
+    {# <div id="collapse-1" class="collapse"> #}
+    <div id="collapse-1">
+      <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
+      <p>
+        {% trans "Nachfolgend sind unsere zwei Qualitäten aus Schnellarbeitsstahl aufgeführt:" %}
+      </p>
+
+      <div class="well">
+        <div>
+          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+          GUHEMA Super-HSS
+        </div>
+        <div>
+          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+          {% blocktrans with num="1.3343" %}DMo 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
+        </div>
+        <div>
+          <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+          {% trans "Das Werkstattblatt" %}
+        </div>
+
+        <div class="padding-top-05">
+          <div>
+            <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+            GUHEMA Brillant
+          </div>
+          <div>
+            <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+            {% blocktrans with num="1.3243" %}EMo 5 Co 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
+          </div>
+          <div>
+            <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+            {% trans "Für nicht rostende Stähle" %}
+          </div>
+        </div>
+      </div>
+
+      <h3>{% trans "Fühlen Sie uns auf den Zahn" %}</h3>
+      <p>
+        {% trans "Wenn perfektes Trennen angestrebt ist, müssen alle Faktoren optimal aufeinander abgestimmt sein. Die Zahnform spielt dabei eine bedeutungsvolle Rolle. Ihnen stehen folgende Zahnformen zur Verfügung, die nach DIN 1840 gefertigt werden:" %}
+      </p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h4>{% trans "Bogenzahn mit Wechselschliff" %} (BW)</h4>
+          {# missing image #}
+          <p>
+            {% trans "Wir empfehlen den Bogenzahn mit Wechselschliff bei Metallkreissägeblättern bei einer feinen Zahnteilung zum Sägen von Rohren oder Profilen." %}
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h4>{% trans "Bogenzahn mit Vor- und Nachschneider" %} (HZ)</h4>
+          {# missing image #}
+          <p>
+            {% trans "Der Bogenzahn mit Vor- und Nachschneider ist für das Sägen von Stählen auf Sägemaschinen und Rundtaktautomaten geeignet und empfiehlt sich bei mittleren und groben Zahnteilungen." %}
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <h3 class="padding-bottom">Produkte</h3>
 
     <div class="row padding-bottom">
       <div class="col-md-4">
