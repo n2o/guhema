@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-31 16:53+0000\n"
+"POT-Creation-Date: 2016-01-31 17:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,29 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: contact/templates/contact/email.html:8 templates/base.html.py:55
+#: templates/base.html:134
+msgid "Kontakt"
+msgstr ""
+
+#: contact/templates/contact/email.html:14
+msgid ""
+"Hier haben Sie die Möglichkeit uns eine E-Mail zu senden. Bitte füllen Sie "
+"dafür alle Felder aus. Wir werden uns dann bei Ihnen melden!"
+msgstr ""
+
+#: contact/templates/contact/email.html:17
+msgid "Abschicken"
+msgstr ""
+
+#: contact/templates/contact/verschickt.html:5
+msgid "Wir haben Ihre E-Mail erhalten"
+msgstr ""
+
+#: contact/templates/contact/verschickt.html:10
+msgid "Schnellstmöglich werden wir uns bei Ihnen melden!"
+msgstr ""
 
 #: core/settings.py:110
 msgid "German"
@@ -49,7 +72,7 @@ msgstr ""
 msgid "Stand"
 msgstr ""
 
-#: fairs/templates/fairs/index.html:9
+#: fairs/templates/fairs/index.html:9 templates/base.html.py:53
 msgid "Messen"
 msgstr ""
 
@@ -61,8 +84,21 @@ msgstr ""
 msgid "Wir haben auf diesen Messen ausgestellt:"
 msgstr ""
 
+#: news/templates/news/detail.html:23
+msgid "Anhang"
+msgstr ""
+
+#: news/templates/news/overview.html:5 templates/base.html.py:54
+#: templates/index.html:54
+msgid "News"
+msgstr ""
+
 #: products/admin.py:109
 msgid "Advanced options"
+msgstr ""
+
+#: products/templates/products/include_available_teeth.html:6
+msgid "lieferbare Verzahnung"
 msgstr ""
 
 #: products/templates/products/includes/general_advice_sawblades.html:8
@@ -73,6 +109,7 @@ msgid "Zu unseren Empfehlungen"
 msgstr ""
 
 #: products/templates/products/includes/general_advice_sawblades.html:22
+#: products/templates/products/lochsagen/overview.html:24
 #: products/templates/products/metallkreissageblatter/overview.html:34
 msgid "Material, Qualitäten und Einsatzbereiche"
 msgstr ""
@@ -149,6 +186,8 @@ msgid ""
 msgstr ""
 
 #: products/templates/products/includes/general_advice_sawblades.html:91
+#: products/templates/products/maschinensageblatter/details.html:58
+#: products/templates/products/metallstichsageblatter/details.html:58
 msgid "Normalzahn"
 msgstr ""
 
@@ -157,6 +196,8 @@ msgid "Für den allgemeinen, universellen Einsatz"
 msgstr ""
 
 #: products/templates/products/includes/general_advice_sawblades.html:105
+#: products/templates/products/maschinensageblatter/details.html:64
+#: products/templates/products/metallstichsageblatter/details.html:64
 msgid "Positivzahn"
 msgstr ""
 
@@ -165,8 +206,8 @@ msgid "Der austenitische, zähharte Stähle trennt"
 msgstr ""
 
 #: products/templates/products/includes/general_advice_sawblades.html:119
-#: products/templates/products/metallsagebander/advices.html:81
-#: products/templates/products/metallsagebander/advices.html:141
+#: products/templates/products/metallsagebander/advices.html:67
+#: products/templates/products/metallsagebander/advices.html:113
 msgid "Variable Positivverzahnung"
 msgstr ""
 
@@ -175,17 +216,162 @@ msgid ""
 "GUHEMA FUTURE, die keine Wünsche an ein Maschinensägeblatt mehr offen lässt"
 msgstr ""
 
+#: products/templates/products/index.html:8
+#: products/templates/products/maschinensageblatter/overview.html:20
+#: products/templates/products/metallstichsageblatter/overview.html:20
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:18
+#: templates/base.html:52
+msgid "Produkte"
+msgstr ""
+
+#: products/templates/products/index.html:31
+msgid "Zu den Produkten"
+msgstr ""
+
 #: products/templates/products/lochsagen/advices.html:10
 msgid "Lochsägen"
 msgstr ""
 
-#: products/templates/products/maschinensageblatter/advices.html:8
-msgid "Maschinensägeblätter"
-msgstr ""
-
+#: products/templates/products/lochsagen/advices.html:14
 #: products/templates/products/maschinensageblatter/advices.html:13
 #: products/templates/products/metallkreissageblatter/advices.html:12
 msgid "Unsere Empfehlung für langen Sägespaß"
+msgstr ""
+
+#: products/templates/products/lochsagen/advices.html:16
+msgid ""
+"Bitte passen Sie Ihre Umdrehungszahl den folgenden Empfehlungen an, um die "
+"Lebensdauer der Lochsäge und die Schnittqualität zu optimieren. Bitte "
+"vergessen Sie des Weiteren nicht die permanente Kühlung der Lochsäge während "
+"des Schneidprozesses."
+msgstr ""
+
+#: products/templates/products/lochsagen/advices.html:23
+msgid "NIRO"
+msgstr ""
+
+#: products/templates/products/lochsagen/advices.html:24
+msgid "Guss"
+msgstr ""
+
+#: products/templates/products/lochsagen/advices.html:25
+msgid "Stahl"
+msgstr ""
+
+#: products/templates/products/lochsagen/advices.html:26
+msgid "Buntmetalle"
+msgstr ""
+
+#: products/templates/products/lochsagen/advices.html:27
+msgid "ALU"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:26
+msgid ""
+"Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und "
+"Laufruhe, hervorgerufen durch die variable Verzahnung mit ihrer optimalen "
+"Spanabfuhr, zeichnet unsere Bi-Metall-Lochsägen aus. Unsere feinverzahnten "
+"Lochsägen sind bestens für dünnwandige Materialien geeignet. Bei Mineral- "
+"und Verbundwerkstoffen erzielen unsere hartmetallbeschichteten Lochsägen "
+"beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine Wünsche offen."
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:40
+#: products/templates/products/lochsagen/overview.html:57
+#, python-format
+msgid "Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. %(num)s)"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:44
+#: products/templates/products/lochsagen/overview.html:61
+#: products/templates/products/lochsagen/overview.html:86
+#: products/templates/products/lochsagen/overview.html:196
+#: products/templates/products/lochsagen/overview.html:200
+#: products/templates/products/maschinensageblatter/advices.html:65
+#: products/templates/products/maschinensageblatter/advices.html:477
+#: products/templates/products/maschinensageblatter/details.html:21
+#: products/templates/products/maschinensageblatter/details.html:53
+#: products/templates/products/metallsagebander/details.html:23
+#: products/templates/products/metallstichsageblatter/details.html:53
+#: products/templates/products/pendelhubstichsageblatter/overview.html:75
+msgid "ZpZ"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:44
+msgid "das Allroundtalent"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:61
+msgid "für dünnwandiges Material"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:75
+msgid "Zähne mit Hartmetallgranulat beschichtet"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:79
+msgid "Für mineralische Werkstoffe"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:85
+#: products/templates/products/maschinensageblatter/details.html:20
+#: products/templates/products/metallsagebander/details.html:22
+#: products/templates/products/metallstichsageblatter/details.html:20
+msgid "Der schnelle Weg zu unserer Artikel-Nr."
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:86
+#: products/templates/products/maschinensageblatter/advices.html:95
+#: products/templates/products/metallstichsageblatter/details.html:21
+msgid "Qualität"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:87
+#: products/templates/products/maschinensageblatter/details.html:22
+msgid "z.B.:"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:97
+msgid "Zentriereinheiten"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:104
+#: products/templates/products/lochsagen/overview.html:130
+msgid "Aufnahmeschaft"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:105
+#: products/templates/products/lochsagen/overview.html:131
+msgid "Lochsäge"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:106
+#: products/templates/products/lochsagen/overview.html:132
+#: products/templates/products/lochsagen/overview.html:162
+#: products/templates/products/metallhandsageblatter/overview.html:130
+msgid "Bestell-Nr."
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:154
+msgid "Zubehör / Ersatzteile"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:161
+#: products/templates/products/maschinensageblatter/advices.html:478
+msgid "Beschreibung"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:183
+msgid "Durchmesser"
+msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:194
+#: products/templates/products/maschinensageblatter/details.html:139
+msgid "in mm"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:8
+msgid "Maschinensägeblätter"
 msgstr ""
 
 #: products/templates/products/maschinensageblatter/advices.html:17
@@ -285,11 +471,6 @@ msgstr ""
 msgid "Material"
 msgstr ""
 
-#: products/templates/products/maschinensageblatter/advices.html:65
-#: products/templates/products/maschinensageblatter/advices.html:477
-msgid "ZpZ"
-msgstr ""
-
 #: products/templates/products/maschinensageblatter/advices.html:66
 msgid "bei Materialabmessungen"
 msgstr ""
@@ -318,10 +499,6 @@ msgstr ""
 msgid "je nach Materialstärke"
 msgstr ""
 
-#: products/templates/products/maschinensageblatter/advices.html:95
-msgid "Qualität"
-msgstr ""
-
 #: products/templates/products/maschinensageblatter/advices.html:98
 msgid "Zahnform"
 msgstr ""
@@ -331,6 +508,9 @@ msgstr ""
 #: products/templates/products/maschinensageblatter/advices.html:111
 #: products/templates/products/maschinensageblatter/advices.html:114
 #: products/templates/products/maschinensageblatter/advices.html:117
+#: products/templates/products/pendelhubstichsageblatter/overview.html:78
+#: products/templates/products/pendelhubstichsageblatter/overview.html:82
+#: products/templates/products/pendelhubstichsageblatter/overview.html:87
 msgid "mm"
 msgstr ""
 
@@ -347,10 +527,10 @@ msgid "unleg. Stähle/Baustähle"
 msgstr ""
 
 #: products/templates/products/maschinensageblatter/advices.html:141
-#: products/templates/products/metallsagebander/advices.html:288
-#: products/templates/products/metallsagebander/advices.html:301
-#: products/templates/products/metallsagebander/advices.html:314
-#: products/templates/products/metallsagebander/advices.html:327
+#: products/templates/products/metallsagebander/advices.html:251
+#: products/templates/products/metallsagebander/advices.html:264
+#: products/templates/products/metallsagebander/advices.html:277
+#: products/templates/products/metallsagebander/advices.html:290
 msgid "Einsatzstähle"
 msgstr ""
 
@@ -360,6 +540,7 @@ msgstr ""
 #: products/templates/products/maschinensageblatter/advices.html:268
 #: products/templates/products/maschinensageblatter/advices.html:305
 #: products/templates/products/maschinensageblatter/advices.html:327
+#: products/templates/products/metallstichsageblatter/details.html:22
 msgid "z.B."
 msgstr ""
 
@@ -391,9 +572,9 @@ msgid "bis mittel"
 msgstr ""
 
 #: products/templates/products/maschinensageblatter/advices.html:179
-#: products/templates/products/metallsagebander/advices.html:366
-#: products/templates/products/metallsagebander/advices.html:379
-#: products/templates/products/metallsagebander/advices.html:392
+#: products/templates/products/metallsagebander/advices.html:329
+#: products/templates/products/metallsagebander/advices.html:342
+#: products/templates/products/metallsagebander/advices.html:355
 msgid "Vergütungsstähle"
 msgstr ""
 
@@ -451,14 +632,14 @@ msgid "Nimonic-Titan"
 msgstr ""
 
 #: products/templates/products/maschinensageblatter/advices.html:396
-#: products/templates/products/metallsagebander/advices.html:678
-#: products/templates/products/metallsagebander/advices.html:691
+#: products/templates/products/metallsagebander/advices.html:641
+#: products/templates/products/metallsagebander/advices.html:654
 msgid "Stahlguss"
 msgstr ""
 
 #: products/templates/products/maschinensageblatter/advices.html:412
-#: products/templates/products/metallsagebander/advices.html:704
-#: products/templates/products/metallsagebander/advices.html:717
+#: products/templates/products/metallsagebander/advices.html:667
+#: products/templates/products/metallsagebander/advices.html:680
 msgid "Gusseisen"
 msgstr ""
 
@@ -480,10 +661,6 @@ msgstr ""
 
 #: products/templates/products/maschinensageblatter/advices.html:469
 msgid "Anwendungsbereich für unsere GUHEMA Future Metallsägeblätter:"
-msgstr ""
-
-#: products/templates/products/maschinensageblatter/advices.html:478
-msgid "Beschreibung"
 msgstr ""
 
 #: products/templates/products/maschinensageblatter/advices.html:484
@@ -626,10 +803,62 @@ msgid ""
 "Anwendungsberatung unter"
 msgstr ""
 
-#: products/templates/products/maschinensageblatter/overview.html:20
-#: products/templates/products/metallstichsageblatter/overview.html:20
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:18
-msgid "Produkte"
+#: products/templates/products/maschinensageblatter/details.html:21
+#: products/templates/products/metallsagebander/details.html:23
+#: products/templates/products/metallstichsageblatter/details.html:21
+msgid "Kennziffer (Abmessung)"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/details.html:67
+#: products/templates/products/metallstichsageblatter/details.html:67
+msgid "Variable Positivzahnung"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/details.html:71
+#: products/templates/products/metallsagebander/details.html:52
+#: products/templates/products/metallstichsageblatter/details.html:71
+msgid "Abmessungen"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/details.html:72
+#: products/templates/products/metallsagebander/details.html:53
+#: products/templates/products/metallstichsageblatter/details.html:72
+msgid "Kennziffer"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/details.html:94
+#: products/templates/products/metallsagebander/details.html:146
+#: products/templates/products/metallstichsageblatter/details.html:94
+msgid "in mm:"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/details.html:94
+#: products/templates/products/metallsagebander/details.html:146
+#: products/templates/products/metallstichsageblatter/details.html:94
+msgid "B x S"
+msgstr ""
+
+#: products/templates/products/metallhandsageblatter/overview.html:24
+msgid "Metallhandsägebügel"
+msgstr ""
+
+#: products/templates/products/metallhandsageblatter/overview.html:76
+#: products/templates/products/metallhandsageblatter/overview.html:170
+#: products/templates/products/pendelhubstichsageblatter/overview.html:100
+msgid "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+msgstr ""
+
+#: products/templates/products/metallhandsageblatter/overview.html:133
+msgid "Verzahnung"
+msgstr ""
+
+#: products/templates/products/metallhandsageblatter/overview.html:136
+msgid "Abmessung"
+msgstr ""
+
+#: products/templates/products/metallhandsageblatter/overview.html:139
+#: products/templates/products/pendelhubstichsageblatter/overview.html:60
+msgid "Schnittbereich Metall"
 msgstr ""
 
 #: products/templates/products/metallkreissageblatter/advices.html:8
@@ -731,174 +960,173 @@ msgstr ""
 #: products/templates/products/metallsagebander/advices.html:15
 msgid ""
 "Wir produzieren für Sie Metallsägebänder in drei Ausführungen. Die "
-"“Kohlenstoff“-Qualität für die Werkstatt, die Bi-Metall-Qualität für\n"
-"        die Produktion und Werkstatt und die Hartmetall-Ausführung für "
+"“Kohlenstoff“-Qualität für die Werkstatt, die Bi-Metall-Qualität für die "
+"Produktion und Werkstatt und die Hartmetall-Ausführung für "
 "Spezialanwendungen."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:20
+#: products/templates/products/metallsagebander/advices.html:19
 msgid "Getreu dem Motto:"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:21
+#: products/templates/products/metallsagebander/advices.html:20
 msgid ""
 "Wir liefern Ihnen die Metallsägebänder, die Sie zum optimalen Sägeergebnis "
 "führen."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:28
+#: products/templates/products/metallsagebander/advices.html:27
 msgid ""
 "Wenn Sie optimal trennen wollen, dann sollten Sie uns auf den Zahn fühlen"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:31
+#: products/templates/products/metallsagebander/advices.html:30
 msgid ""
 "Damit jede Ihrer Anforderungen erfüllt wird, haben wir den "
 "Materialqualitäten unserer Sägebänder die notwendige Auswahl an Zahntypen "
 "bereitgestellt:"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:35
+#: products/templates/products/metallsagebander/advices.html:34
+#: products/templates/products/metallsagebander/details.html:415
 msgid "Standardzahn"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:37
+#: products/templates/products/metallsagebander/advices.html:36
 msgid ""
-"Diese Zahngeometrie finden Sie bei unseren Qualitäten No. 20\n"
-"GUHEMA Kristall, No. 22 GUHEMA Kristall plus und No. 35\n"
-"GUHEMA Bi-Co-lastic. Diese Geometrie eignet sich bestens für\n"
-"den allgemeinen, universellen Einsatz."
+"Diese Zahngeometrie finden Sie bei unseren Qualitäten No. 20 GUHEMA "
+"Kristall, No. 22 GUHEMA Kristall plus und No. 35 GUHEMA Bi-Co-lastic. Diese "
+"Geometrie eignet sich bestens für den allgemeinen, universellen Einsatz."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:49
+#: products/templates/products/metallsagebander/advices.html:45
+#: products/templates/products/metallsagebander/details.html:416
 msgid "Klauenzahn"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:51
+#: products/templates/products/metallsagebander/advices.html:47
 msgid ""
-"Diese Zahngeometrie ist für die Qualitäten No. 20 GUHEMA\n"
-"Kristall, No. 22 GUHEMA Kristall plus und No. 35 GUHEMA\n"
-"Bi-Co-lastic lieferbar. Die Einsatzgebiete dieser Geometrie sind die\n"
-"austenitischen und rostfreien Stähle."
+"Diese Zahngeometrie ist für die Qualitäten No. 20 GUHEMA Kristall, No. 22 "
+"GUHEMA Kristall plus und No. 35 GUHEMA Bi-Co-lastic lieferbar. Die "
+"Einsatzgebiete dieser Geometrie sind die austenitischen und rostfreien "
+"Stähle."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:63
+#: products/templates/products/metallsagebander/advices.html:56
 msgid "Variable Verzahnung"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:65
+#: products/templates/products/metallsagebander/advices.html:58
 msgid ""
-"Die variable Verzahnung erhalten Sie in der Qualität No. 35V\n"
-"GUHEMA Bi-Co-lastic. Diese V-Zahnung führt zu einem besonders\n"
-"schwingungsarmen Schnitt und ist sowohl für Bündelschnitte, als\n"
-"auch für Vollmaterialien hervorragend geeignet. Da das Einsatzgebiet\n"
-"der Metallsägebänder mit V-Zahnung erheblich größer wird, entfallen\n"
-"die sonst notwendigen Bandwechselzeiten und somit die Ausfallzeiten\n"
-"der Maschine. Der gesenkte Geräuschpegel am Arbeitsplatz ist ein\n"
-"von der Belegschaft oft gelobter Begleiteffekt der variablen Verzahnung."
+"Die variable Verzahnung erhalten Sie in der Qualität No. 35V GUHEMA Bi-Co-"
+"lastic. Diese V-Zahnung führt zu einem besonders schwingungsarmen Schnitt "
+"und ist sowohl für Bündelschnitte, als auch für Vollmaterialien hervorragend "
+"geeignet. Da das Einsatzgebiet der Metallsägebänder mit V-Zahnung erheblich "
+"größer wird, entfallen die sonst notwendigen Bandwechselzeiten und somit die "
+"Ausfallzeiten der Maschine. Der gesenkte Geräuschpegel am Arbeitsplatz ist "
+"ein von der Belegschaft oft gelobter Begleiteffekt der variablen Verzahnung."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:83
+#: products/templates/products/metallsagebander/advices.html:69
 msgid ""
-"Die VP-Verzahnung erhalten Sie in den Qualitäten No. 35VP GUHEMA\n"
-"Bi-Co-lastic und No. 36VP GUHEMA Bi-Co-lastic plus. Diese variable\n"
-"Positivverzahnung erzielt höchste Zerspanungsleistungen bei einer\n"
-"langen Lebensdauer. Zerspanungstechnologie auf höchstem Niveau."
+"Die VP-Verzahnung erhalten Sie in den Qualitäten No. 35VP GUHEMA Bi-Co-"
+"lastic und No. 36VP GUHEMA Bi-Co-lastic plus. Diese variable "
+"Positivverzahnung erzielt höchste Zerspanungsleistungen bei einer langen "
+"Lebensdauer. Zerspanungstechnologie auf höchstem Niveau."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:95
+#: products/templates/products/metallsagebander/advices.html:78
 msgid "Variable Positivverzahnung mit verstärktem Zahnrücken"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:97
+#: products/templates/products/metallsagebander/advices.html:80
 msgid ""
-"Die variable Spezialzahnform erhalten Sie in den Qualitäten\n"
-"No. 33VP-D GUHEMA Bi-Co-lastic und No. 34VP-D GUHEMA\n"
-"Bi-Co-lastic."
+"Die variable Spezialzahnform erhalten Sie in den Qualitäten No. 33VP-D "
+"GUHEMA Bi-Co-lastic und No. 34VP-D GUHEMA Bi-Co-lastic."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:101
+#: products/templates/products/metallsagebander/advices.html:82
 msgid ""
-"Das Zahndesign mit dem extra starken Zahnrücken ist speziell für\n"
-"Bündelschnitte und Profil- und Trägerschnitte entwickelt worden. Der\n"
-"positive Spanwinkel trägt zur optimalen Spanbildung und somit\n"
-"zum sauberen Schnittverlauf bei."
+"Das Zahndesign mit dem extra starken Zahnrücken ist speziell für "
+"Bündelschnitte und Profil- und Trägerschnitte entwickelt worden. Der "
+"positive Spanwinkel trägt zur optimalen Spanbildung und somit zum sauberen "
+"Schnittverlauf bei."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:113
+#: products/templates/products/metallsagebander/advices.html:91
 msgid "Hartmetall-Granulat"
+msgstr ""
+
+#: products/templates/products/metallsagebander/advices.html:93
+msgid ""
+"Die Hartmetallgranulatschneide erhalten Sie bei der No. 40 GUHEMA HM-"
+"Granulat als durchgehende Variante und bei der No. 41 GUHEMA HM-Granulat als "
+"unterbrochene Ausführung. Diese Verzahnung punktet dort, wo übliche "
+"Sägezähne von Nachteil sind."
+msgstr ""
+
+#: products/templates/products/metallsagebander/advices.html:102
+msgid "Positivverzahnung"
+msgstr ""
+
+#: products/templates/products/metallsagebander/advices.html:104
+msgid ""
+"Die Positivverzahnung erhalten Sie in den Qualitäten No. 44P GUHEMA HM-Zähne "
+"und 45P GUHEMA HM-Zähne. Diese Verzahnung ist für den Über- gang in die "
+"Hartmetallklasse entwickelt worden. Abrasive Werkstücke sind hiermit "
+"trennbar, wie auch versandete Gusswerkstücke."
 msgstr ""
 
 #: products/templates/products/metallsagebander/advices.html:115
 msgid ""
-"Die Hartmetallgranulatschneide erhalten Sie bei der No. 40 GUHEMA\n"
-"HM-Granulat als durchgehende Variante und bei der No. 41 GUHEMA\n"
-"HM-Granulat als unterbrochene Ausführung. Diese Verzahnung punktet dort,\n"
-"wo übliche Sägezähne von Nachteil sind."
-msgstr ""
-
-#: products/templates/products/metallsagebander/advices.html:127
-msgid "Positivverzahnung"
-msgstr ""
-
-#: products/templates/products/metallsagebander/advices.html:129
-msgid ""
-"Die Positivverzahnung erhalten Sie in den Qualitäten No. 44P GUHEMA\n"
-"HM-Zähne und 45P GUHEMA HM-Zähne. Diese Verzahnung ist für den Über-\n"
-"gang in die Hartmetallklasse entwickelt worden. Abrasive Werkstücke sind\n"
-"hiermit trennbar, wie auch versandete Gusswerkstücke."
-msgstr ""
-
-#: products/templates/products/metallsagebander/advices.html:143
-msgid ""
-"Die variable Positivverzahnung erhalten Sie in der Qualität No. 46VP GUHEMA\n"
-"HM-Zähne. Die variable Zahnabfolge ist mit geschliffenen Hartmetallzähnen\n"
-"aufgebaut, die mit Vor- und Nachschneidern versehen ist. Diese Verzahnung\n"
+"Die variable Positivverzahnung erhalten Sie in der Qualität No. 46VP GUHEMA "
+"HM-Zähne. Die variable Zahnabfolge ist mit geschliffenen Hartmetallzähnen "
+"aufgebaut, die mit Vor- und Nachschneidern versehen ist. Diese Verzahnung "
 "erzielt höchste Schnittgeschwindigkeit sowie höchste Standzeit."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:155
+#: products/templates/products/metallsagebander/advices.html:124
 msgid "Variable Negativverzahnung"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:157
+#: products/templates/products/metallsagebander/advices.html:126
 msgid ""
-"Die variable Negativverzahnung erhalten Sie in der Qualität No. 47VN GUHEMA\n"
-"HM-Zähne. Die negativ geschliffenen Hartmetallzähne ermöglichen das Zer-\n"
-"spanen von extrem harten Werkstücken. Diese Spezialverzahnung findet zum\n"
+"Die variable Negativverzahnung erhalten Sie in der Qualität No. 47VN GUHEMA "
+"HM-Zähne. Die negativ geschliffenen Hartmetallzähne ermöglichen das Zer- "
+"spanen von extrem harten Werkstücken. Diese Spezialverzahnung findet zum "
 "Beispiel Ihren Einsatz bei randschichtgehärteten Wellen."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:170
+#: products/templates/products/metallsagebander/advices.html:136
 msgid "Welche Sägebandbreite benötige ich?"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:172
+#: products/templates/products/metallsagebander/advices.html:138
 msgid ""
 "Grundsätzlich sollten Sie die größtmögliche Bandbreite wählen, die für die "
-"Maschine zulässig ist. Der Vorteil ist die hohe Stabilität des\n"
-"Bandes bei hohen Vorschubkräften. Beim Einsatz von Metallsägebändern für "
-"Konturenschnitte ist die Breite des Sägebandes von dem\n"
-"kleinsten zu schneidenden Radius abhängig. Die folgende Grafik gibt Ihnen "
-"optische Hilfestellung bei der Bestimmung der Sägeblattbreite."
+"Maschine zulässig ist. Der Vorteil ist die hohe Stabilität des Bandes bei "
+"hohen Vorschubkräften. Beim Einsatz von Metallsägebändern für "
+"Konturenschnitte ist die Breite des Sägebandes von dem kleinsten zu "
+"schneidenden Radius abhängig. Die folgende Grafik gibt Ihnen optische "
+"Hilfestellung bei der Bestimmung der Sägeblattbreite."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:180
+#: products/templates/products/metallsagebander/advices.html:144
 msgid "Unsere Empfehlungen für langen Sägespaß von Anfang an!"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:182
+#: products/templates/products/metallsagebander/advices.html:146
 msgid ""
 "Für den Einsatz von GUHEMA-Metallsägebändern empfehlen wir die wenigen, aber "
-"wichtigen Spielregeln zwischen Werkstück,\n"
-"Maschine und Sägeband zu beachten, um optimale Schnittergebnisse zu erhalten:"
+"wichtigen Spielregeln zwischen Werkstück, Maschine und Sägeband zu beachten, "
+"um optimale Schnittergebnisse zu erhalten:"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:187
+#: products/templates/products/metallsagebander/advices.html:150
 msgid "Einfahren von Bi-Metall Sägebändern"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:189
+#: products/templates/products/metallsagebander/advices.html:152
 #, python-format
 msgid ""
 "Stellen Sie die empfohlene Schnittgeschwindigkeit ein und reduzieren Sie in "
@@ -906,42 +1134,42 @@ msgid ""
 "Vorschubs."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:192
-#: products/templates/products/metallsagebander/advices.html:212
+#: products/templates/products/metallsagebander/advices.html:155
+#: products/templates/products/metallsagebander/advices.html:175
 msgid "Bei großen Querschnitten halten Sie dies für 15 min bei."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:193
+#: products/templates/products/metallsagebander/advices.html:156
 msgid ""
 "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm2 mit dieser "
 "Einstellung zerspanen."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:196
+#: products/templates/products/metallsagebander/advices.html:159
 msgid ""
 "Bei Schwingungsgeräuschen oder Vibrationen an der Maschine reduzieren Sie "
 "die Schnittgeschwindigkeit."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:199
+#: products/templates/products/metallsagebander/advices.html:162
 msgid ""
 "Nach dem Einfahren erhöhen Sie langsam die Vorschubgeschwindigkeit auf die "
 "empfohlenen Schnittparameter."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:202
-#: products/templates/products/metallsagebander/advices.html:222
+#: products/templates/products/metallsagebander/advices.html:165
+#: products/templates/products/metallsagebander/advices.html:185
 msgid ""
 "Das Einfahren des Sägebandes führt zu einer optimalen "
 "Schneidkantenausbildung, bei der die Kantenradien auf ein Minimum reduziert "
 "werden, wodurch die Zahngeometrie optimal ausgebildet wird."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:207
+#: products/templates/products/metallsagebander/advices.html:170
 msgid "Einfahren von Hartmetallsägebändern"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:209
+#: products/templates/products/metallsagebander/advices.html:172
 #, python-format
 msgid ""
 "Stellen Sie dazu die Schnittgeschwindigkeit auf 75%% der empfohlenen "
@@ -949,125 +1177,147 @@ msgid ""
 "50%% des empfohlenen Vorschubs."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:213
+#: products/templates/products/metallsagebander/advices.html:176
 msgid ""
 "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm<sup>2</sup> mit "
 "dieser Einstellung zerspanen."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:216
+#: products/templates/products/metallsagebander/advices.html:179
 msgid ""
 "Vermeiden Sie unbedingt Schwingungsgeräusche oder Vibrationen an der "
 "Maschine durch weiteres Reduzieren der Schnittgeschwindigkeit."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:219
+#: products/templates/products/metallsagebander/advices.html:182
 msgid ""
 "Nach dem Einfahren erhöhen Sie zunächst langsam die Schnittgeschwindigkeit "
 "auf die empfohlene Geschwindigkeit. Jetzt erst erhöhen Sie die "
 "Vorschubgeschwindigkeit auf den empfohlenen Parameter."
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:231
+#: products/templates/products/metallsagebander/advices.html:194
 msgid "Werkstoffgruppe"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:232
+#: products/templates/products/metallsagebander/advices.html:195
 msgid "Werkstoffe"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:233
+#: products/templates/products/metallsagebander/advices.html:196
 msgid "Werkstoffnummer"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:234
+#: products/templates/products/metallsagebander/advices.html:197
 msgid "Schnittgeschwindigkeit [m/min]"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:244
+#: products/templates/products/metallsagebander/advices.html:207
 msgid "Ausführung 20er-Serie"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:249
+#: products/templates/products/metallsagebander/advices.html:212
 msgid "Ausführung 30er-Serie"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:254
+#: products/templates/products/metallsagebander/advices.html:217
 msgid "Ausführung 40er-Serie"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:262
-#: products/templates/products/metallsagebander/advices.html:275
+#: products/templates/products/metallsagebander/advices.html:225
+#: products/templates/products/metallsagebander/advices.html:238
 msgid "Baustähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:340
+#: products/templates/products/metallsagebander/advices.html:303
 msgid "Nitrirstähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:353
+#: products/templates/products/metallsagebander/advices.html:316
 msgid "Automatenstähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:405
+#: products/templates/products/metallsagebander/advices.html:368
 msgid "Kugellagerstähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:418
+#: products/templates/products/metallsagebander/advices.html:381
 msgid "Federstähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:431
+#: products/templates/products/metallsagebander/advices.html:394
 msgid "unlegierte Werkzeugstähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:444
-#: products/templates/products/metallsagebander/advices.html:457
-#: products/templates/products/metallsagebander/advices.html:470
+#: products/templates/products/metallsagebander/advices.html:407
+#: products/templates/products/metallsagebander/advices.html:420
+#: products/templates/products/metallsagebander/advices.html:433
 msgid "legierte Werkzeugstähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:483
-#: products/templates/products/metallsagebander/advices.html:496
-#: products/templates/products/metallsagebander/advices.html:509
-#: products/templates/products/metallsagebander/advices.html:522
-#: products/templates/products/metallsagebander/advices.html:535
+#: products/templates/products/metallsagebander/advices.html:446
+#: products/templates/products/metallsagebander/advices.html:459
+#: products/templates/products/metallsagebander/advices.html:472
+#: products/templates/products/metallsagebander/advices.html:485
+#: products/templates/products/metallsagebander/advices.html:498
 msgid "Schnellarbeitsstähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:548
-#: products/templates/products/metallsagebander/advices.html:561
+#: products/templates/products/metallsagebander/advices.html:511
+#: products/templates/products/metallsagebander/advices.html:524
 msgid "hochwarmfeste Stähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:574
-#: products/templates/products/metallsagebander/advices.html:587
+#: products/templates/products/metallsagebander/advices.html:537
+#: products/templates/products/metallsagebander/advices.html:550
 msgid "hitzebeständige Stähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:600
-#: products/templates/products/metallsagebander/advices.html:613
-#: products/templates/products/metallsagebander/advices.html:626
+#: products/templates/products/metallsagebander/advices.html:563
+#: products/templates/products/metallsagebander/advices.html:576
+#: products/templates/products/metallsagebander/advices.html:589
 msgid "rost- und säurebeständige Stähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:639
-#: products/templates/products/metallsagebander/advices.html:652
-#: products/templates/products/metallsagebander/advices.html:665
+#: products/templates/products/metallsagebander/advices.html:602
+#: products/templates/products/metallsagebander/advices.html:615
+#: products/templates/products/metallsagebander/advices.html:628
 msgid "vergütete Stähle"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:730
-#: products/templates/products/metallsagebander/advices.html:743
+#: products/templates/products/metallsagebander/advices.html:693
+#: products/templates/products/metallsagebander/advices.html:706
 msgid "Aluminiumlegierung"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:756
+#: products/templates/products/metallsagebander/advices.html:719
 msgid "Zinnbronze"
 msgstr ""
 
-#: products/templates/products/metallsagebander/advices.html:769
+#: products/templates/products/metallsagebander/advices.html:732
 msgid "Aluminiumbronze"
+msgstr ""
+
+#: products/templates/products/metallsagebander/overview.html:72
+#: products/templates/products/metallstichsageblatter/overview.html:43
+#: products/templates/products/metallstichsageblatter/overview.html:72
+msgid "Details"
+msgstr ""
+
+#: products/templates/products/pendelhubstichsageblatter/overview.html:50
+msgid "Bestell-Nr.:"
+msgstr ""
+
+#: products/templates/products/pendelhubstichsageblatter/overview.html:53
+msgid "Zahnteilung"
+msgstr ""
+
+#: products/templates/products/pendelhubstichsageblatter/overview.html:56
+msgid "Sägeblattlänge"
+msgstr ""
+
+#: products/templates/products/pendelhubstichsageblatter/overview.html:65
+msgid "Schnittbereich Holz"
 msgstr ""
 
 #: templates/admin/base_site.html:3
@@ -1078,159 +1328,63 @@ msgstr ""
 msgid "GUHEMA administration"
 msgstr ""
 
-#: products/templates/products/lochsagen/overview.html:29
-msgid ""
-"Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und Laufruhe, hervorgerufen durch die\n"
-"    variable Verzahnung mit ihrer optimalen Spanabfuhr, zeichnet unsere Bi-Metall-Lochsägen aus. Unsere feinverzahnten\n"
-"    Lochsägen sind bestens für dünnwandige Materialien geeignet. Bei Mineral- und Verbundwerkstoffen erzielen unsere\n"
-"    hartmetallbeschichteten Lochsägen beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine Wünsche offen."
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:82
-msgid "Für mineralische Werkstoffe"
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:78
-msgid "Zähne mit Hartmetallgranulat beschichtet"
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:88
-msgid "Der schnelle Weg zu unserer Artikel-Nr."
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:90
-msgid "z.B.:"
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:100
-msgid "Zentriereinheiten"
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:107
-msgid "Aufnahmeschaft"
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:108
-msgid "Lochsäge"
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:109
-msgid "Bestell-Nr."
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:157
-msgid "Zubehör / Ersatzteile"
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:186
-msgid "Durchmesser"
-msgstr ""
-#: products/templates/products/lochsagen/overview.html:197
-msgid "in mm"
-msgstr ""
-#: products/templates/products/maschinensageblatter/details.html:21
-msgid "Kennziffer (Abmessung)"
-msgstr ""
-#: products/templates/products/maschinensageblatter/details.html:67
-msgid "Variable Positivzahnung"
-msgstr ""
-#: products/templates/products/maschinensageblatter/details.html:71
-msgid "Abmessungen"
-msgstr ""
-#: products/templates/products/maschinensageblatter/details.html:72
-msgid "Kennziffer"
-msgstr ""
-#: products/templates/products/maschinensageblatter/details.html:94
-msgid "in mm:"
-msgstr ""
-#: products/templates/products/maschinensageblatter/details.html:94
-msgid "B x S"
-msgstr ""
-#: products/templates/products/metallhandsageblatter/overview.html:23
-msgid "Metallhandsägebügel"
-msgstr ""
-#: products/templates/products/metallhandsageblatter/overview.html:76
-msgid "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
-msgstr ""
-#: products/templates/products/metallhandsageblatter/overview.html:130
-msgid "Bestell-Nr.:"
-msgstr ""
-#: products/templates/products/metallhandsageblatter/overview.html:133
-msgid "Verzahnung"
-msgstr ""
-#: products/templates/products/metallhandsageblatter/overview.html:136
-msgid "Abmessung"
-msgstr ""
-#: products/templates/products/metallhandsageblatter/overview.html:139
-msgid "Schnittbereich Metall"
-msgstr ""
-#: products/templates/products/metallsagebander/overview.html:72
-msgid "Details"
-msgstr ""
-#: products/templates/products/pendelhubstichsageblatter/overview.html:53
-msgid "Zahnteilung"
-msgstr ""
-#: products/templates/products/pendelhubstichsageblatter/overview.html:56
-msgid "Sägeblattlänge"
-msgstr ""
-#: products/templates/products/pendelhubstichsageblatter/overview.html:65
-msgid "Schnittbereich Holz"
-msgstr ""
-#: products/templates/products/include_available_teeth.html:5
-msgid "lieferbare Verzahnung"
-msgstr ""
-#: products/templates/products/index.html:31
-msgid "Zu den Produkten"
-msgstr ""
 #: templates/base.html:50
 msgid "Home"
 msgstr ""
+
 #: templates/base.html:51
 msgid "Unternehmen"
 msgstr ""
-#: templates/base.html:54
-msgid "News"
-msgstr ""
-#: templates/base.html:55
-msgid "Kontakt"
-msgstr ""
-#: templates/base.html:133
+
+#: templates/base.html:134
 msgid "Impressum"
 msgstr ""
-#: templates/index.html:10
+
+#: templates/index.html:11
 msgid "METALLSÄGEBLÄTTER IN PERFEKTION"
 msgstr ""
+
 #: templates/index.html:13
 msgid "Entdecken Sie unsere Produkte!"
 msgstr ""
-#: templates/index.html:21
+
+#: templates/index.html:23
 msgid "Qualität die Vertrauen schafft"
 msgstr ""
-#: templates/index.html:23
+
+#: templates/index.html:24
 msgid "GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!"
 msgstr ""
+
 #: templates/index.html:33
 msgid ""
-"Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung\n"
-"          und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung."
+"Familientradition in der 5. Generation, langjährige Erfahrung, permanente "
+"Forschung und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen "
+"zur Verfügung."
 msgstr ""
-#: templates/index.html:36
-msgid "Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen Wünsche reagieren."
+
+#: templates/index.html:37
+msgid ""
+"Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre "
+"individuellen Wünsche reagieren."
 msgstr ""
-#: templates/index.html:39
-msgid "Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der Norm nach DIN EN ISO 9001."
+
+#: templates/index.html:40
+msgid ""
+"Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der "
+"Norm nach DIN EN ISO 9001."
 msgstr ""
-#: templates/index.html:42
-msgid "Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein Metallsägeblatt in Perfektion."
+
+#: templates/index.html:43
+msgid ""
+"Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein "
+"Metallsägeblatt in Perfektion."
 msgstr ""
-#: templates/index.html:46
+
+#: templates/index.html:47
 msgid "Zu unseren Produkten"
 msgstr ""
-#: templates/productgroups.html:7
+
+#: templates/productgroups.html:8
 msgid "PRODUKTGRUPPEN"
-msgstr ""
-#: news/templates/news/detail.html:8
-msgid "von"
-msgstr ""
-#: news/templates/news/detail.html:23
-msgid "Anhang"
-msgstr ""
-#: contact/templates/contact/email.html:13
-msgid "Hier haben Sie die Möglichkeit uns eine E-Mail zu senden. Bitte füllen Sie dafür alle Felder aus. Wir werden uns dann bei Ihnen melden!"
-msgstr ""
-#: contact/templates/contact/verschickt.html:4
-msgid "Wir haben Ihre E-Mail erhalten"
-msgstr ""
-#: contact/templates/contact/verschickt.html:10
-msgid "Schnellstmöglich werden wir uns bei Ihnen melden!"
 msgstr ""
