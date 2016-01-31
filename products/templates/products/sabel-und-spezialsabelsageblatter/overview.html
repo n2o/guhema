@@ -4,6 +4,7 @@
 {% load thumbnail %}
 {% load markdown_deux_tags %}
 {% load products_tags %}
+{% load i18n %}
 
 {% block heading %}
   <h1>
@@ -14,9 +15,7 @@
 {% block content %}
   {% include 'products/include_productheader.html' with group=group %}
 
-  <hr>
-
-  <h3 class="padding-bottom">Übersicht</h3>
+  <h3 class="padding-bottom">{% trans "Produkte" %}</h3>
 
   {% for blade in blades %}
     {% if not blade.type == "SSM" %}

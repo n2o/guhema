@@ -14,10 +14,9 @@
 {% block content %}
   {% include 'products/include_productheader.html' with group=group %}
 
-  <hr>
-
-  <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-accessory" aria-expanded="false" aria-controls="collapse-accessory" style="float:right;">
+  <a class="btn btn-primary pull-right" role="button" data-toggle="collapse" href="#collapse-accessory" aria-expanded="false" aria-controls="collapse-accessory">
     Zubehörartikel anzeigen
+    <span class="caret"></span>
   </a>
 
   <div id="collapse-accessory" class="collapse">

@@ -14,8 +14,6 @@
 {% block content %}
   {% include 'products/include_productheader.html' with group=group %}
 
-  <hr>
-
   {% for blade in blades %}
     {% ifchanged blade.subcategory %}
       <h3 class="padding-bottom">{{ blade.subcategory }}</h3>
