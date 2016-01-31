@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-25 17:14+0000\n"
+"POT-Creation-Date: 2016-01-31 12:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,452 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: products/admin.py:106
+#: core/settings.py:109
+msgid "German"
+msgstr ""
+
+#: core/settings.py:110
+msgid "English"
+msgstr ""
+
+#: core/settings.py:111
+msgid "Russian"
+msgstr ""
+
+#: products/admin.py:109
 msgid "Advanced options"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:9
+#: products/templates/products/maschinensageblatter/advices.html:8
 msgid "Maschinensägeblätter"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:13
+#: products/templates/products/maschinensageblatter/advices.html:13
+msgid "Unsere Empfehlung für langen Sägespaß"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:17
+msgid ""
+"\n"
+"        Für den Einsatz von GUHEMA-Maschinensägeblättern empfehlen wir die "
+"wenigen, aber wichtigen Spielregeln zwischen\n"
+"        Werkstück und Sägeblatt zu beachten, um optimale Schnittergebnisse "
+"zu erhalten:\n"
+"      "
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:23
+msgid "Sägen Sie nie über Eck an."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:24
+msgid "Sägen Sie stets mit Kühlung."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:25
+msgid "Spannen Sie das Werkstück fest und verdrehsicher ein."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:26
+#, python-format
+msgid ""
+"Ein neues Maschinensägeblatt muss eingefahren werden. Reduzieren Sie in der "
+"Anfangszeit den Schnittdruck um ca. 50%%."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:27
+msgid "Entfernen Sie mögliche mineralische Rückstände vom Werkstück."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:28
+msgid "Kontrollieren Sie von Zeit zu Zeit die Sägeblattspannung."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:29
+msgid ""
+"Wechseln Sie frühzeitig Ihr Metallsägeblatt! Bestes Indiz: deutlicher "
+"Anstieg der Schnittzeit."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:30
+msgid "Warten Sie Ihre Metallsäge nach den Vorgaben des Herstellers."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:31
+msgid ""
+"Passen Sie den Schnittdruck, die Schnittgeschwindigkeit und die Zähnezahl "
+"dem Werkstück an. Das folgende Diagramm sowie die Tabelle dienen als "
+"Orientierung."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:32
+#, python-format
+msgid ""
+"Beim Einsatz von Positivzahn und Future mit ca. 50%% des herkömmlichen "
+"Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, "
+"muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein "
+"Brummton zu hören ist."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:46
+#: products/templates/products/maschinensageblatter/advices.html:48
+msgid "Schnittdatenempfehlung"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:49
+msgid ""
+"bei Vollmaterial im normal geglühten Zustand für GUHEMA-Maschinensägeblätter "
+"basierend auf einer Hublänge von 200 mm."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:52
+msgid ""
+"Für Rohre und Profile Schnittdruck entsprechend der Wandstärke reduzieren."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:59
+msgid "Material"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:62
+#: products/templates/products/maschinensageblatter/advices.html:474
+msgid "ZpZ"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:63
+msgid "bei Materialabmessungen"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:67
+msgid "Schnittgeschwindigkeit"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:70
+msgid "Blatt /"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:77
+msgid "Bezeichnung"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:80
+msgid "bis"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:84
+msgid "über"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:89
+msgid "je nach Materialstärke"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:92
+msgid "Qualität"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:95
+msgid "Zahnform"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:102
+#: products/templates/products/maschinensageblatter/advices.html:105
+#: products/templates/products/maschinensageblatter/advices.html:108
+#: products/templates/products/maschinensageblatter/advices.html:111
+#: products/templates/products/maschinensageblatter/advices.html:114
+msgid "mm"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:119
+msgid "Hübe / min"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:122
+msgid "m / min"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:132
+msgid "unleg. Stähle/Baustähle"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:138
+msgid "Einsatzstähle"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:138
+#: products/templates/products/maschinensageblatter/advices.html:176
+#: products/templates/products/maschinensageblatter/advices.html:228
+#: products/templates/products/maschinensageblatter/advices.html:265
+#: products/templates/products/maschinensageblatter/advices.html:302
+#: products/templates/products/maschinensageblatter/advices.html:324
+msgid "z.B."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:152
+#: products/templates/products/maschinensageblatter/advices.html:454
+msgid "niedrig"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:156
+#: products/templates/products/maschinensageblatter/advices.html:170
+#: products/templates/products/maschinensageblatter/advices.html:193
+#: products/templates/products/maschinensageblatter/advices.html:208
+#: products/templates/products/maschinensageblatter/advices.html:223
+#: products/templates/products/maschinensageblatter/advices.html:245
+#: products/templates/products/maschinensageblatter/advices.html:260
+#: products/templates/products/maschinensageblatter/advices.html:282
+#: products/templates/products/maschinensageblatter/advices.html:297
+#: products/templates/products/maschinensageblatter/advices.html:372
+#: products/templates/products/maschinensageblatter/advices.html:388
+#: products/templates/products/maschinensageblatter/advices.html:404
+#: products/templates/products/maschinensageblatter/advices.html:420
+#: products/templates/products/maschinensageblatter/advices.html:436
+#: products/templates/products/maschinensageblatter/advices.html:458
+msgid "normal"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:166
+msgid "bis mittel"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:176
+msgid "Vergütungsstähle"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:189
+#: products/templates/products/maschinensageblatter/advices.html:204
+#: products/templates/products/maschinensageblatter/advices.html:219
+#: products/templates/products/maschinensageblatter/advices.html:241
+#: products/templates/products/maschinensageblatter/advices.html:256
+#: products/templates/products/maschinensageblatter/advices.html:278
+#: products/templates/products/maschinensageblatter/advices.html:368
+#: products/templates/products/maschinensageblatter/advices.html:384
+#: products/templates/products/maschinensageblatter/advices.html:400
+#: products/templates/products/maschinensageblatter/advices.html:416
+msgid "mittel"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:228
+msgid "leg. Werkzeugstähle"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:265
+msgid "Schnellstähle"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:293
+msgid "& höher"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:302
+msgid "nicht rostende Stähle"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:315
+#: products/templates/products/maschinensageblatter/advices.html:337
+#: products/templates/products/maschinensageblatter/advices.html:352
+msgid "Sondervorschrift"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:319
+#: products/templates/products/maschinensageblatter/advices.html:341
+#: products/templates/products/maschinensageblatter/advices.html:356
+msgid "positiv"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:324
+msgid "Sonderlegierungen"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:330
+msgid "Hastelloy-Inconel"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:345
+msgid "Nimonic-Titan"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:393
+msgid "Stahlguss"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:409
+msgid "Gusseisen"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:425
+msgid "Spezialbronzen"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:432
+msgid "mittel-hoch"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:441
+msgid "NE-Metalle"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:447
+msgid "Alu-Bronze-Messing"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:466
+msgid "Anwendungsbereich für unsere GUHEMA Future Metallsägeblätter:"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:475
+msgid "Beschreibung"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:481
+#: products/templates/products/maschinensageblatter/advices.html:485
+#: products/templates/products/maschinensageblatter/advices.html:489
+#: products/templates/products/maschinensageblatter/advices.html:493
+msgid "Materialstärken von"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:497
+msgid "Materialstärken über"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:507
+msgid "Unsere Empfehlung für grobe Verzahnungen"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:508
+msgid "Seitlicher Fasenanschliff"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:511
+msgid ""
+"\n"
+"        Nutzen Sie Ihren Vorteil durch unseren seitlichen Fasenanschliff. "
+"Sie erhalten sauberste Schnittergebnisse. Vorzeitiges Ausbrechen der\n"
+"        Zähne wird durch den Fasenanschliff verhindert und wegen der "
+"leichten Spanabrollung ergibt sich eine geringere Belastung von Blatt und\n"
+"        Maschine &#8594; Metallsägeblatt und Maschine leben länger.\n"
+"      "
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:518
+msgid ""
+"Den seitlichen Fasenanschliff fertigen wir bis 6 ZpZ auf Nachfrage gerne für "
+"Sie. Sprechen Sie uns an!"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:524
+msgid "Sie haben Probleme beim Sägen? – Wir haben die Antworten!"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:528
+msgid "Zahnbruch?"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:529
+#: products/templates/products/maschinensageblatter/advices.html:538
+#: products/templates/products/maschinensageblatter/advices.html:552
+#: products/templates/products/maschinensageblatter/advices.html:564
+msgid "Mögliche Ursachen:"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:531
+msgid ""
+"Zu niedrige Zähnezahl gewählt. Mindestens 3 Zähne sollten gleichzeitig im "
+"Eingriff sein, auch bei Rohren und Profilen."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:532
+msgid "Über Eck angesägt."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:533
+msgid "Falsche Einspannung des Werkstücks."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:537
+msgid "Blattbruch?"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:540
+msgid "Schnittkanal wurde zusammengedrückt und blockierte das Sägeblatt."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:541
+#: products/templates/products/maschinensageblatter/advices.html:566
+msgid "Falsche Blattspannung."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:542
+msgid "Zu grobe Verzahnung für das Werkstück gewählt."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:543
+#: products/templates/products/maschinensageblatter/advices.html:568
+msgid "Zu hoher Schnittdruck."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:544
+#: products/templates/products/maschinensageblatter/advices.html:569
+msgid "Verschlissene Führungslager in der Maschine."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:551
+msgid "Vorzeitiges Abstumpfen der Zähne?"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:554
+msgid "Zu feine Verzahnung gewählt."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:555
+msgid "Zu hohe Schnittgeschwindigkeit für das Werkstück gewählt."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:556
+msgid ""
+"Zu hoher Druck (erhöhte Zahnbelastung) oder zu niedriger Druck (Zähne "
+"schleifen über das Werkstück, statt einen Span zu heben)."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:557
+msgid "Unzureichende/falsch ausgerichtete Sägeblattkühlung."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:558
+msgid "Falsche Sägeblattqualität gewählt."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:559
+msgid "Kein Sägeblattausheben im Rücklauf."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:563
+msgid "Ungewollter Schnittverlauf?"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:567
+msgid "Zu geringe Werkstückeinspannung."
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:574
+msgid "Keine passende Antwort?"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:576
+msgid ""
+"Dann sprechen Sie mit einem Experten! Kontaktieren Sie unsere "
+"Anwendungsberatung unter"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:17
+msgid "Details anzeigen"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:22
 msgid "Material, Qualitäten und Einsatzbereiche"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:15
+#: products/templates/products/maschinensageblatter/overview.html:24
 msgid ""
 "Unser Streben nach perfekter Sägequalität beginnt schon bei der Auswahl "
 "unseres Vormaterials, denn dies ist die Ausgangsbasis für unsere "
@@ -38,46 +471,94 @@ msgid ""
 "Note „Sehr gut“ verdient."
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:18
+#: products/templates/products/maschinensageblatter/overview.html:27
 msgid ""
 "Erstklassiges Rohmaterial ist bei GUHEMA die Basis für präzises, schnelles "
 "und wirtschaftliches Sägen mit"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:21
+#: products/templates/products/maschinensageblatter/overview.html:30
 msgid "hohen Stand- und kurzen Schnittzeiten"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:22
+#: products/templates/products/maschinensageblatter/overview.html:31
 msgid "langer Lebensdauer"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:23
+#: products/templates/products/maschinensageblatter/overview.html:32
 msgid "optimaler Schonung Ihrer Sägemaschine"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:26
+#: products/templates/products/maschinensageblatter/overview.html:35
 msgid ""
 "Für die unterschiedlichsten Einsatzbereiche führen wir die passenden "
 "Qualitäten"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:36
+#: products/templates/products/maschinensageblatter/overview.html:45
 #, python-format
 msgid "DMo 5 Qualität (Werkstoff-Nr. %(num)s)"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:40
+#: products/templates/products/maschinensageblatter/overview.html:49
+#: products/templates/products/maschinensageblatter/overview.html:78
 msgid "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:46
+#: products/templates/products/maschinensageblatter/overview.html:55
 msgid "GUHEMA Brillant"
 msgstr ""
 
-#: products/templates/products/details/sawblade_general.html:50
+#: products/templates/products/maschinensageblatter/overview.html:59
 #, python-format
 msgid "EMo 5 Co 5 Qualität (Werkstoff-Nr. %(num)s)"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:63
+msgid ""
+"Für extrem harte Werkstoffe bis 1300 N/mm<sup>2</sup> z. B. austenitische "
+"Stähle und Stähle mit hohem Chrom-Nickelgehalt"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:74
+#, python-format
+msgid ""
+"DMo 5 Schneidenqualität (Werkstoff-Nr. %(num)s) auf einem Sonderstahlrücken"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:83
+msgid "Die Wahl der richtigen Zahnform"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:85
+msgid ""
+"Unsere GUHEMA-Maschinensägeblätter haben erst durch die richtige Zahnform "
+"den optimalen Biss. Wir liefern:"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:91
+msgid "Normalzahn"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:94
+msgid "Für den allgemeinen, universellen Einsatz"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:105
+msgid "Positivzahn"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:108
+msgid "Der austenitische, zähharte Stähle trennt"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:119
+msgid "Variable Positivverzahnung"
+msgstr ""
+
+#: products/templates/products/maschinensageblatter/overview.html:122
+msgid ""
+"GUHEMA FUTURE, die keine Wünsche an ein Maschinensägeblatt mehr offen lässt"
 msgstr ""
 
 #: templates/admin/base_site.html:3
@@ -86,13 +567,4 @@ msgstr ""
 
 #: templates/admin/base_site.html:6
 msgid "GUHEMA administration"
-msgstr ""
-
-#: products/templates/products/details/sawblade_general.html:65
-msgid "DMo 5 Schneidenqualität (Werkstoff-Nr. 1.3343) auf einem Sonderstahlrücken"
-msgstr ""
-#: products/templates/products/details/sawblade/advices.html:15
-msgid ""
-"Für den Einsatz von GUHEMA-Maschinensägeblättern empfehlen wir die wenigen, aber wichtigen Spielregeln zwischen Werkstück und\n"
-"Sägeblatt zu beachten, um optimale Schnittergebnisse zu erhalten:"
 msgstr ""
