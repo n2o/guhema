@@ -8,6 +8,6 @@ class FairAdmin(admin.ModelAdmin):
     list_filter = ['created']
     search_fields = ['name']
     fieldsets = [
-        ('Allgemein', {'fields': ['name', 'location', ('hall', 'stand'), 'start', 'end', ('archive', 'public'), 'description', ('image', 'attachment')]}),
+        ('Allgemein', {'fields': ['name', 'website', 'location', ('hall', 'stand'), ('start', 'end'), 'description', ('image', 'attachment'), ('archive', 'public')]}),
         ('Erweitert', {'fields': ['created'], 'classes': ['collapse']}),
     ]

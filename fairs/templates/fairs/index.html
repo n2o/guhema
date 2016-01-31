@@ -1,0 +1,35 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+{% load i18n %}
+{% load markdown_deux_tags %}
+
+{% block heading %}
+  <h1>{% trans "Messen" %}</h1>
+{% endblock %}
+
+{% block content %}
+  {% if upcoming %}
+    <section>
+      <h3>
+        {% trans "Besuchen Sie uns auf folgenden Messen:" %}
+      </h3>
+      {% for fair in upcoming %}
+        {% include 'fairs/fair_style.html' with fair=fair%}
+      {% endfor %}
+    </section>
+  {% endif %}
+
+  {% if past %}
+    <section>
+      <h3>
+        {% trans "Wir haben auf diesen Messen ausgestellt:" %}
+      </h3>
+      {% for fair in past %}
+        {% include 'fairs/fair_style.html' with fair=fair%}
+      {% endfor %}
+    </section>
+  {% endif %}
+
+{% endblock %}

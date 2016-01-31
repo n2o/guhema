@@ -4,16 +4,17 @@ from django.db import models
 
 
 class Fair(models.Model):
-    name = models.CharField('Name der Messe', max_length=50, blank=False)
+    name = models.CharField('Name der Messe', max_length=255, blank=False)
+    website = models.URLField('Veranstaltungswebsite', blank=True)
     location = models.TextField('Veranstaltungsort', blank=True)
-    hall = models.CharField('Halle', max_length=50, blank=True)
-    stand = models.CharField('Stand', max_length=50, blank=True)
-    start = models.DateTimeField('Beginn', default=datetime.now)
-    end = models.DateTimeField('Ende', default=datetime.now)
+    hall = models.CharField('Halle', max_length=255, blank=True)
+    stand = models.CharField('Stand', max_length=255, blank=True)
+    start = models.DateField('Beginn', blank=False)
+    end = models.DateField('Ende', blank=False)
     description = models.TextField('Beschreibung', blank=True)
     image = models.ImageField('Bild', null=True, blank=True)
     attachment = models.FileField('Anhang', null=True, blank=True)
-    slug = AutoSlugField(null=True, populate_from='title')
+    slug = AutoSlugField(null=True, populate_from='name')
     archive = models.BooleanField('Archiviert?', default=False)
     public = models.BooleanField('Öffentlich?', default=True)
     created = models.DateTimeField('Erstellt am', default=datetime.now)
