@@ -1,4 +1,5 @@
 {% extends "layout_productgroups.html" %}
+{% load i18n %}
 
 {% load staticfiles %}
 {% load thumbnail %}
@@ -20,7 +21,7 @@
   </a>
 
   <div id="collapse-accessory" class="collapse">
-    <h3 class="padding-bottom">Metallhandsägebügel</h3>
+    <h3 class="padding-bottom">{% trans "Metallhandsägebügel" %}</h3>
 
     {% for blade in blades %}
       {% if blade.accessory %}
@@ -72,7 +73,7 @@
 
       {% endif %}
     {% empty %}
-      <p>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
+      <p>{% blocktrans %}Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.{% endblocktrans %}</p>
     {% endfor %}
   </div>
 
@@ -126,16 +127,16 @@
           <table class="table table-condensed table-striped-column table-hover">
             <thead>
               <th>
-                Bestell-Nr.:
+                {% trans "Bestell-Nr." %}
               </th>
               <th>
-                Verzahnung
+                {% trans "Verzahnung" %}
               </th>
               <th>
-                Abmessung
+                {% trans "Abmessung" %}
               </th>
               <th>
-                Schnittbereich Metall
+                {% blocktrans %}Schnittbereich Metall{% endblocktrans %}
               </th>
             </thead>
             <tbody>
@@ -166,7 +167,7 @@
     {% endif %}
     {% endwith %}
   {% empty %}
-    <p>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
+    <p>{% blocktrans %}Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.{% endblocktrans %}</p>
   {% endfor %}
 
 {% endblock %}

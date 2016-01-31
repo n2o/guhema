@@ -1080,3 +1080,145 @@ msgstr ""
 #: templates/admin/base_site.html:6
 msgid "GUHEMA administration"
 msgstr ""
+
+#: products/templates/products/lochsagen/overview.html:29
+msgid ""
+"Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und Laufruhe, hervorgerufen durch die\n"
+"    variable Verzahnung mit ihrer optimalen Spanabfuhr, zeichnet unsere Bi-Metall-Lochsägen aus. Unsere feinverzahnten\n"
+"    Lochsägen sind bestens für dünnwandige Materialien geeignet. Bei Mineral- und Verbundwerkstoffen erzielen unsere\n"
+"    hartmetallbeschichteten Lochsägen beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine Wünsche offen."
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:82
+msgid "Für mineralische Werkstoffe"
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:78
+msgid "Zähne mit Hartmetallgranulat beschichtet"
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:88
+msgid "Der schnelle Weg zu unserer Artikel-Nr."
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:90
+msgid "z.B.:"
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:100
+msgid "Zentriereinheiten"
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:107
+msgid "Aufnahmeschaft"
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:108
+msgid "Lochsäge"
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:109
+msgid "Bestell-Nr."
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:157
+msgid "Zubehör / Ersatzteile"
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:186
+msgid "Durchmesser"
+msgstr ""
+#: products/templates/products/lochsagen/overview.html:197
+msgid "in mm"
+msgstr ""
+#: products/templates/products/maschinensageblatter/details.html:21
+msgid "Kennziffer (Abmessung)"
+msgstr ""
+#: products/templates/products/maschinensageblatter/details.html:67
+msgid "Variable Positivzahnung"
+msgstr ""
+#: products/templates/products/maschinensageblatter/details.html:71
+msgid "Abmessungen"
+msgstr ""
+#: products/templates/products/maschinensageblatter/details.html:72
+msgid "Kennziffer"
+msgstr ""
+#: products/templates/products/maschinensageblatter/details.html:94
+msgid "in mm:"
+msgstr ""
+#: products/templates/products/maschinensageblatter/details.html:94
+msgid "B x S"
+msgstr ""
+#: products/templates/products/metallhandsageblatter/overview.html:23
+msgid "Metallhandsägebügel"
+msgstr ""
+#: products/templates/products/metallhandsageblatter/overview.html:76
+msgid "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+msgstr ""
+#: products/templates/products/metallhandsageblatter/overview.html:130
+msgid "Bestell-Nr.:"
+msgstr ""
+#: products/templates/products/metallhandsageblatter/overview.html:133
+msgid "Verzahnung"
+msgstr ""
+#: products/templates/products/metallhandsageblatter/overview.html:136
+msgid "Abmessung"
+msgstr ""
+#: products/templates/products/metallhandsageblatter/overview.html:139
+msgid "Schnittbereich Metall"
+msgstr ""
+#: products/templates/products/metallsagebander/overview.html:72
+msgid "Details"
+msgstr ""
+#: products/templates/products/pendelhubstichsageblatter/overview.html:53
+msgid "Zahnteilung"
+msgstr ""
+#: products/templates/products/pendelhubstichsageblatter/overview.html:56
+msgid "Sägeblattlänge"
+msgstr ""
+#: products/templates/products/pendelhubstichsageblatter/overview.html:65
+msgid "Schnittbereich Holz"
+msgstr ""
+#: products/templates/products/include_available_teeth.html:5
+msgid "lieferbare Verzahnung"
+msgstr ""
+#: products/templates/products/index.html:31
+msgid "Zu den Produkten"
+msgstr ""
+#: templates/base.html:50
+msgid "Home"
+msgstr ""
+#: templates/base.html:51
+msgid "Unternehmen"
+msgstr ""
+#: templates/base.html:54
+msgid "News"
+msgstr ""
+#: templates/base.html:55
+msgid "Kontakt"
+msgstr ""
+#: templates/base.html:133
+msgid "Impressum"
+msgstr ""
+#: templates/index.html:10
+msgid "METALLSÄGEBLÄTTER IN PERFEKTION"
+msgstr ""
+#: templates/index.html:13
+msgid "Entdecken Sie unsere Produkte!"
+msgstr ""
+#: templates/index.html:21
+msgid "Qualität die Vertrauen schafft"
+msgstr ""
+#: templates/index.html:23
+msgid "GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!"
+msgstr ""
+#: templates/index.html:33
+msgid ""
+"Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung\n"
+"          und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung."
+msgstr ""
+#: templates/index.html:36
+msgid "Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen Wünsche reagieren."
+msgstr ""
+#: templates/index.html:39
+msgid "Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der Norm nach DIN EN ISO 9001."
+msgstr ""
+#: templates/index.html:42
+msgid "Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein Metallsägeblatt in Perfektion."
+msgstr ""
+#: templates/index.html:46
+msgid "Zu unseren Produkten"
+msgstr ""
+#: templates/productgroups.html:7
+msgid "PRODUKTGRUPPEN"
+msgstr ""

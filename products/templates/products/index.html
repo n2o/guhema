@@ -1,10 +1,11 @@
 {% extends "layout_productgroups.html" %}
+{% load i18n %}
 
 {% load staticfiles %}
 {% load thumbnail %}
 
 {% block heading %}
-  <h1>Produkte</h1>
+  <h1>{% trans "Produkte" %}</h1>
 {% endblock %}
 
 {% block content %}
@@ -27,7 +28,7 @@
           </p>
           <p>
             <a href="{% url 'products:list' group.slug %}">
-              Zu den Produkten
+              {% blocktrans %}Zu den Produkten{% endblocktrans %}
             </a>
           </p>
         </div>

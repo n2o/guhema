@@ -69,7 +69,7 @@
                 {{ blade.description|markdown }}
                 <a class="text-normal" href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">
                   <span class="text-orange-bold">
-                    Details
+                    {% trans "Details" %}
                   </span>
                 </a>
               </div>

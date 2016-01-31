@@ -21,12 +21,12 @@
     </a>
   </p>
 
-  <h3>Material, Qualitäten und Einsatzbereiche</h3>
+  <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
   <p>
-    Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und Laufruhe, hervorgerufen durch die
+    {% blocktrans %}Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und Laufruhe, hervorgerufen durch die
     variable Verzahnung mit ihrer optimalen Spanabfuhr, zeichnet unsere Bi-Metall-Lochsägen aus. Unsere feinverzahnten
     Lochsägen sind bestens für dünnwandige Materialien geeignet. Bei Mineral- und Verbundwerkstoffen erzielen unsere
-    hartmetallbeschichteten Lochsägen beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine Wünsche offen.
+    hartmetallbeschichteten Lochsägen beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine Wünsche offen.{% endblocktrans %}
   </p>
 
   <div class="row well">
@@ -40,11 +40,11 @@
       </div>
       <div>
         <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        Bi-Metall, mit HSS-Schneide aus M42 (Werkstoff-Nr. 1.3247)
+        {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
       </div>
       <div>
         <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-        4/6 ZpZ das Allroundtalent
+        4/6 {% trans "ZpZ" %} {% trans "das Allroundtalent" %}
       </div>
 
       <div class="padding-top-05">
@@ -57,11 +57,11 @@
         </div>
         <div>
           <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-          Bi-Metall, mit HSS-Schneide aus M42 (Werkstoff-Nr. 1.3247)
+          {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
         </div>
         <div>
           <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-          10 ZpZ für dünnwandiges Material
+          10 {% trans "ZpZ" %} {% trans "für dünnwandiges Material" %}
         </div>
       </div>
 
@@ -75,19 +75,19 @@
         </div>
         <div>
           <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-          Zähne mit Hartmetallgranulat beschichtet
+          {% blocktrans %}Zähne mit Hartmetallgranulat beschichtet{% endblocktrans %}
         </div>
         <div>
           <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-          Für mineralische Werkstoffe
+          {% blocktrans %}Für mineralische Werkstoffe{% endblocktrans %}
         </div>
       </div>
     </div>
     <div class="col-md-4">
       <p class="alert bg-orange-lighter" style="margin-top: 21px">
-        Der schnelle Weg zu unserer Artikel-Nr.<br>
-        <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">&Oslash;</span> + <span class="text-orange-bold">ZpZ</span><br>
-        z.B.:
+        {% blocktrans %}Der schnelle Weg zu unserer Artikel-Nr.{% endblocktrans %}<br>
+        <span class="text-orange-bold">{% trans "Qualität" %}</span> + <span class="text-orange-bold">&Oslash;</span> + <span class="text-orange-bold">{% trans "ZpZ" %}</span><br>
+        {% trans "z.B.:" %}
         <span class="text-orange-bold">
           HSM
         </span> + <span class="text-orange-bold">014</span> + <span class="text-orange-bold">V</span> = <span class="text-orange-bold">HSM014V</span>
@@ -97,16 +97,16 @@
 
   <hr>
 
-  <h3>Zentriereinheiten</h3>
+  <h3>{% trans "Zentriereinheiten" %}</h3>
 
   <div class="row">
     <div class="col-md-6">
       <table class="table table-condensed table-striped-column table-hover">
         <thead>
           <tr>
-            <th>Aufnahmeschaft</th>
-            <th>Lochsäge</th>
-            <th width="20%">Bestell-Nr.</th>
+            <th>{% trans "Aufnahmeschaft" %}</th>
+            <th>{% trans "Lochsäge" %}</th>
+            <th width="20%">{% trans "Bestell-Nr." %}</th>
           </tr>
         </thead>
         <tbody>
@@ -130,9 +130,9 @@
       <table class="table table-condensed table-striped-column table-hover">
         <thead>
           <tr>
-            <th>Aufnahmeschaft</th>
-            <th>Lochsäge</th>
-            <th width="20%">Bestell-Nr.</th>
+            <th>{% trans "Aufnahmeschaft" %}</th>
+            <th>{% trans "Lochsäge" %}</th>
+            <th width="20%">{% trans "Bestell-Nr." %}</th>
           </tr>
         </thead>
         <tbody>
@@ -154,15 +154,15 @@
     </div>
   </div>
 
-  <h3>Zubehör / Ersatzteile</h3>
+  <h3>{% blocktrans %}Zubehör / Ersatzteile{% endblocktrans %}</h3>
 
   <div class="row">
     <div class="col-md-6">
       <table class="table table-condensed table-striped-column table-hover">
         <thead>
           <tr>
-            <th>Beschreibung</th>
-            <th width="20%">Bestell-Nr.</th>
+            <th>{% trans "Beschreibung" %}</th>
+            <th width="20%">{% trans "Bestell-Nr." %}</th>
           </tr>
         </thead>
         <tbody>
@@ -183,7 +183,7 @@
     </div>
   </div>
 
-  <h3>Durchmesser</h3>
+  <h3>{% trans "Durchmesser" %}</h3>
 
   <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
     <thead>
@@ -194,13 +194,13 @@
         <th class="text-center table-no-bot-border">HM-Granulat</th>
       </tr>
       <tr>
-        <th class="text-center table-no-top-border table-white-border-right">in mm</th>
+        <th class="text-center table-no-top-border table-white-border-right">{% blocktrans %}in mm{% endblocktrans %}</th>
         <th class="text-center table-no-top-border">
-          4/6 ZpZ
+          4/6 {% trans "ZpZ" %}
           <span class="text-orange">...V</span>
         </th>
         <th class="text-center table-no-top-border">
-          10 ZpZ
+          10 {% trans "ZpZ" %}
           <span class="text-orange">...J</span>
         </th>
         <th class="text-center table-no-top-border">
@@ -223,6 +223,4 @@
   </table>
 
   {% include 'products/include_available_teeth.html' %}
-
-  {{ blades.14.diameter.all.1 }}
 {% endblock %}

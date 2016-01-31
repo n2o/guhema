@@ -1,4 +1,5 @@
 {% extends 'layout_productgroups.html' %}
+{% load i18n %}
 
 {% load products_tags %}
 {% load thumbnail %}
@@ -16,9 +17,9 @@
     </div>
     <div class="col-md-4">
       <p class="alert bg-orange-lighter" style="margin-top: 21px">
-        Der schnelle Weg zu unserer Artikel-Nr.<br>
-        <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">Kennziffer (Abmessung)</span> + <span class="text-orange-bold">ZpZ</span><br>
-        z.B.:
+        {% blocktrans %}Der schnelle Weg zu unserer Artikel-Nr.{% endblocktrans %}<br>
+        <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">{% blocktrans %}Kennziffer (Abmessung){% endblocktrans %}</span> + <span class="text-orange-bold">{% trans "ZpZ" %}</span><br>
+        {% trans "z.B.:" %}
         <span class="text-orange-bold">
           {{ blade.type }}
         </span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">L</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}L</span>
@@ -49,26 +50,26 @@
     <thead>
       <tr>
         <th colspan="3" class="table-only-white-border-right"></th>
-        <th colspan="14" class="table-no-border-color">ZpZ</th>
+        <th colspan="14" class="table-no-border-color">{% trans "ZpZ" %}</th>
       </tr>
       <tr>
         <th colspan="3" class="table-only-white-border-right"></th>
         <th class="bg-orange-dark table-no-bot-border table-no-top-border table-small-height table-black-border-right" colspan="9">
-          Normalzahn
+          {% trans "Normalzahn" %}
         </th>
       </tr>
       <tr>
         <th colspan="3" class="table-only-white-border-right"></th>
         <th class="bg-orange-medium table-no-top-border table-no-bot-border table-small-height table-black-border-right" colspan="9">
-          Positivzahn
+          {% trans "Positivzahn" %}
         </th>
         <th class="bg-orange-light table-white-border-right table-no-top-border table-no-bot-border table-small-height" colspan="5">
-          Variable Positivzahnung
+          {% blocktrans %}Variable Positivzahnung{% endblocktrans %}
         </th>
       </tr>
       <tr>
-        <th colspan="2" class="table-white-border-right table-no-bot-border">Abmessungen</th>
-        <th class="table-white-border-right table-no-bot-border">Kennziffer</th>
+        <th colspan="2" class="table-white-border-right table-no-bot-border">{% trans "Abmessungen" %}</th>
+        <th class="table-white-border-right table-no-bot-border">{% trans "Kennziffer" %}</th>
         <th class="table-no-bot-border">2</th>
         <th class="table-no-bot-border">3</th>
         <th class="table-no-bot-border">4</th>
@@ -90,7 +91,7 @@
         <th class="table-no-bot-border">&Oslash;</th>
       </tr>
       <tr>
-        <th class="table-no-top-border">in mm: B x S</th>
+        <th class="table-no-top-border">{% blocktrans %}in mm:{% endblocktrans %} {% blocktrans %}B x S{% endblocktrans %}</th>
         <th class="table-white-border-right table-no-top-border">L</th>
         <th class="table-white-border-right table-no-top-border"></th>
         <th class="table-no-top-border">
@@ -135,7 +136,7 @@
         <th class="table-white-border-right table-no-top-border">
           <span class="text-orange">...Ü</span>
         </th>
-        <th class="table-no-top-border">in mm</th>
+        <th class="table-no-top-border">{% blocktrans %}in mm{% endblocktrans %}</th>
       </tr>
     </thead>
     <tbody>

@@ -1,4 +1,5 @@
 {% extends 'layout_productgroups.html' %}
+{% load i18n %}
 
 {% load products_tags %}
 {% load thumbnail %}
@@ -18,8 +19,8 @@
     </div>
     <div class="col-md-5">
       <p class="alert bg-orange-lighter" style="margin-top: 21px">
-        Der schnelle Weg zu unserer Artikel-Nr.<br>
-        <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">Kennziffer (Abmessung)</span> + <span class="text-orange-bold">ZpZ</span><br>
+        {% blocktrans %}Der schnelle Weg zu unserer Artikel-Nr.{% endblocktrans %}<br>
+        <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">{% blocktrans %}Kennziffer (Abmessung){% endblocktrans %}</span> + <span class="text-orange-bold">{% trans "ZpZ" %}</span><br>
         z.B.: <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}</span><br>
         z.B.: <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> + <span class="text-orange-bold">Sägeblattlänge</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}03800</span>
       </p>
@@ -48,8 +49,8 @@
         <th colspan="14" class="table-no-border-color">ZpZ</th>
       </tr>
       <tr>
-        <th class="table-white-border-right table-no-bot-border" width="15%">Abmessungen</th>
-        <th class="table-white-border-right table-no-bot-border" width="15%">Kennziffer</th>
+        <th class="table-white-border-right table-no-bot-border" width="15%">{% trans "Abmessungen" %}</th>
+        <th class="table-white-border-right table-no-bot-border" width="15%">{% trans "Kennziffer" %}</th>
         {% if "A" in blade.cols %}
           <th class="table-no-bot-border">1,25</th>
         {% endif %}
@@ -142,7 +143,7 @@
         {% endif %}
       </tr>
       <tr>
-        <th class="table-white-border-right table-no-top-border">in mm: B x S</th>
+        <th class="table-white-border-right table-no-top-border">{% blocktrans %}in mm:{% endblocktrans %} {% blocktrans %}B x S{% endblocktrans %}</th>
         <th class="table-white-border-right table-no-top-border"></th>
         {% if "A" in blade.cols %}
           <th class="table-no-top-border">
@@ -411,8 +412,8 @@
   </table>
 
   {% if blade.type == "NC20" or blade.type == "NC35" %}
-    S = Standardzahn<br>
-    K = Klauenzahn
+    S = {% trans "Standardzahn" %}<br>
+    K = {% trans "Klauenzahn" %}
   {% else %}
     {% include 'products/include_available_teeth.html' %}
   {% endif %}

@@ -1,4 +1,5 @@
 {% extends "layout_productgroups.html" %}
+{% load i18n %}
 
 {% load staticfiles %}
 {% load thumbnail %}
@@ -46,22 +47,22 @@
             <table class="table table-condensed table-striped-column table-hover">
               <thead>
                 <th>
-                  Bestell-Nr.:
+                  {% trans "Bestell-Nr.:" %}
                 </th>
                 <th>
-                  Zahnteilung
+                  {% trans "Zahnteilung" %}
                 </th>
                 <th>
-                  Sägeblattlänge
+                  {% trans "Sägeblattlänge" %}
                 </th>
                 {% if blade.cutting_metal %}
                   <th>
-                    Schnittbereich Metall
+                    {% blocktrans %}Schnittbereich Metall{% endblocktrans %}
                   </th>
                 {% endif %}
                 {% if blade.cutting_wood %}
                   <th>
-                    Schnittbereich Holz
+                    {% blocktrans %}Schnittbereich Holz{% endblocktrans %}
                   </th>
                 {% endif %}
               </thead>
@@ -71,19 +72,19 @@
                     {{ blade.type }}
                   </td>
                   <td>
-                    {{ blade.tooth_separation }} ZpZ
+                    {{ blade.tooth_separation }} {% trans "ZpZ" %}
                   </td>
                   <td>
-                    {{ blade.length }} mm
+                    {{ blade.length }} {% trans "mm" %}
                   </td>
                   {% if blade.cutting_metal %}
                     <td>
-                      {{ blade.cutting_metal }} mm
+                      {{ blade.cutting_metal }} {% trans "mm" %}
                     </td>
                   {% endif %}
                   {% if blade.cutting_wood %}
                     <td>
-                      {{ blade.cutting_wood }} mm
+                      {{ blade.cutting_wood }} {% trans "mm" %}
                     </td>
                   {% endif %}
                 </tr>
@@ -96,7 +97,7 @@
     </div>
 
   {% empty %}
-    <p>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
+    <p>{% blocktrans %}Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.{% endblocktrans %}</p>
   {% endfor %}
 
 {% endblock %}

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% load staticfiles %}
 {% load thumbnail %}
@@ -7,9 +8,9 @@
   <div id="header-img-text-wrapper">
     <img src="{% static 'img/header/header002.jpg' %}" alt="">
     <div id="header-text" class="hidden-xs hidden-sm">
-      <h2>METALLSÄGEBLÄTTER IN PERFEKTION</h2>
+      <h2>{% blocktrans %}METALLSÄGEBLÄTTER IN PERFEKTION{% endblocktrans %}</h2>
       <p>
-        Entdecken Sie unsere Produkte!
+        {% blocktrans %}Entdecken Sie unsere Produkte!{% endblocktrans %}
       </p>
     </div>
   </div>
@@ -17,7 +18,10 @@
 
 {% block heading %}
   {% comment %}<img src="{% static 'img/logo/guhema80px.png' %}" class="img-responsive" alt=""> {% endcomment %}
-  <h1>Qualität die Vertrauen schafft<br><small>GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!</small></h1>
+  <h1>
+    {% blocktrans %}Qualität die Vertrauen schafft{% endblocktrans %}<br>
+    <small>{% blocktrans %}GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!{% endblocktrans %}</small>
+  </h1>
 {% endblock %}
 
 {% block content %}
@@ -25,31 +29,27 @@
     <div class="col-md-8">
       <p>
         <strong>
-          Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung
-          und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.
+          {% blocktrans %}Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.{% endblocktrans %}
         </strong>
       </p>
       <p>
-        Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen
-        Wünsche reagieren.
+        {% blocktrans %}Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen Wünsche reagieren.{% endblocktrans %}
       </p>
       <p>
-        Unsere Unternehmensabläufe sind seit 1997 zertifiziert
-        und entsprechen der Norm nach DIN EN ISO 9001.
+        {% blocktrans %}Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der Norm nach DIN EN ISO 9001.{% endblocktrans %}
       </p>
       <p>
-        Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden,
-        erhalten Sie ein Metallsägeblatt in Perfektion.
+        {% blocktrans %}Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein Metallsägeblatt in Perfektion.{% endblocktrans %}
       </p>
       <p>
         <a href="{% url 'products:index' %}">
-          <button type="button" class="btn text-normal">Zu unseren Produkten &rsaquo;</button>
+          <button type="button" class="btn text-normal">{% blocktrans %}Zu unseren Produkten{% endblocktrans %} &rsaquo;</button>
         </a>
       </p>
     </div>
   </div>
 
   {# News Section #}
-  <h2 style="padding-top: 1em;">News</h2>
+  <h2 style="padding-top: 1em;">{% trans "News" %}</h2>
   {% include 'news/inc_overview.html' with posts=posts %}
 {% endblock %}

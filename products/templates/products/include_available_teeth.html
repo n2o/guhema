@@ -1,7 +1,8 @@
+{% load i18n %}
 {% load products_tags %}
 
 <p>
    {% autoescape off %}
-    {% getDotfield %} = lieferbare Verzahnung
+    {% getDotfield %} = {% blocktrans %}lieferbare Verzahnung{% endblocktrans %}
   {% endautoescape %}
 </p>
