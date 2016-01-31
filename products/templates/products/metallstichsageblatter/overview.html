@@ -2,6 +2,7 @@
 
 {% load staticfiles %}
 {% load thumbnail %}
+{% load i18n %}
 
 {% block heading %}
   <h1>
@@ -12,9 +13,11 @@
 {% block content %}
   {% include 'products/include_productheader.html' with group=group %}
 
+  {% include 'products/includes/general_advice_sawblades.html' %}
+
   <hr>
 
-  <h3 class="padding-bottom">Übersicht</h3>
+  <h3 class="padding-bottom">{% trans "Produkte" %}</h3>
   <div class="row">
     <div class="col-md-6">
       {% for blade in blades %}
