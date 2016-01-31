@@ -1225,3 +1225,12 @@ msgstr ""
 #: news/templates/news/detail.html:23
 msgid "Anhang"
 msgstr ""
+#: contact/templates/contact/email.html:13
+msgid "Hier haben Sie die Möglichkeit uns eine E-Mail zu senden. Bitte füllen Sie dafür alle Felder aus. Wir werden uns dann bei Ihnen melden!"
+msgstr ""
+#: contact/templates/contact/verschickt.html:4
+msgid "Wir haben Ihre E-Mail erhalten"
+msgstr ""
+#: contact/templates/contact/verschickt.html:10
+msgid "Schnellstmöglich werden wir uns bei Ihnen melden!"
+msgstr ""

@@ -1,11 +1,12 @@
 {% extends "layout_productgroups.html" %}
+{% load i18n %}
 
 {% block heading %}
-  <h1>Wir haben Ihre E-Mail erhalten</h1>
+  <h1>{% blocktrans %}Wir haben Ihre E-Mail erhalten{% endblocktrans %}</h1>
 {% endblock heading %}
 
 {% block content %}
   <p>
-    Wir werden uns schnellstmöglich bei Ihnen melden!
+    {% blocktrans %}Schnellstmöglich werden wir uns bei Ihnen melden!{% endblocktrans %}
   </p>
 {% endblock content %}
