@@ -3,6 +3,7 @@
 {% load staticfiles %}
 {% load thumbnail %}
 {% load markdown_deux_tags %}
+{% load i18n %}
 
 {% block heading %}
   <h1>
@@ -12,6 +13,12 @@
 
 {% block content %}
   {% include 'products/include_productheader.html' with group=group %}
+
+  <p class="pull-right">
+    <a class="btn btn-primary" role="button" href="{% url 'products:advices' slug=group.slug %}">
+      {% trans "Zu unseren Empfehlungen" %}
+    </a>
+  </p>
 
   {% for blade in blades %}
     {% ifchanged %}
