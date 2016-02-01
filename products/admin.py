@@ -69,6 +69,7 @@ class ProductGroupAdmin(PageDownAdmin):
     fieldsets = [
         ('Allgemein', {'fields': ['name', 'description', 'image', 'public']}),
         ('Detailansichten', {'fields': ['details']}),
+        ('Übersetzungen', {'fields': [('name_en', 'name_ru'), 'description_en', 'description_ru']})
     ]
 
 

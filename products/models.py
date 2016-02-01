@@ -54,7 +54,11 @@ class Clamping(models.Model):
 
 class ProductGroup(models.Model):
     name = models.CharField("Name", max_length=255, blank=False)
+    name_en = models.CharField("Name (englisch)", max_length=255, blank=False, default=name)
+    name_ru = models.CharField("Name (russisch)", max_length=255, blank=False, default=name)
     description = models.TextField("Beschreibung", max_length=1024, blank=True)
+    description_en = models.TextField("Beschreibung (englisch)", max_length=1024, blank=True, default=None)
+    description_ru = models.TextField("Beschreibung (russisch)", max_length=1024, blank=True, default=None)
     slug = AutoSlugField(null=True, populate_from='name')
     image = models.ImageField("Produktabbildung", null=True, blank=True, upload_to='blades/')
     public = models.BooleanField("Öffentlich?", default=False, blank=False)
