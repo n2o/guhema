@@ -60,6 +60,7 @@ INSTALLED_APPS = (
     'markdown_deux',
     'captcha',
     'django_forms_bootstrap',
+    'modeltranslation',
 
     # Own apps
     #'login',
@@ -185,3 +186,6 @@ MARKDOWN_DEUX_STYLES = {
         "safe_mode": "escape",
     },
 }
+
+# Modeltranslation settings
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'de'
