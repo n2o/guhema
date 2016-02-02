@@ -44,6 +44,7 @@ ALLOWED_HOSTS = ['pt8lpuijgniy33u5.myfritz.net', 'cmeter.de', 'christian-meter.d
 SITE_ID = 1
 
 INSTALLED_APPS = (
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -60,7 +61,6 @@ INSTALLED_APPS = (
     'markdown_deux',
     'captcha',
     'django_forms_bootstrap',
-    'modeltranslation',
 
     # Own apps
     #'login',
@@ -101,7 +101,7 @@ DATABASES = {
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
-LANGUAGE_CODE = 'de-de'
+LANGUAGE_CODE = 'de'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
