@@ -1,4 +1,4 @@
-Django==1.9.1
+Django==1.9.2
 django-autoslug==1.9.3
 django-forms-bootstrap==3.0.1
 django-markdown-deux==1.0.5
