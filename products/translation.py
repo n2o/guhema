@@ -1,5 +1,7 @@
-from modeltranslation.translator import register, TranslationOptions
-from .models import ProductGroup, SawBlade, HoleSaw, BandSawBlade, JigSawBlade
+from modeltranslation.translator import register, TranslationOptions, translator
+from .models import ProductGroup, SawBlade, HoleSaw, BandSawBlade, JigSawBlade, SableSawBlade, HackSawBlade, Indicator, \
+    CircularSawBlade
+from django.contrib.flatpages.models import FlatPage
 
 
 @register(ProductGroup)
@@ -25,3 +27,14 @@ class BandSawBladeTranslationOptions(TranslationOptions):
 @register(JigSawBlade)
 class JigSawBladeTranslationOptions(TranslationOptions):
     fields = ('subcategory',)
+
+
+class NoTranslationOptions(TranslationOptions):
+    pass
+
+
+translator.register(SableSawBlade, SawBladeTranslationOptions)
+translator.register(HackSawBlade, SawBladeTranslationOptions)
+translator.register(CircularSawBlade, SawBladeTranslationOptions)
+translator.register(Indicator, NoTranslationOptions)
+translator.register(FlatPage, NoTranslationOptions)

@@ -12,7 +12,7 @@ from .models import (BandSawBlade, BandSawBladeIndicator, CircularSawBlade,
                      ProductGroup, SableSawBlade, SawBlade)
 
 
-class PageDownAdmin(admin.ModelAdmin):
+class PageDownAdmin(TranslationAdmin):
     formfield_overrides = {
         models.TextField: {'widget': AdminPagedownWidget}
     }
@@ -64,7 +64,7 @@ class HoleSawAdmin(PageDownAdmin):
 
 
 @admin.register(ProductGroup)
-class ProductGroupAdmin(PageDownAdmin, TranslationAdmin):
+class ProductGroupAdmin(PageDownAdmin):
     list_display = ('name', 'public')
     fieldsets = [
         ('Allgemein', {'fields': ['name', 'description', 'image', 'public']}),
