@@ -1,10 +1,19 @@
 from django.contrib import admin
+from modeltranslation.admin import TranslationAdmin
+from django.db import models
+from pagedown.widgets import AdminPagedownWidget
 
 from .models import Category, Entry
 
 
+class PageDownAdmin(TranslationAdmin):
+    formfield_overrides = {
+        models.TextField: {'widget': AdminPagedownWidget}
+    }
+
+
 @admin.register(Entry)
-class NewsAdmin(admin.ModelAdmin):
+class NewsAdmin(PageDownAdmin):
     list_display = ('title', 'category', 'archive', 'public', 'created')
     list_filter = ['created']
     search_fields = ['title']

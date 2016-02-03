@@ -1,33 +1,34 @@
 from datetime import datetime
-
 from autoslug import AutoSlugField
 from django.contrib.auth.models import User
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
+
 
 
 class Category(models.Model):
-    name = models.CharField('Name', max_length=50, blank=False)
-    intro = models.TextField('Kurzbeschreibung', blank=True, null=True)
+    name = models.CharField(_('Name'), max_length=50, blank=False)
+    intro = models.TextField(_('Kurzbeschreibung'), blank=True, null=True)
 
     def __str__(self):
         return self.name
 
     class Meta:
-        verbose_name = 'Kategorie'
-        verbose_name_plural = 'Kategorien'
+        verbose_name = _('Kategorie')
+        verbose_name_plural = _('Kategorien')
 
 
 class Entry(models.Model):
-    title = models.CharField('Titel', max_length=50, blank=False)
-    author = models.ForeignKey(User, null=True, blank=True, verbose_name="Autor")
-    content = models.TextField('Inhalt', blank=False)
-    image = models.ImageField('Bild', null=True, blank=True)
-    attachment = models.FileField('Anhang', null=True, blank=True)
+    title = models.CharField(_('Titel'), max_length=50, blank=False)
+    author = models.ForeignKey(User, null=True, blank=True, verbose_name=_("Autor"))
+    content = models.TextField(_('Inhalt'), blank=False)
+    image = models.ImageField(_('Bild'), null=True, blank=True)
+    attachment = models.FileField(_('Anhang'), null=True, blank=True)
     slug = AutoSlugField(null=True, populate_from='title')
-    archive = models.BooleanField('Archiviert?', default=False)
-    public = models.BooleanField('Öffentlich?', default=True)
-    created = models.DateTimeField('Erstellt am', default=datetime.now)
-    category = models.ForeignKey('Category', null=True, verbose_name="Kategorie")
+    archive = models.BooleanField(_('Archiviert?'), default=False)
+    public = models.BooleanField(_('Öffentlich?'), default=True)
+    created = models.DateTimeField(_('Erstellt am'), default=datetime.now)
+    category = models.ForeignKey(Category, null=True, verbose_name=_("Kategorie"))
 
     def __str__(self):
         return self.title
@@ -37,6 +38,6 @@ class Entry(models.Model):
         return 'news:entry', (self.slug,)
 
     class Meta:
-        verbose_name = 'Eintrag'
-        verbose_name_plural = 'Einträge'
+        verbose_name = _('Eintrag')
+        verbose_name_plural = _('Einträge')
         ordering = ('created',)
