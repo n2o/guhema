@@ -1,4 +1,5 @@
 {% load thumbnail %}
+{% load markdown_deux_tags %}
 
 <div class="row products-index">
   <div class="col-md-3">
@@ -6,7 +7,7 @@
   </div>
   <div class="col-md-offset-1 col-md-7">
     <p>
-      {{ group.description }}
+      {{ group.description|markdown }}
     </p>
   </div>
   {% include 'core/edit_item.html' with model="products_productgroup" id=group.id %}

@@ -1391,3 +1391,10 @@ msgstr ""
 #: templates/productgroups.html:8
 msgid "PRODUKTGRUPPEN"
 msgstr ""
+
+#: products/templates/products/maschinensageblatter/advices.html:13
+msgid "Wir produzieren für Sie Maschinensägeblätter für alle Maschinensägetypen auf dem Markt. Unser Programm umfasst sowohl die Standardvarianten, als auch die Kasto-Aufnahme und Sägeblätter aus Bi-Metall. Getreu dem Motto:"
+msgstr ""
+#: products/templates/products/maschinensageblatter/advices.html:14
+msgid "Wir liefern Ihnen das Maschinensägeblatt, das bei Ihnen zum optimalen Sägeergebnis führt!"
+msgstr ""
