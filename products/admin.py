@@ -1,10 +1,10 @@
 from django.contrib import admin
-from django.contrib.flatpages.admin import FlatPageAdmin
 from django.contrib.flatpages.models import FlatPage
 from django.db import models
 from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext_lazy as _
 from pagedown.widgets import AdminPagedownWidget
+from modeltranslation.admin import TranslationAdmin
 
 from .models import (BandSawBlade, BandSawBladeIndicator, CircularSawBlade,
                      CircularSawBladeIndicator, Clamping, HackSawBlade,
@@ -64,7 +64,7 @@ class HoleSawAdmin(PageDownAdmin):
 
 
 @admin.register(ProductGroup)
-class ProductGroupAdmin(PageDownAdmin):
+class ProductGroupAdmin(PageDownAdmin, TranslationAdmin):
     list_display = ('name', 'public')
     fieldsets = [
         ('Allgemein', {'fields': ['name', 'description', 'image', 'public']}),
