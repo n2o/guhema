@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
 from autoslug import AutoSlugField
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
 
 
 class Indicator(models.Model):
     """
     Definiere Kennziffern, welche für die Sägeblätter notwendig sind.
     """
-    value = models.CharField("Kennziffer", max_length=1024, blank=False)
-    width = models.IntegerField("Breite (in mm)", blank=True, default=0)
-    strength = models.FloatField("Stärke (in mm)", blank=True, default=0)
-    length = models.IntegerField("Länge (in mm)", blank=True, default=0)
-    diameter = models.CharField("Durchmesser (in mm)", max_length=255, blank=True, default="")
+    value = models.CharField(_("Kennziffer"), max_length=1024, blank=False)
+    width = models.IntegerField(_("Breite (in mm)"), blank=True, default=0)
+    strength = models.FloatField(_("Stärke (in mm)"), blank=True, default=0)
+    length = models.IntegerField(_("Länge (in mm)"), blank=True, default=0)
+    diameter = models.CharField(_("Durchmesser (in mm)"), max_length=255, blank=True, default="")
     C = models.BooleanField("C", blank=True, default=False)
     E = models.BooleanField("E", blank=True, default=False)
     G = models.BooleanField("G", blank=True, default=False)
@@ -32,16 +33,16 @@ class Indicator(models.Model):
         return str(self.value)
 
     class Meta:
-        verbose_name = 'Kennziffer'
-        verbose_name_plural = 'Kennziffern'
+        verbose_name = _('Kennziffer')
+        verbose_name_plural = _('Kennziffern')
         ordering = ('value',)
         app_label = 'products'
 
 
 class Clamping(models.Model):
-    name = models.CharField("Name", max_length=255, blank=False)
+    name = models.CharField(_("Name"), max_length=255, blank=False)
     slug = AutoSlugField(null=True, populate_from='name')
-    image = models.ImageField("Bild", null=True, blank=True, upload_to='blades/')
+    image = models.ImageField(_("Bild"), null=True, blank=True, upload_to='blades/')
 
     def __str__(self):
         return self.name
@@ -53,11 +54,11 @@ class Clamping(models.Model):
 
 
 class ProductGroup(models.Model):
-    name = models.CharField("Name", max_length=255, blank=False)
-    description = models.TextField("Beschreibung", max_length=1024, blank=True)
+    name = models.CharField(_("Name"), max_length=255, blank=False)
+    description = models.TextField(_("Beschreibung"), max_length=1024, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
-    image = models.ImageField("Produktabbildung", null=True, blank=True, upload_to='blades/')
-    public = models.BooleanField("Öffentlich?", default=False, blank=False)
+    image = models.ImageField(_("Produktabbildung"), null=True, blank=True, upload_to='blades/')
+    public = models.BooleanField(_("Öffentlich?"), default=False, blank=False)
 
     def __str__(self):
         return self.name
@@ -69,14 +70,14 @@ class ProductGroup(models.Model):
 
 
 class SawBlade(models.Model):
-    quality = models.CharField("Stahlsorte", max_length=255, blank=False)
-    type = models.CharField("Typ", max_length=255, blank=True)
-    name = models.CharField("Bezeichnung", max_length=255, blank=True)
-    description = models.TextField("Beschreibung", max_length=1024, blank=True)
+    quality = models.CharField(_("Stahlsorte"), max_length=255, blank=False)
+    type = models.CharField(_("Typ"), max_length=255, blank=True)
+    name = models.CharField(_("Bezeichnung"), max_length=255, blank=True)
+    description = models.TextField(_("Beschreibung"), max_length=1024, blank=True)
     group = models.ForeignKey(ProductGroup, verbose_name="Produktgruppe", null=True, blank=True)
     clamping = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
-    image = models.ImageField("Produktabbildung", null=True, blank=True, upload_to='blades/')
+    image = models.ImageField(_("Produktabbildung"), null=True, blank=True, upload_to='blades/')
     indicators = models.ManyToManyField(Indicator, verbose_name="Kennziffern", blank=True)
 
     def __str__(self):
@@ -89,10 +90,10 @@ class SawBlade(models.Model):
 
 
 class SableSawBlade(SawBlade):
-    toothing = models.CharField("Verzahnung", max_length=255, blank=True)
-    cutting_metal = models.CharField("Schnittbereich Metall", max_length=255, blank=True, default=None, null=True)
-    cutting_wood = models.CharField("Schnittbereich Holz", max_length=255, blank=True, default=None, null=True)
-    cutting_minerals = models.CharField("Schnittbereich Mineralisch", max_length=255, blank=True, default=None, null=True)
+    toothing = models.CharField(_("Verzahnung"), max_length=255, blank=True)
+    cutting_metal = models.CharField(_("Schnittbereich Metall"), max_length=255, blank=True, default=None, null=True)
+    cutting_wood = models.CharField(_("Schnittbereich Holz"), max_length=255, blank=True, default=None, null=True)
+    cutting_minerals = models.CharField(_("Schnittbereich Mineralisch"), max_length=255, blank=True, default=None, null=True)
 
     class Meta:
         verbose_name = 'Säbelsägeblatt'
@@ -101,8 +102,8 @@ class SableSawBlade(SawBlade):
 
 
 class HackSawBlade(SableSawBlade):
-    accessory = models.BooleanField("Zubehörartikel?", default=False, blank=False)
-    subcategory = models.CharField("Unterkategorie", max_length=255, blank=True)
+    accessory = models.BooleanField(_("Zubehörartikel?"), default=False, blank=False)
+    subcategory = models.CharField(_("Unterkategorie"), max_length=255, blank=True)
 
     class Meta:
         verbose_name = 'Metallhandsägeblatt'
