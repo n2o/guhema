@@ -48,8 +48,8 @@ class Clamping(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Aufnahme'
-        verbose_name_plural = 'Aufnahmen'
+        verbose_name = _('Aufnahme')
+        verbose_name_plural = _('Aufnahmen')
         app_label = 'products'
 
 
@@ -64,8 +64,8 @@ class ProductGroup(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'Produktgruppe'
-        verbose_name_plural = 'Produktgruppen'
+        verbose_name = _('Produktgruppe')
+        verbose_name_plural = _('Produktgruppen')
         app_label = 'products'
 
 
@@ -74,18 +74,18 @@ class SawBlade(models.Model):
     type = models.CharField(_("Typ"), max_length=255, blank=True)
     name = models.CharField(_("Bezeichnung"), max_length=255, blank=True)
     description = models.TextField(_("Beschreibung"), max_length=1024, blank=True)
-    group = models.ForeignKey(ProductGroup, verbose_name="Produktgruppe", null=True, blank=True)
-    clamping = models.ForeignKey(Clamping, verbose_name="Aufnahme", null=True, blank=True)
+    group = models.ForeignKey(ProductGroup, verbose_name=_("Produktgruppe"), null=True, blank=True)
+    clamping = models.ForeignKey(Clamping, verbose_name=_("Aufnahme"), null=True, blank=True)
     slug = AutoSlugField(null=True, populate_from='name')
     image = models.ImageField(_("Produktabbildung"), null=True, blank=True, upload_to='blades/')
-    indicators = models.ManyToManyField(Indicator, verbose_name="Kennziffern", blank=True)
+    indicators = models.ManyToManyField(Indicator, verbose_name=_("Kennziffern"), blank=True)
 
     def __str__(self):
         return self.quality
 
     class Meta:
-        verbose_name = 'Sägeblatt'
-        verbose_name_plural = 'Sägeblätter'
+        verbose_name = _('Sägeblatt')
+        verbose_name_plural = _('Sägeblätter')
         app_label = 'products'
 
 
@@ -96,8 +96,8 @@ class SableSawBlade(SawBlade):
     cutting_minerals = models.CharField(_("Schnittbereich Mineralisch"), max_length=255, blank=True, default=None, null=True)
 
     class Meta:
-        verbose_name = 'Säbelsägeblatt'
-        verbose_name_plural = 'Säbelsägeblätter'
+        verbose_name = _('Säbelsägeblatt')
+        verbose_name_plural = _('Säbelsägeblätter')
         app_label = 'products'
 
 
@@ -106,54 +106,54 @@ class HackSawBlade(SableSawBlade):
     subcategory = models.CharField(_("Unterkategorie"), max_length=255, blank=True)
 
     class Meta:
-        verbose_name = 'Metallhandsägeblatt'
-        verbose_name_plural = 'Metallhandsägeblätter'
+        verbose_name = _('Metallhandsägeblatt')
+        verbose_name_plural = _('Metallhandsägeblätter')
         app_label = 'products'
 
 
 class HoleSaw(models.Model):
-    ordernr = models.CharField("Bestellnr.", max_length=1024, blank=False)
-    image = models.ImageField("Abbildung", blank=True, upload_to='blades/')
-    description = models.TextField("Beschreibung", max_length=1024, blank=True)
-    category = models.CharField("Kategorie", max_length=1024, blank=True)
-    mounting = models.CharField("Aufnahmeschaft", max_length=1024, blank=True)
-    saw_length = models.CharField("Lochsägenlänge", max_length=1024, blank=True)
-    pilot_drill_length = models.CharField("Zentrierbohrerlänge", max_length=1024, blank=True)
-    quality = models.CharField("Stahlsorte", max_length=255, blank=True)
-    toothing = models.CharField("Verzahnung", max_length=255, blank=True)
+    ordernr = models.CharField(_("Bestellnr."), max_length=1024, blank=False)
+    image = models.ImageField(_("Abbildung"), blank=True, upload_to='blades/')
+    description = models.TextField(_("Beschreibung"), max_length=1024, blank=True)
+    category = models.CharField(_("Kategorie"), max_length=1024, blank=True)
+    mounting = models.CharField(_("Aufnahmeschaft"), max_length=1024, blank=True)
+    saw_length = models.CharField(_("Lochsägenlänge"), max_length=1024, blank=True)
+    pilot_drill_length = models.CharField(_("Zentrierbohrerlänge"), max_length=1024, blank=True)
+    quality = models.CharField(_("Stahlsorte"), max_length=255, blank=True)
+    toothing = models.CharField(_("Verzahnung"), max_length=255, blank=True)
 
     def __str__(self):
         return self.ordernr
 
     class Meta:
-        verbose_name = 'Lochsäge'
-        verbose_name_plural = 'Lochsägen'
+        verbose_name = _('Lochsäge')
+        verbose_name_plural = _('Lochsägen')
         app_label = 'products'
 
 
 class HoleSawDiameter(models.Model):
-    diameter = models.IntegerField("Durchmesser (in mm)", blank=False)
-    blades = models.ManyToManyField(HoleSaw, verbose_name="Lochsäge", blank=True)
-    advice = models.BooleanField("Aus Empfehlungstabelle?", default=True, blank=True)
-    niro = models.IntegerField("NIRO", null=True, blank=True)
-    iron = models.IntegerField("Guss", null=True, blank=True)
-    steel = models.IntegerField("Stahl", null=True, blank=True)
-    non_ferrous_metals = models.IntegerField("Buntmetalle", null=True, blank=True)
-    alu = models.IntegerField("Alu", null=True, blank=True)
+    diameter = models.IntegerField(_("Durchmesser (in mm)"), blank=False)
+    blades = models.ManyToManyField(HoleSaw, verbose_name=_("Lochsäge"), blank=True)
+    advice = models.BooleanField(_("Aus Empfehlungstabelle?"), default=True, blank=True)
+    niro = models.IntegerField(_("NIRO"), null=True, blank=True)
+    iron = models.IntegerField(_("Guss"), null=True, blank=True)
+    steel = models.IntegerField(_("Stahl"), null=True, blank=True)
+    non_ferrous_metals = models.IntegerField(_("Buntmetalle"), null=True, blank=True)
+    alu = models.IntegerField(_("Alu"), null=True, blank=True)
 
     def __str__(self):
         return str(self.diameter)
 
     class Meta:
-        verbose_name = 'Lochsägen-Durchmesser'
-        verbose_name_plural = 'Lochsägen-Durchmesser'
+        verbose_name = _('Lochsägen-Durchmesser')
+        verbose_name_plural = _('Lochsägen-Durchmesser')
         app_label = 'products'
 
 
 class BandSawBladeIndicator(models.Model):
-    value = models.CharField("Kennziffer", max_length=255, blank=False)
-    width = models.IntegerField("Breite (in mm)", blank=True, default=0)
-    strength = models.FloatField("Stärke (in mm)", blank=True, default=0)
+    value = models.CharField(_("Kennziffer"), max_length=255, blank=False)
+    width = models.IntegerField(_("Breite (in mm)"), blank=True, default=0)
+    strength = models.FloatField(_("Stärke (in mm)"), blank=True, default=0)
     A = models.CharField("A", max_length=255, blank=True)
     C = models.CharField("C", max_length=255, blank=True)
     E = models.CharField("E", max_length=255, blank=True)
@@ -187,44 +187,44 @@ class BandSawBladeIndicator(models.Model):
         return self.value
 
     class Meta:
-        verbose_name = 'Sägeband-Kennziffer'
-        verbose_name_plural = 'Sägeband-Kennziffern'
+        verbose_name = _('Sägeband-Kennziffer')
+        verbose_name_plural = _('Sägeband-Kennziffern')
         app_label = 'products'
 
 
 class BandSawBlade(SawBlade):
-    bandsaw_indicators = models.ManyToManyField(BandSawBladeIndicator, verbose_name="Kenziffern", blank=True)
-    type_description = models.CharField("Typ Beschreibung", max_length=255, blank=True)
-    type2 = models.CharField("2. Typ", max_length=255, blank=True)
-    type2_description = models.CharField("2. Typ Beschreibung", max_length=255, blank=True)
-    image2 = models.ImageField("2. Produktabbildung", null=True, blank=True, upload_to='blades/')
-    heading = models.CharField("Seitentitel", max_length=255, blank=True)
-    cols = models.CharField("Spalten", max_length=1024, blank=True)
+    bandsaw_indicators = models.ManyToManyField(BandSawBladeIndicator, verbose_name=_("Kenziffern"), blank=True)
+    type_description = models.CharField(_("Typ Beschreibung"), max_length=255, blank=True)
+    type2 = models.CharField(_("2. Typ"), max_length=255, blank=True)
+    type2_description = models.CharField(_("2. Typ Beschreibung"), max_length=255, blank=True)
+    image2 = models.ImageField(_("2. Produktabbildung"), null=True, blank=True, upload_to='blades/')
+    heading = models.CharField(_("Seitentitel"), max_length=255, blank=True)
+    cols = models.CharField(_("Spalten"), max_length=1024, blank=True)
 
     class Meta:
-        verbose_name = 'Sägeband'
-        verbose_name_plural = 'Sägebänder'
+        verbose_name = _('Sägeband')
+        verbose_name_plural = _('Sägebänder')
         app_label = 'products'
 
 
 class JigSawBlade(SawBlade):
-    subcategory = models.CharField("Unterkategorie", max_length=255, blank=True)
-    tooth_separation = models.FloatField("Zahnteilung (ZpZ)", blank=True)
-    length = models.IntegerField("Sägeblattlänge (in mm)", default=0, blank=True)
-    cutting_metal = models.CharField("Schnittbereich Metall (in mm)", max_length=255, blank=True)
-    cutting_wood = models.CharField("Schnittbereich Holz (in mm)", max_length=255, blank=True)
+    subcategory = models.CharField(_("Unterkategorie"), max_length=255, blank=True)
+    tooth_separation = models.FloatField(_("Zahnteilung (ZpZ)"), blank=True)
+    length = models.IntegerField(_("Sägeblattlänge (in mm)"), default=0, blank=True)
+    cutting_metal = models.CharField(_("Schnittbereich Metall (in mm)"), max_length=255, blank=True)
+    cutting_wood = models.CharField(_("Schnittbereich Holz (in mm)"), max_length=255, blank=True)
 
     class Meta:
-        verbose_name = 'Pendelhubstichsägeblatt'
-        verbose_name_plural = 'Pendelhubstichsägeblätter'
+        verbose_name = _('Pendelhubstichsägeblatt')
+        verbose_name_plural = _('Pendelhubstichsägeblätter')
         app_label = 'products'
 
 
 class CircularSawBladeIndicator(models.Model):
-    value = models.CharField("Kennziffer", max_length=255, blank=False)
-    diameter = models.IntegerField("Durchmesser (in mm)", blank=True)
-    strength = models.FloatField("Stärke (in mm)", blank=True)
-    bore = models.IntegerField("Bohrung (in mm)", blank=True)
+    value = models.CharField(_("Kennziffer"), max_length=255, blank=False)
+    diameter = models.IntegerField(_("Durchmesser (in mm)"), blank=True)
+    strength = models.FloatField(_("Stärke (in mm)"), blank=True)
+    bore = models.IntegerField(_("Bohrung (in mm)"), blank=True)
     BW_3 = models.IntegerField("BW 3 mm", default=0, blank=True)
     BW_4 = models.IntegerField("BW 4 mm", default=0, blank=True)
     HZ_5 = models.IntegerField("HZ 5 mm", default=0, blank=True)
@@ -241,15 +241,15 @@ class CircularSawBladeIndicator(models.Model):
         return self.value
 
     class Meta:
-        verbose_name = "Metallkreissägeblatt-Kennziffer"
-        verbose_name_plural = "Metallkreissägeblatt-Kennziffern"
+        verbose_name = _('Metallkreissägeblatt-Kennziffer')
+        verbose_name_plural = _('Metallkreissägeblatt-Kennziffern')
         app_label = 'products'
 
 
 class CircularSawBlade(SawBlade):
-    circular_indicators = models.ManyToManyField(CircularSawBladeIndicator, verbose_name="Kenziffern", blank=True)
+    circular_indicators = models.ManyToManyField(CircularSawBladeIndicator, verbose_name=_("Kenziffern"), blank=True)
 
     class Meta:
-        verbose_name = "Metallkreissägeblatt"
-        verbose_name_plural = "Metallkreissägeblätter"
+        verbose_name = _('Metallkreissägeblatt')
+        verbose_name_plural = _('Metallkreissägeblätter')
         app_label = 'products'
