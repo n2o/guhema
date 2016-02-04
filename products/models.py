@@ -117,8 +117,8 @@ class HoleSaw(models.Model):
     description = models.TextField(_("Beschreibung"), max_length=1024, blank=True)
     category = models.CharField(_("Kategorie"), max_length=1024, blank=True)
     mounting = models.CharField(_("Aufnahmeschaft"), max_length=1024, blank=True)
-    saw_length = models.CharField(_("Lochsägenlänge"), max_length=1024, blank=True)
-    pilot_drill_length = models.CharField(_("Zentrierbohrerlänge"), max_length=1024, blank=True)
+    saw_length = models.CharField(_("Lochsägenlänge (in mm)"), max_length=1024, blank=True)
+    pilot_drill_length = models.CharField(_("Zentrierbohrerlänge (in mm)"), max_length=1024, blank=True)
     quality = models.CharField(_("Stahlsorte"), max_length=255, blank=True)
     toothing = models.CharField(_("Verzahnung"), max_length=255, blank=True)
 

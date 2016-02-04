@@ -108,10 +108,10 @@
         </thead>
         <tbody>
           {% for blade in blades %}
-            {% if blade.saw_length == "14 - 30 mm" %}
+            {% if blade.saw_length == "14 - 30" %}
               <tr>
                 <td>{{ blade.mounting }}</td>
-                <td>{{ blade.saw_length }}</td>
+                <td>{{ blade.saw_length }} {% trans "mm" %}</td>
                 <td>
                   <span class="text-orange-bold">
                     {{ blade.ordernr }}
@@ -134,10 +134,10 @@
         </thead>
         <tbody>
           {% for blade in blades %}
-            {% if blade.saw_length == "32 - 210 mm" %}
+            {% if blade.saw_length == "32 - 210" %}
               <tr>
                 <td>{{ blade.mounting }}</td>
-                <td>{{ blade.saw_length }}</td>
+                <td>{{ blade.saw_length }} {% trans "mm" %}</td>
                 <td>
                   <span class="text-orange-bold">
                     {{ blade.ordernr }}
@@ -164,7 +164,7 @@
         </thead>
         <tbody>
           {% for blade in blades %}
-            {% if blade.category == "Zubehör / Ersatzteile" %}
+            {% if blade.category_de == "Zubehör / Ersatzteile" %}
               <tr>
                 <td>{{ blade.description }}</td>
                 <td>
