@@ -14,4 +14,9 @@
       {% endif %}
     </a>
   </div>
+{% elif user.is_staff %}
+  <div class="alert alert-danger">
+  	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  	<strong>Bild fehlt!</strong>
+  </div>
 {% endif %}
