@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-04 16:16+0000\n"
-"PO-Revision-Date: 2016-02-04 17:31+0100\n"
+"PO-Revision-Date: 2016-02-04 18:00+0100\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,6 +28,8 @@ msgid ""
 "Hier haben Sie die Möglichkeit uns eine E-Mail zu senden. Bitte füllen Sie "
 "dafür alle Felder aus. Wir werden uns dann bei Ihnen melden!"
 msgstr ""
+"Feel free to send us an email. Please fill in all fields, we will contact "
+"you as soon as possible!"
 
 #: contact/templates/contact/email.html:17
 msgid "Abschicken"
@@ -35,144 +37,144 @@ msgstr "Submit"
 
 #: contact/templates/contact/verschickt.html:5
 msgid "Wir haben Ihre E-Mail erhalten"
-msgstr ""
+msgstr "We have received your mail"
 
 #: contact/templates/contact/verschickt.html:10
 msgid "Schnellstmöglich werden wir uns bei Ihnen melden!"
-msgstr ""
+msgstr "We will contact you as soon as possible"
 
 #: core/settings.py:111
 msgid "German"
-msgstr ""
+msgstr "German"
 
 #: core/settings.py:112
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: core/settings.py:113
 msgid "Russian"
-msgstr ""
+msgstr "Russian"
 
 #: fairs/models.py:9
 msgid "Name der Messe"
-msgstr ""
+msgstr "Name of the fair"
 
 #: fairs/models.py:10
 msgid "Veranstaltungswebsite"
-msgstr ""
+msgstr "Website of fair"
 
 #: fairs/models.py:11
 msgid "Veranstaltungsort"
-msgstr ""
+msgstr "Location of fair"
 
 #: fairs/models.py:12 fairs/templates/fairs/fair_style.html.py:37
 msgid "Halle"
-msgstr ""
+msgstr "Hall"
 
 #: fairs/models.py:13 fairs/templates/fairs/fair_style.html.py:37
 msgid "Stand"
-msgstr ""
+msgstr "Stand"
 
 #: fairs/models.py:14 fairs/templates/fairs/fair_style.html.py:27
 msgid "Beginn"
-msgstr ""
+msgstr "Begin"
 
 #: fairs/models.py:15 fairs/templates/fairs/fair_style.html.py:32
 msgid "Ende"
-msgstr ""
+msgstr "End"
 
 #: fairs/models.py:16 products/models.py:58 products/models.py:76
 #: products/models.py:117
 #: products/templates/products/lochsagen/overview.html:161
 #: products/templates/products/maschinensageblatter/advices.html:483
 msgid "Beschreibung"
-msgstr ""
+msgstr "Description"
 
 #: fairs/models.py:17 news/models.py:25 products/models.py:45
 msgid "Bild"
-msgstr ""
+msgstr "Image"
 
 #: fairs/models.py:18 news/models.py:26 news/templates/news/detail.html.py:23
 msgid "Anhang"
-msgstr ""
+msgstr "Attachment"
 
 #: fairs/models.py:20 news/models.py:28
 msgid "Archiviert?"
-msgstr ""
+msgstr "Archive?"
 
 #: fairs/models.py:21 news/models.py:29 products/models.py:61
 msgid "Öffentlich?"
-msgstr ""
+msgstr "Public?"
 
 #: fairs/models.py:22 news/models.py:30
 msgid "Erstellt am"
-msgstr ""
+msgstr "Created"
 
 #: fairs/models.py:28
 msgid "Messe"
-msgstr ""
+msgstr "Fair"
 
 #: fairs/models.py:29 fairs/templates/fairs/index.html.py:9
 #: templates/base.html:53
 msgid "Messen"
-msgstr ""
+msgstr "Fairs"
 
 #: fairs/templates/fairs/fair_style.html:22
 msgid "Website"
-msgstr ""
+msgstr "Website"
 
 #: fairs/templates/fairs/index.html:16
 msgid "Besuchen Sie uns auf folgenden Messen:"
-msgstr ""
+msgstr "Meet us at the following fairs:"
 
 #: fairs/templates/fairs/index.html:27
 msgid "Wir haben auf diesen Messen ausgestellt:"
-msgstr ""
+msgstr "Exhibited fairs"
 
 #: news/models.py:10 products/models.py:43 products/models.py:57
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: news/models.py:11
 msgid "Kurzbeschreibung"
-msgstr ""
+msgstr "Short Description"
 
 #: news/models.py:17 news/models.py:31 products/models.py:118
 msgid "Kategorie"
-msgstr ""
+msgstr "Category"
 
 #: news/models.py:18
 msgid "Kategorien"
-msgstr ""
+msgstr "Categories"
 
 #: news/models.py:22
 msgid "Titel"
-msgstr ""
+msgstr "Title"
 
 #: news/models.py:23
 msgid "Autor"
-msgstr ""
+msgstr "Author"
 
 #: news/models.py:24
 msgid "Inhalt"
-msgstr ""
+msgstr "Content"
 
 #: news/models.py:41
 msgid "Eintrag"
-msgstr ""
+msgstr "Entry"
 
 #: news/models.py:42
 msgid "Einträge"
-msgstr ""
+msgstr "Entries"
 
 #: news/templates/news/overview.html:5 templates/base.html.py:54
 #: templates/index.html:54
 msgid "News"
-msgstr ""
+msgstr "News"
 
 #: products/admin.py:108
 msgid "Advanced options"
-msgstr ""
+msgstr "Advanced options"
 
 #: products/models.py:11 products/models.py:36 products/models.py:154
 #: products/models.py:224
@@ -180,130 +182,130 @@ msgstr ""
 #: products/templates/products/metallsagebander/details.html:53
 #: products/templates/products/metallstichsageblatter/details.html:72
 msgid "Kennziffer"
-msgstr ""
+msgstr "Indicator"
 
 #: products/models.py:12 products/models.py:155
 msgid "Breite (in mm)"
-msgstr ""
+msgstr "Width (in mm)"
 
 #: products/models.py:13 products/models.py:156 products/models.py:226
 msgid "Stärke (in mm)"
-msgstr ""
+msgstr "Strength (in mm)"
 
 #: products/models.py:14
 msgid "Länge (in mm)"
-msgstr ""
+msgstr "Length (in mm)"
 
 #: products/models.py:15 products/models.py:135 products/models.py:225
 msgid "Durchmesser (in mm)"
-msgstr ""
+msgstr "Diameter (in mm)"
 
 #: products/models.py:37 products/models.py:81
 msgid "Kennziffern"
-msgstr ""
+msgstr "Indicators"
 
 #: products/models.py:51 products/models.py:78
 msgid "Aufnahme"
-msgstr ""
+msgstr "Clamping"
 
 #: products/models.py:52
 msgid "Aufnahmen"
-msgstr ""
+msgstr "Clampings"
 
 #: products/models.py:60 products/models.py:80
 msgid "Produktabbildung"
-msgstr ""
+msgstr "Product image"
 
 #: products/models.py:67 products/models.py:77
 msgid "Produktgruppe"
-msgstr ""
+msgstr "Product group"
 
 #: products/models.py:68
 msgid "Produktgruppen"
-msgstr ""
+msgstr "Product groups"
 
 #: products/models.py:73 products/models.py:122
 msgid "Stahlsorte"
-msgstr ""
+msgstr "Quality"
 
 #: products/models.py:74
 msgid "Typ"
-msgstr ""
+msgstr "Type"
 
 #: products/models.py:75
 #: products/templates/products/maschinensageblatter/advices.html:85
 msgid "Bezeichnung"
-msgstr ""
+msgstr "Designation"
 
 #: products/models.py:87
 msgid "Sägeblatt"
-msgstr ""
+msgstr "Sawblade"
 
 #: products/models.py:88
 msgid "Sägeblätter"
-msgstr ""
+msgstr "Sawblades"
 
 #: products/models.py:93 products/models.py:123
 #: products/templates/products/metallhandsageblatter/overview.html:133
 msgid "Verzahnung"
-msgstr ""
+msgstr "Toothing"
 
 #: products/models.py:94
 #: products/templates/products/metallhandsageblatter/overview.html:139
 #: products/templates/products/pendelhubstichsageblatter/overview.html:60
 msgid "Schnittbereich Metall"
-msgstr ""
+msgstr "Metal cutting area"
 
 #: products/models.py:95
 #: products/templates/products/pendelhubstichsageblatter/overview.html:65
 msgid "Schnittbereich Holz"
-msgstr ""
+msgstr "Wood cutting area"
 
 #: products/models.py:96
 msgid "Schnittbereich Mineralisch"
-msgstr ""
+msgstr "Mineral cutting area"
 
 #: products/models.py:99
 msgid "Säbelsägeblatt"
-msgstr ""
+msgstr "Sable Sawblade"
 
 #: products/models.py:100
 msgid "Säbelsägeblätter"
-msgstr ""
+msgstr "Sable Sawblades"
 
 #: products/models.py:105
 msgid "Zubehörartikel?"
-msgstr ""
+msgstr "Accessory?"
 
 #: products/models.py:106 products/models.py:211
 msgid "Unterkategorie"
-msgstr ""
+msgstr "Subcategory"
 
 #: products/models.py:109
 msgid "Metallhandsägeblatt"
-msgstr ""
+msgstr "Metal Compass Sawblade"
 
 #: products/models.py:110
 msgid "Metallhandsägeblätter"
-msgstr ""
+msgstr "Metal Compass Sawblades"
 
 #: products/models.py:115
 msgid "Bestellnr."
-msgstr ""
+msgstr "Order no."
 
 #: products/models.py:116
 msgid "Abbildung"
-msgstr ""
+msgstr "Image"
 
 #: products/models.py:119
 #: products/templates/products/lochsagen/overview.html:104
 #: products/templates/products/lochsagen/overview.html:130
 msgid "Aufnahmeschaft"
-msgstr ""
+msgstr "Mounting shank"
 
 #: products/models.py:120
 msgid "Lochsägenlänge (in mm)"
-msgstr ""
+msgstr "Hole saw"
 
 #: products/models.py:121
 msgid "Zentrierbohrerlänge (in mm)"

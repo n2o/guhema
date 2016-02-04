@@ -39,7 +39,7 @@
               <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
               {{ blade.description }}
               <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                {{ blade.type }} Details
+                {{ blade.type }} {% trans "Details" %}
               </a>
             </h4>
           </div>
