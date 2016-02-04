@@ -151,11 +151,11 @@
                 </td>
                 <td>
                   {% for ind in blade.indicators.all %}
-                    {{ ind.length }} x {{ ind.width }} x {{ ind.strength }}
+                    {{ ind.length }} x {{ ind.width }} x {{ ind.strength }} {% trans "mm" %}
                   {% endfor %}
                 </td>
                 <td>
-                  {{ blade.cutting_metal }}
+                  {{ blade.cutting_metal }} {% trans "mm" %}
                 </td>
               </tr>
             </tbody>
