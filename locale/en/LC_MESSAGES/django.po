@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-04 16:16+0000\n"
-"PO-Revision-Date: 2016-02-06 19:06+0100\n"
+"PO-Revision-Date: 2016-02-06 19:10+0100\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -351,31 +351,31 @@ msgstr "Hole saw diameter"
 
 #: products/models.py:190
 msgid "Sägeband-Kennziffer"
-msgstr ""
+msgstr "Bandsaw code number"
 
 #: products/models.py:191
 msgid "Sägeband-Kennziffern"
-msgstr ""
+msgstr "Bandsaw code numbers"
 
 #: products/models.py:196 products/models.py:250
 msgid "Kenziffern"
-msgstr ""
+msgstr "Code number"
 
 #: products/models.py:197
 msgid "Typ Beschreibung"
-msgstr ""
+msgstr "Typ Description"
 
 #: products/models.py:198
 msgid "2. Typ"
-msgstr ""
+msgstr "2nd type"
 
 #: products/models.py:199
 msgid "2. Typ Beschreibung"
-msgstr ""
+msgstr "2nd type description"
 
 #: products/models.py:200
 msgid "2. Produktabbildung"
-msgstr ""
+msgstr "2nd product image"
 
 #: products/models.py:201
 msgid "Seitentitel"
@@ -387,11 +387,11 @@ msgstr ""
 
 #: products/models.py:205
 msgid "Sägeband"
-msgstr ""
+msgstr "Metal Bandsaw Blade"
 
 #: products/models.py:206
 msgid "Sägebänder"
-msgstr ""
+msgstr "Metal Bandsaw Blades"
 
 #: products/models.py:212
 msgid "Zahnteilung (ZpZ)"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-04 16:35+0000\n"
-"PO-Revision-Date: 2016-02-06 19:06+0100\n"
+"PO-Revision-Date: 2016-02-06 19:10+0100\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -351,15 +351,15 @@ msgstr "Кольцевые пилы диаметр"
 
 #: products/models.py:190
 msgid "Sägeband-Kennziffer"
-msgstr ""
+msgstr "Пильные лентыдля металла код"
 
 #: products/models.py:191
 msgid "Sägeband-Kennziffern"
-msgstr ""
+msgstr "Пильные лентыдля металла код"
 
 #: products/models.py:196 products/models.py:250
 msgid "Kenziffern"
-msgstr ""
+msgstr "код"
 
 #: products/models.py:197
 msgid "Typ Beschreibung"
@@ -387,11 +387,11 @@ msgstr ""
 
 #: products/models.py:205
 msgid "Sägeband"
-msgstr ""
+msgstr "Пильные лентыдля металла"
 
 #: products/models.py:206
 msgid "Sägebänder"
-msgstr ""
+msgstr "Пильные лентыдля металла"
 
 #: products/models.py:212
 msgid "Zahnteilung (ZpZ)"
