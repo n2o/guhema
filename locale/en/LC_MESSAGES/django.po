@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-04 16:16+0000\n"
+"POT-Creation-Date: 2016-02-06 18:11+0000\n"
 "PO-Revision-Date: 2016-02-06 19:10+0100\n"
+"Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
+"Language-Team: Christian Meter <cmeter@googlemail.com>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
-"Language-Team: Christian Meter <cmeter@googlemail.com>\n"
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -1151,6 +1151,13 @@ msgstr ""
 msgid "B x S"
 msgstr ""
 
+#: products/templates/products/maschinensageblatter/overview.html:42
+#: products/templates/products/metallsagebander/overview.html:72
+#: products/templates/products/metallstichsageblatter/overview.html:43
+#: products/templates/products/metallstichsageblatter/overview.html:72
+msgid "Details"
+msgstr ""
+
 #: products/templates/products/metallhandsageblatter/overview.html:24
 msgid "Metallhandsägebügel"
 msgstr ""
@@ -1596,12 +1603,6 @@ msgstr ""
 
 #: products/templates/products/metallsagebander/advices.html:732
 msgid "Aluminiumbronze"
-msgstr ""
-
-#: products/templates/products/metallsagebander/overview.html:72
-#: products/templates/products/metallstichsageblatter/overview.html:43
-#: products/templates/products/metallstichsageblatter/overview.html:72
-msgid "Details"
 msgstr ""
 
 #: products/templates/products/pendelhubstichsageblatter/overview.html:50
