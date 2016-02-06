@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-06 18:11+0000\n"
-"PO-Revision-Date: 2016-02-06 19:10+0100\n"
-"Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
-"Language-Team: Christian Meter <cmeter@googlemail.com>\n"
+"POT-Creation-Date: 2016-02-04 16:16+0000\n"
+"PO-Revision-Date: 2016-02-07 00:26+0100\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
+"Language-Team: Christian Meter <cmeter@googlemail.com>\n"
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
@@ -363,7 +363,7 @@ msgstr "Code number"
 
 #: products/models.py:197
 msgid "Typ Beschreibung"
-msgstr "Typ Description"
+msgstr "Typ description"
 
 #: products/models.py:198
 msgid "2. Typ"
@@ -379,11 +379,11 @@ msgstr "2nd product image"
 
 #: products/models.py:201
 msgid "Seitentitel"
-msgstr ""
+msgstr "Page title"
 
 #: products/models.py:202
 msgid "Spalten"
-msgstr ""
+msgstr "Columns"
 
 #: products/models.py:205
 msgid "Sägeband"
@@ -395,65 +395,65 @@ msgstr "Metal Bandsaw Blades"
 
 #: products/models.py:212
 msgid "Zahnteilung (ZpZ)"
-msgstr ""
+msgstr "Tooth separation (TPI)"
 
 #: products/models.py:213
 msgid "Sägeblattlänge (in mm)"
-msgstr ""
+msgstr "Sawblade length (mm)"
 
 #: products/models.py:214
 msgid "Schnittbereich Metall (in mm)"
-msgstr ""
+msgstr "Metal cutting area (mm)"
 
 #: products/models.py:215
 msgid "Schnittbereich Holz (in mm)"
-msgstr ""
+msgstr "Wood cutting area"
 
 #: products/models.py:218
 msgid "Pendelhubstichsägeblatt"
-msgstr ""
+msgstr "Jigsaw blade"
 
 #: products/models.py:219
 msgid "Pendelhubstichsägeblätter"
-msgstr ""
+msgstr "Jigsaw blades"
 
 #: products/models.py:227
 msgid "Bohrung (in mm)"
-msgstr ""
+msgstr "Bore (mm)"
 
 #: products/models.py:244
 msgid "Metallkreissägeblatt-Kennziffer"
-msgstr ""
+msgstr "Metal Cutting Circular Sawblade x"
 
 #: products/models.py:245
 msgid "Metallkreissägeblatt-Kennziffern"
-msgstr ""
+msgstr "Metal Cutting Circular Sawblade Code Numbers"
 
 #: products/models.py:253
 msgid "Metallkreissägeblatt"
-msgstr ""
+msgstr "Metal Cutting Circular Sawblade"
 
 #: products/models.py:254
 #: products/templates/products/metallkreissageblatter/advices.html:8
 msgid "Metallkreissägeblätter"
-msgstr ""
+msgstr "Metal Cutting Circular Sawblades"
 
 #: products/templates/products/include_available_teeth.html:6
 msgid "lieferbare Verzahnung"
-msgstr ""
+msgstr "deliverable toothing"
 
 #: products/templates/products/includes/general_advice_sawblades.html:8
 #: products/templates/products/lochsagen/overview.html:20
 #: products/templates/products/metallkreissageblatter/overview.html:21
 #: products/templates/products/metallsagebander/overview.html:19
 msgid "Zu unseren Empfehlungen"
-msgstr ""
+msgstr "Our recommendations"
 
 #: products/templates/products/includes/general_advice_sawblades.html:22
 #: products/templates/products/lochsagen/overview.html:24
 #: products/templates/products/metallkreissageblatter/overview.html:34
 msgid "Material, Qualitäten und Einsatzbereiche"
-msgstr ""
+msgstr "Materials, qualities and application areas"
 
 #: products/templates/products/includes/general_advice_sawblades.html:24
 msgid ""
@@ -462,100 +462,113 @@ msgid ""
 "Spitzenprodukte – nichts geht durch unsere Eingangskontrolle, das nicht die "
 "Note „Sehr gut“ verdient."
 msgstr ""
+"Our pursuit of the perfect sawing quality already begins with the selection "
+"of our starting materials, as these form the starting point for our top of "
+"the line products – materials that are not classified as \"very good\" do "
+"not pass our incoming goods inspection."
 
 #: products/templates/products/includes/general_advice_sawblades.html:27
 msgid ""
 "Erstklassiges Rohmaterial ist bei GUHEMA die Basis für präzises, schnelles "
 "und wirtschaftliches Sägen mit"
 msgstr ""
+"At GUHEMA, first-rate raw materials form the basis for a precise, quick and "
+"economic sawing process with"
 
 #: products/templates/products/includes/general_advice_sawblades.html:30
 msgid "hohen Stand- und kurzen Schnittzeiten"
-msgstr ""
+msgstr "long downtimes and short cutting times"
 
 #: products/templates/products/includes/general_advice_sawblades.html:31
 msgid "langer Lebensdauer"
-msgstr ""
+msgstr "a long tool life"
 
 #: products/templates/products/includes/general_advice_sawblades.html:32
 msgid "optimaler Schonung Ihrer Sägemaschine"
-msgstr ""
+msgstr "optimal protection for your sawing machine"
 
 #: products/templates/products/includes/general_advice_sawblades.html:35
 msgid ""
 "Für die unterschiedlichsten Einsatzbereiche führen wir die passenden "
 "Qualitäten"
-msgstr ""
+msgstr "We offer matching qualities for various application areas"
 
 #: products/templates/products/includes/general_advice_sawblades.html:45
 #: products/templates/products/metallkreissageblatter/overview.html:46
 #, python-format
 msgid "DMo 5 Qualität (Werkstoff-Nr. %(num)s)"
-msgstr ""
+msgstr "M2 Grade (Material No. %(num)s)"
 
 #: products/templates/products/includes/general_advice_sawblades.html:49
 #: products/templates/products/includes/general_advice_sawblades.html:78
 msgid "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>"
-msgstr ""
+msgstr "For materials up to a tensile strength of 1100 N/mm<sup>2</sup>"
 
 #: products/templates/products/includes/general_advice_sawblades.html:59
 #: products/templates/products/metallkreissageblatter/overview.html:60
 #, python-format
 msgid "EMo 5 Co 5 Qualität (Werkstoff-Nr. %(num)s)"
-msgstr ""
+msgstr "M35 Grade (Material No. %(num)s)"
 
 #: products/templates/products/includes/general_advice_sawblades.html:63
 msgid ""
 "Für extrem harte Werkstoffe bis 1300 N/mm<sup>2</sup> z.B. austenitische "
 "Stähle und Stähle mit hohem Chrom-Nickelgehalt"
 msgstr ""
+"For extremely hard materials up to 1300 N/mm<sup>2</sup> such as austenitic "
+"steels and steels with a high chromium-nickel content"
 
 #: products/templates/products/includes/general_advice_sawblades.html:74
 #, python-format
 msgid ""
 "DMo 5 Schneidenqualität (Werkstoff-Nr. %(num)s) auf einem Sonderstahlrücken"
-msgstr ""
+msgstr "M2 Cutting Grade (Material No. %(num)s) on a special steel back"
 
 #: products/templates/products/includes/general_advice_sawblades.html:83
 msgid "Die Wahl der richtigen Zahnform"
-msgstr ""
+msgstr "Choosing the right tooth form"
 
 #: products/templates/products/includes/general_advice_sawblades.html:85
 msgid ""
 "Unsere GUHEMA-Maschinensägeblätter haben erst durch die richtige Zahnform "
 "den optimalen Biss. Wir liefern:"
 msgstr ""
+"Only the correct tooth form provides our GUHEMA power hacksaw blades with "
+"the perfect bite. \n"
+"We offer:"
 
 #: products/templates/products/includes/general_advice_sawblades.html:91
 #: products/templates/products/maschinensageblatter/details.html:58
 #: products/templates/products/metallstichsageblatter/details.html:58
 msgid "Normalzahn"
-msgstr ""
+msgstr "Normal Teeth"
 
 #: products/templates/products/includes/general_advice_sawblades.html:94
 msgid "Für den allgemeinen, universellen Einsatz"
-msgstr ""
+msgstr "For universal, general-purpose usage"
 
 #: products/templates/products/includes/general_advice_sawblades.html:105
 #: products/templates/products/maschinensageblatter/details.html:64
 #: products/templates/products/metallstichsageblatter/details.html:64
 msgid "Positivzahn"
-msgstr ""
+msgstr "Positive Teeth"
 
 #: products/templates/products/includes/general_advice_sawblades.html:108
 msgid "Der austenitische, zähharte Stähle trennt"
-msgstr ""
+msgstr "That cut austenitic, tough steels"
 
 #: products/templates/products/includes/general_advice_sawblades.html:119
 #: products/templates/products/metallsagebander/advices.html:67
 #: products/templates/products/metallsagebander/advices.html:113
 msgid "Variable Positivverzahnung"
-msgstr ""
+msgstr "Variable Positive Teeth"
 
 #: products/templates/products/includes/general_advice_sawblades.html:122
 msgid ""
 "GUHEMA FUTURE, die keine Wünsche an ein Maschinensägeblatt mehr offen lässt"
 msgstr ""
+"GUHEMA FUTURE that leaves no wish unfulfilled as far as a power hacksaw "
+"blade is concerned"
 
 #: products/templates/products/index.html:9
 #: products/templates/products/maschinensageblatter/overview.html:20
@@ -563,17 +576,17 @@ msgstr ""
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:18
 #: templates/base.html:52
 msgid "Produkte"
-msgstr ""
+msgstr "Products"
 
 #: products/templates/products/index.html:32
 msgid "Zu den Produkten"
-msgstr ""
+msgstr "See the products"
 
 #: products/templates/products/lochsagen/advices.html:14
 #: products/templates/products/maschinensageblatter/advices.html:18
 #: products/templates/products/metallkreissageblatter/advices.html:12
 msgid "Unsere Empfehlung für langen Sägespaß"
-msgstr ""
+msgstr "Our recommendations for a long service life"
 
 #: products/templates/products/lochsagen/advices.html:16
 msgid ""
@@ -582,10 +595,14 @@ msgid ""
 "vergessen Sie des Weiteren nicht die permanente Kühlung der Lochsäge während "
 "des Schneidprozesses."
 msgstr ""
+"Please adjust your number of revolutions in accordance with the following "
+"recommendations in order to optimize the tool life of your hole saw and the "
+"cutting quality. Please do not forget the permanent cooling of the hole saw "
+"during the cutting process either."
 
 #: products/templates/products/lochsagen/advices.html:27
 msgid "ALU"
-msgstr ""
+msgstr "ALUMINIUM"
 
 #: products/templates/products/lochsagen/overview.html:26
 msgid ""
@@ -596,12 +613,18 @@ msgid ""
 "und Verbundwerkstoffen erzielen unsere hartmetallbeschichteten Lochsägen "
 "beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine Wünsche offen."
 msgstr ""
+"Precision, the result of our solid cover plate, long tool life and quiet "
+"operation, made possible by the variable toothing with its optimal chip "
+"removal - all these features distinguish our bi-metal hole saws. Our fine-"
+"toothed hole saws are ideal for thin-walled materials. Our hard-metal coated "
+"hole saws achieve the best results when it comes to mineral and composite "
+"materials. Our product range leaves no wish unsatisfied."
 
 #: products/templates/products/lochsagen/overview.html:40
 #: products/templates/products/lochsagen/overview.html:57
 #, python-format
 msgid "Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. %(num)s)"
-msgstr ""
+msgstr "Bi-metal, with HSS cutter made of M42 (Material No. %(num)s)"
 
 #: products/templates/products/lochsagen/overview.html:44
 #: products/templates/products/lochsagen/overview.html:61
@@ -616,52 +639,52 @@ msgstr ""
 #: products/templates/products/metallstichsageblatter/details.html:53
 #: products/templates/products/pendelhubstichsageblatter/overview.html:75
 msgid "ZpZ"
-msgstr ""
+msgstr "TPI"
 
 #: products/templates/products/lochsagen/overview.html:44
 msgid "das Allroundtalent"
-msgstr ""
+msgstr "the \"All-Rounder\""
 
 #: products/templates/products/lochsagen/overview.html:61
 msgid "für dünnwandiges Material"
-msgstr ""
+msgstr "for thin-walled material"
 
 #: products/templates/products/lochsagen/overview.html:75
 msgid "Zähne mit Hartmetallgranulat beschichtet"
-msgstr ""
+msgstr "Teeth coated with carbide grit"
 
 #: products/templates/products/lochsagen/overview.html:79
 msgid "Für mineralische Werkstoffe"
-msgstr ""
+msgstr "For mineral materials"
 
 #: products/templates/products/lochsagen/overview.html:85
 #: products/templates/products/maschinensageblatter/details.html:20
 #: products/templates/products/metallsagebander/details.html:22
 #: products/templates/products/metallstichsageblatter/details.html:20
 msgid "Der schnelle Weg zu unserer Artikel-Nr."
-msgstr ""
+msgstr "The fast path to our Article No."
 
 #: products/templates/products/lochsagen/overview.html:86
 #: products/templates/products/maschinensageblatter/advices.html:100
 #: products/templates/products/metallstichsageblatter/details.html:21
 msgid "Qualität"
-msgstr ""
+msgstr "Grade"
 
 #: products/templates/products/lochsagen/overview.html:87
 #: products/templates/products/maschinensageblatter/details.html:22
 msgid "z.B.:"
-msgstr ""
+msgstr "Example:"
 
 #: products/templates/products/lochsagen/overview.html:97
 msgid "Zentriereinheiten"
-msgstr ""
+msgstr "Centering units"
 
 #: products/templates/products/lochsagen/overview.html:106
 #: products/templates/products/lochsagen/overview.html:132
 #: products/templates/products/lochsagen/overview.html:162
 #: products/templates/products/metallhandsageblatter/overview.html:130
 msgid "Bestell-Nr."
-msgstr ""
+msgstr "Order No."
 
 #: products/templates/products/lochsagen/overview.html:114
 #: products/templates/products/lochsagen/overview.html:140
@@ -678,24 +701,24 @@ msgstr ""
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:87
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:90
 msgid "mm"
-msgstr ""
+msgstr "mm"
 
 #: products/templates/products/lochsagen/overview.html:154
 msgid "Zubehör / Ersatzteile"
-msgstr ""
+msgstr "Accessories / Spare Parts"
 
 #: products/templates/products/lochsagen/overview.html:183
 msgid "Durchmesser"
-msgstr ""
+msgstr "Diameter"
 
 #: products/templates/products/lochsagen/overview.html:194
 #: products/templates/products/maschinensageblatter/details.html:139
 msgid "in mm"
-msgstr ""
+msgstr "in mm"
 
 #: products/templates/products/maschinensageblatter/advices.html:8
 msgid "Maschinensägeblätter"
-msgstr ""
+msgstr "Power Hacksaw Blades"
 
 #: products/templates/products/maschinensageblatter/advices.html:13
 msgid ""
@@ -703,12 +726,17 @@ msgid ""
 "dem Markt. Unser Programm umfasst sowohl die Standardvarianten, als auch die "
 "Kasto-Aufnahme und Sägeblätter aus Bi-Metall. Getreu dem Motto:"
 msgstr ""
+"We produce power hacksaw blades for all power saw types on the market. Our "
+"range includes standard versions as well as Kasto clampings and sawblades "
+"made of bi-metal. True to the motto:"
 
 #: products/templates/products/maschinensageblatter/advices.html:15
 msgid ""
 "Wir liefern Ihnen das Maschinensägeblatt, das bei Ihnen zum optimalen "
 "Sägeergebnis führt!"
 msgstr ""
+"We deliver the specific power hacksaw blade that will lead to the optimal "
+"sawing result in accordance with your requirements!"
 
 #: products/templates/products/maschinensageblatter/advices.html:22
 msgid ""
@@ -716,18 +744,22 @@ msgid ""
 "aber wichtigen Spielregeln zwischen Werkstück und Sägeblatt zu beachten, um "
 "optimale Schnittergebnisse zu erhalten:"
 msgstr ""
+"When using GUHEMA power hacksaw blades, we recommend only a few, but very "
+"important rules concerning the workpiece and sawblade in order to achieve "
+"optimal cutting results:"
 
 #: products/templates/products/maschinensageblatter/advices.html:25
 msgid "Sägen Sie nie über Eck an."
-msgstr ""
+msgstr "Never start sawing on a corner."
 
 #: products/templates/products/maschinensageblatter/advices.html:26
 msgid "Sägen Sie stets mit Kühlung."
-msgstr ""
+msgstr "Always saw with a running cooling system."
 
 #: products/templates/products/maschinensageblatter/advices.html:27
 msgid "Spannen Sie das Werkstück fest und verdrehsicher ein."
 msgstr ""
+"Firmly clamp the workpiece so that it sits tightly and cannot be twisted."
 
 #: products/templates/products/maschinensageblatter/advices.html:28
 #, python-format
@@ -735,24 +767,30 @@ msgid ""
 "Ein neues Maschinensägeblatt muss eingefahren werden. Reduzieren Sie in der "
 "Anfangszeit den Schnittdruck um ca. 50%%."
 msgstr ""
+"A new power hacksaw blade has to be run in. Reduce the cutting pressure by "
+"about 50%% during the run-in period."
 
 #: products/templates/products/maschinensageblatter/advices.html:29
 msgid "Entfernen Sie mögliche mineralische Rückstände vom Werkstück."
-msgstr ""
+msgstr "Remove any mineral residue that may be present on the workpiece."
 
 #: products/templates/products/maschinensageblatter/advices.html:30
 msgid "Kontrollieren Sie von Zeit zu Zeit die Sägeblattspannung."
-msgstr ""
+msgstr "Check the sawblade tension from time to time."
 
 #: products/templates/products/maschinensageblatter/advices.html:31
 msgid ""
 "Wechseln Sie frühzeitig Ihr Metallsägeblatt! Bestes Indiz: deutlicher "
 "Anstieg der Schnittzeit."
 msgstr ""
+"Change your metal sawblade early! Best indicator: significant increase of "
+"cutting time."
 
 #: products/templates/products/maschinensageblatter/advices.html:32
 msgid "Warten Sie Ihre Metallsäge nach den Vorgaben des Herstellers."
 msgstr ""
+"Maintain your metal sawblade in accordance with the manufacturer's "
+"instructions."
 
 #: products/templates/products/maschinensageblatter/advices.html:33
 msgid ""
@@ -760,6 +798,9 @@ msgid ""
 "dem Werkstück an. Das folgende Diagramm sowie die Tabelle dienen als "
 "Orientierung."
 msgstr ""
+"Adjust the cutting pressure, the cutting speed and the tooth number to the "
+"workpiece. The following diagram as well as the table can serve orientation "
+"purposes."
 
 #: products/templates/products/maschinensageblatter/advices.html:34
 #, python-format
@@ -769,83 +810,93 @@ msgid ""
 "muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein "
 "Brummton zu hören ist."
 msgstr ""
+"When using \"Positive Teeth\" and \"Future\", start with approx. 50%% of the "
+"conventional pressure. When the sawblade has entered the material with its "
+"full width, the pressure has to be continuously increased without a buzzing "
+"sound becoming audible."
 
 #: products/templates/products/maschinensageblatter/advices.html:43
 msgid "Faustregel"
-msgstr ""
+msgstr "Rule of thumb:"
 
 #: products/templates/products/maschinensageblatter/advices.html:45
 #: products/templates/products/maschinensageblatter/advices.html:75
 msgid "Schnittgeschwindigkeit"
-msgstr ""
+msgstr "Cutting speed"
 
 #: products/templates/products/maschinensageblatter/advices.html:45
 msgid "Hubweg (m)"
-msgstr ""
+msgstr "stroke distance (m)"
 
 #: products/templates/products/maschinensageblatter/advices.html:46
 msgid "Hubzahl/min"
-msgstr ""
+msgstr "number of strokes / min."
 
 #: products/templates/products/maschinensageblatter/advices.html:54
 #: products/templates/products/maschinensageblatter/advices.html:56
 msgid "Schnittdatenempfehlung"
-msgstr ""
+msgstr "Cutting data"
 
 #: products/templates/products/maschinensageblatter/advices.html:57
 msgid ""
 "bei Vollmaterial im normal geglühten Zustand für GUHEMA-Maschinensägeblätter "
 "basierend auf einer Hublänge von 200 mm."
 msgstr ""
+"recommendation for solid material in a normally annealed state for GUHEMA "
+"power hacksaw blades based on a stroke length of 200 mm."
 
 #: products/templates/products/maschinensageblatter/advices.html:60
 msgid ""
 "Für Rohre und Profile Schnittdruck entsprechend der Wandstärke reduzieren."
 msgstr ""
+"Reduce cutting pressure for pipes and profiles depending on the wall "
+"thickness."
 
 #: products/templates/products/maschinensageblatter/advices.html:67
 msgid "Material"
-msgstr ""
+msgstr "Material"
 
 #: products/templates/products/maschinensageblatter/advices.html:71
 msgid "bei Materialabmessungen"
-msgstr ""
+msgstr "for material dimensions"
 
 #: products/templates/products/maschinensageblatter/advices.html:78
 msgid "Blatt"
-msgstr ""
+msgstr "Blade"
 
 #: products/templates/products/maschinensageblatter/advices.html:88
 msgid "bis"
-msgstr ""
+msgstr "up to"
 
 #: products/templates/products/maschinensageblatter/advices.html:92
 msgid "über"
-msgstr ""
+msgstr "above"
 
 #: products/templates/products/maschinensageblatter/advices.html:95
 msgid "Schnittdruck"
-msgstr ""
+msgstr "Cutting pressure"
 
 #: products/templates/products/maschinensageblatter/advices.html:97
 msgid "je nach Materialstärke"
-msgstr ""
+msgstr "depending on material strength"
 
 #: products/templates/products/maschinensageblatter/advices.html:103
 msgid "Zahnform"
-msgstr ""
+msgstr "Tooth form"
 
 #: products/templates/products/maschinensageblatter/advices.html:127
 msgid "Hübe / min"
-msgstr ""
+msgstr "Strokes / min"
 
 #: products/templates/products/maschinensageblatter/advices.html:130
 msgid "m / min"
-msgstr ""
+msgstr "m / min"
 
 #: products/templates/products/maschinensageblatter/advices.html:140
 msgid "unleg. Stähle/Baustähle"
 msgstr ""
+"unalloyed steels /\n"
+"structural steels"
 
 #: products/templates/products/maschinensageblatter/advices.html:146
 #: products/templates/products/metallsagebander/advices.html:251
@@ -853,7 +904,7 @@ msgstr ""
 #: products/templates/products/metallsagebander/advices.html:277
 #: products/templates/products/metallsagebander/advices.html:290
 msgid "Einsatzstähle"
-msgstr ""
+msgstr "case hardening steels"
 
 #: products/templates/products/maschinensageblatter/advices.html:146
 #: products/templates/products/maschinensageblatter/advices.html:184
@@ -863,12 +914,12 @@ msgstr ""
 #: products/templates/products/maschinensageblatter/advices.html:332
 #: products/templates/products/metallstichsageblatter/details.html:22
 msgid "z.B."
-msgstr ""
+msgstr "such as"
 
 #: products/templates/products/maschinensageblatter/advices.html:160
 #: products/templates/products/maschinensageblatter/advices.html:462
 msgid "niedrig"
-msgstr ""
+msgstr "low"
 
 #: products/templates/products/maschinensageblatter/advices.html:164
 #: products/templates/products/maschinensageblatter/advices.html:178
@@ -886,18 +937,18 @@ msgstr ""
 #: products/templates/products/maschinensageblatter/advices.html:444
 #: products/templates/products/maschinensageblatter/advices.html:466
 msgid "normal"
-msgstr ""
+msgstr "normal"
 
 #: products/templates/products/maschinensageblatter/advices.html:174
 msgid "bis mittel"
-msgstr ""
+msgstr "to medium"
 
 #: products/templates/products/maschinensageblatter/advices.html:184
 #: products/templates/products/metallsagebander/advices.html:329
 #: products/templates/products/metallsagebander/advices.html:342
 #: products/templates/products/metallsagebander/advices.html:355
 msgid "Vergütungsstähle"
-msgstr ""
+msgstr "Quenched and tempered steels"
 
 #: products/templates/products/maschinensageblatter/advices.html:197
 #: products/templates/products/maschinensageblatter/advices.html:212
@@ -910,98 +961,98 @@ msgstr ""
 #: products/templates/products/maschinensageblatter/advices.html:408
 #: products/templates/products/maschinensageblatter/advices.html:424
 msgid "mittel"
-msgstr ""
+msgstr "medium"
 
 #: products/templates/products/maschinensageblatter/advices.html:236
 msgid "leg. Werkzeugstähle"
-msgstr ""
+msgstr "Alloyed carbon steels"
 
 #: products/templates/products/maschinensageblatter/advices.html:273
 msgid "Schnellstähle"
-msgstr ""
+msgstr "High-speed steels"
 
 #: products/templates/products/maschinensageblatter/advices.html:301
 msgid "& höher"
-msgstr ""
+msgstr "& higher"
 
 #: products/templates/products/maschinensageblatter/advices.html:310
 msgid "nicht rostende Stähle"
-msgstr ""
+msgstr "Stainless steels"
 
 #: products/templates/products/maschinensageblatter/advices.html:323
 #: products/templates/products/maschinensageblatter/advices.html:345
 #: products/templates/products/maschinensageblatter/advices.html:360
 msgid "Sondervorschrift"
-msgstr ""
+msgstr "Special provision"
 
 #: products/templates/products/maschinensageblatter/advices.html:327
 #: products/templates/products/maschinensageblatter/advices.html:349
 #: products/templates/products/maschinensageblatter/advices.html:364
 msgid "positiv"
-msgstr ""
+msgstr "positive"
 
 #: products/templates/products/maschinensageblatter/advices.html:332
 msgid "Sonderlegierungen"
-msgstr ""
+msgstr "Special alloys"
 
 #: products/templates/products/maschinensageblatter/advices.html:338
 msgid "Hastelloy-Inconel"
-msgstr ""
+msgstr "Hastelloy-Inconel"
 
 #: products/templates/products/maschinensageblatter/advices.html:353
 msgid "Nimonic-Titan"
-msgstr ""
+msgstr "Nimonic-Titanium"
 
 #: products/templates/products/maschinensageblatter/advices.html:401
 #: products/templates/products/metallsagebander/advices.html:641
 #: products/templates/products/metallsagebander/advices.html:654
 msgid "Stahlguss"
-msgstr ""
+msgstr "Cast steel"
 
 #: products/templates/products/maschinensageblatter/advices.html:417
 #: products/templates/products/metallsagebander/advices.html:667
 #: products/templates/products/metallsagebander/advices.html:680
 msgid "Gusseisen"
-msgstr ""
+msgstr "Cast iron"
 
 #: products/templates/products/maschinensageblatter/advices.html:433
 msgid "Spezialbronzen"
-msgstr ""
+msgstr "Special bronzes"
 
 #: products/templates/products/maschinensageblatter/advices.html:440
 msgid "mittel-hoch"
-msgstr ""
+msgstr "medium-high"
 
 #: products/templates/products/maschinensageblatter/advices.html:449
 msgid "NE-Metalle"
-msgstr ""
+msgstr "Non-ferrous metals"
 
 #: products/templates/products/maschinensageblatter/advices.html:455
 msgid "Alu-Bronze-Messing"
-msgstr ""
+msgstr "Aluminium bronze brass"
 
 #: products/templates/products/maschinensageblatter/advices.html:474
 msgid "Anwendungsbereich für unsere GUHEMA Future Metallsägeblätter:"
-msgstr ""
+msgstr "Application range for our GUHEMA Future metal hacksaw blades:"
 
 #: products/templates/products/maschinensageblatter/advices.html:489
 #: products/templates/products/maschinensageblatter/advices.html:493
 #: products/templates/products/maschinensageblatter/advices.html:497
 #: products/templates/products/maschinensageblatter/advices.html:501
 msgid "Materialstärken von"
-msgstr ""
+msgstr "Material thicknesses of"
 
 #: products/templates/products/maschinensageblatter/advices.html:505
 msgid "Materialstärken über"
-msgstr ""
+msgstr "Material thicknesses over"
 
 #: products/templates/products/maschinensageblatter/advices.html:515
 msgid "Unsere Empfehlung für grobe Verzahnungen"
-msgstr ""
+msgstr "Our recommendation for coarse tooth patterns (toothing)"
 
 #: products/templates/products/maschinensageblatter/advices.html:516
 msgid "Seitlicher Fasenanschliff"
-msgstr ""
+msgstr "Alternating cross-grinding"
 
 #: products/templates/products/maschinensageblatter/advices.html:519
 msgid ""
@@ -1011,166 +1062,169 @@ msgid ""
 "ergibt sich eine geringere Belastung von Blatt und Maschine &#8594; "
 "Metallsägeblatt und Maschine leben länger."
 msgstr ""
+"Use your advantage with our lateral ground-in rake you will get the cleanest "
+"cutting results. Premature teeth breaking is prevented by the ground-in rake "
+"and a lower burdening of sawblade and machine results from the chip disposal "
+"&#8594; both metal hacksaw blades and machine live longer."
 
 #: products/templates/products/maschinensageblatter/advices.html:522
 msgid ""
 "Den seitlichen Fasenanschliff fertigen wir bis 6 ZpZ auf Nachfrage gerne für "
 "Sie. Sprechen Sie uns an!"
 msgstr ""
+"We will gladly produce the lateral ground-in rake up to 6 TPI for you upon "
+"request. Contact us!"
 
 #: products/templates/products/maschinensageblatter/advices.html:528
 msgid "Sie haben Probleme beim Sägen? – Wir haben die Antworten!"
-msgstr ""
+msgstr "Are you having trouble sawing? – We've got the answers!"
 
 #: products/templates/products/maschinensageblatter/advices.html:532
 msgid "Zahnbruch?"
-msgstr ""
+msgstr "Teeth breaking?"
 
 #: products/templates/products/maschinensageblatter/advices.html:533
 #: products/templates/products/maschinensageblatter/advices.html:542
 #: products/templates/products/maschinensageblatter/advices.html:556
 #: products/templates/products/maschinensageblatter/advices.html:568
 msgid "Mögliche Ursachen:"
-msgstr ""
+msgstr "Possible causes:"
 
 #: products/templates/products/maschinensageblatter/advices.html:535
 msgid ""
 "Zu niedrige Zähnezahl gewählt. Mindestens 3 Zähne sollten gleichzeitig im "
 "Eingriff sein, auch bei Rohren und Profilen."
 msgstr ""
+"Too low number of teeth selected. At least three teeth should be engaged "
+"simultaneously; this also applies to tubes and profiles."
 
 #: products/templates/products/maschinensageblatter/advices.html:536
 msgid "Über Eck angesägt."
-msgstr ""
+msgstr " You started sawing on a corner."
 
 #: products/templates/products/maschinensageblatter/advices.html:537
 msgid "Falsche Einspannung des Werkstücks."
-msgstr ""
+msgstr "Workpiece has been clamped incorrectly."
 
 #: products/templates/products/maschinensageblatter/advices.html:541
 msgid "Blattbruch?"
-msgstr ""
+msgstr "Blade breaking?"
 
 #: products/templates/products/maschinensageblatter/advices.html:544
 msgid "Schnittkanal wurde zusammengedrückt und blockierte das Sägeblatt."
-msgstr ""
+msgstr "The cutting channel has been pressed together and blocks the sawblade."
 
 #: products/templates/products/maschinensageblatter/advices.html:545
 #: products/templates/products/maschinensageblatter/advices.html:570
 msgid "Falsche Blattspannung."
-msgstr ""
+msgstr "Incorrect blade tension."
 
 #: products/templates/products/maschinensageblatter/advices.html:546
 msgid "Zu grobe Verzahnung für das Werkstück gewählt."
-msgstr ""
+msgstr "Selected toothing is too coarse for the workpiece."
 
 #: products/templates/products/maschinensageblatter/advices.html:547
 #: products/templates/products/maschinensageblatter/advices.html:572
 msgid "Zu hoher Schnittdruck."
-msgstr ""
+msgstr "Cutting pressure too high."
 
 #: products/templates/products/maschinensageblatter/advices.html:548
 #: products/templates/products/maschinensageblatter/advices.html:573
 msgid "Verschlissene Führungslager in der Maschine."
-msgstr ""
+msgstr "Worn pilot bearings in the machine."
 
 #: products/templates/products/maschinensageblatter/advices.html:555
 msgid "Vorzeitiges Abstumpfen der Zähne?"
-msgstr ""
+msgstr "Premature dulling of the teeth?"
 
 #: products/templates/products/maschinensageblatter/advices.html:558
 msgid "Zu feine Verzahnung gewählt."
-msgstr ""
+msgstr "Selected toothing is too fine"
 
 #: products/templates/products/maschinensageblatter/advices.html:559
 msgid "Zu hohe Schnittgeschwindigkeit für das Werkstück gewählt."
-msgstr ""
+msgstr "Selected cutting speed too high for the workpiece."
 
 #: products/templates/products/maschinensageblatter/advices.html:560
 msgid ""
 "Zu hoher Druck (erhöhte Zahnbelastung) oder zu niedriger Druck (Zähne "
 "schleifen über das Werkstück, statt einen Span zu heben)."
 msgstr ""
+"Too high pressure (increased tooth load) or too low pressure (teeth grinding "
+"on the workpiece instead of lifting a chip)."
 
 #: products/templates/products/maschinensageblatter/advices.html:561
 msgid "Unzureichende/falsch ausgerichtete Sägeblattkühlung."
-msgstr ""
+msgstr "Inadequate/misaligned sawblade cooling."
 
 #: products/templates/products/maschinensageblatter/advices.html:562
 msgid "Falsche Sägeblattqualität gewählt."
-msgstr ""
+msgstr "Incorrect sawblade grade selected."
 
 #: products/templates/products/maschinensageblatter/advices.html:563
 msgid "Kein Sägeblattausheben im Rücklauf."
-msgstr ""
+msgstr "No sawblade lifting during return travel."
 
 #: products/templates/products/maschinensageblatter/advices.html:567
 msgid "Ungewollter Schnittverlauf?"
-msgstr ""
+msgstr "Unwanted course of the sawblade?"
 
 #: products/templates/products/maschinensageblatter/advices.html:571
 msgid "Zu geringe Werkstückeinspannung."
-msgstr ""
+msgstr "Incorrect blade tension."
 
 #: products/templates/products/maschinensageblatter/advices.html:578
 msgid "Keine passende Antwort?"
-msgstr ""
+msgstr "No matching answer?"
 
 #: products/templates/products/maschinensageblatter/advices.html:580
 msgid ""
 "Dann sprechen Sie mit einem Experten! Kontaktieren Sie unsere "
 "Anwendungsberatung unter"
-msgstr ""
+msgstr "Then talk to an expert! Contact our application consulting at"
 
 #: products/templates/products/maschinensageblatter/details.html:21
 #: products/templates/products/metallsagebander/details.html:23
 #: products/templates/products/metallstichsageblatter/details.html:21
 msgid "Kennziffer (Abmessung)"
-msgstr ""
+msgstr "Code Number (dimension)"
 
 #: products/templates/products/maschinensageblatter/details.html:67
 #: products/templates/products/metallstichsageblatter/details.html:67
 msgid "Variable Positivzahnung"
-msgstr ""
+msgstr "Variable Positive Teeth"
 
 #: products/templates/products/maschinensageblatter/details.html:71
 #: products/templates/products/metallsagebander/details.html:52
 #: products/templates/products/metallstichsageblatter/details.html:71
 msgid "Abmessungen"
-msgstr ""
+msgstr "Dimensions"
 
 #: products/templates/products/maschinensageblatter/details.html:94
 #: products/templates/products/metallsagebander/details.html:146
 #: products/templates/products/metallstichsageblatter/details.html:94
 msgid "in mm:"
-msgstr ""
+msgstr "in mm:"
 
 #: products/templates/products/maschinensageblatter/details.html:94
 #: products/templates/products/metallsagebander/details.html:146
 #: products/templates/products/metallstichsageblatter/details.html:94
 msgid "B x S"
-msgstr ""
-
-#: products/templates/products/maschinensageblatter/overview.html:42
-#: products/templates/products/metallsagebander/overview.html:72
-#: products/templates/products/metallstichsageblatter/overview.html:43
-#: products/templates/products/metallstichsageblatter/overview.html:72
-msgid "Details"
-msgstr ""
+msgstr "B x S"
 
 #: products/templates/products/metallhandsageblatter/overview.html:24
 msgid "Metallhandsägebügel"
-msgstr ""
+msgstr "Metal Handsaw Bow"
 
 #: products/templates/products/metallhandsageblatter/overview.html:76
 #: products/templates/products/metallhandsageblatter/overview.html:170
 #: products/templates/products/pendelhubstichsageblatter/overview.html:100
 msgid "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
-msgstr ""
+msgstr "An error occured. Please try again later."
 
 #: products/templates/products/metallhandsageblatter/overview.html:136
 msgid "Abmessung"
-msgstr ""
+msgstr "Dimension"
 
 #: products/templates/products/metallkreissageblatter/advices.html:14
 msgid ""
@@ -1178,6 +1232,9 @@ msgid ""
 "wichtigen Spielregeln zwischen Werkstück, Sägeblatt und Maschine zu "
 "beachten, um optimale Schnittergebnisse zu erhalten:"
 msgstr ""
+"When using GUHEMA metal cutting circular sawblades, we recommend a number of "
+"very important rules concerning the workpiece, machine and sawblade in order "
+"to achieve optimal cutting results:"
 
 #: products/templates/products/metallkreissageblatter/advices.html:17
 msgid ""
@@ -1185,11 +1242,14 @@ msgid ""
 "unsaubere Schnittflächen und ein Verlaufen des Schnittes. Wir übernehmen "
 "diese Aufgabe gerne für Sie."
 msgstr ""
+"Have your sawblade be sharpened on time, this way you avoid unclean cut "
+"surfaces and a dispersement of the cut. We would gladly do this for you."
 
 #: products/templates/products/metallkreissageblatter/advices.html:18
 msgid ""
 "Spannen Sie das Kreissägeblatt in richtiger Richtung in die Maschine ein."
 msgstr ""
+"Clamp the circular sawblade into the machine facing the correct direction."
 
 #: products/templates/products/metallkreissageblatter/advices.html:19
 msgid ""
@@ -1197,39 +1257,46 @@ msgid ""
 "zwischen dem Flansch und dem Sägeblatt befinden (Schnitt verläuft). Bitte "
 "verwenden Sie den passenden Flansch zum Sägeblatt."
 msgstr ""
+"When clamping the blade, ensure that there are no chips between the flange "
+"and the sawblade (will cause the cut to disperse). Please use the "
+"appropriate flange for the sawblade."
 
 #: products/templates/products/metallkreissageblatter/advices.html:20
 msgid ""
 "Spannen Sie Ihr zu bearbeitendes Werkstück möglichst über vier Punkte fest "
 "ein. Achten Sie dabei auf mögliche Späne zwischen Spannbacken und Werkstück."
 msgstr ""
+"If possible, clamp the workpiece to be machined via four points. Mind "
+"possible chips between the clamping jaws and the workpiece."
 
 #: products/templates/products/metallkreissageblatter/advices.html:21
 msgid "Passen Sie die Vorschubsgeschwindigkeit der Schnittgeschwindigkeit an."
-msgstr ""
+msgstr " Adjust the feed rate to the cutting speed."
 
 #: products/templates/products/metallkreissageblatter/advices.html:22
 msgid ""
 "Erhöhen Sie die Standzeit Ihres Metallkreissägeblattes erheblich, indem Sie "
 "stets mit dem passenden Kühlschmiermittel kühlen."
 msgstr ""
+"Significantly increase the service life of your metal cutting circular "
+"sawblade by cooling with the appropriate coolant at all times."
 
 #: products/templates/products/metallkreissageblatter/overview.html:36
 msgid ""
 "Nachfolgend sind unsere zwei Qualitäten aus Schnellarbeitsstahl aufgeführt:"
-msgstr ""
+msgstr "Our two grades of high-speed steel are listed below:"
 
 #: products/templates/products/metallkreissageblatter/overview.html:50
 msgid "Das Werkstattblatt"
-msgstr ""
+msgstr "The Workshop-Blade"
 
 #: products/templates/products/metallkreissageblatter/overview.html:64
 msgid "Für nicht rostende Stähle"
-msgstr ""
+msgstr "For stainless steels"
 
 #: products/templates/products/metallkreissageblatter/overview.html:69
 msgid "Fühlen Sie uns auf den Zahn"
-msgstr ""
+msgstr "Tooth forms"
 
 #: products/templates/products/metallkreissageblatter/overview.html:71
 msgid ""
@@ -1238,20 +1305,26 @@ msgid ""
 "Rolle. Ihnen stehen folgende Zahnformen zur Verfügung, die nach DIN 1840 "
 "gefertigt werden:"
 msgstr ""
+"If perfect cutting performance is desired, all factors have to be perfectly "
+"coordinated with one another. The tooth form plays a significant role in "
+"this regard. The following tooth types that are all manufactured in "
+"accordance with DIN 1840 are available to you:"
 
 #: products/templates/products/metallkreissageblatter/overview.html:76
 msgid "Bogenzahn mit Wechselschliff"
-msgstr ""
+msgstr "Curved tooth with alternating grinds"
 
 #: products/templates/products/metallkreissageblatter/overview.html:79
 msgid ""
 "Wir empfehlen den Bogenzahn mit Wechselschliff bei Metallkreissägeblättern "
 "bei einer feinen Zahnteilung zum Sägen von Rohren oder Profilen."
 msgstr ""
+"We recommend the curved tooth with alternating grinds for metal cutting "
+"circular sawblades and a fine teeth separation to saw tubes or profiles."
 
 #: products/templates/products/metallkreissageblatter/overview.html:83
 msgid "Bogenzahn mit Vor- und Nachschneider"
-msgstr ""
+msgstr "Curved tooth with pre- and finishing cutter"
 
 #: products/templates/products/metallkreissageblatter/overview.html:86
 msgid ""
@@ -1259,10 +1332,13 @@ msgid ""
 "Sägemaschinen und Rundtaktautomaten geeignet und empfiehlt sich bei "
 "mittleren und groben Zahnteilungen."
 msgstr ""
+"The curved tooth with pre- and finishing cutter is suitable for the sawing "
+"of steels on sawing machines and rotary transfer machines and is recommended "
+"for medium and coarse teeth separations."
 
 #: products/templates/products/metallsagebander/advices.html:8
 msgid "Metallsägebänder"
-msgstr ""
+msgstr "Metal Bandsaw Blades"
 
 #: products/templates/products/metallsagebander/advices.html:15
 msgid ""
@@ -1271,21 +1347,28 @@ msgid ""
 "Produktion und Werkstatt und die Hartmetall-Ausführung für "
 "Spezialanwendungen."
 msgstr ""
+"We produce three versions of metal bandsaw blades for you. The \"carbon\" "
+"grade for workshops, the bi-metal grade for workshops and manufacturing "
+"purposes as well as the hard metal variant for special applications."
 
 #: products/templates/products/metallsagebander/advices.html:19
 msgid "Getreu dem Motto:"
-msgstr ""
+msgstr "True to the motto:"
 
 #: products/templates/products/metallsagebander/advices.html:20
 msgid ""
 "Wir liefern Ihnen die Metallsägebänder, die Sie zum optimalen Sägeergebnis "
 "führen."
 msgstr ""
+"We deliver the metal bandsaw blades that will lead to the optimal sawing "
+"result in accordance with your specific requirements."
 
 #: products/templates/products/metallsagebander/advices.html:27
 msgid ""
 "Wenn Sie optimal trennen wollen, dann sollten Sie uns auf den Zahn fühlen"
 msgstr ""
+"Trust in our machining technology, if you wish to cut materials in an "
+"optimal manner"
 
 #: products/templates/products/metallsagebander/advices.html:30
 msgid ""
@@ -1293,11 +1376,13 @@ msgid ""
 "Materialqualitäten unserer Sägebänder die notwendige Auswahl an Zahntypen "
 "bereitgestellt:"
 msgstr ""
+"In order to meet every one of your requirements, we have provided our "
+"material grades with the necessary range of tooth types:"
 
 #: products/templates/products/metallsagebander/advices.html:34
 #: products/templates/products/metallsagebander/details.html:415
 msgid "Standardzahn"
-msgstr ""
+msgstr "Standard tooth"
 
 #: products/templates/products/metallsagebander/advices.html:36
 msgid ""
@@ -1305,11 +1390,14 @@ msgid ""
 "Kristall, No. 22 GUHEMA Kristall plus und No. 35 GUHEMA Bi-Co-lastic. Diese "
 "Geometrie eignet sich bestens für den allgemeinen, universellen Einsatz."
 msgstr ""
+"This tooth geometry is provided with our No. 20 GUHEMA Kristall, No. 22 "
+"GUHEMA Kristall plus and No. 35 GUHEMA Bi-Co-lastic grades. This geometry is "
+"ideal for universal, general purpose use."
 
 #: products/templates/products/metallsagebander/advices.html:45
 #: products/templates/products/metallsagebander/details.html:416
 msgid "Klauenzahn"
-msgstr ""
+msgstr "Hook tooth"
 
 #: products/templates/products/metallsagebander/advices.html:47
 msgid ""
@@ -1318,10 +1406,13 @@ msgid ""
 "Einsatzgebiete dieser Geometrie sind die austenitischen und rostfreien "
 "Stähle."
 msgstr ""
+"This tooth geometry is available for our No. 20 GUHEMA Kristall, No. 22 "
+"GUHEMA Kristall plus and No. 35 GUHEMA Bi-Co-lastic grades. The areas of "
+"application of this geometry are the austenitic and stainless steels."
 
 #: products/templates/products/metallsagebander/advices.html:56
 msgid "Variable Verzahnung"
-msgstr ""
+msgstr "Variable toothing"
 
 #: products/templates/products/metallsagebander/advices.html:58
 msgid ""
@@ -1333,6 +1424,14 @@ msgid ""
 "Ausfallzeiten der Maschine. Der gesenkte Geräuschpegel am Arbeitsplatz ist "
 "ein von der Belegschaft oft gelobter Begleiteffekt der variablen Verzahnung."
 msgstr ""
+"The variable toothing is provided with the No. 35V GUHEMA Bi-Co-lastic "
+"grade. This V-toothing leads to an especially low-vibration cut and is "
+"suitable for bundle cutting as well as for solid materials. As the area of "
+"application for the metal bandsaw blades with V-toothing becomes "
+"significantly larger, the band changing times that would otherwise be "
+"necessary are prevented and thus the downtimes of the machine decrease. The "
+"reduced noise level at the workplace is a side effect of the variable "
+"toothing that is often praised by the workforce."
 
 #: products/templates/products/metallsagebander/advices.html:69
 msgid ""
@@ -1341,16 +1440,22 @@ msgid ""
 "Positivverzahnung erzielt höchste Zerspanungsleistungen bei einer langen "
 "Lebensdauer. Zerspanungstechnologie auf höchstem Niveau."
 msgstr ""
+"The VP-toothing is provided with the No. 35VP GUHEMA Bi-Co-lastic and No. "
+"36VP GUHEMA Bi-Co-lastic plus grades. This variable positive toothing "
+"achieves maximum machining performance with a long tool life. Machining "
+"technology at the highest level"
 
 #: products/templates/products/metallsagebander/advices.html:78
 msgid "Variable Positivverzahnung mit verstärktem Zahnrücken"
-msgstr ""
+msgstr "Variable positive toothing with reinforced tooth backing"
 
 #: products/templates/products/metallsagebander/advices.html:80
 msgid ""
 "Die variable Spezialzahnform erhalten Sie in den Qualitäten No. 33VP-D "
 "GUHEMA Bi-Co-lastic und No. 34VP-D GUHEMA Bi-Co-lastic."
 msgstr ""
+"The variable special tooth form is provided with the No. 33VP-D GUHEMA Bi-Co-"
+"lastic and No. 34VP-D GUHEMA Bi-Co-lastic grades."
 
 #: products/templates/products/metallsagebander/advices.html:82
 msgid ""
@@ -1359,10 +1464,14 @@ msgid ""
 "positive Spanwinkel trägt zur optimalen Spanbildung und somit zum sauberen "
 "Schnittverlauf bei."
 msgstr ""
+"The tooth design with the extra-strong tooth backing has been specifically "
+"developed for bundle cutting and profile as well as girder cutting. The "
+"positive cutting angle contributes to optimal chip formation and thus a "
+"clean cutting path."
 
 #: products/templates/products/metallsagebander/advices.html:91
 msgid "Hartmetall-Granulat"
-msgstr ""
+msgstr "Carbide grit coating"
 
 #: products/templates/products/metallsagebander/advices.html:93
 msgid ""
@@ -1371,10 +1480,13 @@ msgid ""
 "unterbrochene Ausführung. Diese Verzahnung punktet dort, wo übliche "
 "Sägezähne von Nachteil sind."
 msgstr ""
+"The carbide  grit  coated cutter is provided as a continuous variant with "
+"No. 40 GUHEMA HM-Granulate and as an intermittent variant with No. 41 GUHEMA "
+"HM-Granulate. This toothing succeeds where conventional saw teeth fail."
 
 #: products/templates/products/metallsagebander/advices.html:102
 msgid "Positivverzahnung"
-msgstr ""
+msgstr "Positive toothing"
 
 #: products/templates/products/metallsagebander/advices.html:104
 msgid ""
@@ -1383,6 +1495,10 @@ msgid ""
 "Hartmetallklasse entwickelt worden. Abrasive Werkstücke sind hiermit "
 "trennbar, wie auch versandete Gusswerkstücke."
 msgstr ""
+"The positive toothing is provided with the No. 44p GUHEMA HM-Teeth and 45P "
+"GUHEMA HM-Teeth grades. This toothing has been developed to bridge the "
+"transition to the hard metal class. Abrasive workpieces as well as silted "
+"cast iron workpieces can be separated with this toothing."
 
 #: products/templates/products/metallsagebander/advices.html:115
 msgid ""
@@ -1391,10 +1507,14 @@ msgid ""
 "aufgebaut, die mit Vor- und Nachschneidern versehen ist. Diese Verzahnung "
 "erzielt höchste Schnittgeschwindigkeit sowie höchste Standzeit."
 msgstr ""
+"The variable positive toothing is provided with the No. 46VP GUHEMA HM-Teeth "
+"grade. The variable tooth sequence is constructed with ground hard metal "
+"teeth that are provided with pre- and finishing cutters. This toothing "
+"achieves the maximum cutting speed and maximum service life."
 
 #: products/templates/products/metallsagebander/advices.html:124
 msgid "Variable Negativverzahnung"
-msgstr ""
+msgstr "Variable negative toothing"
 
 #: products/templates/products/metallsagebander/advices.html:126
 msgid ""
@@ -1403,10 +1523,14 @@ msgid ""
 "spanen von extrem harten Werkstücken. Diese Spezialverzahnung findet zum "
 "Beispiel Ihren Einsatz bei randschichtgehärteten Wellen."
 msgstr ""
+"The variable negative toothing is provided with the No. 47VN GUHEMA HM-Teeth "
+"grade. The negatively ground hard metal teeth allow for the machining of "
+"extremely hard workpieces. This special toothing is, for example, used for "
+"surface hardened shafts."
 
 #: products/templates/products/metallsagebander/advices.html:136
 msgid "Welche Sägebandbreite benötige ich?"
-msgstr ""
+msgstr "Which bandsaw blade width do I need?"
 
 #: products/templates/products/metallsagebander/advices.html:138
 msgid ""
@@ -1417,10 +1541,16 @@ msgid ""
 "schneidenden Radius abhängig. Die folgende Grafik gibt Ihnen optische "
 "Hilfestellung bei der Bestimmung der Sägeblattbreite."
 msgstr ""
+"Generally speaking, you should choose the maximum bandwidth that is "
+"permissible for your machine. High stability of the band with high feed "
+"forces is the advantage of this. When using metal bandsaw blades for contour "
+"cuts, the width of the bandsaw blade depends on the smallest radius to be "
+"cut. The following graphic provides a visual aid when determining the "
+"sawblade width."
 
 #: products/templates/products/metallsagebander/advices.html:144
 msgid "Unsere Empfehlungen für langen Sägespaß von Anfang an!"
-msgstr ""
+msgstr "Our recommendations for a long service life right from the start"
 
 #: products/templates/products/metallsagebander/advices.html:146
 msgid ""
@@ -1428,10 +1558,13 @@ msgid ""
 "wichtigen Spielregeln zwischen Werkstück, Maschine und Sägeband zu beachten, "
 "um optimale Schnittergebnisse zu erhalten:"
 msgstr ""
+"When using GUHEMA metal bandsaw blades, we recommend only a few, but very "
+"important rules concerning the workpiece, machine and bandsaw blade in order "
+"to achieve optimal cutting results:"
 
 #: products/templates/products/metallsagebander/advices.html:150
 msgid "Einfahren von Bi-Metall Sägebändern"
-msgstr ""
+msgstr "Running in process of bi-metal bandsaw blades"
 
 #: products/templates/products/metallsagebander/advices.html:152
 #, python-format
@@ -1440,23 +1573,28 @@ msgid ""
 "der Anfangszeit die Vorschubgeschwindigkeit auf 50%% des empfohlenen "
 "Vorschubs."
 msgstr ""
+"Select the recommended cutting speed and reduce the feed speed to 50%% of "
+"the recommended feed during the run-in period."
 
 #: products/templates/products/metallsagebander/advices.html:155
 #: products/templates/products/metallsagebander/advices.html:175
 msgid "Bei großen Querschnitten halten Sie dies für 15 min bei."
-msgstr ""
+msgstr "In case of large cross-sections, keep this for 15 minutes."
 
 #: products/templates/products/metallsagebander/advices.html:156
 msgid ""
 "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm2 mit dieser "
 "Einstellung zerspanen."
 msgstr ""
+"In case of small workpiece dimensions, you should machine around 300 "
+"cm<sup></sup> with this setting."
 
 #: products/templates/products/metallsagebander/advices.html:159
 msgid ""
 "Bei Schwingungsgeräuschen oder Vibrationen an der Maschine reduzieren Sie "
 "die Schnittgeschwindigkeit."
 msgstr ""
+"Reduce the cutting speed in case of vibration noise or machine vibrations."
 
 #: products/templates/products/metallsagebander/advices.html:162
 msgid ""
@@ -1603,6 +1741,12 @@ msgstr ""
 
 #: products/templates/products/metallsagebander/advices.html:732
 msgid "Aluminiumbronze"
+msgstr ""
+
+#: products/templates/products/metallsagebander/overview.html:72
+#: products/templates/products/metallstichsageblatter/overview.html:43
+#: products/templates/products/metallstichsageblatter/overview.html:72
+msgid "Details"
 msgstr ""
 
 #: products/templates/products/pendelhubstichsageblatter/overview.html:50

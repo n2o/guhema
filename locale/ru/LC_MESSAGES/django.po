@@ -7,10 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-06 18:11+0000\n"
-"PO-Revision-Date: 2016-02-06 19:10+0100\n"
-"Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2016-02-04 16:35+0000\n"
+"PO-Revision-Date: 2016-02-07 00:26+0100\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,6 +16,8 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
+"Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
+"Language-Team: \n"
 "X-Generator: Poedit 1.8.6\n"
 
 #: contact/templates/contact/email.html:8 templates/base.html.py:55
@@ -363,27 +363,27 @@ msgstr "код"
 
 #: products/models.py:197
 msgid "Typ Beschreibung"
-msgstr ""
+msgstr "описание типа"
 
 #: products/models.py:198
 msgid "2. Typ"
-msgstr ""
+msgstr "второй тип"
 
 #: products/models.py:199
 msgid "2. Typ Beschreibung"
-msgstr ""
+msgstr "Второе описание типа"
 
 #: products/models.py:200
 msgid "2. Produktabbildung"
-msgstr ""
+msgstr "Второе изображение продукта"
 
 #: products/models.py:201
 msgid "Seitentitel"
-msgstr ""
+msgstr "Заголовок страницы"
 
 #: products/models.py:202
 msgid "Spalten"
-msgstr ""
+msgstr "столбцы"
 
 #: products/models.py:205
 msgid "Sägeband"
@@ -395,65 +395,65 @@ msgstr "Пильные лентыдля металла"
 
 #: products/models.py:212
 msgid "Zahnteilung (ZpZ)"
-msgstr ""
+msgstr "Шаг зубьев (з/д)"
 
 #: products/models.py:213
 msgid "Sägeblattlänge (in mm)"
-msgstr ""
+msgstr "Длина пильного полотна (мм)"
 
 #: products/models.py:214
 msgid "Schnittbereich Metall (in mm)"
-msgstr ""
+msgstr "Диапазон резки металла (мм)"
 
 #: products/models.py:215
 msgid "Schnittbereich Holz (in mm)"
-msgstr ""
+msgstr " Диапазон древесины  резк (мм)"
 
 #: products/models.py:218
 msgid "Pendelhubstichsägeblatt"
-msgstr ""
+msgstr "Полотна для электролобзиков"
 
 #: products/models.py:219
 msgid "Pendelhubstichsägeblätter"
-msgstr ""
+msgstr "Полотна для электролобзиков"
 
 #: products/models.py:227
 msgid "Bohrung (in mm)"
-msgstr ""
+msgstr "отверстие (мм)"
 
 #: products/models.py:244
 msgid "Metallkreissägeblatt-Kennziffer"
-msgstr ""
+msgstr "Круглые пильные полотна для металла металла код"
 
 #: products/models.py:245
 msgid "Metallkreissägeblatt-Kennziffern"
-msgstr ""
+msgstr "Круглые пильные полотна для металла металла код"
 
 #: products/models.py:253
 msgid "Metallkreissägeblatt"
-msgstr ""
+msgstr "Круглые пильные полотна для металла"
 
 #: products/models.py:254
 #: products/templates/products/metallkreissageblatter/advices.html:8
 msgid "Metallkreissägeblätter"
-msgstr ""
+msgstr "Круглые пильные полотна для металла"
 
 #: products/templates/products/include_available_teeth.html:6
 msgid "lieferbare Verzahnung"
-msgstr ""
+msgstr "поставляемых зубья"
 
 #: products/templates/products/includes/general_advice_sawblades.html:8
 #: products/templates/products/lochsagen/overview.html:20
 #: products/templates/products/metallkreissageblatter/overview.html:21
 #: products/templates/products/metallsagebander/overview.html:19
 msgid "Zu unseren Empfehlungen"
-msgstr ""
+msgstr "Наши рекомендации"
 
 #: products/templates/products/includes/general_advice_sawblades.html:22
 #: products/templates/products/lochsagen/overview.html:24
 #: products/templates/products/metallkreissageblatter/overview.html:34
 msgid "Material, Qualitäten und Einsatzbereiche"
-msgstr ""
+msgstr "Материал, качество и сферы применения"
 
 #: products/templates/products/includes/general_advice_sawblades.html:24
 msgid ""
@@ -462,100 +462,115 @@ msgid ""
 "Spitzenprodukte – nichts geht durch unsere Eingangskontrolle, das nicht die "
 "Note „Sehr gut“ verdient."
 msgstr ""
+"Наше стремление к идеальному качеству резки начинается с выбора исходного "
+"сырья: основополагающее правило для наших первоклассных изделий – то, что не "
+"заслуживает оценки «отлично», ни в коем случае не пройдет наш входной "
+"контроль."
 
 #: products/templates/products/includes/general_advice_sawblades.html:27
 msgid ""
 "Erstklassiges Rohmaterial ist bei GUHEMA die Basis für präzises, schnelles "
 "und wirtschaftliches Sägen mit"
 msgstr ""
+"Первоклассное сырье является для компании GUHEMA основой точной, быстрой и "
+"экономичной резки с"
 
 #: products/templates/products/includes/general_advice_sawblades.html:30
 msgid "hohen Stand- und kurzen Schnittzeiten"
-msgstr ""
+msgstr "высокой стойкостью и малым временем резки;"
 
 #: products/templates/products/includes/general_advice_sawblades.html:31
 msgid "langer Lebensdauer"
-msgstr ""
+msgstr "продолжительным сроком службы;"
 
 #: products/templates/products/includes/general_advice_sawblades.html:32
 msgid "optimaler Schonung Ihrer Sägemaschine"
-msgstr ""
+msgstr "оптимальной нагрузкой на пильный станок."
 
 #: products/templates/products/includes/general_advice_sawblades.html:35
 msgid ""
 "Für die unterschiedlichsten Einsatzbereiche führen wir die passenden "
 "Qualitäten"
 msgstr ""
+"Наш ассортимент включает пильные полотна подходящего качества для самых "
+"разных сфер применения"
 
 #: products/templates/products/includes/general_advice_sawblades.html:45
 #: products/templates/products/metallkreissageblatter/overview.html:46
 #, python-format
 msgid "DMo 5 Qualität (Werkstoff-Nr. %(num)s)"
-msgstr ""
+msgstr "Марка стали DMo5 (No материала %(num)s)"
 
 #: products/templates/products/includes/general_advice_sawblades.html:49
 #: products/templates/products/includes/general_advice_sawblades.html:78
 msgid "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>"
-msgstr ""
+msgstr "Для материалов с прочностью на разрыв 1100 Н/мм<sup>2</sup>"
 
 #: products/templates/products/includes/general_advice_sawblades.html:59
 #: products/templates/products/metallkreissageblatter/overview.html:60
 #, python-format
 msgid "EMo 5 Co 5 Qualität (Werkstoff-Nr. %(num)s)"
-msgstr ""
+msgstr "Марка стали EMo5 Co5 (No материала %(num)s)"
 
 #: products/templates/products/includes/general_advice_sawblades.html:63
 msgid ""
 "Für extrem harte Werkstoffe bis 1300 N/mm<sup>2</sup> z.B. austenitische "
 "Stähle und Stähle mit hohem Chrom-Nickelgehalt"
 msgstr ""
+"Для очень твердых материалов 1300 Н/мм<sup>2</sup>, таких как аустенитные "
+"стали и стали с высоким содержанием хрома и никеля"
 
 #: products/templates/products/includes/general_advice_sawblades.html:74
 #, python-format
 msgid ""
 "DMo 5 Schneidenqualität (Werkstoff-Nr. %(num)s) auf einem Sonderstahlrücken"
 msgstr ""
+"Режущая кромка DMo5 (No материала %(num)s) на основании из специальной стали"
 
 #: products/templates/products/includes/general_advice_sawblades.html:83
 msgid "Die Wahl der richtigen Zahnform"
-msgstr ""
+msgstr "Выбор правильной формы зубьев"
 
 #: products/templates/products/includes/general_advice_sawblades.html:85
 msgid ""
 "Unsere GUHEMA-Maschinensägeblätter haben erst durch die richtige Zahnform "
 "den optimalen Biss. Wir liefern:"
 msgstr ""
+"Наши станочные пильные полотна GUHEMA обеспечивают оптимальный распил "
+"благодаря правильной форме зубьев.\n"
+"Мы предлагаем:"
 
 #: products/templates/products/includes/general_advice_sawblades.html:91
 #: products/templates/products/maschinensageblatter/details.html:58
 #: products/templates/products/metallstichsageblatter/details.html:58
 msgid "Normalzahn"
-msgstr ""
+msgstr "Стандартные зубья"
 
 #: products/templates/products/includes/general_advice_sawblades.html:94
 msgid "Für den allgemeinen, universellen Einsatz"
-msgstr ""
+msgstr "Для общего, универсального применения"
 
 #: products/templates/products/includes/general_advice_sawblades.html:105
 #: products/templates/products/maschinensageblatter/details.html:64
 #: products/templates/products/metallstichsageblatter/details.html:64
 msgid "Positivzahn"
-msgstr ""
+msgstr "Зубья с положительным передним угло"
 
 #: products/templates/products/includes/general_advice_sawblades.html:108
 msgid "Der austenitische, zähharte Stähle trennt"
-msgstr ""
+msgstr "Режут аустенитные, вязкотвердые стали"
 
 #: products/templates/products/includes/general_advice_sawblades.html:119
 #: products/templates/products/metallsagebander/advices.html:67
 #: products/templates/products/metallsagebander/advices.html:113
 msgid "Variable Positivverzahnung"
-msgstr ""
+msgstr "Зубья с переменным шагом и положительным передним углом"
 
 #: products/templates/products/includes/general_advice_sawblades.html:122
 msgid ""
 "GUHEMA FUTURE, die keine Wünsche an ein Maschinensägeblatt mehr offen lässt"
 msgstr ""
+"GUHEMA FUTURE – все, что Вы хотели получить от станочных пильных полотен"
 
 #: products/templates/products/index.html:9
 #: products/templates/products/maschinensageblatter/overview.html:20
@@ -563,17 +578,17 @@ msgstr ""
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:18
 #: templates/base.html:52
 msgid "Produkte"
-msgstr ""
+msgstr "Продукты"
 
 #: products/templates/products/index.html:32
 msgid "Zu den Produkten"
-msgstr ""
+msgstr "См продукты"
 
 #: products/templates/products/lochsagen/advices.html:14
 #: products/templates/products/maschinensageblatter/advices.html:18
 #: products/templates/products/metallkreissageblatter/advices.html:12
 msgid "Unsere Empfehlung für langen Sägespaß"
-msgstr ""
+msgstr "Наши рекомендации по обеспечению продолжительного срока службы"
 
 #: products/templates/products/lochsagen/advices.html:16
 msgid ""
@@ -582,10 +597,13 @@ msgid ""
 "vergessen Sie des Weiteren nicht die permanente Kühlung der Lochsäge während "
 "des Schneidprozesses."
 msgstr ""
+"Чтобы оптимизировать срок службы кольцевой пилы и качество пропила, "
+"настройте число оборотов в соответствии со следующими рекомендациями. Кроме "
+"того, не забывайте о постоянном охлаждении кольцевой пилы во время резки."
 
 #: products/templates/products/lochsagen/advices.html:27
 msgid "ALU"
-msgstr ""
+msgstr "АЛЮМИНИЙ"
 
 #: products/templates/products/lochsagen/overview.html:26
 msgid ""
@@ -596,12 +614,19 @@ msgid ""
 "und Verbundwerkstoffen erzielen unsere hartmetallbeschichteten Lochsägen "
 "beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine Wünsche offen."
 msgstr ""
+"Наши биметаллические кольцевые пилы отличают точность – результат применения "
+"массивной верхней пластины, продолжительный срок службы и плавность хода, "
+"которая обеспечивается оптимально отводящими стружку зубьями с переменным "
+"шагом. Наши кольцевые пилы с мелкими зубьями великолепно подходят для резки "
+"тонкостенных материалов. Наши кольцевые пилы с твердосплавным покрытием "
+"обеспечивают высочайшую эффективность при резке минеральных и композитных "
+"материалов. Эта линейка продукции выполняет все желания."
 
 #: products/templates/products/lochsagen/overview.html:40
 #: products/templates/products/lochsagen/overview.html:57
 #, python-format
 msgid "Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. %(num)s)"
-msgstr ""
+msgstr "Биметаллические, с лезвием HSS из M42 (No материала %(num)s)"
 
 #: products/templates/products/lochsagen/overview.html:44
 #: products/templates/products/lochsagen/overview.html:61
@@ -616,52 +641,52 @@ msgstr ""
 #: products/templates/products/metallstichsageblatter/details.html:53
 #: products/templates/products/pendelhubstichsageblatter/overview.html:75
 msgid "ZpZ"
-msgstr ""
+msgstr "з/д"
 
 #: products/templates/products/lochsagen/overview.html:44
 msgid "das Allroundtalent"
-msgstr ""
+msgstr "универсальные"
 
 #: products/templates/products/lochsagen/overview.html:61
 msgid "für dünnwandiges Material"
-msgstr ""
+msgstr "для тонкостенных материалов"
 
 #: products/templates/products/lochsagen/overview.html:75
 msgid "Zähne mit Hartmetallgranulat beschichtet"
-msgstr ""
+msgstr "Зубья, покрытые твердосплавными гранулами"
 
 #: products/templates/products/lochsagen/overview.html:79
 msgid "Für mineralische Werkstoffe"
-msgstr ""
+msgstr "Для резки минеральных материалов"
 
 #: products/templates/products/lochsagen/overview.html:85
 #: products/templates/products/maschinensageblatter/details.html:20
 #: products/templates/products/metallsagebander/details.html:22
 #: products/templates/products/metallstichsageblatter/details.html:20
 msgid "Der schnelle Weg zu unserer Artikel-Nr."
-msgstr ""
+msgstr "Быстрый способ узнать наш артикульный номер"
 
 #: products/templates/products/lochsagen/overview.html:86
 #: products/templates/products/maschinensageblatter/advices.html:100
 #: products/templates/products/metallstichsageblatter/details.html:21
 msgid "Qualität"
-msgstr ""
+msgstr "марка стали"
 
 #: products/templates/products/lochsagen/overview.html:87
 #: products/templates/products/maschinensageblatter/details.html:22
 msgid "z.B.:"
-msgstr ""
+msgstr "например:"
 
 #: products/templates/products/lochsagen/overview.html:97
 msgid "Zentriereinheiten"
-msgstr ""
+msgstr "Центровые сверла"
 
 #: products/templates/products/lochsagen/overview.html:106
 #: products/templates/products/lochsagen/overview.html:132
 #: products/templates/products/lochsagen/overview.html:162
 #: products/templates/products/metallhandsageblatter/overview.html:130
 msgid "Bestell-Nr."
-msgstr ""
+msgstr "No для заказа"
 
 #: products/templates/products/lochsagen/overview.html:114
 #: products/templates/products/lochsagen/overview.html:140
@@ -678,24 +703,24 @@ msgstr ""
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:87
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:90
 msgid "mm"
-msgstr ""
+msgstr "мм"
 
 #: products/templates/products/lochsagen/overview.html:154
 msgid "Zubehör / Ersatzteile"
-msgstr ""
+msgstr "Принадлежности/запчасти"
 
 #: products/templates/products/lochsagen/overview.html:183
 msgid "Durchmesser"
-msgstr ""
+msgstr "диаметр"
 
 #: products/templates/products/lochsagen/overview.html:194
 #: products/templates/products/maschinensageblatter/details.html:139
 msgid "in mm"
-msgstr ""
+msgstr "в мм"
 
 #: products/templates/products/maschinensageblatter/advices.html:8
 msgid "Maschinensägeblätter"
-msgstr ""
+msgstr "Станочные пильные полотна"
 
 #: products/templates/products/maschinensageblatter/advices.html:13
 msgid ""
@@ -703,12 +728,18 @@ msgid ""
 "dem Markt. Unser Programm umfasst sowohl die Standardvarianten, als auch die "
 "Kasto-Aufnahme und Sägeblätter aus Bi-Metall. Getreu dem Motto:"
 msgstr ""
+"Мы производим пильные полотна для всех типов пильных станков, представленных "
+"на рынке. Наш ассортимент включает как стандартные полотна, так и пильные "
+"полотна с креплением Kasto и биметаллические пильные полотна. В соответствии "
+"с девизом:"
 
 #: products/templates/products/maschinensageblatter/advices.html:15
 msgid ""
 "Wir liefern Ihnen das Maschinensägeblatt, das bei Ihnen zum optimalen "
 "Sägeergebnis führt!"
 msgstr ""
+"Мы поставляем станочные пильные полотна, которые  гарантируют оптимальный "
+"результат"
 
 #: products/templates/products/maschinensageblatter/advices.html:22
 msgid ""
@@ -716,18 +747,21 @@ msgid ""
 "aber wichtigen Spielregeln zwischen Werkstück und Sägeblatt zu beachten, um "
 "optimale Schnittergebnisse zu erhalten:"
 msgstr ""
+"При применении станочных пильных полотен GUHEMA мы рекомендуем соблюдать "
+"несколько важных правил в отношении детали и полотна для получения "
+"оптимальных результатов резки:"
 
 #: products/templates/products/maschinensageblatter/advices.html:25
 msgid "Sägen Sie nie über Eck an."
-msgstr ""
+msgstr "Не выполняйте врезание под углом."
 
 #: products/templates/products/maschinensageblatter/advices.html:26
 msgid "Sägen Sie stets mit Kühlung."
-msgstr ""
+msgstr "Всегда используйте охлаждение."
 
 #: products/templates/products/maschinensageblatter/advices.html:27
 msgid "Spannen Sie das Werkstück fest und verdrehsicher ein."
-msgstr ""
+msgstr "Надежно зажимайте заготовку без возможности поворота."
 
 #: products/templates/products/maschinensageblatter/advices.html:28
 #, python-format
@@ -735,24 +769,30 @@ msgid ""
 "Ein neues Maschinensägeblatt muss eingefahren werden. Reduzieren Sie in der "
 "Anfangszeit den Schnittdruck um ca. 50%%."
 msgstr ""
+"Новое станочное пильное полотно нуждается в приработке. На это время "
+"уменьшите усилие резания примерно на 50%%."
 
 #: products/templates/products/maschinensageblatter/advices.html:29
 msgid "Entfernen Sie mögliche mineralische Rückstände vom Werkstück."
-msgstr ""
+msgstr "Удалите с детали возможные минеральные остатки."
 
 #: products/templates/products/maschinensageblatter/advices.html:30
 msgid "Kontrollieren Sie von Zeit zu Zeit die Sägeblattspannung."
-msgstr ""
+msgstr "Периодически контролируйте натяжение пильного полотна."
 
 #: products/templates/products/maschinensageblatter/advices.html:31
 msgid ""
 "Wechseln Sie frühzeitig Ihr Metallsägeblatt! Bestes Indiz: deutlicher "
 "Anstieg der Schnittzeit."
 msgstr ""
+"Своевременно заменяйте пильное полотно! Надежный показатель: существенное "
+"увеличение времени резки."
 
 #: products/templates/products/maschinensageblatter/advices.html:32
 msgid "Warten Sie Ihre Metallsäge nach den Vorgaben des Herstellers."
 msgstr ""
+"Осуществляйте техническое обслуживание пилы по металлу согласно требованиям "
+"производителя."
 
 #: products/templates/products/maschinensageblatter/advices.html:33
 msgid ""
@@ -760,6 +800,8 @@ msgid ""
 "dem Werkstück an. Das folgende Diagramm sowie die Tabelle dienen als "
 "Orientierung."
 msgstr ""
+"Адаптируйте усилие резания, скорость резки и число зубьев с учетом "
+"характеристик детали. В этом Вам помогут следующий график и таблица."
 
 #: products/templates/products/maschinensageblatter/advices.html:34
 #, python-format
@@ -769,83 +811,90 @@ msgid ""
 "muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein "
 "Brummton zu hören ist."
 msgstr ""
+"При использовании зубьев с положительным передним углом и Future начинайте "
+"резать с усилием, равным прибл. 50%% от обычного усилия. Если пильное "
+"полотно полностью вошло в материал, необходимо постоянно повышать усилие, "
+"при этом не должно быть пульсирующего шума."
 
 #: products/templates/products/maschinensageblatter/advices.html:43
 msgid "Faustregel"
-msgstr ""
+msgstr "Практическое правило:"
 
 #: products/templates/products/maschinensageblatter/advices.html:45
 #: products/templates/products/maschinensageblatter/advices.html:75
 msgid "Schnittgeschwindigkeit"
-msgstr ""
+msgstr "скорость резки"
 
 #: products/templates/products/maschinensageblatter/advices.html:45
 msgid "Hubweg (m)"
-msgstr ""
+msgstr "длина хода (м)"
 
 #: products/templates/products/maschinensageblatter/advices.html:46
 msgid "Hubzahl/min"
-msgstr ""
+msgstr "число ходов/мин"
 
 #: products/templates/products/maschinensageblatter/advices.html:54
 #: products/templates/products/maschinensageblatter/advices.html:56
 msgid "Schnittdatenempfehlung"
-msgstr ""
+msgstr "Рекомендуемые"
 
 #: products/templates/products/maschinensageblatter/advices.html:57
 msgid ""
 "bei Vollmaterial im normal geglühten Zustand für GUHEMA-Maschinensägeblätter "
 "basierend auf einer Hublänge von 200 mm."
 msgstr ""
+" параметры резки сплошного материала в нормально закаленном состоянии для "
+"станочных пильных полотен GUHEMA при длине хода 200 мм."
 
 #: products/templates/products/maschinensageblatter/advices.html:60
 msgid ""
 "Für Rohre und Profile Schnittdruck entsprechend der Wandstärke reduzieren."
 msgstr ""
+"При резке труб и профилей уменьшите усилие резания с учетом толщины стенок."
 
 #: products/templates/products/maschinensageblatter/advices.html:67
 msgid "Material"
-msgstr ""
+msgstr "Название"
 
 #: products/templates/products/maschinensageblatter/advices.html:71
 msgid "bei Materialabmessungen"
-msgstr ""
+msgstr "при размерах материала"
 
 #: products/templates/products/maschinensageblatter/advices.html:78
 msgid "Blatt"
-msgstr ""
+msgstr "Полотно"
 
 #: products/templates/products/maschinensageblatter/advices.html:88
 msgid "bis"
-msgstr ""
+msgstr "до"
 
 #: products/templates/products/maschinensageblatter/advices.html:92
 msgid "über"
-msgstr ""
+msgstr "свыше"
 
 #: products/templates/products/maschinensageblatter/advices.html:95
 msgid "Schnittdruck"
-msgstr ""
+msgstr "Усилие резания"
 
 #: products/templates/products/maschinensageblatter/advices.html:97
 msgid "je nach Materialstärke"
-msgstr ""
+msgstr "в зависимости от толщины материала"
 
 #: products/templates/products/maschinensageblatter/advices.html:103
 msgid "Zahnform"
-msgstr ""
+msgstr "Форма зуба"
 
 #: products/templates/products/maschinensageblatter/advices.html:127
 msgid "Hübe / min"
-msgstr ""
+msgstr "Количество ходов/мин"
 
 #: products/templates/products/maschinensageblatter/advices.html:130
 msgid "m / min"
-msgstr ""
+msgstr "м/мин"
 
 #: products/templates/products/maschinensageblatter/advices.html:140
 msgid "unleg. Stähle/Baustähle"
-msgstr ""
+msgstr "нелег. стали/конструкционные стали"
 
 #: products/templates/products/maschinensageblatter/advices.html:146
 #: products/templates/products/metallsagebander/advices.html:251
@@ -853,7 +902,7 @@ msgstr ""
 #: products/templates/products/metallsagebander/advices.html:277
 #: products/templates/products/metallsagebander/advices.html:290
 msgid "Einsatzstähle"
-msgstr ""
+msgstr "цементуемые стали"
 
 #: products/templates/products/maschinensageblatter/advices.html:146
 #: products/templates/products/maschinensageblatter/advices.html:184
@@ -863,12 +912,12 @@ msgstr ""
 #: products/templates/products/maschinensageblatter/advices.html:332
 #: products/templates/products/metallstichsageblatter/details.html:22
 msgid "z.B."
-msgstr ""
+msgstr "например"
 
 #: products/templates/products/maschinensageblatter/advices.html:160
 #: products/templates/products/maschinensageblatter/advices.html:462
 msgid "niedrig"
-msgstr ""
+msgstr "от низкого"
 
 #: products/templates/products/maschinensageblatter/advices.html:164
 #: products/templates/products/maschinensageblatter/advices.html:178
@@ -886,18 +935,18 @@ msgstr ""
 #: products/templates/products/maschinensageblatter/advices.html:444
 #: products/templates/products/maschinensageblatter/advices.html:466
 msgid "normal"
-msgstr ""
+msgstr "стандартная"
 
 #: products/templates/products/maschinensageblatter/advices.html:174
 msgid "bis mittel"
-msgstr ""
+msgstr "до среднего"
 
 #: products/templates/products/maschinensageblatter/advices.html:184
 #: products/templates/products/metallsagebander/advices.html:329
 #: products/templates/products/metallsagebander/advices.html:342
 #: products/templates/products/metallsagebander/advices.html:355
 msgid "Vergütungsstähle"
-msgstr ""
+msgstr "Улучшенные стали"
 
 #: products/templates/products/maschinensageblatter/advices.html:197
 #: products/templates/products/maschinensageblatter/advices.html:212
@@ -910,98 +959,98 @@ msgstr ""
 #: products/templates/products/maschinensageblatter/advices.html:408
 #: products/templates/products/maschinensageblatter/advices.html:424
 msgid "mittel"
-msgstr ""
+msgstr "среднее"
 
 #: products/templates/products/maschinensageblatter/advices.html:236
 msgid "leg. Werkzeugstähle"
-msgstr ""
+msgstr "лег. инструментальные стали"
 
 #: products/templates/products/maschinensageblatter/advices.html:273
 msgid "Schnellstähle"
-msgstr ""
+msgstr "Быстрорежущие стали"
 
 #: products/templates/products/maschinensageblatter/advices.html:301
 msgid "& höher"
-msgstr ""
+msgstr "и выше"
 
 #: products/templates/products/maschinensageblatter/advices.html:310
 msgid "nicht rostende Stähle"
-msgstr ""
+msgstr "нержавеющие стали"
 
 #: products/templates/products/maschinensageblatter/advices.html:323
 #: products/templates/products/maschinensageblatter/advices.html:345
 #: products/templates/products/maschinensageblatter/advices.html:360
 msgid "Sondervorschrift"
-msgstr ""
+msgstr "Особые условия"
 
 #: products/templates/products/maschinensageblatter/advices.html:327
 #: products/templates/products/maschinensageblatter/advices.html:349
 #: products/templates/products/maschinensageblatter/advices.html:364
 msgid "positiv"
-msgstr ""
+msgstr "положительная"
 
 #: products/templates/products/maschinensageblatter/advices.html:332
 msgid "Sonderlegierungen"
-msgstr ""
+msgstr "Специальные сплавы"
 
 #: products/templates/products/maschinensageblatter/advices.html:338
 msgid "Hastelloy-Inconel"
-msgstr ""
+msgstr "хастеллой-инконель"
 
 #: products/templates/products/maschinensageblatter/advices.html:353
 msgid "Nimonic-Titan"
-msgstr ""
+msgstr "нимоник-титан"
 
 #: products/templates/products/maschinensageblatter/advices.html:401
 #: products/templates/products/metallsagebander/advices.html:641
 #: products/templates/products/metallsagebander/advices.html:654
 msgid "Stahlguss"
-msgstr ""
+msgstr "Стальное литье"
 
 #: products/templates/products/maschinensageblatter/advices.html:417
 #: products/templates/products/metallsagebander/advices.html:667
 #: products/templates/products/metallsagebander/advices.html:680
 msgid "Gusseisen"
-msgstr ""
+msgstr "Чугун"
 
 #: products/templates/products/maschinensageblatter/advices.html:433
 msgid "Spezialbronzen"
-msgstr ""
+msgstr "Специальная бронза"
 
 #: products/templates/products/maschinensageblatter/advices.html:440
 msgid "mittel-hoch"
-msgstr ""
+msgstr "среднее-вы-сокое"
 
 #: products/templates/products/maschinensageblatter/advices.html:449
 msgid "NE-Metalle"
-msgstr ""
+msgstr "Цветные металлы"
 
 #: products/templates/products/maschinensageblatter/advices.html:455
 msgid "Alu-Bronze-Messing"
-msgstr ""
+msgstr "Алюминий, бронза, латунь"
 
 #: products/templates/products/maschinensageblatter/advices.html:474
 msgid "Anwendungsbereich für unsere GUHEMA Future Metallsägeblätter:"
-msgstr ""
+msgstr "Сфера применения наших пильных полотен для металла GUHEMA Future:"
 
 #: products/templates/products/maschinensageblatter/advices.html:489
 #: products/templates/products/maschinensageblatter/advices.html:493
 #: products/templates/products/maschinensageblatter/advices.html:497
 #: products/templates/products/maschinensageblatter/advices.html:501
 msgid "Materialstärken von"
-msgstr ""
+msgstr "Толщина материала"
 
 #: products/templates/products/maschinensageblatter/advices.html:505
 msgid "Materialstärken über"
-msgstr ""
+msgstr "Толщина материала свыше"
 
 #: products/templates/products/maschinensageblatter/advices.html:515
 msgid "Unsere Empfehlung für grobe Verzahnungen"
-msgstr ""
+msgstr "Наши рекомендации по поводу полотен с крупными зубьями"
 
 #: products/templates/products/maschinensageblatter/advices.html:516
 msgid "Seitlicher Fasenanschliff"
-msgstr ""
+msgstr "Шлифовка боковых кромок"
 
 #: products/templates/products/maschinensageblatter/advices.html:519
 msgid ""
@@ -1011,166 +1060,179 @@ msgid ""
 "ergibt sich eine geringere Belastung von Blatt und Maschine &#8594; "
 "Metallsägeblatt und Maschine leben länger."
 msgstr ""
+"Воспользуйтесь преимуществами шлифовки боковых кромок. Вы получите "
+"максимально аккуратные результаты резки. Шлифовка кромок предотвращает "
+"преждевременное выламывание зубьев, а благодаря тому, что стружка легко "
+"завивается,\n"
+"нагрузка на полотно и станок уменьшается &#8594; срок службы полотна и "
+"станка увеличивается."
 
 #: products/templates/products/maschinensageblatter/advices.html:522
 msgid ""
 "Den seitlichen Fasenanschliff fertigen wir bis 6 ZpZ auf Nachfrage gerne für "
 "Sie. Sprechen Sie uns an!"
 msgstr ""
+"По Вашему запросу мы выполним шлифовку боковых кромок для полотен с макс. 6 "
+"зубьями на дюйм. Обратитесь к нам!"
 
 #: products/templates/products/maschinensageblatter/advices.html:528
 msgid "Sie haben Probleme beim Sägen? – Wir haben die Antworten!"
-msgstr ""
+msgstr "Вы испытываете проблемы при резке? – У нас есть ответы!"
 
 #: products/templates/products/maschinensageblatter/advices.html:532
 msgid "Zahnbruch?"
-msgstr ""
+msgstr "Поломка зуба?"
 
 #: products/templates/products/maschinensageblatter/advices.html:533
 #: products/templates/products/maschinensageblatter/advices.html:542
 #: products/templates/products/maschinensageblatter/advices.html:556
 #: products/templates/products/maschinensageblatter/advices.html:568
 msgid "Mögliche Ursachen:"
-msgstr ""
+msgstr "Возможные причины:"
 
 #: products/templates/products/maschinensageblatter/advices.html:535
 msgid ""
 "Zu niedrige Zähnezahl gewählt. Mindestens 3 Zähne sollten gleichzeitig im "
 "Eingriff sein, auch bei Rohren und Profilen."
 msgstr ""
+"Выбрано слишком малое число зубьев. В зацеплении должно быть не менее 3 "
+"зубьев одновременно, даже при резке труб и профилей."
 
 #: products/templates/products/maschinensageblatter/advices.html:536
 msgid "Über Eck angesägt."
-msgstr ""
+msgstr "Врезание осуществлялось на углу."
 
 #: products/templates/products/maschinensageblatter/advices.html:537
 msgid "Falsche Einspannung des Werkstücks."
-msgstr ""
+msgstr "Неправильный зажим детали."
 
 #: products/templates/products/maschinensageblatter/advices.html:541
 msgid "Blattbruch?"
-msgstr ""
+msgstr "Поломка полотна?"
 
 #: products/templates/products/maschinensageblatter/advices.html:544
 msgid "Schnittkanal wurde zusammengedrückt und blockierte das Sägeblatt."
-msgstr ""
+msgstr "Пропил был сжат и заблокировал пильное полотно."
 
 #: products/templates/products/maschinensageblatter/advices.html:545
 #: products/templates/products/maschinensageblatter/advices.html:570
 msgid "Falsche Blattspannung."
-msgstr ""
+msgstr "Неправильное натяжение полотна."
 
 #: products/templates/products/maschinensageblatter/advices.html:546
 msgid "Zu grobe Verzahnung für das Werkstück gewählt."
-msgstr ""
+msgstr "Выбраны слишком крупные зубья для этой детали."
 
 #: products/templates/products/maschinensageblatter/advices.html:547
 #: products/templates/products/maschinensageblatter/advices.html:572
 msgid "Zu hoher Schnittdruck."
-msgstr ""
+msgstr "Слишком большое усилие резания."
 
 #: products/templates/products/maschinensageblatter/advices.html:548
 #: products/templates/products/maschinensageblatter/advices.html:573
 msgid "Verschlissene Führungslager in der Maschine."
-msgstr ""
+msgstr "Изношенные центрирующие подшипники в станке."
 
 #: products/templates/products/maschinensageblatter/advices.html:555
 msgid "Vorzeitiges Abstumpfen der Zähne?"
-msgstr ""
+msgstr "Преждевременно затупились зубья?"
 
 #: products/templates/products/maschinensageblatter/advices.html:558
 msgid "Zu feine Verzahnung gewählt."
-msgstr ""
+msgstr " Выбраны слишком мелкие зубья."
 
 #: products/templates/products/maschinensageblatter/advices.html:559
 msgid "Zu hohe Schnittgeschwindigkeit für das Werkstück gewählt."
-msgstr ""
+msgstr "Выбрана слишком высокая скорость резки для этой детали."
 
 #: products/templates/products/maschinensageblatter/advices.html:560
 msgid ""
 "Zu hoher Druck (erhöhte Zahnbelastung) oder zu niedriger Druck (Zähne "
 "schleifen über das Werkstück, statt einen Span zu heben)."
 msgstr ""
+"Слишком большое усилие (повышенная нагрузка на зубья) или слишком слабое "
+"усилие (зубья трутся о деталь вместо того, чтобы снимать стружку)."
 
 #: products/templates/products/maschinensageblatter/advices.html:561
 msgid "Unzureichende/falsch ausgerichtete Sägeblattkühlung."
-msgstr ""
+msgstr "Недостаточное/неправильно направленное охлаждение пильного полотна."
 
 #: products/templates/products/maschinensageblatter/advices.html:562
 msgid "Falsche Sägeblattqualität gewählt."
-msgstr ""
+msgstr "Выбрано полотно неподходящего качества."
 
 #: products/templates/products/maschinensageblatter/advices.html:563
 msgid "Kein Sägeblattausheben im Rücklauf."
-msgstr ""
+msgstr "При обратном ходе пильное полотно не извлекается."
 
 #: products/templates/products/maschinensageblatter/advices.html:567
 msgid "Ungewollter Schnittverlauf?"
-msgstr ""
+msgstr "Неправильный ход пропила?"
 
 #: products/templates/products/maschinensageblatter/advices.html:571
 msgid "Zu geringe Werkstückeinspannung."
-msgstr ""
+msgstr " Неправильное натяжение полотна."
 
 #: products/templates/products/maschinensageblatter/advices.html:578
 msgid "Keine passende Antwort?"
-msgstr ""
+msgstr "Нет подходящего ответа?"
 
 #: products/templates/products/maschinensageblatter/advices.html:580
 msgid ""
 "Dann sprechen Sie mit einem Experten! Kontaktieren Sie unsere "
 "Anwendungsberatung unter"
 msgstr ""
+"Обратитесь к нашему эксперту! Свяжитесь с нашими консультантами по номеру"
 
 #: products/templates/products/maschinensageblatter/details.html:21
 #: products/templates/products/metallsagebander/details.html:23
 #: products/templates/products/metallstichsageblatter/details.html:21
 msgid "Kennziffer (Abmessung)"
-msgstr ""
+msgstr "металла код измерение"
 
 #: products/templates/products/maschinensageblatter/details.html:67
 #: products/templates/products/metallstichsageblatter/details.html:67
 msgid "Variable Positivzahnung"
-msgstr ""
+msgstr "Зубья с переменным шагом и положительным передним углом"
 
 #: products/templates/products/maschinensageblatter/details.html:71
 #: products/templates/products/metallsagebander/details.html:52
 #: products/templates/products/metallstichsageblatter/details.html:71
 msgid "Abmessungen"
-msgstr ""
+msgstr "Размер"
 
 #: products/templates/products/maschinensageblatter/details.html:94
 #: products/templates/products/metallsagebander/details.html:146
 #: products/templates/products/metallstichsageblatter/details.html:94
 msgid "in mm:"
-msgstr ""
+msgstr "в мм:"
 
 #: products/templates/products/maschinensageblatter/details.html:94
 #: products/templates/products/metallsagebander/details.html:146
 #: products/templates/products/metallstichsageblatter/details.html:94
 msgid "B x S"
-msgstr ""
+msgstr "Ш x Т"
 
 #: products/templates/products/maschinensageblatter/overview.html:42
 #: products/templates/products/metallsagebander/overview.html:72
 #: products/templates/products/metallstichsageblatter/overview.html:43
 #: products/templates/products/metallstichsageblatter/overview.html:72
 msgid "Details"
-msgstr ""
+msgstr "Детали"
 
 #: products/templates/products/metallhandsageblatter/overview.html:24
 msgid "Metallhandsägebügel"
-msgstr ""
+msgstr "Дуга ручной пилы по металлу"
 
 #: products/templates/products/metallhandsageblatter/overview.html:76
 #: products/templates/products/metallhandsageblatter/overview.html:170
 #: products/templates/products/pendelhubstichsageblatter/overview.html:100
 msgid "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
-msgstr ""
+msgstr "Произошла ошибка. Пожалуйста, повторите попытку позже."
 
 #: products/templates/products/metallhandsageblatter/overview.html:136
 msgid "Abmessung"
-msgstr ""
+msgstr "измерение"
 
 #: products/templates/products/metallkreissageblatter/advices.html:14
 msgid ""
@@ -1178,6 +1240,9 @@ msgid ""
 "wichtigen Spielregeln zwischen Werkstück, Sägeblatt und Maschine zu "
 "beachten, um optimale Schnittergebnisse zu erhalten:"
 msgstr ""
+"При применении круглых пильных полотен для металла GUHEMA мы рекомендуем "
+"соблюдать несколько важных правил в отношении детали, полотна и станка для "
+"получения оптимальных результатов резки:"
 
 #: products/templates/products/metallkreissageblatter/advices.html:17
 msgid ""
@@ -1185,11 +1250,14 @@ msgid ""
 "unsaubere Schnittflächen und ein Verlaufen des Schnittes. Wir übernehmen "
 "diese Aufgabe gerne für Sie."
 msgstr ""
+" Своевременно подтачивайте пильное полотно, это позволит избежать "
+"неаккуратных поверхностей и отклонений пропила. Мы охотно выполним эту "
+"работу для Вас."
 
 #: products/templates/products/metallkreissageblatter/advices.html:18
 msgid ""
 "Spannen Sie das Kreissägeblatt in richtiger Richtung in die Maschine ein."
-msgstr ""
+msgstr "Зажимайте круглое пильное полотно в станке в правильном положении."
 
 #: products/templates/products/metallkreissageblatter/advices.html:19
 msgid ""
@@ -1197,39 +1265,47 @@ msgid ""
 "zwischen dem Flansch und dem Sägeblatt befinden (Schnitt verläuft). Bitte "
 "verwenden Sie den passenden Flansch zum Sägeblatt."
 msgstr ""
+"При зажиме полотна следите за тем, чтобы между фланцем и пильным полотном не "
+"было стружки (отклонение пропила). Используйте фланец, подходящий для "
+"пильного полотна."
 
 #: products/templates/products/metallkreissageblatter/advices.html:20
 msgid ""
 "Spannen Sie Ihr zu bearbeitendes Werkstück möglichst über vier Punkte fest "
 "ein. Achten Sie dabei auf mögliche Späne zwischen Spannbacken und Werkstück."
 msgstr ""
+" Прочно зажимайте обрабатываемую деталь, по возможности – в четырех точках. "
+"При этом обращайте внимание на наличие стружки между зажимными кулачками и "
+"заготовкой."
 
 #: products/templates/products/metallkreissageblatter/advices.html:21
 msgid "Passen Sie die Vorschubsgeschwindigkeit der Schnittgeschwindigkeit an."
-msgstr ""
+msgstr "Адаптируйте скорость подачи к скорости резки."
 
 #: products/templates/products/metallkreissageblatter/advices.html:22
 msgid ""
 "Erhöhen Sie die Standzeit Ihres Metallkreissägeblattes erheblich, indem Sie "
 "stets mit dem passenden Kühlschmiermittel kühlen."
 msgstr ""
+"Существенно увеличьте стойкость Вашего круглого пильного полотна, используя "
+"для охлаждения подходящую смазочно-охлаждающую жидкость."
 
 #: products/templates/products/metallkreissageblatter/overview.html:36
 msgid ""
 "Nachfolgend sind unsere zwei Qualitäten aus Schnellarbeitsstahl aufgeführt:"
-msgstr ""
+msgstr "Далее приведены два наших изделия из быстрорежущей стали:"
 
 #: products/templates/products/metallkreissageblatter/overview.html:50
 msgid "Das Werkstattblatt"
-msgstr ""
+msgstr "Полотно для мастерских"
 
 #: products/templates/products/metallkreissageblatter/overview.html:64
 msgid "Für nicht rostende Stähle"
-msgstr ""
+msgstr "Для нержавеющих сталей"
 
 #: products/templates/products/metallkreissageblatter/overview.html:69
 msgid "Fühlen Sie uns auf den Zahn"
-msgstr ""
+msgstr "Попробуйте наши зубья"
 
 #: products/templates/products/metallkreissageblatter/overview.html:71
 msgid ""
@@ -1238,20 +1314,25 @@ msgid ""
 "Rolle. Ihnen stehen folgende Zahnformen zur Verfügung, die nach DIN 1840 "
 "gefertigt werden:"
 msgstr ""
+"Для идеальной резки необходимо оптимально согласовать все факторы. При этом "
+"важную роль играет форма зубьев. Мы предлагаем зубья следующих форм, "
+"изготавливаемые согласно DIN 1840:"
 
 #: products/templates/products/metallkreissageblatter/overview.html:76
 msgid "Bogenzahn mit Wechselschliff"
-msgstr ""
+msgstr "Дуговой зуб с чередующейся заточкой"
 
 #: products/templates/products/metallkreissageblatter/overview.html:79
 msgid ""
 "Wir empfehlen den Bogenzahn mit Wechselschliff bei Metallkreissägeblättern "
 "bei einer feinen Zahnteilung zum Sägen von Rohren oder Profilen."
 msgstr ""
+"Мы рекомендуем дуговой зуб с чередующейся заточкой для круглых пильных "
+"полотен для металла при малом шаге зубьев для резки труб или профилей."
 
 #: products/templates/products/metallkreissageblatter/overview.html:83
 msgid "Bogenzahn mit Vor- und Nachschneider"
-msgstr ""
+msgstr "Дуговой зуб с подрезающими и зачищающими резцами"
 
 #: products/templates/products/metallkreissageblatter/overview.html:86
 msgid ""
@@ -1259,10 +1340,13 @@ msgid ""
 "Sägemaschinen und Rundtaktautomaten geeignet und empfiehlt sich bei "
 "mittleren und groben Zahnteilungen."
 msgstr ""
+"Дуговые зубья с подрезающими и зачищающими резцами предназначены для резки "
+"стали на пильных станках и автоматах с круглым делительным станком и "
+"рекомендуются при среднем и большом шаге зубьев."
 
 #: products/templates/products/metallsagebander/advices.html:8
 msgid "Metallsägebänder"
-msgstr ""
+msgstr "Пильные ленты для металла"
 
 #: products/templates/products/metallsagebander/advices.html:15
 msgid ""
@@ -1271,21 +1355,25 @@ msgid ""
 "Produktion und Werkstatt und die Hartmetall-Ausführung für "
 "Spezialanwendungen."
 msgstr ""
+"Мы производим пильные ленты для пил по металлу в трех исполнениях. "
+"Углеродные ленты для мастерских,ские ленты для производства и мастерских и "
+"твердосплавные ленты для особых случаев применения."
 
 #: products/templates/products/metallsagebander/advices.html:19
 msgid "Getreu dem Motto:"
-msgstr ""
+msgstr "В соответствии с девизом:"
 
 #: products/templates/products/metallsagebander/advices.html:20
 msgid ""
 "Wir liefern Ihnen die Metallsägebänder, die Sie zum optimalen Sägeergebnis "
 "führen."
 msgstr ""
+"Мы поставляем пильные ленты для металла, дающие оптимальные результаты."
 
 #: products/templates/products/metallsagebander/advices.html:27
 msgid ""
 "Wenn Sie optimal trennen wollen, dann sollten Sie uns auf den Zahn fühlen"
-msgstr ""
+msgstr "Для оптимальной резки Вам следует попробовать наши изделия."
 
 #: products/templates/products/metallsagebander/advices.html:30
 msgid ""
@@ -1293,11 +1381,13 @@ msgid ""
 "Materialqualitäten unserer Sägebänder die notwendige Auswahl an Zahntypen "
 "bereitgestellt:"
 msgstr ""
+"Чтобы удовлетворить любые Ваши требования, мы предлагаем не только "
+"качественный материал наших пильныхнеобходимый выбор типов зубьев:"
 
 #: products/templates/products/metallsagebander/advices.html:34
 #: products/templates/products/metallsagebander/details.html:415
 msgid "Standardzahn"
-msgstr ""
+msgstr "Стандартные зубья"
 
 #: products/templates/products/metallsagebander/advices.html:36
 msgid ""
@@ -1305,11 +1395,15 @@ msgid ""
 "Kristall, No. 22 GUHEMA Kristall plus und No. 35 GUHEMA Bi-Co-lastic. Diese "
 "Geometrie eignet sich bestens für den allgemeinen, universellen Einsatz."
 msgstr ""
+"Зубья такой геометрической формы имеют наши изделия No 20 GUHEMA Kristall, "
+"No 22 GUHEMA Kristall plus и No 35 GUHEMA Bi-Co-lastic. Зубья такой "
+"геометрической формы лучше всего подходят для общего, универсального "
+"применения."
 
 #: products/templates/products/metallsagebander/advices.html:45
 #: products/templates/products/metallsagebander/details.html:416
 msgid "Klauenzahn"
-msgstr ""
+msgstr "Зуб с наклоном в одну сторону"
 
 #: products/templates/products/metallsagebander/advices.html:47
 msgid ""
@@ -1318,10 +1412,14 @@ msgid ""
 "Einsatzgebiete dieser Geometrie sind die austenitischen und rostfreien "
 "Stähle."
 msgstr ""
+"Зубья такой геометрической формы предлагаются для изделий No 20 GUHEMA "
+"Kristall, No 22 GUHEMA Kristall plus и No 35 GUHEMA Bi-Co-lastic. Сферой "
+"применения зубьев такой геометрической формы является резка аустенитных и "
+"нержавеющих сталей."
 
 #: products/templates/products/metallsagebander/advices.html:56
 msgid "Variable Verzahnung"
-msgstr ""
+msgstr "Зубья с переменным шагом"
 
 #: products/templates/products/metallsagebander/advices.html:58
 msgid ""
@@ -1333,6 +1431,14 @@ msgid ""
 "Ausfallzeiten der Maschine. Der gesenkte Geräuschpegel am Arbeitsplatz ist "
 "ein von der Belegschaft oft gelobter Begleiteffekt der variablen Verzahnung."
 msgstr ""
+"Зубья с переменным шагом имеют изделия No 35V GUHEMA Bi-Co-lastic. Зубья с "
+"переменным шагом обеспечивают особенно низковибрационную резку и подходят "
+"как для резки материалов в связках, так и для резки сплошных материалов. "
+"Поскольку сфера применения пильных лент для металла с зубьями с переменным "
+"шагом существенно расширяется, больше не нужно тратить время на замену "
+"ленты, благодаря чему уменьшается время простоя станка. Снижение уровня шума "
+"на рабочем месте является одним из сопутствующих эффектов применения зубьев "
+"с переменным шагом, который часто отмечают сотрудники."
 
 #: products/templates/products/metallsagebander/advices.html:69
 msgid ""
@@ -1341,16 +1447,25 @@ msgid ""
 "Positivverzahnung erzielt höchste Zerspanungsleistungen bei einer langen "
 "Lebensdauer. Zerspanungstechnologie auf höchstem Niveau."
 msgstr ""
+"Зубья с переменным шагом и положительным передним углом имеют изделия No "
+"35VP GUHEMA Bi-Co-lastic и No 36VP GUHEMA Bi-Co-lastic plus. Эти зубья с "
+"переменным шагом и положительным передним углом обеспечивают максимальную "
+"производительность резания при продолжительном сроке службы. Технология "
+"резки на максимальном уровне."
 
 #: products/templates/products/metallsagebander/advices.html:78
 msgid "Variable Positivverzahnung mit verstärktem Zahnrücken"
 msgstr ""
+"Зубья с переменным шагом и положительным передним углом с усиленным "
+"основанием"
 
 #: products/templates/products/metallsagebander/advices.html:80
 msgid ""
 "Die variable Spezialzahnform erhalten Sie in den Qualitäten No. 33VP-D "
 "GUHEMA Bi-Co-lastic und No. 34VP-D GUHEMA Bi-Co-lastic."
 msgstr ""
+"Зубья специальной формы с переменным шагом имеют изделия No 33VP-D GUHEMA Bi-"
+"Co-lastic и No 34VP-D GUHEMA Bi-Co-lastic."
 
 #: products/templates/products/metallsagebander/advices.html:82
 msgid ""
@@ -1359,10 +1474,14 @@ msgid ""
 "positive Spanwinkel trägt zur optimalen Spanbildung und somit zum sauberen "
 "Schnittverlauf bei."
 msgstr ""
+"Зубья этой формы с очень прочным основанием были специаль но разработаны для "
+"резки материалов в связках, а также для резки профилей и несущих "
+"конструкций. Положительный передний угол способствует оптимальному "
+"образованию стружки, гарантируя тем самым аккуратный пропил."
 
 #: products/templates/products/metallsagebander/advices.html:91
 msgid "Hartmetall-Granulat"
-msgstr ""
+msgstr "Твердосплавные гранулы"
 
 #: products/templates/products/metallsagebander/advices.html:93
 msgid ""
@@ -1371,10 +1490,13 @@ msgid ""
 "unterbrochene Ausführung. Diese Verzahnung punktet dort, wo übliche "
 "Sägezähne von Nachteil sind."
 msgstr ""
+"Лезвие, армированное твердосплавными гранулами, имеет полотно No. 40 GUHEMA "
+"HM-Granulat в сплошном исполнении и No. 41 GUHEMA HM-Granulat в прерывистом  "
+"исполнении. Такие зубья ценятся там, где обычные зубья только мешают."
 
 #: products/templates/products/metallsagebander/advices.html:102
 msgid "Positivverzahnung"
-msgstr ""
+msgstr "Зубья с положительным передним углом"
 
 #: products/templates/products/metallsagebander/advices.html:104
 msgid ""
@@ -1383,6 +1505,10 @@ msgid ""
 "Hartmetallklasse entwickelt worden. Abrasive Werkstücke sind hiermit "
 "trennbar, wie auch versandete Gusswerkstücke."
 msgstr ""
+"Зубья с положительным передним углом имеют изделия № 44P GUHEMA HM-Zähne и "
+"45P GUHEMA HM-Zähne. Эти зубья были разработаны для перехода в класс "
+"твердосплавных полотен. С их помощью можно пилить как абразивные детали, так "
+"и металлические отливки, покрытые песком."
 
 #: products/templates/products/metallsagebander/advices.html:115
 msgid ""
@@ -1391,10 +1517,14 @@ msgid ""
 "aufgebaut, die mit Vor- und Nachschneidern versehen ist. Diese Verzahnung "
 "erzielt höchste Schnittgeschwindigkeit sowie höchste Standzeit."
 msgstr ""
+"Зубья с переменным шагом и положительным передним углом имеют изделия № 46VP "
+"GUHEMA HM-Zähne. Заточенные твердосплавные зубья, снабженные подрезающими и "
+"зачищающими резцами, имеют переменный шаг. Эти зубья обеспечивают "
+"максимальную скорость резки, а также максимальную стойкость."
 
 #: products/templates/products/metallsagebander/advices.html:124
 msgid "Variable Negativverzahnung"
-msgstr ""
+msgstr "Зубья с переменным шагом и отрицательным передним углом"
 
 #: products/templates/products/metallsagebander/advices.html:126
 msgid ""
@@ -1403,10 +1533,14 @@ msgid ""
 "spanen von extrem harten Werkstücken. Diese Spezialverzahnung findet zum "
 "Beispiel Ihren Einsatz bei randschichtgehärteten Wellen."
 msgstr ""
+"Зубья с переменным шагом и отрицательным передним углом имеют изделия № 47VN "
+"GUHEMA HM-Zähne. Заточенные твердосплавные зубья с отрицательным передним "
+"углом позволяют разрезать очень твердые детали. Эти специальные зубья "
+"применяются, например, при резке валов с закаленным граничным слоем."
 
 #: products/templates/products/metallsagebander/advices.html:136
 msgid "Welche Sägebandbreite benötige ich?"
-msgstr ""
+msgstr "ильная лента какой ширины требуется?"
 
 #: products/templates/products/metallsagebander/advices.html:138
 msgid ""
@@ -1417,10 +1551,17 @@ msgid ""
 "schneidenden Radius abhängig. Die folgende Grafik gibt Ihnen optische "
 "Hilfestellung bei der Bestimmung der Sägeblattbreite."
 msgstr ""
+"Как правило, следует выбирать полотно максимальной ширины, допустимой для "
+"станка. Преимуществом является высокая стабильность ленты при высоких "
+"усилиях подачи. При использовании пильных лент для металла для резки по "
+"контуру ширина пильного полотна зависит от минимального радиуса резки. "
+"Следующий рисунок поможет Вам при определении ширины пильного полотна."
 
 #: products/templates/products/metallsagebander/advices.html:144
 msgid "Unsere Empfehlungen für langen Sägespaß von Anfang an!"
 msgstr ""
+"Наши рекомендации по обеспечению продолжительного срока службы с самого "
+"начала!"
 
 #: products/templates/products/metallsagebander/advices.html:146
 msgid ""
@@ -1428,10 +1569,13 @@ msgid ""
 "wichtigen Spielregeln zwischen Werkstück, Maschine und Sägeband zu beachten, "
 "um optimale Schnittergebnisse zu erhalten:"
 msgstr ""
+"При применении пильных лент для металла GUHEMA мы рекомендуем соблюдать "
+"несколько важных правил в отношении детали, станка и полотна для получения "
+"оптимальных результатов резки:"
 
 #: products/templates/products/metallsagebander/advices.html:150
 msgid "Einfahren von Bi-Metall Sägebändern"
-msgstr ""
+msgstr "Приработка биметаллических пильных полотен"
 
 #: products/templates/products/metallsagebander/advices.html:152
 #, python-format
@@ -1440,23 +1584,29 @@ msgid ""
 "der Anfangszeit die Vorschubgeschwindigkeit auf 50%% des empfohlenen "
 "Vorschubs."
 msgstr ""
+"Настройте рекомендованную скорость резки и на время начального периода "
+"уменьшите скорость подачи до 50%% от рекомендуемой скорости подачи."
 
 #: products/templates/products/metallsagebander/advices.html:155
 #: products/templates/products/metallsagebander/advices.html:175
 msgid "Bei großen Querschnitten halten Sie dies für 15 min bei."
 msgstr ""
+"При резке деталей с большим поперечным сечением используйте эти настройки в "
+"течение 15 мин."
 
 #: products/templates/products/metallsagebander/advices.html:156
 msgid ""
 "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm2 mit dieser "
 "Einstellung zerspanen."
 msgstr ""
+"Детали небольших размеров необходимо разрезать с такими настройками на "
+"участке 300 см<sup>2</sup>."
 
 #: products/templates/products/metallsagebander/advices.html:159
 msgid ""
 "Bei Schwingungsgeräuschen oder Vibrationen an der Maschine reduzieren Sie "
 "die Schnittgeschwindigkeit."
-msgstr ""
+msgstr "В случае колебаний или вибраций станка уменьшите скорость резки."
 
 #: products/templates/products/metallsagebander/advices.html:162
 msgid ""
