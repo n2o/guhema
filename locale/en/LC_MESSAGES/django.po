@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-04 16:16+0000\n"
-"PO-Revision-Date: 2016-02-06 18:50+0100\n"
+"PO-Revision-Date: 2016-02-06 19:06+0100\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -315,39 +315,39 @@ msgstr "Pilot drill length"
 #: products/templates/products/lochsagen/overview.html:105
 #: products/templates/products/lochsagen/overview.html:131
 msgid "Lochsäge"
-msgstr ""
+msgstr "Hole saw"
 
 #: products/models.py:130 products/templates/products/lochsagen/advices.html:10
 msgid "Lochsägen"
-msgstr ""
+msgstr "Hole saws"
 
 #: products/models.py:137
 msgid "Aus Empfehlungstabelle?"
-msgstr ""
+msgstr "From recommendations?"
 
 #: products/models.py:138 products/templates/products/lochsagen/advices.html:23
 msgid "NIRO"
-msgstr ""
+msgstr "NIRO"
 
 #: products/models.py:139 products/templates/products/lochsagen/advices.html:24
 msgid "Guss"
-msgstr ""
+msgstr "Cast iron"
 
 #: products/models.py:140 products/templates/products/lochsagen/advices.html:25
 msgid "Stahl"
-msgstr ""
+msgstr "steel"
 
 #: products/models.py:141 products/templates/products/lochsagen/advices.html:26
 msgid "Buntmetalle"
-msgstr ""
+msgstr "Non-ferrous metals"
 
 #: products/models.py:142
 msgid "Alu"
-msgstr ""
+msgstr "ALUMINIUM"
 
 #: products/models.py:148 products/models.py:149
 msgid "Lochsägen-Durchmesser"
-msgstr ""
+msgstr "Hole saw diameter"
 
 #: products/models.py:190
 msgid "Sägeband-Kennziffer"

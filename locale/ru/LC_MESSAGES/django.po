@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-04 16:35+0000\n"
-"PO-Revision-Date: 2016-02-06 18:50+0100\n"
+"PO-Revision-Date: 2016-02-06 19:06+0100\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -315,39 +315,39 @@ msgstr "Длина центрового сверла"
 #: products/templates/products/lochsagen/overview.html:105
 #: products/templates/products/lochsagen/overview.html:131
 msgid "Lochsäge"
-msgstr ""
+msgstr "Кольцевые пилы"
 
 #: products/models.py:130 products/templates/products/lochsagen/advices.html:10
 msgid "Lochsägen"
-msgstr ""
+msgstr "Кольцевые пилы"
 
 #: products/models.py:137
 msgid "Aus Empfehlungstabelle?"
-msgstr ""
+msgstr "Из рекомендаций ?"
 
 #: products/models.py:138 products/templates/products/lochsagen/advices.html:23
 msgid "NIRO"
-msgstr ""
+msgstr "НЕРЖАВЕЮЩАЯ СТАЛЬ"
 
 #: products/models.py:139 products/templates/products/lochsagen/advices.html:24
 msgid "Guss"
-msgstr ""
+msgstr "Литье"
 
 #: products/models.py:140 products/templates/products/lochsagen/advices.html:25
 msgid "Stahl"
-msgstr ""
+msgstr "Сталь"
 
 #: products/models.py:141 products/templates/products/lochsagen/advices.html:26
 msgid "Buntmetalle"
-msgstr ""
+msgstr "Цветные металлы"
 
 #: products/models.py:142
 msgid "Alu"
-msgstr ""
+msgstr "АЛЮМИНИЙ"
 
 #: products/models.py:148 products/models.py:149
 msgid "Lochsägen-Durchmesser"
-msgstr ""
+msgstr "Кольцевые пилы диаметр"
 
 #: products/models.py:190
 msgid "Sägeband-Kennziffer"
