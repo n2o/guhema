@@ -1844,3 +1844,10 @@ msgstr "PRODUCT GROUPS"
 #~ msgstr ""
 #~ "In case of small workpiece dimensions, you should machine around 300 "
 #~ "cm<sup></sup> with this setting."
+
+#: templates/productgroups.html:12
+msgid "Metallstichsägeblätter"
+msgstr ""
+#: templates/productgroups.html:13
+msgid "Säbel- und Spezialsäbelsägeblätter"
+msgstr ""

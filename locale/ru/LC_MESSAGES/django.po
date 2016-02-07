@@ -1859,3 +1859,10 @@ msgstr "Товарные группы"
 #~ msgstr ""
 #~ "Детали небольших размеров необходимо разрезать с такими настройками на "
 #~ "участке 300 см<sup>2</sup>."
+
+#: templates/productgroups.html:12
+msgid "Metallstichsägeblätter"
+msgstr ""
+#: templates/productgroups.html:13
+msgid "Säbel- und Spezialsäbelsägeblätter"
+msgstr ""
