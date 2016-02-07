@@ -7,8 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-04 16:35+0000\n"
-"PO-Revision-Date: 2016-02-07 00:26+0100\n"
+"POT-Creation-Date: 2016-02-06 23:28+0000\n"
+"PO-Revision-Date: 2016-02-07 01:13+0100\n"
+"Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
+"Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,165 +18,165 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
-"Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.6\n"
 
 #: contact/templates/contact/email.html:8 templates/base.html.py:55
 #: templates/base.html:134
 msgid "Kontakt"
-msgstr ""
+msgstr "контакт"
 
 #: contact/templates/contact/email.html:14
 msgid ""
 "Hier haben Sie die Möglichkeit uns eine E-Mail zu senden. Bitte füllen Sie "
 "dafür alle Felder aus. Wir werden uns dann bei Ihnen melden!"
 msgstr ""
+"Вы можете отправить нам по электронной почте . Пожалуйста , заполните все "
+"поля , мы свяжемся с Вами как можно скорее!"
 
 #: contact/templates/contact/email.html:17
 msgid "Abschicken"
-msgstr ""
+msgstr "Отправить"
 
 #: contact/templates/contact/verschickt.html:5
 msgid "Wir haben Ihre E-Mail erhalten"
-msgstr ""
+msgstr "Мы получили вашу почту"
 
 #: contact/templates/contact/verschickt.html:10
 msgid "Schnellstmöglich werden wir uns bei Ihnen melden!"
-msgstr ""
+msgstr "Мы свяжемся с вами как можно скорее"
 
 #: core/settings.py:111
 msgid "German"
-msgstr ""
+msgstr "Deutsch"
 
 #: core/settings.py:112
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: core/settings.py:113
 msgid "Russian"
-msgstr ""
+msgstr "русский"
 
 #: fairs/models.py:9
 msgid "Name der Messe"
-msgstr ""
+msgstr "Название справедливо"
 
 #: fairs/models.py:10
 msgid "Veranstaltungswebsite"
-msgstr ""
+msgstr "Веб-сайт"
 
 #: fairs/models.py:11
 msgid "Veranstaltungsort"
-msgstr ""
+msgstr "место нахождения"
 
 #: fairs/models.py:12 fairs/templates/fairs/fair_style.html.py:37
 msgid "Halle"
-msgstr ""
+msgstr "зал"
 
 #: fairs/models.py:13 fairs/templates/fairs/fair_style.html.py:37
 msgid "Stand"
-msgstr ""
+msgstr "стоять"
 
 #: fairs/models.py:14 fairs/templates/fairs/fair_style.html.py:27
 msgid "Beginn"
-msgstr ""
+msgstr "начать"
 
 #: fairs/models.py:15 fairs/templates/fairs/fair_style.html.py:32
 msgid "Ende"
-msgstr ""
+msgstr "конец"
 
 #: fairs/models.py:16 products/models.py:58 products/models.py:76
 #: products/models.py:117
 #: products/templates/products/lochsagen/overview.html:161
 #: products/templates/products/maschinensageblatter/advices.html:483
 msgid "Beschreibung"
-msgstr ""
+msgstr "Описание"
 
 #: fairs/models.py:17 news/models.py:25 products/models.py:45
 msgid "Bild"
-msgstr ""
+msgstr "образ"
 
 #: fairs/models.py:18 news/models.py:26 news/templates/news/detail.html.py:23
 msgid "Anhang"
-msgstr ""
+msgstr "прикрепление"
 
 #: fairs/models.py:20 news/models.py:28
 msgid "Archiviert?"
-msgstr ""
+msgstr "архив?"
 
 #: fairs/models.py:21 news/models.py:29 products/models.py:61
 msgid "Öffentlich?"
-msgstr ""
+msgstr "общественного?"
 
 #: fairs/models.py:22 news/models.py:30
 msgid "Erstellt am"
-msgstr ""
+msgstr "созданный"
 
 #: fairs/models.py:28
 msgid "Messe"
-msgstr ""
+msgstr "ярмарки"
 
 #: fairs/models.py:29 fairs/templates/fairs/index.html.py:9
 #: templates/base.html:53
 msgid "Messen"
-msgstr ""
+msgstr "ярмарки"
 
 #: fairs/templates/fairs/fair_style.html:22
 msgid "Website"
-msgstr ""
+msgstr "Веб-сайт"
 
 #: fairs/templates/fairs/index.html:16
 msgid "Besuchen Sie uns auf folgenden Messen:"
-msgstr ""
+msgstr "Встретимся на следующих выставках:"
 
 #: fairs/templates/fairs/index.html:27
 msgid "Wir haben auf diesen Messen ausgestellt:"
-msgstr ""
+msgstr "Выставленные ярмарки:"
 
 #: news/models.py:10 products/models.py:43 products/models.py:57
 msgid "Name"
-msgstr ""
+msgstr "имя"
 
 #: news/models.py:11
 msgid "Kurzbeschreibung"
-msgstr ""
+msgstr "Краткое описание"
 
 #: news/models.py:17 news/models.py:31 products/models.py:118
 msgid "Kategorie"
-msgstr ""
+msgstr "категория"
 
 #: news/models.py:18
 msgid "Kategorien"
-msgstr ""
+msgstr "категории"
 
 #: news/models.py:22
 msgid "Titel"
-msgstr ""
+msgstr "заглавие"
 
 #: news/models.py:23
 msgid "Autor"
-msgstr ""
+msgstr "автор"
 
 #: news/models.py:24
 msgid "Inhalt"
-msgstr ""
+msgstr "содержание"
 
 #: news/models.py:41
 msgid "Eintrag"
-msgstr ""
+msgstr "вход"
 
 #: news/models.py:42
 msgid "Einträge"
-msgstr ""
+msgstr "записи"
 
 #: news/templates/news/overview.html:5 templates/base.html.py:54
 #: templates/index.html:54
 msgid "News"
-msgstr ""
+msgstr "Новости"
 
 #: products/admin.py:108
 msgid "Advanced options"
-msgstr ""
+msgstr "Расширенные опции"
 
 #: products/models.py:11 products/models.py:36 products/models.py:154
 #: products/models.py:224
@@ -182,120 +184,120 @@ msgstr ""
 #: products/templates/products/metallsagebander/details.html:53
 #: products/templates/products/metallstichsageblatter/details.html:72
 msgid "Kennziffer"
-msgstr ""
+msgstr "код"
 
 #: products/models.py:12 products/models.py:155
 msgid "Breite (in mm)"
-msgstr ""
+msgstr "ширина (мм)"
 
 #: products/models.py:13 products/models.py:156 products/models.py:226
 msgid "Stärke (in mm)"
-msgstr ""
+msgstr "прочность (мм)"
 
 #: products/models.py:14
 msgid "Länge (in mm)"
-msgstr ""
+msgstr "длина (мм)"
 
 #: products/models.py:15 products/models.py:135 products/models.py:225
 msgid "Durchmesser (in mm)"
-msgstr ""
+msgstr "диаметр (мм)"
 
 #: products/models.py:37 products/models.py:81
 msgid "Kennziffern"
-msgstr ""
+msgstr "код"
 
 #: products/models.py:51 products/models.py:78
 msgid "Aufnahme"
-msgstr ""
+msgstr "Крепление"
 
 #: products/models.py:52
 msgid "Aufnahmen"
-msgstr ""
+msgstr "Крепление"
 
 #: products/models.py:60 products/models.py:80
 msgid "Produktabbildung"
-msgstr ""
+msgstr "Изображение продукта"
 
 #: products/models.py:67 products/models.py:77
 msgid "Produktgruppe"
-msgstr ""
+msgstr "группа товаров"
 
 #: products/models.py:68
 msgid "Produktgruppen"
-msgstr ""
+msgstr "товарные группы"
 
 #: products/models.py:73 products/models.py:122
 msgid "Stahlsorte"
-msgstr ""
+msgstr "стальные мест"
 
 #: products/models.py:74
 msgid "Typ"
-msgstr ""
+msgstr "тип"
 
 #: products/models.py:75
 #: products/templates/products/maschinensageblatter/advices.html:85
 msgid "Bezeichnung"
-msgstr ""
+msgstr "обозначение"
 
 #: products/models.py:87
 msgid "Sägeblatt"
-msgstr ""
+msgstr "лезвие пилы"
 
 #: products/models.py:88
 msgid "Sägeblätter"
-msgstr ""
+msgstr "лезвия пилы"
 
 #: products/models.py:93 products/models.py:123
 #: products/templates/products/metallhandsageblatter/overview.html:133
 msgid "Verzahnung"
-msgstr ""
+msgstr "зубья"
 
 #: products/models.py:94
 #: products/templates/products/metallhandsageblatter/overview.html:139
 #: products/templates/products/pendelhubstichsageblatter/overview.html:60
 msgid "Schnittbereich Metall"
-msgstr ""
+msgstr "Диапазон резки металла"
 
 #: products/models.py:95
 #: products/templates/products/pendelhubstichsageblatter/overview.html:65
 msgid "Schnittbereich Holz"
-msgstr ""
+msgstr "Диапазон резки древесины"
 
 #: products/models.py:96
 msgid "Schnittbereich Mineralisch"
-msgstr ""
+msgstr "Диапазон резки минеральных материалов"
 
 #: products/models.py:99
 msgid "Säbelsägeblatt"
-msgstr ""
+msgstr "Полотна для сабельных пил"
 
 #: products/models.py:100
 msgid "Säbelsägeblätter"
-msgstr ""
+msgstr "Полотна для сабельных пил"
 
 #: products/models.py:105
 msgid "Zubehörartikel?"
-msgstr ""
+msgstr "аксессуар?"
 
 #: products/models.py:106 products/models.py:211
 msgid "Unterkategorie"
-msgstr ""
+msgstr "подкатегория"
 
 #: products/models.py:109
 msgid "Metallhandsägeblatt"
-msgstr ""
+msgstr "Полотна для ручных пил по металлу"
 
 #: products/models.py:110
 msgid "Metallhandsägeblätter"
-msgstr ""
+msgstr "Полотна для ручных пил по металлу"
 
 #: products/models.py:115
 msgid "Bestellnr."
-msgstr ""
+msgstr "No для заказа"
 
 #: products/models.py:116
 msgid "Abbildung"
-msgstr ""
+msgstr "образ"
 
 #: products/models.py:119
 #: products/templates/products/lochsagen/overview.html:104
@@ -1595,9 +1597,10 @@ msgstr ""
 "течение 15 мин."
 
 #: products/templates/products/metallsagebander/advices.html:156
+#: products/templates/products/metallsagebander/advices.html:176
 msgid ""
-"Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm2 mit dieser "
-"Einstellung zerspanen."
+"Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm<sup>2</sup> mit "
+"dieser Einstellung zerspanen."
 msgstr ""
 "Детали небольших размеров необходимо разрезать с такими настройками на "
 "участке 300 см<sup>2</sup>."
@@ -1613,6 +1616,8 @@ msgid ""
 "Nach dem Einfahren erhöhen Sie langsam die Vorschubgeschwindigkeit auf die "
 "empfohlenen Schnittparameter."
 msgstr ""
+"После приработки медленно повышайте скорость подачи до рекомендуемых "
+"параметров резки."
 
 #: products/templates/products/metallsagebander/advices.html:165
 #: products/templates/products/metallsagebander/advices.html:185
@@ -1621,10 +1626,13 @@ msgid ""
 "Schneidkantenausbildung, bei der die Kantenradien auf ein Minimum reduziert "
 "werden, wodurch die Zahngeometrie optimal ausgebildet wird."
 msgstr ""
+"Приработка пильной ленты ведет к оптимальному формированию режущей кромки, "
+"при котором радиусы скругления кромок сводятся к минимуму, благодаря чему "
+"формируется оптимальная геометрическая форма зубьев."
 
 #: products/templates/products/metallsagebander/advices.html:170
 msgid "Einfahren von Hartmetallsägebändern"
-msgstr ""
+msgstr "Приработка твердосплавных пильных лент"
 
 #: products/templates/products/metallsagebander/advices.html:172
 #, python-format
@@ -1633,18 +1641,16 @@ msgid ""
 "Geschwindigkeit ein und reduzieren Sie die Vorschubgeschwindigkeit um ca. "
 "50%% des empfohlenen Vorschubs."
 msgstr ""
-
-#: products/templates/products/metallsagebander/advices.html:176
-msgid ""
-"Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm<sup>2</sup> mit "
-"dieser Einstellung zerspanen."
-msgstr ""
+"Для этого настройте скорость резки на 75%% от рекомендуемой и уменьшите "
+"скорость подачи прибл. на 50%% от рекомендуемой скорости подачи."
 
 #: products/templates/products/metallsagebander/advices.html:179
 msgid ""
 "Vermeiden Sie unbedingt Schwingungsgeräusche oder Vibrationen an der "
 "Maschine durch weiteres Reduzieren der Schnittgeschwindigkeit."
 msgstr ""
+"Обязательно избегайте колебаний или вибраций станка, дополнительно уменьшая "
+"скорость резки."
 
 #: products/templates/products/metallsagebander/advices.html:182
 msgid ""
@@ -1652,65 +1658,67 @@ msgid ""
 "auf die empfohlene Geschwindigkeit. Jetzt erst erhöhen Sie die "
 "Vorschubgeschwindigkeit auf den empfohlenen Parameter."
 msgstr ""
+"После приработки сначала медленно повышайте скорость резки до рекомендуемой "
+"скорости. Лишь затем увеличьте скорость подачи до рекомендуемого значения."
 
 #: products/templates/products/metallsagebander/advices.html:194
 msgid "Werkstoffgruppe"
-msgstr ""
+msgstr "Категория материала"
 
 #: products/templates/products/metallsagebander/advices.html:195
 msgid "Werkstoffe"
-msgstr ""
+msgstr "Материалы"
 
 #: products/templates/products/metallsagebander/advices.html:196
 msgid "Werkstoffnummer"
-msgstr ""
+msgstr "Номер материала"
 
 #: products/templates/products/metallsagebander/advices.html:197
 msgid "Schnittgeschwindigkeit [m/min]"
-msgstr ""
+msgstr "Скорость резки [м/мин]"
 
 #: products/templates/products/metallsagebander/advices.html:207
 msgid "Ausführung 20er-Serie"
-msgstr ""
+msgstr "Исполнение 20-я серия"
 
 #: products/templates/products/metallsagebander/advices.html:212
 msgid "Ausführung 30er-Serie"
-msgstr ""
+msgstr "Исполнение 30-я серия"
 
 #: products/templates/products/metallsagebander/advices.html:217
 msgid "Ausführung 40er-Serie"
-msgstr ""
+msgstr "Исполнение 40-я серия"
 
 #: products/templates/products/metallsagebander/advices.html:225
 #: products/templates/products/metallsagebander/advices.html:238
 msgid "Baustähle"
-msgstr ""
+msgstr "Конструкционные стали"
 
 #: products/templates/products/metallsagebander/advices.html:303
 msgid "Nitrirstähle"
-msgstr ""
+msgstr "Азотированные стали"
 
 #: products/templates/products/metallsagebander/advices.html:316
 msgid "Automatenstähle"
-msgstr ""
+msgstr "Автоматные стали"
 
 #: products/templates/products/metallsagebander/advices.html:368
 msgid "Kugellagerstähle"
-msgstr ""
+msgstr "Стали для шарикоподшипников"
 
 #: products/templates/products/metallsagebander/advices.html:381
 msgid "Federstähle"
-msgstr ""
+msgstr "Пружинная сталь"
 
 #: products/templates/products/metallsagebander/advices.html:394
 msgid "unlegierte Werkzeugstähle"
-msgstr ""
+msgstr "Нелегированные инструментальные стали"
 
 #: products/templates/products/metallsagebander/advices.html:407
 #: products/templates/products/metallsagebander/advices.html:420
 #: products/templates/products/metallsagebander/advices.html:433
 msgid "legierte Werkzeugstähle"
-msgstr ""
+msgstr "Легированные инструментальные стали"
 
 #: products/templates/products/metallsagebander/advices.html:446
 #: products/templates/products/metallsagebander/advices.html:459
@@ -1718,90 +1726,91 @@ msgstr ""
 #: products/templates/products/metallsagebander/advices.html:485
 #: products/templates/products/metallsagebander/advices.html:498
 msgid "Schnellarbeitsstähle"
-msgstr ""
+msgstr "Быстрорежущие стали"
 
 #: products/templates/products/metallsagebander/advices.html:511
 #: products/templates/products/metallsagebander/advices.html:524
 msgid "hochwarmfeste Stähle"
-msgstr ""
+msgstr "Высокожаропрочные стали"
 
 #: products/templates/products/metallsagebander/advices.html:537
 #: products/templates/products/metallsagebander/advices.html:550
 msgid "hitzebeständige Stähle"
-msgstr ""
+msgstr "Термостойкие стали"
 
 #: products/templates/products/metallsagebander/advices.html:563
 #: products/templates/products/metallsagebander/advices.html:576
 #: products/templates/products/metallsagebander/advices.html:589
 msgid "rost- und säurebeständige Stähle"
-msgstr ""
+msgstr "Нержавеющие и кислотостойкие стали"
 
 #: products/templates/products/metallsagebander/advices.html:602
 #: products/templates/products/metallsagebander/advices.html:615
 #: products/templates/products/metallsagebander/advices.html:628
 msgid "vergütete Stähle"
-msgstr ""
+msgstr "Улучшенные стали"
 
 #: products/templates/products/metallsagebander/advices.html:693
 #: products/templates/products/metallsagebander/advices.html:706
 msgid "Aluminiumlegierung"
-msgstr ""
+msgstr "Алюминиевый сплав"
 
 #: products/templates/products/metallsagebander/advices.html:719
 msgid "Zinnbronze"
-msgstr ""
+msgstr "Оловянная бронза"
 
 #: products/templates/products/metallsagebander/advices.html:732
 msgid "Aluminiumbronze"
-msgstr ""
+msgstr "Алюминиевая бронза"
 
 #: products/templates/products/pendelhubstichsageblatter/overview.html:50
 msgid "Bestell-Nr.:"
-msgstr ""
+msgstr "No для заказа:"
 
 #: products/templates/products/pendelhubstichsageblatter/overview.html:53
 msgid "Zahnteilung"
-msgstr ""
+msgstr "Шаг зубьев"
 
 #: products/templates/products/pendelhubstichsageblatter/overview.html:56
 msgid "Sägeblattlänge"
-msgstr ""
+msgstr "Длина пильного полотна"
 
 #: templates/admin/base_site.html:3
 msgid "GUHEMA site admin"
-msgstr ""
+msgstr "GUHEMA site admin"
 
 #: templates/admin/base_site.html:6
 msgid "GUHEMA administration"
-msgstr ""
+msgstr "GUHEMA administration"
 
 #: templates/base.html:50
 msgid "Home"
-msgstr ""
+msgstr "Главная"
 
 #: templates/base.html:51
 msgid "Unternehmen"
-msgstr ""
+msgstr "Компания"
 
 #: templates/base.html:134
 msgid "Impressum"
-msgstr ""
+msgstr "отпечаток"
 
 #: templates/index.html:11
 msgid "METALLSÄGEBLÄTTER IN PERFEKTION"
-msgstr ""
+msgstr "Металлические Sawblades в совершенстве"
 
 #: templates/index.html:13
 msgid "Entdecken Sie unsere Produkte!"
-msgstr ""
+msgstr "Ознакомьтесь с нашей продукцией!"
 
 #: templates/index.html:23
 msgid "Qualität die Vertrauen schafft"
-msgstr ""
+msgstr "Надежный качества"
 
 #: templates/index.html:24
 msgid "GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!"
 msgstr ""
+"Это имя с 1867 года является синонимом знака качества «Сделано в Германии»!"
 
 #: templates/index.html:33
 msgid ""
@@ -1809,29 +1818,44 @@ msgid ""
 "Forschung und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen "
 "zur Verfügung."
 msgstr ""
+"Мы предлагаем Вам семейные традиции в 5-м поколении, многолетний опыт, "
+"непрерывные исследования и разработки, а также солидные специальные знания."
 
 #: templates/index.html:37
 msgid ""
 "Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre "
 "individuellen Wünsche reagieren."
 msgstr ""
+"Четкая организация труда позволяет нам всегда быстро реагировать на Ваши "
+"индивидуальные пожелания."
 
 #: templates/index.html:40
 msgid ""
 "Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der "
 "Norm nach DIN EN ISO 9001."
 msgstr ""
+"Наши бизнес-процессы сертифицированы с 1997 года, они соответствуют "
+"стандарту DIN EN ISO 9001."
 
 #: templates/index.html:43
 msgid ""
 "Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein "
 "Metallsägeblatt in Perfektion."
 msgstr ""
+"Следовательно: выбирая изделие компании GUHEMA, Вы получаете идеальное "
+"пильное полотно."
 
 #: templates/index.html:47
 msgid "Zu unseren Produkten"
-msgstr ""
+msgstr "Наши продукты"
 
 #: templates/productgroups.html:8
 msgid "PRODUKTGRUPPEN"
-msgstr ""
+msgstr "Товарные группы"
+
+#~ msgid ""
+#~ "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm2 mit dieser "
+#~ "Einstellung zerspanen."
+#~ msgstr ""
+#~ "Детали небольших размеров необходимо разрезать с такими настройками на "
+#~ "участке 300 см<sup>2</sup>."
