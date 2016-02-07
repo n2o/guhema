@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-06 23:28+0000\n"
-"PO-Revision-Date: 2016-02-07 01:13+0100\n"
+"POT-Creation-Date: 2016-02-07 00:15+0000\n"
+"PO-Revision-Date: 2016-02-07 01:18+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -287,7 +287,7 @@ msgstr "подкатегория"
 msgid "Metallhandsägeblatt"
 msgstr "Полотна для ручных пил по металлу"
 
-#: products/models.py:110
+#: products/models.py:110 templates/productgroups.html.py:14
 msgid "Metallhandsägeblätter"
 msgstr "Полотна для ручных пил по металлу"
 
@@ -320,6 +320,7 @@ msgid "Lochsäge"
 msgstr "Кольцевые пилы"
 
 #: products/models.py:130 products/templates/products/lochsagen/advices.html:10
+#: templates/productgroups.html:15
 msgid "Lochsägen"
 msgstr "Кольцевые пилы"
 
@@ -415,7 +416,7 @@ msgstr " Диапазон древесины  резк (мм)"
 msgid "Pendelhubstichsägeblatt"
 msgstr "Полотна для электролобзиков"
 
-#: products/models.py:219
+#: products/models.py:219 templates/productgroups.html.py:17
 msgid "Pendelhubstichsägeblätter"
 msgstr "Полотна для электролобзиков"
 
@@ -437,6 +438,7 @@ msgstr "Круглые пильные полотна для металла"
 
 #: products/models.py:254
 #: products/templates/products/metallkreissageblatter/advices.html:8
+#: templates/productgroups.html:18
 msgid "Metallkreissägeblätter"
 msgstr "Круглые пильные полотна для металла"
 
@@ -721,6 +723,7 @@ msgid "in mm"
 msgstr "в мм"
 
 #: products/templates/products/maschinensageblatter/advices.html:8
+#: templates/productgroups.html:11
 msgid "Maschinensägeblätter"
 msgstr "Станочные пильные полотна"
 
@@ -1347,6 +1350,7 @@ msgstr ""
 "рекомендуются при среднем и большом шаге зубьев."
 
 #: products/templates/products/metallsagebander/advices.html:8
+#: templates/productgroups.html:16
 msgid "Metallsägebänder"
 msgstr "Пильные ленты для металла"
 
@@ -1853,16 +1857,17 @@ msgstr "Наши продукты"
 msgid "PRODUKTGRUPPEN"
 msgstr "Товарные группы"
 
+#: templates/productgroups.html:12
+msgid "Metallstichsägeblätter"
+msgstr "Пильные полотна для лобзиков по металлу"
+
+#: templates/productgroups.html:13
+msgid "Säbel- und Spezialsäbelsägeblätter"
+msgstr "Полотна для сабельных пил и специальные полотна для сабельных пил"
+
 #~ msgid ""
 #~ "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm2 mit dieser "
 #~ "Einstellung zerspanen."
 #~ msgstr ""
 #~ "Детали небольших размеров необходимо разрезать с такими настройками на "
 #~ "участке 300 см<sup>2</sup>."
-
-#: templates/productgroups.html:12
-msgid "Metallstichsägeblätter"
-msgstr ""
-#: templates/productgroups.html:13
-msgid "Säbel- und Spezialsäbelsägeblätter"
-msgstr ""

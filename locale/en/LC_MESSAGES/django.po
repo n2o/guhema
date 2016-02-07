@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-06 23:28+0000\n"
-"PO-Revision-Date: 2016-02-07 00:58+0100\n"
+"POT-Creation-Date: 2016-02-07 00:15+0000\n"
+"PO-Revision-Date: 2016-02-07 01:17+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: Christian Meter <cmeter@googlemail.com>\n"
 "Language: en\n"
@@ -285,7 +285,7 @@ msgstr "Subcategory"
 msgid "Metallhandsägeblatt"
 msgstr "Metal Compass Sawblade"
 
-#: products/models.py:110
+#: products/models.py:110 templates/productgroups.html.py:14
 msgid "Metallhandsägeblätter"
 msgstr "Metal Compass Sawblades"
 
@@ -318,6 +318,7 @@ msgid "Lochsäge"
 msgstr "Hole saw"
 
 #: products/models.py:130 products/templates/products/lochsagen/advices.html:10
+#: templates/productgroups.html:15
 msgid "Lochsägen"
 msgstr "Hole saws"
 
@@ -413,7 +414,7 @@ msgstr "Wood cutting area"
 msgid "Pendelhubstichsägeblatt"
 msgstr "Jigsaw blade"
 
-#: products/models.py:219
+#: products/models.py:219 templates/productgroups.html.py:17
 msgid "Pendelhubstichsägeblätter"
 msgstr "Jigsaw blades"
 
@@ -435,6 +436,7 @@ msgstr "Metal Cutting Circular Sawblade"
 
 #: products/models.py:254
 #: products/templates/products/metallkreissageblatter/advices.html:8
+#: templates/productgroups.html:18
 msgid "Metallkreissägeblätter"
 msgstr "Metal Cutting Circular Sawblades"
 
@@ -717,6 +719,7 @@ msgid "in mm"
 msgstr "in mm"
 
 #: products/templates/products/maschinensageblatter/advices.html:8
+#: templates/productgroups.html:11
 msgid "Maschinensägeblätter"
 msgstr "Power Hacksaw Blades"
 
@@ -1344,6 +1347,7 @@ msgstr ""
 "for medium and coarse teeth separations."
 
 #: products/templates/products/metallsagebander/advices.html:8
+#: templates/productgroups.html:16
 msgid "Metallsägebänder"
 msgstr "Metal Bandsaw Blades"
 
@@ -1811,32 +1815,48 @@ msgid ""
 "Forschung und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen "
 "zur Verfügung."
 msgstr ""
+"A family tradition, years of experience, ongoing research and development as "
+"well as sound technical knowledge are what we place at your disposal."
 
 #: templates/index.html:37
 msgid ""
 "Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre "
 "individuellen Wünsche reagieren."
 msgstr ""
+"With our efficient organization, we are able to quickly respond to your "
+"individual demands at any time."
 
 #: templates/index.html:40
 msgid ""
 "Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der "
 "Norm nach DIN EN ISO 9001."
 msgstr ""
+"It goes without saying that we have been certified according to DIN EN ISO "
+"9001:2000 since 1997."
 
 #: templates/index.html:43
 msgid ""
 "Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein "
 "Metallsägeblatt in Perfektion."
 msgstr ""
+"All this means that: when opting for a GUHEMA product, you will always "
+"receive a perfect saw blade."
 
 #: templates/index.html:47
 msgid "Zu unseren Produkten"
-msgstr ""
+msgstr "Our products"
 
 #: templates/productgroups.html:8
 msgid "PRODUKTGRUPPEN"
 msgstr "PRODUCT GROUPS"
+
+#: templates/productgroups.html:12
+msgid "Metallstichsägeblätter"
+msgstr "Metal Compass Sawblades"
+
+#: templates/productgroups.html:13
+msgid "Säbel- und Spezialsäbelsägeblätter"
+msgstr ""
 
 #~ msgid ""
 #~ "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm2 mit dieser "
@@ -1844,10 +1864,3 @@ msgstr "PRODUCT GROUPS"
 #~ msgstr ""
 #~ "In case of small workpiece dimensions, you should machine around 300 "
 #~ "cm<sup></sup> with this setting."
-
-#: templates/productgroups.html:12
-msgid "Metallstichsägeblätter"
-msgstr ""
-#: templates/productgroups.html:13
-msgid "Säbel- und Spezialsäbelsägeblätter"
-msgstr ""
