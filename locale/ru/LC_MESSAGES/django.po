@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-07 00:15+0000\n"
-"PO-Revision-Date: 2016-02-07 01:18+0100\n"
+"POT-Creation-Date: 2016-02-07 00:20+0000\n"
+"PO-Revision-Date: 2016-02-07 01:22+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -19,6 +19,26 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Generator: Poedit 1.8.6\n"
+
+#: contact/forms.py:7
+msgid "Vorname"
+msgstr "имя"
+
+#: contact/forms.py:8
+msgid "Nachname"
+msgstr "Фамилия"
+
+#: contact/forms.py:9
+msgid "E-Mail"
+msgstr "Эл. адрес"
+
+#: contact/forms.py:10
+msgid "Betreff"
+msgstr "предмет"
+
+#: contact/forms.py:12
+msgid "Deine Nachricht"
+msgstr "сообщение"
 
 #: contact/templates/contact/email.html:8 templates/base.html.py:55
 #: templates/base.html:134
