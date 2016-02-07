@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-07 00:20+0000\n"
-"PO-Revision-Date: 2016-02-07 01:22+0100\n"
+"PO-Revision-Date: 2016-02-07 01:33+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -1821,7 +1821,7 @@ msgstr "отпечаток"
 
 #: templates/index.html:11
 msgid "METALLSÄGEBLÄTTER IN PERFEKTION"
-msgstr "Металлические Sawblades в совершенстве"
+msgstr "дисков пил в совершенстве"
 
 #: templates/index.html:13
 msgid "Entdecken Sie unsere Produkte!"
