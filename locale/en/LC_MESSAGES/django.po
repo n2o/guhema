@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-07 00:20+0000\n"
+"POT-Creation-Date: 2016-02-08 15:08+0000\n"
 "PO-Revision-Date: 2016-02-07 01:21+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: Christian Meter <cmeter@googlemail.com>\n"
@@ -39,7 +39,7 @@ msgid "Deine Nachricht"
 msgstr "Message"
 
 #: contact/templates/contact/email.html:8 templates/base.html.py:55
-#: templates/base.html:134
+#: templates/base.html:125
 msgid "Kontakt"
 msgstr "Contact"
 
@@ -1809,7 +1809,7 @@ msgstr "Home"
 msgid "Unternehmen"
 msgstr "Company"
 
-#: templates/base.html:134
+#: templates/base.html:125
 msgid "Impressum"
 msgstr "Imprint"
 
