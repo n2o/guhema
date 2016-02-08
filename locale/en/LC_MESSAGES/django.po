@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-08 15:48+0000\n"
+"POT-Creation-Date: 2016-02-08 16:01+0000\n"
 "PO-Revision-Date: 2016-02-08 16:55+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: Christian Meter <cmeter@googlemail.com>\n"
@@ -199,6 +199,10 @@ msgstr "Advanced options"
 #: products/models.py:11 products/models.py:36 products/models.py:154
 #: products/models.py:224
 #: products/templates/products/maschinensageblatter/details.html:72
+#: products/templates/products/metallkreissageblatter/overview.html:131
+#: products/templates/products/metallkreissageblatter/overview.html:142
+#: products/templates/products/metallkreissageblatter/overview.html:216
+#: products/templates/products/metallkreissageblatter/overview.html:273
 #: products/templates/products/metallsagebander/details.html:53
 #: products/templates/products/metallstichsageblatter/details.html:72
 msgid "Kennziffer"
@@ -681,6 +685,7 @@ msgstr "For mineral materials"
 
 #: products/templates/products/lochsagen/overview.html:85
 #: products/templates/products/maschinensageblatter/details.html:20
+#: products/templates/products/metallkreissageblatter/overview.html:130
 #: products/templates/products/metallsagebander/details.html:22
 #: products/templates/products/metallstichsageblatter/details.html:20
 msgid "Der schnelle Weg zu unserer Artikel-Nr."
@@ -688,12 +693,14 @@ msgstr "The fast path to our Article No."
 
 #: products/templates/products/lochsagen/overview.html:86
 #: products/templates/products/maschinensageblatter/advices.html:100
+#: products/templates/products/metallkreissageblatter/overview.html:131
 #: products/templates/products/metallstichsageblatter/details.html:21
 msgid "Qualität"
 msgstr "Grade"
 
 #: products/templates/products/lochsagen/overview.html:87
 #: products/templates/products/maschinensageblatter/details.html:22
+#: products/templates/products/metallkreissageblatter/overview.html:132
 msgid "z.B.:"
 msgstr "Example:"
 
@@ -717,6 +724,17 @@ msgstr "Order No."
 #: products/templates/products/maschinensageblatter/advices.html:122
 #: products/templates/products/metallhandsageblatter/overview.html:154
 #: products/templates/products/metallhandsageblatter/overview.html:158
+#: products/templates/products/metallkreissageblatter/overview.html:158
+#: products/templates/products/metallkreissageblatter/overview.html:159
+#: products/templates/products/metallkreissageblatter/overview.html:160
+#: products/templates/products/metallkreissageblatter/overview.html:161
+#: products/templates/products/metallkreissageblatter/overview.html:162
+#: products/templates/products/metallkreissageblatter/overview.html:163
+#: products/templates/products/metallkreissageblatter/overview.html:164
+#: products/templates/products/metallkreissageblatter/overview.html:165
+#: products/templates/products/metallkreissageblatter/overview.html:166
+#: products/templates/products/metallkreissageblatter/overview.html:167
+#: products/templates/products/metallkreissageblatter/overview.html:168
 #: products/templates/products/pendelhubstichsageblatter/overview.html:78
 #: products/templates/products/pendelhubstichsageblatter/overview.html:82
 #: products/templates/products/pendelhubstichsageblatter/overview.html:87
@@ -735,6 +753,7 @@ msgstr "Diameter"
 
 #: products/templates/products/lochsagen/overview.html:194
 #: products/templates/products/maschinensageblatter/details.html:139
+#: products/templates/products/metallkreissageblatter/overview.html:156
 msgid "in mm"
 msgstr "in mm"
 
@@ -1365,6 +1384,71 @@ msgstr ""
 "The curved tooth with pre- and finishing cutter is suitable for the sawing "
 "of steels on sawing machines and rotary transfer machines and is recommended "
 "for medium and coarse teeth separations."
+
+#: products/templates/products/metallkreissageblatter/overview.html:141
+msgid "Stärke"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:141
+msgid "Bohrung"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:216
+#: products/templates/products/metallkreissageblatter/overview.html:273
+msgid "Legende"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:216
+msgid "Zähnezahl"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:273
+msgid "Nebenlöcher"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:298
+msgid "Metallkreissäge"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:301
+msgid "Bei der Bestellung machen Sie bitte folgende Angaben:"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:303
+msgid "Artikelnummer"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:304
+msgid "Andere Abmessungen bieten wir an, nennen Sie uns:"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:306
+msgid "Durchmesser des Blattes"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:307
+msgid "Blattstärke"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:308
+msgid "Hauptbohrung"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:309
+msgid "Anzahl der Nebenlöcher"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:310
+msgid "Lochdurchmesser"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:311
+msgid "Teilkreis der Nebenlöcher"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:312
+msgid "Zahnteilung oder Zähnezahl"
+msgstr ""
 
 #: products/templates/products/metallsagebander/advices.html:8
 #: templates/productgroups.html:16
