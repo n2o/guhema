@@ -1,0 +1,53 @@
+{% extends "layout_productgroups.html" %}
+{% load i18n %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block heading %}
+  {% comment %}<img src="{% static 'img/logo/guhema80px.png' %}" class="img-responsive" alt=""> {% endcomment %}
+  <h1>
+    GUHEMA
+  </h1>
+{% endblock %}
+
+{% block content %}
+  <p>
+    {% blocktrans %}Dieser Name steht für Made in Germany - und das seit dem Jahre 1867!{% endblocktrans %}
+  </p>
+  <p>
+    {% blocktrans %}Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.{% endblocktrans %}
+  </p>
+  <p>
+    {% blocktrans %}Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen Wünsche reagieren.{% endblocktrans %}
+  </p>
+  <p>
+    {% blocktrans %}Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der Norm nach DIN EN ISO 9001.{% endblocktrans %}
+  </p>
+
+  <p>
+    {% blocktrans %}Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein Metallsägeblatt in Perfektion.{% endblocktrans %}
+  </p>
+
+  <div class="row padding-top">
+    <div class="col-md-3">
+      <a href="{% static 'img/other/sirachskotten.gif' %}">
+        <img src="{% static 'img/other/sirachskotten.gif' %}" class="img-responsive" alt="Sirachskotten">
+      </a>
+      <p>
+        <strong>{% blocktrans %}Gründung 1867{% endblocktrans %}</strong>
+      </p>
+      <p>
+        {% blocktrans %}Der "Sirachskotten" , Standort des Unternehmens bis 1900.{% endblocktrans %}
+      </p>
+    </div>
+    <div class="col-md-offset-6 col-md-3">
+      <a href="{% static 'other/urkunde.pdf' %}">
+        <img src="{% static 'img/other/urkunde.jpg' %}" class="img-responsive" alt="DIN Zertifikat">
+      </a>
+      <p>
+        <strong>{% blocktrans %}Zertifizierte Qualität nach DIN EN ISO 9001:2000{% endblocktrans %}</strong>
+      </p>
+    </div>
+  </div>
+{% endblock %}
