@@ -1884,3 +1884,16 @@ msgstr "Sable and Special Sable Sawblades"
 #~ msgstr ""
 #~ "In case of small workpiece dimensions, you should machine around 300 "
 #~ "cm<sup></sup> with this setting."
+
+#: templates/company.html:17
+msgid "Dieser Name steht für **Made in Germany** - und das seit dem Jahre 1867!"
+msgstr ""
+#: templates/company.html:39
+msgid "Gründung 1867"
+msgstr ""
+#: templates/company.html:42
+msgid "Der \"Sirachskotten\" , Standort des Unternehmens bis 1900."
+msgstr ""
+#: templates/company.html:50
+msgid "Zertifizierte Qualität nach  DIN EN ISO 9001:2000"
+msgstr ""

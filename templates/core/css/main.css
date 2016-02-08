@@ -147,7 +147,9 @@ section {
   height: 80px;
   line-height: 80px; }
   #footer form, #footer-text form {
-    margin-top: 0; }
+    line-height: 80px;
+    margin-top: 0;
+    margin-bottom: 0; }
 
 @media only screen and (max-width: 768px) {
   #footer, #footer-text {

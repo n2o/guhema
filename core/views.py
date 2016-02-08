@@ -14,3 +14,7 @@ def index(request):
 
 def products(request):
     return render(request, '../products/templates/products/index.html')
+
+
+def company(request):
+    return render(request, 'company.html')
