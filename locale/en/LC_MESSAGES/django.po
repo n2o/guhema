@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-08 15:08+0000\n"
-"PO-Revision-Date: 2016-02-07 01:21+0100\n"
+"POT-Creation-Date: 2016-02-08 15:48+0000\n"
+"PO-Revision-Date: 2016-02-08 16:55+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: Christian Meter <cmeter@googlemail.com>\n"
 "Language: en\n"
@@ -1813,6 +1813,55 @@ msgstr "Company"
 msgid "Impressum"
 msgstr "Imprint"
 
+#: templates/company.html:17
+msgid "Dieser Name steht für Made in Germany - und das seit dem Jahre 1867!"
+msgstr "This name stands for Made in Germany – since 1867!"
+
+#: templates/company.html:20 templates/index.html.py:33
+msgid ""
+"Familientradition in der 5. Generation, langjährige Erfahrung, permanente "
+"Forschung und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen "
+"zur Verfügung."
+msgstr ""
+"A family tradition, years of experience, ongoing research and development as "
+"well as sound technical knowledge are what we place at your disposal."
+
+#: templates/company.html:23 templates/index.html.py:37
+msgid ""
+"Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre "
+"individuellen Wünsche reagieren."
+msgstr ""
+"With our efficient organization, we are able to quickly respond to your "
+"individual demands at any time."
+
+#: templates/company.html:26 templates/index.html.py:40
+msgid ""
+"Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der "
+"Norm nach DIN EN ISO 9001."
+msgstr ""
+"It goes without saying that we have been certified according to DIN EN ISO "
+"9001:2000 since 1997."
+
+#: templates/company.html:30 templates/index.html.py:43
+msgid ""
+"Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein "
+"Metallsägeblatt in Perfektion."
+msgstr ""
+"All this means that: when opting for a GUHEMA product, you will always "
+"receive a perfect saw blade."
+
+#: templates/company.html:39
+msgid "Gründung 1867"
+msgstr "Founding 1867"
+
+#: templates/company.html:42
+msgid "Der \"Sirachskotten\" , Standort des Unternehmens bis 1900."
+msgstr "The \"Sirachskotten\", location of the company until 1900"
+
+#: templates/company.html:50
+msgid "Zertifizierte Qualität nach DIN EN ISO 9001:2000"
+msgstr "Certified quality to DIN EN ISO 9001: 2000"
+
 #: templates/index.html:11
 msgid "METALLSÄGEBLÄTTER IN PERFEKTION"
 msgstr "Metal Sawblades in Perfection"
@@ -1828,39 +1877,6 @@ msgstr "GUHEMA FOR MADE IN GERMANY - AND SINCE 1867 !"
 #: templates/index.html:24
 msgid "GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!"
 msgstr "GUHEMA - MADE IN GERMANY SINCE 1867!"
-
-#: templates/index.html:33
-msgid ""
-"Familientradition in der 5. Generation, langjährige Erfahrung, permanente "
-"Forschung und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen "
-"zur Verfügung."
-msgstr ""
-"A family tradition, years of experience, ongoing research and development as "
-"well as sound technical knowledge are what we place at your disposal."
-
-#: templates/index.html:37
-msgid ""
-"Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre "
-"individuellen Wünsche reagieren."
-msgstr ""
-"With our efficient organization, we are able to quickly respond to your "
-"individual demands at any time."
-
-#: templates/index.html:40
-msgid ""
-"Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der "
-"Norm nach DIN EN ISO 9001."
-msgstr ""
-"It goes without saying that we have been certified according to DIN EN ISO "
-"9001:2000 since 1997."
-
-#: templates/index.html:43
-msgid ""
-"Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein "
-"Metallsägeblatt in Perfektion."
-msgstr ""
-"All this means that: when opting for a GUHEMA product, you will always "
-"receive a perfect saw blade."
 
 #: templates/index.html:47
 msgid "Zu unseren Produkten"
@@ -1884,16 +1900,3 @@ msgstr "Sable and Special Sable Sawblades"
 #~ msgstr ""
 #~ "In case of small workpiece dimensions, you should machine around 300 "
 #~ "cm<sup></sup> with this setting."
-
-#: templates/company.html:17
-msgid "Dieser Name steht für **Made in Germany** - und das seit dem Jahre 1867!"
-msgstr ""
-#: templates/company.html:39
-msgid "Gründung 1867"
-msgstr ""
-#: templates/company.html:42
-msgid "Der \"Sirachskotten\" , Standort des Unternehmens bis 1900."
-msgstr ""
-#: templates/company.html:50
-msgid "Zertifizierte Qualität nach  DIN EN ISO 9001:2000"
-msgstr ""
