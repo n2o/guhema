@@ -91,7 +91,7 @@
 
     <hr>
 
-    <h3 class="padding-bottom">Produkte</h3>
+    <h3 class="padding-bottom">{% trans "Produkte" %}</h3>
 
     <div class="row padding-bottom">
       <div class="col-md-4">
@@ -102,10 +102,10 @@
           </span>
         <br>
         <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {{ blade.name }}
+        {% blocktrans with name=blade.name %}{{ name }}{% endblocktrans %}
         <br>
         <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-        {{ blade.description }}
+        {% blocktrans with description=blade.description %}{{ description }}{% endblocktrans %}
         {% include 'core/edit_item.html' with model="products_circularsawblade" id=blade.id %}
       </div>
 
@@ -117,10 +117,10 @@
           </span>
         <br>
         <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {{ blade2.name }}
+        {% blocktrans with name=blade2.name %}{{ name }}{% endblocktrans %}
         <br>
         <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-        {{ blade2.description }}
+        {% blocktrans with description=blade2.description %}{{ description }}{% endblocktrans %}
         {% include 'core/edit_item.html' with model="products_circularsawblade" id=blade2.id %}
       </div>
 
