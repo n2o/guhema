@@ -150,6 +150,7 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'django.template.context_processors.static',
                 'django.template.context_processors.request',
+                'django.core.context_processors.i18n',
             ],
             'debug': DEBUG,
         },

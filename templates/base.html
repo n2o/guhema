@@ -53,6 +53,11 @@
             <li><a href="{% url 'fairs:index' %}">{% trans "Messen" %}</a></li>
             <li><a href="{% url 'news:overview' %}">{% trans "News" %}</a></li>
             <li><a href="{% url 'contact:index' %}">{% trans "Kontakt" %}</a></li>
+            <li>
+              <a>
+
+              </a>
+            </li>
             {% comment %}
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -90,20 +95,6 @@
 
       <div class="container padding-bottom" role="main">
         {% block content %}{% endblock %}
-        <form action="{% url 'set_language' %}" method="post" style="float: right;">{% csrf_token %}
-          <input name="next" type="hidden" value="{{ redirect_to }}" />
-          <select name="language">
-              {% get_current_language as LANGUAGE_CODE %}
-              {% get_available_languages as LANGUAGES %}
-              {% get_language_info_list for LANGUAGES as languages %}
-              {% for language in languages %}
-                  <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
-                      {{ language.name_local }} ({{ language.code }})
-                  </option>
-              {% endfor %}
-          </select>
-          <input type="submit" value="Go" />
-        </form>
       </div>
     </div>
 
@@ -129,8 +120,24 @@
             <div class="col-md-2 col-sm-6 col-xs-6">
               <a href="tel:+49 2191 8867 0">+49 2191 8867 0</a>
             </div>
-            <div id="footer-kontakt-line" class="col-md-5 col-sm-6 col-xs-6 text-right">
+            <div id="footer-kontakt-line" class="col-md-3 col-sm-6 col-xs-6 text-right">
               <a href="{% url 'contact:index' %}">{% trans "Kontakt" %}</a> | <a href="{% url 'impressum' %}">{% trans "Impressum" %}</a>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+              {% get_language_info_list for LANGUAGES as languages %}
+              <form action="{% url "set_language" %}" method="post" class="navbar-form navbar-right">
+                {% csrf_token %}
+                <div class="form-group">
+                  <select name="language" class="form-control" onchange="this.form.submit()">
+                  {% for language in languages %}
+                  <option value="{{ language.code }}"
+                      {% if language.code == LANGUAGE_CODE %}selected="selected"{% endif %}>
+                      {{ language.name_local }}
+                  </option>
+                  {% endfor %}
+                  </select>
+                </div>
+              </form>
             </div>
           </div>
         </div>
