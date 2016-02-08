@@ -42,8 +42,8 @@ class HackSawBladeAdmin(PageDownAdmin):
     list_display = ('type', 'group', 'quality', 'toothing', 'accessory', 'cutting_metal', 'cutting_wood', 'cutting_minerals', 'has_img_set')
     search_fields = ['type', 'quality', 'description']
     fieldsets = [
-        ('Allgemein', {'fields': ['quality', 'type', 'name', 'subcategory', 'description', 'group']}),
-        ('Beschreibung', {'fields': ['image', 'indicators', 'toothing', ('cutting_metal', 'cutting_wood', 'cutting_minerals'), 'accessory']}),
+        (_('Allgemein'), {'fields': ['quality', 'type', 'name', 'subcategory', 'description', 'group']}),
+        (_('Beschreibung'), {'fields': ['image', 'indicators', 'toothing', ('cutting_metal', 'cutting_wood', 'cutting_minerals'), 'accessory']}),
     ]
     save_as = True
 
@@ -51,9 +51,9 @@ class HackSawBladeAdmin(PageDownAdmin):
 @admin.register(Indicator)
 class IndicatorAdmin(PageDownAdmin):
     fieldsets = [
-        ('Allgemein', {'fields': ['value']}),
-        ('Abmessungen', {'fields': ['width', 'strength', 'length', 'diameter']}),
-        ('ZpZ', {'fields': [('C', 'E', 'G', 'H', 'I', 'J', 'L', 'M', 'N', 'O', 'T', 'U', 'V', 'W', 'UE')]}),
+        (_('Allgemein'), {'fields': ['value']}),
+        (_('Abmessungen'), {'fields': ['width', 'strength', 'length', 'diameter']}),
+        (_('ZpZ'), {'fields': [('C', 'E', 'G', 'H', 'I', 'J', 'L', 'M', 'N', 'O', 'T', 'U', 'V', 'W', 'UE')]}),
     ]
 
 
@@ -67,7 +67,7 @@ class HoleSawAdmin(PageDownAdmin):
 class ProductGroupAdmin(PageDownAdmin):
     list_display = ('name', 'public')
     fieldsets = [
-        ('Allgemein', {'fields': ['name', 'description', 'image', 'public']}),
+        (_('Allgemein'), {'fields': ['name', 'description', 'image', 'public']}),
     ]
 
 
@@ -76,8 +76,8 @@ class BandSawBladeAdmin(PageDownAdmin):
     list_display = ('type', 'type2', 'group', 'quality', 'has_img_set')
     search_fields = ['type', 'type2', 'quality', 'description']
     fieldsets = [
-        ('Allgemein', {'fields': ['quality', 'name', 'heading', 'description', 'group']}),
-        ('Ausführungen', {'fields': [('type', 'type_description'), ('type2', 'type2_description'), ('image', 'image2'), 'bandsaw_indicators', 'cols']}),
+        (_('Allgemein'), {'fields': ['quality', 'name', 'heading', 'description', 'group']}),
+        (_('Ausführungen'), {'fields': [('type', 'type_description'), ('type2', 'type2_description'), ('image', 'image2'), 'bandsaw_indicators', 'cols']}),
     ]
 
 
@@ -86,8 +86,8 @@ class JigSawBladeAdmin(PageDownAdmin):
     list_display = ('type', 'subcategory', 'has_img_set')
     search_fields = ['type', 'subcategory']
     fieldsets = [
-        ('Allgemein', {'fields': ['quality', 'subcategory', 'description', 'group']}),
-        ('Ausführungen', {'fields': ['type', 'image', 'tooth_separation', 'length', ('cutting_metal', 'cutting_wood')]}),
+        (_('Allgemein'), {'fields': ['quality', 'subcategory', 'description', 'group']}),
+        (_('Ausführungen'), {'fields': ['type', 'image', 'tooth_separation', 'length', ('cutting_metal', 'cutting_wood')]}),
     ]
 
 
@@ -96,15 +96,15 @@ class CircularSawBladeAdmin(PageDownAdmin):
     list_display = ('type', 'quality', 'has_img_set')
     search_fields = ['type']
     fieldsets = [
-        ('Allgemein', {'fields': ['quality', 'type', 'name', 'description', 'group']}),
-        ('Kennziffer 1', {'fields': ['circular_indicators']}),
+        (_('Allgemein'), {'fields': ['quality', 'type', 'name', 'description', 'group']}),
+        (_('Kennziffer') + '1', {'fields': ['circular_indicators']}),
     ]
 
 
 # Define a new FlatPageAdmin
 class MyFlatPageAdmin(PageDownAdmin):
     fieldsets = (
-        ("Allgemein", {'fields': ('url', 'title', 'content', 'sites')}),
+        (_('Allgemein'), {'fields': ('url', 'title', 'content', 'sites')}),
         (_('Advanced options'), {
             'classes': ('collapse', ),
             'fields': (

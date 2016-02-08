@@ -19,7 +19,7 @@ class NewsAdmin(PageDownAdmin):
     search_fields = ['title']
     fieldsets = [
         (None,        {'fields': ['title', 'category', 'image', 'attachment', ('archive', 'public'), 'content']}),
-        ('Erweitert', {'fields': ['created', 'author'], 'classes': ['collapse']}),
+        (_('Erweitert'), {'fields': ['created', 'author'], 'classes': ['collapse']}),
     ]
 
     def save_model(self, request, obj, form, change):

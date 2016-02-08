@@ -18,6 +18,6 @@ class FairAdmin(PageDownAdmin):
     list_filter = ['created']
     search_fields = ['name']
     fieldsets = [
-        ('Allgemein', {'fields': ['name', 'website', 'location', ('hall', 'stand'), ('start', 'end'), 'description', ('image', 'attachment'), ('archive', 'public')]}),
-        ('Erweitert', {'fields': ['created'], 'classes': ['collapse']}),
+        (_('Allgemein'), {'fields': ['name', 'website', 'location', ('hall', 'stand'), ('start', 'end'), 'description', ('image', 'attachment'), ('archive', 'public')]}),
+        (_('Erweitert'), {'fields': ['created'], 'classes': ['collapse']}),
     ]
