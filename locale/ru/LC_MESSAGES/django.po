@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-08 15:48+0000\n"
-"PO-Revision-Date: 2016-02-08 16:50+0100\n"
+"PO-Revision-Date: 2016-02-08 16:56+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -1858,7 +1858,7 @@ msgstr ""
 
 #: templates/company.html:39
 msgid "Gründung 1867"
-msgstr "литье"
+msgstr "литье 1867"
 
 #: templates/company.html:42
 msgid "Der \"Sirachskotten\" , Standort des Unternehmens bis 1900."
