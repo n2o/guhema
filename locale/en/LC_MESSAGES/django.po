@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-08 22:44+0000\n"
+"POT-Creation-Date: 2016-02-08 22:50+0000\n"
 "PO-Revision-Date: 2016-02-08 16:55+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: Christian Meter <cmeter@googlemail.com>\n"
@@ -218,6 +218,7 @@ msgstr "Dimensions"
 #: products/templates/products/maschinensageblatter/advices.html:482
 #: products/templates/products/maschinensageblatter/details.html:21
 #: products/templates/products/maschinensageblatter/details.html:53
+#: products/templates/products/metallhandsageblatter/overview.html:150
 #: products/templates/products/metallsagebander/details.html:23
 #: products/templates/products/metallstichsageblatter/details.html:21
 #: products/templates/products/metallstichsageblatter/details.html:53
@@ -1296,9 +1297,19 @@ msgstr "B x S"
 msgid "Details"
 msgstr "Details"
 
+#: products/templates/products/metallhandsageblatter/overview.html:19
+msgid "Zubehörartikel anzeigen"
+msgstr ""
+
 #: products/templates/products/metallhandsageblatter/overview.html:24
 msgid "Metallhandsägebügel"
 msgstr "Metal Handsaw Bow"
+
+#: products/templates/products/metallhandsageblatter/overview.html:58
+#: products/templates/products/pendelhubstichsageblatter/overview.html:50
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:123
+msgid "Bestell-Nr.:"
+msgstr "Order No.:"
 
 #: products/templates/products/metallhandsageblatter/overview.html:76
 #: products/templates/products/metallhandsageblatter/overview.html:170
@@ -1913,11 +1924,6 @@ msgstr "Tin bronze"
 #: products/templates/products/metallsagebander/advices.html:732
 msgid "Aluminiumbronze"
 msgstr "Aluminium bronze"
-
-#: products/templates/products/pendelhubstichsageblatter/overview.html:50
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:123
-msgid "Bestell-Nr.:"
-msgstr "Order No.:"
 
 #: products/templates/products/pendelhubstichsageblatter/overview.html:53
 msgid "Zahnteilung"

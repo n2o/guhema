@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-08 22:44+0000\n"
+"POT-Creation-Date: 2016-02-08 22:50+0000\n"
 "PO-Revision-Date: 2016-02-08 16:56+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: \n"
@@ -220,6 +220,7 @@ msgstr "Размер"
 #: products/templates/products/maschinensageblatter/advices.html:482
 #: products/templates/products/maschinensageblatter/details.html:21
 #: products/templates/products/maschinensageblatter/details.html:53
+#: products/templates/products/metallhandsageblatter/overview.html:150
 #: products/templates/products/metallsagebander/details.html:23
 #: products/templates/products/metallstichsageblatter/details.html:21
 #: products/templates/products/metallstichsageblatter/details.html:53
@@ -1299,9 +1300,19 @@ msgstr "Ш x Т"
 msgid "Details"
 msgstr "Детали"
 
+#: products/templates/products/metallhandsageblatter/overview.html:19
+msgid "Zubehörartikel anzeigen"
+msgstr ""
+
 #: products/templates/products/metallhandsageblatter/overview.html:24
 msgid "Metallhandsägebügel"
 msgstr "Дуга ручной пилы по металлу"
+
+#: products/templates/products/metallhandsageblatter/overview.html:58
+#: products/templates/products/pendelhubstichsageblatter/overview.html:50
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:123
+msgid "Bestell-Nr.:"
+msgstr "No для заказа:"
 
 #: products/templates/products/metallhandsageblatter/overview.html:76
 #: products/templates/products/metallhandsageblatter/overview.html:170
@@ -1919,11 +1930,6 @@ msgstr "Оловянная бронза"
 #: products/templates/products/metallsagebander/advices.html:732
 msgid "Aluminiumbronze"
 msgstr "Алюминиевая бронза"
-
-#: products/templates/products/pendelhubstichsageblatter/overview.html:50
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:123
-msgid "Bestell-Nr.:"
-msgstr "No для заказа:"
 
 #: products/templates/products/pendelhubstichsageblatter/overview.html:53
 msgid "Zahnteilung"

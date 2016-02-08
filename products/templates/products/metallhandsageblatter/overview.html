@@ -16,7 +16,7 @@
   {% include 'products/include_productheader.html' with group=group %}
 
   <a class="btn btn-primary pull-right" role="button" data-toggle="collapse" href="#collapse-accessory" aria-expanded="false" aria-controls="collapse-accessory">
-    Zubehörartikel anzeigen
+    {% blocktrans %}Zubehörartikel anzeigen{% endblocktrans %}
     <span class="caret"></span>
   </a>
 
@@ -55,7 +55,7 @@
                 <table class="table table-condensed table-striped-column table-hover">
                   <tr>
                     <td class="text-bold">
-                      Bestell-Nr.:
+                      {% trans "Bestell-Nr.:" %}
                     </td>
                   </tr>
                   <tr>
@@ -147,7 +147,7 @@
                   </td>
                 {% endfor %}
                 <td>
-                  {{ blade.toothing }} ZpZ
+                  {{ blade.toothing }} {% trans "ZpZ" %}
                 </td>
                 <td>
                   {% for ind in blade.indicators.all %}
