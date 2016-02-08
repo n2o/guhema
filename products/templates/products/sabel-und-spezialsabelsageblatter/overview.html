@@ -60,16 +60,16 @@
                   <thead>
                     <tr>
                       {% if blade.toothing %}
-                        <th>Verzahnung</th>
+                        <th>{% trans "Verzahnung" %}</th>
                       {% endif %}
                       {% if blade.cutting_metal %}
-                        <th>Schnittbereich Metall</th>
+                        <th>{% blocktrans %}Schnittbereich Metall{% endblocktrans %}</th>
                       {% endif %}
                       {% if blade.cutting_wood %}
-                        <th>Schnittbereich Holz</th>
+                        <th>{% blocktrans %}Schnittbereich Holz{% endblocktrans %}</th>
                       {% endif %}
                       {% if blade.cutting_minerals %}
-                        <th>Schnittbereich Mineralisch</th>
+                        <th>{% blocktrans %}Schnittbereich Mineralisch{% endblocktrans %}</th>
                       {% endif %}
                     </tr>
                   </thead>
@@ -79,7 +79,7 @@
                         <td>
                           {{ blade.toothing }}
                           {% if blade.toothing != "Welle" %}
-                            ZpZ
+                            {% trans "ZpZ" %}
                           {% endif %}
                         </td>
                       {% endif %}
@@ -101,7 +101,7 @@
             <table class="table table-condensed table-striped-column table-hover">
               <tr>
                 <td class="text-bold" width="200px">
-                  Sägeblatt Länge [mm]
+                  {% trans "Sägeblatt" %} {% trans "Länge" %} [{% trans "mm" %}]
                 </td>
                 {% for ind in blade.indicators.all %}
                   <td>{{ ind.length }}</td>
@@ -109,7 +109,7 @@
               </tr>
               <tr>
                 <td class="text-bold">
-                  Breite x Stärke [mm]
+                  {% trans "Breite" %} x {% trans "Stärke" %} [{% trans "mm" %}]
                 </td>
                 {% for ind in blade.indicators.all %}
                   <td>{{ ind.width }} x {{ ind.strength }}</td>
@@ -118,9 +118,9 @@
               <tr>
                 <td class="text-bold">
                   {% if next.type == "SSM" %}
-                    Kennziffer
+                    {% trans "Kennziffer" %}
                   {% else %}
-                    Bestell-Nr.:
+                    {% trans "Bestell-Nr.:" %}
                   {% endif %}
                 </td>
                 {% for ind in blade.indicators.all %}
@@ -142,7 +142,7 @@
       {% endwith %}
     {% endif %}
   {% empty %}
-    <p>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.</p>
+    <p>{% blocktrans %}Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.{% endblocktrans %}</p>
   {% endfor %}
 
 {% endblock %}

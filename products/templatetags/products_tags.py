@@ -1,5 +1,6 @@
 from django import template
-from django.template import Variable, VariableDoesNotExist, resolve_variable
+from django.utils.translation import ugettext_lazy as _
+
 
 register = template.Library()
 
@@ -75,3 +76,9 @@ def validBandsawIndicator(ind):
         return "E"
     else:
         return "L"
+
+
+@register.filter()
+def trans(value):
+    """ Translate variable"""
+    return _(value)

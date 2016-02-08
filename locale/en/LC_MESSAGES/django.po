@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-08 16:01+0000\n"
+"POT-Creation-Date: 2016-02-08 22:44+0000\n"
 "PO-Revision-Date: 2016-02-08 16:55+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: Christian Meter <cmeter@googlemail.com>\n"
@@ -75,6 +75,16 @@ msgstr "English"
 msgid "Russian"
 msgstr "Russian"
 
+#: fairs/admin.py:22 products/admin.py:45 products/admin.py:54
+#: products/admin.py:70 products/admin.py:79 products/admin.py:89
+#: products/admin.py:99 products/admin.py:107
+msgid "Allgemein"
+msgstr ""
+
+#: fairs/admin.py:23 news/admin.py:24
+msgid "Erweitert"
+msgstr ""
+
 #: fairs/models.py:9
 msgid "Name der Messe"
 msgstr "Name of the fair"
@@ -103,8 +113,8 @@ msgstr "Begin"
 msgid "Ende"
 msgstr "End"
 
-#: fairs/models.py:16 products/models.py:58 products/models.py:76
-#: products/models.py:117
+#: fairs/models.py:16 products/admin.py:46 products/models.py:58
+#: products/models.py:76 products/models.py:117
 #: products/templates/products/lochsagen/overview.html:161
 #: products/templates/products/maschinensageblatter/advices.html:483
 msgid "Beschreibung"
@@ -192,12 +202,38 @@ msgstr "Entries"
 msgid "News"
 msgstr "News"
 
-#: products/admin.py:108
-msgid "Advanced options"
-msgstr "Advanced options"
+#: products/admin.py:55
+#: products/templates/products/maschinensageblatter/details.html:71
+#: products/templates/products/metallsagebander/details.html:52
+#: products/templates/products/metallstichsageblatter/details.html:71
+msgid "Abmessungen"
+msgstr "Dimensions"
 
-#: products/models.py:11 products/models.py:36 products/models.py:154
-#: products/models.py:224
+#: products/admin.py:56 products/templates/products/lochsagen/overview.html:44
+#: products/templates/products/lochsagen/overview.html:61
+#: products/templates/products/lochsagen/overview.html:86
+#: products/templates/products/lochsagen/overview.html:196
+#: products/templates/products/lochsagen/overview.html:200
+#: products/templates/products/maschinensageblatter/advices.html:70
+#: products/templates/products/maschinensageblatter/advices.html:482
+#: products/templates/products/maschinensageblatter/details.html:21
+#: products/templates/products/maschinensageblatter/details.html:53
+#: products/templates/products/metallsagebander/details.html:23
+#: products/templates/products/metallstichsageblatter/details.html:21
+#: products/templates/products/metallstichsageblatter/details.html:53
+#: products/templates/products/pendelhubstichsageblatter/overview.html:75
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:82
+msgid "ZpZ"
+msgstr "TPI"
+
+#: products/admin.py:80 products/admin.py:90
+#, fuzzy
+#| msgid "Ausführung 20er-Serie"
+msgid "Ausführungen"
+msgstr "Version 20-Series"
+
+#: products/admin.py:100 products/models.py:11 products/models.py:36
+#: products/models.py:154 products/models.py:224
 #: products/templates/products/maschinensageblatter/details.html:72
 #: products/templates/products/metallkreissageblatter/overview.html:131
 #: products/templates/products/metallkreissageblatter/overview.html:142
@@ -205,8 +241,13 @@ msgstr "Advanced options"
 #: products/templates/products/metallkreissageblatter/overview.html:273
 #: products/templates/products/metallsagebander/details.html:53
 #: products/templates/products/metallstichsageblatter/details.html:72
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:121
 msgid "Kennziffer"
 msgstr "Indicator"
+
+#: products/admin.py:108
+msgid "Advanced options"
+msgstr "Advanced options"
 
 #: products/models.py:12 products/models.py:155
 msgid "Breite (in mm)"
@@ -262,6 +303,7 @@ msgid "Bezeichnung"
 msgstr "Designation"
 
 #: products/models.py:87
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:104
 msgid "Sägeblatt"
 msgstr "Sawblade"
 
@@ -271,21 +313,25 @@ msgstr "Sawblades"
 
 #: products/models.py:93 products/models.py:123
 #: products/templates/products/metallhandsageblatter/overview.html:133
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:63
 msgid "Verzahnung"
 msgstr "Toothing"
 
 #: products/models.py:94
 #: products/templates/products/metallhandsageblatter/overview.html:139
 #: products/templates/products/pendelhubstichsageblatter/overview.html:60
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:66
 msgid "Schnittbereich Metall"
 msgstr "Metal cutting area"
 
 #: products/models.py:95
 #: products/templates/products/pendelhubstichsageblatter/overview.html:65
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:69
 msgid "Schnittbereich Holz"
 msgstr "Wood cutting area"
 
 #: products/models.py:96
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:72
 msgid "Schnittbereich Mineralisch"
 msgstr "Mineral cutting area"
 
@@ -598,6 +644,7 @@ msgstr ""
 
 #: products/templates/products/index.html:9
 #: products/templates/products/maschinensageblatter/overview.html:20
+#: products/templates/products/metallkreissageblatter/overview.html:95
 #: products/templates/products/metallstichsageblatter/overview.html:20
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:18
 #: templates/base.html:52
@@ -653,21 +700,6 @@ msgid "Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. %(num)s)"
 msgstr "Bi-metal, with HSS cutter made of M42 (Material No. %(num)s)"
 
 #: products/templates/products/lochsagen/overview.html:44
-#: products/templates/products/lochsagen/overview.html:61
-#: products/templates/products/lochsagen/overview.html:86
-#: products/templates/products/lochsagen/overview.html:196
-#: products/templates/products/lochsagen/overview.html:200
-#: products/templates/products/maschinensageblatter/advices.html:70
-#: products/templates/products/maschinensageblatter/advices.html:482
-#: products/templates/products/maschinensageblatter/details.html:21
-#: products/templates/products/maschinensageblatter/details.html:53
-#: products/templates/products/metallsagebander/details.html:23
-#: products/templates/products/metallstichsageblatter/details.html:53
-#: products/templates/products/pendelhubstichsageblatter/overview.html:75
-msgid "ZpZ"
-msgstr "TPI"
-
-#: products/templates/products/lochsagen/overview.html:44
 msgid "das Allroundtalent"
 msgstr "the \"All-Rounder\""
 
@@ -693,6 +725,7 @@ msgstr "The fast path to our Article No."
 
 #: products/templates/products/lochsagen/overview.html:86
 #: products/templates/products/maschinensageblatter/advices.html:100
+#: products/templates/products/maschinensageblatter/details.html:21
 #: products/templates/products/metallkreissageblatter/overview.html:131
 #: products/templates/products/metallstichsageblatter/details.html:21
 msgid "Qualität"
@@ -722,6 +755,11 @@ msgstr "Order No."
 #: products/templates/products/maschinensageblatter/advices.html:116
 #: products/templates/products/maschinensageblatter/advices.html:119
 #: products/templates/products/maschinensageblatter/advices.html:122
+#: products/templates/products/maschinensageblatter/advices.html:489
+#: products/templates/products/maschinensageblatter/advices.html:493
+#: products/templates/products/maschinensageblatter/advices.html:497
+#: products/templates/products/maschinensageblatter/advices.html:501
+#: products/templates/products/maschinensageblatter/advices.html:505
 #: products/templates/products/metallhandsageblatter/overview.html:154
 #: products/templates/products/metallhandsageblatter/overview.html:158
 #: products/templates/products/metallkreissageblatter/overview.html:158
@@ -740,6 +778,8 @@ msgstr "Order No."
 #: products/templates/products/pendelhubstichsageblatter/overview.html:87
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:87
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:90
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:104
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:112
 msgid "mm"
 msgstr "mm"
 
@@ -1236,12 +1276,6 @@ msgstr "Code Number (dimension)"
 msgid "Variable Positivzahnung"
 msgstr "Variable Positive Teeth"
 
-#: products/templates/products/maschinensageblatter/details.html:71
-#: products/templates/products/metallsagebander/details.html:52
-#: products/templates/products/metallstichsageblatter/details.html:71
-msgid "Abmessungen"
-msgstr "Dimensions"
-
 #: products/templates/products/maschinensageblatter/details.html:94
 #: products/templates/products/metallsagebander/details.html:146
 #: products/templates/products/metallstichsageblatter/details.html:94
@@ -1255,6 +1289,7 @@ msgid "B x S"
 msgstr "B x S"
 
 #: products/templates/products/maschinensageblatter/overview.html:42
+#: products/templates/products/maschinensageblatter/overview.html:70
 #: products/templates/products/metallsagebander/overview.html:72
 #: products/templates/products/metallstichsageblatter/overview.html:43
 #: products/templates/products/metallstichsageblatter/overview.html:72
@@ -1268,6 +1303,7 @@ msgstr "Metal Handsaw Bow"
 #: products/templates/products/metallhandsageblatter/overview.html:76
 #: products/templates/products/metallhandsageblatter/overview.html:170
 #: products/templates/products/pendelhubstichsageblatter/overview.html:100
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:145
 msgid "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
 msgstr "An error occured. Please try again later."
 
@@ -1385,7 +1421,20 @@ msgstr ""
 "of steels on sawing machines and rotary transfer machines and is recommended "
 "for medium and coarse teeth separations."
 
+#: products/templates/products/metallkreissageblatter/overview.html:106
+#: products/templates/products/metallkreissageblatter/overview.html:121
+#, python-format
+msgid "%(name)s"
+msgstr ""
+
+#: products/templates/products/metallkreissageblatter/overview.html:109
+#: products/templates/products/metallkreissageblatter/overview.html:124
+#, python-format
+msgid "%(description)s"
+msgstr ""
+
 #: products/templates/products/metallkreissageblatter/overview.html:141
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:112
 msgid "Stärke"
 msgstr ""
 
@@ -1866,6 +1915,7 @@ msgid "Aluminiumbronze"
 msgstr "Aluminium bronze"
 
 #: products/templates/products/pendelhubstichsageblatter/overview.html:50
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:123
 msgid "Bestell-Nr.:"
 msgstr "Order No.:"
 
@@ -1876,6 +1926,14 @@ msgstr "Tooth separation"
 #: products/templates/products/pendelhubstichsageblatter/overview.html:56
 msgid "Sägeblattlänge"
 msgstr "Sawblade length"
+
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:104
+msgid "Länge"
+msgstr ""
+
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:112
+msgid "Breite"
+msgstr ""
 
 #: templates/admin/base_site.html:3
 msgid "GUHEMA site admin"
