@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-08 22:50+0000\n"
-"PO-Revision-Date: 2016-02-08 16:56+0100\n"
+"POT-Creation-Date: 2016-02-09 21:16+0000\n"
+"PO-Revision-Date: 2016-02-09 22:40+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -81,11 +81,11 @@ msgstr "русский"
 #: products/admin.py:70 products/admin.py:79 products/admin.py:89
 #: products/admin.py:99 products/admin.py:107
 msgid "Allgemein"
-msgstr ""
+msgstr "обычно"
 
 #: fairs/admin.py:23 news/admin.py:24
 msgid "Erweitert"
-msgstr ""
+msgstr "расширенный"
 
 #: fairs/models.py:9
 msgid "Name der Messe"
@@ -230,8 +230,6 @@ msgid "ZpZ"
 msgstr "з/д"
 
 #: products/admin.py:80 products/admin.py:90
-#, fuzzy
-#| msgid "Ausführung 20er-Serie"
 msgid "Ausführungen"
 msgstr "Исполнение 20-я серия"
 
@@ -1302,7 +1300,7 @@ msgstr "Детали"
 
 #: products/templates/products/metallhandsageblatter/overview.html:19
 msgid "Zubehörartikel anzeigen"
-msgstr ""
+msgstr "Смотрите аксессуары"
 
 #: products/templates/products/metallhandsageblatter/overview.html:24
 msgid "Metallhandsägebügel"
@@ -1439,79 +1437,81 @@ msgstr ""
 #: products/templates/products/metallkreissageblatter/overview.html:121
 #, python-format
 msgid "%(name)s"
-msgstr ""
+msgstr "%(name)s"
 
 #: products/templates/products/metallkreissageblatter/overview.html:109
 #: products/templates/products/metallkreissageblatter/overview.html:124
 #, python-format
 msgid "%(description)s"
-msgstr ""
+msgstr "%(description)s"
 
 #: products/templates/products/metallkreissageblatter/overview.html:141
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:112
 msgid "Stärke"
-msgstr ""
+msgstr "толщина"
 
 #: products/templates/products/metallkreissageblatter/overview.html:141
 msgid "Bohrung"
-msgstr ""
+msgstr "отверстие"
 
 #: products/templates/products/metallkreissageblatter/overview.html:216
 #: products/templates/products/metallkreissageblatter/overview.html:273
 msgid "Legende"
-msgstr ""
+msgstr "Указание на"
 
 #: products/templates/products/metallkreissageblatter/overview.html:216
 msgid "Zähnezahl"
-msgstr ""
+msgstr "количество зубьев"
 
 #: products/templates/products/metallkreissageblatter/overview.html:273
 msgid "Nebenlöcher"
-msgstr ""
+msgstr "вспомогательные отверстия"
 
 #: products/templates/products/metallkreissageblatter/overview.html:298
 msgid "Metallkreissäge"
-msgstr ""
+msgstr "круглая пила"
 
 #: products/templates/products/metallkreissageblatter/overview.html:301
 msgid "Bei der Bestellung machen Sie bitte folgende Angaben:"
 msgstr ""
+"Делая заказ, указывайте, пожалуйста,\n"
+"следующее:"
 
 #: products/templates/products/metallkreissageblatter/overview.html:303
 msgid "Artikelnummer"
-msgstr ""
+msgstr "артикульный номер;"
 
 #: products/templates/products/metallkreissageblatter/overview.html:304
 msgid "Andere Abmessungen bieten wir an, nennen Sie uns:"
-msgstr ""
+msgstr "Возможны и другие размеры, пожалуйста, сообщите нам:"
 
 #: products/templates/products/metallkreissageblatter/overview.html:306
 msgid "Durchmesser des Blattes"
-msgstr ""
+msgstr "диаметр листа"
 
 #: products/templates/products/metallkreissageblatter/overview.html:307
 msgid "Blattstärke"
-msgstr ""
+msgstr "толщина листа"
 
 #: products/templates/products/metallkreissageblatter/overview.html:308
 msgid "Hauptbohrung"
-msgstr ""
+msgstr "основное отверстие"
 
 #: products/templates/products/metallkreissageblatter/overview.html:309
 msgid "Anzahl der Nebenlöcher"
-msgstr ""
+msgstr "количество вспомогательных отверстий"
 
 #: products/templates/products/metallkreissageblatter/overview.html:310
 msgid "Lochdurchmesser"
-msgstr ""
+msgstr "диаметр отверстия"
 
 #: products/templates/products/metallkreissageblatter/overview.html:311
 msgid "Teilkreis der Nebenlöcher"
-msgstr ""
+msgstr "делительная окружность вспомогательных отверстий"
 
 #: products/templates/products/metallkreissageblatter/overview.html:312
 msgid "Zahnteilung oder Zähnezahl"
-msgstr ""
+msgstr "шаг или число зубьев"
 
 #: products/templates/products/metallsagebander/advices.html:8
 #: templates/productgroups.html:16
@@ -1941,11 +1941,11 @@ msgstr "Длина пильного полотна"
 
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:104
 msgid "Länge"
-msgstr ""
+msgstr "длина"
 
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:112
 msgid "Breite"
-msgstr ""
+msgstr "Ширина"
 
 #: templates/admin/base_site.html:3
 msgid "GUHEMA site admin"
