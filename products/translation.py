@@ -14,6 +14,11 @@ class SawBladeTranslationOptions(TranslationOptions):
     fields = ('description',)
 
 
+@register(SableSawBlade)
+class SableSawBladeTranslationOptions(TranslationOptions):
+    fields = ('cutting_minerals', 'toothing')
+
+
 @register(HoleSaw)
 class HoleSawTranslationOptions(TranslationOptions):
     fields = ('description', 'category',)
@@ -33,7 +38,6 @@ class NoTranslationOptions(TranslationOptions):
     pass
 
 
-translator.register(SableSawBlade, SawBladeTranslationOptions)
 translator.register(HackSawBlade, SawBladeTranslationOptions)
 translator.register(CircularSawBlade, SawBladeTranslationOptions)
 translator.register(Indicator, NoTranslationOptions)
