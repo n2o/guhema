@@ -1,7 +1,10 @@
-from modeltranslation.translator import register, TranslationOptions, translator
-from .models import ProductGroup, SawBlade, HoleSaw, BandSawBlade, JigSawBlade, SableSawBlade, HackSawBlade, Indicator, \
-    CircularSawBlade
 from django.contrib.flatpages.models import FlatPage
+from modeltranslation.translator import (TranslationOptions, register,
+                                         translator)
+
+from .models import (BandSawBlade, CircularSawBlade, HackSawBlade, HoleSaw,
+                     Indicator, JigSawBlade, ProductGroup, SableSawBlade,
+                     SawBlade)
 
 
 @register(ProductGroup)

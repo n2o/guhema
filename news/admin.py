@@ -1,9 +1,8 @@
 from django.contrib import admin
-from modeltranslation.admin import TranslationAdmin
 from django.db import models
-from pagedown.widgets import AdminPagedownWidget
 from django.utils.translation import ugettext_lazy as _
-
+from modeltranslation.admin import TranslationAdmin
+from pagedown.widgets import AdminPagedownWidget
 
 from .models import Category, Entry
 

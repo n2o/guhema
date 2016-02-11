@@ -3,8 +3,8 @@ from django.contrib.flatpages.models import FlatPage
 from django.db import models
 from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext_lazy as _
-from pagedown.widgets import AdminPagedownWidget
 from modeltranslation.admin import TranslationAdmin
+from pagedown.widgets import AdminPagedownWidget
 
 from .models import (BandSawBlade, BandSawBladeIndicator, CircularSawBlade,
                      CircularSawBladeIndicator, Clamping, HackSawBlade,
