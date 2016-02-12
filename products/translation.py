@@ -29,7 +29,7 @@ class HackSawBladeTranslationOptions(TranslationOptions):
 
 @register(HoleSaw)
 class HoleSawTranslationOptions(TranslationOptions):
-    fields = ('description', 'category',)
+    fields = ('description', 'category', 'mounting')
 
 
 @register(BandSawBlade)
