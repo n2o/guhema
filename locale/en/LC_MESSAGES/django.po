@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-10 17:00+0000\n"
-"PO-Revision-Date: 2016-02-09 22:43+0100\n"
+"POT-Creation-Date: 2016-02-13 12:25+0000\n"
+"PO-Revision-Date: 2016-02-13 13:26+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: Christian Meter <cmeter@googlemail.com>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: contact/forms.py:7
@@ -81,7 +81,7 @@ msgstr "Russian"
 msgid "Allgemein"
 msgstr "General"
 
-#: fairs/admin.py:23 news/admin.py:24
+#: fairs/admin.py:23 news/admin.py:23
 msgid "Erweitert"
 msgstr "Extended"
 
@@ -240,7 +240,7 @@ msgstr "Versions"
 #: products/templates/products/metallkreissageblatter/overview.html:273
 #: products/templates/products/metallsagebander/details.html:53
 #: products/templates/products/metallstichsageblatter/details.html:72
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:125
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:121
 msgid "Kennziffer"
 msgstr "Indicator"
 
@@ -302,7 +302,7 @@ msgid "Bezeichnung"
 msgstr "Designation"
 
 #: products/models.py:87
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:108
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:104
 msgid "Sägeblatt"
 msgstr "Sawblade"
 
@@ -777,8 +777,8 @@ msgstr "Order No."
 #: products/templates/products/pendelhubstichsageblatter/overview.html:87
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:87
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:90
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:108
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:116
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:104
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:112
 msgid "mm"
 msgstr "mm"
 
@@ -1305,14 +1305,14 @@ msgstr "Metal Handsaw Bow"
 
 #: products/templates/products/metallhandsageblatter/overview.html:58
 #: products/templates/products/pendelhubstichsageblatter/overview.html:50
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:127
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:123
 msgid "Bestell-Nr.:"
 msgstr "Order No.:"
 
 #: products/templates/products/metallhandsageblatter/overview.html:76
 #: products/templates/products/metallhandsageblatter/overview.html:170
 #: products/templates/products/pendelhubstichsageblatter/overview.html:100
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:149
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:145
 msgid "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
 msgstr "An error occured. Please try again later."
 
@@ -1443,7 +1443,7 @@ msgid "%(description)s"
 msgstr "%(description)s"
 
 #: products/templates/products/metallkreissageblatter/overview.html:141
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:116
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:112
 msgid "Stärke"
 msgstr "Thinkness"
 
@@ -1474,7 +1474,7 @@ msgstr "When ordering, please provide the following information:"
 
 #: products/templates/products/metallkreissageblatter/overview.html:303
 msgid "Artikelnummer"
-msgstr "Artikel Number"
+msgstr "Article Number"
 
 #: products/templates/products/metallkreissageblatter/overview.html:304
 msgid "Andere Abmessungen bieten wir an, nennen Sie uns:"
@@ -1931,19 +1931,11 @@ msgstr "Tooth separation"
 msgid "Sägeblattlänge"
 msgstr "Sawblade length"
 
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:94
-#, python-format
-msgid ""
-"\n"
-"                            %(blade.cutting_minerals)s\n"
-"                          "
-msgstr ""
-
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:108
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:104
 msgid "Länge"
 msgstr "length"
 
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:116
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:112
 msgid "Breite"
 msgstr "Width"
 
