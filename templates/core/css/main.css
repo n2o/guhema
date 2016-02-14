@@ -147,9 +147,11 @@ section {
   height: 80px;
   line-height: 80px; }
   #footer form, #footer-text form {
-    line-height: 80px;
     margin-top: 0;
     margin-bottom: 0; }
+    #footer form .form-group, #footer-text form .form-group {
+      height: 70px !important;
+      line-height: 70px !important; }
 
 @media only screen and (max-width: 768px) {
   #footer, #footer-text {
