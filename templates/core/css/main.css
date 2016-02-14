@@ -155,11 +155,20 @@ section {
 
 @media only screen and (max-width: 768px) {
   #footer, #footer-text {
-    height: 120px;
-    line-height: 53.33333px; }
+    height: 160px;
+    line-height: 40px; }
 
   #footer-kontakt-line {
-    text-align: left; } }
+    text-align: left !important;
+    float: left !important; } }
+@media only screen and (max-width: 1000px) {
+  #footer, #footer-text {
+    height: 160px;
+    line-height: 40px; }
+
+  #footer-kontakt-line {
+    text-align: left !important;
+    float: left !important; } }
 #footer-line {
   height: 1px;
   background-color: white;
