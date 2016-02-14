@@ -22,7 +22,7 @@
         {% blocktrans %}Der schnelle Weg zu unserer Artikel-Nr.{% endblocktrans %}<br>
         <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">{% blocktrans %}Kennziffer (Abmessung){% endblocktrans %}</span> + <span class="text-orange-bold">{% trans "ZpZ" %}</span><br>
         z.B.: <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}</span><br>
-        z.B.: <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> + <span class="text-orange-bold">Sägeblattlänge</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}03800</span>
+        z.B.: <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> + <span class="text-orange-bold">{% trans "Sägeblattlänge" %}</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}03800</span>
       </p>
     </div>
   </div>
@@ -46,7 +46,7 @@
     <thead>
       <tr>
         <th colspan="2" class="table-only-white-border-right"></th>
-        <th colspan="14" class="table-no-border-color">ZpZ</th>
+        <th colspan="14" class="table-no-border-color">{% trans "ZpZ" %}</th>
       </tr>
       <tr>
         <th class="table-white-border-right table-no-bot-border" width="15%">{% trans "Abmessungen" %}</th>

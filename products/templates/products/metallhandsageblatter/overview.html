@@ -30,40 +30,22 @@
             {% include 'products/include_blade_image.html' with image=blade.image alias='blade_image_250h' %}
 
             <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-md-2">
-                    <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-                  </div>
-                  <div class="col-md-10">
-                    {{ blade.quality }}
-                    <span class="text-orange-bold">
-                      {{ blade.type }}
-                    </span>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-2">
-                    <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-                  </div>
-                  <div class="col-md-10 markdown-no-padding-left">
-                    {{ blade.description|markdown }}
-                  </div>
-                </div>
+              <div class="col-md-2 col-xs-2">
+                <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
               </div>
-              <div class="col-md-offset-1 col-md-5">
-                <table class="table table-condensed table-striped-column table-hover">
-                  <tr>
-                    <td class="text-bold">
-                      {% trans "Bestell-Nr.:" %}
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-orange-bold">
-                      {{ blade.type }}
-                    </td>
-                  </tr>
-                </table>
+              <div class="col-md-10 col-xs-10">
+                {{ blade.quality }}
+                <span class="text-orange-bold">
+                  {{ blade.type }}
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-xs-2">
+                <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+              </div>
+              <div class="col-md-10 col-xs-10 markdown-no-padding-left">
+                {{ blade.description|markdown }}
               </div>
             </div>
           </div>
@@ -96,10 +78,10 @@
           <div class="row">
             <div class="col-md-12">
               <div class="row">
-                <div class="col-md-1">
+                <div class="col-md-1 col-xs-2">
                   <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
                 </div>
-                <div class="col-md-11">
+                <div class="col-md-11 col-xs-10">
                   {{ blade.quality }}
                   <span class="text-orange-bold">
                     {{ blade.type }}
@@ -114,10 +96,10 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-1">
+                <div class="col-md-1 col-xs-2">
                   <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
                 </div>
-                <div class="col-md-11 markdown-no-padding-left">
+                <div class="col-md-11 col-xs-10 markdown-no-padding-left">
                   {{ blade.description|markdown }}
                 </div>
               </div>
