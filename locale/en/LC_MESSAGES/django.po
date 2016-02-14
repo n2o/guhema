@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GUHEMA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-13 12:25+0000\n"
-"PO-Revision-Date: 2016-02-13 13:26+0100\n"
+"POT-Creation-Date: 2016-02-14 15:54+0000\n"
+"PO-Revision-Date: 2016-02-14 16:55+0100\n"
 "Last-Translator: Christian Meter <cmeter@googlemail.com>\n"
 "Language-Team: Christian Meter <cmeter@googlemail.com>\n"
 "Language: en\n"
@@ -63,15 +63,15 @@ msgstr "We have received your mail"
 msgid "Schnellstmöglich werden wir uns bei Ihnen melden!"
 msgstr "We will contact you as soon as possible"
 
-#: core/settings.py:111
+#: core/settings.py:112
 msgid "German"
 msgstr "German"
 
-#: core/settings.py:112
+#: core/settings.py:113
 msgid "English"
 msgstr "English"
 
-#: core/settings.py:113
+#: core/settings.py:114
 msgid "Russian"
 msgstr "Russian"
 
@@ -218,8 +218,9 @@ msgstr "Dimensions"
 #: products/templates/products/maschinensageblatter/advices.html:482
 #: products/templates/products/maschinensageblatter/details.html:21
 #: products/templates/products/maschinensageblatter/details.html:53
-#: products/templates/products/metallhandsageblatter/overview.html:150
+#: products/templates/products/metallhandsageblatter/overview.html:132
 #: products/templates/products/metallsagebander/details.html:23
+#: products/templates/products/metallsagebander/details.html:49
 #: products/templates/products/metallstichsageblatter/details.html:21
 #: products/templates/products/metallstichsageblatter/details.html:53
 #: products/templates/products/pendelhubstichsageblatter/overview.html:75
@@ -311,13 +312,13 @@ msgid "Sägeblätter"
 msgstr "Sawblades"
 
 #: products/models.py:93 products/models.py:123
-#: products/templates/products/metallhandsageblatter/overview.html:133
+#: products/templates/products/metallhandsageblatter/overview.html:115
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:63
 msgid "Verzahnung"
 msgstr "Toothing"
 
 #: products/models.py:94
-#: products/templates/products/metallhandsageblatter/overview.html:139
+#: products/templates/products/metallhandsageblatter/overview.html:121
 #: products/templates/products/pendelhubstichsageblatter/overview.html:60
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:66
 msgid "Schnittbereich Metall"
@@ -743,7 +744,7 @@ msgstr "Centering units"
 #: products/templates/products/lochsagen/overview.html:106
 #: products/templates/products/lochsagen/overview.html:132
 #: products/templates/products/lochsagen/overview.html:162
-#: products/templates/products/metallhandsageblatter/overview.html:130
+#: products/templates/products/metallhandsageblatter/overview.html:112
 msgid "Bestell-Nr."
 msgstr "Order No."
 
@@ -759,8 +760,8 @@ msgstr "Order No."
 #: products/templates/products/maschinensageblatter/advices.html:497
 #: products/templates/products/maschinensageblatter/advices.html:501
 #: products/templates/products/maschinensageblatter/advices.html:505
-#: products/templates/products/metallhandsageblatter/overview.html:154
-#: products/templates/products/metallhandsageblatter/overview.html:158
+#: products/templates/products/metallhandsageblatter/overview.html:136
+#: products/templates/products/metallhandsageblatter/overview.html:140
 #: products/templates/products/metallkreissageblatter/overview.html:158
 #: products/templates/products/metallkreissageblatter/overview.html:159
 #: products/templates/products/metallkreissageblatter/overview.html:160
@@ -1289,7 +1290,7 @@ msgstr "B x S"
 
 #: products/templates/products/maschinensageblatter/overview.html:42
 #: products/templates/products/maschinensageblatter/overview.html:70
-#: products/templates/products/metallsagebander/overview.html:72
+#: products/templates/products/metallsagebander/overview.html:77
 #: products/templates/products/metallstichsageblatter/overview.html:43
 #: products/templates/products/metallstichsageblatter/overview.html:72
 msgid "Details"
@@ -1304,19 +1305,13 @@ msgid "Metallhandsägebügel"
 msgstr "Metal Handsaw Bow"
 
 #: products/templates/products/metallhandsageblatter/overview.html:58
-#: products/templates/products/pendelhubstichsageblatter/overview.html:50
-#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:123
-msgid "Bestell-Nr.:"
-msgstr "Order No.:"
-
-#: products/templates/products/metallhandsageblatter/overview.html:76
-#: products/templates/products/metallhandsageblatter/overview.html:170
+#: products/templates/products/metallhandsageblatter/overview.html:152
 #: products/templates/products/pendelhubstichsageblatter/overview.html:100
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:145
 msgid "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
 msgstr "An error occured. Please try again later."
 
-#: products/templates/products/metallhandsageblatter/overview.html:136
+#: products/templates/products/metallhandsageblatter/overview.html:118
 msgid "Abmessung"
 msgstr "Dimension"
 
@@ -1923,13 +1918,19 @@ msgstr "Tin bronze"
 msgid "Aluminiumbronze"
 msgstr "Aluminium bronze"
 
-#: products/templates/products/pendelhubstichsageblatter/overview.html:53
-msgid "Zahnteilung"
-msgstr "Tooth separation"
-
+#: products/templates/products/metallsagebander/details.html:25
 #: products/templates/products/pendelhubstichsageblatter/overview.html:56
 msgid "Sägeblattlänge"
 msgstr "Sawblade length"
+
+#: products/templates/products/pendelhubstichsageblatter/overview.html:50
+#: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:123
+msgid "Bestell-Nr.:"
+msgstr "Order No.:"
+
+#: products/templates/products/pendelhubstichsageblatter/overview.html:53
+msgid "Zahnteilung"
+msgstr "Tooth separation"
 
 #: products/templates/products/sabel-und-spezialsabelsageblatter/overview.html:104
 msgid "Länge"
@@ -2018,7 +2019,7 @@ msgstr "Discover our products!"
 
 #: templates/index.html:23
 msgid "Qualität die Vertrauen schafft"
-msgstr "GUHEMA FOR MADE IN GERMANY - AND SINCE 1867 !"
+msgstr "Quality you can trust"
 
 #: templates/index.html:24
 msgid "GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!"
