@@ -39,7 +39,7 @@ elif len(SECRET_KEY) < 50:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pt8lpuijgniy33u5.myfritz.net', 'cmeter.de', 'christian-meter.de', 'dori']
+ALLOWED_HOSTS = ['cmeter.de', 'guhema.com', 'www.guhema.com', 'guhema.de', 'www.guhema.de', 'sägenmarkt.com', 'www.sägenmarkt.com', 'sägenmarkt.de', 'www.sägenmarkt.de']
 
 SITE_ID = 1
 
