@@ -7,7 +7,7 @@
   {% static image as img %}
   <div class="padding-top">
     <a href="{{ img }}">
-      <img class="img-responsive img-thumbnail" src="{{ img }}" alt="{{ alt_text }}" {% if width %}width="{{ width }}"{% endif %}>
+      <img class="img-responsive {% if not nothumbnail %}img-thumbnail{% endif %}" src="{{ img }}" alt="{{ alt_text }}" {% if width %}width="{{ width }}"{% endif %}>
     </a>
   </div>
 {% endwith %}
