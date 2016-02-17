@@ -4,7 +4,12 @@ from modeltranslation.translator import (TranslationOptions, register,
 
 from .models import (BandSawBlade, CircularSawBlade, HackSawBlade, HoleSaw,
                      Indicator, JigSawBlade, ProductGroup, SableSawBlade,
-                     SawBlade)
+                     SawBlade, Clamping)
+
+
+@register(Clamping)
+class ClampingTranslationOptions(TranslationOptions):
+    fields = ('image',)
 
 
 @register(ProductGroup)

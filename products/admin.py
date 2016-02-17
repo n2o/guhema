@@ -118,7 +118,7 @@ class MyFlatPageAdmin(PageDownAdmin):
 
 admin.site.register(CircularSawBladeIndicator)
 admin.site.register(BandSawBladeIndicator)
-admin.site.register(Clamping)
+admin.site.register(Clamping, TranslationAdmin)
 admin.site.register(HoleSawDiameter)
 
 # Re-register FlatPageAdmin
