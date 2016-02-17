@@ -79,5 +79,5 @@ def validBandsawIndicator(ind):
 
 @register.filter()
 def trans(value):
-    """ Translate variable"""
+    """ Translate variable """
     return _(value)
