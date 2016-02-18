@@ -15,11 +15,17 @@
 {% block content %}
   {% include 'products/include_productheader.html' with group=group %}
 
-  <h3 class="padding-bottom">{% trans "Produkte" %}</h3>
-
   {% for blade in blades %}
     {% if not blade.type == "SSM" %}
       {% with blades|next:forloop.counter0 as next %}
+
+        {% ifchanged blade.name %}
+          {% if forloop.counter0 == 0 %}
+            <h3 class="padding-bottom">{{ blade.name }}</h3>
+          {% else %}
+            <h3 class="padding-bottom padding-top-2">{{ blade.name }}</h3>
+          {% endif %}
+        {% endifchanged %}
 
         <div class="panel panel-default">
           <div class="panel-body">

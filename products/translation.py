@@ -19,7 +19,7 @@ class ProductGroupTranslationOptions(TranslationOptions):
 
 @register(SawBlade)
 class SawBladeTranslationOptions(TranslationOptions):
-    fields = ('description', 'name')
+    fields = ('description', 'name', 'image')
 
 
 @register(SableSawBlade)
@@ -39,7 +39,7 @@ class HoleSawTranslationOptions(TranslationOptions):
 
 @register(BandSawBlade)
 class BandSawBladeTranslationOptions(TranslationOptions):
-    fields = ('type_description', 'type2_description', 'heading')
+    fields = ('type_description', 'type2_description', 'heading', 'image2')
 
 
 @register(JigSawBlade)
