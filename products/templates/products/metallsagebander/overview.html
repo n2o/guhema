@@ -29,14 +29,14 @@
       <div class="panel-body">
 
         <div class="row">
-          {% if blade.image2 %}
-            <div class="col-md-6">
-              {% include 'products/include_blade_image.html' with image=blade.image2 slug=blade.group.slug id=blade.id %}
-            </div>
-          {% endif %}
           {% if blade.image %}
             <div class="col-md-6">
               {% include 'products/include_blade_image.html' with image=blade.image slug=blade.group.slug id=blade.id %}
+            </div>
+          {% endif %}
+          {% if blade.image2 %}
+            <div class="col-md-6">
+              {% include 'products/include_blade_image.html' with image=blade.image2 slug=blade.group.slug id=blade.id %}
             </div>
           {% endif %}
         </div>
