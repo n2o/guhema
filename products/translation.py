@@ -2,9 +2,9 @@ from django.contrib.flatpages.models import FlatPage
 from modeltranslation.translator import (TranslationOptions, register,
                                          translator)
 
-from .models import (BandSawBlade, CircularSawBlade, HackSawBlade, HoleSaw,
-                     Indicator, JigSawBlade, ProductGroup, SableSawBlade,
-                     SawBlade, Clamping)
+from .models import (BandSawBlade, CircularSawBlade, Clamping, HackSawBlade,
+                     HoleSaw, Indicator, JigSawBlade, ProductGroup,
+                     SableSawBlade, SawBlade)
 
 
 @register(Clamping)
