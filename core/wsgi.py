@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/1.7/howto/deployment/wsgi/
 import os, sys, site
 site.addsitedir('/usr/local/share/virtualenvs/guhema/lib/python3.4/site-packages')
 sys.path.append('/var/www/vhosts/guhema.com/httpdocs/django')
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dpb.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
 
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
