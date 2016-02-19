@@ -7,6 +7,7 @@
   <h4>
     <small>
       {{ entry.created|date:"j. N Y" }}{% if entry.author %}{% endif %}
+      {% include 'core/edit_item.html' with model="news_entry" id=entry.id %}
     </small>
   </h4>
 {% endblock %}
@@ -17,13 +18,15 @@
       <img class="img-responsive" src="{{ entry.image|thumbnail_url:'news_detail' }}" alt="{{ entry.title }}-image">
     </div>
   {% endif %}
+
   {{ entry.content|safe }}
 
   {% if entry.attachment %}
-    <h3>{% trans "Anhang" %}</h3>
-    <p>
-      <i class="fa fa-download"></i> <a href="{{ entry.attachment.url }}">{{ entry.attachment.name }}</a>
-    </p>
+    <div class="padding-top">
+      <p>
+        <i class="fa fa-download"></i> <a href="{{ entry.attachment.url }}">{{ entry.attachment.name|slice:"2:" }}</a>
+      </p>
+    </div>
   {% endif %}
 
 {% endblock %}
