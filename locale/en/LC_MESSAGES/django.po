@@ -2047,3 +2047,7 @@ msgstr "Sable and Special Sable Sawblades"
 #~ msgstr ""
 #~ "In case of small workpiece dimensions, you should machine around 300 "
 #~ "cm<sup></sup> with this setting."
+
+#: fairs/templates/fairs/index.html:23
+msgid "Aktuell stellen wir auf keinen Messen aus."
+msgstr ""
