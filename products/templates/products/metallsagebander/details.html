@@ -28,16 +28,16 @@
   </div>
 
   <div class="row">
-    <div class="col-md-6">
-      {% include 'products/include_blade_image.html' with image=blade.image %}
-    </div>
-    <div class="col-md-6 text-right">
-      {% if clamping.image %}
-        <a href="{{ clamping.image.url }}">
-          <img src="{{ clamping.image|thumbnail_url:'products_clamping' }}" alt="{{ blade.quality }}-clamping">
-        </a>
-      {% endif %}
-    </div>
+    {% if blade.image %}
+      <div class="col-md-6">
+        {% include 'products/include_blade_image.html' with image=blade.image %}
+      </div>
+    {% endif %}
+    {% if blade.image2 %}
+      <div class="col-md-6">
+        {% include 'products/include_blade_image.html' with image=blade.image2 %}
+      </div>
+    {% endif %}
   </div>
 
   {% include 'core/edit_item.html' with model="products_bandsawblade" id=blade.id %}

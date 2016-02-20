@@ -45,7 +45,7 @@
       {% if fair.attachment %}
         <i class="fa fa-download"></i>
         <a href="{{ fair.attachment.url }}">
-          {{ fair.attachment.name }}
+          {{ fair.attachment.name|slice:"2:" }}
         </a>
       {% endif %}
     </blockquote>
@@ -54,3 +54,4 @@
     {% endif %}
   </div>
 </div>
+{% include 'core/edit_item.html' with model="fairs_fair" id=fair.id %}
