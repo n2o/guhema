@@ -37,9 +37,9 @@ elif len(SECRET_KEY) < 50:
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['cmeter.de', 'guhema.com', 'www.guhema.com', 'guhema.de', 'www.guhema.de', 'sägenmarkt.com', 'www.sägenmarkt.com', 'sägenmarkt.de', 'www.sägenmarkt.de']
+ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '.sägenmarkt.com', '.sägenmarkt.de']
 
 SITE_ID = 1
 
