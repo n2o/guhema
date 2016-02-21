@@ -175,7 +175,10 @@ section {
 
   #footer-kontakt-line {
     text-align: left !important;
-    float: left !important; } }
+    float: left !important; }
+
+  #footer-text > div > div:nth-child(5) > form {
+    height: 40px; } }
 @media only screen and (max-width: 1000px) {
   #footer, #footer-text {
     height: 160px;
@@ -226,6 +229,9 @@ html {
 .img-news {
   max-width: 100%; }
 
+@media only screen and (max-width: 768px) {
+  #news-image > a > img {
+    max-width: 300px; } }
 #cube {
   background-color: #00326a;
   width: 60px;

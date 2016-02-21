@@ -191,6 +191,8 @@ section
   #footer-kontakt-line
     text-align: left !important
     float: left !important
+  #footer-text > div > div:nth-child(5) > form
+    height: $footerHeight / 2
 
 @media only screen and (max-width : 1000px)
   #footer, #footer-text
@@ -252,6 +254,9 @@ html
 .img-news
   max-width: 100%
 
+@media only screen and (max-width : 768px)
+  #news-image > a > img
+    max-width: 300px
 
 //// News Application
 #cube
