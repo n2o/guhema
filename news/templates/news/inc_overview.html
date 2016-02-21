@@ -3,7 +3,7 @@
 {% load news_extras %}
 
 {% for post in posts %}
-  {% if forloop.counter0|mod:3 or forloop.first %}
+  {% if forloop.counter|mod:3 or forloop.first %}
     <div class="row news-row">
   {% endif %}
   <div class="col-md-4 col-xs-12">

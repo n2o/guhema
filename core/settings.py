@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
 import os
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import sys
 
 # Needed for login
@@ -19,6 +18,7 @@ from django.utils.translation import ugettext_lazy as _
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 DEBUG = False
+
 # Import SECRET_KEY and check it
 try:
     from core.settings_secret import *
@@ -41,12 +41,12 @@ ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '.sägenmarkt.com', '.sägenmarkt.
 SITE_ID = 1
 
 # Security Settings
-#SECURE_CONTENT_TYPE_NOSNIFF = True
-#SECURE_BROWSER_XSS_FILTER = True
-#SESSION_COOKIE_SECURE = True
-#CSRF_COOKIE_SECURE = True
-#CSRF_COOKIE_HTTPONLY = True
-#X_FRAME_OPTIONS = "DENY"
+# SECURE_CONTENT_TYPE_NOSNIFF = True
+# SECURE_BROWSER_XSS_FILTER = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+# CSRF_COOKIE_HTTPONLY = True
+# X_FRAME_OPTIONS = "DENY"
 
 INSTALLED_APPS = (
     'modeltranslation',
