@@ -3,16 +3,15 @@
 {% load i18n %}
 {% load markdown_deux_tags %}
 
-
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">{{ fair.name }}</h3>
   </div>
   <div class="panel-body">
     {% if fair.image %}
-      <div id="news-detail-image">
+      <div id="fair-detail-image">
         <a href="{{ fair.image.url }}">
-          <img class="img-responsive" src="{{ fair.image|thumbnail_url:'news_detail' }}" alt="{{ fair.name }}-image">
+          <img class="img-responsive" src="{{ fair.image|thumbnail_url:'fair_detail' }}" alt="{{ fair.name }}-image">
         </a>
       </div>
     {% endif %}

@@ -302,6 +302,11 @@ html {
   border: 0 !important;
   background-color: transparent !important; }
 
+#fair-detail-image img {
+  max-width: 600px;
+  float: right;
+  padding: 0 0 1em 1em; }
+
 .products-list-item {
   padding-bottom: 0.3em; }
 

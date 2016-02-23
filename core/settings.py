@@ -168,6 +168,7 @@ THUMBNAIL_ALIASES = {
     '': {
         'news_front': {'size': (360, 165), 'crop': "smart", 'quality': 100},
         'news_detail': {'size': (452, 254), 'crop': "scale", 'quality': 100},
+        'fair_detail': {'size': (600, 600), 'crop': "scale", 'quality': 100},
         'products_300': {'size': (300, 200), 'crop': "scale", 'quality': 100},
         'products_clamping': {'size': (250, 80), 'crop': "scale", 'quality': 100},
         'products_teaserimage': {'size': (262, 174), 'crop': "scale", 'quality': 100},
