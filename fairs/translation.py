@@ -5,4 +5,4 @@ from .models import Fair
 
 @register(Fair)
 class FairTranslationOptions(TranslationOptions):
-    fields = ('name', 'description',)
+    fields = ('name', 'description', 'image')
