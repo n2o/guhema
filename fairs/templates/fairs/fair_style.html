@@ -8,46 +8,52 @@
     <h3 class="panel-title">{{ fair.name }}</h3>
   </div>
   <div class="panel-body">
-    {% if fair.image %}
-      <div id="fair-detail-image">
-        <a href="{{ fair.image.url }}">
-          <img class="img-responsive" src="{{ fair.image|thumbnail_url:'fair_detail' }}" alt="{{ fair.name }}-image">
-        </a>
+    <div class="row">
+      <div class="col-md-6">
+        <blockquote>
+          {% if fair.website %}
+            <div>
+              {% trans "Website" %}: <a href="{{ fair.website }}" target="_blank">{{ fair.website }}</a>
+            </div>
+          {% endif %}
+          {% if fair.start %}
+            <div>
+              {% trans "Beginn" %}: {{ fair.start }}
+            </div>
+          {% endif %}
+          {% if fair.end %}
+            <div>
+              {% trans "Ende" %}: {{ fair.end }}
+            </div>
+          {% endif %}
+          {% if fair.hall %}
+            <div>
+              {% trans "Halle" %}: {{ fair.hall }}, {% trans "Stand" %}: {{ fair.stand }}
+            </div>
+          {% endif %}
+          {% if fair.location %}
+            <div>
+              {{ fair.location|markdown }}
+            </div>
+          {% endif %}
+          {% if fair.attachment %}
+            <i class="fa fa-download"></i>
+            <a href="{{ fair.attachment.url }}">
+              {{ fair.attachment.name|slice:"2:" }}
+            </a>
+          {% endif %}
+        </blockquote>
       </div>
-    {% endif %}
-    <blockquote>
-      {% if fair.website %}
-        <div>
-          {% trans "Website" %}: <a href="{{ fair.website }}" target="_blank">{{ fair.website }}</a>
-        </div>
-      {% endif %}
-      {% if fair.start %}
-        <div>
-          {% trans "Beginn" %}: {{ fair.start }}
-        </div>
-      {% endif %}
-      {% if fair.end %}
-        <div>
-          {% trans "Ende" %}: {{ fair.end }}
-        </div>
-      {% endif %}
-      {% if fair.hall %}
-        <div>
-          {% trans "Halle" %}: {{ fair.hall }}, {% trans "Stand" %}: {{ fair.stand }}
-        </div>
-      {% endif %}
-      {% if fair.location %}
-        <div>
-          {{ fair.location|markdown }}
-        </div>
-      {% endif %}
-      {% if fair.attachment %}
-        <i class="fa fa-download"></i>
-        <a href="{{ fair.attachment.url }}">
-          {{ fair.attachment.name|slice:"2:" }}
-        </a>
-      {% endif %}
-    </blockquote>
+      <div class="col-md-6">
+        {% if fair.image %}
+          <div id="fair-detail-image">
+            <a href="{{ fair.image.url }}">
+              <img class="img-responsive" src="{{ fair.image|thumbnail_url:'fair_detail' }}" alt="{{ fair.name }}-image">
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
     {% if fair.description %}
       {{ fair.description|markdown }}
     {% endif %}

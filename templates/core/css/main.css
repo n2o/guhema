@@ -303,7 +303,7 @@ html {
   background-color: transparent !important; }
 
 #fair-detail-image img {
-  max-width: 600px;
+  max-width: 100%;
   float: right;
   padding: 0 0 1em 1em; }
 
