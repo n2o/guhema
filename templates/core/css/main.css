@@ -158,13 +158,13 @@ section {
     margin: 0;
     color: white; }
 
-#footer, #footer-text {
+#footer, #footer-text, .footer-blue {
   height: 80px;
   line-height: 80px; }
-  #footer form, #footer-text form {
+  #footer form, #footer-text form, .footer-blue form {
     margin-top: 0;
     margin-bottom: 0; }
-    #footer form .form-group, #footer-text form .form-group {
+    #footer form .form-group, #footer-text form .form-group, .footer-blue form .form-group {
       height: 70px !important;
       line-height: 70px !important; }
 
