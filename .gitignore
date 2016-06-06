@@ -62,3 +62,4 @@ static/
 sass
 db.sqlite3
 settings_secret.py
+*.pass
