@@ -68,8 +68,9 @@ INSTALLED_APPS = (
     'django_forms_bootstrap',
 
     # Own apps
-    #'login',
+    # 'login',
     'news',
+    'downloads',
     'products',
     'contact',
     'fairs',

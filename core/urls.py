@@ -16,6 +16,7 @@ urlpatterns = [
 
     # Own Apps
     url(r'^news/', include('news.urls', namespace='news')),
+    url(r'^kataloge/', include('downloads.urls', namespace='downloads')),
     url(r'^produkte/', include('products.urls', namespace='products')),
     url(r'^messen/', include('fairs.urls', namespace='fairs')),
     url(r'^kontakt/', include('contact.urls', namespace='contact')),
