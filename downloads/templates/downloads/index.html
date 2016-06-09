@@ -10,9 +10,34 @@
 {% endblock %}
 
 {% block content %}
-    <section>
-      <h3>
-        {% trans "Wenn Sie noch weitere Informationen zu unseren Produkten erhalten möchten, können Sie hier unsere Kataloge downloaden." %}
-      </h3>
-    </section>
+  <p class="lead">
+    {% trans "Wenn Sie noch weitere Informationen zu unseren Produkten erhalten möchten, können Sie hier unsere Kataloge downloaden." %}
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <a href="{% static 'catalogs/guhema_catalog_de.pdf' %}">
+        <img src="{% static 'catalogs/guhema_catalog_de_front.jpg' %}" class="img-responsive" alt="catalog_de">
+        <div class="padding-top">
+          {% trans "Katalog" %}, {% trans "deutsch" %} <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="{% static 'catalogs/guhema_catalog_en.pdf' %}">
+        <img src="{% static 'catalogs/guhema_catalog_en_front.jpg' %}" class="img-responsive" alt="catalog_en">
+        <div class="padding-top">
+          {% trans "Katalog" %}, {% trans "englisch" %} <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="{% static 'catalogs/guhema_catalog_ru.pdf' %}">
+        <img src="{% static 'catalogs/guhema_catalog_ru_front.jpg' %}" class="img-responsive" alt="catalog_ru">
+        <div class="padding-top">
+          {% trans "Katalog" %}, {% trans "russisch" %} <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+        </div>
+      </a>
+    </div>
+  </div>
 {% endblock %}
