@@ -1,0 +1,18 @@
+{% extends "layout_productgroups.html" %}
+
+{% load staticfiles %}
+{% load thumbnail %}
+{% load i18n %}
+{% load markdown_deux_tags %}
+
+{% block heading %}
+  <h1>{% trans "Kataloge" %}</h1>
+{% endblock %}
+
+{% block content %}
+    <section>
+      <h3>
+        {% trans "Wenn Sie noch weitere Informationen zu unseren Produkten erhalten möchten, können Sie hier unsere Kataloge downloaden." %}
+      </h3>
+    </section>
+{% endblock %}
