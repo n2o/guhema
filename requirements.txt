@@ -1,6 +1,6 @@
 alabaster==0.7.7
 Babel==2.2.0
-Django==1.9.7
+Django==1.9.13
 django-autoslug==1.9.3
 django-forms-bootstrap==3.0.1
 django-markdown-deux==1.0.5

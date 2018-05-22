@@ -37,7 +37,7 @@ elif len(SECRET_KEY) < 50:
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '.sägenmarkt.com', '.sägenmarkt.de']
+ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '.sägenmarkt.com', '.sägenmarkt.de', '127.0.0.1']
 SITE_ID = 1
 
 # Security Settings
@@ -64,7 +64,6 @@ INSTALLED_APPS = (
     'easy_thumbnails',
     'pagedown',
     'markdown_deux',
-    'captcha',
     'django_forms_bootstrap',
 
     # Own apps
