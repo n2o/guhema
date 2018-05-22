@@ -28,6 +28,7 @@ urlpatterns = [
 urlpatterns += [
     url(r'^unternehmen/$', views.company, name='company'),
     url(r'^impressum/$', flatpageviews.flatpage, {'url': '/impressum/'}, name='impressum'),
+    url(r'^datenschutz/$', flatpageviews.flatpage, {'url': '/datenschutz/'}, name='datenschutz'),
 
     url(r'^(?P<url>.*/)$', flatpageviews.flatpage, name='page'),
 ]
