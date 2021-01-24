@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   src: url("fonts/open_sans/OpenSans-Regular.ttf"); }
+
 body {
-  font-family: "Open Sans", sans-serif !important; }
+  font-family: 'Open Sans', sans-serif !important; }
 
 a {
   color: #f16e34; }
@@ -112,7 +113,7 @@ section {
   padding: 0 !important; }
 
 /*.btn-primary
- * background-color: $lightblue */
+  background-color: $lightblue*/
 .navbar .container {
   padding-top: 1em; }
 
@@ -130,10 +131,10 @@ section {
 @media only screen and (min-width: 768px) {
   #navbar {
     padding: 0 !important; }
-
   .navbar .nav > li > a {
     padding: 29px 10px 31px;
     line-height: 20px; } }
+
 .navbar .nav > li > a {
   font-weight: bold; }
 
@@ -178,21 +179,20 @@ section {
   #footer, #footer-text {
     height: 160px;
     line-height: 40px; }
-
   #footer-kontakt-line {
     text-align: left !important;
     float: left !important; }
-
   #footer-text > div > div:nth-child(5) > form {
     height: 40px; } }
+
 @media only screen and (max-width: 1000px) {
   #footer, #footer-text {
     height: 160px;
     line-height: 40px; }
-
   #footer-kontakt-line {
     text-align: left !important;
     float: left !important; } }
+
 #footer-line {
   height: 1px;
   background-color: white;
@@ -202,7 +202,8 @@ section {
   background-color: #00326a;
   padding: 0;
   line-height: 110px;
-  margin: 0; }
+  margin: 0;
+  height: 150px !important; }
   #product-groups h3 {
     line-height: 110px; }
 
@@ -219,6 +220,7 @@ html {
 @media only screen and (min-width: 1000px) {
   #main {
     margin-bottom: 80px; } }
+
 #footer-wrapper {
   background-color: #00326a;
   color: white; }
@@ -232,12 +234,14 @@ html {
     width: 100%;
     line-height: 80px;
     height: 80px; } }
+
 .img-news {
   max-width: 100%; }
 
 @media only screen and (max-width: 768px) {
   #news-image > a > img {
     max-width: 300px; } }
+
 #cube {
   background-color: #00326a;
   width: 60px;
@@ -323,5 +327,3 @@ html {
 
 div.markdown-no-padding-left ul {
   padding-left: 1em; }
-
-/*# sourceMappingURL=main.css.map */
