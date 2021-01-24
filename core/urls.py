@@ -7,21 +7,20 @@ from django.contrib.flatpages import views as flatpageviews
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-    url(r'^pages/', include('django.contrib.flatpages.urls')),
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^i18n/', include('django.conf.urls.i18n')),
+                  url(r'^$', views.index, name='index'),
+                  url(r'^pages/', include('django.contrib.flatpages.urls')),
+                  url(r'^admin/', include(admin.site.urls)),
+                  url(r'^i18n/', include('django.conf.urls.i18n')),
 
-    # 3rd party
+                  # 3rd party
 
-    # Own Apps
-    url(r'^news/', include('news.urls', namespace='news')),
-    url(r'^kataloge/', include('downloads.urls', namespace='downloads')),
-    url(r'^produkte/', include('products.urls', namespace='products')),
-    url(r'^messen/', include('fairs.urls', namespace='fairs')),
-    url(r'^kontakt/', include('contact.urls', namespace='contact')),
+                  # Own Apps
+                  url(r'^news/', include('news.urls', namespace='news')),
+                  url(r'^kataloge/', include('downloads.urls', namespace='downloads')),
+                  url(r'^produkte/', include('products.urls', namespace='products')),
+                  url(r'^messen/', include('fairs.urls', namespace='fairs')),
 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\
+              ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
               + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # Named Staticpages
