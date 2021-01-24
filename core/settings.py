@@ -23,7 +23,8 @@ DEBUG = False
 try:
     from core.settings_secret import *
 except ImportError:
-    print("[ERROR] core/settings_secret.py not found. Please create it according to the template settings_secret.py.template")
+    print(
+        "[ERROR] core/settings_secret.py not found. Please create it according to the template settings_secret.py.template")
     sys.exit()
 
 if SECRET_KEY == "CHANGE_ME":
@@ -37,7 +38,7 @@ elif len(SECRET_KEY) < 50:
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '.sägenmarkt.com', '.sägenmarkt.de', '127.0.0.1']
+ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '.sägenmarkt.com', '.sägenmarkt.de', '127.0.0.1', 'localhost']
 SITE_ID = 1
 
 # Security Settings
@@ -95,7 +96,6 @@ ROOT_URLCONF = 'core.urls'
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
@@ -122,7 +122,6 @@ LANGUAGES = [
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
