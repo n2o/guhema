@@ -1,28 +1,28 @@
 from django.conf import settings
 from django.conf.urls import include
-from django.urls import re_path
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.flatpages import views as flatpageviews
+from django.urls import re_path
 
 from . import views
 
 urlpatterns = [
-    re_path(r'^$', views.index, name='index'),
-    re_path(r'^pages/', include('django.contrib.flatpages.urls')),
-    re_path(r'^admin/', admin.site.urls),
-    re_path(r'^i18n/', include('django.conf.urls.i18n')),
+                  re_path(r'^$', views.index, name='index'),
+                  re_path(r'^pages/', include('django.contrib.flatpages.urls')),
+                  re_path(r'^admin/', admin.site.urls),
+                  re_path(r'^i18n/', include('django.conf.urls.i18n')),
 
-    # 3rd party
+                  # 3rd party
 
-    # Own Apps
-    re_path(r'^news/', include(('news.urls', 'news'), namespace='news')),
-    re_path(r'^kataloge/', include('downloads.urls', namespace='downloads')),
-    re_path(r'^produkte/', include('products.urls', namespace='products')),
-    re_path(r'^messen/', include('fairs.urls', namespace='fairs')),
+                  # Own Apps
+                  re_path(r'^news/', include(('news.urls', 'news'), namespace='news')),
+                  re_path(r'^kataloge/', include(('downloads.urls', 'downloads'), namespace='downloads')),
+                  re_path(r'^produkte/', include(('products.urls', 'products'), namespace='products')),
+                  re_path(r'^messen/', include(('fairs.urls', 'fairs'), namespace='fairs')),
 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
-    + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+              ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
+              + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # Named Staticpages
 urlpatterns += [
