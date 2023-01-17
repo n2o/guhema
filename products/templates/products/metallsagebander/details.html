@@ -3,7 +3,7 @@
 
 {% load products_tags %}
 {% load thumbnail %}
-{% load markdown_deux_tags %}
+{% load markdownify %}
 
 {% block heading %}
 {% endblock %}
@@ -15,7 +15,7 @@
         {{ blade.quality }}<br>
         <small>{{ blade.name }}</small>
       </h1>
-      {{ blade.description|markdown }}
+      {{ blade.description|markdownify }}
     </div>
     <div class="col-md-5">
       <p class="alert bg-orange-lighter" style="margin-top: 21px">

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from autoslug import AutoSlugField
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 
 class Indicator(models.Model):
@@ -74,8 +74,8 @@ class SawBlade(models.Model):
     type = models.CharField(_("Typ"), max_length=255, blank=True)
     name = models.CharField(_("Bezeichnung"), max_length=255, blank=True)
     description = models.TextField(_("Beschreibung"), max_length=1024, blank=True)
-    group = models.ForeignKey(ProductGroup, verbose_name=_("Produktgruppe"), null=True, blank=True)
-    clamping = models.ForeignKey(Clamping, verbose_name=_("Aufnahme"), null=True, blank=True)
+    group = models.ForeignKey(ProductGroup, verbose_name=_("Produktgruppe"), null=True, blank=True, on_delete=models.SET_NULL)
+    clamping = models.ForeignKey(Clamping, verbose_name=_("Aufnahme"), null=True, blank=True, on_delete=models.SET_NULL)
     slug = AutoSlugField(null=True, populate_from='name')
     image = models.ImageField(_("Produktabbildung"), null=True, blank=True, upload_to='blades/')
     indicators = models.ManyToManyField(Indicator, verbose_name=_("Kennziffern"), blank=True)

@@ -1,7 +1,7 @@
 {% extends "layout_productgroups.html" %}
 {% load i18n %}
 {% load thumbnail %}
-{% load markdown_deux_tags %}
+{% load markdownify %}
 
 {% block heading %}
   <h1>{{ entry.title }}</h1>
@@ -20,7 +20,7 @@
     </div>
   {% endif %}
 
-  {{ entry.content|safe|markdown }}
+  {{ entry.content|safe|markdownify }}
 
   {% if entry.attachment %}
     <div class="padding-top">

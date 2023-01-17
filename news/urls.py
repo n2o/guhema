@@ -1,8 +1,8 @@
-from django.conf.urls import url
+from django.urls import re_path
 
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.overview, {'category': 'Allgemein'}, name='overview'),
-    url(r'^(?P<slug>[\w-]+)/$', views.detail, name='detail'),
+    re_path(r'^$', views.overview, {'category': 'Allgemein'}, name='overview'),
+    re_path(r'^(?P<slug>[\w-]+)/$', views.detail, name='detail'),
 ]

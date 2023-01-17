@@ -1,7 +1,7 @@
 {% load thumbnail %}
 {% load staticfiles %}
 {% load news_extras %}
-{% load markdown_deux_tags %}
+{% load markdownify %}
 
 {% for post in posts %}
   {% if forloop.counter|mod:3 or forloop.first %}
@@ -38,7 +38,7 @@
     </div>
     <div id="news-content" class="padding-bottom">
       <p>
-        {{ post.content|safe|markdown }}
+        {{ post.content|safe|markdownify }}
       </p>
       {% include 'core/edit_item.html' with model="news_entry" id=post.id %}
     </div>

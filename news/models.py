@@ -3,7 +3,7 @@ from datetime import datetime
 from autoslug import AutoSlugField
 from django.contrib.auth.models import User
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 
 class Category(models.Model):
@@ -20,7 +20,7 @@ class Category(models.Model):
 
 class Entry(models.Model):
     title = models.CharField(_('Titel'), max_length=50, blank=False)
-    author = models.ForeignKey(User, null=True, blank=True, verbose_name=_("Autor"))
+    author = models.ForeignKey(User, null=True, blank=True, verbose_name=_("Autor"), on_delete=models.SET_NULL)
     content = models.TextField(_('Inhalt'), blank=False)
     image = models.ImageField(_('Bild'), null=True, blank=True)
     attachment = models.FileField(_('Anhang'), null=True, blank=True)
@@ -28,12 +28,11 @@ class Entry(models.Model):
     archive = models.BooleanField(_('Archiviert?'), default=False)
     public = models.BooleanField(_('Öffentlich?'), default=True)
     created = models.DateTimeField(_('Erstellt am'), default=datetime.now)
-    category = models.ForeignKey(Category, null=True, verbose_name=_("Kategorie"))
+    category = models.ForeignKey(Category, null=True, verbose_name=_("Kategorie"), on_delete=models.SET_NULL)
 
     def __str__(self):
         return self.title
 
-    @models.permalink
     def get_absolute_url(self):
         return 'news:entry', (self.slug,)
 

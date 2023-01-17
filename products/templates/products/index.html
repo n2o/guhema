@@ -3,7 +3,7 @@
 
 {% load staticfiles %}
 {% load thumbnail %}
-{% load markdown_deux_tags %}
+{% load markdownify %}
 
 {% block heading %}
   <h1>{% trans "Produkte" %}</h1>
@@ -25,7 +25,7 @@
             </a>
           </h3>
           <p>
-            {{ group.description|markdown }}
+            {{ group.description|markdownify }}
           </p>
           <p>
             <a href="{% url 'products:list' group.slug %}">

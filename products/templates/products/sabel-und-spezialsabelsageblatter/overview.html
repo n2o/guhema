@@ -2,7 +2,7 @@
 
 {% load staticfiles %}
 {% load thumbnail %}
-{% load markdown_deux_tags %}
+{% load markdownify %}
 {% load products_tags %}
 {% load i18n %}
 
@@ -57,7 +57,7 @@
                     <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
                   </div>
                   <div class="col-md-10 col-xs-10 markdown-no-padding-left">
-                    {{ blade.description|markdown }}
+                    {{ blade.description|markdownify }}
                   </div>
                 </div>
               </div>

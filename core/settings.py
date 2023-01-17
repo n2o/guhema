@@ -13,7 +13,7 @@ import sys
 
 # Needed for login
 import django.contrib.auth
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -64,7 +64,7 @@ INSTALLED_APPS = (
     'autoslug',
     'easy_thumbnails',
     'pagedown',
-    'markdown_deux',
+    'markdownify',
     'django_forms_bootstrap',
 
     # Own apps
@@ -72,7 +72,7 @@ INSTALLED_APPS = (
     'news',
     'downloads',
     'products',
-    'contact',
+    # 'contact',
     'fairs',
 )
 # Application definition
@@ -177,26 +177,6 @@ THUMBNAIL_ALIASES = {
     },
 }
 
-# Markdown Deux Settings
-MARKDOWN_DEUX_STYLES = {
-    "default": {
-        "extras": {
-            "code-friendly": None,
-        },
-        # Allow raw HTML (WARNING: don't use this for user-generated
-        # Markdown for your site!).
-        "safe_mode": False,
-    },
-    "nohtml": {
-        "extras": {
-            "code-friendly": None,
-        },
-        # Allow raw HTML (WARNING: don't use this for user-generated
-        # Markdown for your site!).
-        "safe_mode": "escape",
-    },
-}
-
 # Modeltranslation settings
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'de'
-MODELTRANSLATION_FALLBACK_LANGUAGES = ('de',)
+# MODELTRANSLATION_DEFAULT_LANGUAGE = 'de'
+# MODELTRANSLATION_FALLBACK_LANGUAGES = ('de',)
