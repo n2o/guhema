@@ -176,6 +176,54 @@ THUMBNAIL_ALIASES = {
     },
 }
 
+MARKDOWNIFY = {
+    "default": {
+        "WHITELIST_TAGS": [
+            'table',
+            'thead',
+            'tbody',
+            'th',
+            'tr',
+            'td',
+            'a',
+            'abbr',
+            'acronym',
+            'b',
+            'blockquote',
+            'em',
+            'i',
+            'li',
+            'ol',
+            'p',
+            'strong',
+            'ul',
+            'img',
+            'style',
+            'h1',
+            'h2',
+            'h3',
+            'h4',
+            'h5',
+            'h6',
+            'br',
+            'div',
+            'span'
+        ],
+        "MARKDOWN_EXTENSIONS": [
+            'markdown.extensions.fenced_code',
+            'markdown.extensions.extra',
+            'markdown.extensions.md_in_html'
+        ],
+        "WHITELIST_ATTRS": [
+            'href',
+            'src',
+            'alt',
+            'class',
+            'id',
+        ]
+    }
+}
+
 # Modeltranslation settings
 # MODELTRANSLATION_DEFAULT_LANGUAGE = 'de'
 # MODELTRANSLATION_FALLBACK_LANGUAGES = ('de',)
