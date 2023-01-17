@@ -1,5 +1,5 @@
 {% load i18n %}
-{% load staticfiles %}
+{% load static %}
 
 <div class="product-groups-wrapper">
   <div id="product-groups">
@@ -8,21 +8,57 @@
         <h3 class="text-white"><a href="{% url 'products:index' %}">{% trans "PRODUKTGRUPPEN" %}</a></h3>
       </div>
       <div class="col-md-8 text-right hidden-md hidden-sm hidden-xs">
-        <a href="{% url 'products:list' slug='maschinensageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege001.png' %}" data-toggle="tooltip" data-placement="top" title="{% trans "Maschinensägeblätter" %}" alt="{% trans "Maschinensägeblätter" %}"></a>
-        <a href="{% url 'products:list' slug='metallstichsageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege002.png' %}" data-toggle="tooltip" data-placement="top" title="{% trans "Metallstichsägeblätter" %}" alt="{% trans "Metallstichsägeblätter" %}"></a>
-        <a href="{% url 'products:list' slug='sabel-und-spezialsabelsageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege003.png' %}" data-toggle="tooltip" data-placement="top" title="{% trans "Säbel- und Spezialsäbelsägeblätter" %}" alt="{% trans "Säbel- und Spezialsäbelsägeblätter" %}"></a>
-        <a href="{% url 'products:list' slug='metallhandsageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege004.png' %}" data-toggle="tooltip" data-placement="top" title="{% trans "Metallhandsägeblätter" %}" alt="{% trans "Metallhandsägeblätter" %}"></a>
-        <a href="{% url 'products:list' slug='lochsagen' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege005.png' %}" data-toggle="tooltip" data-placement="top" title="{% trans "Lochsägen" %}" alt="{% trans "Lochsägen" %}"></a>
-        <a href="{% url 'products:list' slug='metallsagebander' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege006.png' %}" data-toggle="tooltip" data-placement="top" title="{% trans "Metallsägebänder" %}" alt="{% trans "Metallsägebänder" %}"></a>
-        <a href="{% url 'products:list' slug='pendelhubstichsageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege007.png' %}" data-toggle="tooltip" data-placement="top" title="{% trans "Pendelhubstichsägeblätter" %}" alt="{% trans "Pendelhubstichsägeblätter" %}"></a>
-        <a href="{% url 'products:list' slug='metallkreissageblatter' %}"><img class="img-product-groups" src="{% static 'img/produktbilder/saege008.png' %}" data-toggle="tooltip" data-placement="top" title="{% trans "Metallkreissägeblätter" %}" alt="{% trans "Metallkreissägeblätter" %}"></a>
+        <a href="{% url 'products:list' slug='maschinensageblatter' %}"><img class="img-product-groups"
+                                                                             src="{% static 'img/produktbilder/saege001.png' %}"
+                                                                             data-toggle="tooltip" data-placement="top"
+                                                                             title="{% trans "Maschinensägeblätter" %}"
+                                                                             alt="{% trans "Maschinensägeblätter" %}"></a>
+        <a href="{% url 'products:list' slug='metallstichsageblatter' %}"><img class="img-product-groups"
+                                                                               src="{% static 'img/produktbilder/saege002.png' %}"
+                                                                               data-toggle="tooltip"
+                                                                               data-placement="top"
+                                                                               title="{% trans "Metallstichsägeblätter" %}"
+                                                                               alt="{% trans "Metallstichsägeblätter" %}"></a>
+        <a href="{% url 'products:list' slug='sabel-und-spezialsabelsageblatter' %}"><img class="img-product-groups"
+                                                                                          src="{% static 'img/produktbilder/saege003.png' %}"
+                                                                                          data-toggle="tooltip"
+                                                                                          data-placement="top"
+                                                                                          title="{% trans "Säbel- und Spezialsäbelsägeblätter" %}"
+                                                                                          alt="{% trans "Säbel- und Spezialsäbelsägeblätter" %}"></a>
+        <a href="{% url 'products:list' slug='metallhandsageblatter' %}"><img class="img-product-groups"
+                                                                              src="{% static 'img/produktbilder/saege004.png' %}"
+                                                                              data-toggle="tooltip" data-placement="top"
+                                                                              title="{% trans "Metallhandsägeblätter" %}"
+                                                                              alt="{% trans "Metallhandsägeblätter" %}"></a>
+        <a href="{% url 'products:list' slug='lochsagen' %}"><img class="img-product-groups"
+                                                                  src="{% static 'img/produktbilder/saege005.png' %}"
+                                                                  data-toggle="tooltip" data-placement="top"
+                                                                  title="{% trans "Lochsägen" %}"
+                                                                  alt="{% trans "Lochsägen" %}"></a>
+        <a href="{% url 'products:list' slug='metallsagebander' %}"><img class="img-product-groups"
+                                                                         src="{% static 'img/produktbilder/saege006.png' %}"
+                                                                         data-toggle="tooltip" data-placement="top"
+                                                                         title="{% trans "Metallsägebänder" %}"
+                                                                         alt="{% trans "Metallsägebänder" %}"></a>
+        <a href="{% url 'products:list' slug='pendelhubstichsageblatter' %}"><img class="img-product-groups"
+                                                                                  src="{% static 'img/produktbilder/saege007.png' %}"
+                                                                                  data-toggle="tooltip"
+                                                                                  data-placement="top"
+                                                                                  title="{% trans "Pendelhubstichsägeblätter" %}"
+                                                                                  alt="{% trans "Pendelhubstichsägeblätter" %}"></a>
+        <a href="{% url 'products:list' slug='metallkreissageblatter' %}"><img class="img-product-groups"
+                                                                               src="{% static 'img/produktbilder/saege008.png' %}"
+                                                                               data-toggle="tooltip"
+                                                                               data-placement="top"
+                                                                               title="{% trans "Metallkreissägeblätter" %}"
+                                                                               alt="{% trans "Metallkreissägeblätter" %}"></a>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 </script>

@@ -1,7 +1,7 @@
 {% extends 'layout_productgroups.html' %}
 
 {% load i18n %}
-{% load staticfiles %}
+{% load static %}
 {% load thumbnail %}
 
 {% block heading %}
@@ -10,10 +10,13 @@
 
 {% block content %}
   {% get_current_language as lang %}
-  {% blocktrans %}Wir produzieren für Sie Maschinensägeblätter für alle Maschinensägetypen auf dem Markt. Unser Programm umfasst sowohl die Standardvarianten, als auch die Kasto-Aufnahme und Sägeblätter aus Bi-Metall. Getreu dem Motto:{% endblocktrans %}
+  {% blocktrans %}Wir produzieren für Sie Maschinensägeblätter für alle Maschinensägetypen auf dem Markt. Unser Programm
+    umfasst sowohl die Standardvarianten, als auch die Kasto-Aufnahme und Sägeblätter aus Bi-Metall. Getreu dem Motto:
+  {% endblocktrans %}
 
   <blockquote class="margin-top">
-    {% blocktrans %}Wir liefern Ihnen das Maschinensägeblatt, das bei Ihnen zum optimalen Sägeergebnis führt!{% endblocktrans %}
+    {% blocktrans %}Wir liefern Ihnen das Maschinensägeblatt, das bei Ihnen zum optimalen Sägeergebnis
+      führt!{% endblocktrans %}
   </blockquote>
 
   <h3>{% trans "Unsere Empfehlung für langen Sägespaß" %}</h3>
@@ -63,408 +66,481 @@
 
     <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
       <thead>
-        <tr>
-          <th class="table-no-bot-border">
-            {% trans "Material" %}
-          </th>
-          <th colspan="5" class="table-no-bot-border">
-            {% trans "ZpZ" %}
-            {% trans "bei Materialabmessungen" %}
-          </th>
-          <th class="table-no-bot-border">&nbsp;</th>
-          <th colspan="2" class="table-no-bot-border">
-            {% trans "Schnittgeschwindigkeit" %}
-          </th>
-          <th class="table-no-bot-border">
-            {% trans "Blatt" %} /
-          </th>
-          <th class="table-no-bot-border">&nbsp;</th>
-        </tr>
+      <tr>
+        <th class="table-no-bot-border">
+          {% trans "Material" %}
+        </th>
+        <th colspan="5" class="table-no-bot-border">
+          {% trans "ZpZ" %}
+          {% trans "bei Materialabmessungen" %}
+        </th>
+        <th class="table-no-bot-border">&nbsp;</th>
+        <th colspan="2" class="table-no-bot-border">
+          {% trans "Schnittgeschwindigkeit" %}
+        </th>
+        <th class="table-no-bot-border">
+          {% trans "Blatt" %} /
+        </th>
+        <th class="table-no-bot-border">&nbsp;</th>
+      </tr>
 
-        <tr>
-          <th class="table-no-bot-border table-no-top-border">
-            {% trans "Bezeichnung" %}
-          </th>
-          <th class="table-no-bot-border table-no-top-border">
-            {% trans "bis" %}
-          </th>
-          <th colspan="3" class="table-no-bot-border table-no-top-border">&nbsp;</th>
-          <th class="table-no-bot-border table-no-top-border">
-            {% trans "über" %}
-          </th>
+      <tr>
+        <th class="table-no-bot-border table-no-top-border">
+          {% trans "Bezeichnung" %}
+        </th>
+        <th class="table-no-bot-border table-no-top-border">
+          {% trans "bis" %}
+        </th>
+        <th colspan="3" class="table-no-bot-border table-no-top-border">&nbsp;</th>
+        <th class="table-no-bot-border table-no-top-border">
+          {% trans "über" %}
+        </th>
 
-          <th class="table-no-bot-border table-no-top-border">{% trans "Schnittdruck" %}</th>
-          <th colspan="2" class="table-no-bot-border table-no-top-border">
-            {% trans "je nach Materialstärke" %}
-          </th>
-          <th class="table-no-bot-border table-no-top-border">
-            {% trans "Qualität" %}
-          </th>
-          <th class="table-no-bot-border table-no-top-border">
-            {% trans "Zahnform" %}
-          </th>
-        </tr>
+        <th class="table-no-bot-border table-no-top-border">{% trans "Schnittdruck" %}</th>
+        <th colspan="2" class="table-no-bot-border table-no-top-border">
+          {% trans "je nach Materialstärke" %}
+        </th>
+        <th class="table-no-bot-border table-no-top-border">
+          {% trans "Qualität" %}
+        </th>
+        <th class="table-no-bot-border table-no-top-border">
+          {% trans "Zahnform" %}
+        </th>
+      </tr>
 
-        <tr>
-          <th class="table-no-top-border">&nbsp;</th>
-          <th class="table-no-top-border">
-            30 {% trans "mm" %}
-          </th>
-          <th class="table-no-top-border">
-            50 {% trans "mm" %}
-          </th>
-          <th class="table-no-top-border">
-            100 {% trans "mm" %}
-          </th>
-          <th class="table-no-top-border">
-            200 {% trans "mm" %}
-          </th>
-          <th class="table-no-top-border">
-            200 {% trans "mm" %}
-          </th>
+      <tr>
+        <th class="table-no-top-border">&nbsp;</th>
+        <th class="table-no-top-border">
+          30 {% trans "mm" %}
+        </th>
+        <th class="table-no-top-border">
+          50 {% trans "mm" %}
+        </th>
+        <th class="table-no-top-border">
+          100 {% trans "mm" %}
+        </th>
+        <th class="table-no-top-border">
+          200 {% trans "mm" %}
+        </th>
+        <th class="table-no-top-border">
+          200 {% trans "mm" %}
+        </th>
 
-          <th class="table-no-top-border">&nbsp;</th>
-          <th class="table-no-top-border">
-            {% trans "Hübe / min" %}
-          </th>
-          <th class="table-no-top-border">
-            {% trans "m / min" %}
-          </th>
-          <th class="table-no-top-border">&nbsp;</th>
-          <th class="table-no-top-border">&nbsp;</th>
-        </tr>
+        <th class="table-no-top-border">&nbsp;</th>
+        <th class="table-no-top-border">
+          {% trans "Hübe / min" %}
+        </th>
+        <th class="table-no-top-border">
+          {% trans "m / min" %}
+        </th>
+        <th class="table-no-top-border">&nbsp;</th>
+        <th class="table-no-top-border">&nbsp;</th>
+      </tr>
       </thead>
       <tbody>
-       {# first row #}
-        <tr>
-          <td>
-            <strong>{% trans "unleg. Stähle/Baustähle" %}</strong>
-          </td>
-          <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-       <tr>
-        <tr>
-          <td class="table-no-top-border">
-            <strong>{% trans "Einsatzstähle" %}</strong>, {% trans "z.B." %}
-          </td>
-          <td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td><td class="table-no-top-border">&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            St37-C10-C15
-          </td>
-          <td class="table-no-top-border">10-8</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2-1,5</td>
-          <td class="table-no-top-border">{% trans "niedrig" %}</td>
-          <td class="table-no-top-border">60-100</td>
-          <td class="table-no-top-border">24-40</td>
-          <td class="table-no-top-border">Super HSS</td>
-          <td class="table-no-top-border">{% trans "normal" %}</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            St50-St60
-          </td><td class="table-no-top-border">10-8</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2-1,5</td>
-          <td class="table-no-top-border">{% trans "bis mittel" %}</td>
-          <td class="table-no-top-border">60-100</td>
-          <td class="table-no-top-border">24-40</td>
-          <td class="table-no-top-border">Super HSS</td>
-          <td class="table-no-top-border">{% trans "normal" %}</td>
-        </tr>
+      {# first row #}
+      <tr>
+        <td>
+          <strong>{% trans "unleg. Stähle/Baustähle" %}</strong>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      <tr>
+      <tr>
+        <td class="table-no-top-border">
+          <strong>{% trans "Einsatzstähle" %}</strong>, {% trans "z.B." %}
+        </td>
+        <td class="table-no-top-border">&nbsp;</td>
+        <td class="table-no-top-border">&nbsp;</td>
+        <td class="table-no-top-border">&nbsp;</td>
+        <td class="table-no-top-border">&nbsp;</td>
+        <td class="table-no-top-border">&nbsp;</td>
+        <td class="table-no-top-border">&nbsp;</td>
+        <td class="table-no-top-border">&nbsp;</td>
+        <td class="table-no-top-border">&nbsp;</td>
+        <td class="table-no-top-border">&nbsp;</td>
+        <td class="table-no-top-border">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          St37-C10-C15
+        </td>
+        <td class="table-no-top-border">10-8</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2-1,5</td>
+        <td class="table-no-top-border">{% trans "niedrig" %}</td>
+        <td class="table-no-top-border">60-100</td>
+        <td class="table-no-top-border">24-40</td>
+        <td class="table-no-top-border">Super HSS</td>
+        <td class="table-no-top-border">{% trans "normal" %}</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          St50-St60
+        </td>
+        <td class="table-no-top-border">10-8</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2-1,5</td>
+        <td class="table-no-top-border">{% trans "bis mittel" %}</td>
+        <td class="table-no-top-border">60-100</td>
+        <td class="table-no-top-border">24-40</td>
+        <td class="table-no-top-border">Super HSS</td>
+        <td class="table-no-top-border">{% trans "normal" %}</td>
+      </tr>
 
-        {# second #}
-        <tr>
-          <td>
-            <strong>{% trans "Vergütungsstähle" %}</strong>, {% trans "z.B." %}
-          </td>
-          <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            C35-C45-C60
-          </td>
-          <td class="table-no-top-border">14-10</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "mittel" %}</td>
-          <td class="table-no-top-border">55-80</td>
-          <td class="table-no-top-border">22-32</td>
-          <td class="table-no-top-border">Super HSS</td>
-          <td class="table-no-top-border">{% trans "normal" %}</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            CK45-40MN4
-          </td>
-          <td class="table-no-top-border">14-10</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "mittel" %}</td>
-          <td class="table-no-top-border">55-80</td>
-          <td class="table-no-top-border">22-32</td>
-          <td class="table-no-top-border">Super HSS</td>
-          <td class="table-no-top-border">{% trans "normal" %}</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            34CrNiMo6-42CrMo4
-          </td>
-          <td class="table-no-top-border">14-10</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "mittel" %}</td>
-          <td class="table-no-top-border">45-50</td>
-          <td class="table-no-top-border">18-20</td>
-          <td class="table-no-top-border">Super HSS</td>
-          <td class="table-no-top-border">{% trans "normal" %}</td>
-        </tr>
+      {# second #}
+      <tr>
+        <td>
+          <strong>{% trans "Vergütungsstähle" %}</strong>, {% trans "z.B." %}
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          C35-C45-C60
+        </td>
+        <td class="table-no-top-border">14-10</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "mittel" %}</td>
+        <td class="table-no-top-border">55-80</td>
+        <td class="table-no-top-border">22-32</td>
+        <td class="table-no-top-border">Super HSS</td>
+        <td class="table-no-top-border">{% trans "normal" %}</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          CK45-40MN4
+        </td>
+        <td class="table-no-top-border">14-10</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "mittel" %}</td>
+        <td class="table-no-top-border">55-80</td>
+        <td class="table-no-top-border">22-32</td>
+        <td class="table-no-top-border">Super HSS</td>
+        <td class="table-no-top-border">{% trans "normal" %}</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          34CrNiMo6-42CrMo4
+        </td>
+        <td class="table-no-top-border">14-10</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "mittel" %}</td>
+        <td class="table-no-top-border">45-50</td>
+        <td class="table-no-top-border">18-20</td>
+        <td class="table-no-top-border">Super HSS</td>
+        <td class="table-no-top-border">{% trans "normal" %}</td>
+      </tr>
 
-        <tr>
-          <td>
-            <strong>{% trans "leg. Werkzeugstähle" %}, {% trans "z.B." %}</strong>
-          </td>
-          <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            125Cr1-115CrV3-100CrMo5
-          </td>
-          <td class="table-no-top-border">14-10</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "mittel" %}</td>
-          <td class="table-no-top-border">40-60</td>
-          <td class="table-no-top-border">25-40</td>
-          <td class="table-no-top-border">Super HSS</td>
-          <td class="table-no-top-border">{% trans "normal" %}</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            X210Cr12
-          </td>
-          <td class="table-no-top-border">14-10</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "mittel" %}</td>
-          <td class="table-no-top-border">25-40</td>
-          <td class="table-no-top-border">10-16</td>
-          <td class="table-no-top-border">Super HSS</td>
-          <td class="table-no-top-border">{% trans "normal" %}</td>
-        </tr>
+      <tr>
+        <td>
+          <strong>{% trans "leg. Werkzeugstähle" %}, {% trans "z.B." %}</strong>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          125Cr1-115CrV3-100CrMo5
+        </td>
+        <td class="table-no-top-border">14-10</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "mittel" %}</td>
+        <td class="table-no-top-border">40-60</td>
+        <td class="table-no-top-border">25-40</td>
+        <td class="table-no-top-border">Super HSS</td>
+        <td class="table-no-top-border">{% trans "normal" %}</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          X210Cr12
+        </td>
+        <td class="table-no-top-border">14-10</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "mittel" %}</td>
+        <td class="table-no-top-border">25-40</td>
+        <td class="table-no-top-border">10-16</td>
+        <td class="table-no-top-border">Super HSS</td>
+        <td class="table-no-top-border">{% trans "normal" %}</td>
+      </tr>
 
-        <tr>
-          <td>
-            <strong>{% trans "Schnellstähle" %}, {% trans "z.B." %}</strong>
-          </td>
-          <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            ABC III-DMo 5
-          </td>
-          <td class="table-no-top-border">10-8</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "mittel" %}</td>
-          <td class="table-no-top-border">25-40</td>
-          <td class="table-no-top-border">10-16</td>
-          <td class="table-no-top-border">Super HSS</td>
-          <td class="table-no-top-border">{% trans "normal" %}</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            EMo 5 V 3-B18
-          </td>
-          <td class="table-no-top-border">14-10</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "& höher" %}</td>
-          <td class="table-no-top-border">25-35</td>
-          <td class="table-no-top-border">10-14</td>
-          <td class="table-no-top-border">Brillant</td>
-          <td class="table-no-top-border">{% trans "normal" %}</td>
-        </tr>
+      <tr>
+        <td>
+          <strong>{% trans "Schnellstähle" %}, {% trans "z.B." %}</strong>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          ABC III-DMo 5
+        </td>
+        <td class="table-no-top-border">10-8</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "mittel" %}</td>
+        <td class="table-no-top-border">25-40</td>
+        <td class="table-no-top-border">10-16</td>
+        <td class="table-no-top-border">Super HSS</td>
+        <td class="table-no-top-border">{% trans "normal" %}</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          EMo 5 V 3-B18
+        </td>
+        <td class="table-no-top-border">14-10</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "& höher" %}</td>
+        <td class="table-no-top-border">25-35</td>
+        <td class="table-no-top-border">10-14</td>
+        <td class="table-no-top-border">Brillant</td>
+        <td class="table-no-top-border">{% trans "normal" %}</td>
+      </tr>
 
-        <tr>
-          <td>
-            <strong>{% trans "nicht rostende Stähle" %}, {% trans "z.B." %}</strong>
-          </td>
-          <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            V2A-V4A
-          </td>
-          <td class="table-no-top-border">14-10</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "Sondervorschrift" %}</td>
-          <td class="table-no-top-border">25-37</td>
-          <td class="table-no-top-border">10-15</td>
-          <td class="table-no-top-border">Brillant</td>
-          <td class="table-no-top-border">{% trans "positiv" %}</td>
-        </tr>
+      <tr>
+        <td>
+          <strong>{% trans "nicht rostende Stähle" %}, {% trans "z.B." %}</strong>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          V2A-V4A
+        </td>
+        <td class="table-no-top-border">14-10</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "Sondervorschrift" %}</td>
+        <td class="table-no-top-border">25-37</td>
+        <td class="table-no-top-border">10-15</td>
+        <td class="table-no-top-border">Brillant</td>
+        <td class="table-no-top-border">{% trans "positiv" %}</td>
+      </tr>
 
-        <tr>
-          <td>
-            <strong>{% trans "Sonderlegierungen" %}, {% trans "z.B." %}</strong>
-          </td>
-          <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            {% trans "Hastelloy-Inconel" %}
-          </td>
-          <td class="table-no-top-border">10-8</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "Sondervorschrift" %}</td>
-          <td class="table-no-top-border">20-25</td>
-          <td class="table-no-top-border">10-16</td>
-          <td class="table-no-top-border">Brillant</td>
-          <td class="table-no-top-border">{% trans "positiv" %}</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            {% trans "Nimonic-Titan" %}
-          </td>
-          <td class="table-no-top-border">10-8</td>
-          <td class="table-no-top-border">8-6</td>
-          <td class="table-no-top-border">6-4</td>
-          <td class="table-no-top-border">4-3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "Sondervorschrift" %}</td>
-          <td class="table-no-top-border">10-13</td>
-          <td class="table-no-top-border">4-5</td>
-          <td class="table-no-top-border">Brillant</td>
-          <td class="table-no-top-border">{% trans "positiv" %}</td>
-        </tr>
+      <tr>
+        <td>
+          <strong>{% trans "Sonderlegierungen" %}, {% trans "z.B." %}</strong>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          {% trans "Hastelloy-Inconel" %}
+        </td>
+        <td class="table-no-top-border">10-8</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "Sondervorschrift" %}</td>
+        <td class="table-no-top-border">20-25</td>
+        <td class="table-no-top-border">10-16</td>
+        <td class="table-no-top-border">Brillant</td>
+        <td class="table-no-top-border">{% trans "positiv" %}</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          {% trans "Nimonic-Titan" %}
+        </td>
+        <td class="table-no-top-border">10-8</td>
+        <td class="table-no-top-border">8-6</td>
+        <td class="table-no-top-border">6-4</td>
+        <td class="table-no-top-border">4-3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "Sondervorschrift" %}</td>
+        <td class="table-no-top-border">10-13</td>
+        <td class="table-no-top-border">4-5</td>
+        <td class="table-no-top-border">Brillant</td>
+        <td class="table-no-top-border">{% trans "positiv" %}</td>
+      </tr>
 
-        <tr>
-          <td>
-            <strong>AMPCO 18-20</strong>
-          </td>
-          <td>10-8</td>
-          <td>8-6</td>
-          <td>6-4</td>
-          <td>4-3</td>
-          <td>2</td>
-          <td>{% trans "mittel" %}</td>
-          <td>45-50</td>
-          <td>18-20</td>
-          <td>Brillant</td>
-          <td>{% trans "normal" %}</td>
-        </tr>
+      <tr>
+        <td>
+          <strong>AMPCO 18-20</strong>
+        </td>
+        <td>10-8</td>
+        <td>8-6</td>
+        <td>6-4</td>
+        <td>4-3</td>
+        <td>2</td>
+        <td>{% trans "mittel" %}</td>
+        <td>45-50</td>
+        <td>18-20</td>
+        <td>Brillant</td>
+        <td>{% trans "normal" %}</td>
+      </tr>
 
-        <tr>
-          <td>
-            <strong>AMPCO 21-26</strong>
-          </td>
-          <td>10-8</td>
-          <td>8-6</td>
-          <td>6-4</td>
-          <td>4-3</td>
-          <td>2</td>
-          <td>{% trans "mittel" %}</td>
-          <td>40-45</td>
-          <td>16-18</td>
-          <td>Brillant</td>
-          <td>{% trans "normal" %}</td>
-        </tr>
+      <tr>
+        <td>
+          <strong>AMPCO 21-26</strong>
+        </td>
+        <td>10-8</td>
+        <td>8-6</td>
+        <td>6-4</td>
+        <td>4-3</td>
+        <td>2</td>
+        <td>{% trans "mittel" %}</td>
+        <td>40-45</td>
+        <td>16-18</td>
+        <td>Brillant</td>
+        <td>{% trans "normal" %}</td>
+      </tr>
 
-        <tr>
-          <td>
-            <strong>{% trans "Stahlguss" %}</strong>
-          </td>
-          <td>14-10</td>
-          <td>8-6</td>
-          <td>6-4</td>
-          <td>4-3</td>
-          <td>2</td>
-          <td>{% trans "mittel" %}</td>
-          <td>50-70</td>
-          <td>20-28</td>
-          <td>Super HSS</td>
-          <td>{% trans "normal" %}</td>
-        </tr>
+      <tr>
+        <td>
+          <strong>{% trans "Stahlguss" %}</strong>
+        </td>
+        <td>14-10</td>
+        <td>8-6</td>
+        <td>6-4</td>
+        <td>4-3</td>
+        <td>2</td>
+        <td>{% trans "mittel" %}</td>
+        <td>50-70</td>
+        <td>20-28</td>
+        <td>Super HSS</td>
+        <td>{% trans "normal" %}</td>
+      </tr>
 
-        <tr>
-          <td>
-            <strong>{% trans "Gusseisen" %}</strong>
-          </td>
-          <td>14-10</td>
-          <td>8-6</td>
-          <td>6-4</td>
-          <td>4-3</td>
-          <td>2</td>
-          <td>{% trans "mittel" %}</td>
-          <td>50-70</td>
-          <td>20-28</td>
-          <td>Super HSS</td>
-          <td>{% trans "normal" %}</td>
-        </tr>
+      <tr>
+        <td>
+          <strong>{% trans "Gusseisen" %}</strong>
+        </td>
+        <td>14-10</td>
+        <td>8-6</td>
+        <td>6-4</td>
+        <td>4-3</td>
+        <td>2</td>
+        <td>{% trans "mittel" %}</td>
+        <td>50-70</td>
+        <td>20-28</td>
+        <td>Super HSS</td>
+        <td>{% trans "normal" %}</td>
+      </tr>
 
-        <tr>
-          <td>
-            <strong>{% trans "Spezialbronzen" %}</strong>
-          </td>
-          <td>10-8</td>
-          <td>8-6</td>
-          <td>6-4</td>
-          <td>4-3</td>
-          <td>2</td>
-          <td>{% trans "mittel-hoch" %}</td>
-          <td>50-62</td>
-          <td>20-25</td>
-          <td>Brillant</td>
-          <td>{% trans "normal" %}</td>
-        </tr>
+      <tr>
+        <td>
+          <strong>{% trans "Spezialbronzen" %}</strong>
+        </td>
+        <td>10-8</td>
+        <td>8-6</td>
+        <td>6-4</td>
+        <td>4-3</td>
+        <td>2</td>
+        <td>{% trans "mittel-hoch" %}</td>
+        <td>50-62</td>
+        <td>20-25</td>
+        <td>Brillant</td>
+        <td>{% trans "normal" %}</td>
+      </tr>
 
-        <tr>
-          <td>
-            <strong>{% trans "NE-Metalle" %}</strong>
-          </td>
-          <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="table-no-top-border">
-            {% trans "Alu-Bronze-Messing" %}
-          </td>
-          <td class="table-no-top-border">8</td>
-          <td class="table-no-top-border">6</td>
-          <td class="table-no-top-border">4</td>
-          <td class="table-no-top-border">3</td>
-          <td class="table-no-top-border">2</td>
-          <td class="table-no-top-border">{% trans "niedrig" %}</td>
-          <td class="table-no-top-border">80-120</td>
-          <td class="table-no-top-border">32-48</td>
-          <td class="table-no-top-border">Super HSS</td>
-          <td class="table-no-top-border">{% trans "normal" %}</td>
-        </tr>
+      <tr>
+        <td>
+          <strong>{% trans "NE-Metalle" %}</strong>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="table-no-top-border">
+          {% trans "Alu-Bronze-Messing" %}
+        </td>
+        <td class="table-no-top-border">8</td>
+        <td class="table-no-top-border">6</td>
+        <td class="table-no-top-border">4</td>
+        <td class="table-no-top-border">3</td>
+        <td class="table-no-top-border">2</td>
+        <td class="table-no-top-border">{% trans "niedrig" %}</td>
+        <td class="table-no-top-border">80-120</td>
+        <td class="table-no-top-border">32-48</td>
+        <td class="table-no-top-border">Super HSS</td>
+        <td class="table-no-top-border">{% trans "normal" %}</td>
+      </tr>
       </tbody>
     </table>
   </section>
@@ -478,32 +554,32 @@
       <div class="col-md-6">
         <table class="table table-condensed table-striped-column table-hover">
           <thead>
-            <tr>
-              <th>{% trans "ZpZ" %}</th>
-              <th>{% trans "Beschreibung" %}</th>
-            </tr>
+          <tr>
+            <th>{% trans "ZpZ" %}</th>
+            <th>{% trans "Beschreibung" %}</th>
+          </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>8/10</td>
-              <td>{% trans "Materialstärken von" %} 8-30 {% trans "mm" %}</td>
-            </tr>
-            <tr>
-              <td>6/8</td>
-              <td>{% trans "Materialstärken von" %} 20-50 {% trans "mm" %}</td>
-            </tr>
-            <tr>
-              <td>4/6</td>
-              <td>{% trans "Materialstärken von" %} 50-100 {% trans "mm" %}</td>
-            </tr>
-            <tr>
-              <td>3/4</td>
-              <td>{% trans "Materialstärken von" %} 70-150 {% trans "mm" %}</td>
-            </tr>
-            <tr>
-              <td>2/3</td>
-              <td>{% trans "Materialstärken über" %} 150 {% trans "mm" %}</td>
-            </tr>
+          <tr>
+            <td>8/10</td>
+            <td>{% trans "Materialstärken von" %} 8-30 {% trans "mm" %}</td>
+          </tr>
+          <tr>
+            <td>6/8</td>
+            <td>{% trans "Materialstärken von" %} 20-50 {% trans "mm" %}</td>
+          </tr>
+          <tr>
+            <td>4/6</td>
+            <td>{% trans "Materialstärken von" %} 50-100 {% trans "mm" %}</td>
+          </tr>
+          <tr>
+            <td>3/4</td>
+            <td>{% trans "Materialstärken von" %} 70-150 {% trans "mm" %}</td>
+          </tr>
+          <tr>
+            <td>2/3</td>
+            <td>{% trans "Materialstärken über" %} 150 {% trans "mm" %}</td>
+          </tr>
 
           </tbody>
         </table>
@@ -516,13 +592,17 @@
     <h4>{% trans "Seitlicher Fasenanschliff" %}</h4>
 
     <p>
-      {% blocktrans %}Nutzen Sie Ihren Vorteil durch unseren seitlichen Fasenanschliff. Sie erhalten sauberste Schnittergebnisse. Vorzeitiges Ausbrechen der Zähne wird durch den Fasenanschliff verhindert und wegen der leichten Spanabrollung ergibt sich eine geringere Belastung von Blatt und Maschine &#8594; Metallsägeblatt und Maschine leben länger.{% endblocktrans %}
+      {% blocktrans %}Nutzen Sie Ihren Vorteil durch unseren seitlichen Fasenanschliff. Sie erhalten sauberste
+        Schnittergebnisse. Vorzeitiges Ausbrechen der Zähne wird durch den Fasenanschliff verhindert und wegen der
+        leichten Spanabrollung ergibt sich eine geringere Belastung von Blatt und Maschine &#8594; Metallsägeblatt und
+        Maschine leben länger.{% endblocktrans %}
     </p>
     <p>
       {% trans "Den seitlichen Fasenanschliff fertigen wir bis 6 ZpZ auf Nachfrage gerne für Sie. Sprechen Sie uns an!" %}
     </p>
     <a href="{% static 'img/produktbilder/maschinensaegeblaetter/katalog_2014/seitlicher_fasenanschliff.jpg' %}">
-      <img src="{% static 'img/produktbilder/maschinensaegeblaetter/katalog_2014/seitlicher_fasenanschliff.jpg' %}" class="img-responsive" alt="{% trans "Seitlicher Fasenanschliff" %}">
+      <img src="{% static 'img/produktbilder/maschinensaegeblaetter/katalog_2014/seitlicher_fasenanschliff.jpg' %}"
+           class="img-responsive" alt="{% trans "Seitlicher Fasenanschliff" %}">
     </a>
   </section>
 

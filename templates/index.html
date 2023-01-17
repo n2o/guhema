@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% load staticfiles %}
+{% load static %}
 {% load thumbnail %}
 
 {% block headerimg %}
@@ -28,21 +28,27 @@
     <div class="col-md-8">
       <p>
         <strong>
-          {% blocktrans %}Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.{% endblocktrans %}
+          {% blocktrans %}Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung und
+            Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.{% endblocktrans %}
         </strong>
       </p>
       <p>
-        {% blocktrans %}Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen Wünsche reagieren.{% endblocktrans %}
+        {% blocktrans %}Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen Wünsche
+          reagieren.{% endblocktrans %}
       </p>
       <p>
-        {% blocktrans %}Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der Norm nach DIN EN ISO 9001.{% endblocktrans %}
+        {% blocktrans %}Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der Norm nach DIN EN ISO
+          9001.{% endblocktrans %}
       </p>
       <p>
-        {% blocktrans %}Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein Metallsägeblatt in Perfektion.{% endblocktrans %}
+        {% blocktrans %}Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein Metallsägeblatt in
+          Perfektion.{% endblocktrans %}
       </p>
       <p>
         <a href="{% url 'products:index' %}">
-          <button type="button" class="btn text-normal">{% blocktrans %}Zu unseren Produkten{% endblocktrans %} &rsaquo;</button>
+          <button type="button" class="btn text-normal">{% blocktrans %}Zu unseren Produkten{% endblocktrans %}
+            &rsaquo;
+          </button>
         </a>
       </p>
     </div>

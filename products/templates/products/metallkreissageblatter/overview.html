@@ -1,6 +1,6 @@
 {% extends "layout_productgroups.html" %}
 
-{% load staticfiles %}
+{% load static %}
 {% load thumbnail %}
 {% load i18n %}
 
@@ -12,132 +12,139 @@
 
 {% block content %}
   {% with blades.0 as blade %}
-  {% with blades.1 as blade2 %}
+    {% with blades.1 as blade2 %}
 
-    {% include 'products/include_productheader.html' with group=group %}
+      {% include 'products/include_productheader.html' with group=group %}
 
-    <p class="pull-right">
-      <a class="btn btn-primary" role="button" href="{% url 'products:advices' slug=group.slug %}">
-        {% trans "Zu unseren Empfehlungen" %}
-      </a>
-      {% comment %}
+      <p class="pull-right">
+        <a class="btn btn-primary" role="button" href="{% url 'products:advices' slug=group.slug %}">
+          {% trans "Zu unseren Empfehlungen" %}
+        </a>
+        {% comment %}
       <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
         {% trans "Details anzeigen" %}
         <span class="caret"></span>
       </a>
       {% endcomment %}
-    </p>
-
-    {# <div id="collapse-1" class="collapse"> #}
-    <div id="collapse-1">
-      <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
-      <p>
-        {% trans "Nachfolgend sind unsere zwei Qualitäten aus Schnellarbeitsstahl aufgeführt:" %}
       </p>
 
-      <div class="well">
-        <div>
-          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-          GUHEMA Super-HSS
-        </div>
-        <div>
-          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-          {% blocktrans with num="1.3343" %}DMo 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
-        </div>
-        <div>
-          <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-          {% trans "Das Werkstattblatt" %}
-        </div>
+      {# <div id="collapse-1" class="collapse"> #}
+      <div id="collapse-1">
+        <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
+        <p>
+          {% trans "Nachfolgend sind unsere zwei Qualitäten aus Schnellarbeitsstahl aufgeführt:" %}
+        </p>
 
-        <div class="padding-top-05">
+        <div class="well">
           <div>
             <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-            GUHEMA Brillant
+            GUHEMA Super-HSS
           </div>
           <div>
             <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-            {% blocktrans with num="1.3243" %}EMo 5 Co 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
+            {% blocktrans with num="1.3343" %}DMo 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
           </div>
           <div>
             <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-            {% trans "Für nicht rostende Stähle" %}
+            {% trans "Das Werkstattblatt" %}
+          </div>
+
+          <div class="padding-top-05">
+            <div>
+              <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+              GUHEMA Brillant
+            </div>
+            <div>
+              <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+              {% blocktrans with num="1.3243" %}EMo 5 Co 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
+            </div>
+            <div>
+              <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+              {% trans "Für nicht rostende Stähle" %}
+            </div>
           </div>
         </div>
+
+        <h3>{% trans "Fühlen Sie uns auf den Zahn" %}</h3>
+        <p>
+          {% trans "Wenn perfektes Trennen angestrebt ist, müssen alle Faktoren optimal aufeinander abgestimmt sein. Die Zahnform spielt dabei eine bedeutungsvolle Rolle. Ihnen stehen folgende Zahnformen zur Verfügung, die nach DIN 1840 gefertigt werden:" %}
+        </p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h4>{% trans "Bogenzahn mit Wechselschliff" %} (BW)</h4>
+            {# missing image #}
+            <p>
+              {% trans "Wir empfehlen den Bogenzahn mit Wechselschliff bei Metallkreissägeblättern bei einer feinen Zahnteilung zum Sägen von Rohren oder Profilen." %}
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4>{% trans "Bogenzahn mit Vor- und Nachschneider" %} (HZ)</h4>
+            {# missing image #}
+            <p>
+              {% trans "Der Bogenzahn mit Vor- und Nachschneider ist für das Sägen von Stählen auf Sägemaschinen und Rundtaktautomaten geeignet und empfiehlt sich bei mittleren und groben Zahnteilungen." %}
+            </p>
+          </div>
+        </div>
+
       </div>
 
-      <h3>{% trans "Fühlen Sie uns auf den Zahn" %}</h3>
-      <p>
-        {% trans "Wenn perfektes Trennen angestrebt ist, müssen alle Faktoren optimal aufeinander abgestimmt sein. Die Zahnform spielt dabei eine bedeutungsvolle Rolle. Ihnen stehen folgende Zahnformen zur Verfügung, die nach DIN 1840 gefertigt werden:" %}
-      </p>
+      <hr>
 
-      <div class="row">
-        <div class="col-md-6">
-          <h4>{% trans "Bogenzahn mit Wechselschliff" %} (BW)</h4>
-          {# missing image #}
-          <p>
-            {% trans "Wir empfehlen den Bogenzahn mit Wechselschliff bei Metallkreissägeblättern bei einer feinen Zahnteilung zum Sägen von Rohren oder Profilen." %}
-          </p>
-        </div>
-        <div class="col-md-6">
-          <h4>{% trans "Bogenzahn mit Vor- und Nachschneider" %} (HZ)</h4>
-          {# missing image #}
-          <p>
-            {% trans "Der Bogenzahn mit Vor- und Nachschneider ist für das Sägen von Stählen auf Sägemaschinen und Rundtaktautomaten geeignet und empfiehlt sich bei mittleren und groben Zahnteilungen." %}
-          </p>
-        </div>
-      </div>
+      <h3 class="padding-bottom">{% trans "Produkte" %}</h3>
 
-    </div>
-
-    <hr>
-
-    <h3 class="padding-bottom">{% trans "Produkte" %}</h3>
-
-    <div class="row padding-bottom">
-      <div class="col-md-4">
-        <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+      <div class="row padding-bottom">
+        <div class="col-md-4">
+          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
           {{ blade.quality }}
           <span class="text-orange-bold">
             {{ blade.type }}...
           </span>
-        <br>
-        <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {% blocktrans with name=blade.name %}{{ name }}{% endblocktrans %}
-        <br>
-        <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-        {% blocktrans with description=blade.description %}{{ description }}{% endblocktrans %}
-        {% include 'core/edit_item.html' with model="products_circularsawblade" id=blade.id %}
-      </div>
+          <br>
+          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+          {% blocktrans with name=blade.name %}{{ name }}{% endblocktrans %}
+          <br>
+          <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+          {% blocktrans with description=blade.description %}{{ description }}{% endblocktrans %}
+          {% include 'core/edit_item.html' with model="products_circularsawblade" id=blade.id %}
+        </div>
 
-      <div class="col-md-4">
-        <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+        <div class="col-md-4">
+          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
           {{ blade2.quality }}
           <span class="text-orange-bold">
             {{ blade2.type }}...
           </span>
-        <br>
-        <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {% blocktrans with name=blade2.name %}{{ name }}{% endblocktrans %}
-        <br>
-        <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-        {% blocktrans with description=blade2.description %}{{ description }}{% endblocktrans %}
-        {% include 'core/edit_item.html' with model="products_circularsawblade" id=blade2.id %}
+          <br>
+          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+          {% blocktrans with name=blade2.name %}{{ name }}{% endblocktrans %}
+          <br>
+          <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+          {% blocktrans with description=blade2.description %}{{ description }}{% endblocktrans %}
+          {% include 'core/edit_item.html' with model="products_circularsawblade" id=blade2.id %}
+        </div>
+
+        <div class="col-md-4">
+          <p class="alert bg-orange-lighter">
+            {% blocktrans %}Der schnelle Weg zu unserer Artikel-Nr.{% endblocktrans %}<br>
+            <span class="text-orange-bold">{% trans "Qualität" %}</span> + <span
+              class="text-orange-bold">{% trans "Kennziffer" %} 1</span> + <span
+              class="text-orange-bold">{% trans "Kennziffer" %} 2</span> + <span
+              class="text-orange-bold">{% trans "Kennziffer" %} 3</span><br>
+            {% trans "z.B.:" %}
+            <span class="text-orange-bold">{{ blade.type }}</span> + <span
+              class="text-orange-bold">{{ other.0.value }}</span> + <span class="text-orange-bold">G</span> + <span
+              class="text-orange-bold">BH</span> = <span
+              class="text-orange-bold">{{ blade.type }}{{ other.0.value }}GBH</span>
+          </p>
+        </div>
       </div>
 
-      <div class="col-md-4">
-        <p class="alert bg-orange-lighter">
-          {% blocktrans %}Der schnelle Weg zu unserer Artikel-Nr.{% endblocktrans %}<br>
-          <span class="text-orange-bold">{% trans "Qualität" %}</span> + <span class="text-orange-bold">{% trans "Kennziffer" %} 1</span> + <span class="text-orange-bold">{% trans "Kennziffer" %} 2</span> + <span class="text-orange-bold">{% trans "Kennziffer" %} 3</span><br>
-          {% trans "z.B.:" %}
-          <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ other.0.value }}</span> + <span class="text-orange-bold">G</span> + <span class="text-orange-bold">BH</span> = <span class="text-orange-bold">{{ blade.type }}{{ other.0.value }}GBH</span>
-        </p>
-      </div>
-    </div>
-
-    <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
-      <thead>
+      <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
+        <thead>
         <tr>
-          <th colspan="3" class="table-white-border-right table-no-bot-border">&Oslash; / {% trans "Stärke" %} / {% trans "Bohrung" %}</th>
+          <th colspan="3" class="table-white-border-right table-no-bot-border">&Oslash; / {% trans "Stärke" %}
+            / {% trans "Bohrung" %}</th>
           <th class="table-white-border-right table-no-bot-border">{% trans "Kennziffer" %} 1</th>
           <th class="table-no-bot-border">BW</th>
           <th class="table-no-bot-border">BW</th>
@@ -152,7 +159,8 @@
           <th class="table-no-bot-border">NL</th>
         </tr>
         <tr>
-          <th colspan="3" class="table-white-border-right table-no-top-border">{% blocktrans %}in mm{% endblocktrans %}</th>
+          <th colspan="3" class="table-white-border-right table-no-top-border">{% blocktrans %}in
+            mm{% endblocktrans %}</th>
           <th class="table-white-border-right table-no-top-border"></th>
           <th class="table-no-top-border">3 {% trans "mm" %}</th>
           <th class="table-no-top-border">4 {% trans "mm" %}</th>
@@ -166,12 +174,12 @@
           <th class="table-no-top-border">14 {% trans "mm" %}</th>
           <th class="table-no-top-border">in {% trans "mm" %}</th>
         </tr>
-      </thead>
-      <tbody>
+        </thead>
+        <tbody>
         {% for indicator in other %}
           <tr>
             <td>
-              {% ifchanged  %}
+              {% ifchanged %}
                 {{ indicator.diameter }}
               {% endifchanged %}
             </td>
@@ -207,49 +215,49 @@
 
           </tr>
         {% endfor %}
-      </tbody>
-    </table>
+        </tbody>
+      </table>
 
-    <div class="row">
-      <div class="col-md-5">
-        <h4>{% trans "Kennziffer" %} 2<br><small>{% trans "Legende" %} {% trans "Zähnezahl" %}</small></h4>
-        <table class="table table-condensed table-striped-column table-hover">
-          <thead>
+      <div class="row">
+        <div class="col-md-5">
+          <h4>{% trans "Kennziffer" %} 2<br><small>{% trans "Legende" %} {% trans "Zähnezahl" %}</small></h4>
+          <table class="table table-condensed table-striped-column table-hover">
+            <thead>
             <tr>
               <th>BW</th>
               <th>HZ</th>
               <th></th>
               <th></th>
             </tr>
-          </thead>
-          <tbody>
+            </thead>
+            <tbody>
             <tr>
               <td>160 = <span class="text-orange-bold">...Q...</span></td>
-              <td>72  = <span class="text-orange-bold">...A...</span></td>
+              <td>72 = <span class="text-orange-bold">...A...</span></td>
               <td>120 = <span class="text-orange-bold">...H...</span></td>
               <td>200 = <span class="text-orange-bold">...O...</span></td>
             </tr>
             <tr>
               <td>180 = <span class="text-orange-bold">...R...</span></td>
-              <td>80  = <span class="text-orange-bold">...B...</span></td>
+              <td>80 = <span class="text-orange-bold">...B...</span></td>
               <td>128 = <span class="text-orange-bold">...I...</span></td>
               <td>220 = <span class="text-orange-bold">...P...</span></td>
             </tr>
             <tr>
               <td>200 = <span class="text-orange-bold">...S...</span></td>
-              <td>84  = <span class="text-orange-bold">...C...</span></td>
+              <td>84 = <span class="text-orange-bold">...C...</span></td>
               <td>140 = <span class="text-orange-bold">...J...</span></td>
               <td>270 = <span class="text-orange-bold">...Ü...</span></td>
             </tr>
             <tr>
               <td>220 = <span class="text-orange-bold">...U...</span></td>
-              <td>90  = <span class="text-orange-bold">...D...</span></td>
+              <td>90 = <span class="text-orange-bold">...D...</span></td>
               <td>144 = <span class="text-orange-bold">...K...</span></td>
               <td>280 = <span class="text-orange-bold">...X...</span></td>
             </tr>
             <tr>
               <td>240 = <span class="text-orange-bold">...V...</span></td>
-              <td>96  = <span class="text-orange-bold">...E...</span></td>
+              <td>96 = <span class="text-orange-bold">...E...</span></td>
               <td>150 = <span class="text-orange-bold">...L...</span></td>
               <td>300 = <span class="text-orange-bold">...Y...</span></td>
             </tr>
@@ -265,55 +273,75 @@
               <td>180 = <span class="text-orange-bold">...N...</span></td>
               <td></td>
             </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-md-offset-1 col-md-3">
-        <h4>{% trans "Kennziffer" %} 3<br><small>{% trans "Legende" %} {% trans "Nebenlöcher" %}</small></h4>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-offset-1 col-md-3">
+          <h4>{% trans "Kennziffer" %} 3<br><small>{% trans "Legende" %} {% trans "Nebenlöcher" %}</small></h4>
 
-        <table class="table table-condensed table-striped-column table-hover">
-          <thead>
+          <table class="table table-condensed table-striped-column table-hover">
+            <thead>
             <tr>
               <th>&nbsp;</th>
             </tr>
-          </thead>
-          <tbody>
-            <tr><td>2/8/45 = <span class="text-orange-bold">...A...</span></td></tr>
-            <tr><td>2/8/55 = <span class="text-orange-bold">...B...</span></td></tr>
-            <tr><td>2/9/50 = <span class="text-orange-bold">...C...</span></td></tr>
-            <tr><td>2/11/63 = <span class="text-orange-bold">..D....</span></td></tr>
-            <tr><td>2/12/64 = <span class="text-orange-bold">...E...</span></td></tr>
-            <tr><td>2/15/80 = <span class="text-orange-bold">...F...</span></td></tr>
-            <tr><td>4/9/50 = <span class="text-orange-bold">....G..</span></td></tr>
-            <tr><td>4/12/64 = <span class="text-orange-bold">...H...</span></td></tr>
-            <tr><td>4/15/80 = <span class="text-orange-bold">...I...</span></td></tr>
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+            <tr>
+              <td>2/8/45 = <span class="text-orange-bold">...A...</span></td>
+            </tr>
+            <tr>
+              <td>2/8/55 = <span class="text-orange-bold">...B...</span></td>
+            </tr>
+            <tr>
+              <td>2/9/50 = <span class="text-orange-bold">...C...</span></td>
+            </tr>
+            <tr>
+              <td>2/11/63 = <span class="text-orange-bold">..D....</span></td>
+            </tr>
+            <tr>
+              <td>2/12/64 = <span class="text-orange-bold">...E...</span></td>
+            </tr>
+            <tr>
+              <td>2/15/80 = <span class="text-orange-bold">...F...</span></td>
+            </tr>
+            <tr>
+              <td>4/9/50 = <span class="text-orange-bold">....G..</span></td>
+            </tr>
+            <tr>
+              <td>4/12/64 = <span class="text-orange-bold">...H...</span></td>
+            </tr>
+            <tr>
+              <td>4/15/80 = <span class="text-orange-bold">...I...</span></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-6">
-        <img class="img-responsive" src="{% static 'img/produktbilder/metallkreissaegen/metallkreissaege_schema.png' %}" alt="{% trans "Metallkreissäge" %}">
-      </div>
-      <div class="col-md-6">
-        <h3>{% blocktrans %}Bei der Bestellung machen Sie bitte folgende Angaben:{% endblocktrans %}</h3>
-        <ul>
-          <li>{% trans "Artikelnummer" %}</li>
-          <li>{% blocktrans %}Andere Abmessungen bieten wir an, nennen Sie uns:{% endblocktrans %}</li>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-responsive"
+               src="{% static 'img/produktbilder/metallkreissaegen/metallkreissaege_schema.png' %}"
+               alt="{% trans "Metallkreissäge" %}">
+        </div>
+        <div class="col-md-6">
+          <h3>{% blocktrans %}Bei der Bestellung machen Sie bitte folgende Angaben:{% endblocktrans %}</h3>
           <ul>
-            <li><strong>A</strong>&nbsp;&nbsp;&nbsp;{% blocktrans %}Durchmesser des Blattes{% endblocktrans %}</li>
-            <li><strong>B</strong>&nbsp;&nbsp;&nbsp;{% trans "Blattstärke" %}</li>
-            <li><strong>C</strong>&nbsp;&nbsp;&nbsp;{% trans "Hauptbohrung" %}</li>
-            <li><strong>D</strong>&nbsp;&nbsp;&nbsp;{% blocktrans %}Anzahl der Nebenlöcher{% endblocktrans %}</li>
-            <li><strong>E</strong>&nbsp;&nbsp;&nbsp;{% trans "Lochdurchmesser" %}</li>
-            <li><strong>F</strong>&nbsp;&nbsp;&nbsp;{% blocktrans %}Teilkreis der Nebenlöcher{% endblocktrans %}</li>
-            <li><strong>G</strong>&nbsp;&nbsp;&nbsp;{% blocktrans %}Zahnteilung oder Zähnezahl{% endblocktrans %}</li>
+            <li>{% trans "Artikelnummer" %}</li>
+            <li>{% blocktrans %}Andere Abmessungen bieten wir an, nennen Sie uns:{% endblocktrans %}</li>
+            <ul>
+              <li><strong>A</strong>&nbsp;&nbsp;&nbsp;{% blocktrans %}Durchmesser des Blattes{% endblocktrans %}</li>
+              <li><strong>B</strong>&nbsp;&nbsp;&nbsp;{% trans "Blattstärke" %}</li>
+              <li><strong>C</strong>&nbsp;&nbsp;&nbsp;{% trans "Hauptbohrung" %}</li>
+              <li><strong>D</strong>&nbsp;&nbsp;&nbsp;{% blocktrans %}Anzahl der Nebenlöcher{% endblocktrans %}</li>
+              <li><strong>E</strong>&nbsp;&nbsp;&nbsp;{% trans "Lochdurchmesser" %}</li>
+              <li><strong>F</strong>&nbsp;&nbsp;&nbsp;{% blocktrans %}Teilkreis der Nebenlöcher{% endblocktrans %}</li>
+              <li><strong>G</strong>&nbsp;&nbsp;&nbsp;{% blocktrans %}Zahnteilung oder Zähnezahl{% endblocktrans %}</li>
+            </ul>
           </ul>
-        </ul>
+        </div>
       </div>
-    </div>
 
-  {% endwith %}
+    {% endwith %}
   {% endwith %}
 {% endblock %}

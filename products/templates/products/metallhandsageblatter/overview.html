@@ -1,7 +1,7 @@
 {% extends "layout_productgroups.html" %}
 {% load i18n %}
 
-{% load staticfiles %}
+{% load static %}
 {% load thumbnail %}
 {% load markdownify %}
 {% load products_tags %}
@@ -15,7 +15,8 @@
 {% block content %}
   {% include 'products/include_productheader.html' with group=group %}
 
-  <a class="btn btn-primary pull-right" role="button" data-toggle="collapse" href="#collapse-accessory" aria-expanded="false" aria-controls="collapse-accessory">
+  <a class="btn btn-primary pull-right" role="button" data-toggle="collapse" href="#collapse-accessory"
+     aria-expanded="false" aria-controls="collapse-accessory">
     {% blocktrans %}Zubehörartikel anzeigen{% endblocktrans %}
     <span class="caret"></span>
   </a>
@@ -61,52 +62,52 @@
 
   {% for blade in blades %}
     {% with blades|next:forloop.counter0 as next %}
-    {% if not blade.accessory and not blade.type == "ASM" %}
-      {% ifchanged blade.subcategory %}
-        {% if forloop.counter0 == 0 %}
-          <h3 class="padding-bottom">{{ blade.subcategory }}</h3>
-        {% else %}
-          <h3 class="padding-bottom padding-top-2">{{ blade.subcategory }}</h3>
-        {% endif %}
-      {% endifchanged %}
-      <div class="panel panel-default">
-        <div class="panel-body">
+      {% if not blade.accessory and not blade.type == "ASM" %}
+        {% ifchanged blade.subcategory %}
+          {% if forloop.counter0 == 0 %}
+            <h3 class="padding-bottom">{{ blade.subcategory }}</h3>
+          {% else %}
+            <h3 class="padding-bottom padding-top-2">{{ blade.subcategory }}</h3>
+          {% endif %}
+        {% endifchanged %}
+        <div class="panel panel-default">
+          <div class="panel-body">
 
-          {% include 'products/include_blade_image.html' with image=blade.image alias='blade_image_250h' %}
+            {% include 'products/include_blade_image.html' with image=blade.image alias='blade_image_250h' %}
 
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-1 col-xs-2">
-                  <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-                </div>
-                <div class="col-md-11 col-xs-10">
-                  {{ blade.quality }}
-                  <span class="text-orange-bold">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-1 col-xs-2">
+                    <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+                  </div>
+                  <div class="col-md-11 col-xs-10">
+                    {{ blade.quality }}
+                    <span class="text-orange-bold">
                     {{ blade.type }}
                   </span>
-                  <br>
-                  {% if next.type == "ASM" %}
-                    {{ next.quality }}
-                    <span class="text-orange-bold">
+                    <br>
+                    {% if next.type == "ASM" %}
+                      {{ next.quality }}
+                      <span class="text-orange-bold">
                       {{ next.type }}
                     </span>
-                  {% endif %}
+                    {% endif %}
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-1 col-xs-2">
-                  <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-                </div>
-                <div class="col-md-11 col-xs-10 markdown-no-padding-left">
-                  {{ blade.description|markdownify }}
+                <div class="row">
+                  <div class="col-md-1 col-xs-2">
+                    <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+                  </div>
+                  <div class="col-md-11 col-xs-10 markdown-no-padding-left">
+                    {{ blade.description|markdownify }}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <table class="table table-condensed table-striped-column table-hover">
-            <thead>
+            <table class="table table-condensed table-striped-column table-hover">
+              <thead>
               <th>
                 {% trans "Bestell-Nr." %}
               </th>
@@ -119,8 +120,8 @@
               <th>
                 {% blocktrans %}Schnittbereich Metall{% endblocktrans %}
               </th>
-            </thead>
-            <tbody>
+              </thead>
+              <tbody>
               <tr>
                 {% for ind in blade.indicators.all %}
                   <td class="text-orange-bold">
@@ -139,13 +140,13 @@
                   {{ blade.cutting_metal }} {% trans "mm" %}
                 </td>
               </tr>
-            </tbody>
-          </table>
+              </tbody>
+            </table>
 
-          {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
+            {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
+          </div>
         </div>
-      </div>
-    {% endif %}
+      {% endif %}
     {% endwith %}
   {% empty %}
     <p>{% blocktrans %}Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.{% endblocktrans %}</p>

@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 {% load thumbnail %}
 {% load i18n %}
 {% load markdownify %}
@@ -48,7 +48,8 @@
         {% if fair.image %}
           <div id="fair-detail-image">
             <a href="{{ fair.image.url }}">
-              <img class="img-responsive" src="{{ fair.image|thumbnail_url:'fair_detail' }}" alt="{{ fair.name }}-image">
+              <img class="img-responsive" src="{{ fair.image|thumbnail_url:'fair_detail' }}"
+                   alt="{{ fair.name }}-image">
             </a>
           </div>
         {% endif %}
