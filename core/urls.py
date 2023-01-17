@@ -10,13 +10,13 @@ from . import views
 urlpatterns = [
     re_path(r'^$', views.index, name='index'),
     re_path(r'^pages/', include('django.contrib.flatpages.urls')),
-    re_path(r'^admin/', include(admin.site.urls)),
+    re_path(r'^admin/', admin.site.urls),
     re_path(r'^i18n/', include('django.conf.urls.i18n')),
 
     # 3rd party
 
     # Own Apps
-    re_path(r'^news/', include('news.urls', namespace='news')),
+    re_path(r'^news/', include(('news.urls', 'news'), namespace='news')),
     re_path(r'^kataloge/', include('downloads.urls', namespace='downloads')),
     re_path(r'^produkte/', include('products.urls', namespace='products')),
     re_path(r'^messen/', include('fairs.urls', namespace='fairs')),
