@@ -1,9 +1,9 @@
 {% extends "layout_productgroups.html" %}
 {% load i18n %}
 
-{% load staticfiles %}
+{% load static %}
 {% load thumbnail %}
-{% load markdown_deux_tags %}
+{% load markdownify %}
 {% load products_tags %}
 
 {% block heading %}
@@ -39,55 +39,55 @@
                 <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
               </div>
               <div class="col-md-10 col-xs-10 markdown-no-padding-left">
-                {{ blade.description|markdown }}
+                {{ blade.description|markdownify }}
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <table class="table table-condensed table-striped-column table-hover">
               <thead>
+              <th>
+                {% trans "Bestell-Nr.:" %}
+              </th>
+              <th>
+                {% trans "Zahnteilung" %}
+              </th>
+              <th>
+                {% trans "Sägeblattlänge" %}
+              </th>
+              {% if blade.cutting_metal %}
                 <th>
-                  {% trans "Bestell-Nr.:" %}
+                  {% blocktrans %}Schnittbereich Metall{% endblocktrans %}
                 </th>
+              {% endif %}
+              {% if blade.cutting_wood %}
                 <th>
-                  {% trans "Zahnteilung" %}
+                  {% blocktrans %}Schnittbereich Holz{% endblocktrans %}
                 </th>
-                <th>
-                  {% trans "Sägeblattlänge" %}
-                </th>
-                {% if blade.cutting_metal %}
-                  <th>
-                    {% blocktrans %}Schnittbereich Metall{% endblocktrans %}
-                  </th>
-                {% endif %}
-                {% if blade.cutting_wood %}
-                  <th>
-                    {% blocktrans %}Schnittbereich Holz{% endblocktrans %}
-                  </th>
-                {% endif %}
+              {% endif %}
               </thead>
               <tbody>
-                <tr>
-                  <td class="text-orange-bold">
-                    {{ blade.type }}
-                  </td>
+              <tr>
+                <td class="text-orange-bold">
+                  {{ blade.type }}
+                </td>
+                <td>
+                  {{ blade.tooth_separation }} {% trans "ZpZ" %}
+                </td>
+                <td>
+                  {{ blade.length }} {% trans "mm" %}
+                </td>
+                {% if blade.cutting_metal %}
                   <td>
-                    {{ blade.tooth_separation }} {% trans "ZpZ" %}
+                    {{ blade.cutting_metal }} {% trans "mm" %}
                   </td>
+                {% endif %}
+                {% if blade.cutting_wood %}
                   <td>
-                    {{ blade.length }} {% trans "mm" %}
+                    {{ blade.cutting_wood }} {% trans "mm" %}
                   </td>
-                  {% if blade.cutting_metal %}
-                    <td>
-                      {{ blade.cutting_metal }} {% trans "mm" %}
-                    </td>
-                  {% endif %}
-                  {% if blade.cutting_wood %}
-                    <td>
-                      {{ blade.cutting_wood }} {% trans "mm" %}
-                    </td>
-                  {% endif %}
-                </tr>
+                {% endif %}
+              </tr>
               </tbody>
             </table>
           </div>

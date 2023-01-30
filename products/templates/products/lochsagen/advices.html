@@ -1,8 +1,8 @@
 {% extends "layout_productgroups.html" %}
 
-{% load staticfiles %}
+{% load static %}
 {% load thumbnail %}
-{% load markdown_deux_tags %}
+{% load markdownify %}
 {% load products_tags %}
 {% load i18n %}
 
@@ -18,26 +18,26 @@
 
   <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
     <thead>
-      <tr>
-        <th class="text-center table-white-border-right table-no-bot-border" width="16%">&Oslash;</th>
-        <th class="text-center table-no-bot-border" width="16%">{% trans "NIRO" %}</th>
-        <th class="text-center table-no-bot-border" width="16%">{% trans "Guss" %}</th>
-        <th class="text-center table-no-bot-border" width="16%">{% trans "Stahl" %}</th>
-        <th class="text-center table-no-bot-border" width="16%">{% trans "Buntmetalle" %}</th>
-        <th class="text-center table-no-bot-border" width="16%">{% trans "ALU" %}</th>
-      </tr>
+    <tr>
+      <th class="text-center table-white-border-right table-no-bot-border" width="16%">&Oslash;</th>
+      <th class="text-center table-no-bot-border" width="16%">{% trans "NIRO" %}</th>
+      <th class="text-center table-no-bot-border" width="16%">{% trans "Guss" %}</th>
+      <th class="text-center table-no-bot-border" width="16%">{% trans "Stahl" %}</th>
+      <th class="text-center table-no-bot-border" width="16%">{% trans "Buntmetalle" %}</th>
+      <th class="text-center table-no-bot-border" width="16%">{% trans "ALU" %}</th>
+    </tr>
     </thead>
     <tbody>
-      {% for diameter in objects %}
-        <tr>
-          <td class="table-white-border-right">{{ diameter.diameter }}</td>
-          <td>{{ diameter.niro }}</td>
-          <td>{{ diameter.iron }}</td>
-          <td>{{ diameter.steel }}</td>
-          <td>{{ diameter.non_ferrous_metals }}</td>
-          <td>{{ diameter.alu }}</td>
-        </tr>
-      {% endfor %}
+    {% for diameter in objects %}
+      <tr>
+        <td class="table-white-border-right">{{ diameter.diameter }}</td>
+        <td>{{ diameter.niro }}</td>
+        <td>{{ diameter.iron }}</td>
+        <td>{{ diameter.steel }}</td>
+        <td>{{ diameter.non_ferrous_metals }}</td>
+        <td>{{ diameter.alu }}</td>
+      </tr>
+    {% endfor %}
     </tbody>
   </table>
 {% endblock %}

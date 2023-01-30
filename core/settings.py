@@ -1,19 +1,7 @@
-"""
-Django settings for core project.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/1.7/topics/settings/
-
-For the full list of settings and their values, see
-https://docs.djangoproject.com/en/1.7/ref/settings/
-"""
-
 import os
 import sys
 
-# Needed for login
-import django.contrib.auth
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -38,7 +26,7 @@ elif len(SECRET_KEY) < 50:
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '.sägenmarkt.com', '.sägenmarkt.de', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '.sägenmarkt.com', '.sägenmarkt.de', '127.0.0.1', 'localhost', '0.0.0.0']
 SITE_ID = 1
 
 # Security Settings
@@ -64,7 +52,7 @@ INSTALLED_APPS = (
     'autoslug',
     'easy_thumbnails',
     'pagedown',
-    'markdown_deux',
+    'markdownify',
     'django_forms_bootstrap',
 
     # Own apps
@@ -72,29 +60,28 @@ INSTALLED_APPS = (
     'news',
     'downloads',
     'products',
-    'contact',
+    # 'contact',
     'fairs',
 )
 # Application definition
 
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
-    'core.middleware.ForceLangMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'core.urls'
+ROOT_URLCONF = "core.urls"
+DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
-WSGI_APPLICATION = 'core.wsgi.application'
+# WSGI_APPLICATION = 'core.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
@@ -155,7 +142,7 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'django.template.context_processors.static',
                 'django.template.context_processors.request',
-                'django.core.context_processors.i18n',
+                'django.template.context_processors.i18n',
             ],
             'debug': DEBUG,
         },
@@ -177,26 +164,54 @@ THUMBNAIL_ALIASES = {
     },
 }
 
-# Markdown Deux Settings
-MARKDOWN_DEUX_STYLES = {
+MARKDOWNIFY = {
     "default": {
-        "extras": {
-            "code-friendly": None,
-        },
-        # Allow raw HTML (WARNING: don't use this for user-generated
-        # Markdown for your site!).
-        "safe_mode": False,
-    },
-    "nohtml": {
-        "extras": {
-            "code-friendly": None,
-        },
-        # Allow raw HTML (WARNING: don't use this for user-generated
-        # Markdown for your site!).
-        "safe_mode": "escape",
-    },
+        "WHITELIST_TAGS": [
+            'table',
+            'thead',
+            'tbody',
+            'th',
+            'tr',
+            'td',
+            'a',
+            'abbr',
+            'acronym',
+            'b',
+            'blockquote',
+            'em',
+            'i',
+            'li',
+            'ol',
+            'p',
+            'strong',
+            'ul',
+            'img',
+            'style',
+            'h1',
+            'h2',
+            'h3',
+            'h4',
+            'h5',
+            'h6',
+            'br',
+            'div',
+            'span'
+        ],
+        "MARKDOWN_EXTENSIONS": [
+            'markdown.extensions.fenced_code',
+            'markdown.extensions.extra',
+            'markdown.extensions.md_in_html'
+        ],
+        "WHITELIST_ATTRS": [
+            'href',
+            'src',
+            'alt',
+            'class',
+            'id',
+        ]
+    }
 }
 
 # Modeltranslation settings
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'de'
-MODELTRANSLATION_FALLBACK_LANGUAGES = ('de',)
+# MODELTRANSLATION_DEFAULT_LANGUAGE = 'de'
+# MODELTRANSLATION_FALLBACK_LANGUAGES = ('de',)

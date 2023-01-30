@@ -1,9 +1,9 @@
 {% extends "layout_productgroups.html" %}
 
-{% load staticfiles %}
+{% load static %}
 {% load thumbnail %}
 {% load i18n %}
-{% load markdown_deux_tags %}
+{% load markdownify %}
 
 {% block heading %}
   <h1>{% trans "Messen" %}</h1>
@@ -16,7 +16,7 @@
         {% trans "Besuchen Sie uns auf folgenden Messen:" %}
       </h3>
       {% for fair in upcoming %}
-        {% include 'fairs/fair_style.html' with fair=fair%}
+        {% include 'fairs/fair_style.html' with fair=fair %}
       {% endfor %}
     </section>
   {% else %}

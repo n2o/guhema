@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.flatpages.models import FlatPage
 from django.db import models
 from django.utils.safestring import mark_safe
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from modeltranslation.admin import TranslationAdmin
 from pagedown.widgets import AdminPagedownWidget
 

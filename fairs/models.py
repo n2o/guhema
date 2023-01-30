@@ -2,7 +2,7 @@ from datetime import datetime
 
 from autoslug import AutoSlugField
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 
 class Fair(models.Model):

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from modeltranslation.admin import TranslationAdmin
 from pagedown.widgets import AdminPagedownWidget
 
@@ -19,6 +19,7 @@ class FairAdmin(PageDownAdmin):
     list_filter = ['created']
     search_fields = ['name']
     fieldsets = [
-        (_('Allgemein'), {'fields': ['name', 'website', 'location', ('hall', 'stand'), ('start', 'end'), 'description', ('image', 'attachment'), ('archive', 'public')]}),
+        (_('Allgemein'), {'fields': ['name', 'website', 'location', ('hall', 'stand'),
+         ('start', 'end'), 'description', ('image', 'attachment'), ('archive', 'public')]}),
         (_('Erweitert'), {'fields': ['created'], 'classes': ['collapse']}),
     ]

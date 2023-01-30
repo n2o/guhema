@@ -51,6 +51,6 @@ class NoTranslationOptions(TranslationOptions):
     pass
 
 
-translator.register(CircularSawBlade, SawBladeTranslationOptions)
+translator.register(CircularSawBlade, NoTranslationOptions)
 translator.register(Indicator, NoTranslationOptions)
 translator.register(FlatPage, NoTranslationOptions)

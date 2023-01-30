@@ -1,8 +1,8 @@
 {% extends "layout_productgroups.html" %}
 
-{% load staticfiles %}
+{% load static %}
 {% load thumbnail %}
-{% load markdown_deux_tags %}
+{% load markdownify %}
 {% load products_tags %}
 {% load i18n %}
 
@@ -57,48 +57,48 @@
                     <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
                   </div>
                   <div class="col-md-10 col-xs-10 markdown-no-padding-left">
-                    {{ blade.description|markdown }}
+                    {{ blade.description|markdownify }}
                   </div>
                 </div>
               </div>
               <div class="col-md-offset-1 col-md-5">
                 <table class="table table-condensed table-striped-column table-hover">
                   <thead>
-                    <tr>
-                      {% if blade.toothing %}
-                        <th>{% trans "Verzahnung" %}</th>
-                      {% endif %}
-                      {% if blade.cutting_metal %}
-                        <th>{% blocktrans %}Schnittbereich Metall{% endblocktrans %}</th>
-                      {% endif %}
-                      {% if blade.cutting_wood %}
-                        <th>{% blocktrans %}Schnittbereich Holz{% endblocktrans %}</th>
-                      {% endif %}
-                      {% if blade.cutting_minerals %}
-                        <th>{% blocktrans %}Schnittbereich Mineralisch{% endblocktrans %}</th>
-                      {% endif %}
-                    </tr>
+                  <tr>
+                    {% if blade.toothing %}
+                      <th>{% trans "Verzahnung" %}</th>
+                    {% endif %}
+                    {% if blade.cutting_metal %}
+                      <th>{% blocktrans %}Schnittbereich Metall{% endblocktrans %}</th>
+                    {% endif %}
+                    {% if blade.cutting_wood %}
+                      <th>{% blocktrans %}Schnittbereich Holz{% endblocktrans %}</th>
+                    {% endif %}
+                    {% if blade.cutting_minerals %}
+                      <th>{% blocktrans %}Schnittbereich Mineralisch{% endblocktrans %}</th>
+                    {% endif %}
+                  </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      {% if blade.toothing %}
-                        <td>
-                          {{ blade.toothing }}
-                          {% if blade.toothing_de != "Welle" %}
-                            {% trans "ZpZ" %}
-                          {% endif %}
-                        </td>
-                      {% endif %}
-                      {% if blade.cutting_metal %}
-                        <td>{{ blade.cutting_metal }} {% trans "mm" %}</td>
-                      {% endif %}
-                      {% if blade.cutting_wood %}
-                        <td>{{ blade.cutting_wood }} {% trans "mm" %}</td>
-                      {% endif %}
-                      {% if blade.cutting_minerals %}
-                        <td>{{ blade.cutting_minerals }}</td>
-                      {% endif %}
-                    </tr>
+                  <tr>
+                    {% if blade.toothing %}
+                      <td>
+                        {{ blade.toothing }}
+                        {% if blade.toothing_de != "Welle" %}
+                          {% trans "ZpZ" %}
+                        {% endif %}
+                      </td>
+                    {% endif %}
+                    {% if blade.cutting_metal %}
+                      <td>{{ blade.cutting_metal }} {% trans "mm" %}</td>
+                    {% endif %}
+                    {% if blade.cutting_wood %}
+                      <td>{{ blade.cutting_wood }} {% trans "mm" %}</td>
+                    {% endif %}
+                    {% if blade.cutting_minerals %}
+                      <td>{{ blade.cutting_minerals }}</td>
+                    {% endif %}
+                  </tr>
                   </tbody>
                 </table>
               </div>

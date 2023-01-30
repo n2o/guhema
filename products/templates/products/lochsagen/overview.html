@@ -1,8 +1,8 @@
 {% extends "layout_productgroups.html" %}
 
-{% load staticfiles %}
+{% load static %}
 {% load thumbnail %}
-{% load markdown_deux_tags %}
+{% load markdownify %}
 {% load products_tags %}
 {% load i18n %}
 
@@ -23,7 +23,11 @@
 
   <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
   <p>
-    {% blocktrans %}Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und Laufruhe, hervorgerufen durch die variable Verzahnung mit ihrer optimalen Spanabfuhr, zeichnet unsere Bi-Metall-Lochsägen aus. Unsere feinverzahnten Lochsägen sind bestens für dünnwandige Materialien geeignet. Bei Mineral- und Verbundwerkstoffen erzielen unsere hartmetallbeschichteten Lochsägen beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine Wünsche offen.{% endblocktrans %}
+    {% blocktrans %}Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und Laufruhe, hervorgerufen
+      durch die variable Verzahnung mit ihrer optimalen Spanabfuhr, zeichnet unsere Bi-Metall-Lochsägen aus. Unsere
+      feinverzahnten Lochsägen sind bestens für dünnwandige Materialien geeignet. Bei Mineral- und Verbundwerkstoffen
+      erzielen unsere hartmetallbeschichteten Lochsägen beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine
+      Wünsche offen.{% endblocktrans %}
   </p>
 
   <div class="row well">
@@ -37,7 +41,8 @@
       </div>
       <div>
         <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
+        {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}
+          ){% endblocktrans %}
       </div>
       <div>
         <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
@@ -54,7 +59,8 @@
         </div>
         <div>
           <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-          {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
+          {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}
+            ){% endblocktrans %}
         </div>
         <div>
           <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
@@ -83,11 +89,13 @@
     <div class="col-md-4">
       <p class="alert bg-orange-lighter" style="margin-top: 21px">
         {% blocktrans %}Der schnelle Weg zu unserer Artikel-Nr.{% endblocktrans %}<br>
-        <span class="text-orange-bold">{% trans "Qualität" %}</span> + <span class="text-orange-bold">&Oslash;</span> + <span class="text-orange-bold">{% trans "ZpZ" %}</span><br>
+        <span class="text-orange-bold">{% trans "Qualität" %}</span> + <span class="text-orange-bold">&Oslash;</span> +
+        <span class="text-orange-bold">{% trans "ZpZ" %}</span><br>
         {% trans "z.B.:" %}
         <span class="text-orange-bold">
           HSM
-        </span> + <span class="text-orange-bold">014</span> + <span class="text-orange-bold">V</span> = <span class="text-orange-bold">HSM014V</span>
+        </span> + <span class="text-orange-bold">014</span> + <span class="text-orange-bold">V</span> = <span
+          class="text-orange-bold">HSM014V</span>
       </p>
     </div>
   </div>
@@ -100,52 +108,52 @@
     <div class="col-md-6">
       <table class="table table-condensed table-striped-column table-hover">
         <thead>
-          <tr>
-            <th>{% trans "Aufnahmeschaft" %}</th>
-            <th>{% trans "Lochsäge" %}</th>
-            <th width="20%">{% trans "Bestell-Nr." %}</th>
-          </tr>
+        <tr>
+          <th>{% trans "Aufnahmeschaft" %}</th>
+          <th>{% trans "Lochsäge" %}</th>
+          <th width="20%">{% trans "Bestell-Nr." %}</th>
+        </tr>
         </thead>
         <tbody>
-          {% for blade in blades %}
-            {% if blade.saw_length == "14 - 30" %}
-              <tr>
-                <td>{{ blade.mounting }}</td>
-                <td>{{ blade.saw_length }} {% trans "mm" %}</td>
-                <td>
+        {% for blade in blades %}
+          {% if blade.saw_length == "14 - 30" %}
+            <tr>
+              <td>{{ blade.mounting }}</td>
+              <td>{{ blade.saw_length }} {% trans "mm" %}</td>
+              <td>
                   <span class="text-orange-bold">
                     {{ blade.ordernr }}
                   </span>
-                </td>
-              </tr>
-            {% endif %}
-          {% endfor %}
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
         </tbody>
       </table>
     </div>
     <div class="col-md-6">
       <table class="table table-condensed table-striped-column table-hover">
         <thead>
-          <tr>
-            <th>{% trans "Aufnahmeschaft" %}</th>
-            <th>{% trans "Lochsäge" %}</th>
-            <th width="20%">{% trans "Bestell-Nr." %}</th>
-          </tr>
+        <tr>
+          <th>{% trans "Aufnahmeschaft" %}</th>
+          <th>{% trans "Lochsäge" %}</th>
+          <th width="20%">{% trans "Bestell-Nr." %}</th>
+        </tr>
         </thead>
         <tbody>
-          {% for blade in blades %}
-            {% if blade.saw_length == "32 - 210" %}
-              <tr>
-                <td>{{ blade.mounting }}</td>
-                <td>{{ blade.saw_length }} {% trans "mm" %}</td>
-                <td>
+        {% for blade in blades %}
+          {% if blade.saw_length == "32 - 210" %}
+            <tr>
+              <td>{{ blade.mounting }}</td>
+              <td>{{ blade.saw_length }} {% trans "mm" %}</td>
+              <td>
                   <span class="text-orange-bold">
                     {{ blade.ordernr }}
                   </span>
-                </td>
-              </tr>
-            {% endif %}
-          {% endfor %}
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
         </tbody>
       </table>
     </div>
@@ -157,24 +165,24 @@
     <div class="col-md-6">
       <table class="table table-condensed table-striped-column table-hover">
         <thead>
-          <tr>
-            <th>{% trans "Beschreibung" %}</th>
-            <th width="20%">{% trans "Bestell-Nr." %}</th>
-          </tr>
+        <tr>
+          <th>{% trans "Beschreibung" %}</th>
+          <th width="20%">{% trans "Bestell-Nr." %}</th>
+        </tr>
         </thead>
         <tbody>
-          {% for blade in blades %}
-            {% if blade.category_de == "Zubehör / Ersatzteile" %}
-              <tr>
-                <td>{{ blade.description }}</td>
-                <td>
+        {% for blade in blades %}
+          {% if blade.category_de == "Zubehör / Ersatzteile" %}
+            <tr>
+              <td>{{ blade.description }}</td>
+              <td>
                   <span class="text-orange-bold">
                     {{ blade.ordernr }}
                   </span>
-                </td>
-              </tr>
-            {% endif %}
-          {% endfor %}
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
         </tbody>
       </table>
     </div>
@@ -184,35 +192,35 @@
 
   <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
     <thead>
-      <tr>
-        <th class="text-center table-white-border-right table-no-bot-border">&Oslash;</th>
-        <th class="text-center table-no-bot-border">GUHEMA Bi-Co-lastic</th>
-        <th class="text-center table-no-bot-border">GUHEMA Bi-Co-lastic</th>
-        <th class="text-center table-no-bot-border">HM-Granulat</th>
-      </tr>
-      <tr>
-        <th class="text-center table-no-top-border table-white-border-right">{% blocktrans %}in mm{% endblocktrans %}</th>
-        <th class="text-center table-no-top-border">
-          4/6 {% trans "ZpZ" %}
-          <span class="text-orange">...V</span>
-        </th>
-        <th class="text-center table-no-top-border">
-          10 {% trans "ZpZ" %}
-          <span class="text-orange">...J</span>
-        </th>
-        <th class="text-center table-no-top-border">
-          <span class="text-orange">...S</span>
-        </th>
-      </tr>
+    <tr>
+      <th class="text-center table-white-border-right table-no-bot-border">&Oslash;</th>
+      <th class="text-center table-no-bot-border">GUHEMA Bi-Co-lastic</th>
+      <th class="text-center table-no-bot-border">GUHEMA Bi-Co-lastic</th>
+      <th class="text-center table-no-bot-border">HM-Granulat</th>
+    </tr>
+    <tr>
+      <th class="text-center table-no-top-border table-white-border-right">{% blocktrans %}in mm{% endblocktrans %}</th>
+      <th class="text-center table-no-top-border">
+        4/6 {% trans "ZpZ" %}
+        <span class="text-orange">...V</span>
+      </th>
+      <th class="text-center table-no-top-border">
+        10 {% trans "ZpZ" %}
+        <span class="text-orange">...J</span>
+      </th>
+      <th class="text-center table-no-top-border">
+        <span class="text-orange">...S</span>
+      </th>
+    </tr>
     </thead>
     <tbody>
     {% for diameter in other %}
       {% with diameter.blades.all as diameters %}
         <tr>
           <td class="table-white-border-right">{{ diameter }}</td>
-            {% autoescape off %}
-              {% show_diameters diameters %}
-            {% endautoescape %}
+          {% autoescape off %}
+            {% show_diameters diameters %}
+          {% endautoescape %}
         </tr>
       {% endwith %}
     {% endfor %}
