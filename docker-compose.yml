@@ -12,7 +12,6 @@ services:
     networks:
       - guhema
     environment:
-      SECRET_KEY: "9459c060b1fa1adb3d1f3aa78a07d49e3ad8cbb3fb23d5e94c19ec740139ac19"
       DEBUG: "True"
 
   proxy:
