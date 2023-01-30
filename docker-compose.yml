@@ -2,7 +2,7 @@ version: "3.4"
 
 services:
   web:
-    build: .
+    image: ghcr.io/n2o/guhema:latest
     restart: unless-stopped
     volumes:
       - .:/code
