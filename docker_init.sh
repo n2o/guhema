@@ -1,7 +1,7 @@
 #!/bin/sh
 
-python manage.py collectstatic --noinput
+poetry run python manage.py collectstatic --noinput
 
-python manage.py migrate
+poetry run python manage.py migrate
 
-python manage.py runserver 0.0.0.0:8000
+poetry run gunicorn --bind 0.0.0.0:8000 core.wsgi

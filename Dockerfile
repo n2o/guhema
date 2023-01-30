@@ -1,15 +1,16 @@
-FROM python:3.4-alpine
+FROM python:3.11-alpine
 
-RUN apk add --no-cache build-base python3-dev py-pip jpeg-dev zlib zlib-dev musl-dev && \
-    pip install -U pip
+RUN apk add --no-cache build-base python3-dev py-pip jpeg-dev zlib zlib-dev musl-dev libffi-dev && \
+    pip install -U pip poetry
 
 ENV CFLAGS="$CFLAGS -L/lib"
 
 WORKDIR /code
 
-COPY requirements.txt .
+COPY poetry.lock pyproject.toml ./
 
-RUN pip install -r requirements.txt
+RUN poetry config virtualenvs.create false && \
+    poetry install --no-dev --no-interaction --no-ansi
 
 COPY . .
 
