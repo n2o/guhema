@@ -91,7 +91,8 @@ MIDDLEWARE = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'core.urls'
+ROOT_URLCONF = "core.urls"
+DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 # WSGI_APPLICATION = 'core.wsgi.application'
 
