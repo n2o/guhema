@@ -20,7 +20,7 @@ services:
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.guhema.rule=Host(`guhema.com`) || Host(`www.guhema.com`)"
+      - "traefik.http.routers.guhema.rule=Host(`guhema.com`) || Host(`www.guhema.com`) || Host(`www.guhema.de`) || Host(`guhema.de`)"
       - "traefik.http.routers.guhema.entrypoints=websecure"
       - "traefik.docker.network=web"
     networks:
