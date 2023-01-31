@@ -6,6 +6,7 @@ from django.utils.translation import gettext_lazy as _
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 DEBUG = False
+THUMBNAIL_DEBUG = False
 
 # Import SECRET_KEY and check it
 try:
