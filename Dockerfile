@@ -1,6 +1,6 @@
 FROM python:3.11-alpine
 
-RUN apk add --no-cache build-base python3-dev py-pip jpeg-dev zlib zlib-dev musl-dev libffi-dev freetype-dev && \
+RUN apk add --no-cache build-base python3-dev py-pip jpeg-dev zlib zlib-dev musl-dev libffi-dev freetype-dev gettext && \
     pip install -U pip poetry
 
 ENV CFLAGS="$CFLAGS -L/lib"
