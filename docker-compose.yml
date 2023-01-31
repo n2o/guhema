@@ -6,6 +6,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./core/settings_secret.py:/code/core/settings_secret.py
+      - ./db.sqlite3:/code/db.sqlite3
       - ./media:/code/media
     labels:
       - "traefik.enable=false"
