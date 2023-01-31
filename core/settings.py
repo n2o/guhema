@@ -26,7 +26,8 @@ elif len(SECRET_KEY) < 50:
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '.sägenmarkt.com', '.sägenmarkt.de', '127.0.0.1', 'localhost', '0.0.0.0']
+ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '127.0.0.1', 'localhost', '0.0.0.0']
+CSRF_TRUSTED_ORIGINS = ["https://guhema.com", "https://guhema.de", "https://www.guhema.com", "https://www.guhema.de", ]
 SITE_ID = 1
 
 # Security Settings
