@@ -55,6 +55,6 @@
   </div>
 
   {# News Section #}
-  <h2 style="padding-top: 1em;">{% trans "News" %}</h2>
-  {% include 'news/inc_overview.html' with posts=posts %}
+  {% comment %}<h2 style="padding-top: 1em;">{% trans "News" %}</h2>
+  {% include 'news/inc_overview.html' with posts=posts %}{% endcomment %}
 {% endblock %}
