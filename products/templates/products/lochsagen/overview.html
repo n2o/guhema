@@ -23,7 +23,7 @@
 
   <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
   <p>
-    {% blocktrans %}Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und Laufruhe, hervorgerufen
+    {% blocktrans trimmed %}Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und Laufruhe, hervorgerufen
       durch die variable Verzahnung mit ihrer optimalen Spanabfuhr, zeichnet unsere Bi-Metall-Lochsägen aus. Unsere
       feinverzahnten Lochsägen sind bestens für dünnwandige Materialien geeignet. Bei Mineral- und Verbundwerkstoffen
       erzielen unsere hartmetallbeschichteten Lochsägen beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine
@@ -41,8 +41,7 @@
       </div>
       <div>
         <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}
-          ){% endblocktrans %}
+        {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
       </div>
       <div>
         <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
@@ -59,8 +58,7 @@
         </div>
         <div>
           <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-          {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}
-            ){% endblocktrans %}
+          {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
         </div>
         <div>
           <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
@@ -218,9 +216,7 @@
       {% with diameter.blades.all as diameters %}
         <tr>
           <td class="table-white-border-right">{{ diameter }}</td>
-          {% autoescape off %}
-            {% show_diameters diameters %}
-          {% endautoescape %}
+          {% show_diameters diameters %}
         </tr>
       {% endwith %}
     {% endfor %}

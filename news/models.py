@@ -1,8 +1,8 @@
-from datetime import datetime
-
 from autoslug import AutoSlugField
 from django.contrib.auth.models import User
 from django.db import models
+from django.urls import reverse
+from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
 
@@ -27,14 +27,14 @@ class Entry(models.Model):
     slug = AutoSlugField(null=True, populate_from='title')
     archive = models.BooleanField(_('Archiviert?'), default=False)
     public = models.BooleanField(_('Öffentlich?'), default=True)
-    created = models.DateTimeField(_('Erstellt am'), default=datetime.now)
+    created = models.DateTimeField(_('Erstellt am'), default=timezone.now)
     category = models.ForeignKey(Category, null=True, verbose_name=_("Kategorie"), on_delete=models.SET_NULL)
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
-        return 'news:entry', (self.slug,)
+        return reverse('news:detail', args=[self.slug])
 
     class Meta:
         verbose_name = _('Eintrag')

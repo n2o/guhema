@@ -1,4 +1,7 @@
-from django.shortcuts import get_list_or_404, render
+from django.http import Http404, HttpResponse
+from django.shortcuts import get_list_or_404, get_object_or_404, render
+from django.template import TemplateDoesNotExist
+from django.template.loader import get_template
 
 from .models import (BandSawBlade, BandSawBladeIndicator, CircularSawBlade,
                      CircularSawBladeIndicator, HackSawBlade, HoleSaw,
@@ -6,18 +9,28 @@ from .models import (BandSawBlade, BandSawBladeIndicator, CircularSawBlade,
                      SawBlade)
 
 
+def _render_or_404(request, slug, page, context=None):
+    """Templates are looked up by slug, so a missing one means an unknown page."""
+    if not ProductGroup.objects.filter(slug=slug, public=True).exists():
+        raise Http404
+    template_name = f'products/{slug}/{page}.html'
+    try:
+        template = get_template(template_name)
+    except TemplateDoesNotExist:
+        raise Http404 from None
+    return HttpResponse(template.render(context, request))
+
+
 def index(request):
     groups = get_list_or_404(ProductGroup)
     return render(request, 'products/index.html', {'groups': groups})
 
 
-def list(request, slug):
+def group_list(request, slug):
     blades = None
     other = None
-    group = ProductGroup.objects.get(slug=slug)
-    if slug == 'maschinensageblatter':
-        blades = SawBlade.objects.filter(group=group)
-    elif slug == 'metallstichsageblatter':
+    group = get_object_or_404(ProductGroup, slug=slug)
+    if slug in ('maschinensageblatter', 'metallstichsageblatter'):
         blades = SawBlade.objects.filter(group=group)
     elif slug == 'sabel-und-spezialsabelsageblatter':
         blades = SableSawBlade.objects.filter(group=group)
@@ -34,55 +47,36 @@ def list(request, slug):
     elif slug == 'metallkreissageblatter':
         blades = CircularSawBlade.objects.all()
         other = CircularSawBladeIndicator.objects.all().order_by('diameter')
-    return render(request, 'products/'+slug+'/overview.html',
-                  {'blades': blades,
-                   'group': group,
-                   'other': other})
+    return _render_or_404(request, slug, 'overview',
+                          {'blades': blades,
+                           'group': group,
+                           'other': other})
 
 
 def details(request, slug, type):
-    blade = SawBlade.objects.get(type=type)
-    indicators = blade.indicators.order_by('width')
-    return render(request, 'products/'+slug+'/details.html',
-                  {'blade': blade,
-                   'clamping': blade.clamping,
-                   'indicators': indicators})
+    # type is not unique across product groups
+    blade = SawBlade.objects.filter(type=type, group__slug=slug).first()
+    if blade is None:
+        raise Http404
+    return _render_or_404(request, slug, 'details',
+                          {'blade': blade,
+                           'clamping': blade.clamping,
+                           'indicators': blade.indicators.order_by('width')})
 
 
 def details_by_id(request, slug, id):
-    """
-    Given a slug and a ID it returns a unique blade
-    :param slug: slug of productgroup
-    :param id: blade id
-    :return: blade
-    """
-    blade = BandSawBlade.objects.get(id=id)
-    indicators = blade.bandsaw_indicators.all()
-
-    return render(request, 'products/'+slug+'/details.html',
-                  {'blade': blade,
-                   'indicators': indicators})
+    blade = get_object_or_404(BandSawBlade, id=id, group__slug=slug)
+    return _render_or_404(request, slug, 'details',
+                          {'blade': blade,
+                           'indicators': blade.bandsaw_indicators.all()})
 
 
 def product_details(request, slug):
-    return render(request, 'products/'+slug+'/details.html')
+    return _render_or_404(request, slug, 'details')
 
 
 def product_advices(request, slug):
     objects = None
     if slug == 'lochsagen':
         objects = HoleSawDiameter.objects.filter(advice=True)
-    return render(request, 'products/'+slug+'/advices.html', {'objects': objects})
-
-
-def holesawAdvice(request):
-    layout = 'holesaw_advice.html'
-    diameters = HoleSawDiameter.objects.filter(advice=True)
-    group = ProductGroup.objects.get(slug='lochsagen')
-    return render(request, 'products/'+layout, {'diameters': diameters,
-                                                'group': group})
-
-
-# ======================================================================================================================
-#
-# ======================================================================================================================
+    return _render_or_404(request, slug, 'advices', {'objects': objects})

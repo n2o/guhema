@@ -7,7 +7,7 @@
   <h1>{{ entry.title }}</h1>
   <h4>
     <small>
-      {{ entry.created|date:"j. N Y" }}{% if entry.author %}{% endif %}
+      {{ entry.created|date:"j. N Y" }}
       {% include 'core/edit_item.html' with model="news_entry" id=entry.id %}
     </small>
   </h4>
@@ -20,7 +20,7 @@
     </div>
   {% endif %}
 
-  {{ entry.content|safe|markdownify }}
+  {{ entry.content|markdownify }}
 
   {% if entry.attachment %}
     <div class="padding-top">

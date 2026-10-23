@@ -1,43 +1,27 @@
-FROM python:3.11-alpine
+FROM python:3.13-alpine
 
-# Install system dependencies and uv
-RUN apk add --no-cache \
-    build-base \
-    python3-dev \
-    py-pip \
-    jpeg-dev \
-    zlib \
-    zlib-dev \
-    musl-dev \
-    libffi-dev \
-    freetype-dev \
-    gettext \
-    lcms2-dev \
-    openjpeg-dev \
-    tiff-dev \
-    tk-dev \
-    tcl-dev \
-    harfbuzz-dev \
-    fribidi-dev \
-    curl && \
-    curl -LsSf https://astral.sh/uv/install.sh | sh
+COPY --from=ghcr.io/astral-sh/uv:0.13.5 /uv /uvx /bin/
 
-ENV CFLAGS="$CFLAGS -L/lib"
-ENV PATH="/root/.local/bin:$PATH"
+# gettext for compilemessages
+RUN apk add --no-cache gettext
+
+ENV UV_COMPILE_BYTECODE=1 \
+    UV_LINK_MODE=copy \
+    UV_PYTHON_DOWNLOADS=0 \
+    PYTHONUNBUFFERED=1 \
+    PATH="/code/.venv/bin:$PATH"
 
 WORKDIR /code
 
-# Copy dependency files for layer caching
+# Install dependencies first for layer caching
 COPY uv.lock pyproject.toml ./
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync --locked
 
-# Install dependencies in a virtual environment
-RUN uv sync --frozen --no-dev --no-install-project
+COPY locale ./locale
+RUN django-admin compilemessages --ignore .venv
 
-# Copy application code
 COPY . .
-
-# Install the project itself
-RUN uv sync --frozen --no-dev
 
 EXPOSE 8000
 

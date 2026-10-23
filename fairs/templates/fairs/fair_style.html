@@ -33,7 +33,7 @@
           {% endif %}
           {% if fair.location %}
             <div>
-              {{ fair.location|markdown }}
+              {{ fair.location|markdownify }}
             </div>
           {% endif %}
           {% if fair.attachment %}
@@ -56,7 +56,7 @@
       </div>
     </div>
     {% if fair.description %}
-      {{ fair.description|markdown }}
+      {{ fair.description|markdownify }}
     {% endif %}
   </div>
 </div>

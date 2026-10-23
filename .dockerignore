@@ -1,4 +1,13 @@
 .git/
-venv/
 .github/
 .idea/
+.claude/
+.venv/
+venv/
+**/__pycache__/
+docs/
+media/
+static/
+db.sqlite3*
+core/settings_secret.py
+**/*.mo

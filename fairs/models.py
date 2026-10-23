@@ -1,7 +1,6 @@
-from datetime import datetime
-
 from autoslug import AutoSlugField
 from django.db import models
+from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
 
@@ -19,7 +18,7 @@ class Fair(models.Model):
     slug = AutoSlugField(null=True, populate_from='name')
     archive = models.BooleanField(_('Archiviert?'), default=False)
     public = models.BooleanField(_('Öffentlich?'), default=True)
-    created = models.DateTimeField(_('Erstellt am'), default=datetime.now)
+    created = models.DateTimeField(_('Erstellt am'), default=timezone.now)
 
     def __str__(self):
         return self.name
