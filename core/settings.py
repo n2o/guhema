@@ -32,6 +32,18 @@ SITE_ID = 1
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SESSION_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_SECURE = not DEBUG
+SECURE_HSTS_SECONDS = 0 if DEBUG else 31536000
+# HTTP -> HTTPS redirect is done by Traefik
+SILENCED_SYSTEM_CHECKS = ["security.W008"]
+
+# Without DEBUG, Django only mails errors to ADMINS; send them to the container log instead
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "filters": {"require_debug_false": {"()": "django.utils.log.RequireDebugFalse"}},
+    "handlers": {"console": {"class": "logging.StreamHandler", "filters": ["require_debug_false"]}},
+    "root": {"handlers": ["console"], "level": "WARNING"},
+}
 
 INSTALLED_APPS = (
     'modeltranslation',
