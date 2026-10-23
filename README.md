@@ -15,22 +15,22 @@ Django-based website for GUHEMA - a company specializing in industrial cutting t
 - **News & Updates**: Latest company news and announcements
 - **Fair Calendar**: Upcoming trade fairs and exhibitions
 - **Downloads**: Product catalogs and documentation
-- **Multi-language Support**: German/English translations via django-modeltranslation
+- **Multi-language Support**: German/English/Russian translations via django-modeltranslation
 
 ## Tech Stack
 
-- **Python**: 3.11+
-- **Framework**: Django 4.1.5
+- **Python**: 3.13+
+- **Framework**: Django 5.2 LTS
 - **Package Manager**: [uv](https://github.com/astral-sh/uv)
-- **Database**: SQLite (development)
-- **PDF Generation**: ReportLab
-- **Deployment**: Docker + Gunicorn
+- **Database**: SQLite
+- **Frontend**: Bootstrap 3.4.1, jQuery 3.7.1 (vendored in `templates/core/assets`)
+- **Deployment**: Docker + Gunicorn behind nginx and Traefik
 
 ## Development Setup
 
 ### Prerequisites
 
-- Python 3.11 or higher
+- Python 3.13 or higher (uv installs it automatically)
 - [uv](https://github.com/astral-sh/uv) package manager
 
 ### Installation
@@ -51,9 +51,10 @@ uv sync
 cp core/settings_secret_ci.py core/settings_secret.py
 ```
 
-4. Run migrations:
+4. Run migrations and compile translations:
 ```bash
 uv run python manage.py migrate
+uv run python manage.py compilemessages --ignore .venv
 ```
 
 5. Start the development server:
@@ -75,8 +76,11 @@ docker run -p 8000:8000 guhema
 ### Using Docker Compose:
 
 ```bash
-docker-compose up
+docker compose up
 ```
+
+The compose file expects `core/settings_secret.py`, `db.sqlite3`, `media/` and `static/` next to it.
+The container runs `collectstatic` into `static/` and `migrate` on every start, so back up `db.sqlite3` before pulling a new image.
 
 ## Testing
 
@@ -84,6 +88,7 @@ Run the test suite:
 
 ```bash
 uv run python manage.py test
+uv run python manage.py makemigrations --check --dry-run
 ```
 
 ## Project Structure
@@ -104,13 +109,9 @@ guhema/
 ## CI/CD
 
 The project uses GitHub Actions for:
-- **Testing**: Automated tests on pull requests
-- **Docker**: Automatic Docker image builds and publishing to GitHub Container Registry
+- **Testing**: System checks, missing-migration check and tests on pull requests and pushes to `main`
+- **Docker**: Image builds on pull requests; pushes to `main` and `v*` tags are published to GitHub Container Registry
 
 ## License
 
 See [LICENSE](LICENSE) file for details.
-
-## Migration Notes
-
-This project was recently migrated from Poetry to uv for improved performance and reliability. If you encounter any issues, please check the latest commit history or open an issue.

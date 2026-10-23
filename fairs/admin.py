@@ -1,16 +1,9 @@
 from django.contrib import admin
-from django.db import models
 from django.utils.translation import gettext_lazy as _
-from modeltranslation.admin import TranslationAdmin
-from pagedown.widgets import AdminPagedownWidget
+
+from core.admin import PageDownAdmin
 
 from .models import Fair
-
-
-class PageDownAdmin(TranslationAdmin):
-    formfield_overrides = {
-        models.TextField: {'widget': AdminPagedownWidget}
-    }
 
 
 @admin.register(Fair)

@@ -1,16 +1,9 @@
 from django.contrib import admin
-from django.db import models
 from django.utils.translation import gettext_lazy as _
-from modeltranslation.admin import TranslationAdmin
-from pagedown.widgets import AdminPagedownWidget
+
+from core.admin import PageDownAdmin
 
 from .models import Category, Entry
-
-
-class PageDownAdmin(TranslationAdmin):
-    formfield_overrides = {
-        models.TextField: {'widget': AdminPagedownWidget}
-    }
 
 
 @admin.register(Entry)
@@ -25,9 +18,9 @@ class NewsAdmin(PageDownAdmin):
 
     def save_model(self, request, obj, form, change):
         # Automatic set author if None is set
-        if getattr(obj, 'author', None) is None:
+        if obj.author is None:
             obj.author = request.user
-        obj.save()
+        super().save_model(request, obj, form, change)
 
 
 admin.site.register(Category)

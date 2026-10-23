@@ -1,53 +1,49 @@
 from django import template
-from django.utils.translation import gettext_lazy as _
+from django.utils.html import format_html
+from django.utils.safestring import mark_safe
 
 register = template.Library()
 
 # Constants
-DOTFIELD = "<i class='fa fa-circle'></i>"
+DOTFIELD = mark_safe("<i class='fa fa-circle'></i>")
+DOTCELL = format_html("<td>{}</td>", DOTFIELD)
+EMPTYCELL = mark_safe("<td></td>")
 
 
-@register.filter()
-def next(value, arg):
+@register.filter(name='next')
+def next_item(value, arg):
     """ Get next element inside a forloop """
     try:
         return value[int(arg)+1]
-    except:
+    except (IndexError, TypeError, ValueError):
         return None
 
 
-@register.filter(is_safe=True)
+@register.filter
 def check_zpz(val):
-    if val:
-        return DOTFIELD
-    else:
-        return ""
+    return DOTFIELD if val else ""
 
 
-@register.filter(is_safe=True)
+@register.filter
 def bandsawIndicatorCheck(val):
     if val == "1":
-        return "<span class'indicator-dot'>" + DOTFIELD + "</span>"
-    else:
-        return "<strong>" + val + "</strong>"
+        return format_html("<span class='indicator-dot'>{}</span>", DOTFIELD)
+    return format_html("<strong>{}</strong>", val)
 
 
 @register.simple_tag
 def show_diameters(val):
     # The first value of val is always true. So always add one dotfield
-    formatField = "<td>" + DOTFIELD + "</td>"
     length = len(val)
 
     if length == 3:
-        return formatField + formatField + formatField
+        return DOTCELL + DOTCELL + DOTCELL
 
     if length > 1:
         if val[1].ordernr == "J":
-            return formatField + formatField + "<td></td>"
-        else:
-            return formatField + "<td></td>" + formatField
-    else:
-        return formatField + "<td></td>" + "<td></td>"
+            return DOTCELL + DOTCELL + EMPTYCELL
+        return DOTCELL + EMPTYCELL + DOTCELL
+    return DOTCELL + EMPTYCELL + EMPTYCELL
 
 
 @register.simple_tag
@@ -75,9 +71,3 @@ def validBandsawIndicator(ind):
         return "E"
     else:
         return "L"
-
-
-@register.filter()
-def trans(value):
-    """ Translate variable """
-    return _(value)

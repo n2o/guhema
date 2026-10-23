@@ -14,30 +14,24 @@ try:
 except ImportError:
     print(
         "[ERROR] core/settings_secret.py not found. Please create it according to the template settings_secret.py.template")
-    sys.exit()
+    sys.exit(1)
 
 if SECRET_KEY == "CHANGE_ME":
     print("[ERROR] Please change your secret key, stored in core/settings_secret.py")
     print("More information: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-SECRET_KEY")
-    sys.exit()
+    sys.exit(1)
 elif len(SECRET_KEY) < 50:
     print("[WARNING] Your SECRET_KEY is too short. Please consider changing it.")
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
 ALLOWED_HOSTS = ['.guhema.com', '.guhema.de', '127.0.0.1', 'localhost', '0.0.0.0']
 CSRF_TRUSTED_ORIGINS = ["https://guhema.com", "https://guhema.de", "https://www.guhema.com", "https://www.guhema.de", ]
 SITE_ID = 1
 
-# Security Settings
-# SECURE_CONTENT_TYPE_NOSNIFF = True
-# SECURE_BROWSER_XSS_FILTER = True
-# SESSION_COOKIE_SECURE = True
-# CSRF_COOKIE_SECURE = True
-# CSRF_COOKIE_HTTPONLY = True
-# X_FRAME_OPTIONS = "DENY"
+# TLS is terminated by Traefik, nginx forwards X-Forwarded-Proto
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+SESSION_COOKIE_SECURE = not DEBUG
+CSRF_COOKIE_SECURE = not DEBUG
 
 INSTALLED_APPS = (
     'modeltranslation',
@@ -55,7 +49,6 @@ INSTALLED_APPS = (
     'easy_thumbnails',
     'pagedown',
     'markdownify',
-    'django_forms_bootstrap',
 
     # Own apps
     # 'login',
@@ -69,6 +62,7 @@ INSTALLED_APPS = (
 
 
 MIDDLEWARE = (
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -77,16 +71,14 @@ MIDDLEWARE = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-    'django.middleware.security.SecurityMiddleware',
 )
 
 ROOT_URLCONF = "core.urls"
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
-# WSGI_APPLICATION = 'core.wsgi.application'
+WSGI_APPLICATION = 'core.wsgi.application'
 
 # Database
-# https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -96,11 +88,9 @@ DATABASES = {
 }
 
 # Internationalization
-# https://docs.djangoproject.com/en/1.7/topics/i18n/
 LANGUAGE_CODE = 'de'
 TIME_ZONE = 'UTC'
 USE_I18N = True
-USE_L10N = True
 USE_TZ = True
 
 LANGUAGES = [
@@ -113,7 +103,6 @@ LOCALE_PATHS = (
 )
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.7/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
@@ -137,16 +126,13 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'django.template.context_processors.static',
-                'django.template.context_processors.request',
                 'django.template.context_processors.i18n',
             ],
-            'debug': DEBUG,
         },
     },
 ]

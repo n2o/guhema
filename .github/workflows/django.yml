@@ -1,24 +1,25 @@
 name: Test
-on: pull_request
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
 
 jobs:
   test:
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: [ "3.11" ]
-        os: [ ubuntu-latest ]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - name: Copy CI secrets
         run: cp core/settings_secret_ci.py core/settings_secret.py
-      - uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --locked
+      - name: Check for missing migrations
+        run: uv run python manage.py makemigrations --check --dry-run
       - name: Run tests
         run: uv run python manage.py test

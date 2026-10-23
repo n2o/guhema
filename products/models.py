@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from autoslug import AutoSlugField
 from django.db import models
 from django.utils.translation import gettext_lazy as _
@@ -209,7 +208,7 @@ class BandSawBlade(SawBlade):
 
 class JigSawBlade(SawBlade):
     subcategory = models.CharField(_("Unterkategorie"), max_length=255, blank=True)
-    tooth_separation = models.FloatField(_("Zahnteilung (ZpZ)"), blank=True)
+    tooth_separation = models.FloatField(_("Zahnteilung (ZpZ)"))
     length = models.IntegerField(_("Sägeblattlänge (in mm)"), default=0, blank=True)
     cutting_metal = models.CharField(_("Schnittbereich Metall (in mm)"), max_length=255, blank=True)
     cutting_wood = models.CharField(_("Schnittbereich Holz (in mm)"), max_length=255, blank=True)
@@ -222,9 +221,9 @@ class JigSawBlade(SawBlade):
 
 class CircularSawBladeIndicator(models.Model):
     value = models.CharField(_("Kennziffer"), max_length=255, blank=False)
-    diameter = models.IntegerField(_("Durchmesser (in mm)"), blank=True)
-    strength = models.FloatField(_("Stärke (in mm)"), blank=True)
-    bore = models.IntegerField(_("Bohrung (in mm)"), blank=True)
+    diameter = models.IntegerField(_("Durchmesser (in mm)"))
+    strength = models.FloatField(_("Stärke (in mm)"))
+    bore = models.IntegerField(_("Bohrung (in mm)"))
     BW_3 = models.IntegerField("BW 3 mm", default=0, blank=True)
     BW_4 = models.IntegerField("BW 4 mm", default=0, blank=True)
     HZ_5 = models.IntegerField("HZ 5 mm", default=0, blank=True)

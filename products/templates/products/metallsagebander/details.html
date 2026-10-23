@@ -20,9 +20,9 @@
     <div class="col-md-5">
       <p class="alert bg-orange-lighter" style="margin-top: 21px">
         {% blocktrans %}Der schnelle Weg zu unserer Artikel-Nr.{% endblocktrans %}<br>
-        <span class="text-orange-bold">Qualität</span> + <span class="text-orange-bold">{% blocktrans %}Kennziffer (Abmessung){% endblocktrans %}</span> + <span class="text-orange-bold">{% trans "ZpZ" %}</span><br>
-        z.B.: <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}</span><br>
-        z.B.: <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> + <span class="text-orange-bold">{% trans "Sägeblattlänge" %}</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}03800</span>
+        <span class="text-orange-bold">{% trans "Qualität" %}</span> + <span class="text-orange-bold">{% blocktrans %}Kennziffer (Abmessung){% endblocktrans %}</span> + <span class="text-orange-bold">{% trans "ZpZ" %}</span><br>
+        {% trans "z.B.:" %} <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}</span><br>
+        {% trans "z.B.:" %} <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> + <span class="text-orange-bold">{% trans "Sägeblattlänge" %}</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}03800</span>
       </p>
     </div>
   </div>
@@ -308,94 +308,94 @@
           </td>
 
           {% if "A" in blade.cols %}
-            <td>{{ indicator.A|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.A|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "C" in blade.cols %}
-            <td>{{ indicator.C|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.C|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "E" in blade.cols %}
-            <td>{{ indicator.E|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.E|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "G" in blade.cols and "Grob" not in blade.cols %}
-            <td>{{ indicator.G|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.G|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "H" in blade.cols %}
-            <td>{{ indicator.H|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.H|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "I" in blade.cols %}
-            <td>{{ indicator.I|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.I|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "J" in blade.cols %}
-            <td>{{ indicator.J|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.J|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "L" in blade.cols %}
-            <td>{{ indicator.L|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.L|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "N" in blade.cols %}
-            <td>{{ indicator.N|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.N|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "O" in blade.cols %}
-            <td>{{ indicator.O|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.O|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "Ä" in blade.cols %}
-            <td>{{ indicator.AE|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.AE|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "S" in blade.cols %}
-            <td>{{ indicator.S|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.S|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "Ü" in blade.cols %}
-            <td>{{ indicator.UE|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.UE|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "T" in blade.cols %}
-            <td>{{ indicator.T|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.T|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "U" in blade.cols %}
-            <td>{{ indicator.U|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.U|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "V" in blade.cols %}
-            <td>{{ indicator.V|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.V|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "W" in blade.cols %}
-            <td>{{ indicator.W|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.W|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "X" in blade.cols %}
-            <td>{{ indicator.X|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.X|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "Y" in blade.cols %}
-            <td>{{ indicator.Y|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.Y|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "Z" in blade.cols %}
-            <td>{{ indicator.Z|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.Z|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "*P" in blade.cols %}
-            <td>{{ indicator.star_p|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.star_p|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "RP" in blade.cols %}
-            <td>{{ indicator.RP|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.RP|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "SP" in blade.cols %}
-            <td>{{ indicator.SP|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.SP|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "TP" in blade.cols %}
-            <td>{{ indicator.TP|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.TP|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "UP" in blade.cols %}
-            <td>{{ indicator.UP|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.UP|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "VP" in blade.cols %}
-            <td>{{ indicator.VP|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.VP|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "WP" in blade.cols %}
-            <td>{{ indicator.WP|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.WP|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "Fein" in blade.cols %}
-            <td>{{ indicator.F|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.F|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "Standard" in blade.cols %}
-            <td>{{ indicator.S|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.S|bandsawIndicatorCheck }}</td>
           {% endif %}
           {% if "Grob" in blade.cols %}
-            <td>{{ indicator.G|bandsawIndicatorCheck|safe }}</td>
+            <td>{{ indicator.G|bandsawIndicatorCheck }}</td>
           {% endif %}
 
           {% if user.is_staff %}

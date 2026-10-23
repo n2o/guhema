@@ -1,5 +1,3 @@
-version: "3.4"
-
 services:
   web:
     image: ghcr.io/n2o/guhema:latest
@@ -8,12 +6,11 @@ services:
       - ./core/settings_secret.py:/code/core/settings_secret.py
       - ./db.sqlite3:/code/db.sqlite3
       - ./media:/code/media
+      - ./static:/code/static
     labels:
       - "traefik.enable=false"
     networks:
       - guhema
-    environment:
-      DEBUG: "True"
 
   proxy:
     image: nginx:1-alpine
@@ -29,8 +26,8 @@ services:
     volumes:
       - ./proxy/conf/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./proxy/conf/domain.conf:/etc/nginx/domain.conf:ro
-      - ./static/:/usr/share/nginx/html/static/
-      - ./media:/usr/share/nginx/html/media/:ro
+      - ./static:/usr/share/nginx/html/static:ro
+      - ./media:/usr/share/nginx/html/media:ro
     depends_on:
       - web
 
