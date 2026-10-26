@@ -38,7 +38,7 @@ def group_list(request, slug):
         blades = HackSawBlade.objects.filter(group=group).select_related('group').prefetch_related('indicators')
     elif slug == 'lochsagen':
         blades = HoleSaw.objects.all()
-        other = HoleSawDiameter.objects.filter(advice=False).prefetch_related('blades')
+        other = HoleSawDiameter.objects.filter(advice=False).order_by('diameter').prefetch_related('blades')
     elif slug == 'metallsagebander':
         blades = BandSawBlade.objects.select_related('group')
         other = BandSawBladeIndicator.objects.all()
@@ -74,5 +74,5 @@ def details_by_id(request, slug, id):
 def product_advices(request, slug):
     objects = None
     if slug == 'lochsagen':
-        objects = HoleSawDiameter.objects.filter(advice=True)
+        objects = HoleSawDiameter.objects.filter(advice=True).order_by('diameter')
     return _render_or_404(request, slug, 'advices', {'objects': objects})
