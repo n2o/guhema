@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 from autoslug import AutoSlugField
 from django.contrib.auth.models import User
 from django.db import models
@@ -18,6 +20,15 @@ class Category(models.Model):
         verbose_name_plural = _('Kategorien')
 
 
+# News older than this is not shown anywhere; with nothing newer the news section disappears
+NEWS_MAX_AGE = timedelta(days=365)
+
+
+class EntryQuerySet(models.QuerySet):
+    def current(self):
+        return self.filter(public=True, created__gte=timezone.now() - NEWS_MAX_AGE)
+
+
 class Entry(models.Model):
     title = models.CharField(_('Titel'), max_length=50, blank=False)
     author = models.ForeignKey(User, null=True, blank=True, verbose_name=_("Autor"), on_delete=models.SET_NULL)
@@ -29,6 +40,8 @@ class Entry(models.Model):
     public = models.BooleanField(_('Öffentlich?'), default=True)
     created = models.DateTimeField(_('Erstellt am'), default=timezone.now)
     category = models.ForeignKey(Category, null=True, verbose_name=_("Kategorie"), on_delete=models.SET_NULL)
+
+    objects = EntryQuerySet.as_manager()
 
     def __str__(self):
         return self.title
