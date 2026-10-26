@@ -44,6 +44,7 @@
         <li{% if url_name == 'company' %} class="active"{% endif %}><a href="{% url 'company' %}">{% trans "Unternehmen" %}</a></li>
         <li{% if namespace == 'products' %} class="active"{% endif %}><a href="{% url 'products:index' %}">{% trans "Produkte" %}</a></li>
         <li{% if namespace == 'downloads' %} class="active"{% endif %}><a href="{% url 'downloads:index' %}">{% trans "Kataloge" %}</a></li>
+        {% if has_news %}<li{% if namespace == 'news' %} class="active"{% endif %}><a href="{% url 'news:overview' %}">{% trans "News" %}</a></li>{% endif %}
         <li{% if url_name == 'impressum' %} class="active"{% endif %}><a href="{% url 'impressum' %}">{% trans "Kontakt" %}</a></li>
       </ul>
     </div>

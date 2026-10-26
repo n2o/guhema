@@ -5,6 +5,7 @@ from django.contrib.flatpages.models import FlatPage
 from django.contrib.sites.models import Site
 from django.test import TestCase
 from django.urls import reverse
+from django.utils import timezone
 
 from fairs.models import Fair
 from news.models import Entry
@@ -53,6 +54,13 @@ class SmokeTest(TestCase):
         response = self.assertStatus('/news/')
         self.assertContains(response, 'Neuigkeit')
         self.assertNotContains(response, 'Versteckt')
+        self.assertContains(self.assertStatus('/'), 'href="/news/"')
+
+    def test_old_news_disappear(self):
+        Entry.objects.update(created=timezone.now() - timedelta(days=400))
+        self.assertStatus('/news/', 404)
+        self.assertStatus('/news/neuigkeit/', 404)
+        self.assertNotContains(self.assertStatus('/'), 'href="/news/"')
 
     def test_admin_pages(self):
         self.client.force_login(User.objects.create(username='admin', is_staff=True, is_superuser=True))
