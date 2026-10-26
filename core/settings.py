@@ -164,8 +164,16 @@ THUMBNAIL_ALIASES = {
     },
 }
 
+def _link_only_explicit_urls(attrs, new=False):
+    """Autolink only text written as a URL, not names like "Co.KG" that look like domains."""
+    if new and not attrs["_text"].lower().startswith(("http://", "https://", "www.")):
+        return None
+    return attrs
+
+
 MARKDOWNIFY = {
     "default": {
+        "LINKIFY_TEXT": {"PARSE_URLS": True, "CALLBACKS": [_link_only_explicit_urls]},
         "WHITELIST_TAGS": [
             'table',
             'thead',

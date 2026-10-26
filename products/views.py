@@ -31,16 +31,16 @@ def group_list(request, slug):
     other = None
     group = get_object_or_404(ProductGroup, slug=slug)
     if slug in ('maschinensageblatter', 'metallstichsageblatter'):
-        blades = SawBlade.objects.filter(group=group)
+        blades = SawBlade.objects.filter(group=group).select_related('group', 'clamping')
     elif slug == 'sabel-und-spezialsabelsageblatter':
-        blades = SableSawBlade.objects.filter(group=group)
+        blades = SableSawBlade.objects.filter(group=group).select_related('group').prefetch_related('indicators')
     elif slug == 'metallhandsageblatter':
-        blades = HackSawBlade.objects.filter(group=group)
+        blades = HackSawBlade.objects.filter(group=group).select_related('group').prefetch_related('indicators')
     elif slug == 'lochsagen':
         blades = HoleSaw.objects.all()
-        other = HoleSawDiameter.objects.filter(advice=False)
+        other = HoleSawDiameter.objects.filter(advice=False).prefetch_related('blades')
     elif slug == 'metallsagebander':
-        blades = BandSawBlade.objects.all()
+        blades = BandSawBlade.objects.select_related('group')
         other = BandSawBladeIndicator.objects.all()
     elif slug == 'pendelhubstichsageblatter':
         blades = JigSawBlade.objects.all()
@@ -69,10 +69,6 @@ def details_by_id(request, slug, id):
     return _render_or_404(request, slug, 'details',
                           {'blade': blade,
                            'indicators': blade.bandsaw_indicators.all()})
-
-
-def product_details(request, slug):
-    return _render_or_404(request, slug, 'details')
 
 
 def product_advices(request, slug):

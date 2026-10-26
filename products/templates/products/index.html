@@ -13,22 +13,20 @@
   {% for group in groups %}
     {% if group.public %}
       <div class="row products-index">
-        <div class="col-md-3">
+        <div class="col-sm-3">
           <a href="{% url 'products:list' group.slug %}">
             <img class="img-responsive" src="{{ group.image|thumbnail_url:'products_teaserimage' }}"
-                 alt="{{ group.slug }}-image">
+                 alt="{{ group.name }}">
           </a>
         </div>
-        <div class="col-md-offset-1 col-md-7">
+        <div class="col-sm-9 group-header-text">
           <h3 class="products-index-h3">
             <a href="{% url 'products:list' group.slug %}">
               {{ group.name }}
             </a>
           </h3>
-          <p>
-            {{ group.description|markdownify }}
-          </p>
-          <p>
+          <div class="markdown">{{ group.description|markdownify }}</div>
+          <p class="padding-top-05">
             <a href="{% url 'products:list' group.slug %}">
               {% blocktrans %}Zu den Produkten{% endblocktrans %}
             </a>

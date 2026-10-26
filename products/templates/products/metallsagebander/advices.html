@@ -14,12 +14,10 @@
     <p>
       {% blocktrans %}Wir produzieren für Sie Metallsägebänder in drei Ausführungen. Die “Kohlenstoff“-Qualität für die Werkstatt, die Bi-Metall-Qualität für die Produktion und Werkstatt und die Hartmetall-Ausführung für Spezialanwendungen.{% endblocktrans %}
     </p>
-    <p>
-      <strong>
-        {% trans "Getreu dem Motto:" %}<br>
-        {% trans "Wir liefern Ihnen die Metallsägebänder, die Sie zum optimalen Sägeergebnis führen." %}
-      </strong>
-    </p>
+    <p>{% trans "Getreu dem Motto:" %}</p>
+    <blockquote>
+      {% trans "Wir liefern Ihnen die Metallsägebänder, die Sie zum optimalen Sägeergebnis führen." %}
+    </blockquote>
   </section>
 
   <section>
@@ -37,7 +35,7 @@
         </p>
       </div>
       <div class="col-md-offset-1 col-md-5">
-        {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/standardzahn_' extension='.png' alt_text='Standardzahn' width='350px' nothumbnail=True %}
+        {% trans "Standardzahn" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/standardzahn_' extension='.png' alt_text=alt width='350' nothumbnail=True %}
       </div>
     </div>
     <div class="row padding-bottom">
@@ -48,7 +46,7 @@
         </p>
       </div>
       <div class="col-md-offset-1 col-md-5">
-        {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/klauenzahn_' extension='.png' alt_text='Klauenzahn' width='350px' nothumbnail=True %}
+        {% trans "Klauenzahn" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/klauenzahn_' extension='.png' alt_text=alt width='350' nothumbnail=True %}
       </div>
     </div>
     <div class="row padding-bottom">
@@ -59,7 +57,7 @@
         </p>
       </div>
       <div class="col-md-offset-1 col-md-5">
-        {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/variable_verzahnung_' extension='.png' alt_text='Variable Verzahnung' width='350px' nothumbnail=True %}
+        {% trans "Variable Verzahnung" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/variable_verzahnung_' extension='.png' alt_text=alt width='350' nothumbnail=True %}
       </div>
     </div>
     <div class="row padding-bottom">
@@ -70,7 +68,7 @@
         </p>
       </div>
       <div class="col-md-offset-1 col-md-5">
-        {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/variable_positivverzahnung_' extension='.png' alt_text='Variable Positivverzahnung' width='350px' nothumbnail=True %}
+        {% trans "Variable Positivverzahnung" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/variable_positivverzahnung_' extension='.png' alt_text=alt width='350' nothumbnail=True %}
       </div>
     </div>
     <div class="row padding-bottom">
@@ -83,7 +81,7 @@
         </p>
       </div>
       <div class="col-md-offset-1 col-md-5">
-        {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/variable_positivverzahnung_mit_zahnruecken_' extension='.png' alt_text='Variable Positivverzahnung mit verstärktem Zahnrücken' width='350px' nothumbnail=True %}
+        {% trans "Variable Positivverzahnung mit verstärktem Zahnrücken" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/variable_positivverzahnung_mit_zahnruecken_' extension='.png' alt_text=alt width='350' nothumbnail=True %}
       </div>
     </div>
     <div class="row padding-bottom">
@@ -94,18 +92,18 @@
         </p>
       </div>
       <div class="col-md-offset-1 col-md-5">
-        {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/granulat_hm_' extension='.png' alt_text='Hartmetall-Granulat' width='350px' nothumbnail=True %}
+        {% trans "Hartmetall-Granulat" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/granulat_hm_' extension='.png' alt_text=alt width='350' nothumbnail=True %}
       </div>
     </div>
     <div class="row padding-bottom">
       <div class="col-md-6">
         <strong>{% trans "Positivverzahnung" %} (P-HM)</strong>
         <p>
-          {% blocktrans %}Die Positivverzahnung erhalten Sie in den Qualitäten No. 44P GUHEMA HM-Zähne und 45P GUHEMA HM-Zähne. Diese Verzahnung ist für den Über- gang in die Hartmetallklasse entwickelt worden. Abrasive Werkstücke sind hiermit trennbar, wie auch versandete Gusswerkstücke.{% endblocktrans %}
+          {% blocktrans %}Die Positivverzahnung erhalten Sie in den Qualitäten No. 44P GUHEMA HM-Zähne und 45P GUHEMA HM-Zähne. Diese Verzahnung ist für den Übergang in die Hartmetallklasse entwickelt worden. Abrasive Werkstücke sind hiermit trennbar, wie auch versandete Gusswerkstücke.{% endblocktrans %}
         </p>
       </div>
       <div class="col-md-offset-1 col-md-5">
-        {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/positivverzahnung_hm_' extension='.png' alt_text='Positivverzahnung' width='350px' nothumbnail=True %}
+        {% trans "Positivverzahnung" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/positivverzahnung_hm_' extension='.png' alt_text=alt width='350' nothumbnail=True %}
       </div>
     </div>
     <div class="row padding-bottom">
@@ -116,18 +114,18 @@
         </p>
       </div>
       <div class="col-md-offset-1 col-md-5">
-        {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/variable_positivverzahnung_hm_' extension='.png' alt_text='Variable Positivverzahnung' width='350px' nothumbnail=True %}
+        {% trans "Variable Positivverzahnung" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/variable_positivverzahnung_hm_' extension='.png' alt_text=alt width='350' nothumbnail=True %}
       </div>
     </div>
     <div class="row">
       <div class="col-md-6">
         <strong>{% trans "Variable Negativverzahnung" %} (VN-HM)</strong>
         <p>
-          {% blocktrans %}Die variable Negativverzahnung erhalten Sie in der Qualität No. 47VN GUHEMA HM-Zähne. Die negativ geschliffenen Hartmetallzähne ermöglichen das Zer- spanen von extrem harten Werkstücken. Diese Spezialverzahnung findet zum Beispiel Ihren Einsatz bei randschichtgehärteten Wellen.{% endblocktrans %}
+          {% blocktrans %}Die variable Negativverzahnung erhalten Sie in der Qualität No. 47VN GUHEMA HM-Zähne. Die negativ geschliffenen Hartmetallzähne ermöglichen das Zerspanen von extrem harten Werkstücken. Diese Spezialverzahnung findet zum Beispiel Ihren Einsatz bei randschichtgehärteten Wellen.{% endblocktrans %}
         </p>
       </div>
       <div class="col-md-offset-1 col-md-5">
-        {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/variable_negativverzahnung_hm_' extension='.png' alt_text='Variable Negativverzahnung' width='350px' nothumbnail=True %}
+        {% trans "Variable Negativverzahnung" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/bandsaegeblaetter/katalog_2014/variable_negativverzahnung_hm_' extension='.png' alt_text=alt width='350' nothumbnail=True %}
       </div>
     </div>
   </section>
@@ -137,7 +135,7 @@
     <p>
       {% blocktrans %}Grundsätzlich sollten Sie die größtmögliche Bandbreite wählen, die für die Maschine zulässig ist. Der Vorteil ist die hohe Stabilität des Bandes bei hohen Vorschubkräften. Beim Einsatz von Metallsägebändern für Konturenschnitte ist die Breite des Sägebandes von dem kleinsten zu schneidenden Radius abhängig. Die folgende Grafik gibt Ihnen optische Hilfestellung bei der Bestimmung der Sägeblattbreite.{% endblocktrans %}
     </p>
-    {% include 'products/includes/image_multilang.html' with path_to_image='img/produktdetails/saegebandbreite_' extension='.png' alt_text='Sägebandbreite' width='700px'%}
+    {% trans "Sägebandbreite" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktdetails/saegebandbreite_' extension='.png' alt_text=alt width='700' scroll=True %}
   </section>
 
   <section>
@@ -188,550 +186,352 @@
   </section>
 
   <section>
-    <table id="products-sawblade-table" class="table table-condensed table-striped table-hover">
+    <div class="table-responsive">
+    <table id="products-sawblade-table" class="table table-condensed table-striped table-hover spec-table">
       <thead>
         <tr>
-          <th>{% trans "Werkstoffgruppe" %}</th>
-          <th>{% trans "Werkstoffe" %}</th>
-          <th class="table-white-border-right">{% trans "Werkstoffnummer" %}</th>
-          <th colspan="3">{% trans "Schnittgeschwindigkeit [m/min]" %}</th>
+          <th rowspan="2" class="text-left">{% trans "Werkstoffe" %}</th>
+          <th rowspan="2" class="table-white-border-right">{% trans "Werkstoffnummer" %}</th>
+          <th colspan="3" class="table-no-bot-border">{% trans "Schnittgeschwindigkeit [m/min]" %}</th>
+        </tr>
+        <tr>
+          <th class="table-no-top-border">{% trans "Ausführung 20er-Serie" %}</th>
+          <th class="table-no-top-border">{% trans "Ausführung 30er-Serie" %}</th>
+          <th class="table-no-top-border">{% trans "Ausführung 40er-Serie" %}</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>&nbsp;</td>
-          <td>&nbsp;</td>
-          <td class="table-white-border-right">&nbsp;</td>
-          <td>
-            <strong>
-              {% trans "Ausführung 20er-Serie" %}
-            </strong>
-          </td>
-          <td>
-            <strong>
-               {% trans "Ausführung 30er-Serie" %}
-            </strong>
-          </td>
-          <td>
-            <strong>
-               {% trans "Ausführung 40er-Serie" %}
-            </strong>
-          </td>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Baustähle" %}</th>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Baustähle" %}
-            </strong>
-          </td>
           <td>ST 27</td>
           <td class="table-white-border-right">1.0037</td>
           <td>40-60</td>
           <td>50-90</td>
           <td>90-110</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Baustähle" %}
-            </strong>
-          </td>
           <td>ST 52</td>
           <td class="table-white-border-right">1.005</td>
           <td>30-50</td>
           <td>60-80</td>
           <td>80-100</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Einsatzstähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Einsatzstähle" %}
-            </strong>
-          </td>
           <td>C 10</td>
           <td class="table-white-border-right">1.0301</td>
           <td>40-60</td>
           <td>60-100</td>
           <td>80-120</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Einsatzstähle" %}
-            </strong>
-          </td>
           <td>21 NiCrMo 2</td>
           <td class="table-white-border-right">1.6523</td>
           <td>30-50</td>
           <td>40-60</td>
           <td>55-85</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Einsatzstähle" %}
-            </strong>
-          </td>
           <td>20 CrMo 5</td>
           <td class="table-white-border-right">1.7246</td>
           <td>30-40</td>
           <td>50-60</td>
           <td>70-100</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Einsatzstähle" %}
-            </strong>
-          </td>
           <td>16 MnCr 5</td>
           <td class="table-white-border-right">1.7131</td>
           <td>30-40</td>
           <td>40-60</td>
           <td>70-90</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Nitrirstähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Nitrirstähle" %}
-            </strong>
-          </td>
           <td>34 CrAlNi 7</td>
           <td class="table-white-border-right">1.8550</td>
           <td></td>
           <td>20-40</td>
           <td>30-50</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Automatenstähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Automatenstähle" %}
-            </strong>
-          </td>
           <td>9 S 20</td>
           <td class="table-white-border-right">1.0711</td>
           <td>50-70</td>
           <td>80-110</td>
           <td>100-150</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Vergütungsstähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Vergütungsstähle" %}
-            </strong>
-          </td>
           <td>C 45</td>
           <td class="table-white-border-right">1.0503</td>
           <td>40-60</td>
           <td>50-80</td>
           <td>80-110</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Vergütungsstähle" %}
-            </strong>
-          </td>
           <td>42 CrMo 4</td>
           <td class="table-white-border-right">1.7225</td>
           <td>30-40</td>
           <td>40-60</td>
           <td>50-80</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Vergütungsstähle" %}
-            </strong>
-          </td>
           <td>34 CrNiMo 6</td>
           <td class="table-white-border-right">1.6582</td>
           <td>30-40</td>
           <td>40-60</td>
           <td>50-80</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Kugellagerstähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Kugellagerstähle" %}
-            </strong>
-          </td>
           <td>100 Cr 6</td>
           <td class="table-white-border-right">1.3505</td>
           <td>20-30</td>
           <td>40-60</td>
           <td>70-90</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Federstähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Federstähle" %}
-            </strong>
-          </td>
           <td>50 CrV 4</td>
           <td class="table-white-border-right">1.8159</td>
           <td>30-40</td>
           <td>40-60</td>
           <td>50-80</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "unlegierte Werkzeugstähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "unlegierte Werkzeugstähle" %}
-            </strong>
-          </td>
           <td>C 80 W 1</td>
           <td class="table-white-border-right">1.1525</td>
           <td>30-40</td>
           <td>40-60</td>
           <td>50-80</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "legierte Werkzeugstähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "legierte Werkzeugstähle" %}
-            </strong>
-          </td>
           <td>X 210 Cr 12</td>
           <td class="table-white-border-right">1.2080</td>
           <td></td>
           <td>20-40</td>
           <td>30-50</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "legierte Werkzeugstähle" %}
-            </strong>
-          </td>
           <td>X 155 CrVMo 12 1</td>
           <td class="table-white-border-right">1.2379</td>
           <td>20-30</td>
           <td>20-40</td>
           <td>40-50</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "legierte Werkzeugstähle" %}
-            </strong>
-          </td>
           <td>90 MnCrV 8</td>
           <td class="table-white-border-right">1.2842</td>
           <td>20-30</td>
           <td>20-40</td>
           <td>50-60</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Schnellarbeitsstähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Schnellarbeitsstähle" %}
-            </strong>
-          </td>
           <td>S 6-5-2</td>
           <td class="table-white-border-right">1.3343</td>
           <td></td>
           <td>30-50</td>
           <td>30-50</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Schnellarbeitsstähle" %}
-            </strong>
-          </td>
           <td>S 18-0-1</td>
           <td class="table-white-border-right">1.3355</td>
           <td></td>
           <td>30-50</td>
           <td>30-50</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Schnellarbeitsstähle" %}
-            </strong>
-          </td>
           <td>S 3-3-2</td>
           <td class="table-white-border-right">1.3333</td>
           <td></td>
           <td>30-50</td>
           <td>50-60</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Schnellarbeitsstähle" %}
-            </strong>
-          </td>
           <td>S 2-10-1-8</td>
           <td class="table-white-border-right">1.3247</td>
           <td></td>
           <td>25-40</td>
           <td>40-50</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Schnellarbeitsstähle" %}
-            </strong>
-          </td>
           <td>S 10-4-3-10</td>
           <td class="table-white-border-right">1.3207</td>
           <td></td>
           <td>25-40</td>
           <td>40-50</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "hochwarmfeste Stähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "hochwarmfeste Stähle" %}
-            </strong>
-          </td>
           <td>X 12 CrCoNi 21 20</td>
           <td class="table-white-border-right">1.4971</td>
           <td></td>
           <td>15-25</td>
           <td>30-40</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "hochwarmfeste Stähle" %}
-            </strong>
-          </td>
           <td>X 20 CrMoWV 12 1</td>
           <td class="table-white-border-right">1.4935</td>
           <td></td>
           <td>30-40</td>
           <td>40-50</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "hitzebeständige Stähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "hitzebeständige Stähle" %}
-            </strong>
-          </td>
           <td>X 15 CrNiSi 25 20</td>
           <td class="table-white-border-right">1.4841</td>
           <td></td>
           <td>15-25</td>
           <td>30-40</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "hitzebeständige Stähle" %}
-            </strong>
-          </td>
           <td>X 12 NiCrSi 36 16</td>
           <td class="table-white-border-right">1.4864</td>
           <td></td>
           <td>15-25</td>
           <td>30-40</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "rost- und säurebeständige Stähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "rost- und säurebeständige Stähle" %}
-            </strong>
-          </td>
           <td>X 5 CrNi 18 9</td>
           <td class="table-white-border-right">1.4301</td>
           <td></td>
           <td>20-40</td>
           <td>30-50</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "rost- und säurebeständige Stähle" %}
-            </strong>
-          </td>
           <td>X 10 CrNiMoTi 18 10</td>
           <td class="table-white-border-right">1.4571</td>
           <td></td>
           <td>20-40</td>
           <td>30-50</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "rost- und säurebeständige Stähle" %}
-            </strong>
-          </td>
           <td>X 20 Cr 13</td>
           <td class="table-white-border-right">1.4021</td>
           <td></td>
           <td>20-40</td>
           <td>30-50</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "vergütete Stähle" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "vergütete Stähle" %}
-            </strong>
-          </td>
           <td>1000 - 1200 N/mm<sup>2</sup></td>
           <td class="table-white-border-right"></td>
           <td></td>
           <td>20-40</td>
           <td>30-50</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "vergütete Stähle" %}
-            </strong>
-          </td>
           <td>1200 - 1400 N/mm<sup>2</sup></td>
           <td class="table-white-border-right">1.0558</td>
           <td></td>
           <td>20-40</td>
           <td>30-50</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "vergütete Stähle" %}
-            </strong>
-          </td>
           <td>1400 - 1600 N/mm<sup>2</sup></td>
           <td class="table-white-border-right">0.6030</td>
           <td></td>
           <td>15-25</td>
           <td>25-35</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Stahlguss" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Stahlguss" %}
-            </strong>
-          </td>
           <td>GS 38</td>
           <td class="table-white-border-right">1.0420</td>
           <td>30-40</td>
           <td>40-70</td>
           <td>70-90</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Stahlguss" %}
-            </strong>
-          </td>
           <td>GS 60</td>
           <td class="table-white-border-right">1.0558</td>
           <td>30-40</td>
           <td>40-60</td>
           <td>70-90</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Gusseisen" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Gusseisen" %}
-            </strong>
-          </td>
           <td>GG 30</td>
           <td class="table-white-border-right">0.6030</td>
           <td>30-40</td>
           <td>40-60</td>
           <td>50-80</td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Gusseisen" %}
-            </strong>
-          </td>
           <td>GGG 50</td>
           <td class="table-white-border-right">0.7050</td>
           <td>25-35</td>
           <td>30-50</td>
           <td>50-70</td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Aluminiumlegierung" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Aluminiumlegierung" %}
-            </strong>
-          </td>
           <td>Al Mg 3</td>
           <td class="table-white-border-right">3.3535</td>
           <td></td>
           <td>70-110</td>
           <td></td>
         </tr>
-
         <tr>
-          <td>
-            <strong>
-              {% trans "Aluminiumlegierung" %}
-            </strong>
-          </td>
           <td>Al Mg 4,5 Mn</td>
           <td class="table-white-border-right">3.3547</td>
           <td></td>
           <td>70-110</td>
           <td></td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Zinnbronze" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Zinnbronze" %}
-            </strong>
-          </td>
           <td>CuSn 6</td>
           <td class="table-white-border-right">2.1020</td>
           <td></td>
           <td>70-110</td>
           <td></td>
         </tr>
-
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{% trans "Aluminiumbronze" %}</th>
+        </tr>
         <tr>
-          <td>
-            <strong>
-              {% trans "Aluminiumbronze" %}
-            </strong>
-          </td>
           <td>CuAl 8</td>
           <td class="table-white-border-right">2.0920</td>
           <td></td>
@@ -740,5 +540,6 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </section>
 {% endblock %}

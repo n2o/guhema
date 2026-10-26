@@ -1,9 +1,8 @@
 {% extends "layout_productgroups.html" %}
 
-{% load static %}
-{% load thumbnail %}
 {% load i18n %}
-{% load markdownify %}
+
+{% block title %}{% trans "Messen" %} | {% endblock %}
 
 {% block heading %}
   <h1>{% trans "Messen" %}</h1>
@@ -12,23 +11,27 @@
 {% block content %}
   {% if upcoming %}
     <section>
-      <h3>
+      <h2 class="h3">
         {% trans "Besuchen Sie uns auf folgenden Messen:" %}
-      </h3>
+      </h2>
       {% for fair in upcoming %}
         {% include 'fairs/fair_style.html' with fair=fair %}
       {% endfor %}
     </section>
   {% else %}
-    <p>{% blocktrans %}Aktuell stellen wir auf keinen Messen aus.{% endblocktrans %}</p>
+    <p class="lead">{% blocktrans %}Aktuell stellen wir auf keinen Messen aus.{% endblocktrans %}</p>
+    <p>
+      <a class="btn btn-primary" href="{% url 'downloads:index' %}">{% trans "Kataloge" %}</a>
+      <a class="btn btn-default" href="{% url 'impressum' %}">{% trans "Kontakt" %}</a>
+    </p>
   {% endif %}
 
   {% comment %}
   {% if past %}
     <section>
-      <h3>
+      <h2 class="h3">
         {% trans "Wir haben auf diesen Messen ausgestellt:" %}
-      </h3>
+      </h2>
       {% for fair in past %}
         {% include 'fairs/fair_style.html' with fair=fair%}
       {% endfor %}

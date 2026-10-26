@@ -16,21 +16,25 @@
     {% trans "Bitte passen Sie Ihre Umdrehungszahl den folgenden Empfehlungen an, um die Lebensdauer der Lochsäge und die Schnittqualität zu optimieren. Bitte vergessen Sie des Weiteren nicht die permanente Kühlung der Lochsäge während des Schneidprozesses." %}
   </p>
 
-  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
+  <div class="table-responsive">
+  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover spec-table">
     <thead>
     <tr>
-      <th class="text-center table-white-border-right table-no-bot-border" width="16%">&Oslash;</th>
-      <th class="text-center table-no-bot-border" width="16%">{% trans "NIRO" %}</th>
-      <th class="text-center table-no-bot-border" width="16%">{% trans "Guss" %}</th>
-      <th class="text-center table-no-bot-border" width="16%">{% trans "Stahl" %}</th>
-      <th class="text-center table-no-bot-border" width="16%">{% trans "Buntmetalle" %}</th>
-      <th class="text-center table-no-bot-border" width="16%">{% trans "ALU" %}</th>
+      <th rowspan="2" class="text-center table-white-border-right" width="16%">&Oslash; [{% trans "mm" %}]</th>
+      <th colspan="5" class="text-center table-no-bot-border">{% trans "Drehzahl [U/min]" %}</th>
+    </tr>
+    <tr>
+      <th class="text-center table-no-top-border" width="16%">{% trans "NIRO" %}</th>
+      <th class="text-center table-no-top-border" width="16%">{% trans "Guss" %}</th>
+      <th class="text-center table-no-top-border" width="16%">{% trans "Stahl" %}</th>
+      <th class="text-center table-no-top-border" width="16%">{% trans "Buntmetalle" %}</th>
+      <th class="text-center table-no-top-border" width="16%">{% trans "ALU" %}</th>
     </tr>
     </thead>
     <tbody>
     {% for diameter in objects %}
       <tr>
-        <td class="table-white-border-right">{{ diameter.diameter }}</td>
+        <td class="table-white-border-right text-center">{{ diameter.diameter }}</td>
         <td>{{ diameter.niro }}</td>
         <td>{{ diameter.iron }}</td>
         <td>{{ diameter.steel }}</td>
@@ -40,4 +44,5 @@
     {% endfor %}
     </tbody>
   </table>
+  </div>
 {% endblock %}

@@ -1,22 +1,25 @@
+{% load i18n %}
 {% load thumbnail %}
 
-{% if image %}
-  <div class="padding-bottom padding-top">
-    {% if slug %}
-      <a href="{% url 'products:details_by_id' slug=slug id=id %}">
-    {% else %}
-      <a href="{{ image.url }}">
-    {% endif %}
-      {% if alias %}
-        <img class="img-responsive" src="{{ image|thumbnail_url:alias }}" alt="blade-image">
+{% trans "Sägeblatt" as fallback_alt %}
+{% firstof alias 'blade_image' as thumb_alias %}
+{% with src=image|thumbnail_url:thumb_alias %}
+  {% if wrap %}{% if src or user.is_staff %}<div class="{{ wrap }}">{% endif %}{% endif %}
+  {% if image and src %}
+    <div class="padding-bottom padding-top blade-img">
+      {% if slug %}
+        <a href="{% url 'products:details_by_id' slug=slug id=id %}">
       {% else %}
-        <img class="img-responsive" src="{{ image|thumbnail_url:'blade_image' }}" alt="blade-image">
+        <a href="{{ image.url }}">
       {% endif %}
-    </a>
-  </div>
-{% elif user.is_staff %}
-  <div class="alert alert-danger">
-  	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  	<strong>Bild fehlt!</strong>
-  </div>
-{% endif %}
+        <img class="img-responsive" src="{{ src }}" alt="{{ alt|default:fallback_alt }}">
+      </a>
+    </div>
+  {% elif user.is_staff %}
+    <div class="alert alert-danger">
+    	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    	<strong>{% trans "Bild fehlt!" %}</strong>
+    </div>
+  {% endif %}
+  {% if wrap %}{% if src or user.is_staff %}</div>{% endif %}{% endif %}
+{% endwith %}

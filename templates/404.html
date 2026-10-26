@@ -1,0 +1,16 @@
+{% extends "layout_productgroups.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Seite nicht gefunden" %} | {% endblock %}
+
+{% block heading %}
+  <h1>{% trans "Seite nicht gefunden" %}</h1>
+{% endblock %}
+
+{% block content %}
+  <p class="lead">{% trans "Diese Seite gibt es nicht (mehr). Vielleicht finden Sie das Gesuchte bei unseren Produkten oder in den Katalogen." %}</p>
+  <p>
+    <a class="btn btn-primary" href="{% url 'products:index' %}">{% trans "Zu unseren Produkten" %} &rsaquo;</a>
+    <a class="btn btn-default" href="{% url 'downloads:index' %}">{% trans "Kataloge" %}</a>
+  </p>
+{% endblock %}

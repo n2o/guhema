@@ -20,35 +20,27 @@
       <h3 class="padding-bottom">{{ blade.subcategory }}</h3>
     {% endifchanged %}
 
-    <div class="panel panel-default">
-      <div class="panel-body">
-        {% include 'products/include_blade_image.html' with image=blade.image %}
+    <div class="blade-row">
+      {% include 'products/include_blade_image.html' with image=blade.image alias='blade_image_250h' alt=blade.type %}
 
-        <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-2 col-xs-2">
-                <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-              </div>
-              <div class="col-md-10 col-xs-10">
-                {{ blade.quality }}
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-2 col-xs-2">
-                <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-              </div>
-              <div class="col-md-10 col-xs-10 markdown-no-padding-left">
-                {{ blade.description|markdownify }}
-              </div>
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="spec-line">
+            <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+            <span>{{ blade.quality }}</span>
           </div>
-          <div class="col-md-6">
+          <div class="spec-line">
+            <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+            <div>{{ blade.description|markdownify }}</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="table-responsive">
             <table class="table table-condensed table-striped-column table-hover">
               <thead>
               <tr>
               <th>
-                {% trans "Bestell-Nr.:" %}
+                {% trans "Bestell-Nr." %}
               </th>
               <th>
                 {% trans "Zahnteilung" %}
@@ -94,8 +86,8 @@
             </table>
           </div>
         </div>
-        {% include 'core/edit_item.html' with model="products_jigsawblade" id=blade.id %}
       </div>
+      {% include 'core/edit_item.html' with model="products_jigsawblade" id=blade.id %}
     </div>
 
   {% empty %}

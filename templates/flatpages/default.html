@@ -2,14 +2,16 @@
 
 {% load markdownify %}
 
+{% block title %}{{ flatpage.title }} | {% endblock %}
+
 {% block heading %}
   <h1>{{ flatpage.title }}</h1>
 {% endblock %}
 
 {% block content %}
-  {{ flatpage.content|markdownify }}
+  <div class="prose">
+    {{ flatpage.content|markdownify }}
+  </div>
 
-  <p>
-    {% include 'core/edit_item.html' with model="flatpages_flatpage" id=flatpage.id %}
-  </p>
+  {% include 'core/edit_item.html' with model="flatpages_flatpage" id=flatpage.id %}
 {% endblock %}

@@ -5,7 +5,7 @@
 
 {% with path_to_image|add:lang|add:extension as image %}
   {% static image as img %}
-  <div class="padding-top">
+  <div class="padding-top{% if scroll %} diagram-scroll{% endif %}">
     <a href="{{ img }}">
       <img class="img-responsive {% if not nothumbnail %}img-thumbnail{% endif %}" src="{{ img }}" alt="{{ alt_text }}"
            {% if width %}width="{{ width }}"{% endif %}>

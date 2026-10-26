@@ -27,41 +27,27 @@
           {% endif %}
         {% endifchanged %}
 
-        <div class="panel panel-default">
-          <div class="panel-body">
+        <div class="blade-row">
+          {% include 'products/include_blade_image.html' with image=blade.image alias="blade_image_250h" alt=blade.quality %}
 
-            {% include 'products/include_blade_image.html' with image=blade.image alias="blade_image_250h" %}
-
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-md-2 col-xs-2">
-                    <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-                  </div>
-                  <div class="col-md-10 col-xs-10">
-                    {{ blade.quality }}
-                    <span class="text-orange-bold">
-                      {{ blade.type }}
-                    </span>
-                    {% if next.type == "SSM" %}
-                      <br>
-                      {{ next.quality }}
-                      <span class="text-orange-bold">
-                        {{ next.type }}
-                      </span>
-                    {% endif %}
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-2 col-xs-2">
-                    <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-                  </div>
-                  <div class="col-md-10 col-xs-10 markdown-no-padding-left">
-                    {{ blade.description|markdownify }}
-                  </div>
-                </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="spec-line">
+                <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+                <span>
+                  {{ blade.quality }} <span class="text-orange-bold">{{ blade.type }}</span>
+                  {% if next.type == "SSM" %}
+                    <br>{{ next.quality }} <span class="text-orange-bold">{{ next.type }}</span>
+                  {% endif %}
+                </span>
               </div>
-              <div class="col-md-offset-1 col-md-5">
+              <div class="spec-line">
+                <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+                <div>{{ blade.description|markdownify }}</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="table-responsive">
                 <table class="table table-condensed table-striped-column table-hover">
                   <thead>
                   <tr>
@@ -103,32 +89,34 @@
                 </table>
               </div>
             </div>
+          </div>
 
-            <table class="table table-condensed table-striped-column table-hover">
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped-column table-hover spec-table">
               <tr>
-                <td class="text-bold" width="200px">
+                <th scope="row" width="200px">
                   {% trans "Sägeblatt" %} {% trans "Länge" %} [{% trans "mm" %}]
-                </td>
+                </th>
                 {% for ind in blade.indicators.all %}
                   <td>{{ ind.length }}</td>
                 {% endfor %}
               </tr>
               <tr>
-                <td class="text-bold">
+                <th scope="row">
                   {% trans "Breite" %} x {% trans "Stärke" %} [{% trans "mm" %}]
-                </td>
+                </th>
                 {% for ind in blade.indicators.all %}
                   <td>{{ ind.width }} x {{ ind.strength }}</td>
                 {% endfor %}
               </tr>
               <tr>
-                <td class="text-bold">
+                <th scope="row">
                   {% if next.type == "SSM" %}
                     {% trans "Kennziffer" %}
                   {% else %}
-                    {% trans "Bestell-Nr.:" %}
+                    {% trans "Bestell-Nr." %}
                   {% endif %}
-                </td>
+                </th>
                 {% for ind in blade.indicators.all %}
                   <td class="text-orange-bold">
                     {% if next.type == "SSM" %}
@@ -140,10 +128,9 @@
                 {% endfor %}
               </tr>
             </table>
-
-            {% include 'core/edit_item.html' with model="products_sablesawblade" id=blade.id %}
-
           </div>
+
+          {% include 'core/edit_item.html' with model="products_sablesawblade" id=blade.id %}
         </div>
       {% endwith %}
     {% endif %}

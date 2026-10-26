@@ -3,11 +3,13 @@
 {% load thumbnail %}
 {% load markdownify %}
 
+{% block title %}{{ entry.title }} | {% endblock %}
+
 {% block heading %}
   <h1>{{ entry.title }}</h1>
   <h4>
     <small>
-      {{ entry.created|date:"j. N Y" }}
+      {{ entry.created|date:"DATE_FORMAT" }}
       {% include 'core/edit_item.html' with model="news_entry" id=entry.id %}
     </small>
   </h4>

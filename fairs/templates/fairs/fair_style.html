@@ -1,63 +1,47 @@
-{% load static %}
 {% load thumbnail %}
 {% load i18n %}
 {% load markdownify %}
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">{{ fair.name }}</h3>
-  </div>
-  <div class="panel-body">
-    <div class="row">
-      <div class="col-md-6">
-        <blockquote>
-          {% if fair.website %}
-            <div>
-              {% trans "Website" %}: <a href="{{ fair.website }}" target="_blank">{{ fair.website }}</a>
-            </div>
-          {% endif %}
-          {% if fair.start %}
-            <div>
-              {% trans "Beginn" %}: {{ fair.start }}
-            </div>
-          {% endif %}
-          {% if fair.end %}
-            <div>
-              {% trans "Ende" %}: {{ fair.end }}
-            </div>
-          {% endif %}
-          {% if fair.hall %}
-            <div>
-              {% trans "Halle" %}: {{ fair.hall }}, {% trans "Stand" %}: {{ fair.stand }}
-            </div>
-          {% endif %}
-          {% if fair.location %}
-            <div>
-              {{ fair.location|markdownify }}
-            </div>
-          {% endif %}
-          {% if fair.attachment %}
-            <i class="fa fa-download"></i>
-            <a href="{{ fair.attachment.url }}">
-              {{ fair.attachment.name|slice:"2:" }}
-            </a>
-          {% endif %}
-        </blockquote>
-      </div>
-      <div class="col-md-6">
-        {% if fair.image %}
-          <div id="fair-detail-image">
-            <a href="{{ fair.image.url }}">
-              <img class="img-responsive" src="{{ fair.image|thumbnail_url:'fair_detail' }}"
-                   alt="{{ fair.name }}-image">
-            </a>
-          </div>
+<article class="fair">
+  <h3>{{ fair.name }}</h3>
+  <div class="row">
+    <div class="col-sm-6">
+      {% if fair.start or fair.end or fair.hall or fair.website %}
+      <dl class="fair-facts">
+        {% if fair.start %}
+          <dt>{% trans "Beginn" %}</dt><dd>{{ fair.start }}</dd>
         {% endif %}
-      </div>
+        {% if fair.end %}
+          <dt>{% trans "Ende" %}</dt><dd>{{ fair.end }}</dd>
+        {% endif %}
+        {% if fair.hall %}
+          <dt>{% trans "Halle" %}</dt><dd>{{ fair.hall }}{% if fair.stand %}, {% trans "Stand" %}: {{ fair.stand }}{% endif %}</dd>
+        {% endif %}
+        {% if fair.website %}
+          <dt>{% trans "Website" %}</dt><dd><a href="{{ fair.website }}" target="_blank" rel="noopener">{{ fair.website }}</a></dd>
+        {% endif %}
+      </dl>
+      {% endif %}
+      {% if fair.location %}
+        <div>{{ fair.location|markdownify }}</div>
+      {% endif %}
+      {% if fair.attachment %}
+        <p>
+          <i class="fa fa-download" aria-hidden="true"></i>
+          <a href="{{ fair.attachment.url }}">{{ fair.attachment.name|slice:"2:" }}</a>
+        </p>
+      {% endif %}
     </div>
-    {% if fair.description %}
-      {{ fair.description|markdownify }}
+    {% if fair.image %}
+      <div class="col-sm-6">
+        <a href="{{ fair.image.url }}">
+          <img class="img-responsive" src="{{ fair.image|thumbnail_url:'fair_detail' }}" alt="{{ fair.name }}">
+        </a>
+      </div>
     {% endif %}
   </div>
-</div>
-{% include 'core/edit_item.html' with model="fairs_fair" id=fair.id %}
+  {% if fair.description %}
+    {{ fair.description|markdownify }}
+  {% endif %}
+  {% include 'core/edit_item.html' with model="fairs_fair" id=fair.id %}
+</article>
