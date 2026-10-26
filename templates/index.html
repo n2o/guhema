@@ -1,24 +1,28 @@
 {% extends "base.html" %}
 {% load i18n %}
-
 {% load static %}
-{% load thumbnail %}
 
 {% block headerimg %}
-  <div id="header-img-text-wrapper">
-    <img src="{% static 'img/header/header002.jpg' %}" alt="">
-    <div id="header-text" class="hidden-xs hidden-sm">
-      <h2>{% blocktrans %}METALLSÄGEBLÄTTER IN PERFEKTION{% endblocktrans %}</h2>
-      <p>
-        {% blocktrans %}Entdecken Sie unsere Produkte!{% endblocktrans %}
-      </p>
+  <div id="header-img-wrapper">
+    <div class="container">
+      <div id="header-img-text-wrapper">
+        <img src="{% static 'img/header/header002.jpg' %}" alt="" width="1140" height="326">
+        <div id="header-text">
+          <p class="eyebrow">{% trans "Made in Germany seit 1867" %}</p>
+          <p class="h2">{% blocktrans %}METALLSÄGEBLÄTTER IN PERFEKTION{% endblocktrans %}</p>
+          <a class="btn btn-accent" href="{% url 'products:index' %}">{% blocktrans %}Zu unseren Produkten{% endblocktrans %} &rsaquo;</a>
+          <a class="btn btn-link" href="{% url 'downloads:index' %}">{% trans "Kataloge" %} &rsaquo;</a>
+        </div>
+      </div>
     </div>
   </div>
 {% endblock %}
 
+{% block productgroups %}{% include 'productgroups.html' %}{% endblock %}
+
 {% block heading %}
   <h1>
-    {% blocktrans %}Qualität die Vertrauen schafft{% endblocktrans %}<br>
+    {% blocktrans %}Qualität die Vertrauen schafft{% endblocktrans %}
     <small>{% blocktrans %}GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!{% endblocktrans %}</small>
   </h1>
 {% endblock %}
@@ -26,11 +30,9 @@
 {% block content %}
   <div class="row">
     <div class="col-md-8">
-      <p>
-        <strong>
-          {% blocktrans trimmed %}Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung und
-            Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.{% endblocktrans %}
-        </strong>
+      <p class="lead-strong">
+        {% blocktrans trimmed %}Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung und
+          Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.{% endblocktrans %}
       </p>
       <p>
         {% blocktrans trimmed %}Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen Wünsche
@@ -44,17 +46,13 @@
         {% blocktrans trimmed %}Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein Metallsägeblatt in
           Perfektion.{% endblocktrans %}
       </p>
-      <p>
-        <a href="{% url 'products:index' %}">
-          <button type="button" class="btn text-normal">{% blocktrans %}Zu unseren Produkten{% endblocktrans %}
-            &rsaquo;
-          </button>
-        </a>
-      </p>
+    </div>
+    <div class="col-md-4">
+      <ul class="facts">
+        <li><span class="fact-value">1867</span>{% trans "Gründung" %}</li>
+        <li><span class="fact-value">{% trans "5." context "generation ordinal" %}</span>{% trans "Generation Familienunternehmen" %}</li>
+        <li><span class="fact-value">ISO 9001</span>{% trans "zertifiziert seit 1997" %}</li>
+      </ul>
     </div>
   </div>
-
-  {# News Section #}
-  {% comment %}<h2 style="padding-top: 1em;">{% trans "News" %}</h2>
-  {% include 'news/inc_overview.html' with posts=posts %}{% endcomment %}
 {% endblock %}

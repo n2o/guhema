@@ -1,64 +1,50 @@
 {% load i18n %}
 {% load static %}
 
-<div class="product-groups-wrapper" style="height: 180px">
-  <div id="product-groups">
-    <div class="row">
-      <div class="col-md-4">
-        <h3 class="text-white"><a href="{% url 'products:index' %}">{% trans "PRODUKTGRUPPEN" %}</a></h3>
-      </div>
-      <div class="col-md-8 text-right hidden-md hidden-sm hidden-xs">
-        <a href="{% url 'products:list' slug='maschinensageblatter' %}"><img class="img-product-groups"
-                                                                             src="{% static 'img/produktbilder/saege001.png' %}"
-                                                                             data-toggle="tooltip" data-placement="top"
-                                                                             title="{% trans "Maschinensägeblätter" %}"
-                                                                             alt="{% trans "Maschinensägeblätter" %}"></a>
-        <a href="{% url 'products:list' slug='metallstichsageblatter' %}"><img class="img-product-groups"
-                                                                               src="{% static 'img/produktbilder/saege002.png' %}"
-                                                                               data-toggle="tooltip"
-                                                                               data-placement="top"
-                                                                               title="{% trans "Metallstichsägeblätter" %}"
-                                                                               alt="{% trans "Metallstichsägeblätter" %}"></a>
-        <a href="{% url 'products:list' slug='sabel-und-spezialsabelsageblatter' %}"><img class="img-product-groups"
-                                                                                          src="{% static 'img/produktbilder/saege003.png' %}"
-                                                                                          data-toggle="tooltip"
-                                                                                          data-placement="top"
-                                                                                          title="{% trans "Säbel- und Spezialsäbelsägeblätter" %}"
-                                                                                          alt="{% trans "Säbel- und Spezialsäbelsägeblätter" %}"></a>
-        <a href="{% url 'products:list' slug='metallhandsageblatter' %}"><img class="img-product-groups"
-                                                                              src="{% static 'img/produktbilder/saege004.png' %}"
-                                                                              data-toggle="tooltip" data-placement="top"
-                                                                              title="{% trans "Metallhandsägeblätter" %}"
-                                                                              alt="{% trans "Metallhandsägeblätter" %}"></a>
-        <a href="{% url 'products:list' slug='lochsagen' %}"><img class="img-product-groups"
-                                                                  src="{% static 'img/produktbilder/saege005.png' %}"
-                                                                  data-toggle="tooltip" data-placement="top"
-                                                                  title="{% trans "Lochsägen" %}"
-                                                                  alt="{% trans "Lochsägen" %}"></a>
-        <a href="{% url 'products:list' slug='metallsagebander' %}"><img class="img-product-groups"
-                                                                         src="{% static 'img/produktbilder/saege006.png' %}"
-                                                                         data-toggle="tooltip" data-placement="top"
-                                                                         title="{% trans "Metallsägebänder" %}"
-                                                                         alt="{% trans "Metallsägebänder" %}"></a>
-        <a href="{% url 'products:list' slug='pendelhubstichsageblatter' %}"><img class="img-product-groups"
-                                                                                  src="{% static 'img/produktbilder/saege007.png' %}"
-                                                                                  data-toggle="tooltip"
-                                                                                  data-placement="top"
-                                                                                  title="{% trans "Pendelhubstichsägeblätter" %}"
-                                                                                  alt="{% trans "Pendelhubstichsägeblätter" %}"></a>
-        <a href="{% url 'products:list' slug='metallkreissageblatter' %}"><img class="img-product-groups"
-                                                                               src="{% static 'img/produktbilder/saege008.png' %}"
-                                                                               data-toggle="tooltip"
-                                                                               data-placement="top"
-                                                                               title="{% trans "Metallkreissägeblätter" %}"
-                                                                               alt="{% trans "Metallkreissägeblätter" %}"></a>
-      </div>
-    </div>
+<nav class="product-groups-band" aria-labelledby="band-title">
+  <div class="container">
+    <p class="band-title" id="band-title"><a href="{% url 'products:index' %}">{% trans "PRODUKTGRUPPEN" %}</a></p>
+    <ul class="pg-tiles">
+      <li>{% url 'products:list' slug='maschinensageblatter' as group_url %}
+        <a class="pg-tile{% if group_url and group_url in request.path %} active{% endif %}" href="{{ group_url }}"{% if request.path == group_url %} aria-current="page"{% elif group_url and group_url in request.path %} aria-current="true"{% endif %}>
+          <img src="{% static 'img/produktbilder/saege001.png' %}" alt="" width="112" height="112">{% trans "Maschinensägeblätter" %}
+        </a>
+      </li>
+      <li>{% url 'products:list' slug='metallstichsageblatter' as group_url %}
+        <a class="pg-tile{% if group_url and group_url in request.path %} active{% endif %}" href="{{ group_url }}"{% if request.path == group_url %} aria-current="page"{% elif group_url and group_url in request.path %} aria-current="true"{% endif %}>
+          <img src="{% static 'img/produktbilder/saege002.png' %}" alt="" width="112" height="112">{% trans "Metallstichsägeblätter" %}
+        </a>
+      </li>
+      <li>{% url 'products:list' slug='sabel-und-spezialsabelsageblatter' as group_url %}
+        <a class="pg-tile{% if group_url and group_url in request.path %} active{% endif %}" href="{{ group_url }}"{% if request.path == group_url %} aria-current="page"{% elif group_url and group_url in request.path %} aria-current="true"{% endif %}>
+          <img src="{% static 'img/produktbilder/saege003.png' %}" alt="" width="112" height="112">{% trans "Säbel- und Spezialsäbelsägeblätter" %}
+        </a>
+      </li>
+      <li>{% url 'products:list' slug='metallhandsageblatter' as group_url %}
+        <a class="pg-tile{% if group_url and group_url in request.path %} active{% endif %}" href="{{ group_url }}"{% if request.path == group_url %} aria-current="page"{% elif group_url and group_url in request.path %} aria-current="true"{% endif %}>
+          <img src="{% static 'img/produktbilder/saege004.png' %}" alt="" width="112" height="112">{% trans "Metallhandsägeblätter" %}
+        </a>
+      </li>
+      <li>{% url 'products:list' slug='lochsagen' as group_url %}
+        <a class="pg-tile{% if group_url and group_url in request.path %} active{% endif %}" href="{{ group_url }}"{% if request.path == group_url %} aria-current="page"{% elif group_url and group_url in request.path %} aria-current="true"{% endif %}>
+          <img src="{% static 'img/produktbilder/saege005.png' %}" alt="" width="112" height="112">{% trans "Lochsägen" %}
+        </a>
+      </li>
+      <li>{% url 'products:list' slug='metallsagebander' as group_url %}
+        <a class="pg-tile{% if group_url and group_url in request.path %} active{% endif %}" href="{{ group_url }}"{% if request.path == group_url %} aria-current="page"{% elif group_url and group_url in request.path %} aria-current="true"{% endif %}>
+          <img src="{% static 'img/produktbilder/saege006.png' %}" alt="" width="112" height="112">{% trans "Metallsägebänder" %}
+        </a>
+      </li>
+      <li>{% url 'products:list' slug='pendelhubstichsageblatter' as group_url %}
+        <a class="pg-tile{% if group_url and group_url in request.path %} active{% endif %}" href="{{ group_url }}"{% if request.path == group_url %} aria-current="page"{% elif group_url and group_url in request.path %} aria-current="true"{% endif %}>
+          <img src="{% static 'img/produktbilder/saege007.png' %}" alt="" width="112" height="112">{% trans "Pendelhubstichsägeblätter" %}
+        </a>
+      </li>
+      <li>{% url 'products:list' slug='metallkreissageblatter' as group_url %}
+        <a class="pg-tile{% if group_url and group_url in request.path %} active{% endif %}" href="{{ group_url }}"{% if request.path == group_url %} aria-current="page"{% elif group_url and group_url in request.path %} aria-current="true"{% endif %}>
+          <img src="{% static 'img/produktbilder/saege008.png' %}" alt="" width="112" height="112">{% trans "Metallkreissägeblätter" %}
+        </a>
+      </li>
+    </ul>
   </div>
-</div>
-
-<script>
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-</script>
+</nav>

@@ -12,78 +12,51 @@
 {% endblock %}
 
 {% block content %}
-  {% include 'products/include_productheader.html' with group=group %}
-
-  <p class="pull-right">
-    <a class="btn btn-primary" role="button" href="{% url 'products:advices' slug=group.slug %}">
-      {% trans "Zu unseren Empfehlungen" %}
-    </a>
-  </p>
+  {% include 'products/include_productheader.html' with group=group advice=True %}
 
   {% for blade in blades %}
     {% ifchanged %}
       <h3 class="padding-bottom">{{ blade.heading }}</h3>
     {% endifchanged %}
 
-    <div class="panel panel-default">
-      <div class="panel-body">
-
-        <div class="row">
-          {% if blade.image %}
-            <div class="col-md-6">
-              {% include 'products/include_blade_image.html' with image=blade.image slug=blade.group.slug id=blade.id %}
-            </div>
-          {% endif %}
-          {% if blade.image2 %}
-            <div class="col-md-6">
-              {% include 'products/include_blade_image.html' with image=blade.image2 slug=blade.group.slug id=blade.id %}
-            </div>
-          {% endif %}
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-2 col-xs-2">
-                <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-              </div>
-              <div class="col-md-10 col-xs-10">
-                <a class="text-normal" href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">
-                  {{ blade.quality }}
-                </a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-2 col-xs-2">
-                <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-              </div>
-              <div class="col-md-10 col-xs-10">
-                {{ blade.name }}
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-2 col-xs-2">
-                <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-              </div>
-              <div class="col-md-10 col-xs-10 markdown-no-padding-left">
-                {{ blade.description|markdownify }}
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <span class="text-orange-bold">
-              <p>
-                <a href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">
-                  {% trans "Details" %}
-                </a>
-              </p>
-              {{ blade.type }}... = {{ blade.type_description }}<br>
-              {{ blade.type2 }}... = {{ blade.type2_description }}
-            </span>
-          </div>
-        </div>
-        {% include 'core/edit_item.html' with model="products_bandsawblade" id=blade.id %}
+    <div class="blade-row">
+      <div class="row">
+        {% if blade.image %}
+          {% include 'products/include_blade_image.html' with image=blade.image slug=blade.group.slug id=blade.id alias='blade_image_250h' alt=blade.quality wrap='col-md-6' %}
+        {% endif %}
+        {% if blade.image2 %}
+          {% include 'products/include_blade_image.html' with image=blade.image2 slug=blade.group.slug id=blade.id alias='blade_image_250h' alt=blade.quality wrap='col-md-6' %}
+        {% endif %}
       </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="spec-line">
+            <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+            <a href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">{{ blade.quality }}</a>
+          </div>
+          <div class="spec-line">
+            <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+            <span>{{ blade.name }}</span>
+          </div>
+          <div class="spec-line">
+            <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+            <div>{{ blade.description|markdownify }}</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>
+            <span class="text-orange-bold">{{ blade.type }}...</span> = {{ blade.type_description }}<br>
+            <span class="text-orange-bold">{{ blade.type2 }}...</span> = {{ blade.type2_description }}
+          </p>
+          <p>
+            <a href="{% url 'products:details_by_id' slug=blade.group.slug id=blade.id %}">
+              {% trans "Details" %}
+            </a>
+          </p>
+        </div>
+      </div>
+      {% include 'core/edit_item.html' with model="products_bandsawblade" id=blade.id %}
     </div>
   {% endfor %}
 {% endblock %}

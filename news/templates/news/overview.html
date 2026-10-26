@@ -1,10 +1,20 @@
 {% extends 'layout_productgroups.html' %}
 {% load i18n %}
 
+{% block title %}{% trans "News" %} | {% endblock %}
+
 {% block heading %}
   <h1>{% trans "News" %}</h1>
 {% endblock %}
 
 {% block content %}
-  {% include 'news/inc_overview.html' with posts=posts %}
+  {% if posts %}
+    {% include 'news/inc_overview.html' with posts=posts %}
+  {% else %}
+    <p class="lead">{% trans "Derzeit gibt es keine Neuigkeiten." %}</p>
+    <p>
+      <a class="btn btn-primary" href="{% url 'products:index' %}">{% trans "Zu unseren Produkten" %} &rsaquo;</a>
+      <a class="btn btn-default" href="{% url 'downloads:index' %}">{% trans "Kataloge" %}</a>
+    </p>
+  {% endif %}
 {% endblock %}

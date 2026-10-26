@@ -13,13 +13,7 @@
 {% endblock %}
 
 {% block content %}
-  {% include 'products/include_productheader.html' with group=group %}
-
-  <p class="pull-right">
-    <a class="btn btn-primary" role="button" href="{% url 'products:advices' slug=group.slug %}">
-      {% trans "Zu unseren Empfehlungen" %}
-    </a>
-  </p>
+  {% include 'products/include_productheader.html' with group=group advice=True %}
 
   <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
   <p>
@@ -30,58 +24,41 @@
       Wünsche offen.{% endblocktrans %}
   </p>
 
-  <div class="row well">
+  <div class="well">
+    <div class="row">
     <div class="col-md-8">
-      <div>
-        <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-        GUHEMA Bi-Co-lastic
-        <span class="text-orange-bold">
-          HSM...
-        </span>
+      <div class="spec-line"><img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+        <span>GUHEMA Bi-Co-lastic <span class="text-orange-bold"> HSM... </span></span>
       </div>
-      <div>
-        <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
+      <div class="spec-line"><img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+        <span>{% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}</span>
       </div>
-      <div>
-        <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-        4/6 {% trans "ZpZ" %} {% trans "das Allroundtalent" %}
+      <div class="spec-line"><img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+        <span>4/6 {% trans "ZpZ" %} {% trans "das Allroundtalent" %}</span>
       </div>
 
       <div class="padding-top-05">
-        <div>
-          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-          GUHEMA Bi-Co-lastic
-          <span class="text-orange-bold">
-            HSM...
-          </span>
-        </div>
-        <div>
-          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-          {% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
-        </div>
-        <div>
-          <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-          10 {% trans "ZpZ" %} {% trans "für dünnwandiges Material" %}
-        </div>
+        <div class="spec-line"><img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+        <span>GUHEMA Bi-Co-lastic <span class="text-orange-bold"> HSM... </span></span>
+      </div>
+        <div class="spec-line"><img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+        <span>{% blocktrans with num="1.3247" %}Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}</span>
+      </div>
+        <div class="spec-line"><img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+        <span>10 {% trans "ZpZ" %} {% trans "für dünnwandiges Material" %}</span>
+      </div>
       </div>
 
       <div class="padding-top-05">
-        <div>
-          <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-          GUHEMA HM-Granulat
-          <span class="text-orange-bold">
-            HSH...
-          </span>
-        </div>
-        <div>
-          <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-          {% blocktrans %}Zähne mit Hartmetallgranulat beschichtet{% endblocktrans %}
-        </div>
-        <div>
-          <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-          {% blocktrans %}Für mineralische Werkstoffe{% endblocktrans %}
-        </div>
+        <div class="spec-line"><img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+        <span>GUHEMA HM-Granulat <span class="text-orange-bold"> HSH... </span></span>
+      </div>
+        <div class="spec-line"><img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+        <span>{% blocktrans %}Zähne mit Hartmetallgranulat beschichtet{% endblocktrans %}</span>
+      </div>
+        <div class="spec-line"><img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+        <span>{% blocktrans %}Für mineralische Werkstoffe{% endblocktrans %}</span>
+      </div>
       </div>
     </div>
     <div class="col-md-4">
@@ -96,6 +73,7 @@
           class="text-orange-bold">HSM014V</span>
       </p>
     </div>
+    </div>
   </div>
 
   <hr>
@@ -104,6 +82,7 @@
 
   <div class="row">
     <div class="col-md-6">
+      <div class="table-responsive">
       <table class="table table-condensed table-striped-column table-hover">
         <thead>
         <tr>
@@ -128,8 +107,10 @@
         {% endfor %}
         </tbody>
       </table>
+      </div>
     </div>
     <div class="col-md-6">
+      <div class="table-responsive">
       <table class="table table-condensed table-striped-column table-hover">
         <thead>
         <tr>
@@ -154,6 +135,7 @@
         {% endfor %}
         </tbody>
       </table>
+      </div>
     </div>
   </div>
 
@@ -161,6 +143,7 @@
 
   <div class="row">
     <div class="col-md-6">
+      <div class="table-responsive">
       <table class="table table-condensed table-striped-column table-hover">
         <thead>
         <tr>
@@ -183,10 +166,13 @@
         {% endfor %}
         </tbody>
       </table>
+      </div>
     </div>
   </div>
 
   <h3>{% trans "Durchmesser" %}</h3>
+
+  <div class="table-responsive">
 
   <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
     <thead>
@@ -194,7 +180,7 @@
       <th class="text-center table-white-border-right table-no-bot-border">&Oslash;</th>
       <th class="text-center table-no-bot-border">GUHEMA Bi-Co-lastic</th>
       <th class="text-center table-no-bot-border">GUHEMA Bi-Co-lastic</th>
-      <th class="text-center table-no-bot-border">HM-Granulat</th>
+      <th class="text-center table-no-bot-border">{% trans "HM-Granulat" %}</th>
     </tr>
     <tr>
       <th class="text-center table-no-top-border table-white-border-right">{% blocktrans %}in mm{% endblocktrans %}</th>
@@ -222,6 +208,8 @@
     {% endfor %}
     </tbody>
   </table>
+
+  </div>
 
   {% include 'products/include_available_teeth.html' %}
 {% endblock %}

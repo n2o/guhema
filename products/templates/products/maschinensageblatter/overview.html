@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-  {% include 'products/include_productheader.html' with group=group %}
+  {% include 'products/include_productheader.html' with group=group advice=True %}
 
   {% include 'products/includes/general_advice_sawblades.html' %}
 
@@ -23,25 +23,26 @@
       {% for blade in blades %}
         {% if blade.clamping.name == "Standard" %}
           {% ifchanged %}
-            <div class="padding-bottom">
+            <div class="clamping-img">
               <a href="{{ blade.clamping.image.url }}">
-                <img src="{{ blade.clamping.image|thumbnail_url:'products_clamping' }}" alt="clamping">
+                <img class="img-responsive" src="{{ blade.clamping.image|thumbnail_url:'products_clamping' }}" alt="{{ blade.clamping.name }}">
               </a>
             </div>
           {% endifchanged %}
           <div class="products-list-item">
-            <h4>
+            <div class="spec-line">
               <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-              <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                {{ blade.quality }}
-              </a>
-              <br>
+              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">{{ blade.quality }}</a>
+            </div>
+            <div class="spec-line">
               <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-              {{ blade.description }}
-              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                {{ blade.type }} {% trans "Details" %}
-              </a>
-            </h4>
+              <span>
+                {{ blade.description }}<br>
+                <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                  <span class="text-orange-bold">{{ blade.type }}</span> {% trans "Details" %}
+                </a>
+              </span>
+            </div>
           </div>
           {% include 'core/edit_item.html' with model="products_sawblade" id=blade.id %}
         {% endif %}
@@ -51,25 +52,26 @@
       {% for blade in blades %}
         {% if blade.clamping.name == "Kasto" %}
           {% ifchanged %}
-            <div class="padding-bottom">
+            <div class="clamping-img">
               <a href="{{ blade.clamping.image.url }}">
-                <img src="{{ blade.clamping.image|thumbnail_url:'products_clamping' }}" alt="clamping">
+                <img class="img-responsive" src="{{ blade.clamping.image|thumbnail_url:'products_clamping' }}" alt="{{ blade.clamping.name }}">
               </a>
             </div>
           {% endifchanged %}
           <div class="products-list-item">
-            <h4>
+            <div class="spec-line">
               <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-                <a class="text-normal" href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                  {{ blade }}
-                </a>
-              <br>
+              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">{{ blade.quality }}</a>
+            </div>
+            <div class="spec-line">
               <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-              {{ blade.description }}
-              <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
-                {{ blade.type }} {% trans "Details" %}
-              </a>
-            </h4>
+              <span>
+                {{ blade.description }}<br>
+                <a href="{% url 'products:details' slug=blade.group.slug type=blade.type %}">
+                  <span class="text-orange-bold">{{ blade.type }}</span> {% trans "Details" %}
+                </a>
+              </span>
+            </div>
           </div>
           {% include 'core/edit_item.html' with model="products_sawblade" id=blade.id %}
         {% endif %}

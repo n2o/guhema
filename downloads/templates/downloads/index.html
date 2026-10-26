@@ -1,42 +1,36 @@
 {% extends "layout_productgroups.html" %}
 
 {% load static %}
-{% load thumbnail %}
 {% load i18n %}
-{% load markdownify %}
+
+{% block title %}{% trans "Kataloge" %} | {% endblock %}
 
 {% block heading %}
   <h1>{% trans "Kataloge" %}</h1>
 {% endblock %}
 
 {% block content %}
-  <p class="lead">
+  <p class="lead prose">
     {% trans "Wenn Sie noch weitere Informationen zu unseren Produkten erhalten möchten, können Sie hier unsere Kataloge downloaden." %}
   </p>
 
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-xs-6 col-sm-4 catalog">
       <a href="{% static 'catalogs/guhema_catalog_de.pdf' %}">
-        <img src="{% static 'catalogs/guhema_catalog_de_front.jpg' %}" class="img-responsive" alt="catalog_de">
-        <div class="padding-top">
-          {% trans "Katalog" %}, {% trans "deutsch" %} <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-        </div>
+        <img src="{% static 'catalogs/guhema_catalog_de_front.jpg' %}" class="catalog-cover" alt="" width="300" height="425">
+        <span class="btn btn-default btn-block"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {% trans "Katalog" %}, {% trans "deutsch" %}<span class="sr-only"> (PDF)</span></span>
       </a>
     </div>
-    <div class="col-md-4">
+    <div class="col-xs-6 col-sm-4 catalog">
       <a href="{% static 'catalogs/guhema_catalog_en.pdf' %}">
-        <img src="{% static 'catalogs/guhema_catalog_en_front.jpg' %}" class="img-responsive" alt="catalog_en">
-        <div class="padding-top">
-          {% trans "Katalog" %}, {% trans "englisch" %} <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-        </div>
+        <img src="{% static 'catalogs/guhema_catalog_en_front.jpg' %}" class="catalog-cover" alt="" width="297" height="420">
+        <span class="btn btn-default btn-block"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {% trans "Katalog" %}, {% trans "englisch" %}<span class="sr-only"> (PDF)</span></span>
       </a>
     </div>
-    <div class="col-md-4">
+    <div class="col-xs-6 col-sm-4 catalog">
       <a href="{% static 'catalogs/guhema_catalog_ru.pdf' %}">
-        <img src="{% static 'catalogs/guhema_catalog_ru_front.jpg' %}" class="img-responsive" alt="catalog_ru">
-        <div class="padding-top">
-          {% trans "Katalog" %}, {% trans "russisch" %} <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-        </div>
+        <img src="{% static 'catalogs/guhema_catalog_ru_front.jpg' %}" class="catalog-cover" alt="" width="297" height="420">
+        <span class="btn btn-default btn-block"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {% trans "Katalog" %}, {% trans "russisch" %}<span class="sr-only"> (PDF)</span></span>
       </a>
     </div>
   </div>

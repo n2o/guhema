@@ -45,7 +45,7 @@ class SmokeTest(TestCase):
 
     def test_unknown_pages_are_404(self):
         for url in ['/produkte/unbekannt/', '/produkte/metallstichsageblatter/XXX/',
-                    '/produkte/metallsagebander/99999/', '/produkte/lochsagen/details',
+                    '/produkte/metallsagebander/99999/', '/produkte/lochsagen/details/',
                     '/produkte/unbekannt/empfehlungen', '/news/versteckt/']:
             self.assertStatus(url, 404)
 

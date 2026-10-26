@@ -1,0 +1,14 @@
+{% load i18n %}
+<div class="alert bg-orange-lighter article-path">
+  <p class="article-path-title">{% blocktrans %}Der schnelle Weg zu unserer Artikel-Nr.{% endblocktrans %}</p>
+  <p><span class="text-orange-bold">{% trans "Qualität" %}</span> + <span class="text-orange-bold">{% blocktrans %}Kennziffer (Abmessung){% endblocktrans %}</span> + <span class="text-orange-bold">{% trans "ZpZ" %}</span></p>
+  <p>{% trans "z.B.:" %}
+    <span class="text-nowrap"><span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{{ zpz }}</span></span>
+    = <span class="text-orange-bold text-nowrap">{{ blade.type }}{{ indicators.0.value }}{{ zpz }}</span></p>
+  {% if with_length %}
+  <p>{% trans "z.B.:" %}
+    <span class="text-nowrap"><span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{{ zpz }}</span></span>
+    + <span class="text-orange-bold">{% trans "Sägeblattlänge" %}</span>
+    = <span class="text-orange-bold text-nowrap">{{ blade.type }}{{ indicators.0.value }}{{ zpz }}03800</span></p>
+  {% endif %}
+</div>

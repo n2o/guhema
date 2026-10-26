@@ -13,46 +13,25 @@
 {% endblock %}
 
 {% block content %}
-  {% include 'products/include_productheader.html' with group=group %}
-
-  <a class="btn btn-primary pull-right" role="button" data-toggle="collapse" href="#collapse-accessory"
-     aria-expanded="false" aria-controls="collapse-accessory">
-    {% blocktrans %}Zubehörartikel anzeigen{% endblocktrans %}
-    <span class="caret"></span>
-  </a>
+  {% include 'products/include_productheader.html' with group=group accessory=True %}
 
   <div id="collapse-accessory" class="collapse">
     <h3 class="padding-bottom">{% trans "Metallhandsägebügel" %}</h3>
 
     {% for blade in blades %}
       {% if blade.accessory %}
-        <div class="panel panel-default">
-          <div class="panel-body">
-            {% include 'products/include_blade_image.html' with image=blade.image alias='blade_image_250h' %}
-
-            <div class="row">
-              <div class="col-md-2 col-xs-2">
-                <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-              </div>
-              <div class="col-md-10 col-xs-10">
-                {{ blade.quality }}
-                <span class="text-orange-bold">
-                  {{ blade.type }}
-                </span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-2 col-xs-2">
-                <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-              </div>
-              <div class="col-md-10 col-xs-10 markdown-no-padding-left">
-                {{ blade.description|markdownify }}
-              </div>
-            </div>
+        <div class="blade-row">
+          {% include 'products/include_blade_image.html' with image=blade.image alias='blade_image_250h' alt=blade.quality %}
+          <div class="spec-line">
+            <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+            <span>{{ blade.quality }} <span class="text-orange-bold">{{ blade.type }}</span></span>
           </div>
+          <div class="spec-line">
+            <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+            <div>{{ blade.description|markdownify }}</div>
+          </div>
+          {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
         </div>
-
-        {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
 
       {% endif %}
     {% empty %}
@@ -70,42 +49,27 @@
             <h3 class="padding-bottom padding-top-2">{{ blade.subcategory }}</h3>
           {% endif %}
         {% endifchanged %}
-        <div class="panel panel-default">
-          <div class="panel-body">
+        <div class="blade-row">
+          {% include 'products/include_blade_image.html' with image=blade.image alias='blade_image_250h' alt=blade.quality %}
 
-            {% include 'products/include_blade_image.html' with image=blade.image alias='blade_image_250h' %}
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="col-md-1 col-xs-2">
-                    <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-                  </div>
-                  <div class="col-md-11 col-xs-10">
-                    {{ blade.quality }}
-                    <span class="text-orange-bold">
-                    {{ blade.type }}
-                  </span>
-                    <br>
-                    {% if next.type == "ASM" %}
-                      {{ next.quality }}
-                      <span class="text-orange-bold">
-                      {{ next.type }}
-                    </span>
-                    {% endif %}
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-1 col-xs-2">
-                    <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-                  </div>
-                  <div class="col-md-11 col-xs-10 markdown-no-padding-left">
-                    {{ blade.description|markdownify }}
-                  </div>
-                </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="spec-line">
+                <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+                <span>
+                  {{ blade.quality }} <span class="text-orange-bold">{{ blade.type }}</span>
+                  {% if next.type == "ASM" %}
+                    <br>{{ next.quality }} <span class="text-orange-bold">{{ next.type }}</span>
+                  {% endif %}
+                </span>
+              </div>
+              <div class="spec-line">
+                <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+                <div>{{ blade.description|markdownify }}</div>
               </div>
             </div>
-
+            <div class="col-md-6">
+              <div class="table-responsive">
             <table class="table table-condensed table-striped-column table-hover">
               <thead>
               <tr>
@@ -144,9 +108,11 @@
               </tr>
               </tbody>
             </table>
-
-            {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
+              </div>
+            </div>
           </div>
+
+          {% include 'core/edit_item.html' with model="products_hacksawblade" id=blade.id %}
         </div>
       {% endif %}
     {% endwith %}

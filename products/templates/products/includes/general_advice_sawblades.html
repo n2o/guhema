@@ -2,22 +2,7 @@
 {% load thumbnail %}
 {% load i18n %}
 
-{% if not no_advice %}
-  <p class="pull-right">
-    <a class="btn btn-primary" role="button" href="{% url 'products:advices' slug=group.slug %}">
-      {% trans "Zu unseren Empfehlungen" %}
-    </a>
-    {% comment %}
-    <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
-      {% trans "Details anzeigen" %}
-      <span class="caret"></span>
-    </a>
-    {% endcomment %}
-  </p>
-{% endif %}
-
-{# <div id="collapse-1" class="collapse"> #}
-<div id="collapse-1">
+<div>
   <h3>{% trans "Material, Qualitäten und Einsatzbereiche" %}</h3>
   <p>
     {% trans "Unser Streben nach perfekter Sägequalität beginnt schon bei der Auswahl unseres Vormaterials, denn dies ist die Ausgangsbasis für unsere Spitzenprodukte – nichts geht durch unsere Eingangskontrolle, das nicht die Note „Sehr gut“ verdient." %}
@@ -35,50 +20,42 @@
   </p>
 
   <div class="well">
-    <div>
-      <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-      GUHEMA Super-HSS
-    </div>
-    <div>
-      <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-      {% blocktrans with num="1.3343" %}DMo 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
-    </div>
-    <div>
-      <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-      {% trans "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>" %}
-    </div>
+    <div class="spec-line"><img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+        <span>GUHEMA Super-HSS</span>
+      </div>
+    <div class="spec-line"><img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+        <span>{% blocktrans with num="1.3343" %}DMo 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}</span>
+      </div>
+    <div class="spec-line"><img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+        <span>{% trans "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>" %}</span>
+      </div>
 
     <div class="padding-top-05">
-      <div>
-        <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-        GUHEMA Brillant
+      <div class="spec-line"><img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+        <span>GUHEMA Brillant</span>
       </div>
-      <div>
-        <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {% blocktrans with num="1.3243" %}EMo 5 Co 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}
+      <div class="spec-line"><img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+        <span>{% blocktrans with num="1.3243" %}EMo 5 Co 5 Qualität (Werkstoff-Nr. {{ num }}){% endblocktrans %}</span>
       </div>
-      <div>
-        <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-        {% trans "Für extrem harte Werkstoffe bis 1300 N/mm<sup>2</sup> z.B. austenitische Stähle und Stähle mit hohem Chrom-Nickelgehalt" %}
+      <div class="spec-line"><img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+        <span>{% trans "Für extrem harte Werkstoffe bis 1300 N/mm<sup>2</sup> z.B. austenitische Stähle und Stähle mit hohem Chrom-Nickelgehalt" %}</span>
       </div>
     </div>
 
     <div class="padding-top-05">
-      <div>
-        <img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
-        GUHEMA Bi-lastic
+      <div class="spec-line"><img src="{% static 'img/other/shark_small_45w.png' %}" alt="">
+        <span>GUHEMA Bi-lastic</span>
       </div>
-      <div>
-        <img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
-        {% blocktrans with num="1.3343" %}DMo 5 Schneidenqualität (Werkstoff-Nr. {{ num }}) auf einem Sonderstahlrücken{% endblocktrans %}
+      <div class="spec-line"><img src="{% static 'img/other/blade_small_45w.png' %}" alt="">
+        <span>{% blocktrans with num="1.3343" %}DMo 5 Schneidenqualität (Werkstoff-Nr. {{ num }}) auf einem Sonderstahlrücken{% endblocktrans %}</span>
       </div>
-      <div>
-        <img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
-        {% trans "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>" %}
+      <div class="spec-line"><img src="{% static 'img/other/tool_small_45w.png' %}" alt="">
+        <span>{% trans "Für Werkstoffe bis zu einer Zugfestigkeit von 1100 N/mm<sup>2</sup>" %}</span>
       </div>
     </div>
   </div>
 
+  {% if not no_toothforms %}
   <h3>{% trans "Die Wahl der richtigen Zahnform" %}</h3>
   <p>
     {% trans "Unsere GUHEMA-Maschinensägeblätter haben erst durch die richtige Zahnform den optimalen Biss. Wir liefern:" %}
@@ -94,7 +71,7 @@
       </p>
     </div>
     <div class="col-md-6 text-right">
-      {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/maschinensaegeblaetter/katalog_2014/normalverzahnung_' extension='.png' alt_text='Normalzahn' width='400px' nothumbnail=True %}
+      {% trans "Normalzahn" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/maschinensaegeblaetter/katalog_2014/normalverzahnung_' extension='.png' alt_text=alt width='400' nothumbnail=True %}
     </div>
   </div>
 
@@ -108,7 +85,7 @@
       </p>
     </div>
     <div class="col-md-6 text-right">
-      {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/maschinensaegeblaetter/katalog_2014/positivverzahnung_' extension='.png' alt_text='Normalzahn' width='400px' nothumbnail=True %}
+      {% trans "Positivzahn" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/maschinensaegeblaetter/katalog_2014/positivverzahnung_' extension='.png' alt_text=alt width='400' nothumbnail=True %}
     </div>
   </div>
 
@@ -122,8 +99,8 @@
       </p>
     </div>
     <div class="col-md-6 text-right">
-      {% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/maschinensaegeblaetter/katalog_2014/variable_positivverzahnung_' extension='.png' alt_text='Normalzahn' width='400px' nothumbnail=True %}
+      {% trans "Variable Positivverzahnung" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktbilder/maschinensaegeblaetter/katalog_2014/variable_positivverzahnung_' extension='.png' alt_text=alt width='400' nothumbnail=True %}
     </div>
   </div>
-
+  {% endif %}
 </div>

@@ -38,18 +38,16 @@
       <li>{% trans "Beim Einsatz von Positivzahn und Future mit ca. 50% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist." %}</li>
     </ul>
 
-    {% include 'products/includes/image_multilang.html' with path_to_image='img/produktdetails/material_group_' extension='.png' alt_text='Material Group' %}
+    {% trans "Werkstoffgruppen" as alt %}{% include 'products/includes/image_multilang.html' with path_to_image='img/produktdetails/material_group_' extension='.png' alt_text=alt scroll=True %}
 
-    <section class="padding-top text-center">
-      <div class="alert alert-info" role="alert">
-        <h3>
-          <strong>
-            {% trans "Faustregel" %}:
-            &nbsp;&nbsp;&nbsp;
-            <sup>{% trans "Schnittgeschwindigkeit" %}</sup> / <sub>2 x {% trans "Hubweg (m)" %}</sub>
-            = {% trans "Hubzahl/min" %}
-          </strong>
-        </h3>
+    <section class="padding-top">
+      <div class="alert alert-info rule-of-thumb">
+        <p class="h3">{% trans "Faustregel" %}:</p>
+        <p class="rule-formula">
+          <span class="text-nowrap">{% trans "Schnittgeschwindigkeit" %}</span>
+          <span class="text-nowrap">÷ (2 × {% trans "Hubweg (m)" %})</span>
+          <span class="text-nowrap">= {% trans "Hubzahl/min" %}</span>
+        </p>
       </div>
     </section>
   </section>
@@ -64,10 +62,11 @@
       {% trans "Für Rohre und Profile Schnittdruck entsprechend der Wandstärke reduzieren." %}
     </p>
 
-    <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
+    <div class="table-responsive">
+    <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover spec-table">
       <thead>
       <tr>
-        <th class="table-no-bot-border">
+        <th class="table-no-bot-border text-left">
           {% trans "Material" %}
         </th>
         <th colspan="5" class="table-no-bot-border">
@@ -85,7 +84,7 @@
       </tr>
 
       <tr>
-        <th class="table-no-bot-border table-no-top-border">
+        <th class="table-no-bot-border table-no-top-border text-left">
           {% trans "Bezeichnung" %}
         </th>
         <th class="table-no-bot-border table-no-top-border">
@@ -139,35 +138,8 @@
       </thead>
       <tbody>
       {# first row #}
-      <tr>
-        <td>
-          <strong>{% trans "unleg. Stähle/Baustähle" %}</strong>
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      <tr>
-      <tr>
-        <td class="table-no-top-border">
-          <strong>{% trans "Einsatzstähle" %}</strong>, {% trans "z.B." %}
-        </td>
-        <td class="table-no-top-border">&nbsp;</td>
-        <td class="table-no-top-border">&nbsp;</td>
-        <td class="table-no-top-border">&nbsp;</td>
-        <td class="table-no-top-border">&nbsp;</td>
-        <td class="table-no-top-border">&nbsp;</td>
-        <td class="table-no-top-border">&nbsp;</td>
-        <td class="table-no-top-border">&nbsp;</td>
-        <td class="table-no-top-border">&nbsp;</td>
-        <td class="table-no-top-border">&nbsp;</td>
-        <td class="table-no-top-border">&nbsp;</td>
+      <tr class="row-group">
+        <th colspan="11" scope="rowgroup">{% trans "unleg. Stähle/Baustähle" %} – {% trans "Einsatzstähle" %}, {% trans "z.B." %}</th>
       </tr>
       <tr>
         <td class="table-no-top-border">
@@ -201,20 +173,8 @@
       </tr>
 
       {# second #}
-      <tr>
-        <td>
-          <strong>{% trans "Vergütungsstähle" %}</strong>, {% trans "z.B." %}
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+      <tr class="row-group">
+        <th colspan="11" scope="rowgroup">{% trans "Vergütungsstähle" %}, {% trans "z.B." %}</th>
       </tr>
       <tr>
         <td class="table-no-top-border">
@@ -262,20 +222,8 @@
         <td class="table-no-top-border">{% trans "normal" %}</td>
       </tr>
 
-      <tr>
-        <td>
-          <strong>{% trans "leg. Werkzeugstähle" %}, {% trans "z.B." %}</strong>
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+      <tr class="row-group">
+        <th colspan="11" scope="rowgroup">{% trans "leg. Werkzeugstähle" %}, {% trans "z.B." %}</th>
       </tr>
       <tr>
         <td class="table-no-top-border">
@@ -308,20 +256,8 @@
         <td class="table-no-top-border">{% trans "normal" %}</td>
       </tr>
 
-      <tr>
-        <td>
-          <strong>{% trans "Schnellstähle" %}, {% trans "z.B." %}</strong>
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+      <tr class="row-group">
+        <th colspan="11" scope="rowgroup">{% trans "Schnellstähle" %}, {% trans "z.B." %}</th>
       </tr>
       <tr>
         <td class="table-no-top-border">
@@ -354,20 +290,8 @@
         <td class="table-no-top-border">{% trans "normal" %}</td>
       </tr>
 
-      <tr>
-        <td>
-          <strong>{% trans "nicht rostende Stähle" %}, {% trans "z.B." %}</strong>
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+      <tr class="row-group">
+        <th colspan="11" scope="rowgroup">{% trans "nicht rostende Stähle" %}, {% trans "z.B." %}</th>
       </tr>
       <tr>
         <td class="table-no-top-border">
@@ -385,20 +309,8 @@
         <td class="table-no-top-border">{% trans "positiv" %}</td>
       </tr>
 
-      <tr>
-        <td>
-          <strong>{% trans "Sonderlegierungen" %}, {% trans "z.B." %}</strong>
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+      <tr class="row-group">
+        <th colspan="11" scope="rowgroup">{% trans "Sonderlegierungen" %}, {% trans "z.B." %}</th>
       </tr>
       <tr>
         <td class="table-no-top-border">
@@ -431,10 +343,8 @@
         <td class="table-no-top-border">{% trans "positiv" %}</td>
       </tr>
 
-      <tr>
-        <td>
-          <strong>AMPCO 18-20</strong>
-        </td>
+      <tr class="row-group-data">
+        <th scope="row">AMPCO 18-20</th>
         <td>10-8</td>
         <td>8-6</td>
         <td>6-4</td>
@@ -447,10 +357,8 @@
         <td>{% trans "normal" %}</td>
       </tr>
 
-      <tr>
-        <td>
-          <strong>AMPCO 21-26</strong>
-        </td>
+      <tr class="row-group-data">
+        <th scope="row">AMPCO 21-26</th>
         <td>10-8</td>
         <td>8-6</td>
         <td>6-4</td>
@@ -463,10 +371,8 @@
         <td>{% trans "normal" %}</td>
       </tr>
 
-      <tr>
-        <td>
-          <strong>{% trans "Stahlguss" %}</strong>
-        </td>
+      <tr class="row-group-data">
+        <th scope="row">{% trans "Stahlguss" %}</th>
         <td>14-10</td>
         <td>8-6</td>
         <td>6-4</td>
@@ -479,10 +385,8 @@
         <td>{% trans "normal" %}</td>
       </tr>
 
-      <tr>
-        <td>
-          <strong>{% trans "Gusseisen" %}</strong>
-        </td>
+      <tr class="row-group-data">
+        <th scope="row">{% trans "Gusseisen" %}</th>
         <td>14-10</td>
         <td>8-6</td>
         <td>6-4</td>
@@ -495,10 +399,8 @@
         <td>{% trans "normal" %}</td>
       </tr>
 
-      <tr>
-        <td>
-          <strong>{% trans "Spezialbronzen" %}</strong>
-        </td>
+      <tr class="row-group-data">
+        <th scope="row">{% trans "Spezialbronzen" %}</th>
         <td>10-8</td>
         <td>8-6</td>
         <td>6-4</td>
@@ -511,20 +413,8 @@
         <td>{% trans "normal" %}</td>
       </tr>
 
-      <tr>
-        <td>
-          <strong>{% trans "NE-Metalle" %}</strong>
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+      <tr class="row-group">
+        <th colspan="11" scope="rowgroup">{% trans "NE-Metalle" %}</th>
       </tr>
       <tr>
         <td class="table-no-top-border">
@@ -543,6 +433,7 @@
       </tr>
       </tbody>
     </table>
+    </div>
   </section>
 
   <section>
@@ -552,6 +443,7 @@
 
     <div class="row">
       <div class="col-md-6">
+        <div class="table-responsive">
         <table class="table table-condensed table-striped-column table-hover">
           <thead>
           <tr>
@@ -583,6 +475,7 @@
 
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   </section>

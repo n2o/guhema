@@ -12,18 +12,14 @@
   <div class="row">
     <div class="col-md-7">
       <h1>
-        {{ blade.quality }}<br>
+        {{ blade.quality }}
         <small>{{ blade.name }}</small>
       </h1>
       {{ blade.description|markdownify }}
     </div>
     <div class="col-md-5">
-      <p class="alert bg-orange-lighter" style="margin-top: 21px">
-        {% blocktrans %}Der schnelle Weg zu unserer Artikel-Nr.{% endblocktrans %}<br>
-        <span class="text-orange-bold">{% trans "Qualität" %}</span> + <span class="text-orange-bold">{% blocktrans %}Kennziffer (Abmessung){% endblocktrans %}</span> + <span class="text-orange-bold">{% trans "ZpZ" %}</span><br>
-        {% trans "z.B.:" %} <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}</span><br>
-        {% trans "z.B.:" %} <span class="text-orange-bold">{{ blade.type }}</span> + <span class="text-orange-bold">{{ indicators.0.value }}</span> + <span class="text-orange-bold">{% validBandsawIndicator indicators.0 %}</span> + <span class="text-orange-bold">{% trans "Sägeblattlänge" %}</span> = <span class="text-orange-bold">{{ blade.type }}{{ indicators.0.value }}{% validBandsawIndicator indicators.0 %}03800</span>
-      </p>
+      {% validBandsawIndicator indicators.0 as zpz %}
+      {% include 'products/include_article_path.html' with with_length=True %}
     </div>
   </div>
 
@@ -42,14 +38,15 @@
 
   {% include 'core/edit_item.html' with model="products_bandsawblade" id=blade.id %}
 
-  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
+  <div class="table-responsive">
+  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover spec-table">
     <thead>
       <tr>
         <th colspan="2" class="table-only-white-border-right"></th>
         <th colspan="14" class="table-no-border-color">{% trans "ZpZ" %}</th>
       </tr>
       <tr>
-        <th class="table-white-border-right table-no-bot-border" width="15%">{% trans "Abmessungen" %}</th>
+        <th class="table-white-border-right table-no-bot-border text-left" width="15%">{% trans "Abmessungen" %}</th>
         <th class="table-white-border-right table-no-bot-border" width="15%">{% trans "Kennziffer" %}</th>
         {% if "A" in blade.cols %}
           <th class="table-no-bot-border">1,25</th>
@@ -133,17 +130,17 @@
           <th class="table-no-bot-border">5-8</th>
         {% endif %}
         {% if "Fein" in blade.cols %}
-          <th class="table-no-bot-border">Fein</th>
+          <th class="table-no-bot-border">{% trans "Fein" %}</th>
         {% endif %}
         {% if "Standard" in blade.cols %}
           <th class="table-no-bot-border">Standard</th>
         {% endif %}
         {% if "Grob" in blade.cols %}
-          <th class="table-no-bot-border">Grob</th>
+          <th class="table-no-bot-border">{% trans "Grob" %}</th>
         {% endif %}
       </tr>
       <tr>
-        <th class="table-white-border-right table-no-top-border">{% blocktrans %}in mm:{% endblocktrans %} {% blocktrans %}B x S{% endblocktrans %}</th>
+        <th class="table-white-border-right table-no-top-border text-left">{% blocktrans %}in mm:{% endblocktrans %} {% blocktrans %}B x S{% endblocktrans %}</th>
         <th class="table-white-border-right table-no-top-border"></th>
         {% if "A" in blade.cols %}
           <th class="table-no-top-border">
@@ -295,6 +292,7 @@
             <span class="text-orange">...G</span>
           </th>
         {% endif %}
+        {% if user.is_staff %}<th class="table-no-top-border"><span class="sr-only">{% trans "Bearbeiten" %}</span></th>{% endif %}
       </tr>
     </thead>
     <tbody>
@@ -401,7 +399,7 @@
           {% if user.is_staff %}
             <td>
               <a href="{% url 'admin:products_bandsawbladeindicator_change' indicator.id %}">
-                <i class="fa fa-pencil-square-o"></i>
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i><span class="sr-only">{% trans "Bearbeiten" %}</span>
               </a>
             </td>
           {% endif %}
@@ -410,10 +408,11 @@
       {% endfor %}
     </tbody>
   </table>
+  </div>
 
   {% if blade.type == "NC20" or blade.type == "NC35" %}
-    S = {% trans "Standardzahn" %}<br>
-    K = {% trans "Klauenzahn" %}
+    <p>S = {% trans "Standardzahn" %}<br>
+    K = {% trans "Klauenzahn" %}</p>
   {% else %}
     {% include 'products/include_available_teeth.html' %}
   {% endif %}
