@@ -36,7 +36,7 @@ const nameChanged = changed(rows.map((row) => row.name));
   {rows.map((row, j) => (
     <>
       {nameChanged[j] && (
-        <h3 class={row.i === 0 ? 'padding-bottom' : 'padding-bottom padding-top-2'}>{row.name}</h3>
+        <h2 class={`h3 padding-bottom${row.i === 0 ? '' : ' padding-top-2'}`}>{row.name}</h2>
       )}
 
       <div class="blade-row">

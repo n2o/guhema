@@ -6,10 +6,10 @@ import { t, tr, type Lang } from '../../../lib/i18n';
 interface Props { lang: Lang; group: ProductGroup }
 const { lang, group } = Astro.props;
 ---
-<Base lang={lang}>
-  <h1 slot="heading">{tr(group.name, lang)}</h1>
+<Base lang={lang} description={t(lang, "Tipps für GUHEMA-Metallkreissägeblätter: Nachschärfen, Einspannen, Vorschub und Kühlung für saubere Schnitte und lange Standzeit.")}>
+  <h1 slot="heading">{tr(group.name, lang)} <small>{t(lang, 'Empfehlungen')}</small></h1>
 
-  <h3>{t(lang, 'Unsere Empfehlung für langen Sägespaß')}</h3>
+  <h2 class="h3">{t(lang, 'Worauf sollte ich beim Einsatz von Metallkreissägeblättern achten?')}</h2>
   <p>
     {t(lang, 'Für den Einsatz von GUHEMA-Metallkreissägeblättern empfehlen wir die wichtigen Spielregeln zwischen Werkstück, Sägeblatt und Maschine zu beachten, um optimale Schnittergebnisse zu erhalten:')}
   </p>

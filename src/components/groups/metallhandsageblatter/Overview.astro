@@ -21,7 +21,7 @@ const subcategoryChanged = changed(rows.map((row) => row.subcategory));
   <GroupHeader lang={lang} group={group} accessory />
 
   <div id="collapse-accessory" class="collapse">
-    <h3 class="padding-bottom">{t(lang, "Metallhandsägebügel")}</h3>
+    <h2 class="h3 padding-bottom">{t(lang, "Metallhandsägebügel")}</h2>
 
     {blades.filter((blade) => blade.accessory).map((blade) => (
       <div class="blade-row">
@@ -43,7 +43,7 @@ const subcategoryChanged = changed(rows.map((row) => row.subcategory));
     const inds = indicatorsOf(blade);
     return (
       <>
-        {subcategoryChanged[j] && <h3 class={i === 0 ? "padding-bottom" : "padding-bottom padding-top-2"}>{subcategory}</h3>}
+        {subcategoryChanged[j] && <h2 class={`h3 padding-bottom${i === 0 ? '' : ' padding-top-2'}`}>{subcategory}</h2>}
         <div class="blade-row">
           <BladeImage lang={lang} image={tr(blade.image, lang)} alias="blade_image_250h" alt={blade.quality} />
 

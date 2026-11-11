@@ -76,12 +76,12 @@ const future = [
 
 const problems = [
   [
-    ["Zahnbruch?", [
+    ["Warum brechen Zähne aus?", [
       "Zu niedrige Zähnezahl gewählt. Mindestens 3 Zähne sollten gleichzeitig im Eingriff sein, auch bei Rohren und Profilen.",
       "Über Eck angesägt.",
       "Falsche Einspannung des Werkstücks.",
     ]],
-    ["Blattbruch?", [
+    ["Warum bricht das Sägeblatt?", [
       "Schnittkanal wurde zusammengedrückt und blockierte das Sägeblatt.",
       "Falsche Blattspannung.",
       "Zu grobe Verzahnung für das Werkstück gewählt.",
@@ -90,7 +90,7 @@ const problems = [
     ]],
   ],
   [
-    ["Vorzeitiges Abstumpfen der Zähne?", [
+    ["Warum stumpfen die Zähne vorzeitig ab?", [
       "Zu feine Verzahnung gewählt.",
       "Zu hohe Schnittgeschwindigkeit für das Werkstück gewählt.",
       "Zu hoher Druck (erhöhte Zahnbelastung) oder zu niedriger Druck (Zähne schleifen über das Werkstück, statt einen Span zu heben).",
@@ -98,7 +98,7 @@ const problems = [
       "Falsche Sägeblattqualität gewählt.",
       "Kein Sägeblattausheben im Rücklauf.",
     ]],
-    ["Ungewollter Schnittverlauf?", [
+    ["Warum verläuft der Schnitt?", [
       "Falsche Blattspannung.",
       "Zu geringe Werkstückeinspannung.",
       "Zu hoher Schnittdruck.",
@@ -120,8 +120,8 @@ const rules = [
   "Beim Einsatz von Positivzahn und Future mit ca. 50%% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist.",
 ];
 ---
-<Base lang={lang}>
-  <h1 slot="heading">{tr(group.name, lang)}</h1>
+<Base lang={lang} description={t(lang, "Schnittdaten nach Werkstoff, Einsatzregeln und Ursachen für Zahnbruch, Blattbruch und Schnittverlauf: Empfehlungen für GUHEMA-Maschinensägeblätter.")}>
+  <h1 slot="heading">{tr(group.name, lang)} <small>{t(lang, 'Empfehlungen')}</small></h1>
 
   {t(lang, "Wir produzieren für Sie Maschinensägeblätter für alle Maschinensägetypen auf dem Markt. Unser Programm umfasst sowohl die Standardvarianten als auch die Kasto-Aufnahme und Sägeblätter aus Bi-Metall. Getreu dem Motto:")}
 
@@ -129,7 +129,7 @@ const rules = [
     {t(lang, "Wir liefern Ihnen das Maschinensägeblatt, das bei Ihnen zum optimalen Sägeergebnis führt!")}
   </blockquote>
 
-  <h3>{t(lang, "Unsere Empfehlung für langen Sägespaß")}</h3>
+  <h2 class="h3">{t(lang, "Worauf sollte ich beim Sägen mit Maschinensägeblättern achten?")}</h2>
 
   <section>
     <p>
@@ -154,7 +154,7 @@ const rules = [
   </section>
 
   <section>
-    <h3>{t(lang, "Schnittdatenempfehlung")}</h3>
+    <h2 class="h3">{t(lang, "Welche Zähnezahl, welcher Schnittdruck und welche Hubzahl für welchen Werkstoff?")}</h2>
     <p>
       {t(lang, "Schnittdatenempfehlung")} {t(lang, "bei Vollmaterial im normal geglühten Zustand für GUHEMA-Maschinensägeblätter basierend auf einer Hublänge von 200 mm.")}
     </p>
@@ -256,9 +256,9 @@ const rules = [
   </section>
 
   <section>
-    <h3>
-      {t(lang, "Anwendungsbereich für unsere GUHEMA Future Metallsägeblätter:")}
-    </h3>
+    <h2 class="h3">
+      {t(lang, "Für welche Materialstärken eignen sich GUHEMA Future Metallsägeblätter?")}
+    </h2>
 
     <div class="row">
       <div class="col-md-6">
@@ -285,8 +285,7 @@ const rules = [
   </section>
 
   <section>
-    <h3>{t(lang, "Unsere Empfehlung für grobe Verzahnungen")}</h3>
-    <h4>{t(lang, "Seitlicher Fasenanschliff")}</h4>
+    <h2 class="h3">{t(lang, "Was bringt der seitliche Fasenanschliff bei groben Verzahnungen?")}</h2>
 
     <p>
       <Fragment set:html={t(lang, "Nutzen Sie Ihren Vorteil durch unseren seitlichen Fasenanschliff. Sie erhalten sauberste Schnittergebnisse. Vorzeitiges Ausbrechen der Zähne wird durch den Fasenanschliff verhindert und wegen der leichten Spanabrollung ergibt sich eine geringere Belastung von Blatt und Maschine &#8594; Metallsägeblatt und Maschine leben länger.")} />
@@ -299,13 +298,13 @@ const rules = [
   </section>
 
   <section>
-    <h3>{t(lang, "Sie haben Probleme beim Sägen? – Wir haben die Antworten!")}</h3>
+    <h2 class="h3">{t(lang, "Welche Ursachen haben typische Probleme beim Sägen?")}</h2>
 
     {problems.map((row) => (
       <div class="row">
         {row.map(([title, causes], i) => (
           <div class={i ? 'col-md-offset-1 col-md-5' : 'col-md-5'}>
-            <h4>{t(lang, title)}</h4>
+            <h3 class="h4">{t(lang, title)}</h3>
             <p>{t(lang, "Mögliche Ursachen:")}</p>
             <ul>
               {causes.map((cause) => <li>{t(lang, cause)}</li>)}
@@ -315,7 +314,7 @@ const rules = [
       </div>
     ))}
 
-    <h4>{t(lang, "Keine passende Antwort?")}</h4>
+    <h3 class="h4">{t(lang, "Keine passende Antwort?")}</h3>
     <p>
       {t(lang, "Dann sprechen Sie mit einem Experten! Kontaktieren Sie unsere Anwendungsberatung unter")}
       <a href="tel:+492191886720">+49 (0) 2191 88 67-20</a>.

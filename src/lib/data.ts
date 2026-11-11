@@ -154,6 +154,14 @@ export const changed = <T>(keys: T[]) => keys.map((key, i) => i === 0 || key !==
 /** URL path segment of a detail page: band saw blades by id, others by type. */
 const detailItem = (group: ProductGroup, blade: SawBlade) => (group.slug === 'metallsagebander' ? String(blade.id) : blade.type);
 export const detailPath = (group: ProductGroup, blade: SawBlade) => `/produkte/${group.slug}/${detailItem(group, blade)}/`;
+export const bladeName = (blade: SawBlade) => `${blade.quality} ${blade.type}`.trim();
+
+/** PDF catalogues in public/static/catalogs (guhema_catalog_<code>.pdf, _print.pdf, _front.jpg): [code, language, cover width, height] */
+export const catalogs = [
+  ['de', 'deutsch', 300, 425],
+  ['en', 'englisch', 297, 420],
+  ['ru', 'russisch', 297, 420],
+] as const;
 
 /** Detail pages of a group (rendered only for groups with a Details.astro); the first blade wins per item. */
 export function detailItems(group: ProductGroup): { item: string; blade: SawBlade }[] {

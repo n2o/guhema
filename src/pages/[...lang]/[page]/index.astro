@@ -3,7 +3,7 @@
 import Base from '../../../layouts/Base.astro';
 import { LANGS, inAllLangs, langOf, tr, type Translated } from '../../../lib/i18n';
 
-type Page = { frontmatter: { title: string }; Content: any };
+type Page = { frontmatter: { title: string; description?: string }; Content: any };
 
 export function getStaticPaths() {
   const files = import.meta.glob<Page>('/src/content/pages/*.md', { eager: true });
@@ -17,7 +17,7 @@ export function getStaticPaths() {
 const { page } = Astro.props;
 const { Content, frontmatter } = page;
 ---
-<Base lang={langOf(Astro.params.lang)} title={frontmatter.title}>
+<Base lang={langOf(Astro.params.lang)} title={frontmatter.title} description={frontmatter.description}>
   <h1 slot="heading">{frontmatter.title}</h1>
   <div class="prose"><Content /></div>
 </Base>

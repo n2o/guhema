@@ -1,16 +1,15 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import { statSync } from 'node:fs';
+import { catalogs } from '../../../lib/data';
 import { inAllLangs, langOf, t } from '../../../lib/i18n';
 
 export const getStaticPaths = () => inAllLangs();
 const lang = langOf(Astro.params.lang);
-const catalogs = [
-  ['de', 'deutsch', 300, 425],
-  ['en', 'englisch', 297, 420],
-  ['ru', 'russisch', 297, 420],
-] as const;
+const printPdf = (code: string) => `/static/catalogs/guhema_catalog_${code}_print.pdf`;
+const mb = (path: string) => Math.round(statSync(`public${path}`).size / 1e6);
 ---
-<Base lang={lang} title={t(lang, 'Kataloge')}>
+<Base lang={lang} title={t(lang, 'Kataloge')} description={t(lang, 'GUHEMA-Kataloge als PDF zum Download, auf Deutsch, Englisch und Russisch: alle Metallsägeblätter, Sägebänder und Lochsägen mit Abmessungen.')}>
   <h1 slot="heading">{t(lang, 'Kataloge')}</h1>
 
   <p class="lead prose">
@@ -23,6 +22,9 @@ const catalogs = [
         <a href={`/static/catalogs/guhema_catalog_${code}.pdf`}>
           <img src={`/static/catalogs/guhema_catalog_${code}_front.jpg`} class="catalog-cover" alt="" width={width} height={height}>
           <span class="btn btn-default btn-block"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {t(lang, 'Katalog')}, {t(lang, language)}<span class="sr-only"> (PDF)</span></span>
+        </a>
+        <a class="catalog-print" href={printPdf(code)}>
+          {t(lang, 'Druckversion')} (PDF, {mb(printPdf(code))} {t(lang, 'MB')})
         </a>
       </div>
     ))}

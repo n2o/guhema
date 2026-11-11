@@ -5,7 +5,7 @@ import { inAllLangs, langOf, t } from '../../../lib/i18n';
 export const getStaticPaths = () => inAllLangs();
 const lang = langOf(Astro.params.lang);
 ---
-<Base lang={lang} title={t(lang, 'Unternehmen')}>
+<Base lang={lang} title={t(lang, 'Unternehmen')} description={t(lang, 'GUHEMA aus Remscheid: Metallsägeblätter Made in Germany seit 1867, Familienunternehmen in 5. Generation, zertifiziert nach DIN EN ISO 9001 seit 1997.')}>
   <h1 slot="heading">GUHEMA</h1>
 
   <div class="row">

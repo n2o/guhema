@@ -5,7 +5,7 @@ import { seoFor } from '../lib/seo';
 
 interface Props {
   lang: Lang;
-  /** Page title prefix; " | " and the company name are appended. */
+  /** Page title; " | GUHEMA" is appended unless it already names the brand. */
   title?: string;
   description?: string;
   /** Show the product-group band above the heading (layout_productgroups.html). */
@@ -16,12 +16,13 @@ interface Props {
 const { lang, productGroups = true, notFound } = Astro.props;
 const here = notFound ? '/' : basePath(Astro.url.pathname);
 const seo = seoFor(here, lang);
-const title = Astro.props.title ?? seo.title;
+const title = Astro.props.title || seo.title || t(lang, 'GUHEMA – Metallsägeblätter, Sägebänder und Lochsägen aus Remscheid');
 const description = Astro.props.description ?? seo.description ??
   t(lang, 'GUHEMA GmbH & Co. KG, Remscheid: Metallsägeblätter, Sägebänder, Lochsägen und Kreissägeblätter. Made in Germany seit 1867.');
 const abs = (path: string) => new URL(path, Astro.site).href;
 const canonical = abs(url(lang, here));
-const fullTitle = `${title ? `${title} | ` : ''}GUHEMA GmbH & Co. KG`;
+// Product names already contain the brand ("No. 35 GUHEMA Bi-Co-lastic"): no second "| GUHEMA"
+const fullTitle = /guhema/i.test(title) ? title : `${title} | GUHEMA`;
 const OG_LOCALE = { de: 'de_DE', en: 'en_US', ru: 'ru_RU' } as const;
 const jsonLd = [
   seo.crumbs.length > 1 && {
@@ -29,12 +30,13 @@ const jsonLd = [
     '@type': 'BreadcrumbList',
     itemListElement: seo.crumbs.map(([name, path], i) => ({ '@type': 'ListItem', position: i + 1, name, item: abs(url(lang, path)) })),
   },
-  here === '/' && {
+  here === '/' && !notFound && {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'GUHEMA GmbH & Co. KG',
     url: abs('/'),
     logo: abs('/static/img/logo/guhema80px.png'),
+    description,
     email: 'info@guhema.com',
     telephone: '+49 2191 8867 0',
     foundingDate: '1867',

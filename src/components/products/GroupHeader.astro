@@ -2,6 +2,7 @@
 // Header of a product group page: image, description, recommendations/accessory buttons
 import Thumb from '../Thumb.astro';
 import type { ProductGroup } from '../../lib/data';
+import { hasPage } from '../../lib/routes';
 import { t, tr, url, type Lang } from '../../lib/i18n';
 import { markdown } from '../../lib/markdown';
 
@@ -12,8 +13,7 @@ interface Props {
   accessory?: boolean;
 }
 const { lang, group, accessory } = Astro.props;
-// Link the recommendations page when the group has one (lazy glob: keys only, no import cycle)
-const advice = `/src/components/groups/${group.slug}/Advices.astro` in import.meta.glob('/src/components/groups/*/Advices.astro');
+const advice = hasPage(group, 'Advices');
 const name = tr(group.name, lang) ?? '';
 ---
 <div class="row group-header">

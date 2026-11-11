@@ -7,10 +7,10 @@ interface Props { lang: Lang; group: ProductGroup }
 const { lang, group } = Astro.props;
 const objects = sortBy(holeSawDiameters.filter((d) => d.advice), (d) => d.diameter);
 ---
-<Base lang={lang}>
-  <h1 slot="heading">{tr(group.name, lang)}</h1>
+<Base lang={lang} description={t(lang, "Empfohlene Drehzahlen für GUHEMA-Lochsägen nach Durchmesser und Werkstoff: Edelstahl, Guss, Stahl, Buntmetalle und Aluminium.")}>
+  <h1 slot="heading">{tr(group.name, lang)} <small>{t(lang, 'Empfehlungen')}</small></h1>
 
-  <h3>{t(lang, 'Unsere Empfehlung für langen Sägespaß')}</h3>
+  <h2 class="h3">{t(lang, 'Welche Drehzahl für welche Lochsäge und welchen Werkstoff?')}</h2>
   <p>
     {t(lang, 'Bitte passen Sie Ihre Umdrehungszahl den folgenden Empfehlungen an, um die Lebensdauer der Lochsäge und die Schnittqualität zu optimieren. Bitte vergessen Sie des Weiteren nicht die permanente Kühlung der Lochsäge während des Schneidprozesses.')}
   </p>

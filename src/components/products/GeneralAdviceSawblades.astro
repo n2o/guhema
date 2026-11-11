@@ -11,7 +11,7 @@ interface Props {
 const { lang, noToothforms } = Astro.props;
 ---
 <div>
-  <h3>{t(lang, "Material, Qualitäten und Einsatzbereiche")}</h3>
+  <h2 class="h3">{t(lang, "Material, Qualitäten und Einsatzbereiche")}</h2>
   <p>
     {t(lang, "Unser Streben nach perfekter Sägequalität beginnt schon bei der Auswahl unseres Vormaterials, denn dies ist die Ausgangsbasis für unsere Spitzenprodukte – nichts geht durch unsere Eingangskontrolle, was nicht die Note „Sehr gut“ verdient.")}
   </p>
@@ -64,7 +64,7 @@ const { lang, noToothforms } = Astro.props;
   </div>
 
   {!noToothforms && (<>
-  <h3>{t(lang, "Die Wahl der richtigen Zahnform")}</h3>
+  <h2 class="h3">{t(lang, "Die Wahl der richtigen Zahnform")}</h2>
   <p>
     {t(lang, "Unsere GUHEMA-Maschinensägeblätter haben erst durch die richtige Zahnform den optimalen Biss. Wir liefern:")}
   </p>

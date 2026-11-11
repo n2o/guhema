@@ -23,7 +23,7 @@ const subcategoryChanged = changed(subcategories);
   {blades.map((blade, i) => (
     <>
       {/* ifchanged blade.subcategory */}
-      {subcategoryChanged[i] && <h3 class="padding-bottom">{subcategories[i]}</h3>}
+      {subcategoryChanged[i] && <h2 class="h3 padding-bottom">{subcategories[i]}</h2>}
 
       <div class="blade-row">
         <BladeImage lang={lang} image={tr(blade.image, lang)} alias="blade_image_250h" alt={blade.type} />

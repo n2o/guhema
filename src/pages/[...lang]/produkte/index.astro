@@ -8,7 +8,7 @@ import { markdown } from '../../../lib/markdown';
 export const getStaticPaths = () => inAllLangs();
 const lang = langOf(Astro.params.lang);
 ---
-<Base lang={lang}>
+<Base lang={lang} description={t(lang, 'GUHEMA-Produkte: Maschinensägeblätter, Metallsägebänder, Metallkreissägeblätter, Lochsägen sowie Stich-, Säbel- und Handsägeblätter für Metall.')}>
   <h1 slot="heading">{t(lang, 'Produkte')}</h1>
 
   {publicGroups().map((group) => {
@@ -20,7 +20,7 @@ const lang = langOf(Astro.params.lang);
           <Thumb path={group.image} alias="products_teaserimage" alt={name} href={href} />
         </div>
         <div class="col-sm-9 group-header-text">
-          <h3 class="products-index-h3"><a href={href}>{name}</a></h3>
+          <h2 class="h3 products-index-h3"><a href={href}>{name}</a></h2>
           <div class="markdown" set:html={markdown(tr(group.description, lang))} />
           <p class="padding-top-05"><a href={href}>{t(lang, 'Zu den Produkten')}</a></p>
         </div>

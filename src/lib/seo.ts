@@ -1,5 +1,5 @@
 // Titles, descriptions and breadcrumbs for product pages, derived from the German path.
-import { detailItems, groupBySlug } from './data';
+import { bladeName, detailItems, groupBySlug } from './data';
 import { t, tr, type Lang } from './i18n';
 
 export interface Seo {
@@ -11,7 +11,11 @@ export interface Seo {
 
 /** Markdown/HTML to one plain-text line of at most `max` characters, cut at a word boundary. */
 export function snippet(text: string | null | undefined, max = 155): string | undefined {
-  const plain = (text ?? '').replace(/<[^>]+>|[*_#>`\[\]]|\(https?:[^)]*\)|­/g, '').replace(/\s+/g, ' ').trim();
+  const plain = (text ?? '').trim()
+    // a line before a list item or blank line ends a sentence (trailing ** etc. ignored)
+    .replace(/(?<![.!?:,;\s][*_]*)[ \t]*\r?\n(?=[ \t]*(?:[*+-]|\d+\.)[ \t]|[ \t]*\r?\n)/g, '.\n')
+    .replace(/^[ \t]*(?:[+-]|\d+\.)[ \t]+/gm, '') // list markers (* is stripped below)
+    .replace(/<[^>]+>|[*_#>`\[\]]|\(https?:[^)]*\)|­/g, '').replace(/\s+/g, ' ').trim();
   if (!plain) return undefined;
   if (plain.length <= max) return plain;
   const cut = plain.lastIndexOf(' ', max - 1);
@@ -40,11 +44,11 @@ export function seoFor(path: string, lang: Lang): Seo {
   }
   const blade = detailItems(group).find((d) => d.item === item)?.blade;
   if (!blade) return { title: name, description, crumbs };
-  const bladeName = `${blade.quality} ${blade.type}`.trim();
-  crumbs.push([bladeName, `${groupPath}${item}/`]);
+  const product = bladeName(blade);
+  crumbs.push([product, `${groupPath}${item}/`]);
   return {
-    title: `${bladeName} – ${name}`,
-    description: snippet([bladeName, tr(blade.description, lang), name].filter(Boolean).join(' · ')),
+    title: `${product} – ${name}`,
+    description: snippet([product, tr(blade.description, lang), name].filter(Boolean).join(' · ')),
     crumbs,
   };
 }

@@ -22,7 +22,7 @@ const headingChanged = changed(headings);
   {blades.map((blade, i) => {
     const details = url(lang, detailPath(group, blade));
     return (<>
-      {headingChanged[i] && <h3 class="padding-bottom">{headings[i]}</h3>}
+      {headingChanged[i] && <h2 class="h3 padding-bottom">{headings[i]}</h2>}
 
       <div class="blade-row">
         <div class="row">
