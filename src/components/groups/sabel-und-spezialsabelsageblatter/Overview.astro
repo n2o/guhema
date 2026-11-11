@@ -1,0 +1,122 @@
+---
+// Former products/sabel-und-spezialsabelsageblatter/overview.html
+import Base from '../../../layouts/Base.astro';
+import BladeImage from '../../products/BladeImage.astro';
+import GroupHeader from '../../products/GroupHeader.astro';
+import { bladesOfGroup, changed, indicatorsOf, type ProductGroup } from '../../../lib/data';
+import { float, t, tr, type Lang } from '../../../lib/i18n';
+import { markdown } from '../../../lib/markdown';
+
+interface Props {
+  lang: Lang;
+  group: ProductGroup;
+}
+const { lang, group } = Astro.props;
+const blades = bladesOfGroup(group);
+
+// SSM rows get no block of their own: they are the second line of the row before (blades|next).
+// The name h3 is shown when the name differs from the last rendered blade (ifchanged), so SSM rows are skipped there too.
+const rows = blades.flatMap((blade, i) => blade.type === 'SSM' ? [] : [{
+  blade,
+  i,
+  name: tr(blade.name, lang),
+  next: blades[i + 1],
+  toothing: tr(blade.toothing, lang),
+  minerals: tr(blade.cutting_minerals, lang),
+  image: tr(blade.image, lang),
+  description: markdown(tr(blade.description, lang)),
+  indicators: indicatorsOf(blade),
+}]);
+const nameChanged = changed(rows.map((row) => row.name));
+---
+<Base lang={lang}>
+  <h1 slot="heading">{tr(group.name, lang)}</h1>
+
+  <GroupHeader lang={lang} group={group} />
+
+  {rows.map((row, j) => (
+    <>
+      {nameChanged[j] && (
+        <h3 class={row.i === 0 ? 'padding-bottom' : 'padding-bottom padding-top-2'}>{row.name}</h3>
+      )}
+
+      <div class="blade-row">
+        <BladeImage lang={lang} image={row.image} alias="blade_image_250h" alt={row.blade.quality} />
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="spec-line">
+              <img src="/static/img/other/shark_small_45w.png" alt="">
+              <span>
+                {row.blade.quality} <span class="text-orange-bold">{row.blade.type}</span>
+                {row.next?.type === 'SSM' && (
+                  <>
+                    <br>{row.next.quality} <span class="text-orange-bold">{row.next.type}</span>
+                  </>
+                )}
+              </span>
+            </div>
+            <div class="spec-line">
+              <img src="/static/img/other/tool_small_45w.png" alt="">
+              <div set:html={row.description} />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="table-responsive">
+              <table class="table table-condensed table-striped-column table-hover">
+                <thead>
+                <tr>
+                  {row.toothing && <th>{t(lang, 'Verzahnung')}</th>}
+                  {row.blade.cutting_metal && <th>{t(lang, 'Schnittbereich Metall')}</th>}
+                  {row.blade.cutting_wood && <th>{t(lang, 'Schnittbereich Holz')}</th>}
+                  {row.minerals && <th>{t(lang, 'Schnittbereich Mineralisch')}</th>}
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  {row.toothing && (
+                    <td>
+                      {row.toothing}
+                      {row.blade.toothing?.de !== 'Welle' && <> {t(lang, 'ZpZ')}</>}
+                    </td>
+                  )}
+                  {row.blade.cutting_metal && <td>{row.blade.cutting_metal} {t(lang, 'mm')}</td>}
+                  {row.blade.cutting_wood && <td>{row.blade.cutting_wood} {t(lang, 'mm')}</td>}
+                  {row.minerals && <td>{row.minerals}</td>}
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-condensed table-striped-column table-hover spec-table">
+            <tr>
+              <th scope="row" width="200px">
+                {t(lang, 'Sägeblatt')} {t(lang, 'Länge')} [{t(lang, 'mm')}]
+              </th>
+              {row.indicators.map((ind) => <td>{ind.length}</td>)}
+            </tr>
+            <tr>
+              <th scope="row">
+                {t(lang, 'Breite')} x {t(lang, 'Stärke')} [{t(lang, 'mm')}]
+              </th>
+              {row.indicators.map((ind) => <td>{ind.width} x {float(lang, ind.strength)}</td>)}
+            </tr>
+            <tr>
+              <th scope="row">
+                {row.next?.type === 'SSM' ? t(lang, 'Kennziffer') : t(lang, 'Bestell-Nr.')}
+              </th>
+              {row.indicators.map((ind) => (
+                <td class="text-orange-bold">
+                  {row.next?.type === 'SSM' ? `...${ind.value}` : `${row.blade.type}${ind.value}`}
+                </td>
+              ))}
+            </tr>
+          </table>
+        </div>
+      </div>
+    </>
+  ))}
+</Base>

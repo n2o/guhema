@@ -1,0 +1,32 @@
+[
+ {
+  "id": 1,
+  "name": "Standard",
+  "slug": "standard",
+  "image": {
+   "de": "standardaufnahme_gKGtoKY.png",
+   "en": "blades/standardaufnahme_en_Z0PZSUT.png",
+   "ru": "blades/standardaufnahme_ru_6uotBOe.png"
+  }
+ },
+ {
+  "id": 2,
+  "name": "Kasto",
+  "slug": "kasto",
+  "image": {
+   "de": "kastoaufnahme.png",
+   "en": "blades/kastoaufnahme_en.png",
+   "ru": "blades/kastoaufnahme_ru.png"
+  }
+ },
+ {
+  "id": 3,
+  "name": "None",
+  "slug": "none",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  }
+ }
+]

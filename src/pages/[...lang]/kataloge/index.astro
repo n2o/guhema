@@ -1,0 +1,30 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { inAllLangs, langOf, t } from '../../../lib/i18n';
+
+export const getStaticPaths = () => inAllLangs();
+const lang = langOf(Astro.params.lang);
+const catalogs = [
+  ['de', 'deutsch', 300, 425],
+  ['en', 'englisch', 297, 420],
+  ['ru', 'russisch', 297, 420],
+] as const;
+---
+<Base lang={lang} title={t(lang, 'Kataloge')}>
+  <h1 slot="heading">{t(lang, 'Kataloge')}</h1>
+
+  <p class="lead prose">
+    {t(lang, 'Wenn Sie noch weitere Informationen zu unseren Produkten erhalten möchten, können Sie hier unsere Kataloge downloaden.')}
+  </p>
+
+  <div class="row">
+    {catalogs.map(([code, language, width, height]) => (
+      <div class="col-xs-6 col-sm-4 catalog">
+        <a href={`/static/catalogs/guhema_catalog_${code}.pdf`}>
+          <img src={`/static/catalogs/guhema_catalog_${code}_front.jpg`} class="catalog-cover" alt="" width={width} height={height}>
+          <span class="btn btn-default btn-block"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> {t(lang, 'Katalog')}, {t(lang, language)}<span class="sr-only"> (PDF)</span></span>
+        </a>
+      </div>
+    ))}
+  </div>
+</Base>

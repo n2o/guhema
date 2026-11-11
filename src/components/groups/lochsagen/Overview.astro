@@ -1,0 +1,185 @@
+---
+import Base from '../../../layouts/Base.astro';
+import GroupHeader from '../../products/GroupHeader.astro';
+import AvailableTeeth from '../../products/AvailableTeeth.astro';
+import { holeSaws, holeSawDiameters, holeSawsOf, sortBy, type ProductGroup } from '../../../lib/data';
+import { t, tr, type Lang } from '../../../lib/i18n';
+import { showDiameters } from '../../../lib/products';
+
+interface Props { lang: Lang; group: ProductGroup }
+const { lang, group } = Astro.props;
+const blades = holeSaws;
+const other = sortBy(holeSawDiameters.filter((d) => !d.advice), (d) => d.diameter);
+const centering = (range: string) => blades.filter((b) => b.saw_length === range);
+const accessories = blades.filter((b) => b.category.de === 'Zubehör / Ersatzteile');
+const num = '1.3247';
+---
+<Base lang={lang}>
+  <h1 slot="heading">
+    {tr(group.name, lang)}
+  </h1>
+
+  <GroupHeader lang={lang} group={group} />
+
+  <h3>{t(lang, 'Material, Qualitäten und Einsatzbereiche')}</h3>
+  <p>
+    {t(lang, 'Präzision, das Resultat unserer massiven Deckelplatte, lange Lebensdauer und Laufruhe, hervorgerufen durch die variable Verzahnung mit ihrer optimalen Spanabfuhr, zeichnen unsere Bi-Metall-Lochsägen aus. Unsere feinverzahnten Lochsägen sind bestens für dünnwandige Materialien geeignet. Bei Mineral- und Verbundwerkstoffen erzielen unsere hartmetallbeschichteten Lochsägen beste Ergebnisse. Mit diesem Lieferprogramm bleiben keine Wünsche offen.')}
+  </p>
+
+  <div class="well">
+    <div class="row">
+    <div class="col-md-8">
+      <div class="spec-line"><img src="/static/img/other/shark_small_45w.png" alt="">
+        <span>GUHEMA Bi-Co-lastic <span class="text-orange-bold"> HSM... </span></span>
+      </div>
+      <div class="spec-line"><img src="/static/img/other/blade_small_45w.png" alt="">
+        <span>{t(lang, 'Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. %(num)s)', { num })}</span>
+      </div>
+      <div class="spec-line"><img src="/static/img/other/tool_small_45w.png" alt="">
+        <span>4/6 {t(lang, 'ZpZ')} {t(lang, 'das Allroundtalent')}</span>
+      </div>
+
+      <div class="padding-top-05">
+        <div class="spec-line"><img src="/static/img/other/shark_small_45w.png" alt="">
+        <span>GUHEMA Bi-Co-lastic <span class="text-orange-bold"> HSM... </span></span>
+      </div>
+        <div class="spec-line"><img src="/static/img/other/blade_small_45w.png" alt="">
+        <span>{t(lang, 'Bi-Metall, mit HSS-Schneide aus M42 Qualität (Werkstoff-Nr. %(num)s)', { num })}</span>
+      </div>
+        <div class="spec-line"><img src="/static/img/other/tool_small_45w.png" alt="">
+        <span>10 {t(lang, 'ZpZ')} {t(lang, 'für dünnwandiges Material')}</span>
+      </div>
+      </div>
+
+      <div class="padding-top-05">
+        <div class="spec-line"><img src="/static/img/other/shark_small_45w.png" alt="">
+        <span>GUHEMA HM-Granulat <span class="text-orange-bold"> HSH... </span></span>
+      </div>
+        <div class="spec-line"><img src="/static/img/other/blade_small_45w.png" alt="">
+        <span>{t(lang, 'Zähne mit Hartmetallgranulat beschichtet')}</span>
+      </div>
+        <div class="spec-line"><img src="/static/img/other/tool_small_45w.png" alt="">
+        <span>{t(lang, 'Für mineralische Werkstoffe')}</span>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <p class="alert bg-orange-lighter" style="margin-top: 21px">
+        {t(lang, 'Der schnelle Weg zu unserer Artikel-Nr.')}<br>
+        <span class="text-orange-bold">{t(lang, 'Qualität')}</span> + <span class="text-orange-bold">&Oslash;</span> +
+        <span class="text-orange-bold">{t(lang, 'ZpZ')}</span><br>
+        {t(lang, 'z.B.:')}
+        <span class="text-orange-bold">
+          HSM
+        </span> + <span class="text-orange-bold">014</span> + <span class="text-orange-bold">V</span> = <span
+          class="text-orange-bold">HSM014V</span>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <h3>{t(lang, 'Zentriereinheiten')}</h3>
+
+  <div class="row">
+    {['14 - 30', '32 - 210'].map((range) => (
+      <div class="col-md-6">
+        <div class="table-responsive">
+        <table class="table table-condensed table-striped-column table-hover">
+          <thead>
+          <tr>
+            <th>{t(lang, 'Aufnahmeschaft')}</th>
+            <th>{t(lang, 'Lochsäge')}</th>
+            <th width="20%">{t(lang, 'Bestell-Nr.')}</th>
+          </tr>
+          </thead>
+          <tbody>
+          {centering(range).map((blade) => (
+            <tr>
+              <td>{tr(blade.mounting, lang)}</td>
+              <td>{blade.saw_length} {t(lang, 'mm')}</td>
+              <td>
+                  <span class="text-orange-bold">
+                    {blade.ordernr}
+                  </span>
+              </td>
+            </tr>
+          ))}
+          </tbody>
+        </table>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <h3>{t(lang, 'Zubehör / Ersatzteile')}</h3>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="table-responsive">
+      <table class="table table-condensed table-striped-column table-hover">
+        <thead>
+        <tr>
+          <th>{t(lang, 'Beschreibung')}</th>
+          <th width="20%">{t(lang, 'Bestell-Nr.')}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {accessories.map((blade) => (
+          <tr>
+            <td>{tr(blade.description, lang)}</td>
+            <td>
+                <span class="text-orange-bold">
+                  {blade.ordernr}
+                </span>
+            </td>
+          </tr>
+        ))}
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <h3>{t(lang, 'Durchmesser')}</h3>
+
+  <div class="table-responsive">
+
+  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover">
+    <thead>
+    <tr>
+      <th class="text-center table-white-border-right table-no-bot-border">&Oslash;</th>
+      <th class="text-center table-no-bot-border">GUHEMA Bi-Co-lastic</th>
+      <th class="text-center table-no-bot-border">GUHEMA Bi-Co-lastic</th>
+      <th class="text-center table-no-bot-border">{t(lang, 'HM-Granulat')}</th>
+    </tr>
+    <tr>
+      <th class="text-center table-no-top-border table-white-border-right">{t(lang, 'in mm')}</th>
+      <th class="text-center table-no-top-border">
+        4/6 {t(lang, 'ZpZ')}
+        <span class="text-orange">...V</span>
+      </th>
+      <th class="text-center table-no-top-border">
+        10 {t(lang, 'ZpZ')}
+        <span class="text-orange">...J</span>
+      </th>
+      <th class="text-center table-no-top-border">
+        <span class="text-orange">...S</span>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    {other.map((diameter) => (
+      <tr>
+        <td class="table-white-border-right">{diameter.diameter}</td>
+        <Fragment set:html={showDiameters(lang, holeSawsOf(diameter))} />
+      </tr>
+    ))}
+    </tbody>
+  </table>
+
+  </div>
+
+  <AvailableTeeth lang={lang} />
+</Base>

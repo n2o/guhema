@@ -1,0 +1,38 @@
+---
+// Former include_productheader.html
+import Thumb from '../Thumb.astro';
+import type { ProductGroup } from '../../lib/data';
+import { t, tr, url, type Lang } from '../../lib/i18n';
+import { markdown } from '../../lib/markdown';
+
+interface Props {
+  lang: Lang;
+  group: ProductGroup;
+  /** Toggle button for the #collapse-accessory block. */
+  accessory?: boolean;
+}
+const { lang, group, accessory } = Astro.props;
+// Link the recommendations page when the group has one (lazy glob: keys only, no import cycle)
+const advice = `/src/components/groups/${group.slug}/Advices.astro` in import.meta.glob('/src/components/groups/*/Advices.astro');
+const name = tr(group.name, lang) ?? '';
+---
+<div class="row group-header">
+  <div class="col-sm-3">
+    <Thumb path={group.image} alias="products_teaserimage" alt={name} />
+  </div>
+  <div class="col-sm-9 group-header-text">
+    <div class="markdown" set:html={markdown(tr(group.description, lang))} />
+    {advice && (
+      <a class="btn btn-primary" role="button" href={url(lang, `/produkte/${group.slug}/empfehlungen/`)}>
+        {t(lang, 'Zu unseren Empfehlungen')}
+      </a>
+    )}
+    {accessory && (
+      <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse-accessory"
+         aria-expanded="false" aria-controls="collapse-accessory">
+        {t(lang, 'Zubehörartikel anzeigen')}
+        <span class="caret"></span>
+      </a>
+    )}
+  </div>
+</div>

@@ -1,0 +1,39 @@
+name: Deploy
+
+# Manual only until the cutover to Strato. Then enable:
+#   push: { branches: [main] }
+#   schedule: [{ cron: '0 4 1 1 *' }]   # yearly rebuild for the copyright year in the footer
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      # Uploads into its own directory (point the domain there in the Strato panel): --delete only cleans up old build files.
+      # Every file is re-uploaded (a fresh checkout has new mtimes); comparing by size would miss same-length edits.
+      - name: Upload to Strato via SFTP
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+        run: |
+          sudo apt-get update && sudo apt-get install -y lftp
+          lftp -u "$SFTP_USER,$SFTP_PASSWORD" "sftp://$SFTP_HOST" -e "
+            set sftp:auto-confirm yes;
+            mirror --reverse --delete --verbose --exclude-glob .DS_Store dist/ /guhema/;
+            quit"

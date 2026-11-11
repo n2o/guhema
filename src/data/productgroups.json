@@ -1,0 +1,130 @@
+[
+ {
+  "id": 1,
+  "name": {
+   "de": "Maschinensägeblätter",
+   "en": "Power Hacksaw Blades",
+   "ru": "Машинные ножовочные полотна"
+  },
+  "description": {
+   "de": "Wir geben Ihnen die Garantie, dass Sie mit einem Sägeblatt, das den Namen ­GUHEMA trägt, ein Spitzenprodukt der Zerspanungstechnologie erwerben. Der adäquate Nutzen für Ihren Produktionsablauf und die hohe Lebensdauer von Sägeblatt und Maschine werden auch im permanenten, harten Dauereinsatz gewährleistet.",
+   "en": "We guarantee that with a saw blade bearing the GUHEMA name, you are buying a top product of cutting technology. The right benefit for your production process and a long service life of saw blade and machine are ensured even in continuous, heavy-duty use.",
+   "ru": "Мы гарантируем: приобретая пильное полотно с именем GUHEMA, вы получаете первоклассный продукт технологии резания. Ощутимая польза для вашего производственного процесса и долгий срок службы полотна и станка обеспечиваются даже при постоянной интенсивной эксплуатации."
+  },
+  "slug": "maschinensageblatter",
+  "image": "maschinensaege.jpg",
+  "public": true
+ },
+ {
+  "id": 2,
+  "name": {
+   "de": "Metallstichsägeblätter",
+   "en": "Metal Jigsaw Blades",
+   "ru": "Пилки для лобзиков по металлу"
+  },
+  "description": {
+   "de": "GUHEMA-Metallstichsägeblätter, produziert für höchste Schnittleistung, für alle gängigen Druckluft-, Hydraulik- und Elektro-Stichsägemaschinen. Neben unseren Standardprodukten fertigen wir ebenfalls auf Kundenwunsch Spezialabmessungen an.",
+   "en": "GUHEMA metal jigsaw blades, made for maximum cutting performance, for all common pneumatic, hydraulic and electric jigsaws. In addition to our standard products, we also manufacture special dimensions to customer specification.",
+   "ru": "Пилки для лобзиков по металлу GUHEMA, созданные для максимальной производительности резания, подходят для всех распространенных пневматических, гидравлических и электрических лобзиков. Помимо стандартной продукции мы по желанию клиента изготавливаем и специальные размеры."
+  },
+  "slug": "metallstichsageblatter",
+  "image": "metallstichsaege.jpg",
+  "public": true
+ },
+ {
+  "id": 3,
+  "name": {
+   "de": "Säbel- und Spezialsäbelsägeblätter",
+   "en": "Sabre and Special Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил, в том числе специальные"
+  },
+  "description": {
+   "de": "Ganz gleichgültig, welchen Maschinensägen-Typ Sie haben, welches Material Sie trennen wollen, wie das Profil aussieht oder ob Sie mit der Säge \"die Kurve kriegen müssen\" - GUHEMA-Säbel- und Spezialsäbelsägeblätter erfüllen alle Anforderungen, die Sie stellen!",
+   "en": "No matter what type of power saw you have, what material you want to cut, what the profile looks like or whether your saw needs to \"get round the bend\" – GUHEMA sabre and special sabre saw blades meet all your requirements!",
+   "ru": "Неважно, какой у вас тип пилы, какой материал нужно разрезать, какой у него профиль и нужно ли пилить «по кривой», — стандартные и специальные полотна GUHEMA для сабельных пил отвечают всем вашим требованиям!"
+  },
+  "slug": "sabel-und-spezialsabelsageblatter",
+  "image": "saebelsaege.jpg",
+  "public": true
+ },
+ {
+  "id": 4,
+  "name": {
+   "de": "Metallhandsägeblätter",
+   "en": "Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу"
+  },
+  "description": {
+   "de": "Mit Präzision, Zuverlässigkeit und hoher Bruchsicherheit stehen GUHEMA-Metallhandsägeblätter für höchste Qualität - eben MADE IN GERMANY.",
+   "en": "With precision, reliability and high resistance to breakage, GUHEMA hand hacksaw blades stand for the highest quality – simply MADE IN GERMANY.",
+   "ru": "Точность, надежность и высокая стойкость к поломке: ручные ножовочные полотна по металлу GUHEMA — это высочайшее качество, то есть MADE IN GERMANY."
+  },
+  "slug": "metallhandsageblatter",
+  "image": "metallhandsaege.jpg",
+  "public": true
+ },
+ {
+  "id": 5,
+  "name": {
+   "de": "Lochsägen",
+   "en": "Hole Saws",
+   "ru": "Коронки"
+  },
+  "description": {
+   "de": "Stahl, Holz, Aluminium, Guss, Kunststoffe, Buntmetalle, rostfreier Stahl ab 1 mm oder Faserplatten können Sie mit unseren Sägen löchern, um sich den perfekt runden \"Durchblick\" zu verschaffen. Unser Lieferprogramm unterstützt Sie standardmäßig von 14 bis 210 mm Durchmesser.",
+   "en": "Steel, wood, aluminium, cast iron, plastics, non-ferrous metals, stainless steel from 1 mm or fibreboard: our saws cut holes in them all and give you a perfectly round \"view through\". Our standard range covers diameters from 14 to 210 mm.",
+   "ru": "Сталь, дерево, алюминий, чугун, пластмассы, цветные металлы, нержавеющую сталь толщиной от 1 мм или волокнистые плиты — нашими коронками можно сверлить идеально круглые отверстия во всех этих материалах. Стандартный ассортимент охватывает диаметры от 14 до 210 мм."
+  },
+  "slug": "lochsagen",
+  "image": "lochsaegen.jpg",
+  "public": true
+ },
+ {
+  "id": 6,
+  "name": {
+   "de": "Metallsägebänder",
+   "en": "Metal Bandsaw Blades",
+   "ru": "Ленточные пилы по металлу"
+  },
+  "description": {
+   "de": "Wir geben Ihnen die Garantie, dass Sie mit einem Sägeband, das den Namen GUHEMA trägt, ein Spitzenprodukt der Zerspanungstechnologie er­werben. Der adäquate Nutzen für Ihren Produktionsablauf und die hohe Lebensdauer von Sägeband und Maschine werden auch im permanenten, harten Dauereinsatz gewährleistet.",
+   "en": "We guarantee that with a bandsaw blade bearing the GUHEMA name, you are buying a top product of cutting technology. The right benefit for your production process and a long service life of bandsaw blade and machine are ensured even in continuous, heavy-duty use.",
+   "ru": "Мы гарантируем: приобретая ленточную пилу с именем GUHEMA, вы получаете первоклассный продукт технологии резания. Ощутимая польза для вашего производственного процесса и долгий срок службы ленточной пилы и станка обеспечиваются даже при постоянной интенсивной эксплуатации."
+  },
+  "slug": "metallsagebander",
+  "image": "metallsaege.jpg",
+  "public": true
+ },
+ {
+  "id": 7,
+  "name": {
+   "de": "Pendelhubstichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для маятниковых лобзиков"
+  },
+  "description": {
+   "de": "Ganz gleichgültig, welches Material Sie trennen wollen, wie das Profil aussieht oder ob Sie mit der Säge \"die Kurve kriegen müssen\" - unsere Stichsägeblätter erfüllen alle Anforderungen, die Sie stellen!",
+   "en": "No matter what material you want to cut, what the profile looks like or whether your saw needs to \"get round the bend\" – our jigsaw blades meet all your requirements!",
+   "ru": "Неважно, какой материал нужно разрезать, какой у него профиль и нужно ли пилить «по кривой», — наши пилки для лобзиков отвечают всем вашим требованиям!"
+  },
+  "slug": "pendelhubstichsageblatter",
+  "image": "pendelhubstichsaege.jpg",
+  "public": true
+ },
+ {
+  "id": 8,
+  "name": {
+   "de": "Metallkreissägeblätter",
+   "en": "Metal-Cutting Circular Saw Blades",
+   "ru": "Дисковые пилы по металлу"
+  },
+  "description": {
+   "de": "Unsere Metallkreissägeblätter für Kreissägemaschinen (Typensägen) sind allesamt dampfangelassen. Diese Ausführung optimiert den Trennvorgang durch noch höhere Schnittleistung, schützt gegen Spanaufschweißung und ermöglicht eine bessere Aufnahme des Kühl- und Schmiermittels.",
+   "en": "Our metal-cutting circular saw blades for circular sawing machines (cold saws) are all steam-tempered. This finish optimises the cutting process through even higher cutting performance, protects against chip welding and allows better absorption of the coolant and lubricant.",
+   "ru": "Все наши дисковые пилы по металлу для отрезных станков прошли отпуск в паровой среде. Такое исполнение оптимизирует процесс резки за счет еще более высокой производительности, защищает от налипания стружки и улучшает удержание смазочно-охлаждающей жидкости."
+  },
+  "slug": "metallkreissageblatter",
+  "image": "metallkreissaege.jpg",
+  "public": true
+ }
+]

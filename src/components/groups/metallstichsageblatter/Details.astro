@@ -1,0 +1,115 @@
+---
+import Base from '../../../layouts/Base.astro';
+import ArticlePath from '../../products/ArticlePath.astro';
+import BladeImage from '../../products/BladeImage.astro';
+import AvailableTeeth from '../../products/AvailableTeeth.astro';
+import Thumb from '../../Thumb.astro';
+import { clampingOf, indicatorsOf, sortBy, type ProductGroup, type SawBlade } from '../../../lib/data';
+import { checkZpz, zpzCode } from '../../../lib/products';
+import { t, tr, float, type Lang } from '../../../lib/i18n';
+
+interface Props { lang: Lang; group: ProductGroup; blade: SawBlade }
+const { lang, blade } = Astro.props;
+const indicators = sortBy(indicatorsOf(blade), (i) => i.width);
+const clamping = clampingOf(blade);
+const zpz = zpzCode(indicators[0]);
+// [tooth-count field, border class]
+const cols = [
+  ['C', ''], ['E', ''], ['G', ''], ['H', ''], ['I', ''], ['J', ''], ['L', ''], ['M', ''], ['N', ''],
+  ['O', 'table-black-border-right'], ['T', ''], ['U', ''], ['V', ''], ['W', ''], ['UE', 'table-white-border-right'],
+];
+---
+<Base lang={lang}>
+  <Fragment slot="heading" />
+  <div class="row">
+    <div class="col-md-8">
+      <h1>
+        {blade.quality}
+        <small>{tr(blade.description, lang)} <span class="text-orange-bold">{blade.type}</span></small>
+      </h1>
+    </div>
+    <div class="col-md-4">
+      <ArticlePath lang={lang} type={blade.type} indicator={indicators[0]?.value} zpz={zpz} />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <BladeImage lang={lang} image={tr(blade.image, lang)} alt={blade.quality} />
+    </div>
+    <div class="col-md-6 text-right">
+      {clamping && tr(clamping.image, lang) && (
+        <Thumb path={tr(clamping.image, lang)} alias="products_clamping" alt={clamping.name} class="img-responsive pull-right" href="original" />
+      )}
+    </div>
+  </div>
+
+  <div class="table-responsive">
+  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover spec-table">
+    <thead>
+      <tr>
+        <th colspan="3" class="table-only-white-border-right"></th>
+        <th colspan="15" class="table-no-border-color">{t(lang, "ZpZ")}</th>
+      </tr>
+      <tr>
+        <th colspan="3" class="table-only-white-border-right"></th>
+        <th class="bg-orange-dark table-no-bot-border table-no-top-border table-small-height table-black-border-right" colspan="10">
+          {t(lang, "Normalzahn")}
+        </th>
+      </tr>
+      <tr>
+        <th colspan="3" class="table-only-white-border-right"></th>
+        <th class="bg-orange-medium table-no-top-border table-no-bot-border table-small-height table-black-border-right" colspan="10">
+          {t(lang, "Positivzahn")}
+        </th>
+        <th class="bg-orange-light table-white-border-right table-no-top-border table-no-bot-border table-small-height" colspan="5">
+          {t(lang, "Variable Positivverzahnung")}
+        </th>
+      </tr>
+      <tr>
+        <th colspan="2" class="table-white-border-right table-no-bot-border text-left">{t(lang, "Abmessungen")}</th>
+        <th class="table-white-border-right table-no-bot-border">{t(lang, "Kennziffer")}</th>
+        {['2', '3', '4', '6', '8', '10', '14', '16', '18'].map((n) => <th class="table-no-bot-border">{n}</th>)}
+        <th class="table-black-border-right table-no-bot-border">
+          22
+        </th>
+        {['2/3', '3/4', '4/6', '6/8'].map((n) => <th class="table-no-bot-border">{n}</th>)}
+        <th class="table-white-border-right table-no-bot-border">
+          8/10
+        </th>
+      </tr>
+      <tr>
+        <th class="table-no-top-border text-left">{t(lang, "in mm:")} {t(lang, "B x S")}</th>
+        <th class="table-white-border-right table-no-top-border">L</th>
+        <th class="table-white-border-right table-no-top-border"></th>
+        {cols.map(([c, cls]) => (
+          <th class={`${cls ? `${cls} ` : ''}table-no-top-border`}>
+            <span class="text-orange">...{c === 'UE' ? 'Ü' : c}</span>
+          </th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {indicators.map((indicator) => (
+        <tr>
+          <td>
+            {indicator.width} x {float(lang, indicator.strength)}
+          </td>
+          <td class="table-white-border-right">
+            {indicator.length}
+          </td>
+          <td class="text-orange-bold table-white-border-right">
+            ...{indicator.value}...
+          </td>
+
+          {cols.map(([c, cls]) => (
+            <td width="5%" class={`indicator-dot${cls ? ` ${cls}` : ''}`} set:html={checkZpz(lang, indicator[c])} />
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  </div>
+
+  <AvailableTeeth lang={lang} />
+</Base>

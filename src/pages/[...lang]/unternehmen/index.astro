@@ -1,0 +1,41 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { inAllLangs, langOf, t } from '../../../lib/i18n';
+
+export const getStaticPaths = () => inAllLangs();
+const lang = langOf(Astro.params.lang);
+---
+<Base lang={lang} title={t(lang, 'Unternehmen')}>
+  <h1 slot="heading">GUHEMA</h1>
+
+  <div class="row">
+    <div class="col-md-8 prose">
+      <p>{t(lang, 'Dieser Name steht für Made in Germany - und das seit dem Jahre 1867!')}</p>
+      <p>{t(lang, 'Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.')}</p>
+      <p>{t(lang, 'Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen Wünsche reagieren.')}</p>
+      <p>{t(lang, 'Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der Norm nach DIN EN ISO 9001.')}</p>
+      <p>{t(lang, 'Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein Metallsägeblatt in Perfektion.')}</p>
+    </div>
+    <div class="col-md-4">
+      <div class="row content-figures">
+        <figure class="col-xs-6 col-md-12 content-figure">
+          <a href="/static/img/other/sirachskotten.gif">
+            <img src="/static/img/other/sirachskotten.gif" class="img-responsive" alt="Sirachskotten">
+          </a>
+          <figcaption>
+            <strong>{t(lang, 'Gründung 1867')}</strong><br>
+            {t(lang, 'Der "Sirachskotten", Standort des Unternehmens bis 1900.')}
+          </figcaption>
+        </figure>
+        <figure class="col-xs-6 col-md-12 content-figure">
+          <a href="/static/other/din_zertifikat_de.pdf">
+            <img src="/static/img/other/din_zertifikat_de.webp" class="img-responsive content-figure-cert" alt={t(lang, 'DIN-Zertifikat')}>
+          </a>
+          <figcaption>
+            <strong>{t(lang, 'Zertifizierte Qualität nach DIN EN ISO 9001:2015')}</strong>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</Base>

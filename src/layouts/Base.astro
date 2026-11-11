@@ -1,0 +1,165 @@
+---
+import ProductGroups from '../components/ProductGroups.astro';
+import { LANGS, LANG_NAMES, basePath, t, url, type Lang } from '../lib/i18n';
+import { seoFor } from '../lib/seo';
+
+interface Props {
+  lang: Lang;
+  /** Page title prefix; " | " and the company name are appended. */
+  title?: string;
+  description?: string;
+  /** Show the product-group band above the heading (layout_productgroups.html). */
+  productGroups?: boolean;
+  /** German-only content (legal pages): the en/ru copies point search engines to the German page. */
+  germanOnly?: boolean;
+  /** The 404 page: not indexed, no canonical or language versions. */
+  notFound?: boolean;
+}
+const { lang, productGroups = true, germanOnly, notFound } = Astro.props;
+const here = notFound ? '/' : basePath(Astro.url.pathname);
+const seo = seoFor(here, lang);
+const title = Astro.props.title ?? seo.title;
+const description = Astro.props.description ?? seo.description ??
+  t(lang, 'GUHEMA GmbH & Co. KG, Remscheid: Metallsägeblätter, Sägebänder, Lochsägen und Kreissägeblätter. Made in Germany seit 1867.');
+const abs = (path: string) => new URL(path, Astro.site).href;
+const canonical = abs(germanOnly ? here : url(lang, here));
+const fullTitle = `${title ? `${title} | ` : ''}GUHEMA GmbH & Co. KG`;
+const OG_LOCALE = { de: 'de_DE', en: 'en_US', ru: 'ru_RU' } as const;
+const jsonLd = [
+  seo.crumbs.length > 1 && {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: seo.crumbs.map(([name, path], i) => ({ '@type': 'ListItem', position: i + 1, name, item: abs(url(lang, path)) })),
+  },
+  here === '/' && {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'GUHEMA GmbH & Co. KG',
+    url: abs('/'),
+    logo: abs('/static/img/logo/guhema80px.png'),
+    email: 'info@guhema.com',
+    telephone: '+49 2191 8867 0',
+    foundingDate: '1867',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Walter-Freitag-Straße 37',
+      postalCode: '42899',
+      addressLocality: 'Remscheid',
+      addressCountry: 'DE',
+    },
+  },
+].filter(Boolean);
+const nav = [
+  ['/', 'Home'],
+  ['/unternehmen/', 'Unternehmen'],
+  ['/produkte/', 'Produkte'],
+  ['/kataloge/', 'Kataloge'],
+  ['/impressum/', 'Kontakt'],
+] as const;
+const isActive = (path: string) => (path === '/' ? here === path : here.startsWith(path));
+---
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content={description}>
+  {notFound ? <meta name="robots" content="noindex"> : <link rel="canonical" href={canonical}>}
+  <link rel="icon" href="/static/img/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="/static/img/favicon/favicon-32.png" type="image/png">
+  <link rel="apple-touch-icon" href="/static/img/favicon/apple-touch-icon.png">
+  {!germanOnly && !notFound && (
+    <>
+      {LANGS.map((l) => <link rel="alternate" hreflang={l} href={abs(url(l, here))}>)}
+      <link rel="alternate" hreflang="x-default" href={abs(here)}>
+    </>
+  )}
+
+  <title>{fullTitle}</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GUHEMA">
+  <meta property="og:title" content={fullTitle}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={canonical}>
+  <meta property="og:image" content={abs('/static/img/header/header002.jpg')}>
+  <meta property="og:locale" content={OG_LOCALE[lang]}>
+  {jsonLd.map((data) => <script type="application/ld+json" set:html={JSON.stringify(data)} />)}
+
+  <link rel="preload" href="/static/css/fonts/fira_sans_condensed/fira-sans-condensed-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/static/css/fonts/open_sans/OpenSans-Regular-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/static/assets/bootswatch/yeti.css">
+  <link rel="stylesheet" href="/static/assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/main.css?v=20261026">
+</head>
+
+<body>
+<nav class="navbar" aria-label={t(lang, 'Hauptnavigation')}>
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href={url(lang, '/')}>
+        <img src="/static/img/logo/guhema80px.png" alt="GUHEMA" width="281" height="80">
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">{t(lang, 'Menü')}</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        {nav.map(([path, label]) => (
+          <li class={isActive(path) ? 'active' : undefined}><a href={url(lang, path)}>{t(lang, label)}</a></li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="main">
+  <slot name="headerimg" />
+  {productGroups && <ProductGroups lang={lang} />}
+
+  <div class="container">
+    <slot name="heading" />
+  </div>
+
+  <div class="container" role="main">
+    <slot />
+  </div>
+</div>
+
+<footer id="footer-wrapper">
+  <div class="container footer-inner">
+    <div>
+      &copy; {new Date().getFullYear()} GUHEMA GmbH & Co. KG,
+      <a href="mailto:info@guhema.com">info@guhema.com</a>,
+      <a href="tel:+49219188670">+49 2191 8867 0</a>
+    </div>
+    <div class="footer-links">
+      <a href={url(lang, '/datenschutz/')}>{t(lang, 'Datenschutz')}</a> |
+      <a href={url(lang, '/impressum/')}>{t(lang, 'Impressum')}</a>
+    </div>
+    <nav class="footer-lang" aria-label={t(lang, 'Sprache')}>
+      {LANGS.map((l) => (
+        <a href={url(l, here)} hreflang={l} lang={l} aria-current={l === lang ? 'true' : undefined}>{LANG_NAMES[l]}</a>
+      ))}
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Bootstrap 3 collapse (navbar, accessory list) without jQuery: .in shows the target
+  document.addEventListener('click', (event) => {
+    const toggle = (event.target as Element).closest<HTMLElement>('[data-toggle="collapse"]');
+    if (!toggle) return;
+    event.preventDefault();
+    const target = document.querySelector(toggle.dataset.target ?? toggle.getAttribute('href')!);
+    const open = !!target?.classList.toggle('in');
+    toggle.classList.toggle('collapsed', !open);
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+</script>
+</body>
+</html>

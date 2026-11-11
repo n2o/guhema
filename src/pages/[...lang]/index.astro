@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import { inAllLangs, langOf, t, url } from '../../lib/i18n';
+
+export const getStaticPaths = () => inAllLangs();
+const lang = langOf(Astro.params.lang);
+---
+<Base lang={lang}>
+  <div id="header-img-wrapper" slot="headerimg">
+    <div class="container">
+      <div id="header-img-text-wrapper">
+        <img src="/static/img/header/header002.jpg" alt="" width="1140" height="326">
+        <div id="header-text">
+          <p class="eyebrow">{t(lang, 'Made in Germany seit 1867')}</p>
+          <p class="h2">{t(lang, 'METALLSÄGEBLÄTTER IN PERFEKTION')}</p>
+          <a class="btn btn-accent" href={url(lang, '/produkte/')}>{t(lang, 'Zu unseren Produkten')} &rsaquo;</a>
+          <a class="btn btn-link" href={url(lang, '/kataloge/')}>{t(lang, 'Kataloge')} &rsaquo;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 slot="heading">
+    {t(lang, 'Qualität, die Vertrauen schafft')}
+    <small>{t(lang, 'GUHEMA STEHT FÜR MADE IN GERMANY - UND DAS SEIT DEM JAHR 1867!')}</small>
+  </h1>
+
+  <div class="row">
+    <div class="col-md-8">
+      <p class="lead-strong">
+        {t(lang, 'Familientradition in der 5. Generation, langjährige Erfahrung, permanente Forschung und Entwicklung sowie fundiertes Spezialwissen stellen wir Ihnen zur Verfügung.')}
+      </p>
+      <p>{t(lang, 'Mit unserer schlanken Organisation können wir jederzeit schnell auf Ihre individuellen Wünsche reagieren.')}</p>
+      <p>{t(lang, 'Unsere Unternehmensabläufe sind seit 1997 zertifiziert und entsprechen der Norm nach DIN EN ISO 9001.')}</p>
+      <p>{t(lang, 'Also: Wenn Sie sich für ein GUHEMA-Produkt entscheiden, erhalten Sie ein Metallsägeblatt in Perfektion.')}</p>
+    </div>
+    <div class="col-md-4">
+      <ul class="facts">
+        <li><span class="fact-value">1867</span>{t(lang, 'Gründung')}</li>
+        <li><span class="fact-value">{t(lang, 'generation ordinal|5.')}</span>{t(lang, 'Generation Familienunternehmen')}</li>
+        <li><span class="fact-value">ISO 9001</span>{t(lang, 'zertifiziert seit 1997')}</li>
+      </ul>
+    </div>
+  </div>
+</Base>

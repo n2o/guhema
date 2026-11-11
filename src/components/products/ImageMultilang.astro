@@ -1,0 +1,22 @@
+---
+// Former includes/image_multilang.html: static image with a per-language file name (prefix + lang + extension).
+import type { Lang } from '../../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  /** Path below /static/, e.g. "img/produktdetails/material_group_". */
+  prefix: string;
+  extension: string;
+  alt: string;
+  width?: string | number;
+  nothumbnail?: boolean;
+  scroll?: boolean;
+}
+const { lang, prefix, extension, alt, width, nothumbnail, scroll } = Astro.props;
+const img = `/static/${prefix}${lang}${extension}`;
+---
+<div class={scroll ? 'padding-top diagram-scroll' : 'padding-top'}>
+  <a href={img}>
+    <img class={nothumbnail ? 'img-responsive ' : 'img-responsive img-thumbnail'} src={img} alt={alt} width={width}>
+  </a>
+</div>

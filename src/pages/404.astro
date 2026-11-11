@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import { t, url } from '../lib/i18n';
+
+const lang = 'de';
+---
+<Base lang={lang} title={t(lang, 'Seite nicht gefunden')} notFound>
+  <h1 slot="heading">{t(lang, 'Seite nicht gefunden')}</h1>
+  <p class="lead">{t(lang, 'Diese Seite gibt es nicht (mehr). Vielleicht finden Sie das Gesuchte bei unseren Produkten oder in den Katalogen.')}</p>
+  <p>
+    <a class="btn btn-primary" href={url(lang, '/produkte/')}>{t(lang, 'Zu unseren Produkten')} &rsaquo;</a>
+    <a class="btn btn-default" href={url(lang, '/kataloge/')}>{t(lang, 'Kataloge')}</a>
+  </p>
+</Base>

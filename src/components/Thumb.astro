@@ -1,0 +1,19 @@
+---
+// Renders nothing when the file is missing (Django's thumbnail_url returned "" then).
+import { thumbnail, type Alias } from '../lib/media';
+
+interface Props {
+  path: string | null | undefined;
+  alias: Alias;
+  alt: string;
+  class?: string;
+  /** Wrap in a link: "original" links the full-size file, any other string is used as href. */
+  href?: string;
+}
+const { path, alias, alt, class: cls = 'img-responsive', href } = Astro.props;
+const img = await thumbnail(path, alias);
+const link = href === 'original' ? img?.original : href;
+---
+{img && (link
+  ? <a href={link}><img class={cls} src={img.src} width={img.width} height={img.height} alt={alt} loading="lazy" decoding="async"></a>
+  : <img class={cls} src={img.src} width={img.width} height={img.height} alt={alt} loading="lazy" decoding="async">)}

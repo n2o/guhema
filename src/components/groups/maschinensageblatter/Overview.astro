@@ -1,0 +1,65 @@
+---
+// Former products/maschinensageblatter/overview.html
+import Base from '../../../layouts/Base.astro';
+import Thumb from '../../Thumb.astro';
+import GroupHeader from '../../products/GroupHeader.astro';
+import GeneralAdviceSawblades from '../../products/GeneralAdviceSawblades.astro';
+import { bladesOfGroup, detailPath, clampingOf, type ProductGroup } from '../../../lib/data';
+import { t, tr, url, type Lang } from '../../../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  group: ProductGroup;
+}
+const { lang, group } = Astro.props;
+const blades = bladesOfGroup(group);
+// One column per clamping; its image is shown once above the column ({% ifchanged %})
+const columns = ['Standard', 'Kasto'].map((name) => {
+  const items = blades.filter((b) => clampingOf(b)?.name === name);
+  return { clamping: items[0] && clampingOf(items[0]), items };
+});
+---
+<Base lang={lang}>
+  <h1 slot="heading">
+    {tr(group.name, lang)}
+  </h1>
+
+  <GroupHeader lang={lang} group={group} />
+
+  <GeneralAdviceSawblades lang={lang} />
+
+  <hr>
+
+  <h3 class="padding-bottom">{t(lang, "Produkte")}</h3>
+  <div class="row">
+    {columns.map(({ clamping, items }) => (
+      <div class="col-md-6">
+        {clamping && (
+          <div class="clamping-img">
+            <Thumb path={tr(clamping.image, lang)} alias="products_clamping" alt={clamping.name} href="original" />
+          </div>
+        )}
+        {items.map((blade) => {
+          const href = url(lang, detailPath(group, blade));
+          return (
+            <div class="products-list-item">
+              <div class="spec-line">
+                <img src="/static/img/other/shark_small_45w.png" alt="">
+                <a href={href}>{blade.quality}</a>
+              </div>
+              <div class="spec-line">
+                <img src="/static/img/other/blade_small_45w.png" alt="">
+                <span>
+                  {tr(blade.description, lang)}<br>
+                  <a href={href}>
+                    <span class="text-orange-bold">{blade.type}</span> {t(lang, "Details")}
+                  </a>
+                </span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    ))}
+  </div>
+</Base>

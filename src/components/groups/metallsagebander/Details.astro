@@ -1,0 +1,115 @@
+---
+// Former products/metallsagebander/details.html (band saw blades by id)
+import Base from '../../../layouts/Base.astro';
+import ArticlePath from '../../products/ArticlePath.astro';
+import AvailableTeeth from '../../products/AvailableTeeth.astro';
+import BladeImage from '../../products/BladeImage.astro';
+import { bandSawIndicatorsOf, type ProductGroup, type SawBlade } from '../../../lib/data';
+import { float, t, tr, type Lang } from '../../../lib/i18n';
+import { markdown } from '../../../lib/markdown';
+import { bandsawIndicatorCheck, validBandsawIndicator } from '../../../lib/products';
+
+interface Props { lang: Lang; group: ProductGroup; blade: SawBlade }
+const { lang, blade } = Astro.props;
+const indicators = bandSawIndicatorsOf(blade);
+const codes = (blade.cols ?? '').split(',');
+const has = (c: string) => codes.includes(c);
+
+// [shown, ZpZ header, code, indicator field], in the template's column order
+const columns = ([
+  [has('A'), '1,25', 'A', 'A'],
+  [has('C'), '2', 'C', 'C'],
+  [has('E'), '3', 'E', 'E'],
+  [has('G'), '4', 'G', 'G'],
+  [has('H'), '6', 'H', 'H'],
+  [has('I'), '8', 'I', 'I'],
+  [has('J'), '10', 'J', 'J'],
+  [has('L'), '14', 'L', 'L'],
+  [has('N'), '18', 'N', 'N'],
+  [has('O'), '22', 'O', 'O'],
+  [has('Ä'), '0,9/1,1', 'Ä', 'AE'],
+  [has('S'), '1,4/2', 'S', 'S'],
+  [has('Ü'), '1,9/2,1', 'Ü', 'UE'],
+  [has('T'), '2-3', 'T', 'T'],
+  [has('U'), '3-4', 'U', 'U'],
+  [has('V'), '4-6', 'V', 'V'],
+  [has('W'), '5-8', 'W', 'W'],
+  [has('X'), '6-10', 'X', 'X'],
+  [has('Y'), '8-12', 'Y', 'Y'],
+  [has('Z'), '10-14', 'Z', 'Z'],
+  [has('*P'), '0,75-1,25', '*P', 'star_p'],
+  [has('RP'), '1,1-1,4', 'RP', 'RP'],
+  [has('SP'), '1,4-2', 'SP', 'SP'],
+  [has('TP'), '2-3', 'TP', 'TP'],
+  [has('UP'), '3-4', 'UP', 'UP'],
+  [has('VP'), '4-6', 'VP', 'VP'],
+  [has('WP'), '5-8', 'WP', 'WP'],
+  [has('Fein'), t(lang, 'Fein'), 'F', 'F'],
+  [has('Standard'), 'Standard', 'S', 'S'],
+  [has('Grob'), t(lang, 'Grob'), 'G', 'G'],
+] as [boolean, string, string, string][]).filter(([shown]) => shown);
+---
+<Base lang={lang}>
+  <div class="row">
+    <div class="col-md-7">
+      <h1>
+        {blade.quality}
+        <small>{tr(blade.name, lang)}</small>
+      </h1>
+      <Fragment set:html={markdown(tr(blade.description, lang))} />
+    </div>
+    <div class="col-md-5">
+      <ArticlePath lang={lang} type={blade.type} indicator={indicators[0]?.value ?? ''} zpz={validBandsawIndicator(indicators[0])} withLength />
+    </div>
+  </div>
+
+  <div class="row">
+    <BladeImage lang={lang} image={tr(blade.image, lang)} wrap="col-md-6" />
+    <BladeImage lang={lang} image={tr(blade.image2, lang)} wrap="col-md-6" />
+  </div>
+
+  <div class="table-responsive">
+  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover spec-table">
+    <thead>
+      <tr>
+        <th colspan="2" class="table-only-white-border-right"></th>
+        <th colspan="14" class="table-no-border-color">{t(lang, 'ZpZ')}</th>
+      </tr>
+      <tr>
+        <th class="table-white-border-right table-no-bot-border text-left" width="15%">{t(lang, 'Abmessungen')}</th>
+        <th class="table-white-border-right table-no-bot-border" width="15%">{t(lang, 'Kennziffer')}</th>
+        {columns.map(([, label]) => <th class="table-no-bot-border">{label}</th>)}
+      </tr>
+      <tr>
+        <th class="table-white-border-right table-no-top-border text-left">{t(lang, 'in mm:')} {t(lang, 'B x S')}</th>
+        <th class="table-white-border-right table-no-top-border"></th>
+        {columns.map(([, , code]) => (
+          <th class="table-no-top-border">
+            <span class="text-orange">...{code}</span>
+          </th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {indicators.map((indicator) => (
+        <tr>
+          <td class="table-white-border-right">
+            {indicator.width} x {float(lang, indicator.strength)}
+          </td>
+          <td class="text-orange-bold table-white-border-right">
+            ...{indicator.value}...
+          </td>
+          {columns.map(([, , , field]) => <td set:html={bandsawIndicatorCheck(lang, String(indicator[field]))} />)}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  </div>
+
+  {blade.type === 'NC20' || blade.type === 'NC35' ? (
+    <p>S = {t(lang, 'Standardzahn')}<br>
+    K = {t(lang, 'Klauenzahn')}</p>
+  ) : (
+    <AvailableTeeth lang={lang} />
+  )}
+</Base>

@@ -1,0 +1,30 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Thumb from '../../../components/Thumb.astro';
+import { publicGroups } from '../../../lib/data';
+import { inAllLangs, langOf, t, tr, url } from '../../../lib/i18n';
+import { markdown } from '../../../lib/markdown';
+
+export const getStaticPaths = () => inAllLangs();
+const lang = langOf(Astro.params.lang);
+---
+<Base lang={lang}>
+  <h1 slot="heading">{t(lang, 'Produkte')}</h1>
+
+  {publicGroups().map((group) => {
+    const href = url(lang, `/produkte/${group.slug}/`);
+    const name = tr(group.name, lang)!;
+    return (
+      <div class="row products-index">
+        <div class="col-sm-3">
+          <Thumb path={group.image} alias="products_teaserimage" alt={name} href={href} />
+        </div>
+        <div class="col-sm-9 group-header-text">
+          <h3 class="products-index-h3"><a href={href}>{name}</a></h3>
+          <div class="markdown" set:html={markdown(tr(group.description, lang))} />
+          <p class="padding-top-05"><a href={href}>{t(lang, 'Zu den Produkten')}</a></p>
+        </div>
+      </div>
+    );
+  })}
+</Base>

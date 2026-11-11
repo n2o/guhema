@@ -12,8 +12,8 @@ build/
 develop-eggs/
 dist/
 eggs/
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -54,8 +54,8 @@ coverage.xml
 docs/_build/
 
 # Ignore all media
-media/
-static/
+/media/
+/static/
 
 # Other
 *.bak
@@ -63,3 +63,8 @@ sass
 db.sqlite3
 settings_secret.py
 *.pass
+
+# Astro
+node_modules/
+dist/
+.astro/

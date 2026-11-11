@@ -1,0 +1,27 @@
+---
+// Former include_article_path.html: "Der schnelle Weg zu unserer Artikel-Nr."
+import { t, type Lang } from '../../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  type: string;
+  /** Kennziffer of the first indicator. */
+  indicator: string;
+  zpz: string;
+  withLength?: boolean;
+}
+const { lang, type, indicator, zpz, withLength } = Astro.props;
+---
+<div class="alert bg-orange-lighter article-path">
+  <p class="article-path-title">{t(lang, 'Der schnelle Weg zu unserer Artikel-Nr.')}</p>
+  <p><span class="text-orange-bold">{t(lang, 'Qualität')}</span> + <span class="text-orange-bold">{t(lang, 'Kennziffer (Abmessung)')}</span> + <span class="text-orange-bold">{t(lang, 'ZpZ')}</span></p>
+  <p>{t(lang, 'z.B.:')}
+    <span class="text-nowrap"><span class="text-orange-bold">{type}</span> + <span class="text-orange-bold">{indicator}</span> + <span class="text-orange-bold">{zpz}</span></span>
+    = <span class="text-orange-bold text-nowrap">{type}{indicator}{zpz}</span></p>
+  {withLength && (
+    <p>{t(lang, 'z.B.:')}
+      <span class="text-nowrap"><span class="text-orange-bold">{type}</span> + <span class="text-orange-bold">{indicator}</span> + <span class="text-orange-bold">{zpz}</span></span>
+      + <span class="text-orange-bold">{t(lang, 'Sägeblattlänge')}</span>
+      = <span class="text-orange-bold text-nowrap">{type}{indicator}{zpz}03800</span></p>
+  )}
+</div>

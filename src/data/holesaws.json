@@ -1,0 +1,386 @@
+[
+ {
+  "id": 1,
+  "ordernr": "HZARW6",
+  "image": null,
+  "description": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "category": {
+   "de": "Zentriereinheiten",
+   "en": "Arbors",
+   "ru": "Хвостовики с центрирующим сверлом"
+  },
+  "mounting": {
+   "de": "Rund 6 mm",
+   "en": "Round 6 mm",
+   "ru": "Цилиндрический 6 мм"
+  },
+  "saw_length": "14 - 30",
+  "pilot_drill_length": "82",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 2,
+  "ordernr": "HZASW95",
+  "image": null,
+  "description": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "category": {
+   "de": "Zentriereinheiten",
+   "en": "Arbors",
+   "ru": "Хвостовики с центрирующим сверлом"
+  },
+  "mounting": {
+   "de": "Sechskant 9,5 mm",
+   "en": "Hex 9.5 mm",
+   "ru": "Шестигранный 9,5 мм"
+  },
+  "saw_length": "14 - 30",
+  "pilot_drill_length": "82",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 3,
+  "ordernr": "HZASW11",
+  "image": null,
+  "description": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "category": {
+   "de": "Zentriereinheiten",
+   "en": "Arbors",
+   "ru": "Хвостовики с центрирующим сверлом"
+  },
+  "mounting": {
+   "de": "Sechskant 11 mm",
+   "en": "Hex 11 mm",
+   "ru": "Шестигранный 11 мм"
+  },
+  "saw_length": "14 - 30",
+  "pilot_drill_length": "82",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 4,
+  "ordernr": "HZASDS1",
+  "image": null,
+  "description": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "category": {
+   "de": "Zentriereinheiten",
+   "en": "Arbors",
+   "ru": "Хвостовики с центрирующим сверлом"
+  },
+  "mounting": {
+   "de": "SDS-Aufnahme",
+   "en": "SDS shank",
+   "ru": "Хвостовик SDS"
+  },
+  "saw_length": "14 - 30",
+  "pilot_drill_length": "82",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 5,
+  "ordernr": "HZASW95A",
+  "image": null,
+  "description": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "category": {
+   "de": "Zentriereinheiten",
+   "en": "Arbors",
+   "ru": "Хвостовики с центрирующим сверлом"
+  },
+  "mounting": {
+   "de": "Sechskant 9,5 mm",
+   "en": "Hex 9.5 mm",
+   "ru": "Шестигранный 9,5 мм"
+  },
+  "saw_length": "32 - 210",
+  "pilot_drill_length": "82",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 6,
+  "ordernr": "HZASW11A",
+  "image": null,
+  "description": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "category": {
+   "de": "Zentriereinheiten",
+   "en": "Arbors",
+   "ru": "Хвостовики с центрирующим сверлом"
+  },
+  "mounting": {
+   "de": "Sechskant 11 mm",
+   "en": "Hex 11 mm",
+   "ru": "Шестигранный 11 мм"
+  },
+  "saw_length": "32 - 210",
+  "pilot_drill_length": "82",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 7,
+  "ordernr": "HZASDS2",
+  "image": null,
+  "description": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "category": {
+   "de": "Zentriereinheiten",
+   "en": "Arbors",
+   "ru": "Хвостовики с центрирующим сверлом"
+  },
+  "mounting": {
+   "de": "SDS-Aufnahme",
+   "en": "SDS shank",
+   "ru": "Хвостовик SDS"
+  },
+  "saw_length": "32 - 210",
+  "pilot_drill_length": "82",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 8,
+  "ordernr": "HZBV11",
+  "image": null,
+  "description": {
+   "de": "Verlängerung für Sechskantaufnahme 11 mm",
+   "en": "Extension for 11 mm hex shank",
+   "ru": "Удлинитель для шестигранного хвостовика 11 мм"
+  },
+  "category": {
+   "de": "Zubehör / Ersatzteile",
+   "en": "Accessories / Spare Parts",
+   "ru": "Принадлежности / запчасти"
+  },
+  "mounting": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "saw_length": "",
+  "pilot_drill_length": "",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 9,
+  "ordernr": "HZBF",
+  "image": null,
+  "description": {
+   "de": "Auswurffeder",
+   "en": "Ejector spring",
+   "ru": "Пружина выталкивателя"
+  },
+  "category": {
+   "de": "Zubehör / Ersatzteile",
+   "en": "Accessories / Spare Parts",
+   "ru": "Принадлежности / запчасти"
+  },
+  "mounting": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "saw_length": "",
+  "pilot_drill_length": "",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 10,
+  "ordernr": "HZBS",
+  "image": null,
+  "description": {
+   "de": "Inbusschraube",
+   "en": "Hex socket screw",
+   "ru": "Винт с внутренним шестигранником"
+  },
+  "category": {
+   "de": "Zubehör / Ersatzteile",
+   "en": "Accessories / Spare Parts",
+   "ru": "Принадлежности / запчасти"
+  },
+  "mounting": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "saw_length": "",
+  "pilot_drill_length": "",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 11,
+  "ordernr": "HZBA",
+  "image": null,
+  "description": {
+   "de": "Adapter, um die Aufnahmen für Lochsägen mit 32 - 210 mm Durchmesser auf eine Lochsäge von 14 bis 30 mm zu montieren",
+   "en": "Adapter for fitting the arbors for hole saws of 32 - 210 mm diameter to a 14 to 30 mm hole saw",
+   "ru": "Адаптер для установки хвостовиков коронок диаметром 32 - 210 мм на коронку диаметром 14 - 30 мм"
+  },
+  "category": {
+   "de": "Zubehör / Ersatzteile",
+   "en": "Accessories / Spare Parts",
+   "ru": "Принадлежности / запчасти"
+  },
+  "mounting": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "saw_length": "",
+  "pilot_drill_length": "",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 12,
+  "ordernr": "HZBB82",
+  "image": null,
+  "description": {
+   "de": "Zentrierbohrer 82 mm",
+   "en": "Pilot drill 82 mm",
+   "ru": "Центрирующее сверло 82 мм"
+  },
+  "category": {
+   "de": "Zubehör / Ersatzteile",
+   "en": "Accessories / Spare Parts",
+   "ru": "Принадлежности / запчасти"
+  },
+  "mounting": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "saw_length": "",
+  "pilot_drill_length": "",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 13,
+  "ordernr": "HZBB102",
+  "image": null,
+  "description": {
+   "de": "Zentrierbohrer 102 mm",
+   "en": "Pilot drill 102 mm",
+   "ru": "Центрирующее сверло 102 мм"
+  },
+  "category": {
+   "de": "Zubehör / Ersatzteile",
+   "en": "Accessories / Spare Parts",
+   "ru": "Принадлежности / запчасти"
+  },
+  "mounting": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "saw_length": "",
+  "pilot_drill_length": "",
+  "quality": "",
+  "toothing": ""
+ },
+ {
+  "id": 14,
+  "ordernr": "V",
+  "image": null,
+  "description": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "category": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "mounting": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "saw_length": "",
+  "pilot_drill_length": "",
+  "quality": "GUHEMA Bi-Co-lastic",
+  "toothing": "4 / 6"
+ },
+ {
+  "id": 15,
+  "ordernr": "J",
+  "image": null,
+  "description": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "category": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "mounting": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "saw_length": "",
+  "pilot_drill_length": "",
+  "quality": "GUHEMA Bi-Co-lastic",
+  "toothing": "10"
+ },
+ {
+  "id": 16,
+  "ordernr": "S",
+  "image": null,
+  "description": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "category": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "mounting": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "saw_length": "",
+  "pilot_drill_length": "",
+  "quality": "GUHEMA HM-Granulat",
+  "toothing": ""
+ }
+]

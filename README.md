@@ -1,5 +1,29 @@
 # GUHEMA
 
+Website of GUHEMA GmbH & Co. KG (metal-cutting saw blades, Remscheid). Static site built with [Astro](https://astro.build), hosted on Strato.
+
+> **Migration in progress (branch `feat/astro`):** the Django site below is still live and is the reference for `tools/compare.py`. It is removed at the cutover to Strato.
+
+## Astro site
+
+```bash
+npm ci
+npm run dev      # http://localhost:4321
+npm run build    # static output in dist/
+```
+
+- **Languages:** German at `/…`, English at `/en/…`, Russian at `/ru/…` (one set of pages under `src/pages/[...lang]/`).
+- **Product data:** `src/data/*.json` is the source of truth (exported once from Django with `tools/export_json.py`). Translated fields are `{ "de", "en", "ru" }`; missing languages fall back to German. Images live in `src/media/` (thumbnails are generated at build time), static files in `public/static/`.
+- **Page texts:** UI strings are looked up by their German text with `t(lang, "…")`; translations in `src/i18n/{en,ru}.json`. Impressum/Datenschutz: `src/content/pages/*.md` (German only).
+- **Product pages:** `src/components/groups/<slug>/{Overview,Details,Advices}.astro`, shared parts in `src/components/products/`.
+- **Translations:** `python3 tools/translations.py export <lang> worklist.json` lists every text with its current translation; `… apply <lang> result.json` writes results back (and drops unused UI strings).
+- **SEO:** canonical host `https://www.guhema.com` (keep `astro.config.mjs`, `public/.htaccess` and `public/robots.txt` in sync), hreflang, sitemap, structured data.
+- **Deploy:** `.github/workflows/deploy.yml` builds and mirrors `dist/` via SFTP into `/guhema/` on Strato (secrets `SFTP_HOST`, `SFTP_USER`, `SFTP_PASSWORD`; the domain must point to that directory). Manual trigger until the cutover. Apache config: `public/.htaccess`.
+
+---
+
+## Django site (legacy, until cutover)
+
 Django-based website for GUHEMA - a company specializing in industrial cutting tools and saw blades.
 
 ## Features

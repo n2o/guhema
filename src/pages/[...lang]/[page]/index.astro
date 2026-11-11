@@ -1,0 +1,17 @@
+---
+// Impressum and Datenschutz (former flatpages), German in every language like before
+import Base from '../../../layouts/Base.astro';
+import { inAllLangs, langOf } from '../../../lib/i18n';
+
+export function getStaticPaths() {
+  const pages = import.meta.glob<{ frontmatter: { title: string }; Content: any }>('/src/content/pages/*.md', { eager: true });
+  return Object.entries(pages).flatMap(([file, page]) =>
+    inAllLangs([{ page: file.split('/').pop()!.replace('.md', '') }]).map((p) => ({ ...p, props: { page } })));
+}
+const { page } = Astro.props;
+const { Content, frontmatter } = page;
+---
+<Base lang={langOf(Astro.params.lang)} title={frontmatter.title} germanOnly>
+  <h1 slot="heading">{frontmatter.title}</h1>
+  <div class="prose" lang="de"><Content /></div>
+</Base>

@@ -1,0 +1,546 @@
+---
+// Former products/metallsagebander/advices.html
+import Base from '../../../layouts/Base.astro';
+import ImageMultilang from '../../products/ImageMultilang.astro';
+import type { ProductGroup } from '../../../lib/data';
+import { t, tr, type Lang } from '../../../lib/i18n';
+
+interface Props { lang: Lang; group: ProductGroup }
+const { lang, group } = Astro.props;
+---
+<Base lang={lang}>
+  <h1 slot="heading">{tr(group.name, lang)}</h1>
+
+  <section>
+    <p>
+      {t(lang, "Wir produzieren für Sie Metallsägebänder in drei Ausführungen. Die „Kohlenstoff“-Qualität für die Werkstatt, die Bi-Metall-Qualität für die Produktion und Werkstatt und die Hartmetall-Ausführung für Spezialanwendungen.")}
+    </p>
+    <p>{t(lang, "Getreu dem Motto:")}</p>
+    <blockquote>
+      {t(lang, "Wir liefern Ihnen die Metallsägebänder, die Sie zum optimalen Sägeergebnis führen.")}
+    </blockquote>
+  </section>
+
+  <section>
+    <h3>
+      {t(lang, "Wenn Sie optimal trennen wollen, dann sollten Sie uns auf den Zahn fühlen")}
+    </h3>
+    <p>
+      {t(lang, "Damit jede Ihrer Anforderungen erfüllt wird, haben wir den Materialqualitäten unserer Sägebänder die notwendige Auswahl an Zahntypen bereitgestellt:")}
+    </p>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{t(lang, "Standardzahn")} (S)</strong>
+        <p>
+          {t(lang, "Diese Zahngeometrie finden Sie bei unseren Qualitäten No. 20 GUHEMA Kristall, No. 22 GUHEMA Kristall plus und No. 35 GUHEMA Bi-Co-lastic. Diese Geometrie eignet sich bestens für den allgemeinen, universellen Einsatz.")}
+        </p>
+      </div>
+      <div class="col-md-offset-1 col-md-5">
+        <ImageMultilang lang={lang} prefix="img/produktbilder/bandsaegeblaetter/katalog_2014/standardzahn_" extension=".png" alt={t(lang, "Standardzahn")} width="350" nothumbnail />
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{t(lang, "Klauenzahn")} (K)</strong>
+        <p>
+          {t(lang, "Diese Zahngeometrie ist für die Qualitäten No. 20 GUHEMA Kristall, No. 22 GUHEMA Kristall plus und No. 35 GUHEMA Bi-Co-lastic lieferbar. Die Einsatzgebiete dieser Geometrie sind die austenitischen und rostfreien Stähle.")}
+        </p>
+      </div>
+      <div class="col-md-offset-1 col-md-5">
+        <ImageMultilang lang={lang} prefix="img/produktbilder/bandsaegeblaetter/katalog_2014/klauenzahn_" extension=".png" alt={t(lang, "Klauenzahn")} width="350" nothumbnail />
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{t(lang, "Variable Verzahnung")} (V)</strong>
+        <p>
+          {t(lang, "Die variable Verzahnung erhalten Sie in der Qualität No. 35V GUHEMA Bi-Co-lastic. Diese V-Zahnung führt zu einem besonders schwingungsarmen Schnitt und ist sowohl für Bündelschnitte als auch für Vollmaterialien hervorragend geeignet. Da das Einsatzgebiet der Metallsägebänder mit V-Zahnung erheblich größer wird, entfallen die sonst notwendigen Bandwechselzeiten und somit die Ausfallzeiten der Maschine. Der gesenkte Geräuschpegel am Arbeitsplatz ist ein von der Belegschaft oft gelobter Begleiteffekt der variablen Verzahnung.")}
+        </p>
+      </div>
+      <div class="col-md-offset-1 col-md-5">
+        <ImageMultilang lang={lang} prefix="img/produktbilder/bandsaegeblaetter/katalog_2014/variable_verzahnung_" extension=".png" alt={t(lang, "Variable Verzahnung")} width="350" nothumbnail />
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{t(lang, "Variable Positivverzahnung")} (VP)</strong>
+        <p>
+          {t(lang, "Die VP-Verzahnung erhalten Sie in den Qualitäten No. 35VP GUHEMA Bi-Co-lastic und No. 36VP GUHEMA Bi-Co-lastic plus. Diese variable Positivverzahnung erzielt höchste Zerspanungsleistungen bei einer langen Lebensdauer. Zerspanungstechnologie auf höchstem Niveau.")}
+        </p>
+      </div>
+      <div class="col-md-offset-1 col-md-5">
+        <ImageMultilang lang={lang} prefix="img/produktbilder/bandsaegeblaetter/katalog_2014/variable_positivverzahnung_" extension=".png" alt={t(lang, "Variable Positivverzahnung")} width="350" nothumbnail />
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{t(lang, "Variable Positivverzahnung mit verstärktem Zahnrücken")} (VP-D)</strong>
+        <p>
+          {t(lang, "Die variable Spezialzahnform erhalten Sie in den Qualitäten No. 33VP-D GUHEMA Bi-Co-lastic und No. 34VP-D GUHEMA Bi-Co-lastic.")}
+          <br>
+          {t(lang, "Das Zahndesign mit dem extra starken Zahnrücken ist speziell für Bündelschnitte und Profil- und Trägerschnitte entwickelt worden. Der positive Spanwinkel trägt zur optimalen Spanbildung und somit zum sauberen Schnittverlauf bei.")}
+        </p>
+      </div>
+      <div class="col-md-offset-1 col-md-5">
+        <ImageMultilang lang={lang} prefix="img/produktbilder/bandsaegeblaetter/katalog_2014/variable_positivverzahnung_mit_zahnruecken_" extension=".png" alt={t(lang, "Variable Positivverzahnung mit verstärktem Zahnrücken")} width="350" nothumbnail />
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{t(lang, "Hartmetall-Granulat")}</strong>
+        <p>
+          {t(lang, "Die Hartmetallgranulatschneide erhalten Sie bei der No. 40 GUHEMA HM-Granulat als durchgehende Variante und bei der No. 41 GUHEMA HM-Granulat als unterbrochene Ausführung. Diese Verzahnung punktet dort, wo übliche Sägezähne von Nachteil sind.")}
+        </p>
+      </div>
+      <div class="col-md-offset-1 col-md-5">
+        <ImageMultilang lang={lang} prefix="img/produktbilder/bandsaegeblaetter/katalog_2014/granulat_hm_" extension=".png" alt={t(lang, "Hartmetall-Granulat")} width="350" nothumbnail />
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{t(lang, "Positivverzahnung")} (P-HM)</strong>
+        <p>
+          {t(lang, "Die Positivverzahnung erhalten Sie in den Qualitäten No. 44P GUHEMA HM-Zähne und No. 45P GUHEMA HM-Zähne. Diese Verzahnung ist für den Übergang in die Hartmetallklasse entwickelt worden. Abrasive Werkstücke sind hiermit trennbar, wie auch versandete Gusswerkstücke.")}
+        </p>
+      </div>
+      <div class="col-md-offset-1 col-md-5">
+        <ImageMultilang lang={lang} prefix="img/produktbilder/bandsaegeblaetter/katalog_2014/positivverzahnung_hm_" extension=".png" alt={t(lang, "Positivverzahnung")} width="350" nothumbnail />
+      </div>
+    </div>
+    <div class="row padding-bottom">
+      <div class="col-md-6">
+        <strong>{t(lang, "Variable Positivverzahnung")} (VP-HM)</strong>
+        <p>
+          {t(lang, "Die variable Positivverzahnung erhalten Sie in der Qualität No. 46VP GUHEMA HM-Zähne. Die variable Zahnabfolge ist mit geschliffenen Hartmetallzähnen aufgebaut, die mit Vor- und Nachschneidern versehen ist. Diese Verzahnung erzielt höchste Schnittgeschwindigkeit sowie höchste Standzeit.")}
+        </p>
+      </div>
+      <div class="col-md-offset-1 col-md-5">
+        <ImageMultilang lang={lang} prefix="img/produktbilder/bandsaegeblaetter/katalog_2014/variable_positivverzahnung_hm_" extension=".png" alt={t(lang, "Variable Positivverzahnung")} width="350" nothumbnail />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <strong>{t(lang, "Variable Negativverzahnung")} (VN-HM)</strong>
+        <p>
+          {t(lang, "Die variable Negativverzahnung erhalten Sie in der Qualität No. 47VN GUHEMA HM-Zähne. Die negativ geschliffenen Hartmetallzähne ermöglichen das Zerspanen von extrem harten Werkstücken. Diese Spezialverzahnung findet zum Beispiel ihren Einsatz bei randschichtgehärteten Wellen.")}
+        </p>
+      </div>
+      <div class="col-md-offset-1 col-md-5">
+        <ImageMultilang lang={lang} prefix="img/produktbilder/bandsaegeblaetter/katalog_2014/variable_negativverzahnung_hm_" extension=".png" alt={t(lang, "Variable Negativverzahnung")} width="350" nothumbnail />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>{t(lang, "Welche Sägebandbreite benötige ich?")}</h3>
+    <p>
+      {t(lang, "Grundsätzlich sollten Sie die größtmögliche Bandbreite wählen, die für die Maschine zulässig ist. Der Vorteil ist die hohe Stabilität des Bandes bei hohen Vorschubkräften. Beim Einsatz von Metallsägebändern für Konturenschnitte ist die Breite des Sägebandes von dem kleinsten zu schneidenden Radius abhängig. Die folgende Grafik gibt Ihnen optische Hilfestellung bei der Bestimmung der Sägeblattbreite.")}
+    </p>
+    <ImageMultilang lang={lang} prefix="img/produktdetails/saegebandbreite_" extension=".png" alt={t(lang, "Sägebandbreite")} width="700" scroll />
+  </section>
+
+  <section>
+    <h3>{t(lang, "Unsere Empfehlungen für langen Sägespaß von Anfang an!")}</h3>
+    <p>
+      {t(lang, "Für den Einsatz von GUHEMA-Metallsägebändern empfehlen wir die wenigen, aber wichtigen Spielregeln zwischen Werkstück, Maschine und Sägeband zu beachten, um optimale Schnittergebnisse zu erhalten:")}
+    </p>
+
+    <section>
+      <h4>{t(lang, "Einfahren von Bi-Metall-Sägebändern")}</h4>
+      <p>
+        {t(lang, "Stellen Sie die empfohlene Schnittgeschwindigkeit ein und reduzieren Sie in der Anfangszeit die Vorschubgeschwindigkeit auf 50%% des empfohlenen Vorschubs.")}
+      </p>
+      <ul>
+        <li>{t(lang, "Bei großen Querschnitten halten Sie dies für 15 min bei.")}</li>
+        <li><Fragment set:html={t(lang, "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm<sup>2</sup> mit dieser Einstellung zerspanen.")} /></li>
+      </ul>
+      <p>
+        {t(lang, "Bei Schwingungsgeräuschen oder Vibrationen an der Maschine reduzieren Sie die Schnittgeschwindigkeit.")}
+      </p>
+      <p>
+        {t(lang, "Nach dem Einfahren erhöhen Sie langsam die Vorschubgeschwindigkeit auf die empfohlenen Schnittparameter.")}
+      </p>
+      <p>
+        {t(lang, "Das Einfahren des Sägebandes führt zu einer optimalen Schneidkantenausbildung, bei der die Kantenradien auf ein Minimum reduziert werden, wodurch die Zahngeometrie optimal ausgebildet wird.")}
+      </p>
+    </section>
+
+    <section>
+      <h4>{t(lang, "Einfahren von Hartmetallsägebändern")}</h4>
+      <p>
+        {t(lang, "Stellen Sie dazu die Schnittgeschwindigkeit auf 75%% der empfohlenen Geschwindigkeit ein und reduzieren Sie die Vorschubgeschwindigkeit um ca. 50%% des empfohlenen Vorschubs.")}
+      </p>
+      <ul>
+        <li>{t(lang, "Bei großen Querschnitten halten Sie dies für 15 min bei.")}</li>
+        <li><Fragment set:html={t(lang, "Bei kleinen Werkstückabmessungen sollten Sie um die 300 cm<sup>2</sup> mit dieser Einstellung zerspanen.")} /></li>
+      </ul>
+      <p>
+        {t(lang, "Vermeiden Sie unbedingt Schwingungsgeräusche oder Vibrationen an der Maschine durch weiteres Reduzieren der Schnittgeschwindigkeit.")}
+      </p>
+      <p>
+        {t(lang, "Nach dem Einfahren erhöhen Sie zunächst langsam die Schnittgeschwindigkeit auf die empfohlene Geschwindigkeit. Jetzt erst erhöhen Sie die Vorschubgeschwindigkeit auf den empfohlenen Parameter.")}
+      </p>
+      <p>
+        {t(lang, "Das Einfahren des Sägebandes führt zu einer optimalen Schneidkantenausbildung, bei der die Kantenradien auf ein Minimum reduziert werden, wodurch die Zahngeometrie optimal ausgebildet wird.")}
+      </p>
+    </section>
+  </section>
+
+  <section>
+    <div class="table-responsive">
+    <table id="products-sawblade-table" class="table table-condensed table-striped table-hover spec-table">
+      <thead>
+        <tr>
+          <th rowspan="2" class="text-left">{t(lang, "Werkstoffe")}</th>
+          <th rowspan="2" class="table-white-border-right">{t(lang, "Werkstoffnummer")}</th>
+          <th colspan="3" class="table-no-bot-border">{t(lang, "Schnittgeschwindigkeit [m/min]")}</th>
+        </tr>
+        <tr>
+          <th class="table-no-top-border">{t(lang, "Ausführung 20er-Serie")}</th>
+          <th class="table-no-top-border">{t(lang, "Ausführung 30er-Serie")}</th>
+          <th class="table-no-top-border">{t(lang, "Ausführung 40er-Serie")}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Baustähle")}</th>
+        </tr>
+        <tr>
+          <td>ST 27</td>
+          <td class="table-white-border-right">1.0037</td>
+          <td>40-60</td>
+          <td>50-90</td>
+          <td>90-110</td>
+        </tr>
+        <tr>
+          <td>ST 52</td>
+          <td class="table-white-border-right">1.0570</td>
+          <td>30-50</td>
+          <td>60-80</td>
+          <td>80-100</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Einsatzstähle")}</th>
+        </tr>
+        <tr>
+          <td>C 10</td>
+          <td class="table-white-border-right">1.0301</td>
+          <td>40-60</td>
+          <td>60-100</td>
+          <td>80-120</td>
+        </tr>
+        <tr>
+          <td>21 NiCrMo 2</td>
+          <td class="table-white-border-right">1.6523</td>
+          <td>30-50</td>
+          <td>40-60</td>
+          <td>55-85</td>
+        </tr>
+        <tr>
+          <td>20 CrMo 5</td>
+          <td class="table-white-border-right">1.7246</td>
+          <td>30-40</td>
+          <td>50-60</td>
+          <td>70-100</td>
+        </tr>
+        <tr>
+          <td>16 MnCr 5</td>
+          <td class="table-white-border-right">1.7131</td>
+          <td>30-40</td>
+          <td>40-60</td>
+          <td>70-90</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Nitrierstähle")}</th>
+        </tr>
+        <tr>
+          <td>34 CrAlNi 7</td>
+          <td class="table-white-border-right">1.8550</td>
+          <td></td>
+          <td>20-40</td>
+          <td>30-50</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Automatenstähle")}</th>
+        </tr>
+        <tr>
+          <td>9 S 20</td>
+          <td class="table-white-border-right">1.0711</td>
+          <td>50-70</td>
+          <td>80-110</td>
+          <td>100-150</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Vergütungsstähle")}</th>
+        </tr>
+        <tr>
+          <td>C 45</td>
+          <td class="table-white-border-right">1.0503</td>
+          <td>40-60</td>
+          <td>50-80</td>
+          <td>80-110</td>
+        </tr>
+        <tr>
+          <td>42 CrMo 4</td>
+          <td class="table-white-border-right">1.7225</td>
+          <td>30-40</td>
+          <td>40-60</td>
+          <td>50-80</td>
+        </tr>
+        <tr>
+          <td>34 CrNiMo 6</td>
+          <td class="table-white-border-right">1.6582</td>
+          <td>30-40</td>
+          <td>40-60</td>
+          <td>50-80</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Kugellagerstähle")}</th>
+        </tr>
+        <tr>
+          <td>100 Cr 6</td>
+          <td class="table-white-border-right">1.3505</td>
+          <td>20-30</td>
+          <td>40-60</td>
+          <td>70-90</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Federstähle")}</th>
+        </tr>
+        <tr>
+          <td>50 CrV 4</td>
+          <td class="table-white-border-right">1.8159</td>
+          <td>30-40</td>
+          <td>40-60</td>
+          <td>50-80</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "unlegierte Werkzeugstähle")}</th>
+        </tr>
+        <tr>
+          <td>C 80 W 1</td>
+          <td class="table-white-border-right">1.1525</td>
+          <td>30-40</td>
+          <td>40-60</td>
+          <td>50-80</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "legierte Werkzeugstähle")}</th>
+        </tr>
+        <tr>
+          <td>X 210 Cr 12</td>
+          <td class="table-white-border-right">1.2080</td>
+          <td></td>
+          <td>20-40</td>
+          <td>30-50</td>
+        </tr>
+        <tr>
+          <td>X 155 CrVMo 12 1</td>
+          <td class="table-white-border-right">1.2379</td>
+          <td>20-30</td>
+          <td>20-40</td>
+          <td>40-50</td>
+        </tr>
+        <tr>
+          <td>90 MnCrV 8</td>
+          <td class="table-white-border-right">1.2842</td>
+          <td>20-30</td>
+          <td>20-40</td>
+          <td>50-60</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Schnellarbeitsstähle")}</th>
+        </tr>
+        <tr>
+          <td>S 6-5-2</td>
+          <td class="table-white-border-right">1.3343</td>
+          <td></td>
+          <td>30-50</td>
+          <td>30-50</td>
+        </tr>
+        <tr>
+          <td>S 18-0-1</td>
+          <td class="table-white-border-right">1.3355</td>
+          <td></td>
+          <td>30-50</td>
+          <td>30-50</td>
+        </tr>
+        <tr>
+          <td>S 3-3-2</td>
+          <td class="table-white-border-right">1.3333</td>
+          <td></td>
+          <td>30-50</td>
+          <td>50-60</td>
+        </tr>
+        <tr>
+          <td>S 2-10-1-8</td>
+          <td class="table-white-border-right">1.3247</td>
+          <td></td>
+          <td>25-40</td>
+          <td>40-50</td>
+        </tr>
+        <tr>
+          <td>S 10-4-3-10</td>
+          <td class="table-white-border-right">1.3207</td>
+          <td></td>
+          <td>25-40</td>
+          <td>40-50</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "hochwarmfeste Stähle")}</th>
+        </tr>
+        <tr>
+          <td>X 12 CrCoNi 21 20</td>
+          <td class="table-white-border-right">1.4971</td>
+          <td></td>
+          <td>15-25</td>
+          <td>30-40</td>
+        </tr>
+        <tr>
+          <td>X 20 CrMoWV 12 1</td>
+          <td class="table-white-border-right">1.4935</td>
+          <td></td>
+          <td>30-40</td>
+          <td>40-50</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "hitzebeständige Stähle")}</th>
+        </tr>
+        <tr>
+          <td>X 15 CrNiSi 25 20</td>
+          <td class="table-white-border-right">1.4841</td>
+          <td></td>
+          <td>15-25</td>
+          <td>30-40</td>
+        </tr>
+        <tr>
+          <td>X 12 NiCrSi 36 16</td>
+          <td class="table-white-border-right">1.4864</td>
+          <td></td>
+          <td>15-25</td>
+          <td>30-40</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "rost- und säurebeständige Stähle")}</th>
+        </tr>
+        <tr>
+          <td>X 5 CrNi 18 9</td>
+          <td class="table-white-border-right">1.4301</td>
+          <td></td>
+          <td>20-40</td>
+          <td>30-50</td>
+        </tr>
+        <tr>
+          <td>X 10 CrNiMoTi 18 10</td>
+          <td class="table-white-border-right">1.4571</td>
+          <td></td>
+          <td>20-40</td>
+          <td>30-50</td>
+        </tr>
+        <tr>
+          <td>X 20 Cr 13</td>
+          <td class="table-white-border-right">1.4021</td>
+          <td></td>
+          <td>20-40</td>
+          <td>30-50</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "vergütete Stähle")}</th>
+        </tr>
+        <tr>
+          <td>1000 - 1200 N/mm<sup>2</sup></td>
+          <td class="table-white-border-right"></td>
+          <td></td>
+          <td>20-40</td>
+          <td>30-50</td>
+        </tr>
+        <tr>
+          <td>1200 - 1400 N/mm<sup>2</sup></td>
+          <td class="table-white-border-right"></td>
+          <td></td>
+          <td>20-40</td>
+          <td>30-50</td>
+        </tr>
+        <tr>
+          <td>1400 - 1600 N/mm<sup>2</sup></td>
+          <td class="table-white-border-right"></td>
+          <td></td>
+          <td>15-25</td>
+          <td>25-35</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Stahlguss")}</th>
+        </tr>
+        <tr>
+          <td>GS 38</td>
+          <td class="table-white-border-right">1.0420</td>
+          <td>30-40</td>
+          <td>40-70</td>
+          <td>70-90</td>
+        </tr>
+        <tr>
+          <td>GS 60</td>
+          <td class="table-white-border-right">1.0558</td>
+          <td>30-40</td>
+          <td>40-60</td>
+          <td>70-90</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Gusseisen")}</th>
+        </tr>
+        <tr>
+          <td>GG 30</td>
+          <td class="table-white-border-right">0.6030</td>
+          <td>30-40</td>
+          <td>40-60</td>
+          <td>50-80</td>
+        </tr>
+        <tr>
+          <td>GGG 50</td>
+          <td class="table-white-border-right">0.7050</td>
+          <td>25-35</td>
+          <td>30-50</td>
+          <td>50-70</td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Aluminiumlegierung")}</th>
+        </tr>
+        <tr>
+          <td>Al Mg 3</td>
+          <td class="table-white-border-right">3.3535</td>
+          <td></td>
+          <td>70-110</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Al Mg 4,5 Mn</td>
+          <td class="table-white-border-right">3.3547</td>
+          <td></td>
+          <td>70-110</td>
+          <td></td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Zinnbronze")}</th>
+        </tr>
+        <tr>
+          <td>CuSn 6</td>
+          <td class="table-white-border-right">2.1020</td>
+          <td></td>
+          <td>70-110</td>
+          <td></td>
+        </tr>
+        <tr class="row-group">
+          <th colspan="5" scope="rowgroup">{t(lang, "Aluminiumbronze")}</th>
+        </tr>
+        <tr>
+          <td>CuAl 8</td>
+          <td class="table-white-border-right">2.0920</td>
+          <td></td>
+          <td>40-70</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+</Base>

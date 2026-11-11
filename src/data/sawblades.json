@@ -1,0 +1,5399 @@
+[
+ {
+  "kind": "sawblade",
+  "id": 1,
+  "quality": "GUHEMA Super-HSS",
+  "type": "BSD",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "DMo 5 / 1.3343 - M2",
+   "en": "DMo 5 / 1.3343 - M2",
+   "ru": "DMo 5 / 1.3343 - M2"
+  },
+  "group": 1,
+  "clamping": 1,
+  "slug": "guhema-super-hss",
+  "image": {
+   "de": "blades/MS_normal.jpg",
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   7,
+   9,
+   10,
+   11,
+   14,
+   12,
+   15,
+   18,
+   22,
+   13,
+   16,
+   19,
+   17,
+   23,
+   20,
+   24,
+   21,
+   25,
+   28,
+   26,
+   29,
+   27,
+   30,
+   31,
+   34,
+   32,
+   33,
+   35,
+   36,
+   37,
+   38,
+   39
+  ]
+ },
+ {
+  "kind": "sawblade",
+  "id": 2,
+  "quality": "GUHEMA Brillant",
+  "type": "BSE",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "EMo 5 Co 5 / 1.3243 - M35",
+   "en": "EMo 5 Co 5 / 1.3243 - M35",
+   "ru": "EMo 5 Co 5 / 1.3243 - M35"
+  },
+  "group": 1,
+  "clamping": 1,
+  "slug": "guhema-brillant",
+  "image": {
+   "de": "blades/MS_normal_iGo2NLX.jpg",
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   5,
+   6,
+   8,
+   7,
+   9,
+   10,
+   11,
+   14,
+   12,
+   15,
+   18,
+   22,
+   13,
+   16,
+   19,
+   17,
+   23,
+   20,
+   24,
+   21,
+   25,
+   28,
+   26,
+   29,
+   27,
+   30,
+   31,
+   34,
+   32,
+   33
+  ]
+ },
+ {
+  "kind": "sawblade",
+  "id": 3,
+  "quality": "GUHEMA Super-HSS",
+  "type": "BKD",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "DMo 5 / 1.3343 - M2",
+   "en": "DMo 5 / 1.3343 - M2",
+   "ru": "DMo 5 / 1.3343 - M2"
+  },
+  "group": 1,
+  "clamping": 2,
+  "slug": "guhema-super-hss",
+  "image": {
+   "de": "blades/MS_Kasto.png",
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   40,
+   41,
+   43,
+   49,
+   44,
+   45,
+   42,
+   46,
+   50,
+   47,
+   51,
+   48,
+   52,
+   53,
+   57,
+   54,
+   55,
+   58,
+   56,
+   59,
+   60,
+   62,
+   61,
+   63,
+   64,
+   65,
+   67,
+   68,
+   69,
+   66
+  ]
+ },
+ {
+  "kind": "sawblade",
+  "id": 4,
+  "quality": "GUHEMA Brillant",
+  "type": "BKE",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "EMo 5 Co 5 / 1.3243 - M35",
+   "en": "EMo 5 Co 5 / 1.3243 - M35",
+   "ru": "EMo 5 Co 5 / 1.3243 - M35"
+  },
+  "group": 1,
+  "clamping": 2,
+  "slug": "guhema-brillant",
+  "image": {
+   "de": "blades/MS_Kasto_2kbzSCA.png",
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   41,
+   43,
+   49,
+   44,
+   45,
+   42,
+   46,
+   50,
+   47,
+   51,
+   48,
+   52,
+   53,
+   57,
+   54,
+   55,
+   58,
+   56,
+   59,
+   60,
+   62,
+   61,
+   63,
+   64,
+   65
+  ]
+ },
+ {
+  "kind": "sawblade",
+  "id": 5,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "BSF",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "Zähne aus DMo 5 / 1.3343 - M2",
+   "en": "Teeth made of DMo 5 / 1.3343 - M2",
+   "ru": "Зубья из DMo 5 / 1.3343 - M2"
+  },
+  "group": 1,
+  "clamping": 1,
+  "slug": "guhema-bi-lastig",
+  "image": {
+   "de": "blades/MS_normal_NH83gtf.jpg",
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   2,
+   3,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   77,
+   79,
+   81,
+   82,
+   83,
+   84,
+   87,
+   85,
+   86,
+   89,
+   91,
+   93,
+   95,
+   97
+  ]
+ },
+ {
+  "kind": "sawblade",
+  "id": 6,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "BKF",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "Zähne aus DMo 5 / 1.3343 - M2",
+   "en": "Teeth made of DMo 5 / 1.3343 - M2",
+   "ru": "Зубья из DMo 5 / 1.3343 - M2"
+  },
+  "group": 1,
+  "clamping": 2,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/MS_Kasto_2lo0evM.png",
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   2,
+   3,
+   70,
+   71,
+   72,
+   73,
+   74,
+   76,
+   78,
+   80,
+   81,
+   82,
+   83,
+   84,
+   88,
+   85,
+   86,
+   90,
+   92,
+   94,
+   96,
+   98
+  ]
+ },
+ {
+  "kind": "sawblade",
+  "id": 7,
+  "quality": "GUHEMA Super-HSS",
+  "type": "ISD",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "DMo 5 / 1.3343 - M2",
+   "en": "DMo 5 / 1.3343 - M2",
+   "ru": "DMo 5 / 1.3343 - M2"
+  },
+  "group": 2,
+  "clamping": 3,
+  "slug": "guhema-super-hss",
+  "image": {
+   "de": "metallstich_superhss.png",
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   99,
+   100,
+   101,
+   102,
+   109,
+   103,
+   104,
+   110,
+   105,
+   111,
+   117,
+   112,
+   118,
+   106,
+   113,
+   107,
+   108,
+   114,
+   119,
+   115,
+   120,
+   116,
+   121
+  ]
+ },
+ {
+  "kind": "sawblade",
+  "id": 8,
+  "quality": "GUHEMA Brillant",
+  "type": "ISE",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "EMo 5 Co 5 / 1.3243 - M35",
+   "en": "EMo 5 Co 5 / 1.3243 - M35",
+   "ru": "EMo 5 Co 5 / 1.3243 - M35"
+  },
+  "group": 2,
+  "clamping": 3,
+  "slug": "guhema-brillant",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   99,
+   100,
+   101,
+   102,
+   109,
+   103,
+   104,
+   110,
+   105,
+   111,
+   117,
+   112,
+   118,
+   106,
+   113,
+   107,
+   108,
+   114,
+   119,
+   115,
+   120,
+   116,
+   121
+  ]
+ },
+ {
+  "kind": "sawblade",
+  "id": 9,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "ISF",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "Zähne aus DMo 5 / 1.3343 - M2",
+   "en": "Teeth made of DMo 5 / 1.3343 - M2",
+   "ru": "Зубья из DMo 5 / 1.3343 - M2"
+  },
+  "group": 2,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "metallstich_bilastic.png",
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   122,
+   123,
+   124,
+   126,
+   125,
+   127,
+   128,
+   129,
+   130,
+   131,
+   132,
+   133,
+   134
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 10,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SSF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Blechen bis 1 mm Stärke",
+   "en": "* Sharp-milled toothing\n* For cutting sheet metal up to 1 mm thick",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки листового металла толщиной до 1 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/Saebelsaegen_SSF1201Q.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "32",
+   "en": "32",
+   "ru": "32"
+  },
+  "cutting_metal": "< 1",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   141,
+   142,
+   143,
+   145,
+   144
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 11,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "SSM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Blechen bis 1 mm Stärke",
+   "en": "* Sharp-milled toothing\n* For cutting sheet metal up to 1 mm thick",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки листового металла толщиной до 1 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-co-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "32",
+   "en": "32",
+   "ru": "32"
+  },
+  "cutting_metal": "< 1",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   141,
+   142,
+   143,
+   145,
+   144
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 12,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SSF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Blechen ab 1 mm Stärke",
+   "en": "* Sharp-milled toothing\n* For cutting sheet metal from 1 mm thick",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки листового металла толщиной от 1 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/Saebelsaegen_SSF1201P.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "> 1",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   146,
+   147,
+   148,
+   149,
+   150,
+   151,
+   152,
+   153,
+   154,
+   155,
+   156
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 13,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "SSM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Blechen ab 1 mm Stärke",
+   "en": "* Sharp-milled toothing\n* For cutting sheet metal from 1 mm thick",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки листового металла толщиной от 1 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-co-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "> 1",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   146,
+   147,
+   148,
+   149,
+   150,
+   151,
+   152,
+   153,
+   154,
+   155,
+   156
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 14,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SSF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 1,5 - 3 mm",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of 1.5 - 3 mm",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки 1,5 - 3 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/Saebelsaegen_SSF1201N.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18",
+   "en": "18",
+   "ru": "18"
+  },
+  "cutting_metal": "1,5 - 3",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   157,
+   158,
+   159,
+   160,
+   161,
+   162,
+   163,
+   164,
+   165,
+   166,
+   167
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 15,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "SSM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 1,5 - 3 mm",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of 1.5 - 3 mm",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки 1,5 - 3 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18",
+   "en": "18",
+   "ru": "18"
+  },
+  "cutting_metal": "1,5 - 3",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   157,
+   158,
+   159,
+   160,
+   161,
+   162,
+   163,
+   164,
+   165,
+   166,
+   167
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 16,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SSF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 2 - 4 mm",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of 2 - 4 mm",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки 2 - 4 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/Saebelsaegen_SSF1201L.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "14",
+   "en": "14",
+   "ru": "14"
+  },
+  "cutting_metal": "2 - 4",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   168,
+   169,
+   170,
+   171,
+   172,
+   173,
+   174,
+   175,
+   176,
+   177,
+   178
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 17,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "SSM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 2 - 4 mm",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of 2 - 4 mm",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки 2 - 4 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "14",
+   "en": "14",
+   "ru": "14"
+  },
+  "cutting_metal": "2 - 4",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   168,
+   169,
+   170,
+   171,
+   172,
+   173,
+   174,
+   175,
+   176,
+   177,
+   178
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 18,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SSF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste variable Spezialverzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 3 - 8 mm\r\n* **Spezialblatt für die Palettenreparatur**\r\n* Für das Zerspanen von Holz mit Metallrückständen",
+   "en": "* Sharp-milled variable special toothing\n* For cutting metal/profiles with a wall thickness of 3 - 8 mm\n* **Special blade for pallet repair**\n* For cutting wood with embedded metal",
+   "ru": "* Острые фрезерованные специальные зубья с переменным шагом\r\n* Для резки металла/профилей с толщиной стенки 3 - 8 мм\r\n* **Специальное полотно для ремонта поддонов**\r\n* Для резки древесины с металлическими включениями"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/Saebelsaegen_SSF1201Z.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "10 - 14",
+   "en": "10 - 14",
+   "ru": "10 - 14"
+  },
+  "cutting_metal": "3 - 8",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   179,
+   180,
+   181,
+   182,
+   183,
+   184,
+   185,
+   186,
+   187,
+   188,
+   189
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 19,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "SSM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste variable Spezialverzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 3 - 8 mm\r\n* **Spezialblatt für die Palettenreparatur**\r\n* Für das Zerspanen von Holz mit Metallrückständen",
+   "en": "* Sharp-milled variable special toothing\n* For cutting metal/profiles with a wall thickness of 3 - 8 mm\n* **Special blade for pallet repair**\n* For cutting wood with embedded metal",
+   "ru": "* Острые фрезерованные специальные зубья с переменным шагом\r\n* Для резки металла/профилей с толщиной стенки 3 - 8 мм\r\n* **Специальное полотно для ремонта поддонов**\r\n* Для резки древесины с металлическими включениями"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "10 - 14",
+   "en": "10 - 14",
+   "ru": "10 - 14"
+  },
+  "cutting_metal": "3 - 8",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   179,
+   180,
+   181,
+   182,
+   183,
+   184,
+   185,
+   186,
+   187,
+   188,
+   189
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 20,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SSF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 4 - 12 mm\r\n* Für das Zerspanen von Holz mit Metallrückständen bei sauberem Schnittverlauf",
+   "en": "* For cutting metal/profiles with a wall thickness of 4 - 12 mm\n* For cutting wood with embedded metal, with a clean cut",
+   "ru": "* Для резки металла/профилей с толщиной стенки 4 - 12 мм\r\n* Для резки древесины с металлическими включениями с чистым резом"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/Saebelsaegen_SSF1201J.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "10",
+   "en": "10",
+   "ru": "10"
+  },
+  "cutting_metal": "4 - 12",
+  "cutting_wood": "< 60",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   190,
+   191,
+   192,
+   193,
+   194,
+   195,
+   196,
+   197,
+   198,
+   199,
+   200
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 21,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "SSM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 4 - 12 mm\r\n* Für das Zerspanen von Holz mit Metallrückständen bei sauberem Schnittverlauf",
+   "en": "* For cutting metal/profiles with a wall thickness of 4 - 12 mm\n* For cutting wood with embedded metal, with a clean cut",
+   "ru": "* Для резки металла/профилей с толщиной стенки 4 - 12 мм\r\n* Для резки древесины с металлическими включениями с чистым резом"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "10",
+   "en": "10",
+   "ru": "10"
+  },
+  "cutting_metal": "4 - 12",
+  "cutting_wood": "< 60",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   190,
+   191,
+   192,
+   193,
+   194,
+   195,
+   196,
+   197,
+   198,
+   199,
+   200
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 22,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SSF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste variable Spezialverzahnung\r\n* Für das Zerspanen von Edelstahl\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke > 6 mm",
+   "en": "* Sharp-milled variable special toothing\n* For cutting stainless steel\n* For cutting metal/profiles with a wall thickness of > 6 mm",
+   "ru": "* Острые фрезерованные специальные зубья с переменным шагом\r\n* Для резки нержавеющей стали\r\n* Для резки металла/профилей с толщиной стенки > 6 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/Saebelsaegen_SSF1201Ü.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "8 - 10",
+   "en": "8 - 10",
+   "ru": "8 - 10"
+  },
+  "cutting_metal": "> 6",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   201,
+   202,
+   203,
+   204,
+   205,
+   206,
+   207,
+   208,
+   209,
+   210,
+   211
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 23,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "SSM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste variable Spezialverzahnung\r\n* Für das Zerspanen von Edelstahl\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke > 6 mm",
+   "en": "* Sharp-milled variable special toothing\n* For cutting stainless steel\n* For cutting metal/profiles with a wall thickness of > 6 mm",
+   "ru": "* Острые фрезерованные специальные зубья с переменным шагом\r\n* Для резки нержавеющей стали\r\n* Для резки металла/профилей с толщиной стенки > 6 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "8 - 10",
+   "en": "8 - 10",
+   "ru": "8 - 10"
+  },
+  "cutting_metal": "> 6",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   201,
+   202,
+   203,
+   204,
+   205,
+   206,
+   207,
+   208,
+   209,
+   210,
+   211
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 24,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SSF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke > 8 mm\r\n* Für das Zerspanen von Holz mit Metallrückständen\r\n* Spezialblatt für die Altbausanierung",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of > 8 mm\n* For cutting wood with embedded metal\n* Special blade for renovating old buildings",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки > 8 мм\r\n* Для резки древесины с металлическими включениями\r\n* Специальное полотно для реконструкции старых зданий"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/Saebelsaegen_SSF1201I.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "8",
+   "en": "8",
+   "ru": "8"
+  },
+  "cutting_metal": "> 8",
+  "cutting_wood": "< 70",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   212,
+   213,
+   214,
+   215,
+   216,
+   217,
+   218,
+   219,
+   220,
+   221,
+   222
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 25,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "SSM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke > 8 mm\r\n* Für das Zerspanen von Holz mit Metallrückständen\r\n* Spezialblatt für die Altbausanierung",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of > 8 mm\n* For cutting wood with embedded metal\n* Special blade for renovating old buildings",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки > 8 мм\r\n* Для резки древесины с металлическими включениями\r\n* Специальное полотно для реконструкции старых зданий"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "8",
+   "en": "8",
+   "ru": "8"
+  },
+  "cutting_metal": "> 8",
+  "cutting_wood": "< 70",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   212,
+   213,
+   214,
+   215,
+   216,
+   217,
+   218,
+   219,
+   220,
+   221,
+   222
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 26,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SSF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* **Spezialblatt für die Fensterrahmendemontage**\r\n* Für das schnelle Zerspanen von Holz mit Metallrückständen\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke > 10 mm",
+   "en": "* Sharp-milled toothing\n* **Special blade for removing window frames**\n* For fast cutting of wood with embedded metal\n* For cutting metal/profiles with a wall thickness of > 10 mm",
+   "ru": "* Острые фрезерованные зубья\r\n* **Специальное полотно для демонтажа оконных рам**\r\n* Для быстрой резки древесины с металлическими включениями\r\n* Для резки металла/профилей с толщиной стенки > 10 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/Saebelsaegen_SSF1201H.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "6",
+   "en": "6",
+   "ru": "6"
+  },
+  "cutting_metal": "> 10",
+  "cutting_wood": "< 80",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   223,
+   224,
+   225,
+   226,
+   227,
+   228,
+   229,
+   230,
+   231,
+   232,
+   233
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 27,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "SSM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* **Spezialblatt für die Fensterrahmendemontage**\r\n* Für das schnelle Zerspanen von Holz mit Metallrückständen\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke > 10 mm",
+   "en": "* Sharp-milled toothing\n* **Special blade for removing window frames**\n* For fast cutting of wood with embedded metal\n* For cutting metal/profiles with a wall thickness of > 10 mm",
+   "ru": "* Острые фрезерованные зубья\r\n* **Специальное полотно для демонтажа оконных рам**\r\n* Для быстрой резки древесины с металлическими включениями\r\n* Для резки металла/профилей с толщиной стенки > 10 мм"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "6",
+   "en": "6",
+   "ru": "6"
+  },
+  "cutting_metal": "> 10",
+  "cutting_wood": "< 80",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   223,
+   224,
+   225,
+   226,
+   227,
+   228,
+   229,
+   230,
+   231,
+   232,
+   233
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 28,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SSF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* **Spezialblatt für den Trockenbau**\r\n* Gipskarton und trockenes Holz\r\n* Trennt auch Metalleinschlüsse",
+   "en": "* **Special blade for drywall construction**\n* Plasterboard and dry wood\n* Also cuts through metal inclusions",
+   "ru": "* **Специальное полотно для сухого строительства**\r\n* Гипсокартон и сухая древесина\r\n* Режет также металлические включения"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/Saebelsaegen_SSF1201DZ.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "9",
+   "en": "9",
+   "ru": "9"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "< 80",
+  "cutting_minerals": {
+   "de": "Gipskarton",
+   "en": "Plasterboard",
+   "ru": "Гипсокартон"
+  },
+  "indicators": [
+   234,
+   235,
+   236,
+   237,
+   238,
+   239,
+   240,
+   241,
+   242,
+   243,
+   244
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 29,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "SSM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* **Spezialblatt für den Trockenbau**\r\n* Gipskarton und trockenes Holz\r\n* Trennt auch Metalleinschlüsse",
+   "en": "* **Special blade for drywall construction**\n* Plasterboard and dry wood\n* Also cuts through metal inclusions",
+   "ru": "* **Специальное полотно для сухого строительства**\r\n* Гипсокартон и сухая древесина\r\n* Режет также металлические включения"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "9",
+   "en": "9",
+   "ru": "9"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "< 80",
+  "cutting_minerals": {
+   "de": "Gipskarton",
+   "en": "Plasterboard",
+   "ru": "Гипсокартон"
+  },
+  "indicators": [
+   234,
+   235,
+   236,
+   237,
+   238,
+   239,
+   240,
+   241,
+   242,
+   243,
+   244
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 30,
+  "quality": "GUHEMA CV-flex",
+  "type": "SSV",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Konvexe doppelseitig geschliffene Schneide\r\n* Schneidet schnell und sauber Dämmstoffe (Mineralwolle, Styrodur, Styropor, etc.)\r\n* Papier/Pappe\r\n* Leder\r\n* Kautschuk und Gummi\r\n* Sägt in beide Richtungen (Zweifachschnitt)",
+   "en": "* Convex cutting edge, ground on both sides\n* Cuts insulation materials quickly and cleanly (mineral wool, Styrodur, Styropor, etc.)\n* Paper/cardboard\n* Leather\n* Natural and synthetic rubber\n* Cuts in both directions (double cut)",
+   "ru": "* Выпуклая режущая кромка с двусторонней заточкой\r\n* Быстро и чисто режет изоляционные материалы (минеральная вата, Styrodur, Styropor и т. д.)\r\n* Бумага/картон\r\n* Кожа\r\n* Каучук и резина\r\n* Пилит в обоих направлениях (двойной рез)"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-cv-flex",
+  "image": {
+   "de": "blades/SSV2221KD.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "Welle",
+   "en": "Wave",
+   "ru": "Волна"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   245,
+   246
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 31,
+  "quality": "GUHEMA CV-flex",
+  "type": "SSV",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Hart- und Weichholz",
+   "en": "* Sharp-milled toothing\n* For cutting hardwood and softwood",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки древесины твердых и мягких пород"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-cv-flex",
+  "image": {
+   "de": "blades/SSV2221E.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "3",
+   "en": "3",
+   "ru": "3"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "< 175",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   247,
+   248
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 32,
+  "quality": "GUHEMA CV-flex",
+  "type": "SSV",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Geschärfte Verzahnung\r\n* Für das aggressive Zerspanen von Hart- und Weichholz mit verlängerter Standzeit dank gehärteten Zähnen",
+   "en": "* Sharpened teeth\n* For aggressive cutting of hardwood and softwood, with extended tool life thanks to hardened teeth",
+   "ru": "* Заточенные зубья\r\n* Для агрессивной резки древесины твердых и мягких пород с увеличенной стойкостью благодаря закаленным зубьям"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-cv-flex",
+  "image": {
+   "de": "blades/SSV2241E.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "3",
+   "en": "3",
+   "ru": "3"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "< 190",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   249
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 33,
+  "quality": "GUHEMA CV-flex",
+  "type": "SSV",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Geschärfte Verzahnung\r\n* Für das schnelle Zerspanen von Weichholz mit verlängerter Standzeit dank gehärteten Zähnen\r\n* Sägt in beide Richtungen (Zweifachschnitt)",
+   "en": "* Sharpened teeth\n* For fast cutting of softwood, with extended tool life thanks to hardened teeth\n* Cuts in both directions (double cut)",
+   "ru": "* Заточенные зубья\r\n* Для быстрой резки древесины мягких пород с увеличенной стойкостью благодаря закаленным зубьям\r\n* Пилит в обоих направлениях (двойной рез)"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-cv-flex",
+  "image": {
+   "de": "blades/SSV2241V.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "4 - 5",
+   "en": "4 - 5",
+   "ru": "4 - 5"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "< 190",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   250
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 34,
+  "quality": "GUHEMA HM-Zähne",
+  "type": "SSI",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Zylindrische Hartmetallverzahnung\r\n* Für das Schneiden von Porenbeton und Gasbeton",
+   "en": "* Cylindrical carbide toothing\n* For cutting aerated concrete and gas concrete",
+   "ru": "* Цилиндрические твердосплавные зубья\r\n* Для резки пенобетона и газобетона"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-hm-zahne",
+  "image": {
+   "de": "blades/SSI230xB.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "1,5",
+   "en": "1.5",
+   "ru": "1,5"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   251,
+   252,
+   254,
+   253,
+   255
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 35,
+  "quality": "GUHEMA HM-Zähne",
+  "type": "SSI",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* zylindrische Hartmetallverzahnung\r\n* Für das Schneiden von Mauerwerk, Mörtelfugen und Ziegelstein\r\n* Trennt auch kleine Metalleinschlüsse",
+   "en": "* Cylindrical carbide toothing\n* For cutting masonry, mortar joints and brick\n* Also cuts through small metal inclusions",
+   "ru": "* Цилиндрические твердосплавные зубья\r\n* Для резки кирпичной кладки, растворных швов и кирпича\r\n* Режет также небольшие металлические включения"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-hm-zahne",
+  "image": {
+   "de": "blades/SSI230xE.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "3",
+   "en": "3",
+   "ru": "3"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   256,
+   257,
+   258,
+   260,
+   259,
+   261
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 36,
+  "quality": "GUHEMA HM-Zähne",
+  "type": "SSI",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Rechteckige Hartmetallverzahnung\r\n* **Baustellen-Profi (Allrounder)**\r\n* Für das Schneiden von Mauerwerk und Kalksandstein\r\n* Erzielt ebenfalls gute Schnittergebnisse in Porenbeton",
+   "en": "* Rectangular carbide toothing\n* **Construction site pro (all-rounder)**\n* For cutting masonry and sand-lime brick\n* Also achieves good cutting results in aerated concrete",
+   "ru": "* Прямоугольные твердосплавные зубья\r\n* **Профи для стройплощадки (универсал)**\r\n* Для резки кирпичной кладки и силикатного кирпича\r\n* Также дает хорошие результаты в пенобетоне"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-hm-zahne",
+  "image": {
+   "de": "blades/SSI230xC.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "2",
+   "en": "2",
+   "ru": "2"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   262,
+   263,
+   264,
+   266,
+   265,
+   267
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 37,
+  "quality": "GUHEMA HM-Zähne",
+  "type": "SSI",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Rechteckige Hartmetallverzahnung\r\n* Für das Schneiden von Hohlblocksteinen und Kalksandstein",
+   "en": "* Rectangular carbide toothing\n* For cutting hollow blocks and sand-lime brick",
+   "ru": "* Прямоугольные твердосплавные зубья\r\n* Для резки пустотелых блоков и силикатного кирпича"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-hm-zahne",
+  "image": {
+   "de": "blades/SSI230xG.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "4",
+   "en": "4",
+   "ru": "4"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   268,
+   269,
+   270,
+   272,
+   271,
+   273
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 38,
+  "quality": "GUHEMA HM-Zähne",
+  "type": "SSI",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Rechteckige Hartmetallverzahnung\r\n* **Baustellen-Profi-Plus (Allrounder)**\r\n* Für das Schneiden in Mauerwerk und Kalksandstein\r\n* Erzielt gute Schnittergebnisse in Porenbeton\r\n* Extra starker Zahnkörper für noch geraderen Schnittverlauf",
+   "en": "* Rectangular carbide toothing\n* **Construction site pro plus (all-rounder)**\n* For cutting into masonry and sand-lime brick\n* Achieves good cutting results in aerated concrete\n* Extra-strong tooth body for an even straighter cut",
+   "ru": "* Прямоугольные твердосплавные зубья\r\n* **Профи для стройплощадки плюс (универсал)**\r\n* Для резки кирпичной кладки и силикатного кирпича\r\n* Дает хорошие результаты в пенобетоне\r\n* Особо прочный корпус зуба для еще более прямого реза"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-hm-zahne",
+  "image": {
+   "de": "blades/SSI2309C.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "2",
+   "en": "2",
+   "ru": "2"
+  },
+  "cutting_metal": "",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   274,
+   275,
+   276
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 39,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SRF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Blechen bis 1 mm Stärke\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For cutting sheet metal up to 1 mm thick\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки листового металла толщиной до 1 мм\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SRF1202Q_V30RXWm.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "32",
+   "en": "32",
+   "ru": "32"
+  },
+  "cutting_metal": "< 1",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   277,
+   278,
+   279,
+   280,
+   281,
+   282,
+   283,
+   284
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 40,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SRF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Blechen ab 1 mm Stärke\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For cutting sheet metal from 1 mm thick\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки листового металла толщиной от 1 мм\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SRF1202P_wKa6FQu.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "> 1",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   285,
+   286,
+   287,
+   288,
+   289,
+   290,
+   291,
+   292
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 41,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SRF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 1,5 - 3 mm\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of 1.5 - 3 mm\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки 1,5 - 3 мм\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SRF1202N.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18",
+   "en": "18",
+   "ru": "18"
+  },
+  "cutting_metal": "1,5 - 3",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   293,
+   294,
+   295,
+   296,
+   297,
+   298,
+   299,
+   300
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 42,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SRF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 2 - 4 mm\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of 2 - 4 mm\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки 2 - 4 мм\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SRF1202L.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "14",
+   "en": "14",
+   "ru": "14"
+  },
+  "cutting_metal": "2 - 4",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   301,
+   302,
+   303,
+   304,
+   305,
+   306,
+   307,
+   308
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 43,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SRF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 4 - 12 mm\r\n* Für das Zerspanen von Holz mit Metallrückständen bei sauberem Schnittverlauf\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* For cutting metal/profiles with a wall thickness of 4 - 12 mm\n* For cutting wood with embedded metal, with a clean cut\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Для резки металла/профилей с толщиной стенки 4 - 12 мм\r\n* Для резки древесины с металлическими включениями с чистым резом\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SRF1202J.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "10",
+   "en": "10",
+   "ru": "10"
+  },
+  "cutting_metal": "4 - 12",
+  "cutting_wood": "< 60",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   309,
+   310,
+   311,
+   312,
+   313,
+   314,
+   315,
+   316
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 44,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SRF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke > 8 mm\r\n* Für das Zerspanen von Holz mit Metallrückständen\r\n* Spezialblatt für die Altbausanierung\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of > 8 mm\n* For cutting wood with embedded metal\n* Special blade for renovating old buildings\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки > 8 мм\r\n* Для резки древесины с металлическими включениями\r\n* Специальное полотно для реконструкции старых зданий\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SRF1202I.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "8",
+   "en": "8",
+   "ru": "8"
+  },
+  "cutting_metal": "> 8",
+  "cutting_wood": "< 70",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   317,
+   318,
+   319,
+   320,
+   321,
+   322,
+   323,
+   324
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 45,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SRF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Spezialblatt für die Fensterrahmendemontage\r\n* Für das schnelle Zerspanen von Holz mit Metallrückständen\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke > 10 mm\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* Special blade for removing window frames\n* For fast cutting of wood with embedded metal\n* For cutting metal/profiles with a wall thickness of > 10 mm\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Специальное полотно для демонтажа оконных рам\r\n* Для быстрой резки древесины с металлическими включениями\r\n* Для резки металла/профилей с толщиной стенки > 10 мм\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SRF1202H.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "6",
+   "en": "6",
+   "ru": "6"
+  },
+  "cutting_metal": "> 10",
+  "cutting_wood": "< 80",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   325,
+   326,
+   327,
+   328,
+   329,
+   330,
+   331,
+   332
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 46,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SFF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Blechen bis 1 mm Stärke\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For cutting sheet metal up to 1 mm thick\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки листового металла толщиной до 1 мм\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SFF1212Q.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "32",
+   "en": "32",
+   "ru": "32"
+  },
+  "cutting_metal": "< 1",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   333,
+   334,
+   335,
+   336,
+   337,
+   338,
+   339,
+   340,
+   341,
+   342
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 47,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SFF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Blechen ab 1 mm Stärke\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For cutting sheet metal from 1 mm thick\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки листового металла толщиной от 1 мм\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SFF1212P.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "> 1",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   343,
+   344,
+   345,
+   346,
+   347,
+   348,
+   349,
+   350,
+   351,
+   352
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 48,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SFF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 1,5 - 3 mm\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of 1.5 - 3 mm\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки 1,5 - 3 мм\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SFF1212N.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18",
+   "en": "18",
+   "ru": "18"
+  },
+  "cutting_metal": "1,5 - 3",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   353,
+   354,
+   355,
+   356,
+   357,
+   358,
+   359,
+   360,
+   361,
+   362
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 49,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SFF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 2 - 4 mm\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of 2 - 4 mm\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки 2 - 4 мм\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SFF1212L.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "14",
+   "en": "14",
+   "ru": "14"
+  },
+  "cutting_metal": "2 - 4",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   363,
+   364,
+   365,
+   366,
+   367,
+   368,
+   369,
+   370,
+   371,
+   372
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 50,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SFF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Für das Zerspanen von Metall/Profilen mit einer Wandstärke von 4 - 12 mm\r\n* Für das Zerspanen von Holz mit Metallrückständen bei sauberem Schnittverlauf\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* For cutting metal/profiles with a wall thickness of 4 - 12 mm\n* For cutting wood with embedded metal, with a clean cut\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Для резки металла/профилей с толщиной стенки 4 - 12 мм\r\n* Для резки древесины с металлическими включениями с чистым резом\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SFF1212J.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "10",
+   "en": "10",
+   "ru": "10"
+  },
+  "cutting_metal": "4 - 12",
+  "cutting_wood": "< 60",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   373,
+   374,
+   375,
+   376,
+   377,
+   378,
+   379,
+   380,
+   381,
+   382
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 51,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SFF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke > 8 mm\r\n* Für das Zerspanen von Holz mit Metallrückständen\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For cutting metal/profiles with a wall thickness of > 8 mm\n* For cutting wood with embedded metal\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для резки металла/профилей с толщиной стенки > 8 мм\r\n* Для резки древесины с металлическими включениями\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SFF1212I.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "8",
+   "en": "8",
+   "ru": "8"
+  },
+  "cutting_metal": "> 8",
+  "cutting_wood": "< 70",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   383,
+   384,
+   385,
+   386,
+   387,
+   388,
+   389,
+   390,
+   391,
+   392
+  ]
+ },
+ {
+  "kind": "sablesawblade",
+  "id": 52,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "SFF",
+  "name": {
+   "de": "Spezialsäbelsägeblätter",
+   "en": "Special Sabre Saw Blades",
+   "ru": "Специальные полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Für das schnelle Zerspanen von Holz mit Metallrückständen\r\n* Für das Zerspanen von Metall/Profilen mit einer Wandstärke > 10 mm\r\n* Extra breites und starkes Sägeblatt für gerade Schnitte",
+   "en": "* Sharp-milled toothing\n* For fast cutting of wood with embedded metal\n* For cutting metal/profiles with a wall thickness of > 10 mm\n* Extra-wide, strong saw blade for straight cuts",
+   "ru": "* Острые фрезерованные зубья\r\n* Для быстрой резки древесины с металлическими включениями\r\n* Для резки металла/профилей с толщиной стенки > 10 мм\r\n* Очень широкое и прочное полотно для ровных резов"
+  },
+  "group": 3,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/SFF1212H.png",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "6",
+   "en": "6",
+   "ru": "6"
+  },
+  "cutting_metal": "> 10",
+  "cutting_wood": "< 80",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [
+   393,
+   394,
+   395,
+   396,
+   397,
+   398,
+   399,
+   400,
+   401,
+   402
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 53,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "ASF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/ASF0300Q.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "32",
+   "en": "32",
+   "ru": "32"
+  },
+  "cutting_metal": "< 0,8",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   403
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 54,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "ASM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "32",
+   "en": "32",
+   "ru": "32"
+  },
+  "cutting_metal": "< 0,8",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   403
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 55,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "ASF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/ASF0300P.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "0,8 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   404
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 56,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "ASM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "0,8 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   404
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 57,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "ASF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/ASF0300O.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "22",
+   "en": "22",
+   "ru": "22"
+  },
+  "cutting_metal": "1 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   405
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 58,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "ASM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "22",
+   "en": "22",
+   "ru": "22"
+  },
+  "cutting_metal": "1 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   405
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 59,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "ASF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/ASF0300N.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18",
+   "en": "18",
+   "ru": "18"
+  },
+  "cutting_metal": "1,5 - 3,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   406
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 60,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "ASM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18",
+   "en": "18",
+   "ru": "18"
+  },
+  "cutting_metal": "1,5 - 3,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   406
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 61,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "ASF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Progressivverzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>\r\n* Die progressiv verlaufende Verzahnung eignet sich besonders als Universalblatt, zudem erleichtert sie das Ansägen",
+   "en": "* Sharp-milled progressive toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>\n* The progressive toothing makes it particularly suitable as a universal blade and also makes it easier to start the cut",
+   "ru": "* Острые фрезерованные зубья с прогрессивным шагом\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>\r\n* Зубья с прогрессивным шагом особенно подходят для универсального полотна и, кроме того, облегчают начало пропила"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/ASF0300ß.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18 - 32",
+   "en": "18 - 32",
+   "ru": "18 - 32"
+  },
+  "cutting_metal": "1,5 - 3,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   407
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 62,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "ASM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Progressivverzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>\r\n* Die progressiv verlaufende Verzahnung eignet sich besonders als Universalblatt, zudem erleichtert sie das Ansägen",
+   "en": "* Sharp-milled progressive toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>\n* The progressive toothing makes it particularly suitable as a universal blade and also makes it easier to start the cut",
+   "ru": "* Острые фрезерованные зубья с прогрессивным шагом\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>\r\n* Зубья с прогрессивным шагом особенно подходят для универсального полотна и, кроме того, облегчают начало пропила"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18 - 32",
+   "en": "18 - 32",
+   "ru": "18 - 32"
+  },
+  "cutting_metal": "1,5 - 3,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   407
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 63,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "ASF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Progressivverzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>\r\n* Die Anschnittverzahnung erleichtert das Ansägen und vermindert die Abrutschgefahr vom Schnittpunkt",
+   "en": "* Sharp-milled progressive toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>\n* The starter toothing makes it easier to start the cut and reduces the risk of slipping off the cutting point",
+   "ru": "* Острые фрезерованные зубья с прогрессивным шагом\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>\r\n* Зубья для зарезания облегчают начало пропила и снижают риск соскальзывания с точки реза"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/ASF0300R.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "22 / 32",
+   "en": "22 / 32",
+   "ru": "22 / 32"
+  },
+  "cutting_metal": "1 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   408
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 64,
+  "quality": "GUHEMA Bi-Co-lastic",
+  "type": "ASM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Progressivverzahnung\r\n* Profiblatt mit „Memoryeffekt“, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>\r\n* Die Anschnittverzahnung erleichtert das Ansägen und vermindert die Abrutschgefahr vom Schnittpunkt",
+   "en": "* Sharp-milled progressive toothing\n* Professional blade with a “memory effect” that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>\n* The starter toothing makes it easier to start the cut and reduces the risk of slipping off the cutting point",
+   "ru": "* Острые фрезерованные зубья с прогрессивным шагом\r\n* Профессиональное полотно с «эффектом памяти», не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>\r\n* Зубья для зарезания облегчают начало пропила и снижают риск соскальзывания с точки реза"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "22 / 32",
+   "en": "22 / 32",
+   "ru": "22 / 32"
+  },
+  "cutting_metal": "1 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Bi-Metall",
+   "en": "Bi-Metal Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из биметалла"
+  },
+  "indicators": [
+   408
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 65,
+  "quality": "GUHEMA H.S.S. flex-allhard",
+  "type": "ASA",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Durchgehend gehärtet, für das Maximum an Standzeit\r\n* Profiblatt für leicht zerspanbare Werkstoffe mit einer Zugfestigkeit von bis zu 900 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Through-hardened for maximum tool life\n* Professional blade for easy-to-cut materials with a tensile strength of up to 900 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Сквозная закалка для максимальной стойкости\r\n* Профессиональное полотно для легкообрабатываемых материалов с пределом прочности до 900 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-hss-flex-allhard",
+  "image": {
+   "de": "blades/ASA0300Q.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "32",
+   "en": "32",
+   "ru": "32"
+  },
+  "cutting_metal": "< 0,8",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Schnellarbeitsstahl",
+   "en": "High-Speed Steel Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из быстрорежущей стали"
+  },
+  "indicators": [
+   409
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 66,
+  "quality": "GUHEMA H.S.S. flex-allhard",
+  "type": "ASA",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Durchgehend gehärtet, für das Maximum an Standzeit\r\n* Profiblatt für schwer zerspanbare Werkstoffe mit einer Zugfestigkeit von bis zu 900 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Through-hardened for maximum tool life\n* Professional blade for difficult-to-cut materials with a tensile strength of up to 900 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Сквозная закалка для максимальной стойкости\r\n* Профессиональное полотно для труднообрабатываемых материалов с пределом прочности до 900 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-hss-flex-allhard",
+  "image": {
+   "de": "blades/ASA0300P.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "0,8 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Schnellarbeitsstahl",
+   "en": "High-Speed Steel Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из быстрорежущей стали"
+  },
+  "indicators": [
+   410
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 67,
+  "quality": "GUHEMA H.S.S. flex-allhard",
+  "type": "ASA",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Durchgehend gehärtet, für das Maximum an Standzeit\r\n* Profiblatt für schwer zerspanbare Werkstoffe mit einer Zugfestigkeit von bis zu 900 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Through-hardened for maximum tool life\n* Professional blade for difficult-to-cut materials with a tensile strength of up to 900 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Сквозная закалка для максимальной стойкости\r\n* Профессиональное полотно для труднообрабатываемых материалов с пределом прочности до 900 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-hss-flex-allhard",
+  "image": {
+   "de": "blades/ASA0300N.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18",
+   "en": "18",
+   "ru": "18"
+  },
+  "cutting_metal": "1,5 - 3,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Schnellarbeitsstahl",
+   "en": "High-Speed Steel Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из быстрорежущей стали"
+  },
+  "indicators": [
+   411
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 68,
+  "quality": "GUHEMA H.S.S. flex",
+  "type": "ASA",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* 3-Zonenhärtung im Induktivautomaten, minimiert Sägeblattbruch\r\n* Für den Werkstattgebrauch bei leicht zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 700 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* 3-zone hardening on an automatic induction hardening machine, minimises blade breakage\n* For workshop use on easy-to-cut materials with a tensile strength of up to 700 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Трехзонная закалка на индукционном автомате сводит к минимуму поломку полотна\r\n* Для мастерской: легкообрабатываемые материалы с пределом прочности до 700 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-hss-flex",
+  "image": {
+   "de": "blades/ASA0300QZ.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "32",
+   "en": "32",
+   "ru": "32"
+  },
+  "cutting_metal": "< 0,8",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Schnellarbeitsstahl",
+   "en": "High-Speed Steel Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из быстрорежущей стали"
+  },
+  "indicators": [
+   412
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 69,
+  "quality": "GUHEMA H.S.S. flex",
+  "type": "ASA",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* 3-Zonenhärtung im Induktivautomaten, minimiert Sägeblattbruch\r\n* Für den Werkstattgebrauch bei leicht zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 700 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* 3-zone hardening on an automatic induction hardening machine, minimises blade breakage\n* For workshop use on easy-to-cut materials with a tensile strength of up to 700 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Трехзонная закалка на индукционном автомате сводит к минимуму поломку полотна\r\n* Для мастерской: легкообрабатываемые материалы с пределом прочности до 700 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-hss-flex",
+  "image": {
+   "de": "blades/ASA0300PZ.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "0,8 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Schnellarbeitsstahl",
+   "en": "High-Speed Steel Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из быстрорежущей стали"
+  },
+  "indicators": [
+   413
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 70,
+  "quality": "GUHEMA H.S.S. flex",
+  "type": "ASA",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* 3-Zonenhärtung im Induktivautomaten, minimiert Sägeblattbruch\r\n* Für den Werkstattgebrauch bei leicht zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 700 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* 3-zone hardening on an automatic induction hardening machine, minimises blade breakage\n* For workshop use on easy-to-cut materials with a tensile strength of up to 700 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Трехзонная закалка на индукционном автомате сводит к минимуму поломку полотна\r\n* Для мастерской: легкообрабатываемые материалы с пределом прочности до 700 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-hss-flex",
+  "image": {
+   "de": "blades/ASA0300NZ.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18",
+   "en": "18",
+   "ru": "18"
+  },
+  "cutting_metal": "0,8 - 3,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Schnellarbeitsstahl",
+   "en": "High-Speed Steel Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из быстрорежущей стали"
+  },
+  "indicators": [
+   414
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 71,
+  "quality": "GUHEMA CV-flex",
+  "type": "ASV",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* 3-Zonenhärtung im Induktivautomaten\r\n* Für weiche Metalle und Kunststoffe",
+   "en": "* Sharp-milled toothing\n* 3-zone hardening on an automatic induction hardening machine\n* For soft metals and plastics",
+   "ru": "* Острые фрезерованные зубья\r\n* Трехзонная закалка на индукционном автомате\r\n* Для мягких металлов и пластмасс"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-cv-flex",
+  "image": {
+   "de": "blades/ASV0300Q.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "32",
+   "en": "32",
+   "ru": "32"
+  },
+  "cutting_metal": "< 0,8",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Werkzeugstahl",
+   "en": "Carbon Tool Steel Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из инструментальной стали"
+  },
+  "indicators": [
+   415
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 72,
+  "quality": "GUHEMA CV-flex",
+  "type": "ASV",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* 3-Zonenhärtung im Induktivautomaten, minimiert Sägeblattbruch\r\n* Für weiche Metalle und Kunststoffe",
+   "en": "* Sharp-milled toothing\n* 3-zone hardening on an automatic induction hardening machine, minimises blade breakage\n* For soft metals and plastics",
+   "ru": "* Острые фрезерованные зубья\r\n* Трехзонная закалка на индукционном автомате сводит к минимуму поломку полотна\r\n* Для мягких металлов и пластмасс"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-cv-flex",
+  "image": {
+   "de": "blades/ASV0300P.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "0,8 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Werkzeugstahl",
+   "en": "Carbon Tool Steel Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из инструментальной стали"
+  },
+  "indicators": [
+   416
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 73,
+  "quality": "GUHEMA CV-flex",
+  "type": "ASV",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* 3-Zonenhärtung im Induktivautomaten, minimiert Sägeblattbruch\r\n* Für weiche Metalle und Kunststoffe",
+   "en": "* Sharp-milled toothing\n* 3-zone hardening on an automatic induction hardening machine, minimises blade breakage\n* For soft metals and plastics",
+   "ru": "* Острые фрезерованные зубья\r\n* Трехзонная закалка на индукционном автомате сводит к минимуму поломку полотна\r\n* Для мягких металлов и пластмасс"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-cv-flex",
+  "image": {
+   "de": "blades/ASV0300N.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "18",
+   "en": "18",
+   "ru": "18"
+  },
+  "cutting_metal": "1,5 - 3,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Metallhandsägeblätter aus Werkzeugstahl",
+   "en": "Carbon Tool Steel Hand Hacksaw Blades",
+   "ru": "Ручные ножовочные полотна по металлу из инструментальной стали"
+  },
+  "indicators": [
+   417
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 74,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "ASF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Profiblatt, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Professional blade that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Профессиональное полотно, не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/ASF0302P.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "0,8 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Doppelseitige Metallhandsägeblätter",
+   "en": "Double-Sided Hand Hacksaw Blades",
+   "ru": "Двусторонние ручные ножовочные полотна по металлу"
+  },
+  "indicators": [
+   418
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 75,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "ASF",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Profiblatt, welches weltweit seinesgleichen sucht!\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Metallhandsägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>\r\n* Die Anschnittverzahnung erleichtert das Ansägen und vermindert die Abrutschgefahr vom Schnittpunkt",
+   "en": "* Sharp-milled toothing\n* Professional blade that is unrivalled worldwide!\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise hand hacksaw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>\n* The starter toothing makes it easier to start the cut and reduces the risk of slipping off the cutting point",
+   "ru": "* Острые фрезерованные зубья\r\n* Профессиональное полотно, не имеющее аналогов в мире!\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное ручное ножовочное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>\r\n* Зубья для зарезания облегчают начало пропила и снижают риск соскальзывания с точки реза"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-bi-lastic",
+  "image": {
+   "de": "blades/ASF0302R.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "22 / 32",
+   "en": "22 / 32",
+   "ru": "22 / 32"
+  },
+  "cutting_metal": "1 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Doppelseitige Metallhandsägeblätter",
+   "en": "Double-Sided Hand Hacksaw Blades",
+   "ru": "Двусторонние ручные ножовочные полотна по металлу"
+  },
+  "indicators": [
+   419
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 76,
+  "quality": "GUHEMA H.S.S. flex-allhard",
+  "type": "ASA",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Durchgehend gehärtet, für das Maximum an Standzeit\r\n* Profiblatt für leicht zerspanbare Werkstoffe mit einer Zugfestigkeit von bis zu 900 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Through-hardened for maximum tool life\n* Professional blade for easy-to-cut materials with a tensile strength of up to 900 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Сквозная закалка для максимальной стойкости\r\n* Профессиональное полотно для легкообрабатываемых материалов с пределом прочности до 900 Н/мм<sup>2</sup>"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-hss-flex-allhard",
+  "image": {
+   "de": "blades/ASA1302P.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "0,8 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Doppelseitige Metallhandsägeblätter",
+   "en": "Double-Sided Hand Hacksaw Blades",
+   "ru": "Двусторонние ручные ножовочные полотна по металлу"
+  },
+  "indicators": [
+   420
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 77,
+  "quality": "GUHEMA CV-flex",
+  "type": "ASV",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* 3-Zonenhärtung im Induktivautomaten, minimiert Sägeblattbruch\r\n* Für weiche Metalle und Kunststoffe",
+   "en": "* Sharp-milled toothing\n* 3-zone hardening on an automatic induction hardening machine, minimises blade breakage\n* For soft metals and plastics",
+   "ru": "* Острые фрезерованные зубья\r\n* Трехзонная закалка на индукционном автомате сводит к минимуму поломку полотна\r\n* Для мягких металлов и пластмасс"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "guhema-cv-flex",
+  "image": {
+   "de": "blades/ASV1302P.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": "24",
+   "en": "24",
+   "ru": "24"
+  },
+  "cutting_metal": "0,8 - 1,5",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": false,
+  "subcategory": {
+   "de": "Doppelseitige Metallhandsägeblätter",
+   "en": "Double-Sided Hand Hacksaw Blades",
+   "ru": "Двусторонние ручные ножовочные полотна по металлу"
+  },
+  "indicators": [
+   421
+  ]
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 79,
+  "quality": "GUHEMA ASB",
+  "type": "ASB3FM",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Der glasfaserverstärkte 2-Komponenten-Kunststoffgriff liegt optimal in der Hand\r\n* Der pulverbeschichtete, rechteckige Sägebügel dient als Sägeblattmagazin\r\n* Das Sägeblatt kann um 90° gedreht eingespannt werden\r\n* In den Griff integrierter Spannschlüssel verkürzt den Sägebügel auf 400 mm\r\n\r\n**Inklusive 1 GUHEMA Bi-Metall-Handsägeblatt mit 24 ZpZ (ASF0300P)**",
+   "en": "* The glass-fibre-reinforced 2-component plastic handle sits perfectly in the hand\n* The powder-coated rectangular frame doubles as a blade magazine\n* The saw blade can be clamped rotated by 90°\n* Tensioning key integrated in the handle shortens the frame to 400 mm\n\n**Includes 1 GUHEMA bi-metal hand hacksaw blade with 24 TPI (ASF0300P)**",
+   "ru": "* Армированная стекловолокном двухкомпонентная пластиковая рукоятка удобно лежит в руке\r\n* Прямоугольная рамка с порошковым покрытием служит магазином для полотен\r\n* Полотно можно устанавливать с поворотом на 90°\r\n* Встроенный в рукоятку натяжной ключ укорачивает рамку до 400 мм\r\n\r\n**В комплекте 1 биметаллическое ручное ножовочное полотно GUHEMA, 24 TPI (ASF0300P)**"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "hacksawblade",
+  "image": {
+   "de": "blades/ASB3FM.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "cutting_metal": "",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": true,
+  "subcategory": {
+   "de": "Metallhandsägebügel",
+   "en": "Hacksaw Frames",
+   "ru": "Ножовочные рамки по металлу"
+  },
+  "indicators": []
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 80,
+  "quality": "GUHEMA ASB",
+  "type": "ASB3FW",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Der glasfaserverstärkte 2-Komponenten-Kunststoffgriff liegt optimal in der Hand\r\n* Der pulverbeschichtete, rechteckige Sägebügel dient als Sägeblattmagazin\r\n* Das Sägeblatt kann um 90° gedreht eingespannt werden\r\n\r\n**Inklusive 1 GUHEMA Bi-Metall-Handsägeblatt mit 24 ZpZ (ASF0300P)**",
+   "en": "* The glass-fibre-reinforced 2-component plastic handle sits perfectly in the hand\n* The powder-coated rectangular frame doubles as a blade magazine\n* The saw blade can be clamped rotated by 90°\n\n**Includes 1 GUHEMA bi-metal hand hacksaw blade with 24 TPI (ASF0300P)**",
+   "ru": "* Армированная стекловолокном двухкомпонентная пластиковая рукоятка удобно лежит в руке\r\n* Прямоугольная рамка с порошковым покрытием служит магазином для полотен\r\n* Полотно можно устанавливать с поворотом на 90°\r\n\r\n**В комплекте 1 биметаллическое ручное ножовочное полотно GUHEMA, 24 TPI (ASF0300P)**"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "hacksawblade",
+  "image": {
+   "de": "blades/ASB3FW.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "cutting_metal": "",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": true,
+  "subcategory": {
+   "de": "Metallhandsägebügel",
+   "en": "Hacksaw Frames",
+   "ru": "Ножовочные рамки по металлу"
+  },
+  "indicators": []
+ },
+ {
+  "kind": "hacksawblade",
+  "id": 81,
+  "quality": "GUHEMA ASB",
+  "type": "ASB3NS",
+  "name": {
+   "de": "Säbelsägeblätter",
+   "en": "Sabre Saw Blades",
+   "ru": "Полотна для сабельных пил"
+  },
+  "description": {
+   "de": "* Klassischer Metallsägebügel mit Buchenholzgriff\r\n* Pulverbeschichtetes Rechteckrohr\r\n* Das Sägeblatt kann um 90° gedreht eingespannt werden\r\n\r\n**Inklusive 1 GUHEMA Bi-Metall-Handsägeblatt mit 24 ZpZ (ASF0300P)**",
+   "en": "* Classic hacksaw frame with beech wood handle\n* Powder-coated rectangular tube\n* The saw blade can be clamped rotated by 90°\n\n**Includes 1 GUHEMA bi-metal hand hacksaw blade with 24 TPI (ASF0300P)**",
+   "ru": "* Классическая ножовочная рамка по металлу с буковой рукояткой\r\n* Прямоугольная труба с порошковым покрытием\r\n* Полотно можно устанавливать с поворотом на 90°\r\n\r\n**В комплекте 1 биметаллическое ручное ножовочное полотно GUHEMA, 24 TPI (ASF0300P)**"
+  },
+  "group": 4,
+  "clamping": 3,
+  "slug": "hacksawblade",
+  "image": {
+   "de": "blades/ASB3NS.jpg",
+   "en": null,
+   "ru": null
+  },
+  "toothing": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "cutting_metal": "",
+  "cutting_wood": "",
+  "cutting_minerals": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "accessory": true,
+  "subcategory": {
+   "de": "Metallhandsägebügel",
+   "en": "Hacksaw Frames",
+   "ru": "Ножовочные рамки по металлу"
+  },
+  "indicators": []
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 82,
+  "quality": "No. 20 GUHEMA Kristall",
+  "type": "NC20",
+  "name": {
+   "de": "Werkzeugstahl (125 Cr 1)",
+   "en": "Carbon tool steel (125 Cr 1)",
+   "ru": "Инструментальная сталь (125 Cr 1)"
+  },
+  "description": {
+   "de": "* Zahngehärtetes Sägeband\r\n* Für unlegierte Stähle bis zu mittleren Festigkeiten",
+   "en": "* Bandsaw blade with hardened teeth\n* For unalloyed steels up to medium strength",
+   "ru": "* Ленточная пила с закаленными зубьями\r\n* Для нелегированных сталей до средней прочности"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "werkzeugstahl-125-cr-1",
+  "image": {
+   "de": "blades/NC20_de.png",
+   "en": "blades/NC20_en.png",
+   "ru": "blades/NC20_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE20",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": "blades/NE20_de.png",
+   "en": "blades/NE20_en.png",
+   "ru": "blades/NE20_ru.png"
+  },
+  "heading": {
+   "de": "Sägebänder aus Werkzeugstahl",
+   "en": "Carbon Tool Steel Bandsaw Blades",
+   "ru": "Ленточные пилы из инструментальной стали"
+  },
+  "cols": "E,G,H,I,J,L,N,O",
+  "indicators": [],
+  "bandsaw_indicators": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 83,
+  "quality": "No. 20 GUHEMA Kristall",
+  "type": "NC22",
+  "name": {
+   "de": "Werkzeugstahl (125 Cr 1)",
+   "en": "Carbon tool steel (125 Cr 1)",
+   "ru": "Инструментальная сталь (125 Cr 1)"
+  },
+  "description": {
+   "de": "* Zahn- und rückengehärtetes Sägeband\r\n* Für Bau-, Automaten- und Einsatzstähle\r\n* **Werkstattmeister**",
+   "en": "* Bandsaw blade with hardened teeth and back\n* For structural, free-cutting and case-hardening steels\n* **Workshop master**",
+   "ru": "* Ленточная пила с закаленными зубьями и спинкой\r\n* Для конструкционных, автоматных и цементуемых сталей\r\n* **Мастер для мастерской**"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "werkzeugstahl-125-cr-1",
+  "image": {
+   "de": "blades/NC22_de.png",
+   "en": "blades/NC22_en.png",
+   "ru": "blades/NC22_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE22",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": "blades/NE22_de_mTF3yBb.png",
+   "en": "blades/NE22_en.png",
+   "ru": "blades/NE22_ru.png"
+  },
+  "heading": {
+   "de": "Sägebänder aus Werkzeugstahl",
+   "en": "Carbon Tool Steel Bandsaw Blades",
+   "ru": "Ленточные пилы из инструментальной стали"
+  },
+  "cols": "E,G,H,I,J,L,N,O",
+  "indicators": [],
+  "bandsaw_indicators": [
+   1,
+   2,
+   3,
+   4,
+   7,
+   8,
+   9,
+   10
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 84,
+  "quality": "No. 33VP-D GUHEMA Bi-Co-lastic",
+  "type": "NC33",
+  "name": {
+   "de": "M42 Qualität (Werkstoff-Nr. 1.3247)",
+   "en": "M42 grade (material no. 1.3247)",
+   "ru": "Марка M42 (№ материала 1.3247)"
+  },
+  "description": {
+   "de": "* Für Profile und Rohre im Bündelschnitt\r\n* Die Spezialschränkung verhindert ein Verklemmen des Sägebandes während des Schnittprozesses",
+   "en": "* For bundle cutting of profiles and tubes\n* The special set prevents the bandsaw blade from jamming during cutting",
+   "ru": "* Для резки профилей и труб в пакетах\r\n* Специальная разводка предотвращает заклинивание ленточной пилы в процессе резки"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "m42-qualitat-werkstoff-nr-13247",
+  "image": {
+   "de": "blades/NC33_de.png",
+   "en": "blades/NC33_en.png",
+   "ru": "blades/NC33_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE33",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "heading": {
+   "de": "Sägebänder aus Bi-Metall",
+   "en": "Bi-Metal Bandsaw Blades",
+   "ru": "Биметаллические ленточные пилы"
+  },
+  "cols": "T,U,V,W",
+  "indicators": [],
+  "bandsaw_indicators": [
+   11,
+   12,
+   13,
+   14
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 85,
+  "quality": "No. 34VP-D GUHEMA Bi-Co-lastic",
+  "type": "NC34",
+  "name": {
+   "de": "M42 Qualität (Werkstoff-Nr. 1.3247)",
+   "en": "M42 grade (material no. 1.3247)",
+   "ru": "Марка M42 (№ материала 1.3247)"
+  },
+  "description": {
+   "de": "* Für große Profile und Träger",
+   "en": "* For large profiles and beams",
+   "ru": "* Для больших профилей и балок"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "m42-qualitat-werkstoff-nr-13247",
+  "image": {
+   "de": "blades/NC34_de.png",
+   "en": "blades/NC34_en.png",
+   "ru": "blades/NC34_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE34",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "heading": {
+   "de": "Sägebänder aus Bi-Metall",
+   "en": "Bi-Metal Bandsaw Blades",
+   "ru": "Биметаллические ленточные пилы"
+  },
+  "cols": "T,U,V",
+  "indicators": [],
+  "bandsaw_indicators": [
+   15,
+   16,
+   17
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 86,
+  "quality": "No. 35 GUHEMA Bi-Co-lastic",
+  "type": "NC35",
+  "name": {
+   "de": "M42 Qualität (Werkstoff-Nr. 1.3247)",
+   "en": "M42 grade (material no. 1.3247)",
+   "ru": "Марка M42 (№ материала 1.3247)"
+  },
+  "description": {
+   "de": "* Verschleißfeste Zahnspitzen aus M42\r\n* Besonders für dünne bis mittlere Werkstücke geeignet",
+   "en": "* Wear-resistant M42 tooth tips\n* Particularly suitable for thin to medium-sized workpieces",
+   "ru": "* Износостойкие вершины зубьев из M42\r\n* Особенно подходит для тонких и средних заготовок"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "m42-qualitat-werkstoff-nr-13247",
+  "image": {
+   "de": "blades/NC35_T3EZ5Jb.png",
+   "en": "blades/NC35S_en.png",
+   "ru": "blades/NC35S_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE35",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": "blades/NC35K_de.png",
+   "en": "blades/NC35K_en.png",
+   "ru": "blades/NC35K_ru.png"
+  },
+  "heading": {
+   "de": "Sägebänder aus Bi-Metall",
+   "en": "Bi-Metal Bandsaw Blades",
+   "ru": "Биметаллические ленточные пилы"
+  },
+  "cols": "A,C,E,G,H,I,J,L,N",
+  "indicators": [],
+  "bandsaw_indicators": [
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 87,
+  "quality": "No. 35V GUHEMA Bi-Co-lastic",
+  "type": "NC35",
+  "name": {
+   "de": "M42 Qualität (Werkstoff-Nr. 1.3247)",
+   "en": "M42 grade (material no. 1.3247)",
+   "ru": "Марка M42 (№ материала 1.3247)"
+  },
+  "description": {
+   "de": "* Verschleißfeste variable Verzahnung aus M42\r\n* Besonders für schwingungsreduziertes Sägen von dünnen bis mittleren Werkstücken geeignet",
+   "en": "* Wear-resistant M42 variable toothing\n* Particularly suitable for low-vibration sawing of thin to medium-sized workpieces",
+   "ru": "* Износостойкие зубья с переменным шагом из M42\r\n* Особенно подходит для резки тонких и средних заготовок с пониженной вибрацией"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "m42-qualitat-werkstoff-nr-13247",
+  "image": {
+   "de": "blades/NC35V_de.png",
+   "en": "blades/NC35V_en.png",
+   "ru": "blades/NC35V_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE35",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "heading": {
+   "de": "Sägebänder aus Bi-Metall",
+   "en": "Bi-Metal Bandsaw Blades",
+   "ru": "Биметаллические ленточные пилы"
+  },
+  "cols": "U,V,W,X,Y,Z",
+  "indicators": [],
+  "bandsaw_indicators": [
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 88,
+  "quality": "No. 35VP GUHEMA Bi-Co-lastic",
+  "type": "NC35",
+  "name": {
+   "de": "M42 Qualität (Werkstoff-Nr. 1.3247)",
+   "en": "M42 grade (material no. 1.3247)",
+   "ru": "Марка M42 (№ материала 1.3247)"
+  },
+  "description": {
+   "de": "* Verschleißfeste variable Positivverzahnung aus M42\r\n* Besonders für schwingungsreduziertes Sägen von mittleren bis großen Werkstücken geeignet\r\n* Hohe Zerspanleistung und lange Lebensdauer",
+   "en": "* Wear-resistant M42 variable positive toothing\n* Particularly suitable for low-vibration sawing of medium-sized to large workpieces\n* High cutting performance and long service life",
+   "ru": "* Износостойкие зубья с переменным шагом и положительным передним углом из M42\r\n* Особенно подходит для резки средних и крупных заготовок с пониженной вибрацией\r\n* Высокая производительность резания и длительный срок службы"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "m42-qualitat-werkstoff-nr-13247",
+  "image": {
+   "de": "blades/NC35VP_de.png",
+   "en": "blades/NC35VP_en.png",
+   "ru": "blades/NC35VP_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE35",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "heading": {
+   "de": "Sägebänder aus Bi-Metall",
+   "en": "Bi-Metal Bandsaw Blades",
+   "ru": "Биметаллические ленточные пилы"
+  },
+  "cols": "*P,RP,SP,TP,UP,VP,WP",
+  "indicators": [],
+  "bandsaw_indicators": [
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 89,
+  "quality": "No. 36VP GUHEMA Bi-Co-lastic plus",
+  "type": "NC36",
+  "name": {
+   "de": "M51 Qualität (ähnlich Werkstoff-Nr. 1.3207)",
+   "en": "M51 grade (similar to material no. 1.3207)",
+   "ru": "Марка M51 (аналог № материала 1.3207)"
+  },
+  "description": {
+   "de": "* Extrem verschleißfeste variable Positivverzahnung aus M51\r\n* Bestens für schwingungsreduziertes Sägen von mittleren bis großen Werkstücken geeignet\r\n* Deutlich höhere Standzeit/Schnittgeschwindigkeit gegenüber der M42 Qualität (GUHEMA No. 35 VP Bi-Co-lastic)\r\n* Eignet sich für schwer zerspanbare Werkstoffe",
+   "en": "* Extremely wear-resistant M51 variable positive toothing\n* Ideal for low-vibration sawing of medium-sized to large workpieces\n* Significantly higher tool life/cutting speed than the M42 grade (GUHEMA No. 35 VP Bi-Co-lastic)\n* Suitable for difficult-to-cut materials",
+   "ru": "* Особо износостойкие зубья с переменным шагом и положительным передним углом из M51\r\n* Отлично подходит для резки средних и крупных заготовок с пониженной вибрацией\r\n* Значительно более высокая стойкость/скорость резания по сравнению с маркой M42 (GUHEMA No. 35 VP Bi-Co-lastic)\r\n* Подходит для труднообрабатываемых материалов"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "m51-qualitat-ahnlich-werkstoff-nr-13207",
+  "image": {
+   "de": "blades/NC36VP_de.png",
+   "en": "blades/NC36VP_en.png",
+   "ru": "blades/NC36VP_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE36",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "heading": {
+   "de": "Sägebänder aus Bi-Metall",
+   "en": "Bi-Metal Bandsaw Blades",
+   "ru": "Биметаллические ленточные пилы"
+  },
+  "cols": "*P,SP,TP,UP,VP",
+  "indicators": [],
+  "bandsaw_indicators": [
+   44,
+   45,
+   46,
+   47,
+   48,
+   49
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 90,
+  "quality": "No. 40 GUHEMA HM-Granulat",
+  "type": "NC40",
+  "name": {
+   "de": "Chromlegiertes Trägerband besetzt mit Hartmetallgranulat",
+   "en": "Chromium-alloy backing band with carbide grit",
+   "ru": "Лента-основа из хромистой стали с напылением твердосплавных гранул"
+  },
+  "description": {
+   "de": "* Für Abrasiv- und Verbundwerkstoffe\r\n* Besonders geeignet für Kabel und Drähte, Keramik, Fiberglas sowie Reifen\r\n* Punktet dort, wo Sägezähne von Nachteil sind",
+   "en": "* For abrasive and composite materials\n* Particularly suitable for cables and wires, ceramics, glass fibre and tyres\n* Excels where saw teeth are at a disadvantage",
+   "ru": "* Для абразивных и композитных материалов\r\n* Особенно подходит для кабелей и проводов, керамики, стекловолокна, а также шин\r\n* Эффективна там, где зубья пилы не подходят"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "chromlegiertes-tragerband-besetzt-mit-hartmetallgr",
+  "image": {
+   "de": "blades/MBS_No.40.png",
+   "en": null,
+   "ru": null
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE40",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "heading": {
+   "de": "Sägebänder besetzt mit Hartmetall",
+   "en": "Carbide Bandsaw Blades",
+   "ru": "Ленточные пилы с твердым сплавом"
+  },
+  "cols": "Fein,Standard,Grob",
+  "indicators": [],
+  "bandsaw_indicators": [
+   50,
+   51,
+   52,
+   53,
+   54,
+   55
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 91,
+  "quality": "No. 41 GUHEMA HM-Granulat",
+  "type": "NC41",
+  "name": {
+   "de": "Chromlegiertes Trägerband besetzt mit Hartmetallgranulat",
+   "en": "Chromium-alloy backing band with carbide grit",
+   "ru": "Лента-основа из хромистой стали с напылением твердосплавных гранул"
+  },
+  "description": {
+   "de": "* Für Abrasiv- und Verbundwerkstoffe\r\n* Besonders geeignet für Kabel und Drähte, Keramik, Fiberglas sowie Reifen\r\n* Punktet dort, wo Sägezähne von Nachteil sind\r\n* Das unterbrochene Sägeband sichert den Spanabtransport auch bei großem Spanaufkommen",
+   "en": "* For abrasive and composite materials\n* Particularly suitable for cables and wires, ceramics, glass fibre and tyres\n* Excels where saw teeth are at a disadvantage\n* The gulleted bandsaw blade ensures chip removal even with high chip volumes",
+   "ru": "* Для абразивных и композитных материалов\r\n* Особенно подходит для кабелей и проводов, керамики, стекловолокна, а также шин\r\n* Эффективна там, где зубья пилы не подходят\r\n* Прерывистая кромка обеспечивает отвод стружки даже при большом ее количестве"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "chromlegiertes-tragerband-besetzt-mit-hartmetallgr",
+  "image": {
+   "de": "blades/MBS_No.41.png",
+   "en": null,
+   "ru": null
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE41",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "heading": {
+   "de": "Sägebänder besetzt mit Hartmetall",
+   "en": "Carbide Bandsaw Blades",
+   "ru": "Ленточные пилы с твердым сплавом"
+  },
+  "cols": "Fein,Standard,Grob",
+  "indicators": [],
+  "bandsaw_indicators": [
+   56,
+   57,
+   58,
+   59,
+   60,
+   61
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 92,
+  "quality": "No. 45P GUHEMA HM-Zähne",
+  "type": "NC45",
+  "name": {
+   "de": "Chromlegiertes Trägerband besetzt mit Hartmetallzähnen",
+   "en": "Chromium-alloy backing band with carbide teeth",
+   "ru": "Лента-основа из хромистой стали с твердосплавными зубьями"
+  },
+  "description": {
+   "de": "* Geschränktes, hartmetallbesetztes Sägeband\r\n* Der Einstieg in die Hartmetallsägebandtechnologie\r\n* Zerspant sicher versandete Gusswerkstücke\r\n* Erzielt deutlich höhere Standzeiten gegenüber einem Sägeband aus Bi-Metall",
+   "en": "* Set-tooth, carbide-tipped bandsaw blade\n* Your entry into carbide bandsaw blade technology\n* Reliably cuts sand-encrusted castings\n* Achieves significantly longer tool life than a bi-metal bandsaw blade",
+   "ru": "* Разведенная ленточная пила с твердосплавными зубьями\r\n* Первый шаг в технологию твердосплавных ленточных пил\r\n* Надежно режет литые заготовки с пригаром формовочной смеси\r\n* Значительно более высокая стойкость по сравнению с биметаллической ленточной пилой"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "chromlegiertes-tragerband-besetzt-mit-hartmetallza",
+  "image": {
+   "de": "blades/NC45P_de.png",
+   "en": "blades/NC45P_en.png",
+   "ru": "blades/NC45P_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE45",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "heading": {
+   "de": "Sägebänder besetzt mit Hartmetall",
+   "en": "Carbide Bandsaw Blades",
+   "ru": "Ленточные пилы с твердым сплавом"
+  },
+  "cols": "C,E,G",
+  "indicators": [],
+  "bandsaw_indicators": [
+   62,
+   63,
+   64,
+   65,
+   66,
+   67
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 93,
+  "quality": "No. 46VP GUHEMA HM-Zähne",
+  "type": "NC46",
+  "name": {
+   "de": "Chromlegiertes Trägerband besetzt mit Hartmetallzähnen",
+   "en": "Chromium-alloy backing band with carbide teeth",
+   "ru": "Лента-основа из хромистой стали с твердосплавными зубьями"
+  },
+  "description": {
+   "de": "* Geschliffenes, hartmetallbesetztes Sägeband\r\n* Die geschliffenen Sägezähne mit Vor- und Nachschneider ermöglichen höchste Standzeiten und Schnittgeschwindigkeiten\r\n* Hergestellt für schwer zerspanbare Werkstoffe und versandete Werkstücke",
+   "en": "* Ground, carbide-tipped bandsaw blade\n* The ground saw teeth with roughing and finishing cutters allow maximum tool life and cutting speeds\n* Made for difficult-to-cut materials and sand-encrusted workpieces",
+   "ru": "* Шлифованная ленточная пила с твердосплавными зубьями\r\n* Шлифованные черновые и чистовые зубья обеспечивают максимальную стойкость и скорость резания\r\n* Создана для труднообрабатываемых материалов и заготовок с пригаром формовочной смеси"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "chromlegiertes-tragerband-besetzt-mit-hartmetallza",
+  "image": {
+   "de": "blades/NC46VP_de.png",
+   "en": "blades/NC46VP_en.png",
+   "ru": "blades/NC46VP_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE46",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "heading": {
+   "de": "Sägebänder besetzt mit Hartmetall",
+   "en": "Carbide Bandsaw Blades",
+   "ru": "Ленточные пилы с твердым сплавом"
+  },
+  "cols": "Ä,S,Ü,T,U",
+  "indicators": [],
+  "bandsaw_indicators": [
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75
+  ]
+ },
+ {
+  "kind": "bandsawblade",
+  "id": 94,
+  "quality": "No. 47VN GUHEMA HM-Zähne",
+  "type": "NC47",
+  "name": {
+   "de": "Chromlegiertes Trägerband besetzt mit Hartmetallzähnen",
+   "en": "Chromium-alloy backing band with carbide teeth",
+   "ru": "Лента-основа из хромистой стали с твердосплавными зубьями"
+  },
+  "description": {
+   "de": "* Geschliffenes, hartmetallbesetztes Sägeband\r\n* Die geschliffenen Sägezähne mit Vor- und Nachschneider ermöglichen höchste Standzeiten und Schnittgeschwindigkeiten\r\n* Spezialzahnform für die Bearbeitung von extrem harten Werkstücken wie z.B. randschichtgehärtete Wellen",
+   "en": "* Ground, carbide-tipped bandsaw blade\n* The ground saw teeth with roughing and finishing cutters allow maximum tool life and cutting speeds\n* Special tooth form for machining extremely hard workpieces such as surface-hardened shafts",
+   "ru": "* Шлифованная ленточная пила с твердосплавными зубьями\r\n* Шлифованные черновые и чистовые зубья обеспечивают максимальную стойкость и скорость резания\r\n* Специальная форма зуба для обработки особо твердых заготовок, например валов с поверхностной закалкой"
+  },
+  "group": 6,
+  "clamping": null,
+  "slug": "chromlegiertes-tragerband-besetzt-mit-hartmetallza",
+  "image": {
+   "de": "blades/NC47VN_de.png",
+   "en": "blades/NC47VN_en.png",
+   "ru": "blades/NC47VN_ru.png"
+  },
+  "type_description": {
+   "de": "Rollenware von 30,5 Meter oder Fabrikationsrollen",
+   "en": "Coils of 30.5 m or production coils",
+   "ru": "В бухтах по 30,5 м или в производственных рулонах"
+  },
+  "type2": "NE47",
+  "type2_description": {
+   "de": "fertig geschweißt",
+   "en": "Welded to length",
+   "ru": "Сваренные в кольцо"
+  },
+  "image2": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "heading": {
+   "de": "Sägebänder besetzt mit Hartmetall",
+   "en": "Carbide Bandsaw Blades",
+   "ru": "Ленточные пилы с твердым сплавом"
+  },
+  "cols": "T,U",
+  "indicators": [],
+  "bandsaw_indicators": [
+   76,
+   77,
+   78,
+   79
+  ]
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 95,
+  "quality": "GUHEMA CV-flex",
+  "type": "JBV077K14KS",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Konisch geschliffener Blattkörper, Zähne scharf geschliffen\r\n* Kurvenschnittblatt mit beidseitigem, sauberem Schnittkantenverlauf\r\n* Geeignet für Weichholz, Sperrholz, Holzfaserplatten und beschichtete Platten\r\n* Ähnlich Bosch: T 101 A0",
+   "en": "* Taper-ground blade body, sharp-ground teeth\n* Curve-cutting blade with clean cut edges on both sides\n* Suitable for softwood, plywood, fibreboard and coated panels\n* Similar to Bosch: T 101 A0",
+   "ru": "* Конически шлифованное полотно, остро заточенные зубья\r\n* Полотно для криволинейного реза с чистой кромкой реза с обеих сторон\r\n* Подходит для древесины мягких пород, фанеры, ДВП и плит с покрытием\r\n* Аналог Bosch: T 101 A0"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "blades/JBV077K14KS.png",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 1.4,
+  "length": 77,
+  "cutting_metal": "",
+  "cutting_wood": "1,5 - 20",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 96,
+  "quality": "GUHEMA CV-flex",
+  "type": "JBV100R25KS",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Konisch geschliffener Blattkörper, Zähne scharf geschliffen\r\n* Für splitterfreie, saubere Schnitte in allen Holzarten und Kunststoffen\r\n* Auf Stoß schneidend\r\n* Ähnlich Bosch: T 101 BR",
+   "en": "* Taper-ground blade body, sharp-ground teeth\n* For clean, splinter-free cuts in all types of wood and plastics\n* Cuts on the push stroke\n* Similar to Bosch: T 101 BR",
+   "ru": "* Конически шлифованное полотно, остро заточенные зубья\r\n* Для чистых резов без сколов во всех породах древесины и пластмассах\r\n* Режет при ходе вниз\r\n* Аналог Bosch: T 101 BR"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBV100R25KS.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 2.5,
+  "length": 100,
+  "cutting_metal": "",
+  "cutting_wood": "3 - 30",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 97,
+  "quality": "GUHEMA CV-flex",
+  "type": "JBV100N25KS",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Konisch geschliffener Blattkörper, Zähne scharf geschliffen\r\n* Für splitterfreie, saubere Schnitte in allen Holzarten und Kunststoffen\r\n* Ähnlich Bosch: T 101 B",
+   "en": "* Taper-ground blade body, sharp-ground teeth\n* For clean, splinter-free cuts in all types of wood and plastics\n* Similar to Bosch: T 101 B",
+   "ru": "* Конически шлифованное полотно, остро заточенные зубья\r\n* Для чистых резов без сколов во всех породах древесины и пластмассах\r\n* Аналог Bosch: T 101 B"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBV100N25KS.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 2.5,
+  "length": 100,
+  "cutting_metal": "",
+  "cutting_wood": "3 - 30",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 98,
+  "quality": "GUHEMA CV-flex",
+  "type": "JBV100N40KS",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Konisch geschliffener Blattkörper, Zähne scharf geschliffen\r\n* Für saubere und schnelle Schnitte in allen Holzarten und Kunststoffen\r\n* Ähnlich Bosch: T 101 D",
+   "en": "* Taper-ground blade body, sharp-ground teeth\n* For clean, fast cuts in all types of wood and plastics\n* Similar to Bosch: T 101 D",
+   "ru": "* Конически шлифованное полотно, остро заточенные зубья\r\n* Для чистых и быстрых резов во всех породах древесины и пластмассах\r\n* Аналог Bosch: T 101 D"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBV100N40KS.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 4.0,
+  "length": 100,
+  "cutting_metal": "",
+  "cutting_wood": "8 - 50",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 99,
+  "quality": "GUHEMA CV-flex",
+  "type": "JBV100N40GS",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Geschränkte und scharf geschliffene Zähne\r\n* Für schnelle, grobe Schnitte in allen Holzarten\r\n* Ähnlich Bosch: T 144 D",
+   "en": "* Set and sharp-ground teeth\n* For fast, rough cuts in all types of wood\n* Similar to Bosch: T 144 D",
+   "ru": "* Разведенные и остро заточенные зубья\r\n* Для быстрых грубых резов во всех породах древесины\r\n* Аналог Bosch: T 144 D"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBV100N40GS.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 4.0,
+  "length": 100,
+  "cutting_metal": "",
+  "cutting_wood": "8 - 50",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 100,
+  "quality": "GUHEMA CV-flex",
+  "type": "JBV132D40KS",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Konisch geschliffener Blattkörper, Zähne scharf geschliffen\r\n* Für saubere und schnelle Schnitte in allen Holzarten und Kunststoffen\r\n* Ähnlich Bosch: T 101 D",
+   "en": "* Taper-ground blade body, sharp-ground teeth\n* For clean, fast cuts in all types of wood and plastics\n* Similar to Bosch: T 101 D",
+   "ru": "* Конически шлифованное полотно, остро заточенные зубья\r\n* Для чистых и быстрых резов во всех породах древесины и пластмассах\r\n* Аналог Bosch: T 101 D"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBV132D40KS.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 4.0,
+  "length": 132,
+  "cutting_metal": "",
+  "cutting_wood": "8 - 70",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 101,
+  "quality": "GUHEMA CV-flex",
+  "type": "JBV132N40GS",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Geschränkte und scharf geschliffene Zähne\r\n* Für schnelle, grobe Schnitte in allen Holzarten\r\n* Ähnlich Bosch: T 344 D",
+   "en": "* Set and sharp-ground teeth\n* For fast, rough cuts in all types of wood\n* Similar to Bosch: T 344 D",
+   "ru": "* Разведенные и остро заточенные зубья\r\n* Для быстрых грубых резов во всех породах древесины\r\n* Аналог Bosch: T 344 D"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBV132N40GS.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 4.0,
+  "length": 132,
+  "cutting_metal": "",
+  "cutting_wood": "8 - 80",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 102,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JBF077N12GN",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Geschränkte und gefräste Zähne\r\n* Gefertigt aus Bi-Metall\r\n* Für gerade Schnitte in Stahl, Edelstahl und Buntmetall\r\n* Ähnlich Bosch: T 118 AF",
+   "en": "* Set and milled teeth\n* Made of bi-metal\n* For straight cuts in steel, stainless steel and non-ferrous metal\n* Similar to Bosch: T 118 AF",
+   "ru": "* Разведенные и фрезерованные зубья\r\n* Из биметалла\r\n* Для прямых резов в стали, нержавеющей стали и цветных металлах\r\n* Аналог Bosch: T 118 AF"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBF077N12GN.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 1.2,
+  "length": 77,
+  "cutting_metal": "1,5 - 2,5",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 103,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JBF077N20GN",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Geschränkte und gefräste Zähne\r\n* Gefertigt aus Bi-Metall\r\n* Für gerade Schnitte in Stahl, Edelstahl und Buntmetall\r\n* Ähnlich Bosch: T 118 BF",
+   "en": "* Set and milled teeth\n* Made of bi-metal\n* For straight cuts in steel, stainless steel and non-ferrous metal\n* Similar to Bosch: T 118 BF",
+   "ru": "* Разведенные и фрезерованные зубья\r\n* Из биметалла\r\n* Для прямых резов в стали, нержавеющей стали и цветных металлах\r\n* Аналог Bosch: T 118 BF"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBF077N20GN.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 2.0,
+  "length": 77,
+  "cutting_metal": "2,5 - 6",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 104,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JBF100N30GN",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Geschränkte und gefräste Zähne\r\n* Gefertigt aus Bi-Metall\r\n* **Aluprofi**\r\n* Besonders für Aluminium und Buntmetall geeignet, schneidet auch Kunststoff\r\n* Ähnlich Bosch: T 127 DF",
+   "en": "* Set and milled teeth\n* Made of bi-metal\n* **Aluminium pro**\n* Particularly suitable for aluminium and non-ferrous metal, also cuts plastic\n* Similar to Bosch: T 127 DF",
+   "ru": "* Разведенные и фрезерованные зубья\r\n* Из биметалла\r\n* **Профи по алюминию**\r\n* Особенно подходит для алюминия и цветных металлов, режет также пластмассу\r\n* Аналог Bosch: T 127 DF"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBF100N30GN.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 3.0,
+  "length": 100,
+  "cutting_metal": "3 - 15",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 105,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JBF132N10GN",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Geschränkte und gefräste Zähne\r\n* Gefertigt aus Bi-Metall\r\n* **Sandwichmaterial-Profi**\r\n* Für gerade Schnitte in Stahl, Edelstahl und Buntmetall\r\n* Eignet sich hervorragend, um Profile und Rohre bis 80 mm zu schneiden\r\n* Ähnlich Bosch: T 318 AF",
+   "en": "* Set and milled teeth\n* Made of bi-metal\n* **Sandwich material pro**\n* For straight cuts in steel, stainless steel and non-ferrous metal\n* Ideal for cutting profiles and tubes up to 80 mm\n* Similar to Bosch: T 318 AF",
+   "ru": "* Разведенные и фрезерованные зубья\r\n* Из биметалла\r\n* **Профи по сэндвич-материалам**\r\n* Для прямых резов в стали, нержавеющей стали и цветных металлах\r\n* Отлично подходит для резки профилей и труб до 80 мм\r\n* Аналог Bosch: T 318 AF"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBF132N10GN.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 1.0,
+  "length": 132,
+  "cutting_metal": "1,2 - 2,5",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 106,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JBF132N18GN",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Geschränkte und gefräste Zähne\r\n* Gefertigt aus Bi-Metall\r\n* Eignet sich hervorragend, um Profile und Rohre bis 80 mm zu schneiden\r\n* Für gerade Schnitte in Stahl, Edelstahl und Buntmetall\r\n* Ähnlich Bosch: T 318 BF",
+   "en": "* Set and milled teeth\n* Made of bi-metal\n* Ideal for cutting profiles and tubes up to 80 mm\n* For straight cuts in steel, stainless steel and non-ferrous metal\n* Similar to Bosch: T 318 BF",
+   "ru": "* Разведенные и фрезерованные зубья\r\n* Из биметалла\r\n* Отлично подходит для резки профилей и труб до 80 мм\r\n* Для прямых резов в стали, нержавеющей стали и цветных металлах\r\n* Аналог Bosch: T 318 BF"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBF132N18GN.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 1.8,
+  "length": 132,
+  "cutting_metal": "2,3 - 6",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 107,
+  "quality": "GUHEMA Super-HSS",
+  "type": "JBD055N12GN",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Geschränkte und gefräste Zähne\r\n* Ideal für Kurvenschnitte\r\n* Ähnlich Bosch: T 218 A",
+   "en": "* Set and milled teeth\n* Ideal for curved cuts\n* Similar to Bosch: T 218 A",
+   "ru": "* Разведенные и фрезерованные зубья\r\n* Идеально для криволинейных резов\r\n* Аналог Bosch: T 218 A"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JBD055N12GN.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Stichsägeblätter",
+   "en": "Jigsaw Blades",
+   "ru": "Пилки для лобзиков"
+  },
+  "tooth_separation": 1.2,
+  "length": 55,
+  "cutting_metal": "1,5 - 2,5",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 108,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JSF0950Q",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JSF0950Q.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 32.0,
+  "length": 95,
+  "cutting_metal": "< 1",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 109,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JSF0950P",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JSF0950P.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 24.0,
+  "length": 95,
+  "cutting_metal": "> 1",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 110,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JSF0950N",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JSF0950N.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 18.0,
+  "length": 95,
+  "cutting_metal": "1,5 - 3",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 111,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JSF0950L",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JSF0950L.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 14.0,
+  "length": 95,
+  "cutting_metal": "2 - 4",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 112,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JLF0950Q",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JLF0950Q.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 32.0,
+  "length": 95,
+  "cutting_metal": "< 1",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 113,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JLF0950P",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JLF0950P.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 24.0,
+  "length": 95,
+  "cutting_metal": "> 1",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 114,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JLF0950N",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JLF0950N.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 18.0,
+  "length": 95,
+  "cutting_metal": "1,5 - 3",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 115,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JLF0950L",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JLF0950L.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 14.0,
+  "length": 95,
+  "cutting_metal": "2 - 4",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 116,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JOF0950Q",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JOF0950Q.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 32.0,
+  "length": 95,
+  "cutting_metal": "< 1",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 117,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JOF0950P",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JOF0950P.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 24.0,
+  "length": 95,
+  "cutting_metal": "> 1",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 118,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JOF0950N",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JOF0950N.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 18.0,
+  "length": 95,
+  "cutting_metal": "1,5 - 3",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "jigsawblade",
+  "id": 119,
+  "quality": "GUHEMA Bi-lastic",
+  "type": "JOF0950L",
+  "name": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "description": {
+   "de": "* Scharf gefräste Verzahnung\r\n* Im Hochvakuumhärteverfahren für höchste Standzeit auf den Punkt gehärtet\r\n* Das Sägeblatt ohne Kompromisse, gefertigt aus Bi-Metall, erzielt Höchstleistung bei schwer zerspanbaren Werkstoffen mit einer Zugfestigkeit von bis zu 1100 N/mm<sup>2</sup>",
+   "en": "* Sharp-milled toothing\n* Precision-hardened in a high-vacuum hardening process for maximum tool life\n* The no-compromise saw blade, made of bi-metal, delivers top performance on difficult-to-cut materials with a tensile strength of up to 1100 N/mm<sup>2</sup>",
+   "ru": "* Острые фрезерованные зубья\r\n* Точечная закалка методом высоковакуумной закалки для максимальной стойкости\r\n* Бескомпромиссное полотно из биметалла обеспечивает максимальную производительность при резке труднообрабатываемых материалов с пределом прочности до 1100 Н/мм<sup>2</sup>"
+  },
+  "group": 7,
+  "clamping": null,
+  "slug": "jigsawblade",
+  "image": {
+   "de": "JOF0950L.jpg",
+   "en": null,
+   "ru": null
+  },
+  "subcategory": {
+   "de": "Karosseriestichsägeblätter",
+   "en": "Car Body Jigsaw Blades",
+   "ru": "Пилки для кузовных работ"
+  },
+  "tooth_separation": 14.0,
+  "length": 95,
+  "cutting_metal": "2 - 4",
+  "cutting_wood": "",
+  "indicators": []
+ },
+ {
+  "kind": "circularsawblade",
+  "id": 120,
+  "quality": "GUHEMA Super-HSS",
+  "type": "OSD",
+  "name": {
+   "de": "DMo 5 Qualität (Werkstoff-Nr. 1.3343)",
+   "en": "DMo 5 grade (material no. 1.3343)",
+   "ru": "Марка DMo 5 (№ материала 1.3343)"
+  },
+  "description": {
+   "de": "Das Werkstattblatt",
+   "en": "The workshop blade",
+   "ru": "Полотно для мастерской"
+  },
+  "group": 8,
+  "clamping": null,
+  "slug": "dmo-5-qualitat-werkstoff-nr-13343",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [],
+  "circular_indicators": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22
+  ]
+ },
+ {
+  "kind": "circularsawblade",
+  "id": 121,
+  "quality": "GUHEMA Brillant",
+  "type": "OSE",
+  "name": {
+   "de": "EMo 5 Co 5 Qualität (Werkstoff-Nr. 1.3243)",
+   "en": "EMo 5 Co 5 grade (material no. 1.3243)",
+   "ru": "Марка EMo 5 Co 5 (№ материала 1.3243)"
+  },
+  "description": {
+   "de": "Für nicht rostende Stähle",
+   "en": "For stainless steels",
+   "ru": "Для нержавеющих сталей"
+  },
+  "group": 8,
+  "clamping": null,
+  "slug": "emo-5-co-5-qualitat-werkstoff-nr-13243",
+  "image": {
+   "de": null,
+   "en": null,
+   "ru": null
+  },
+  "indicators": [],
+  "circular_indicators": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22
+  ]
+ }
+]

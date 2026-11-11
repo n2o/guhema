@@ -1,0 +1,1532 @@
+[
+ {
+  "id": 1,
+  "diameter": 14,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 2,
+  "diameter": 16,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "id": 3,
+  "diameter": 17,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 4,
+  "diameter": 19,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 5,
+  "diameter": 20,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "id": 6,
+  "diameter": 21,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 7,
+  "diameter": 22,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 8,
+  "diameter": 23,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 9,
+  "diameter": 24,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 10,
+  "diameter": 25,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "id": 11,
+  "diameter": 27,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 12,
+  "diameter": 29,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 13,
+  "diameter": 30,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 14,
+  "diameter": 32,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "id": 15,
+  "diameter": 33,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 16,
+  "diameter": 35,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 17,
+  "diameter": 37,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 18,
+  "diameter": 38,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 19,
+  "diameter": 40,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 20,
+  "diameter": 41,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 21,
+  "diameter": 43,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 22,
+  "diameter": 44,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "id": 23,
+  "diameter": 46,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 24,
+  "diameter": 48,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 25,
+  "diameter": 51,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "id": 26,
+  "diameter": 52,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 27,
+  "diameter": 54,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "id": 28,
+  "diameter": 56,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 29,
+  "diameter": 57,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 30,
+  "diameter": 58,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 31,
+  "diameter": 59,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 32,
+  "diameter": 60,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "id": 33,
+  "diameter": 64,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 34,
+  "diameter": 65,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 35,
+  "diameter": 67,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 36,
+  "diameter": 68,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 37,
+  "diameter": 70,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "id": 38,
+  "diameter": 73,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   16
+  ]
+ },
+ {
+  "id": 39,
+  "diameter": 76,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 40,
+  "diameter": 79,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 41,
+  "diameter": 83,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15,
+   16
+  ]
+ },
+ {
+  "id": 42,
+  "diameter": 86,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 43,
+  "diameter": 89,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 44,
+  "diameter": 92,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 45,
+  "diameter": 95,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 46,
+  "diameter": 98,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 47,
+  "diameter": 102,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   16
+  ]
+ },
+ {
+  "id": 48,
+  "diameter": 105,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 49,
+  "diameter": 108,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 50,
+  "diameter": 111,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 51,
+  "diameter": 114,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 52,
+  "diameter": 121,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 53,
+  "diameter": 127,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14,
+   15
+  ]
+ },
+ {
+  "id": 54,
+  "diameter": 133,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 55,
+  "diameter": 140,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 56,
+  "diameter": 146,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 57,
+  "diameter": 152,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 58,
+  "diameter": 160,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 59,
+  "diameter": 168,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 60,
+  "diameter": 177,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 61,
+  "diameter": 200,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 62,
+  "diameter": 210,
+  "advice": false,
+  "niro": null,
+  "iron": null,
+  "steel": null,
+  "non_ferrous_metals": null,
+  "alu": null,
+  "blades": [
+   14
+  ]
+ },
+ {
+  "id": 63,
+  "diameter": 14,
+  "advice": true,
+  "niro": 300,
+  "iron": 400,
+  "steel": 580,
+  "non_ferrous_metals": 790,
+  "alu": 900,
+  "blades": []
+ },
+ {
+  "id": 64,
+  "diameter": 16,
+  "advice": true,
+  "niro": 275,
+  "iron": 365,
+  "steel": 550,
+  "non_ferrous_metals": 730,
+  "alu": 825,
+  "blades": []
+ },
+ {
+  "id": 65,
+  "diameter": 17,
+  "advice": true,
+  "niro": 250,
+  "iron": 330,
+  "steel": 500,
+  "non_ferrous_metals": 665,
+  "alu": 750,
+  "blades": []
+ },
+ {
+  "id": 66,
+  "diameter": 19,
+  "advice": true,
+  "niro": 230,
+  "iron": 300,
+  "steel": 460,
+  "non_ferrous_metals": 600,
+  "alu": 690,
+  "blades": []
+ },
+ {
+  "id": 67,
+  "diameter": 20,
+  "advice": true,
+  "niro": 220,
+  "iron": 290,
+  "steel": 440,
+  "non_ferrous_metals": 580,
+  "alu": 670,
+  "blades": []
+ },
+ {
+  "id": 68,
+  "diameter": 21,
+  "advice": true,
+  "niro": 210,
+  "iron": 280,
+  "steel": 425,
+  "non_ferrous_metals": 560,
+  "alu": 630,
+  "blades": []
+ },
+ {
+  "id": 69,
+  "diameter": 22,
+  "advice": true,
+  "niro": 195,
+  "iron": 260,
+  "steel": 390,
+  "non_ferrous_metals": 520,
+  "alu": 585,
+  "blades": []
+ },
+ {
+  "id": 70,
+  "diameter": 23,
+  "advice": true,
+  "niro": 195,
+  "iron": 260,
+  "steel": 390,
+  "non_ferrous_metals": 520,
+  "alu": 570,
+  "blades": []
+ },
+ {
+  "id": 71,
+  "diameter": 24,
+  "advice": true,
+  "niro": 185,
+  "iron": 245,
+  "steel": 370,
+  "non_ferrous_metals": 495,
+  "alu": 555,
+  "blades": []
+ },
+ {
+  "id": 72,
+  "diameter": 25,
+  "advice": true,
+  "niro": 175,
+  "iron": 235,
+  "steel": 350,
+  "non_ferrous_metals": 470,
+  "alu": 525,
+  "blades": []
+ },
+ {
+  "id": 73,
+  "diameter": 27,
+  "advice": true,
+  "niro": 160,
+  "iron": 215,
+  "steel": 325,
+  "non_ferrous_metals": 435,
+  "alu": 480,
+  "blades": []
+ },
+ {
+  "id": 74,
+  "diameter": 29,
+  "advice": true,
+  "niro": 150,
+  "iron": 200,
+  "steel": 300,
+  "non_ferrous_metals": 400,
+  "alu": 450,
+  "blades": []
+ },
+ {
+  "id": 75,
+  "diameter": 30,
+  "advice": true,
+  "niro": 145,
+  "iron": 190,
+  "steel": 285,
+  "non_ferrous_metals": 380,
+  "alu": 425,
+  "blades": []
+ },
+ {
+  "id": 76,
+  "diameter": 32,
+  "advice": true,
+  "niro": 140,
+  "iron": 180,
+  "steel": 275,
+  "non_ferrous_metals": 360,
+  "alu": 410,
+  "blades": []
+ },
+ {
+  "id": 77,
+  "diameter": 33,
+  "advice": true,
+  "niro": 135,
+  "iron": 175,
+  "steel": 268,
+  "non_ferrous_metals": 345,
+  "alu": 390,
+  "blades": []
+ },
+ {
+  "id": 78,
+  "diameter": 35,
+  "advice": true,
+  "niro": 125,
+  "iron": 165,
+  "steel": 250,
+  "non_ferrous_metals": 330,
+  "alu": 375,
+  "blades": []
+ },
+ {
+  "id": 79,
+  "diameter": 37,
+  "advice": true,
+  "niro": 120,
+  "iron": 160,
+  "steel": 240,
+  "non_ferrous_metals": 315,
+  "alu": 360,
+  "blades": []
+ },
+ {
+  "id": 80,
+  "diameter": 38,
+  "advice": true,
+  "niro": 120,
+  "iron": 160,
+  "steel": 240,
+  "non_ferrous_metals": 315,
+  "alu": 360,
+  "blades": []
+ },
+ {
+  "id": 81,
+  "diameter": 40,
+  "advice": true,
+  "niro": 110,
+  "iron": 145,
+  "steel": 220,
+  "non_ferrous_metals": 290,
+  "alu": 330,
+  "blades": []
+ },
+ {
+  "id": 82,
+  "diameter": 41,
+  "advice": true,
+  "niro": 105,
+  "iron": 140,
+  "steel": 210,
+  "non_ferrous_metals": 280,
+  "alu": 315,
+  "blades": []
+ },
+ {
+  "id": 83,
+  "diameter": 43,
+  "advice": true,
+  "niro": 100,
+  "iron": 135,
+  "steel": 205,
+  "non_ferrous_metals": 270,
+  "alu": 305,
+  "blades": []
+ },
+ {
+  "id": 84,
+  "diameter": 44,
+  "advice": true,
+  "niro": 95,
+  "iron": 130,
+  "steel": 195,
+  "non_ferrous_metals": 250,
+  "alu": 295,
+  "blades": []
+ },
+ {
+  "id": 85,
+  "diameter": 46,
+  "advice": true,
+  "niro": 95,
+  "iron": 125,
+  "steel": 190,
+  "non_ferrous_metals": 250,
+  "alu": 285,
+  "blades": []
+ },
+ {
+  "id": 86,
+  "diameter": 48,
+  "advice": true,
+  "niro": 90,
+  "iron": 120,
+  "steel": 180,
+  "non_ferrous_metals": 240,
+  "alu": 270,
+  "blades": []
+ },
+ {
+  "id": 87,
+  "diameter": 51,
+  "advice": true,
+  "niro": 85,
+  "iron": 115,
+  "steel": 170,
+  "non_ferrous_metals": 230,
+  "alu": 255,
+  "blades": []
+ },
+ {
+  "id": 88,
+  "diameter": 52,
+  "advice": true,
+  "niro": 80,
+  "iron": 110,
+  "steel": 165,
+  "non_ferrous_metals": 220,
+  "alu": 245,
+  "blades": []
+ },
+ {
+  "id": 89,
+  "diameter": 54,
+  "advice": true,
+  "niro": 80,
+  "iron": 105,
+  "steel": 160,
+  "non_ferrous_metals": 210,
+  "alu": 240,
+  "blades": []
+ },
+ {
+  "id": 90,
+  "diameter": 56,
+  "advice": true,
+  "niro": 75,
+  "iron": 100,
+  "steel": 160,
+  "non_ferrous_metals": 200,
+  "alu": 225,
+  "blades": []
+ },
+ {
+  "id": 91,
+  "diameter": 57,
+  "advice": true,
+  "niro": 75,
+  "iron": 100,
+  "steel": 150,
+  "non_ferrous_metals": 200,
+  "alu": 225,
+  "blades": []
+ },
+ {
+  "id": 92,
+  "diameter": 58,
+  "advice": true,
+  "niro": 75,
+  "iron": 100,
+  "steel": 145,
+  "non_ferrous_metals": 195,
+  "alu": 225,
+  "blades": []
+ },
+ {
+  "id": 93,
+  "diameter": 59,
+  "advice": true,
+  "niro": 75,
+  "iron": 100,
+  "steel": 145,
+  "non_ferrous_metals": 195,
+  "alu": 225,
+  "blades": []
+ },
+ {
+  "id": 94,
+  "diameter": 60,
+  "advice": true,
+  "niro": 70,
+  "iron": 95,
+  "steel": 140,
+  "non_ferrous_metals": 190,
+  "alu": 220,
+  "blades": []
+ },
+ {
+  "id": 95,
+  "diameter": 64,
+  "advice": true,
+  "niro": 65,
+  "iron": 90,
+  "steel": 135,
+  "non_ferrous_metals": 180,
+  "alu": 205,
+  "blades": []
+ },
+ {
+  "id": 96,
+  "diameter": 65,
+  "advice": true,
+  "niro": 65,
+  "iron": 85,
+  "steel": 130,
+  "non_ferrous_metals": 175,
+  "alu": 200,
+  "blades": []
+ },
+ {
+  "id": 97,
+  "diameter": 67,
+  "advice": true,
+  "niro": 65,
+  "iron": 85,
+  "steel": 130,
+  "non_ferrous_metals": 170,
+  "alu": 195,
+  "blades": []
+ },
+ {
+  "id": 98,
+  "diameter": 68,
+  "advice": true,
+  "niro": 65,
+  "iron": 85,
+  "steel": 130,
+  "non_ferrous_metals": 170,
+  "alu": 195,
+  "blades": []
+ },
+ {
+  "id": 99,
+  "diameter": 70,
+  "advice": true,
+  "niro": 60,
+  "iron": 80,
+  "steel": 125,
+  "non_ferrous_metals": 160,
+  "alu": 185,
+  "blades": []
+ },
+ {
+  "id": 100,
+  "diameter": 73,
+  "advice": true,
+  "niro": 60,
+  "iron": 80,
+  "steel": 120,
+  "non_ferrous_metals": 160,
+  "alu": 180,
+  "blades": []
+ },
+ {
+  "id": 101,
+  "diameter": 76,
+  "advice": true,
+  "niro": 55,
+  "iron": 75,
+  "steel": 115,
+  "non_ferrous_metals": 150,
+  "alu": 170,
+  "blades": []
+ },
+ {
+  "id": 102,
+  "diameter": 79,
+  "advice": true,
+  "niro": 55,
+  "iron": 70,
+  "steel": 110,
+  "non_ferrous_metals": 140,
+  "alu": 165,
+  "blades": []
+ },
+ {
+  "id": 103,
+  "diameter": 83,
+  "advice": true,
+  "niro": 50,
+  "iron": 70,
+  "steel": 105,
+  "non_ferrous_metals": 140,
+  "alu": 155,
+  "blades": []
+ },
+ {
+  "id": 104,
+  "diameter": 86,
+  "advice": true,
+  "niro": 50,
+  "iron": 65,
+  "steel": 100,
+  "non_ferrous_metals": 130,
+  "alu": 150,
+  "blades": []
+ },
+ {
+  "id": 105,
+  "diameter": 89,
+  "advice": true,
+  "niro": 45,
+  "iron": 65,
+  "steel": 95,
+  "non_ferrous_metals": 130,
+  "alu": 145,
+  "blades": []
+ },
+ {
+  "id": 106,
+  "diameter": 92,
+  "advice": true,
+  "niro": 45,
+  "iron": 60,
+  "steel": 95,
+  "non_ferrous_metals": 120,
+  "alu": 140,
+  "blades": []
+ },
+ {
+  "id": 107,
+  "diameter": 95,
+  "advice": true,
+  "niro": 45,
+  "iron": 60,
+  "steel": 90,
+  "non_ferrous_metals": 120,
+  "alu": 135,
+  "blades": []
+ },
+ {
+  "id": 108,
+  "diameter": 98,
+  "advice": true,
+  "niro": 45,
+  "iron": 60,
+  "steel": 90,
+  "non_ferrous_metals": 120,
+  "alu": 135,
+  "blades": []
+ },
+ {
+  "id": 109,
+  "diameter": 102,
+  "advice": true,
+  "niro": 40,
+  "iron": 55,
+  "steel": 85,
+  "non_ferrous_metals": 110,
+  "alu": 130,
+  "blades": []
+ },
+ {
+  "id": 110,
+  "diameter": 105,
+  "advice": true,
+  "niro": 40,
+  "iron": 55,
+  "steel": 80,
+  "non_ferrous_metals": 110,
+  "alu": 120,
+  "blades": []
+ },
+ {
+  "id": 111,
+  "diameter": 108,
+  "advice": true,
+  "niro": 40,
+  "iron": 55,
+  "steel": 80,
+  "non_ferrous_metals": 110,
+  "alu": 120,
+  "blades": []
+ },
+ {
+  "id": 112,
+  "diameter": 111,
+  "advice": true,
+  "niro": 40,
+  "iron": 50,
+  "steel": 80,
+  "non_ferrous_metals": 100,
+  "alu": 120,
+  "blades": []
+ },
+ {
+  "id": 113,
+  "diameter": 114,
+  "advice": true,
+  "niro": 35,
+  "iron": 50,
+  "steel": 75,
+  "non_ferrous_metals": 100,
+  "alu": 105,
+  "blades": []
+ },
+ {
+  "id": 114,
+  "diameter": 121,
+  "advice": true,
+  "niro": 35,
+  "iron": 45,
+  "steel": 70,
+  "non_ferrous_metals": 90,
+  "alu": 95,
+  "blades": []
+ },
+ {
+  "id": 115,
+  "diameter": 127,
+  "advice": true,
+  "niro": 30,
+  "iron": 40,
+  "steel": 65,
+  "non_ferrous_metals": 85,
+  "alu": 90,
+  "blades": []
+ },
+ {
+  "id": 116,
+  "diameter": 133,
+  "advice": true,
+  "niro": 30,
+  "iron": 40,
+  "steel": 65,
+  "non_ferrous_metals": 85,
+  "alu": 90,
+  "blades": []
+ },
+ {
+  "id": 117,
+  "diameter": 140,
+  "advice": true,
+  "niro": 30,
+  "iron": 35,
+  "steel": 65,
+  "non_ferrous_metals": 80,
+  "alu": 85,
+  "blades": []
+ },
+ {
+  "id": 118,
+  "diameter": 146,
+  "advice": true,
+  "niro": 30,
+  "iron": 35,
+  "steel": 60,
+  "non_ferrous_metals": 80,
+  "alu": 85,
+  "blades": []
+ },
+ {
+  "id": 119,
+  "diameter": 152,
+  "advice": true,
+  "niro": 25,
+  "iron": 35,
+  "steel": 55,
+  "non_ferrous_metals": 75,
+  "alu": 85,
+  "blades": []
+ },
+ {
+  "id": 120,
+  "diameter": 160,
+  "advice": true,
+  "niro": 25,
+  "iron": 35,
+  "steel": 55,
+  "non_ferrous_metals": 75,
+  "alu": 85,
+  "blades": []
+ },
+ {
+  "id": 121,
+  "diameter": 168,
+  "advice": true,
+  "niro": 25,
+  "iron": 35,
+  "steel": 55,
+  "non_ferrous_metals": 75,
+  "alu": 85,
+  "blades": []
+ },
+ {
+  "id": 122,
+  "diameter": 177,
+  "advice": true,
+  "niro": 20,
+  "iron": 30,
+  "steel": 50,
+  "non_ferrous_metals": 70,
+  "alu": 80,
+  "blades": []
+ },
+ {
+  "id": 123,
+  "diameter": 200,
+  "advice": true,
+  "niro": 20,
+  "iron": 30,
+  "steel": 50,
+  "non_ferrous_metals": 70,
+  "alu": 80,
+  "blades": []
+ },
+ {
+  "id": 124,
+  "diameter": 210,
+  "advice": true,
+  "niro": 20,
+  "iron": 30,
+  "steel": 45,
+  "non_ferrous_metals": 70,
+  "alu": 80,
+  "blades": []
+ }
+]

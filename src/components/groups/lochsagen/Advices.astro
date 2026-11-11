@@ -1,0 +1,47 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { holeSawDiameters, sortBy, type ProductGroup } from '../../../lib/data';
+import { t, tr, type Lang } from '../../../lib/i18n';
+
+interface Props { lang: Lang; group: ProductGroup }
+const { lang, group } = Astro.props;
+const objects = sortBy(holeSawDiameters.filter((d) => d.advice), (d) => d.diameter);
+---
+<Base lang={lang}>
+  <h1 slot="heading">{tr(group.name, lang)}</h1>
+
+  <h3>{t(lang, 'Unsere Empfehlung für langen Sägespaß')}</h3>
+  <p>
+    {t(lang, 'Bitte passen Sie Ihre Umdrehungszahl den folgenden Empfehlungen an, um die Lebensdauer der Lochsäge und die Schnittqualität zu optimieren. Bitte vergessen Sie des Weiteren nicht die permanente Kühlung der Lochsäge während des Schneidprozesses.')}
+  </p>
+
+  <div class="table-responsive">
+  <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover spec-table">
+    <thead>
+    <tr>
+      <th rowspan="2" class="text-center table-white-border-right" width="16%">&Oslash; [{t(lang, 'mm')}]</th>
+      <th colspan="5" class="text-center table-no-bot-border">{t(lang, 'Drehzahl [U/min]')}</th>
+    </tr>
+    <tr>
+      <th class="text-center table-no-top-border" width="16%">{t(lang, 'NIRO')}</th>
+      <th class="text-center table-no-top-border" width="16%">{t(lang, 'Guss')}</th>
+      <th class="text-center table-no-top-border" width="16%">{t(lang, 'Stahl')}</th>
+      <th class="text-center table-no-top-border" width="16%">{t(lang, 'Buntmetalle')}</th>
+      <th class="text-center table-no-top-border" width="16%">{t(lang, 'ALU')}</th>
+    </tr>
+    </thead>
+    <tbody>
+    {objects.map((diameter) => (
+      <tr>
+        <td class="table-white-border-right text-center">{diameter.diameter}</td>
+        <td>{diameter.niro ?? ''}</td>
+        <td>{diameter.iron ?? ''}</td>
+        <td>{diameter.steel ?? ''}</td>
+        <td>{diameter.non_ferrous_metals ?? ''}</td>
+        <td>{diameter.alu ?? ''}</td>
+      </tr>
+    ))}
+    </tbody>
+  </table>
+  </div>
+</Base>

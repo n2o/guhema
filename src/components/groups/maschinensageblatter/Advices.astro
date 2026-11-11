@@ -1,0 +1,328 @@
+---
+// Former products/maschinensageblatter/advices.html
+import Base from '../../../layouts/Base.astro';
+import ImageMultilang from '../../products/ImageMultilang.astro';
+import type { ProductGroup } from '../../../lib/data';
+import { t, tr, type Lang } from '../../../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  group: ProductGroup;
+}
+const { lang, group } = Astro.props;
+
+// Cutting data: [material, ZpZ up to 30/50/100/200 mm, over 200 mm, pressure, strokes/min, m/min, quality, tooth form]
+type Row = [string, string, string, string, string, string, string, string, string, string, string];
+const groups: { heading: string; rows: Row[] }[] = [
+  {
+    heading: `${t(lang, "unleg. Stähle/Baustähle")} – ${t(lang, "Einsatzstähle")}, ${t(lang, "z.B.")}`,
+    rows: [
+      ['St37-C10-C15', '10-8', '8-6', '6-4', '4-3', '2-1,5', t(lang, "niedrig"), '60-100', '24-40', 'Super HSS', t(lang, "normal")],
+      ['St50-St60', '10-8', '8-6', '6-4', '4-3', '2-1,5', t(lang, "bis mittel"), '60-100', '24-40', 'Super HSS', t(lang, "normal")],
+    ],
+  },
+  {
+    heading: `${t(lang, "Vergütungsstähle")}, ${t(lang, "z.B.")}`,
+    rows: [
+      ['C35-C45-C60', '14-10', '8-6', '6-4', '4-3', '2', t(lang, "mittel"), '55-80', '22-32', 'Super HSS', t(lang, "normal")],
+      ['CK45-40MN4', '14-10', '8-6', '6-4', '4-3', '2', t(lang, "mittel"), '55-80', '22-32', 'Super HSS', t(lang, "normal")],
+      ['34CrNiMo6-42CrMo4', '14-10', '8-6', '6-4', '4-3', '2', t(lang, "mittel"), '45-50', '18-20', 'Super HSS', t(lang, "normal")],
+    ],
+  },
+  {
+    heading: `${t(lang, "leg. Werkzeugstähle")}, ${t(lang, "z.B.")}`,
+    rows: [
+      ['125Cr1-115CrV3-100CrMo5', '14-10', '8-6', '6-4', '4-3', '2', t(lang, "mittel"), '40-60', '25-40', 'Super HSS', t(lang, "normal")],
+      ['X210Cr12', '14-10', '8-6', '6-4', '4-3', '2', t(lang, "mittel"), '25-40', '10-16', 'Super HSS', t(lang, "normal")],
+    ],
+  },
+  {
+    heading: `${t(lang, "Schnellstähle")}, ${t(lang, "z.B.")}`,
+    rows: [
+      ['ABC III-DMo 5', '10-8', '8-6', '6-4', '4-3', '2', t(lang, "mittel"), '25-40', '10-16', 'Super HSS', t(lang, "normal")],
+      ['EMo 5 V 3-B18', '14-10', '8-6', '6-4', '4-3', '2', t(lang, "& höher"), '25-35', '10-14', 'Brillant', t(lang, "normal")],
+    ],
+  },
+  {
+    heading: `${t(lang, "nicht rostende Stähle")}, ${t(lang, "z.B.")}`,
+    rows: [
+      ['V2A-V4A', '14-10', '8-6', '6-4', '4-3', '2', t(lang, "Sondervorschrift"), '25-37', '10-15', 'Brillant', t(lang, "positiv")],
+    ],
+  },
+  {
+    heading: `${t(lang, "Sonderlegierungen")}, ${t(lang, "z.B.")}`,
+    rows: [
+      [t(lang, "Hastelloy-Inconel"), '10-8', '8-6', '6-4', '4-3', '2', t(lang, "Sondervorschrift"), '20-25', '10-16', 'Brillant', t(lang, "positiv")],
+      [t(lang, "Nimonic-Titan"), '10-8', '8-6', '6-4', '4-3', '2', t(lang, "Sondervorschrift"), '10-13', '4-5', 'Brillant', t(lang, "positiv")],
+    ],
+  },
+];
+// Single rows without a heading ("row-group-data")
+const singles: Row[] = [
+  ['AMPCO 18-20', '10-8', '8-6', '6-4', '4-3', '2', t(lang, "mittel"), '45-50', '18-20', 'Brillant', t(lang, "normal")],
+  ['AMPCO 21-26', '10-8', '8-6', '6-4', '4-3', '2', t(lang, "mittel"), '40-45', '16-18', 'Brillant', t(lang, "normal")],
+  [t(lang, "Stahlguss"), '14-10', '8-6', '6-4', '4-3', '2', t(lang, "mittel"), '50-70', '20-28', 'Super HSS', t(lang, "normal")],
+  [t(lang, "Gusseisen"), '14-10', '8-6', '6-4', '4-3', '2', t(lang, "mittel"), '50-70', '20-28', 'Super HSS', t(lang, "normal")],
+  [t(lang, "Spezialbronzen"), '10-8', '8-6', '6-4', '4-3', '2', t(lang, "mittel-hoch"), '50-62', '20-25', 'Brillant', t(lang, "normal")],
+];
+const nonFerrous: Row = [t(lang, "Alu-Bronze-Messing"), '8', '6', '4', '3', '2', t(lang, "niedrig"), '80-120', '32-48', 'Super HSS', t(lang, "normal")];
+
+const future = [
+  ['8/10', "Materialstärken von", '8-30'],
+  ['6/8', "Materialstärken von", '20-50'],
+  ['4/6', "Materialstärken von", '50-100'],
+  ['3/4', "Materialstärken von", '70-150'],
+  ['2/3', "Materialstärken über", '150'],
+];
+
+const problems = [
+  [
+    ["Zahnbruch?", [
+      "Zu niedrige Zähnezahl gewählt. Mindestens 3 Zähne sollten gleichzeitig im Eingriff sein, auch bei Rohren und Profilen.",
+      "Über Eck angesägt.",
+      "Falsche Einspannung des Werkstücks.",
+    ]],
+    ["Blattbruch?", [
+      "Schnittkanal wurde zusammengedrückt und blockierte das Sägeblatt.",
+      "Falsche Blattspannung.",
+      "Zu grobe Verzahnung für das Werkstück gewählt.",
+      "Zu hoher Schnittdruck.",
+      "Verschlissene Führungslager in der Maschine.",
+    ]],
+  ],
+  [
+    ["Vorzeitiges Abstumpfen der Zähne?", [
+      "Zu feine Verzahnung gewählt.",
+      "Zu hohe Schnittgeschwindigkeit für das Werkstück gewählt.",
+      "Zu hoher Druck (erhöhte Zahnbelastung) oder zu niedriger Druck (Zähne schleifen über das Werkstück, statt einen Span zu heben).",
+      "Unzureichende/falsch ausgerichtete Sägeblattkühlung.",
+      "Falsche Sägeblattqualität gewählt.",
+      "Kein Sägeblattausheben im Rücklauf.",
+    ]],
+    ["Ungewollter Schnittverlauf?", [
+      "Falsche Blattspannung.",
+      "Zu geringe Werkstückeinspannung.",
+      "Zu hoher Schnittdruck.",
+      "Verschlissene Führungslager in der Maschine.",
+    ]],
+  ],
+] as [string, string[]][][];  // rows of [title, causes] columns
+
+const rules = [
+  "Sägen Sie nie über Eck an.",
+  "Sägen Sie stets mit Kühlung.",
+  "Spannen Sie das Werkstück fest und verdrehsicher ein.",
+  "Ein neues Maschinensägeblatt muss eingefahren werden. Reduzieren Sie in der Anfangszeit den Schnittdruck um ca. 50%%.",
+  "Entfernen Sie mögliche mineralische Rückstände vom Werkstück.",
+  "Kontrollieren Sie von Zeit zu Zeit die Sägeblattspannung.",
+  "Wechseln Sie frühzeitig Ihr Metallsägeblatt! Bestes Indiz: deutlicher Anstieg der Schnittzeit.",
+  "Warten Sie Ihre Metallsäge nach den Vorgaben des Herstellers.",
+  "Passen Sie den Schnittdruck, die Schnittgeschwindigkeit und die Zähnezahl dem Werkstück an. Das folgende Diagramm sowie die Tabelle dienen als Orientierung.",
+  "Beim Einsatz von Positivzahn und Future mit ca. 50%% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist.",
+];
+const fasenImg = '/static/img/produktbilder/maschinensaegeblaetter/katalog_2014/seitlicher_fasenanschliff.jpg';
+---
+<Base lang={lang}>
+  <h1 slot="heading">{tr(group.name, lang)}</h1>
+
+  {t(lang, "Wir produzieren für Sie Maschinensägeblätter für alle Maschinensägetypen auf dem Markt. Unser Programm umfasst sowohl die Standardvarianten als auch die Kasto-Aufnahme und Sägeblätter aus Bi-Metall. Getreu dem Motto:")}
+
+  <blockquote class="margin-top">
+    {t(lang, "Wir liefern Ihnen das Maschinensägeblatt, das bei Ihnen zum optimalen Sägeergebnis führt!")}
+  </blockquote>
+
+  <h3>{t(lang, "Unsere Empfehlung für langen Sägespaß")}</h3>
+
+  <section>
+    <p>
+      {t(lang, "Für den Einsatz von GUHEMA-Maschinensägeblättern empfehlen wir die wenigen, aber wichtigen Spielregeln zwischen Werkstück und Sägeblatt zu beachten, um optimale Schnittergebnisse zu erhalten:")}
+    </p>
+    <ul>
+      {rules.map((rule) => <li>{t(lang, rule)}</li>)}
+    </ul>
+
+    <ImageMultilang lang={lang} prefix="img/produktdetails/material_group_" extension=".png" alt={t(lang, "Werkstoffgruppen")} scroll />
+
+    <section class="padding-top">
+      <div class="alert alert-info rule-of-thumb">
+        <p class="h3">{t(lang, "Faustregel")}:</p>
+        <p class="rule-formula">
+          <span class="text-nowrap">{t(lang, "Schnittgeschwindigkeit")}</span>
+          <span class="text-nowrap">÷ (2 × {t(lang, "Hubweg (m)")})</span>
+          <span class="text-nowrap">= {t(lang, "Hubzahl/min")}</span>
+        </p>
+      </div>
+    </section>
+  </section>
+
+  <section>
+    <h3>{t(lang, "Schnittdatenempfehlung")}</h3>
+    <p>
+      {t(lang, "Schnittdatenempfehlung")} {t(lang, "bei Vollmaterial im normal geglühten Zustand für GUHEMA-Maschinensägeblätter basierend auf einer Hublänge von 200 mm.")}
+    </p>
+    <p>
+      {t(lang, "Für Rohre und Profile Schnittdruck entsprechend der Wandstärke reduzieren.")}
+    </p>
+
+    <div class="table-responsive">
+    <table id="products-sawblade-table" class="table table-condensed table-striped-column table-hover spec-table">
+      <thead>
+      <tr>
+        <th class="table-no-bot-border text-left">
+          {t(lang, "Material")}
+        </th>
+        <th colspan="5" class="table-no-bot-border">
+          {t(lang, "ZpZ")} {t(lang, "bei Materialabmessungen")}
+        </th>
+        <th class="table-no-bot-border">&nbsp;</th>
+        <th colspan="2" class="table-no-bot-border">
+          {t(lang, "Schnittgeschwindigkeit")}
+        </th>
+        <th class="table-no-bot-border">
+          {t(lang, "Blatt")} /
+        </th>
+        <th class="table-no-bot-border">&nbsp;</th>
+      </tr>
+
+      <tr>
+        <th class="table-no-bot-border table-no-top-border text-left">
+          {t(lang, "Bezeichnung")}
+        </th>
+        <th class="table-no-bot-border table-no-top-border">
+          {t(lang, "bis")}
+        </th>
+        <th colspan="3" class="table-no-bot-border table-no-top-border">&nbsp;</th>
+        <th class="table-no-bot-border table-no-top-border">
+          {t(lang, "über")}
+        </th>
+
+        <th class="table-no-bot-border table-no-top-border">{t(lang, "Schnittdruck")}</th>
+        <th colspan="2" class="table-no-bot-border table-no-top-border">
+          {t(lang, "je nach Materialstärke")}
+        </th>
+        <th class="table-no-bot-border table-no-top-border">
+          {t(lang, "Qualität")}
+        </th>
+        <th class="table-no-bot-border table-no-top-border">
+          {t(lang, "Zahnform")}
+        </th>
+      </tr>
+
+      <tr>
+        <th class="table-no-top-border">&nbsp;</th>
+        {['30', '50', '100', '200', '200'].map((mm) => (
+          <th class="table-no-top-border">
+            {mm} {t(lang, "mm")}
+          </th>
+        ))}
+
+        <th class="table-no-top-border">&nbsp;</th>
+        <th class="table-no-top-border">
+          {t(lang, "Hübe / min")}
+        </th>
+        <th class="table-no-top-border">
+          {t(lang, "m / min")}
+        </th>
+        <th class="table-no-top-border">&nbsp;</th>
+        <th class="table-no-top-border">&nbsp;</th>
+      </tr>
+      </thead>
+      <tbody>
+      {groups.map(({ heading, rows }) => (<>
+        <tr class="row-group">
+          <th colspan="11" scope="rowgroup">{heading}</th>
+        </tr>
+        {rows.map((row) => (
+          <tr>
+            {row.map((cell) => <td class="table-no-top-border">{cell}</td>)}
+          </tr>
+        ))}
+      </>))}
+
+      {singles.map(([material, ...cells]) => (
+        <tr class="row-group-data">
+          <th scope="row">{material}</th>
+          {cells.map((cell) => <td>{cell}</td>)}
+        </tr>
+      ))}
+
+      <tr class="row-group">
+        <th colspan="11" scope="rowgroup">{t(lang, "NE-Metalle")}</th>
+      </tr>
+      <tr>
+        {nonFerrous.map((cell) => <td class="table-no-top-border">{cell}</td>)}
+      </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <h3>
+      {t(lang, "Anwendungsbereich für unsere GUHEMA Future Metallsägeblätter:")}
+    </h3>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="table-responsive">
+        <table class="table table-condensed table-striped-column table-hover">
+          <thead>
+          <tr>
+            <th>{t(lang, "ZpZ")}</th>
+            <th>{t(lang, "Beschreibung")}</th>
+          </tr>
+          </thead>
+          <tbody>
+          {future.map(([zpz, text, range]) => (
+            <tr>
+              <td>{zpz}</td>
+              <td>{t(lang, text)} {range} {t(lang, "mm")}</td>
+            </tr>
+          ))}
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>{t(lang, "Unsere Empfehlung für grobe Verzahnungen")}</h3>
+    <h4>{t(lang, "Seitlicher Fasenanschliff")}</h4>
+
+    <p>
+      <Fragment set:html={t(lang, "Nutzen Sie Ihren Vorteil durch unseren seitlichen Fasenanschliff. Sie erhalten sauberste Schnittergebnisse. Vorzeitiges Ausbrechen der Zähne wird durch den Fasenanschliff verhindert und wegen der leichten Spanabrollung ergibt sich eine geringere Belastung von Blatt und Maschine &#8594; Metallsägeblatt und Maschine leben länger.")} />
+    </p>
+    <p>
+      {t(lang, "Den seitlichen Fasenanschliff fertigen wir bis 6 ZpZ auf Nachfrage gerne für Sie. Sprechen Sie uns an!")}
+    </p>
+    <a href={fasenImg}>
+      <img src={fasenImg}
+           class="img-responsive" alt={t(lang, "Seitlicher Fasenanschliff")}>
+    </a>
+  </section>
+
+  <section>
+    <h3>{t(lang, "Sie haben Probleme beim Sägen? – Wir haben die Antworten!")}</h3>
+
+    {problems.map((row) => (
+      <div class="row">
+        {row.map(([title, causes], i) => (
+          <div class={i ? 'col-md-offset-1 col-md-5' : 'col-md-5'}>
+            <h4>{t(lang, title)}</h4>
+            <p>{t(lang, "Mögliche Ursachen:")}</p>
+            <ul>
+              {causes.map((cause) => <li>{t(lang, cause)}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    ))}
+
+    <h4>{t(lang, "Keine passende Antwort?")}</h4>
+    <p>
+      {t(lang, "Dann sprechen Sie mit einem Experten! Kontaktieren Sie unsere Anwendungsberatung unter")}
+      <a href="tel:+492191886720">+49 (0) 2191 88 67-20</a>.
+    </p>
+  </section>
+</Base>

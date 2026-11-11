@@ -1,0 +1,27 @@
+---
+import { publicGroups } from '../lib/data';
+import { basePath, t, tr, url, type Lang } from '../lib/i18n';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const here = basePath(Astro.url.pathname);
+---
+<nav class="product-groups-band" aria-labelledby="band-title">
+  <div class="container">
+    <p class="band-title" id="band-title"><a href={url(lang, '/produkte/')}>{t(lang, 'PRODUKTGRUPPEN')}</a></p>
+    <ul class="pg-tiles">
+      {publicGroups().map((group) => {
+        const path = `/produkte/${group.slug}/`;
+        const inside = here.startsWith(path);
+        return (
+          <li>
+            <a class={inside ? 'pg-tile active' : 'pg-tile'} href={url(lang, path)}
+               aria-current={here === path ? 'page' : inside ? 'true' : undefined}>
+              <img src={`/static/img/produktbilder/saege00${group.id}.png`} alt="" width="112" height="112">{tr(group.name, lang)}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</nav>

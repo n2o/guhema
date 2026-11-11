@@ -1,0 +1,10 @@
+---
+// Former products/<slug>/details.html, rendered by src/components/groups/<slug>/Details.astro
+import { langOf } from '../../../../../lib/i18n';
+import { groupPaths } from '../../../../../lib/routes';
+
+export const getStaticPaths = () =>
+  groupPaths(import.meta.glob('/src/components/groups/*/Details.astro', { eager: true, import: 'default' }), 'Details');
+const { group, blade, Page } = Astro.props;
+---
+<Page lang={langOf(Astro.params.lang)} group={group} blade={blade} />
