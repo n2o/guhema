@@ -2,7 +2,7 @@
 title: "Impressum"
 ---
 
-### Angaben:
+### Angaben gemäß § 5 DDG:
 
 GUHEMA GmbH & Co. KG  
 Walter-Freitag-Straße 37  
@@ -44,7 +44,7 @@ Steuernummer: 126 5861 0155
 
 ### Unsere AGBs
 
-<a href="/static/other/agb.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a>
+<a href="/static/other/agb.pdf"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Allgemeine Geschäftsbedingungen (PDF)</a>
 
 ## Haftungsausschluss (Disclaimer)
 
@@ -60,4 +60,4 @@ Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wi
 
 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
 
-*Quelle: [http://www.e-recht24.de](http://www.e-recht24.de)*
+*Quelle: [www.e-recht24.de](https://www.e-recht24.de)*

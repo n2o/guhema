@@ -8,7 +8,7 @@ export const LANG_NAMES: Record<Lang, string> = { de: 'Deutsch', en: 'English', 
 const DICTS: Record<Lang, Record<string, string>> = { de: {}, en, ru };
 
 /**
- * Keys are the German source strings (former gettext msgids); "context|text" for msgctxt.
+ * Keys are the German source strings; "context|text" where the same German text needs different translations.
  * Placeholders keep the gettext form "%(name)s". Some strings contain HTML (e.g. <sup>): render those with set:html.
  */
 export function t(lang: Lang, key: string, vars: Record<string, string | number> = {}): string {
@@ -16,7 +16,7 @@ export function t(lang: Lang, key: string, vars: Record<string, string | number>
   return text.replace(/%\((\w+)\)s/g, (_, name) => String(vars[name])).replace(/%%/g, '%');
 }
 
-/** A FloatField as Django printed it: Python repr ("1.0", "0.65") with the language's decimal separator. */
+/** Decimal number as in the catalogue: always one decimal for whole numbers ("1.0", "0.65"), language's decimal separator. */
 export function float(lang: Lang, value: number | null | undefined): string {
   if (value == null) return '';
   const text = Number.isInteger(value) ? value.toFixed(1) : String(value);
@@ -25,7 +25,7 @@ export function float(lang: Lang, value: number | null | undefined): string {
 
 export type Translated<T = string> = Record<Lang, T | null>;
 
-/** Translated DB field with German fallback (as django-modeltranslation did). */
+/** Translated data field with German fallback. */
 export function tr<T>(field: Translated<T> | null | undefined, lang: Lang): T | null {
   return field?.[lang] ?? field?.de ?? null;
 }

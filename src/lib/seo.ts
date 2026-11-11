@@ -1,4 +1,4 @@
-// Titles, descriptions and breadcrumbs for product pages, derived from the German path (the old site had none).
+// Titles, descriptions and breadcrumbs for product pages, derived from the German path.
 import { detailItems, groupBySlug } from './data';
 import { t, tr, type Lang } from './i18n';
 

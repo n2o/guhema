@@ -1,4 +1,4 @@
-// Ports of the old Django template tags (products/templatetags/products_tags.py). They return HTML: use set:html.
+// Table helpers for product pages. They return HTML: use set:html.
 import { t, type Lang } from './i18n';
 
 export const DOT_ICON = "<i class='fa fa-circle' aria-hidden='true'></i>";
@@ -8,14 +8,14 @@ export const dotfield = (lang: Lang) => `${DOT_ICON}<span class='sr-only'>${t(la
 const dotcell = (lang: Lang) => `<td>${dotfield(lang)}</td>`;
 const EMPTYCELL = '<td></td>';
 
-/** Former filter check_zpz. */
+/** Dot when the tooth count is available. */
 export const checkZpz = (lang: Lang, val: unknown) => (val ? dotfield(lang) : '');
 
-/** Former filter bandsawIndicatorCheck: "1" is a dot, anything else is shown bold. */
+/** Band saw cell: "1" is a dot, anything else is shown bold. */
 export const bandsawIndicatorCheck = (lang: Lang, val: string) =>
   val === '1' ? `<span class='indicator-dot'>${dotfield(lang)}</span>` : `<strong>${val}</strong>`;
 
-/** Former tag show_diameters: three cells for the hole saws available at one diameter. */
+/** Three cells for the hole saws available at one diameter. */
 export function showDiameters(lang: Lang, blades: { ordernr: string }[]): string {
   if (blades.length === 3) return dotcell(lang).repeat(3);
   if (blades.length > 1) {
@@ -35,9 +35,9 @@ function articleCode(ind: Record<string, unknown> | undefined, fields: string[])
   return field === 'UE' ? 'Ü' : field;
 }
 
-/** Former tag zpzCode; `without`: tooth-count columns the page's table does not show. */
+/** Tooth-count code for the example article number; `without`: tooth-count columns the page's table does not show. */
 export const zpzCode = (ind: Record<string, unknown> | undefined, without = '') =>
   articleCode(ind, ZPZ_FIELDS.filter((f) => !without.split(' ').includes(f)));
 
-/** Former tag validBandsawIndicator. */
+/** Tooth-count code for the band saw example article number. */
 export const validBandsawIndicator = (ind: Record<string, unknown> | undefined) => articleCode(ind, BANDSAW_FIELDS);

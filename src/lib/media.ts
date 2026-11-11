@@ -6,7 +6,7 @@ const FILES = import.meta.glob<ImageMetadata>('/src/media/**/*.{png,jpg,jpeg,gif
   import: 'default',
 });
 
-/** Former easy_thumbnails aliases: box [w, h]; "scale" = fit the box, one side may overflow, never upscale. */
+/** Thumbnail sizes: box [w, h]; the image covers the box, one side may overflow, never upscaled. */
 const ALIASES = {
   products_clamping: [250, 80],
   products_teaserimage: [262, 174],
@@ -15,7 +15,7 @@ const ALIASES = {
 } as const;
 export type Alias = keyof typeof ALIASES;
 
-/** Uploaded file by its former MEDIA path (e.g. "blades/x.png"); null if missing, like a failed thumbnail. */
+/** Image by its path under src/media (e.g. "blades/x.png"); null if missing. */
 export function media(path: string | null | undefined): ImageMetadata | null {
   return (path && FILES[`/src/media/${path}`]) || null;
 }

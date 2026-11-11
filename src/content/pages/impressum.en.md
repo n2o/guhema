@@ -4,7 +4,7 @@ title: "Legal Notice"
 
 *This is a translation for convenience. Only the German version is legally binding.*
 
-### Information:
+### Information pursuant to § 5 DDG (German Digital Services Act):
 
 GUHEMA GmbH & Co. KG  
 Walter-Freitag-Straße 37  
@@ -46,7 +46,7 @@ Tax number: 126 5861 0155
 
 ### Our General Terms and Conditions
 
-<a href="/static/other/agb.pdf"><i class="fa fa-file-pdf-o fa-lg"></i></a>
+<a href="/static/other/agb.pdf"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> General Terms and Conditions (PDF)</a>
 
 ## Disclaimer
 
@@ -62,4 +62,4 @@ Our website contains links to external third-party websites over whose content w
 
 The content and works created by the site operators on these pages are subject to German copyright law. Reproduction, editing, distribution and any kind of exploitation beyond the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are permitted only for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please notify us accordingly. Upon becoming aware of infringements, we will remove such content without delay.
 
-*Source: [http://www.e-recht24.de](http://www.e-recht24.de)*
+*Source: [www.e-recht24.de](https://www.e-recht24.de)*

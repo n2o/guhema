@@ -1,4 +1,4 @@
-// Product data, exported once from the old Django DB (tools/export_json.py). The JSON files are the source of truth now.
+// Product data. The JSON files in src/data are the source of truth.
 import type { Translated } from './i18n';
 import bandsawIndicatorsJson from '../data/bandsawindicators.json';
 import circularIndicatorsJson from '../data/circularindicators.json';
@@ -134,7 +134,7 @@ const holeSawsById = byId(holeSaws);
 const bandSawIndicatorsById = byId(bandSawIndicators);
 const circularIndicatorsById = byId(circularIndicators);
 
-/** Rows in DB id order: what Django returned for unordered querysets (SQLite rowid order). */
+/** Lists are in id order (the original database order). */
 export const groupBySlug = (slug: string) => productGroups.find((g) => g.slug === slug);
 export const publicGroups = () => productGroups.filter((g) => g.public);
 export const bladesOfGroup = (group: ProductGroup) => sawBlades.filter((b) => b.group === group.id);
@@ -145,17 +145,17 @@ export const bandSawIndicatorsOf = (blade: SawBlade) => pick(bandSawIndicatorsBy
 export const circularIndicatorsOf = (blade: SawBlade) => pick(circularIndicatorsById, blade.circular_indicators);
 export const holeSawsOf = (d: HoleSawDiameter) => pick(holeSawsById, d.blades);
 
-/** Stable sort by a numeric key (Django order_by). */
+/** Stable sort by a numeric key. */
 export const sortBy = <T>(rows: T[], key: (r: T) => number) => [...rows].sort((a, b) => key(a) - key(b));
 
-/** Django {% ifchanged %}: true where the key differs from the previous row's (and for the first row). */
+/** True where the key differs from the previous row's (and for the first row): show a group heading there. */
 export const changed = <T>(keys: T[]) => keys.map((key, i) => i === 0 || key !== keys[i - 1]);
 
 /** URL path segment of a detail page: band saw blades by id, others by type. */
 const detailItem = (group: ProductGroup, blade: SawBlade) => (group.slug === 'metallsagebander' ? String(blade.id) : blade.type);
 export const detailPath = (group: ProductGroup, blade: SawBlade) => `/produkte/${group.slug}/${detailItem(group, blade)}/`;
 
-/** Detail pages of a group (rendered only for groups with a Details.astro); the first blade wins per item, like Django's .first(). */
+/** Detail pages of a group (rendered only for groups with a Details.astro); the first blade wins per item. */
 export function detailItems(group: ProductGroup): { item: string; blade: SawBlade }[] {
   const items = new Map<string, SawBlade>();
   for (const blade of bladesOfGroup(group)) {
