@@ -10,19 +10,17 @@ interface Props {
   description?: string;
   /** Show the product-group band above the heading (layout_productgroups.html). */
   productGroups?: boolean;
-  /** German-only content (legal pages): the en/ru copies point search engines to the German page. */
-  germanOnly?: boolean;
   /** The 404 page: not indexed, no canonical or language versions. */
   notFound?: boolean;
 }
-const { lang, productGroups = true, germanOnly, notFound } = Astro.props;
+const { lang, productGroups = true, notFound } = Astro.props;
 const here = notFound ? '/' : basePath(Astro.url.pathname);
 const seo = seoFor(here, lang);
 const title = Astro.props.title ?? seo.title;
 const description = Astro.props.description ?? seo.description ??
   t(lang, 'GUHEMA GmbH & Co. KG, Remscheid: Metallsägeblätter, Sägebänder, Lochsägen und Kreissägeblätter. Made in Germany seit 1867.');
 const abs = (path: string) => new URL(path, Astro.site).href;
-const canonical = abs(germanOnly ? here : url(lang, here));
+const canonical = abs(url(lang, here));
 const fullTitle = `${title ? `${title} | ` : ''}GUHEMA GmbH & Co. KG`;
 const OG_LOCALE = { de: 'de_DE', en: 'en_US', ru: 'ru_RU' } as const;
 const jsonLd = [
@@ -68,7 +66,7 @@ const isActive = (path: string) => (path === '/' ? here === path : here.startsWi
   <link rel="icon" href="/static/img/favicon/favicon.ico" sizes="any">
   <link rel="icon" href="/static/img/favicon/favicon-32.png" type="image/png">
   <link rel="apple-touch-icon" href="/static/img/favicon/apple-touch-icon.png">
-  {!germanOnly && !notFound && (
+  {!notFound && (
     <>
       {LANGS.map((l) => <link rel="alternate" hreflang={l} href={abs(url(l, here))}>)}
       <link rel="alternate" hreflang="x-default" href={abs(here)}>

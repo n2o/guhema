@@ -1,17 +1,23 @@
 ---
-// Impressum and Datenschutz (former flatpages), German in every language like before
+// Impressum and Datenschutz (former flatpages): src/content/pages/<page>.md (German) and <page>.<lang>.md
 import Base from '../../../layouts/Base.astro';
-import { inAllLangs, langOf } from '../../../lib/i18n';
+import { LANGS, inAllLangs, langOf, tr, type Translated } from '../../../lib/i18n';
+
+type Page = { frontmatter: { title: string }; Content: any };
 
 export function getStaticPaths() {
-  const pages = import.meta.glob<{ frontmatter: { title: string }; Content: any }>('/src/content/pages/*.md', { eager: true });
-  return Object.entries(pages).flatMap(([file, page]) =>
-    inAllLangs([{ page: file.split('/').pop()!.replace('.md', '') }]).map((p) => ({ ...p, props: { page } })));
+  const files = import.meta.glob<Page>('/src/content/pages/*.md', { eager: true });
+  const file = (name: string) => files[`/src/content/pages/${name}.md`] ?? null;
+  const pages = Object.keys(files).map((f) => f.split('/').pop()!.slice(0, -3)).filter((name) => !name.includes('.'));
+  return pages.flatMap((page) => {
+    const versions = Object.fromEntries(LANGS.map((l) => [l, file(l === 'de' ? page : `${page}.${l}`)])) as Translated<Page>;
+    return inAllLangs([{ page }]).map((p) => ({ ...p, props: { page: tr(versions, langOf(p.params.lang))! } }));
+  });
 }
 const { page } = Astro.props;
 const { Content, frontmatter } = page;
 ---
-<Base lang={langOf(Astro.params.lang)} title={frontmatter.title} germanOnly>
+<Base lang={langOf(Astro.params.lang)} title={frontmatter.title}>
   <h1 slot="heading">{frontmatter.title}</h1>
-  <div class="prose" lang="de"><Content /></div>
+  <div class="prose"><Content /></div>
 </Base>

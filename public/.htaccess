@@ -1,6 +1,7 @@
 # Apache config for the static site on Strato (replaces the old nginx proxy).
 # HTTPS redirect: enable "HTTPS erzwingen" in the Strato panel, not here (avoids redirect loops behind their proxy).
 Options -Indexes
+AddDefaultCharset utf-8
 ErrorDocument 404 /404.html
 
 RewriteEngine On
@@ -22,5 +23,5 @@ RewriteRule ^(news|messen|i18n|pages)(/.*)?$ / [R=301,L]
 </IfModule>
 
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/xml text/javascript application/javascript application/json image/svg+xml
 </IfModule>

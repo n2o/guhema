@@ -1,14 +1,13 @@
 name: Deploy
 
-# Manual only until the cutover to Strato. Then enable:
-#   push: { branches: [main] }
-#   schedule: [{ cron: '0 4 1 1 *' }]   # yearly rebuild for the copyright year in the footer
 on:
-  workflow_dispatch:
-  # TEMPORARY: test deploy from the branch before the cutover; remove again
   push:
     branches:
-      - feat/astro
+      - main
+  # Rebuild once a year so the copyright year in the footer stays current
+  schedule:
+    - cron: '0 4 1 1 *'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -39,5 +38,5 @@ jobs:
           sudo apt-get update && sudo apt-get install -y lftp
           lftp -u "$SFTP_USER,$SFTP_PASSWORD" "sftp://$SFTP_HOST" -e "
             set sftp:auto-confirm yes;
-            mirror --reverse --delete --verbose --exclude-glob .DS_Store dist/ /guhema/;
+            mirror --reverse --delete --parallel=8 --verbose --exclude-glob .DS_Store dist/ /guhema/;
             quit"
