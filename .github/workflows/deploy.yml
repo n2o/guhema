@@ -5,6 +5,10 @@ name: Deploy
 #   schedule: [{ cron: '0 4 1 1 *' }]   # yearly rebuild for the copyright year in the footer
 on:
   workflow_dispatch:
+  # TEMPORARY: test deploy from the branch before the cutover; remove again
+  push:
+    branches:
+      - feat/astro
 
 permissions:
   contents: read
