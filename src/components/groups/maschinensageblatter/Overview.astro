@@ -36,7 +36,7 @@ const columns = ['Standard', 'Kasto'].map((name) => {
       <div class="col-md-6">
         {clamping && (
           <div class="clamping-img">
-            <Thumb path={tr(clamping.image, lang)} alias="products_clamping" alt={clamping.name} href="original" />
+            <Thumb path={tr(clamping.image, lang)} alias="products_clamping" alt={clamping.name} />
           </div>
         )}
         {items.map((blade) => {

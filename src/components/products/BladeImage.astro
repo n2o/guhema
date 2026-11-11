@@ -10,12 +10,12 @@ interface Props {
   image: string | null | undefined;
   alias?: Alias;
   alt?: string | null;
-  /** Link target; default is the full-size image. */
+  /** Link to a page (e.g. the band saw details); no link by default. */
   href?: string;
   /** Class of a wrapping div, only rendered when there is an image. */
   wrap?: string;
 }
-const { lang, image, alias = 'blade_image', alt, href = 'original', wrap } = Astro.props;
+const { lang, image, alias = 'blade_image', alt, href, wrap } = Astro.props;
 const exists = !!media(image);
 const Wrap = wrap ? 'div' : Fragment;
 ---

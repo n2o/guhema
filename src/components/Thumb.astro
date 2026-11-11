@@ -7,13 +7,13 @@ interface Props {
   alias: Alias;
   alt: string;
   class?: string;
-  /** Wrap in a link: "original" links the full-size file, any other string is used as href. */
+  /** Link target (a page, not a bigger version of the image). */
   href?: string;
 }
 const { path, alias, alt, class: cls = 'img-responsive', href } = Astro.props;
 const img = await thumbnail(path, alias);
-const link = href === 'original' ? img?.original : href;
+const Link = href ? 'a' : Fragment;
 ---
-{img && (link
-  ? <a href={link}><img class={cls} src={img.src} width={img.width} height={img.height} alt={alt} loading="lazy" decoding="async"></a>
-  : <img class={cls} src={img.src} width={img.width} height={img.height} alt={alt} loading="lazy" decoding="async">)}
+{img && (
+  <Link href={href}><img class={cls} src={img.src} srcset={img.srcset} width={img.width} height={img.height} alt={alt} loading="lazy" decoding="async"></Link>
+)}

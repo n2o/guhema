@@ -6,8 +6,8 @@ ErrorDocument 404 /404.html
 
 RewriteEngine On
 # One canonical host (duplicate content otherwise): keep in sync with `site` in astro.config.mjs
-RewriteCond %{HTTP_HOST} ^(guhema\.com|guhema\.de|www\.guhema\.de)$ [NC]
-RewriteRule ^ https://www.guhema.com%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^(www\.guhema\.com|guhema\.de|www\.guhema\.de)$ [NC]
+RewriteRule ^ https://guhema.com%{REQUEST_URI} [R=301,L]
 
 # Sections of the old Django site that no longer exist
 RewriteRule ^(news|messen|i18n|pages)(/.*)?$ / [R=301,L]

@@ -1,8 +1,8 @@
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
-// Canonical host: the other domains redirect here (public/.htaccess)
-const SITE = 'https://www.guhema.com';
+// Canonical host: the other domains redirect here (keep the host redirect in public/.htaccess in sync)
+const SITE = 'https://guhema.com';
 
 export default defineConfig({
   site: SITE,

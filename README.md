@@ -17,7 +17,7 @@ npm run build    # static output in dist/
 - **Page texts:** UI strings are looked up by their German text with `t(lang, "…")`; translations in `src/i18n/{en,ru}.json`. Impressum/Datenschutz: `src/content/pages/<page>.md` (German, legally binding) and `<page>.<lang>.md`.
 - **Product pages:** `src/components/groups/<slug>/{Overview,Details,Advices}.astro`, shared parts in `src/components/products/`.
 - **Translations:** `python3 tools/translations.py export <lang> worklist.json` lists every text with its current translation; `… apply <lang> result.json` writes results back (and drops unused UI strings).
-- **SEO:** canonical host `https://www.guhema.com` (keep `astro.config.mjs`, `public/.htaccess` and `public/robots.txt` in sync), hreflang, sitemap, structured data.
+- **SEO:** canonical host is `SITE` in `astro.config.mjs` (repeat it in the host redirect in `public/.htaccess`), hreflang, sitemap, robots.txt, structured data.
 - **Deploy:** `.github/workflows/deploy.yml` builds and mirrors `dist/` via SFTP into `/guhema/` on Strato (secrets `SFTP_HOST`, `SFTP_USER`, `SFTP_PASSWORD`; the domain must point to that directory). Apache config: `public/.htaccess`.
 
 ---

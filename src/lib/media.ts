@@ -27,6 +27,7 @@ export async function thumbnail(path: string | null | undefined, alias: Alias) {
   const factor = Math.min(1, Math.max(w / src.width, h / src.height));
   const width = Math.round(src.width * factor);
   const height = Math.round(src.height * factor);
-  const img = await getImage({ src, width, height });
-  return { src: img.src, width, height, original: src.src };
+  // 2x for sharp images on high-density screens (Astro skips it when the original is too small)
+  const img = await getImage({ src, width, height, densities: [2] });
+  return { src: img.src, srcset: img.srcSet.attribute || undefined, width, height };
 }

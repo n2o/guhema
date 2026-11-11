@@ -16,7 +16,5 @@ const { lang, prefix, extension, alt, width, nothumbnail, scroll } = Astro.props
 const img = `/static/${prefix}${lang}${extension}`;
 ---
 <div class={scroll ? 'padding-top diagram-scroll' : 'padding-top'}>
-  <a href={img}>
-    <img class={nothumbnail ? 'img-responsive ' : 'img-responsive img-thumbnail'} src={img} alt={alt} width={width}>
-  </a>
+  <img class={nothumbnail ? 'img-responsive' : 'img-responsive img-thumbnail'} src={img} alt={alt} width={width} loading="lazy" decoding="async">
 </div>

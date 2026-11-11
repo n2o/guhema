@@ -120,7 +120,6 @@ const rules = [
   "Passen Sie den Schnittdruck, die Schnittgeschwindigkeit und die Zähnezahl dem Werkstück an. Das folgende Diagramm sowie die Tabelle dienen als Orientierung.",
   "Beim Einsatz von Positivzahn und Future mit ca. 50%% des herkömmlichen Druckes beginnen. Wenn das Sägeblatt in voller Breite im Material arbeitet, muss der Druck kontinuierlich erhöht werden, ohne dass beim Sägen ein Brummton zu hören ist.",
 ];
-const fasenImg = '/static/img/produktbilder/maschinensaegeblaetter/katalog_2014/seitlicher_fasenanschliff.jpg';
 ---
 <Base lang={lang}>
   <h1 slot="heading">{tr(group.name, lang)}</h1>
@@ -296,10 +295,8 @@ const fasenImg = '/static/img/produktbilder/maschinensaegeblaetter/katalog_2014/
     <p>
       {t(lang, "Den seitlichen Fasenanschliff fertigen wir bis 6 ZpZ auf Nachfrage gerne für Sie. Sprechen Sie uns an!")}
     </p>
-    <a href={fasenImg}>
-      <img src={fasenImg}
-           class="img-responsive" alt={t(lang, "Seitlicher Fasenanschliff")}>
-    </a>
+    <img src="/static/img/produktbilder/maschinensaegeblaetter/katalog_2014/seitlicher_fasenanschliff.jpg"
+         class="img-responsive" alt={t(lang, "Seitlicher Fasenanschliff")} width="1392" height="422" loading="lazy" decoding="async">
   </section>
 
   <section>
