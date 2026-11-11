@@ -1,16 +1,15 @@
 # Apache config for the static site on Strato (replaces the old nginx proxy).
-# HTTPS redirect: enable "HTTPS erzwingen" in the Strato panel, not here (avoids redirect loops behind their proxy).
 Options -Indexes
 AddDefaultCharset utf-8
 ErrorDocument 404 /404.html
 
 RewriteEngine On
-# One canonical host (duplicate content otherwise): keep in sync with `site` in astro.config.mjs
-RewriteCond %{HTTP_HOST} ^(www\.guhema\.com|guhema\.de|www\.guhema\.de)$ [NC]
+# Sections of the old Django site that no longer exist (absolute target: one hop from any host/scheme)
+RewriteRule ^(news|messen|i18n|pages)(/.*)?$ https://guhema.com/ [R=301,L]
+# One canonical host (duplicate content otherwise): keep in sync with `site` in astro.config.mjs.
+# HTTP → HTTPS is forced in the Strato panel (SSL settings), before these rules run.
+RewriteCond %{HTTP_HOST} !^guhema\.com(:\d+)?$ [NC]
 RewriteRule ^ https://guhema.com%{REQUEST_URI} [R=301,L]
-
-# Sections of the old Django site that no longer exist
-RewriteRule ^(news|messen|i18n|pages)(/.*)?$ / [R=301,L]
 
 <IfModule mod_headers.c>
   # Hashed build assets never change
