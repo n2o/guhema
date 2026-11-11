@@ -27,16 +27,20 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      # Uploads into its own directory (point the domain there in the Strato panel): --delete only cleans up old build files.
-      # Every file is re-uploaded (a fresh checkout has new mtimes); comparing by size would miss same-length edits.
+      # Uploads into its own directory (point the domain there in the Strato panel): sync only cleans up old build files there.
+      # Every file is re-uploaded (--ignore-times: a fresh checkout has new mtimes, and size alone misses same-length edits).
+      # rclone comes as a pinned release binary instead of apt: the Ubuntu mirrors were unreachable from the runner (2026-11-11).
       - name: Upload to Strato via SFTP
         env:
-          SFTP_HOST: ${{ secrets.SFTP_HOST }}
-          SFTP_USER: ${{ secrets.SFTP_USER }}
+          RCLONE_SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          RCLONE_SFTP_USER: ${{ secrets.SFTP_USER }}
           SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          RCLONE: v1.68.2
+          # From the release's SHA256SUMS: the binary gets the deploy password
+          RCLONE_SHA256: 0e6fa18051e67fc600d803a2dcb10ddedb092247fc6eee61be97f64ec080a13c
         run: |
-          sudo apt-get update && sudo apt-get install -y lftp
-          lftp -u "$SFTP_USER,$SFTP_PASSWORD" "sftp://$SFTP_HOST" -e "
-            set sftp:auto-confirm yes;
-            mirror --reverse --delete --parallel=8 --verbose --exclude-glob .DS_Store dist/ /guhema/;
-            quit"
+          curl -fsSL -o rclone.zip "https://github.com/rclone/rclone/releases/download/$RCLONE/rclone-$RCLONE-linux-amd64.zip"
+          echo "$RCLONE_SHA256  rclone.zip" | sha256sum -c -
+          unzip -qj rclone.zip "*/rclone"
+          export RCLONE_SFTP_PASS="$(printf %s "$SFTP_PASSWORD" | ./rclone obscure -)"
+          ./rclone sync dist/ :sftp:/guhema/ --ignore-times --transfers 8 --stats-one-line -v
